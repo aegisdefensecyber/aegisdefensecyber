@@ -93,11 +93,42 @@ class PublisherTests(unittest.TestCase):
 
     def test_gate_and_idempotency(self):
         early = self.run_pub("2026-11-21T10:50:00+00:00")  # 05:50 EST
-        self.assertIn("before publication time", early.stdout)
+        self.assertIn("before the first update slot", early.stdout)
         self.assertFalse((self.data / "latest.json").exists())
         self.assertEqual(self.run_pub("2026-11-21T11:50:00+00:00").returncode, 0)
-        again = self.run_pub("2026-11-21T13:30:00+00:00")
-        self.assertIn("already published", again.stdout)
+        again = self.run_pub("2026-11-21T13:30:00+00:00")  # 08:30 EST: still the 07:00 slot
+        self.assertIn("already ran", again.stdout)
+
+    def test_four_daily_updates(self):
+        r = self.run_pub("2026-11-21T12:10:00+00:00")           # 07:10 EST: new edition
+        self.assertEqual(r.returncode, 0, r.stderr)
+        morning = self.load("latest.json")
+        self.assertTrue((self.data.parent / "email" / "2026-11-21.html").exists())
+        page = (self.data.parent / "email" / "2026-11-21.html").read_text()
+        self.assertIn("$[LI:UNSUBSCRIBE]$", page)
+        self.assertNotIn("javascript:", page)
+        kev = json.loads((self.fx / "kev.json").read_text())
+        kev["vulnerabilities"].append(kev_record(9, "2026-11-21", vendor="LateCo"))
+        self.write("kev.json", kev)
+        (self.data.parent / "email" / "2026-11-21.html").unlink()
+        r = self.run_pub("2026-11-21T17:05:00+00:00")           # 12:05 EST: update, same edition
+        self.assertEqual(r.returncode, 0, r.stderr)
+        self.assertIn("Updated edition 2026-11-21", r.stdout)
+        noon = self.load("latest.json")
+        self.assertEqual(noon["edition"], "2026-11-21")
+        self.assertEqual(noon["publishedAt"], morning["publishedAt"])
+        self.assertNotEqual(noon["updatedAt"], morning["updatedAt"])
+        ids = [c["cve"] for c in noon["cves"]]
+        # still measured against the previous day: morning CVEs kept, the late KEV addition included
+        self.assertTrue({"CVE-2099-0001", "CVE-2099-0002", "CVE-2099-0003", "CVE-2099-0009"} <= set(ids))
+        self.assertFalse((self.data.parent / "email" / "2026-11-21.html").exists())  # updates never email
+        self.assertIn("already ran", self.run_pub("2026-11-21T17:50:00+00:00").stdout)
+        for t in ("2026-11-21T22:00:00+00:00", "2026-11-22T03:00:00+00:00"):   # 17:00 and 22:00 EST
+            self.assertIn("Updated edition 2026-11-21", self.run_pub(t).stdout)
+        self.assertEqual(self.load("status.json")["lastSlot"], "2026-11-21 22:00")
+        nxt = self.run_pub("2026-11-22T12:00:00+00:00")         # next morning: new edition, diff vs day 1
+        self.assertIn("Published edition 2026-11-22", nxt.stdout)
+        self.assertEqual(self.load("latest.json")["cves"], [])
 
     def test_next_day_diff_and_no_new(self):
         self.run_pub("2026-11-21T12:10:00+00:00")

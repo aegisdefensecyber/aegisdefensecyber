@@ -1,6 +1,7 @@
 /* ThreatWatch email signup: email address only, posted to the provider in subscription-config.json.
-   No address is stored by this site. The provider (Buttondown by default) sends a confirmation email
-   (double opt-in) before anyone is subscribed. */
+   No address is stored by this site. The provider (Zoho Campaigns) sends a confirmation email
+   (double opt-in) before anyone is subscribed. For Zoho, signupUrl is the form's weboptin.zc action,
+   emailField is CONTACT_EMAIL and hiddenFields holds the hidden inputs from the Zoho form code. */
 (function () {
   "use strict";
   var form = document.getElementById("subscribe-form");
@@ -15,6 +16,17 @@
     msg.textContent = text;
     msg.className = "sub-msg" + (kind ? " " + kind : "");
   }
+  var SAFE_NAME = /^[A-Za-z0-9_]{1,40}$/, SAFE_VAL = /^[A-Za-z0-9_.:\-]{0,200}$/;
+  function applyFields(c) {
+    if (c && SAFE_NAME.test(c.emailField || "")) input.name = c.emailField;
+    var hf = (c && c.hiddenFields) || {};
+    Object.keys(hf).forEach(function (k) {
+      if (!SAFE_NAME.test(k) || typeof hf[k] !== "string" || !SAFE_VAL.test(hf[k]) || form.elements[k]) return;
+      var h = document.createElement("input");
+      h.type = "hidden"; h.name = k; h.value = hf[k];
+      form.appendChild(h);
+    });
+  }
   function endpoint(c) {
     var u = c && c.enabled && typeof c.signupUrl === "string" ? c.signupUrl : "";
     return /^https:\/\/[^\s"'<>]+$/.test(u) ? u : null;
@@ -25,7 +37,7 @@
   if (!/^(\.\.\/)?[\w\-\/]*subscription-config\.json$/.test(cfgUrl)) cfgUrl = "subscription-config.json";
   fetch(cfgUrl, { cache: "no-cache" })
     .then(function (r) { return r.ok ? r.json() : null; })
-    .then(function (c) { cfg = c; var u = endpoint(c); if (u) form.action = u; })
+    .then(function (c) { cfg = c; var u = endpoint(c); if (u) { form.action = u; applyFields(c); } })
     .catch(function () { cfg = null; });
 
   form.addEventListener("submit", function (ev) {

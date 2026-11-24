@@ -5,9 +5,14 @@ fetch → validate schema → normalize → dedupe → enrich → prioritize →
 → quality gate → publish versioned JSON. On any failure the last good edition
 is left untouched and the process exits non-zero.
 
+Schedule: four updates a day, at the 07:00, 12:00, 17:00 and 22:00 ET slots.
+The 07:00 slot issues the day's new edition; the later slots re-build that same
+edition with fresh KEV/EPSS/NVD data, still measured against the previous day's
+edition (so "new today" keeps meaning new since yesterday's brief).
+
 Usage:
-  python scripts/build_brief.py            # scheduled mode (ET time gate + idempotency)
-  python scripts/build_brief.py --force    # publish regardless of gate
+  python scripts/build_brief.py            # scheduled mode (slot gate + idempotency per slot)
+  python scripts/build_brief.py --force    # run now regardless of the slot gate
 """
 from __future__ import annotations
 
@@ -26,9 +31,26 @@ from tw.validate import validate_brief, validate_month  # noqa: E402
 from tw.report import (Catalog, M_SECTION_IDS, compose, compose_month, safe_report_editorial,  # noqa: E402
                        validate_report)
 
-EARLIEST_ET = (6, 45)   # don't publish before 06:45 ET (target: brief live by 07:00 ET)
+# Update slots (ET). Each opens 15 minutes early so a cron fired at :50 lands in it.
+SLOTS_ET = [((6, 45), "07:00"), ((11, 45), "12:00"), ((16, 45), "17:00"), ((21, 45), "22:00")]
+EARLIEST_ET = SLOTS_ET[0][0]
 REPORT_STATE = "report-state.json"
+BASE_STATE = "state-base.json"   # the state the current edition is measured against
 RETENTION_DAYS = int(os.environ.get("TW_RETENTION_DAYS", "365"))
+
+
+def current_slot(now_et):
+    """Label of the latest update slot that has opened today, or None before the first."""
+    label = None
+    for (h, m), lab in SLOTS_ET:
+        if (now_et.hour, now_et.minute) >= (h, m):
+            label = lab
+    return label
+
+
+def base_for(edition: str) -> dict | None:
+    base = read_json(DATA_DIR / BASE_STATE, {}) or {}
+    return base if base.get("edition") == edition else None
 
 
 def gh_output(**kv) -> None:
@@ -56,15 +78,19 @@ def main() -> int:
     status_path = DATA_DIR / "status.json"
     status = read_json(status_path, {}) or {}
 
+    slot = current_slot(now_et)
+    slot_key = f"{edition} {slot}" if slot else f"{edition} forced"
     if not args.force:
-        if (now_et.hour, now_et.minute) < EARLIEST_ET:
-            print(f"Gate: {now_et:%H:%M} ET is before publication time; skipping.")
-            gh_output(published="false")
+        if slot is None:
+            print(f"Gate: {now_et:%H:%M} ET is before the first update slot; skipping.")
+            gh_output(published="false", updated="false")
             return 0
-        if latest.get("edition") == edition:
-            print(f"Gate: edition {edition} already published; skipping.")
-            gh_output(published="false")
+        if status.get("lastSlot") == slot_key:
+            print(f"Gate: the {slot} ET update for {edition} already ran; skipping.")
+            gh_output(published="false", updated="false")
             return 0
+    is_update = latest.get("edition") == edition
+    base = base_for(edition) if is_update else None
 
     status["lastAttemptAt"] = iso(now)
     try:
@@ -73,7 +99,13 @@ def main() -> int:
         months = recent_months(now, 6)
         month_cves = [r["cve"] for r in kev["records"] if r["dateAdded"][:7] in months]
         epss = collect_epss(month_cves)
-        state = read_json(DATA_DIR / "state.json", {}) or {}
+        current_state = read_json(DATA_DIR / "state.json", {}) or {}
+        track = read_json(DATA_DIR / REPORT_STATE, {}) or {}
+        if is_update and base:
+            state, track = base.get("state") or {}, base.get("reportState") or {}
+        else:
+            state = current_state
+        new_base = {"edition": edition, "state": state, "reportState": track}
         prev = set(state.get("kevIds") or [])
         cutoff = (now_et.date() - timedelta(days=1)).isoformat()
         if prev:
@@ -88,7 +120,11 @@ def main() -> int:
             editorial = safe_editorial(read_json(ed_path))
 
         brief, new_state = build_daily(kev, epss, nvd, state, editorial, now)
-        report_state = attach_report(brief, editorial, now)
+        if is_update:
+            brief["publishedAt"] = latest.get("publishedAt") or brief["publishedAt"]
+        brief["updatedAt"] = iso(now)
+        brief["updateSlot"] = slot or "manual"
+        report_state = attach_report(brief, editorial, now, track)
         errs = validate_brief(brief) + validate_report(brief["report"])
         monthlies = {m: build_month(kev, epss, m, now) for m in months}
         for m, doc in monthlies.items():
@@ -116,11 +152,16 @@ def main() -> int:
     write_json(DATA_DIR / "latest.json", brief)
     write_json(DATA_DIR / "state.json", new_state)
     write_json(DATA_DIR / REPORT_STATE, report_state)
+    write_json(DATA_DIR / BASE_STATE, new_base)
     status.update({"ok": True, "lastError": None, "lastSuccessAt": iso(now), "lastEdition": edition,
+                   "lastSlot": slot_key,
                    "kevCatalogVersion": kev.get("catalogVersion"), "kevRejectedRecords": kev["rejected"]})
     write_json(status_path, status)
-    print(f"Published edition {edition}: {brief['executive']['counts']}")
-    gh_output(published="true", edition=edition)
+    verb = "Updated" if is_update else "Published"
+    print(f"{verb} edition {edition} ({slot or 'manual'} ET slot): {brief['executive']['counts']}")
+    gh_output(published="false" if is_update else "true", updated="true" if is_update else "false",
+              edition=edition)
+    rc = 0
     # Vulnerability Validation catalog: built right after each published edition, so the
     # existing workflow needs no extra step. Set TW_SKIP_CATALOG=1 to disable.
     if os.environ.get("TW_SKIP_CATALOG") != "1":
@@ -129,15 +170,29 @@ def main() -> int:
         if build_catalog.main() != 0:
             print("Catalog build failed — see threatwatch/data/cves/status.json. "
                   "The brief was published; the last good catalog stays live.", file=sys.stderr)
-            return 1
-        # the catalog now holds today's zero-day / PoC / ATT&CK data: re-compose the report with it
-        return refresh_report()
-    return 0
+            rc = 1
+        else:
+            # the catalog now holds today's zero-day / PoC / ATT&CK data: re-compose the report with it
+            rc = refresh_report()
+    if not is_update:
+        # email copy of the morning edition, from the final (catalog-enriched) document
+        try:
+            import build_digest
+            build_digest.write_digest(read_json(DATA_DIR / "latest.json"))
+        except Exception as exc:  # the email copy must never block the brief
+            print(f"Digest page not written: {exc}", file=sys.stderr)
+    return rc
 
 
-def attach_report(brief: dict, editorial: dict | None, now) -> dict:
-    """Compose the seven-section report into brief['report']; returns the new tracking state."""
-    track = read_json(DATA_DIR / REPORT_STATE, {}) or {}
+def attach_report(brief: dict, editorial: dict | None, now, track: dict | None = None) -> dict:
+    """Compose the seven-section report into brief['report']; returns the new tracking state.
+
+    `track` is the state the edition is measured against; by default the base state of
+    the brief's edition (so intra-day updates compare with yesterday, not with the morning)."""
+    if track is None:
+        base = base_for(brief.get("edition") or "")
+        track = base.get("reportState") if base and "reportState" in base else \
+            (read_json(DATA_DIR / REPORT_STATE, {}) or {})
     report, new_track = compose(brief, Catalog(DATA_DIR), track, editorial, now)
     brief["report"] = report
     return new_track

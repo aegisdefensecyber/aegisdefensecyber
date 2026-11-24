@@ -1,6 +1,8 @@
 {
   "enabled": false,
   "signupUrl": null,
-  "provider": "buttondown",
-  "note": "Email-only signup. Set signupUrl to https://buttondown.com/api/emails/embed-subscribe/<your-username> and enabled=true after testing double opt-in end to end. The form posts only the email address; never put API keys or subscriber data here. Another provider needs its host added to form-action in each page's CSP."
+  "provider": "zoho-campaigns",
+  "emailField": "CONTACT_EMAIL",
+  "hiddenFields": {},
+  "note": "Email-only signup through a Zoho Campaigns signup form (double opt-in). To enable: set signupUrl to the form's action (…/weboptin.zc), copy the form's hidden input names and values into hiddenFields, set enabled=true, and add the form's host to form-action in each page's CSP. Never put API keys or subscriber data here."
 }

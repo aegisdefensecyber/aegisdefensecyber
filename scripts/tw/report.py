@@ -648,7 +648,7 @@ def compose(brief: dict, catalog: Catalog, track: dict, editorial: dict | None, 
         "dateLabel": _day_label(ed_date),
         "window": ed.get("window") or f"Reporting window: {_window_label(w_start, w_end)}",
         "prepared": ed.get("prepared") or ("Analyst-reviewed edition" if any_ed
-                                           else "Automated edition, issued 7:00 AM ET"),
+                                           else "Automated edition, issued 7:00 AM ET and updated at 12:00, 5:00 and 10:00 PM ET"),
         "sourceNote": ed.get("sourceNote") or (
             "This brief is compiled automatically from public sources (" + ", ".join(sources_used) + "). "
             "Exploitation statuses reflect what those sources report; anything they do not establish is stated as "
@@ -1302,7 +1302,7 @@ def compose_month(doc: dict, catalog: Catalog, editorial: dict | None, now: date
         "window": ed.get("window") or f"Reporting period: {period}" + ("" if doc.get("complete") else " (month to date)"),
         "prepared": ed.get("prepared") or ("Analyst-reviewed summary" if any_ed else
                                            ("Final monthly summary" if doc.get("complete")
-                                            else "Automated summary, refreshed daily at 7:00 AM ET")),
+                                            else "Automated summary, updated four times a day")),
         "sourceNote": ed.get("sourceNote") or (
             "Compiled automatically from CISA KEV, NVD, FIRST EPSS, Google Project Zero, ENISA EUVD, VulnCheck, "
             "Metasploit, Exploit-DB, PoC-in-GitHub and MITRE ATT&CK. Counts are catalog counts, not a count of "

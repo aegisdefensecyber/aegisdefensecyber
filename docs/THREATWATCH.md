@@ -225,3 +225,23 @@ Analyst override: `threatwatch/data/editorial/monthly-YYYY-MM.json` → `"report
 
 The daily page shows the last 7 calendar days as an edition strip. Editions published before the document format
 existed are reconstructed from catalog data (marked "reconstructed") the next time the report is composed.
+
+
+## Update schedule and email (since 24 Nov 2026)
+
+- **Four updates a day** at the 07:00, 12:00, 17:00 and 22:00 ET slots (`SLOTS_ET` in
+  `scripts/build_brief.py`). The 07:00 slot issues the day's new edition. The later slots
+  re-build the same edition with fresh KEV, EPSS and NVD data, still measured against the
+  previous day's edition (`threatwatch/data/state-base.json`), so "new today" keeps its meaning.
+  Each slot runs at most once (`status.json` → `lastSlot`); extra cron fires are no-ops and act
+  as retries. The brief shows "Published … · last updated …" and turns **Stale** after 8 hours.
+- **Morning email.** After a new edition, `scripts/build_digest.py` writes an email copy of the
+  brief to `threatwatch/email/<edition>.html` (14 kept), and the workflow runs
+  `scripts/send_digest.py`, which creates and sends a Zoho Campaigns campaign with that page as
+  content. Updates at 12:00/17:00/22:00 never email. Email failures never block publishing.
+  Secrets: `ZOHO_CLIENT_ID`, `ZOHO_CLIENT_SECRET`, `ZOHO_REFRESH_TOKEN`, `ZOHO_LIST_KEY`;
+  variables: `ZOHO_FROM_EMAIL` (and optional `ZOHO_FROM_NAME`, `ZOHO_TOPIC_ID`,
+  `ZOHO_ACCOUNTS_URL`, `ZOHO_CAMPAIGNS_URL` for non-US Zoho data centres).
+  Resend manually: Actions → Publish ThreatWatch → Run workflow → tick "send_email".
+- **Signup** posts the email address to a Zoho Campaigns signup form (double opt-in) configured
+  in `threatwatch/subscription-config.json`; this site never stores addresses.

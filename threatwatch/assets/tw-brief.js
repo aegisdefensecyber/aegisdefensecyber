@@ -4,7 +4,7 @@
  */
 (function () {
   "use strict";
-  var STALE_HOURS = 30;
+  var STALE_HOURS = 8;   // four updates a day: anything older than ~2 missed slots is stale
 
   function el(tag, attrs, kids) {
     var n = document.createElement(tag);
@@ -148,7 +148,8 @@
       document.getElementById("brief-title").textContent = "Daily Threat Intelligence Brief — " +
         new Date(b.edition + "T12:00:00Z").toLocaleDateString("en-US", { dateStyle: "long", timeZone: "UTC" });
       document.getElementById("brief-meta").textContent = "Published " + fmtTime(b.publishedAt) +
-        " · a new edition is issued every morning at 7:00 AM ET";
+        (b.updatedAt && b.updatedAt !== b.publishedAt ? " · last updated " + fmtTime(b.updatedAt) : "") +
+        " · new edition every morning at 7:00 AM ET, updated at 12:00 PM, 5:00 PM and 10:00 PM ET";
       freshness(b, status);
       renderToolbar(b, status, editions);
       renderReport(b.report, body);
@@ -158,15 +159,15 @@
   }
 
   function freshness(b, status) {
-    var age = (Date.now() - Date.parse(b.publishedAt)) / 36e5;
+    var age = (Date.now() - Date.parse(b.updatedAt || b.publishedAt)) / 36e5;
     var fresh = document.getElementById("freshness");
     fresh.textContent = "";
     var latest = !window.__twNewest || b.edition === window.__twNewest;
     var stale = age > STALE_HOURS && latest;
     fresh.appendChild(el("span", { cls: "fresh" + (stale ? " stale" : "") }, [
       el("span", { cls: "badge " + (stale ? "b-urgent" : "b-ok"), text: stale ? "Stale" : (latest ? "Current" : "Archive") }),
-      stale ? "This edition is " + Math.round(age) + " hours old; a newer edition has not been published."
-            : "Last successful refresh " + fmtTime((status && status.lastSuccessAt) || b.publishedAt)
+      stale ? "This brief was last updated " + Math.round(age) + " hours ago; scheduled updates have not run since."
+            : "Last successful refresh " + fmtTime((status && status.lastSuccessAt) || b.updatedAt || b.publishedAt)
     ]));
     var notices = document.getElementById("notices");
     notices.textContent = "";
@@ -368,7 +369,7 @@
         body.textContent = "";
         document.getElementById("month-title").textContent = "Monthly Threat Intelligence Summary — " + monthName(d.month);
         document.getElementById("month-meta").textContent = (d.complete ? "Final summary" : "Month to date") +
-          " · updated " + fmtTime(d.updatedAt) + " · refreshed every morning at 7:00 AM ET";
+          " · updated " + fmtTime(d.updatedAt) + " · " + "updated four times a day: 7:00 AM, 12:00 PM, 5:00 PM and 10:00 PM ET";
         if (d.report && d.report.sections) renderReport(d.report, body);
         else body.appendChild(monthCard(d));
       }).catch(function () { body.textContent = ""; body.appendChild(el("p", { cls: "notice", text: "Monthly data unavailable." })); });

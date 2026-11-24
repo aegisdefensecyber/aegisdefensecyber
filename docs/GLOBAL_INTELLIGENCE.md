@@ -9,7 +9,7 @@ Spec: *AEGIS Global Threat Intelligence Dashboard — Feature Development Specif
 the published data unchanged)
 → `global-intelligence/data/*.json` (generated; never edit by hand) → static dashboard.
 
-The workflow `.github/workflows/global-intelligence.yml` runs the build daily at 7:00 AM ET and whenever a
+The workflow `.github/workflows/global-intelligence.yml` runs the build four times a day (7:00 AM, 12:00 PM, 5:00 PM, 10:00 PM ET) and whenever a
 record changes. The dashboard says "not real-time" and shows collection time vs. last editorial verification.
 
 ## Workflow states (`publication_status`)

@@ -59,17 +59,27 @@ def main() -> int:
         except (ValueError, FileNotFoundError) as exc:
             errs.append(f"{name}: {exc}")
     cfg = json.loads((REPO_ROOT / "threatwatch" / "subscription-config.json").read_text())
-    if set(cfg) - {"enabled", "signupUrl", "provider", "note"}:
+    if set(cfg) - {"enabled", "signupUrl", "provider", "note", "emailField", "hiddenFields"}:
         errs.append("subscription-config.json contains unexpected keys (no secrets allowed)")
+    import re as _re
+    if cfg.get("emailField") is not None and not _re.fullmatch(r"[A-Za-z0-9_]{1,40}", str(cfg["emailField"])):
+        errs.append("subscription-config.json: emailField must be a plain field name")
+    for k, v in (cfg.get("hiddenFields") or {}).items():
+        if not _re.fullmatch(r"[A-Za-z0-9_]{1,40}", k) or not isinstance(v, str) \
+                or not _re.fullmatch(r"[A-Za-z0-9_.:\-]{0,200}", v):
+            errs.append(f"subscription-config.json: hidden field {k!r} has an unsafe name or value")
     if cfg.get("enabled") and not safe_url(cfg.get("signupUrl")):
         errs.append("subscription enabled without an https signupUrl")
     if safe_url(cfg.get("signupUrl")):
         from urllib.parse import urlsplit
         host = urlsplit(cfg["signupUrl"]).netloc
-        for page in sorted((REPO_ROOT / "threatwatch").glob("*.html")):
+        pages = [REPO_ROOT / "index.html", *sorted(REPO_ROOT.glob("*/index.html")), *sorted(REPO_ROOT.glob("*/*.html"))]
+        for page in dict.fromkeys(pages):
+            if not page.exists() or "/data/" in str(page) or "/email/" in str(page):
+                continue
             txt = page.read_text()
-            if 'id="subscribe-form"' in txt and f"form-action https://{host}" not in txt:
-                errs.append(f"{page.name}: CSP form-action does not allow the signup host {host}")
+            if 'id="subscribe-form"' in txt and f"https://{host}" not in txt.split("form-action", 1)[-1].split(">", 1)[0]:
+                errs.append(f"{page.relative_to(REPO_ROOT)}: CSP form-action does not allow the signup host {host}")
     from tw.global_intel import build as build_global
     errs += [f"global-intelligence: {e}" for e in build_global(REPO_ROOT, write=False)[1]]
     for e in errs:

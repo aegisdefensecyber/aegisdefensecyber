@@ -426,7 +426,7 @@ def build(root: Path, now: datetime | None = None, write: bool = True) -> tuple[
             "reporting_date": now.astimezone(timezone(timedelta(hours=-5))).date().isoformat(),
             "pending_review": sum(1 for r in records if r["publication_status"] in
                                   ("collected", "analyzed", "verification_pending", "approved")),
-            "cadence": "Daily collection at 7:00 AM Eastern. Not real-time.",
+            "cadence": "Rebuilt four times a day (7:00 AM, 12:00 PM, 5:00 PM, 10:00 PM Eastern). Not real-time.",
         },
     }
     if write:
