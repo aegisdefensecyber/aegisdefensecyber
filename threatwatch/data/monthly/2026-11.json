@@ -2,25 +2,25 @@
   "schemaVersion": 1,
   "month": "2026-11",
   "complete": false,
-  "updatedAt": "2026-11-25T17:00:57Z",
+  "updatedAt": "2026-11-25T21:49:49Z",
   "metrics": [
     {
       "id": "kev_added",
       "label": "New KEV entries",
-      "value": 30,
+      "value": 39,
       "rule": "CVE entries whose CISA dateAdded falls in the month.",
       "source": "CISA KEV",
       "window": "2026-11-01 to 2026-11-25 (dateAdded, ET calendar)",
-      "updatedAt": "2026-11-25T17:00:57Z"
+      "updatedAt": "2026-11-25T21:49:49Z"
     },
     {
       "id": "vendors",
       "label": "Distinct vendors",
-      "value": 27,
+      "value": 30,
       "rule": "Unique vendorProject values among the month’s KEV entries.",
       "source": "CISA KEV",
       "window": "2026-11-01 to 2026-11-25 (dateAdded, ET calendar)",
-      "updatedAt": "2026-11-25T17:00:57Z"
+      "updatedAt": "2026-11-25T21:49:49Z"
     },
     {
       "id": "ransomware",
@@ -29,7 +29,7 @@
       "rule": "Month’s KEV entries where CISA sets knownRansomwareCampaignUse = Known.",
       "source": "CISA KEV",
       "window": "2026-11-01 to 2026-11-25 (dateAdded, ET calendar)",
-      "updatedAt": "2026-11-25T17:00:57Z"
+      "updatedAt": "2026-11-25T21:49:49Z"
     },
     {
       "id": "epss90",
@@ -38,7 +38,7 @@
       "rule": "Month’s KEV entries with EPSS percentile ≥ 0.90 (scores as of 2026-11-25).",
       "source": "FIRST EPSS",
       "window": "2026-11-01 to 2026-11-25 (dateAdded, ET calendar)",
-      "updatedAt": "2026-11-25T17:00:57Z"
+      "updatedAt": "2026-11-25T21:49:49Z"
     }
   ],
   "notice": "These are CISA KEV catalog counts, not a count of total cyber incidents.",
@@ -364,12 +364,111 @@
     },
     {
       "date": "2026-11-25",
+      "cve": "CVE-2023-25914",
+      "vendor": "Danfoss",
+      "product": "AK-SM 800A Series",
+      "concern": "Danfoss AK-SM 800A Series Path Traversal Vulnerability",
+      "ransomware": "unknown",
+      "epssPercentile": 0.64585,
+      "confidence": "Exploitation confirmed (CISA KEV); attribution not assessed",
+      "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "date": "2026-11-25",
+      "cve": "CVE-2023-25915",
+      "vendor": "Danfoss",
+      "product": "AK-SM 800A Series",
+      "concern": "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+      "ransomware": "unknown",
+      "epssPercentile": 0.73235,
+      "confidence": "Exploitation confirmed (CISA KEV); attribution not assessed",
+      "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "date": "2026-11-25",
+      "cve": "CVE-2025-41450",
+      "vendor": "Danfoss",
+      "product": "AK-SM 800A Series",
+      "concern": "Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
+      "ransomware": "unknown",
+      "epssPercentile": 0.37031,
+      "confidence": "Exploitation confirmed (CISA KEV); attribution not assessed",
+      "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "date": "2026-11-25",
       "cve": "CVE-2026-103406",
       "vendor": "Hewlett Packard Enterprise (HPE)",
       "product": "Juniper Session Smart Conductor and Session Smart Router",
       "concern": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
       "ransomware": "unknown",
       "epssPercentile": 0.56019,
+      "confidence": "Exploitation confirmed (CISA KEV); attribution not assessed",
+      "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "date": "2026-11-25",
+      "cve": "CVE-2026-133275",
+      "vendor": "Mitel",
+      "product": "MiCollab",
+      "concern": "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+      "ransomware": "unknown",
+      "epssPercentile": 0.1686,
+      "confidence": "Exploitation confirmed (CISA KEV); attribution not assessed",
+      "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "date": "2026-11-25",
+      "cve": "CVE-2026-133303",
+      "vendor": "Mitel",
+      "product": "MiCollab",
+      "concern": "Mitel MiCollab XML Injection Vulnerability",
+      "ransomware": "unknown",
+      "epssPercentile": 0.37111,
+      "confidence": "Exploitation confirmed (CISA KEV); attribution not assessed",
+      "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "date": "2026-11-25",
+      "cve": "CVE-2026-133311",
+      "vendor": "Mitel",
+      "product": "MiCollab",
+      "concern": "Mitel MiCollab Weak Authentication Vulnerability",
+      "ransomware": "unknown",
+      "epssPercentile": 0.2537,
+      "confidence": "Exploitation confirmed (CISA KEV); attribution not assessed",
+      "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "date": "2026-11-25",
+      "cve": "CVE-2026-133323",
+      "vendor": "Mitel",
+      "product": "MiCollab",
+      "concern": "Mitel MiCollab OS Command Injection Vulnerability",
+      "ransomware": "unknown",
+      "epssPercentile": 0.85725,
+      "confidence": "Exploitation confirmed (CISA KEV); attribution not assessed",
+      "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "date": "2026-11-25",
+      "cve": "CVE-2026-133324",
+      "vendor": "Mitel",
+      "product": "MiCollab",
+      "concern": "Mitel MiCollab Not Failing Securely Vulnerability",
+      "ransomware": "unknown",
+      "epssPercentile": 0.273,
+      "confidence": "Exploitation confirmed (CISA KEV); attribution not assessed",
+      "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "date": "2026-11-25",
+      "cve": "CVE-2026-133469",
+      "vendor": "Vates",
+      "product": "Xen Orchestra",
+      "concern": "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
+      "ransomware": "unknown",
+      "epssPercentile": 0.65258,
       "confidence": "Exploitation confirmed (CISA KEV); attribution not assessed",
       "source": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     }
@@ -394,7 +493,7 @@
         "blocks": [
           {
             "type": "p",
-            "text": "CISA added **30 vulnerabilities** to the KEV catalog in November 2026 (month to date through November 25, 2026), spanning 27 vendors. CISA flags known ransomware use for 1 of them. The highest-likelihood additions by EPSS were **CVE-2026-116779 (SignalWire FreeSwitch)** and **CVE-2026-133968 (Project MONAI MONAI Label)**. Outside KEV, 4 further CVEs were reported exploited or tracked as zero-days by Google Project Zero, ENISA EUVD or VulnCheck."
+            "text": "CISA added **39 vulnerabilities** to the KEV catalog in November 2026 (month to date through November 25, 2026), spanning 30 vendors. CISA flags known ransomware use for 1 of them. The highest-likelihood additions by EPSS were **CVE-2026-116779 (SignalWire FreeSwitch)** and **CVE-2026-133968 (Project MONAI MONAI Label)**. Outside KEV, 4 further CVEs were reported exploited or tracked as zero-days by Google Project Zero, ENISA EUVD or VulnCheck."
           },
           {
             "type": "table",
@@ -405,11 +504,11 @@
             "rows": [
               [
                 "New KEV entries",
-                "30"
+                "39"
               ],
               [
                 "Distinct vendors",
-                "27"
+                "30"
               ],
               [
                 "Known ransomware use",
@@ -425,11 +524,11 @@
               ],
               [
                 "Public exploit code referenced",
-                "27 of the month's KEV entries"
+                "31 of the month's KEV entries"
               ],
               [
                 "CVEs published to NVD",
-                "14,296 (7,019 High/Critical)"
+                "14,464 (7,095 High/Critical)"
               ]
             ]
           },
@@ -542,7 +641,7 @@
         "blocks": [
           {
             "type": "p",
-            "text": "KEV additions by week: week of Nov 2: 3; week of Nov 9: 12; week of Nov 16: 9; week of Nov 23: 6."
+            "text": "KEV additions by week: week of Nov 2: 3; week of Nov 9: 12; week of Nov 16: 9; week of Nov 23: 15."
           },
           {
             "type": "p",
@@ -584,7 +683,7 @@
           },
           {
             "type": "p",
-            "text": "**Defensive hunting focus:** unexpected child processes and outbound connections (12 CVEs); unauthorized administrative access and configuration changes (8 CVEs); unusual requests and changes (8 CVEs)."
+            "text": "**Defensive hunting focus:** unexpected child processes and outbound connections (13 CVEs); unusual requests and changes (12 CVEs); unauthorized administrative access and configuration changes (10 CVEs)."
           }
         ]
       },
@@ -602,6 +701,16 @@
               "Products"
             ],
             "rows": [
+              [
+                "Mitel",
+                "5",
+                "MiCollab"
+              ],
+              [
+                "Danfoss",
+                "3",
+                "AK-SM 800A Series"
+              ],
               [
                 "Apache",
                 "2",
@@ -641,16 +750,6 @@
                 "Drupal",
                 "1",
                 "Core"
-              ],
-              [
-                "GPUStack",
-                "1",
-                "GPUStack"
-              ],
-              [
-                "Google",
-                "1",
-                "Chromium"
               ]
             ]
           },
@@ -711,7 +810,7 @@
             ],
             "rows": [
               [
-                "Remaining 34 exploited CVEs",
+                "Remaining 43 exploited CVEs",
                 "Unknown; identity, motivation and geographic targeting not established in tracked sources."
               ]
             ]
@@ -798,18 +897,38 @@
               ],
               [
                 "November 28, 2026",
+                "CVE-2023-25914",
+                "Danfoss AK-SM 800A Series"
+              ],
+              [
+                "November 28, 2026",
+                "CVE-2023-25915",
+                "Danfoss AK-SM 800A Series"
+              ],
+              [
+                "November 28, 2026",
                 "CVE-2026-103406",
                 "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router"
               ],
               [
-                "December 1, 2026",
-                "CVE-2026-115731",
-                "Perforce Puppet Enterprise"
+                "November 28, 2026",
+                "CVE-2026-133275",
+                "Mitel MiCollab"
               ],
               [
-                "December 2, 2026",
-                "CVE-2026-40217",
-                "BerriAI LiteLLM"
+                "November 28, 2026",
+                "CVE-2026-133303",
+                "Mitel MiCollab"
+              ],
+              [
+                "November 28, 2026",
+                "CVE-2026-133323",
+                "Mitel MiCollab"
+              ],
+              [
+                "November 28, 2026",
+                "CVE-2026-133324",
+                "Mitel MiCollab"
               ]
             ]
           },
@@ -985,8 +1104,23 @@
               ],
               [
                 "2026-11-25",
+                "CVE-2023-25914",
+                "Danfoss AK-SM 800A Series Path Traversal Vulnerability"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2023-25915",
+                "Danfoss AK-SM 800A Series Improper Input Validation Vulnerability"
+              ],
+              [
+                "2026-11-25",
                 "CVE-2025-34035",
                 "Engeniustech Esr600 Firmware: exploitation reported by ENISA EUVD"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2025-41450",
+                "Danfoss AK-SM 800A Series Improper Authentication Vulnerability"
               ],
               [
                 "2026-11-25",
@@ -997,6 +1131,36 @@
                 "2026-11-25",
                 "CVE-2026-103406",
                 "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2026-133275",
+                "Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2026-133303",
+                "Mitel MiCollab XML Injection Vulnerability"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2026-133311",
+                "Mitel MiCollab Weak Authentication Vulnerability"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2026-133323",
+                "Mitel MiCollab OS Command Injection Vulnerability"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2026-133324",
+                "Mitel MiCollab Not Failing Securely Vulnerability"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2026-133469",
+                "Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability"
               ],
               [
                 "2026-11-25",
@@ -1043,6 +1207,6 @@
       }
     ],
     "footer": "Enterprise Cyber Threat Intelligence | November 2026",
-    "generatedAt": "2026-11-25T21:30:05Z"
+    "generatedAt": "2026-11-25T21:51:49Z"
   }
 }
