@@ -1,0 +1,131 @@
+"""Indicators of compromise (IOCs) for the Threat Map.
+
+Two sources, both cited on every IOC:
+
+  CISA   Joint cybersecurity advisories (AAyy-nnnX) publish a STIX JSON file of IOCs.
+         We only use advisories that MITRE ATT&CK itself cites for a mapped campaign or
+         actor, so each IOC is tied to that campaign/actor by ATT&CK's own reference.
+  abuse.ch ThreatFox
+         Community IOC feed. Queried by the actor's name as a tag; needs a free
+         Auth-Key (env THREATFOX_AUTH_KEY). Skipped without a key. ThreatFox only
+         returns IOCs seen in the last six months.
+
+Network problems never raise: a source that fails returns nothing and the caller keeps
+the previous IOCs from that source. Values are stored as plain text and shown defanged.
+"""
+from __future__ import annotations
+
+import json
+import os
+import re
+import urllib.error
+import urllib.request
+from typing import Any
+
+from .common import USER_AGENT, fetch_json, fetch_text, safe_url
+
+ADVISORY_RE = re.compile(r"\b(aa\d{2}-\d{3}[a-z])\b", re.I)
+STIX_LINK_RE = re.compile(r'href="(/sites/default/files/[^"]+?\.json)"', re.I)
+PATTERNS = [  # (STIX pattern regex, our ioc type)
+    (re.compile(r"ipv4-addr:value\s*=\s*'([^']+)'"), "ipv4"),
+    (re.compile(r"ipv6-addr:value\s*=\s*'([^']+)'"), "ipv6"),
+    (re.compile(r"domain-name:value\s*=\s*'([^']+)'"), "domain"),
+    (re.compile(r"url:value\s*=\s*'([^']+)'"), "url"),
+    (re.compile(r"file:hashes\.'?SHA-256'?\s*=\s*'([0-9a-fA-F]{64})'"), "sha256"),
+    (re.compile(r"file:hashes\.'?MD5'?\s*=\s*'([0-9a-fA-F]{32})'"), "md5"),
+]
+PREFER = {"domain": 0, "ipv4": 1, "sha256": 2, "url": 3, "ipv6": 4, "md5": 5}
+VALUE_OK = re.compile(r"^[\w.:/\-?=&%@\[\]~+]{3,300}$")
+CISA_BASE = "https://www.cisa.gov/news-events/cybersecurity-advisories/"
+THREATFOX_API = "https://threatfox-api.abuse.ch/api/v1/"
+
+
+def advisory_codes(obj: dict) -> set[str]:
+    out = set()
+    for r in obj.get("external_references") or []:
+        u = str(r.get("url") or "")
+        if "cisa.gov" in u:
+            out |= {m.lower() for m in ADVISORY_RE.findall(u)}
+    return out
+
+
+def stix_iocs(doc: Any, limit: int) -> list[dict]:
+    found: list[dict] = []
+    for o in (doc or {}).get("objects") or []:
+        if o.get("type") != "indicator":
+            continue
+        pat = str(o.get("pattern") or "")
+        for rx, kind in PATTERNS:
+            for v in rx.findall(pat):
+                if VALUE_OK.match(v):
+                    found.append({"type": kind, "value": v, "seen": str(o.get("valid_from") or o.get("created") or "")[:10]})
+    found.sort(key=lambda i: (PREFER.get(i["type"], 9), i["value"]))
+    seen, out = set(), []
+    for i in found:
+        if i["value"] not in seen:
+            seen.add(i["value"])
+            out.append(i)
+    return out[:limit]
+
+
+def cisa_iocs(codes: set[str], per_advisory: int = 4, max_advisories: int = 15) -> tuple[dict[str, list[dict]], bool]:
+    """{advisory code: [ioc...]} and whether every fetch worked."""
+    out: dict[str, list[dict]] = {}
+    ok = True
+    for code in sorted(codes, reverse=True)[:max_advisories]:   # newest advisories first
+        page_url = CISA_BASE + code
+        try:
+            html = fetch_text(page_url, timeout=40, retries=2, limit_mb=8)
+            links = [l for l in STIX_LINK_RE.findall(html) if "stix" in l.lower()]
+            if not links:
+                continue
+            doc = fetch_json("https://www.cisa.gov" + links[0], timeout=40, retries=2)
+            iocs = stix_iocs(doc, per_advisory)
+            for i in iocs:
+                i.update({"source": "CISA advisory", "url": page_url, "ref": code.upper()})
+            if iocs:
+                out[code] = iocs
+        except Exception:   # noqa: BLE001 — one bad advisory must not stop the rest
+            ok = False
+    return out, ok
+
+
+def _threatfox(body: dict, key: str) -> Any:
+    req = urllib.request.Request(THREATFOX_API, data=json.dumps(body).encode(), method="POST",
+                                 headers={"User-Agent": USER_AGENT, "Auth-Key": key, "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=40) as r:
+        return json.loads(r.read(20 * 1024 * 1024))
+
+
+def threatfox_iocs(names: list[str], per_name: int = 4) -> tuple[dict[str, list[dict]], bool]:
+    """{actor name: [ioc...]} from ThreatFox tags; ({}, True) when no key is configured."""
+    key = (os.environ.get("THREATFOX_AUTH_KEY") or "").strip()
+    if not key or os.environ.get("TW_FIXTURES"):
+        return {}, True
+    out: dict[str, list[dict]] = {}
+    ok = True
+    kind = {"ip:port": "ipv4", "domain": "domain", "url": "url", "sha256_hash": "sha256", "md5_hash": "md5"}
+    for name in names:
+        try:
+            doc = _threatfox({"query": "taginfo", "tag": name, "limit": 20}, key)
+        except (urllib.error.URLError, TimeoutError, ValueError):
+            ok = False
+            continue
+        if doc.get("query_status") != "ok":
+            continue
+        rows = []
+        for d in doc.get("data") or []:
+            v = str(d.get("ioc") or "")
+            t = kind.get(d.get("ioc_type"))
+            if not t or not VALUE_OK.match(v):
+                continue
+            conf = int(d.get("confidence_level") or 0)
+            rows.append({"type": t, "value": v, "seen": str(d.get("first_seen") or "")[:10],
+                         "malware": d.get("malware_printable"), "confidenceLevel": conf,
+                         "source": "abuse.ch ThreatFox", "ref": f"ThreatFox #{d.get('id')}",
+                         "url": safe_url(f"https://threatfox.abuse.ch/ioc/{d.get('id')}/"),
+                         "report": safe_url(d.get("reference"))})
+        rows.sort(key=lambda r: (-r["confidenceLevel"], r["seen"]), reverse=False)
+        if rows:
+            out[name] = rows[:per_name]
+    return out, ok

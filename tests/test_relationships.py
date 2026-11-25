@@ -52,3 +52,48 @@ class GraphTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class IocAndIndustryTests(unittest.TestCase):
+    def test_stix_parsing_and_defang(self):
+        import sys as _s
+        from pathlib import Path as _P
+        _s.path.insert(0, str(_P(__file__).resolve().parents[1] / "scripts"))
+        from tw.iocs import stix_iocs, advisory_codes
+        from tw.relationships import defang, sectors
+        doc = {"objects": [
+            {"type": "indicator", "pattern": "[domain-name:value = 'evil.example']", "valid_from": "2024-02-01T00:00:00Z"},
+            {"type": "indicator", "pattern": "[ipv4-addr:value = '198.51.100.7']"},
+            {"type": "indicator", "pattern": "[file:hashes.'SHA-256' = '" + "a" * 64 + "']"},
+            {"type": "indicator", "pattern": "[domain-name:value = '<script>']"},
+            {"type": "malware", "pattern": "[domain-name:value = 'skip.example']"}]}
+        got = stix_iocs(doc, 10)
+        self.assertEqual([g["type"] for g in got], ["domain", "ipv4", "sha256"])
+        self.assertEqual(got[0]["seen"], "2024-02-01")
+        self.assertEqual(defang("url", "http://evil.example/x"), "hxxp://evil[.]example/x")
+        self.assertEqual(advisory_codes({"external_references": [
+            {"url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-320a"}]}), {"aa23-320a"})
+        self.assertEqual(sectors("it was used"), [])
+        self.assertIn("Technology & IT", sectors("targeted IT providers"))
+        self.assertIn("Government", sectors("against government ministries (Citation: X)"))
+
+    def test_add_iocs_validates(self):
+        import sys as _s
+        from pathlib import Path as _P
+        _s.path.insert(0, str(_P(__file__).resolve().parents[1] / "scripts"))
+        from tw.relationships import add_iocs
+        from tw.validate import validate_relationships
+        g = {"schemaVersion": 1, "dataset": {"status": "verified"},
+             "nodes": [{"id": "a-G1", "type": "actor", "label": "APTX"}, {"id": "k-C1", "type": "campaign", "label": "C1"}],
+             "edges": []}
+        n = add_iocs(g, {"k-C1": {"aa24-001a"}},
+                     {"aa24-001a": [{"type": "domain", "value": "bad.example", "seen": "2024-01-01", "source": "CISA advisory",
+                                     "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-001a", "ref": "AA24-001A"}]},
+                     {"APTX": [{"type": "ipv4", "value": "192.0.2.1", "seen": "2026-10-01", "confidenceLevel": 90,
+                                "source": "abuse.ch ThreatFox", "ref": "ThreatFox #9", "url": "https://threatfox.abuse.ch/ioc/9/"}]},
+                     "2026-11-25T00:00:00Z")
+        self.assertEqual(n, 2)
+        self.assertEqual(validate_relationships(g), [])
+        labels = sorted(x["label"] for x in g["nodes"] if x["type"] == "ioc")
+        self.assertEqual(labels, ["192[.]0[.]2[.]1", "bad[.]example"])
+        self.assertTrue(all(e["relation"] == "indicator" and e["evidence"]["url"].startswith("https://") for e in g["edges"]))

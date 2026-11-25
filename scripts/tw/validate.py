@@ -88,14 +88,18 @@ def validate_relationships(g: Any) -> list[str]:
     if status not in ("demo", "verified"):
         errs.append("dataset.status must be 'demo' or 'verified'")
     nodes = {n.get("id"): n for n in g.get("nodes", [])}
-    kinds = {"actor", "campaign", "cve", "industry", "geography", "technique"}
-    allowed = {("actor", "campaign"), ("campaign", "cve"), ("campaign", "industry"),
-               ("campaign", "geography"), ("actor", "technique"), ("campaign", "technique")}
+    kinds = {"actor", "campaign", "cve", "industry", "geography", "technique", "ioc"}
+    allowed = {("actor", "campaign"), ("campaign", "cve"), ("campaign", "industry"), ("actor", "industry"),
+               ("campaign", "geography"), ("actor", "technique"), ("campaign", "technique"),
+               ("campaign", "ioc"), ("actor", "ioc")}
     for nid, n in nodes.items():
         if n.get("type") not in kinds:
             errs.append(f"node {nid}: bad type")
         if n.get("type") == "cve" and status == "verified" and not is_cve(n.get("label")):
             errs.append(f"node {nid}: CVE label invalid")
+        if n.get("type") == "ioc" and (n.get("iocType") not in ("ipv4", "ipv6", "domain", "url", "sha256", "md5")
+                                       or "<" in str(n.get("label")) or not n.get("source")):
+            errs.append(f"node {nid}: IOC needs a known type, a source and a plain label")
     for e in g.get("edges", []):
         s, t = nodes.get(e.get("source")), nodes.get(e.get("target"))
         if not s or not t:
@@ -105,7 +109,7 @@ def validate_relationships(g: Any) -> list[str]:
             errs.append(f"edge {e.get('id')}: {s['type']}→{t['type']} not allowed (use campaign evidence)")
         if e.get("confidence") not in CONFIDENCE:
             errs.append(f"edge {e.get('id')}: confidence required")
-        if e.get("relation") not in ("observed_targeting", "possible_exposure", "uses", "exploits", "attributed"):
+        if e.get("relation") not in ("observed_targeting", "possible_exposure", "uses", "exploits", "attributed", "indicator"):
             errs.append(f"edge {e.get('id')}: relation required")
         if status == "verified":
             ev = e.get("evidence") or {}

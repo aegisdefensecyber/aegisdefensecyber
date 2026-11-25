@@ -4,7 +4,11 @@
 .filters input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--corp); }
 .map-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 36px; }
 .graph-wrap { margin: 0; background: var(--content); border: 1px solid var(--border); border-radius: 6px; padding: 10px; overflow-x: auto; }
-#graph { display: block; width: 100%; min-width: 620px; height: auto; }
+#graph { display: block; max-width: none; }
+.graph-hint { font-size: 13px; color: var(--muted); margin: 2px 4px 8px; }
+.band { fill: transparent; }
+.band.alt { fill: rgba(255,255,255,.025); }
+.row-h { fill: var(--muted); font: 600 10px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
 @media (max-width: 640px) { .graph-wrap { display: none; } }
 .node { cursor: pointer; }
 .node rect { fill: var(--panel); stroke: var(--border); stroke-width: 1; }

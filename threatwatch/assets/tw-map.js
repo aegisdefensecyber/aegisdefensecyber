@@ -2,12 +2,13 @@
 (function () {
   "use strict";
   var SVGNS = "http://www.w3.org/2000/svg";
-  var COLS = { technique: 0, actor: 1, campaign: 2, cve: 3, industry: 4, geography: 4 };
-  var COL_LABEL = ["ATT&CK technique", "Threat actor", "Campaign", "CVE", "Industry / geography"];
+  // Horizontal bands, top to bottom; each band stretches across the page (scrolls sideways).
+  var ROWS = { technique: 0, actor: 1, campaign: 2, cve: 3, ioc: 4, industry: 5, geography: 5 };
+  var ROW_LABEL = ["ATT&CK technique", "Threat actor", "Campaign", "CVE", "IOC", "Industry / category"];
   var CONF = { low: 1, moderate: 2, high: 3 };
-  var REL = { attributed: "conducts (attributed)", exploits: "exploits", observed_targeting: "observed targeting",
-              possible_exposure: "possible exposure", uses: "uses technique" };
-  var NW = 156, NH = 40, CX = 182, GAP = 54, TOP = 44;
+  var REL = { attributed: "conducts (attributed)", exploits: "exploits", observed_targeting: "targets",
+              possible_exposure: "possible exposure", uses: "uses technique", indicator: "indicator" };
+  var NW = 150, NH = 40, SX = 162, RH = 118, LW = 132, TOP = 14;
 
   var G, byId = {}, selected = null;
   var $ = function (id) { return document.getElementById(id); };
@@ -79,17 +80,45 @@
   function render() {
     var view = compute(), svg = $("graph");
     while (svg.firstChild) svg.removeChild(svg.firstChild);
-    var cols = [[], [], [], [], []];
-    G.nodes.forEach(function (n) { if (view.nodes[n.id]) cols[COLS[n.type]].push(n); });
-    var pos = {}, maxRows = 1;
-    cols.forEach(function (list, ci) {
-      list.sort(function (a, b) { return a.type === b.type ? a.label.localeCompare(b.label) : a.type < b.type ? 1 : -1; });
-      maxRows = Math.max(maxRows, list.length);
-      list.forEach(function (n, ri) { pos[n.id] = { x: 8 + ci * CX, y: TOP + ri * GAP }; });
+    var rows = [[], [], [], [], [], []];
+    G.nodes.forEach(function (n) { if (view.nodes[n.id] && ROWS[n.type] != null) rows[ROWS[n.type]].push(n); });
+    // order each band to keep links short: campaigns alphabetically, then every other band by the
+    // average position of the nodes it links to (barycentre), which reduces crossing lines.
+    var adj = {};
+    view.edges.forEach(function (e) { (adj[e.source] = adj[e.source] || []).push(e.target); (adj[e.target] = adj[e.target] || []).push(e.source); });
+    var rank = {};
+    function place(ri, byLabel) {
+      var list = rows[ri];
+      list.forEach(function (n) {
+        var ks = (adj[n.id] || []).filter(function (o) { return rank[o] != null; }).map(function (o) { return rank[o]; });
+        n._b = byLabel || !ks.length ? null : ks.reduce(function (a, b) { return a + b; }, 0) / ks.length;
+      });
+      list.sort(function (a, b) {
+        if (a._b != null && b._b != null && a._b !== b._b) return a._b - b._b;
+        if ((a._b == null) !== (b._b == null)) return a._b == null ? 1 : -1;
+        return a.label.localeCompare(b.label);
+      });
+      list.forEach(function (n, i) { rank[n.id] = (i + 0.5) / list.length; });
+    }
+    place(2, true); place(1); place(3); place(0); place(4); place(5);
+    var maxLen = Math.max.apply(null, rows.map(function (r) { return r.length; }).concat([1]));
+    var W = LW + maxLen * SX + 8, H = TOP + rows.length * RH - (RH - NH) + 12;
+    var pos = {};
+    var span = maxLen * SX;
+    rows.forEach(function (list, ri) {
+      var step = span / Math.max(list.length, 1);      // every band spans the full width
+      list.forEach(function (n, i) { pos[n.id] = { x: LW + (i + 0.5) * step - SX / 2, y: TOP + ri * RH }; });
     });
-    var W = 8 + 4 * CX + NW + 8, H = TOP + maxRows * GAP + 4;
     svg.setAttribute("viewBox", "0 0 " + W + " " + H);
-    COL_LABEL.forEach(function (l, i) { var t = sv("text", { x: 8 + i * CX, y: 22, "class": "col-h" }); t.textContent = l; svg.appendChild(t); });
+    svg.setAttribute("width", W);
+    svg.setAttribute("height", H);
+    ROW_LABEL.forEach(function (l, i) {
+      var y = TOP + i * RH;
+      svg.appendChild(sv("rect", { x: 0, y: y - 6, width: W, height: NH + 12, "class": "band" + (i % 2 ? " alt" : "") }));
+      var words = l.split(" / "), t = sv("text", { x: 10, y: y + (words.length > 1 ? 16 : 24), "class": "row-h" });
+      words.forEach(function (w, wi) { var ts = sv("tspan", { x: 10, dy: wi ? 13 : 0 }); ts.textContent = w + (wi < words.length - 1 ? " /" : ""); t.appendChild(ts); });
+      svg.appendChild(t);
+    });
 
     if (!view.edges.length) {
       var t = sv("text", { x: 8, y: TOP + 20, fill: "#B1C3D3", "font-size": "14" });
@@ -100,18 +129,19 @@
     var eg = sv("g", {});
     view.edges.forEach(function (e) {
       var a = pos[e.source], b = pos[e.target];
-      var left = a.x <= b.x ? a : b, right = a.x <= b.x ? b : a;
-      var x1 = left.x + NW, y1 = left.y + NH / 2, x2 = right.x, y2 = right.y + NH / 2, mx = (x1 + x2) / 2;
+      if (!a || !b) return;
+      var top = a.y <= b.y ? a : b, bot = a.y <= b.y ? b : a;
+      var x1 = top.x + NW / 2, y1 = top.y + NH, x2 = bot.x + NW / 2, y2 = bot.y, my = (y1 + y2) / 2;
       var cls = "edge" + (e.relation === "possible_exposure" ? " exposure" : "");
       if (linked) cls += linked.edges[e.id] ? " hi" : " dim";
-      var p = sv("path", { d: "M" + x1 + "," + y1 + " C" + mx + "," + y1 + " " + mx + "," + y2 + " " + x2 + "," + y2,
+      var p = sv("path", { d: "M" + x1 + "," + y1 + " C" + x1 + "," + my + " " + x2 + "," + my + " " + x2 + "," + y2,
                            "class": cls, "stroke-width": { low: 1, moderate: 2, high: 3.5 }[e.confidence] });
       var tt = sv("title", {}); tt.textContent = byId[e.source].label + " — " + REL[e.relation] + " — " + byId[e.target].label + " (" + e.confidence + " confidence)";
       p.appendChild(tt);
       eg.appendChild(p);
     });
     svg.appendChild(eg);
-    cols.forEach(function (list) {
+    rows.forEach(function (list) {
       list.forEach(function (n) {
         var p = pos[n.id];
         var cls = "node" + (selected === n.id ? " sel" : "") + (linked && !linked.nodes[n.id] ? " dim" : "");
@@ -119,8 +149,8 @@
                           "aria-pressed": selected === n.id ? "true" : "false",
                           "aria-label": n.type + ": " + n.label + ". Press Enter for details." });
         g.appendChild(sv("rect", { width: NW, height: NH, rx: 5 }));
-        var k = sv("text", { x: 9, y: 14, "class": "k" }); k.textContent = n.type === "geography" ? "geography" : n.type; g.appendChild(k);
-        var lab = sv("text", { x: 9, y: 30 }); lab.textContent = trunc(n.label, 22); g.appendChild(lab);
+        var k = sv("text", { x: 9, y: 14, "class": "k" }); k.textContent = n.type === "ioc" ? "IOC · " + (n.iocType || "") : n.type; g.appendChild(k);
+        var lab = sv("text", { x: 9, y: 30 }); lab.textContent = trunc(n.label, 21); g.appendChild(lab);
         var tt = sv("title", {}); tt.textContent = n.label; g.appendChild(tt);
         g.addEventListener("click", function () { select(n.id); });
         g.addEventListener("keydown", function (ev) { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); select(n.id, true); } });
@@ -157,7 +187,7 @@
   function renderDetails(id, edges) {
     var n = byId[id], d = $("details"); d.textContent = "";
     d.appendChild(el("h2", { id: "details-title", text: n.label }));
-    d.appendChild(el("p", { cls: "muted", text: n.type.charAt(0).toUpperCase() + n.type.slice(1) }));
+    d.appendChild(el("p", { cls: "muted", text: n.type === "ioc" ? "Indicator of compromise" : n.type.charAt(0).toUpperCase() + n.type.slice(1) }));
     var facts = [];
     if (n.type === "actor") {
       facts.push("Aliases: " + ((n.aliases || []).join(", ") || "None recorded"));
@@ -170,6 +200,13 @@
       facts.push("EPSS: " + (n.epss != null ? n.epss : "Unknown") + " · CVSS: " + (n.cvss != null ? n.cvss : "Unknown"));
     } else if (n.type === "campaign") {
       facts.push("Timeframe: " + (n.timeframe || "Unknown"));
+    } else if (n.type === "ioc") {
+      facts.push("Type: " + ({ ipv4: "IPv4 address", ipv6: "IPv6 address", domain: "Domain", url: "URL", sha256: "SHA-256 file hash", md5: "MD5 file hash" }[n.iocType] || n.iocType));
+      facts.push("Value (defanged, do not visit): " + n.label);
+      facts.push("Source: " + n.source + (n.ref ? " · " + n.ref : ""));
+      facts.push("First seen: " + (n.firstSeen || "Unknown") + (n.malware ? " · malware: " + n.malware : ""));
+    } else if (n.type === "industry") {
+      facts.push("Category taken from MITRE ATT&CK's descriptions of the linked campaigns and actors.");
     } else if (n.type === "geography") {
       facts.push("Scope: " + (n.scope || "victim geography") + " — not actor origin.");
     }

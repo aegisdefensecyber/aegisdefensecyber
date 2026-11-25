@@ -250,3 +250,10 @@ existed are reconstructed from catalog data (marked "reconstructed") the next ti
   repository, so both workflows now wake every 15 minutes and a gate job
   (`scripts/slot_gate.py`, sparse checkout, seconds) checks whether a slot is due; the full
   test and publish jobs run only then. A missed fire is caught 15 minutes later.
+
+- **Threat Map (since 25 Nov 2026)** is laid out in six horizontal bands: ATT&CK technique →
+  threat actor → campaign → CVE → IOC → industry / category. Industries come from the wording of
+  ATT&CK campaign descriptions (actor profile as a low-confidence fallback). IOCs come from CISA
+  advisory STIX files that ATT&CK cites for the campaign or actor, and from abuse.ch ThreatFox by
+  actor tag (needs the `THREATFOX_AUTH_KEY` secret; skipped without it). IOCs are shown defanged
+  and never as links. A failing IOC source keeps its previous IOCs.

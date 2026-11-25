@@ -299,6 +299,27 @@ def build(now, warnings: list[str]) -> dict:
                                "cvss": (r.get("cvss") or {}).get("score") if isinstance(r.get("cvss"), dict) else r.get("cvss")}
                     for r in records.values()}
             graph = build_graph(bundle, info, attack_bundle.get("version"), iso(now))
+            # IOCs (CISA advisories cited by ATT&CK + abuse.ch ThreatFox); a failing source keeps its last IOCs
+            try:
+                from tw.relationships import add_iocs, ioc_queries
+                from tw.iocs import cisa_iocs, threatfox_iocs
+                codes, names = ioc_queries(graph, bundle)
+                cisa, cisa_ok = cisa_iocs(set().union(*codes.values()) if codes else set())
+                tfx, tf_ok = threatfox_iocs(names)
+                n_ioc = add_iocs(graph, codes, cisa, tfx, iso(now))
+                old = read_json(DATA_DIR / "relationships.json", {}) or {}
+                keep = {"CISA advisory": not cisa_ok, "abuse.ch ThreatFox": not tf_ok}
+                ids = {n["id"] for n in graph["nodes"]}
+                old_ioc = {n["id"]: n for n in old.get("nodes", []) if n.get("type") == "ioc" and keep.get(n.get("source"))}
+                for e in old.get("edges", []):
+                    if e.get("target") in old_ioc and e.get("source") in ids:
+                        if e["target"] not in ids:
+                            graph["nodes"].append(old_ioc[e["target"]]); ids.add(e["target"])
+                        graph["edges"].append({**e, "id": f"e{len(graph['edges']) + 1}"})
+                print(f"Threat Map IOCs: {n_ioc} new from {len(cisa)} CISA advisories and {len(tfx)} ThreatFox tags"
+                      + ("" if cisa_ok and tf_ok else " (a source failed; kept its previous IOCs)"))
+            except Exception as exc:  # IOCs are optional
+                warnings.append(f"Threat Map IOCs skipped: {exc}")
             gerrs = validate_relationships(graph)
             if gerrs or not graph["edges"]:
                 warnings.append("Threat Map not rebuilt: " + "; ".join(gerrs[:3] or ["no ATT&CK campaign links"]))
