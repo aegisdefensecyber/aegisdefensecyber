@@ -1,14 +1,19 @@
 .filters { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; align-items: end; margin: 18px 0; padding: 16px; background: var(--content); border: 1px solid var(--border); border-radius: 6px; }
-.filters label { display: grid; gap: 4px; font-size: 13px; color: var(--muted); }
+.filters input, .filters select { width: 100%; min-width: 0; box-sizing: border-box; }
+.filters label { display: grid; min-width: 0; gap: 4px; font-size: 13px; color: var(--muted); }
 .filters label.chk { display: flex; gap: 8px; align-items: center; min-height: 44px; }
 .filters input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--corp); }
 .map-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 36px; }
 .graph-wrap { margin: 0; background: var(--content); border: 1px solid var(--border); border-radius: 6px; padding: 10px; overflow-x: auto; }
+main.full { max-width: none; padding-left: 24px; padding-right: 24px; }
+@media (min-width: 1100px) {
+  .filters { grid-template-columns: 1.5fr repeat(5, minmax(0, 1fr)) minmax(0, 1.2fr) minmax(0, .8fr); }
+  .filters label.chk { font-size: 13px; }
+}
 #graph { display: block; max-width: none; }
 .graph-hint { font-size: 13px; color: var(--muted); margin: 2px 4px 8px; }
-.band { fill: transparent; }
-.band.alt { fill: rgba(255,255,255,.025); }
-.row-h { fill: var(--muted); font: 600 10px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.col-bg { fill: #2e5f80; fill-opacity: .28; stroke: #2e5f80; stroke-opacity: .7; }
+.col-head { fill: #2e5f80; }
 @media (max-width: 640px) { .graph-wrap { display: none; } }
 .node { cursor: pointer; }
 .node rect { fill: var(--panel); stroke: var(--border); stroke-width: 1; }
@@ -23,7 +28,7 @@
 .edge.exposure { stroke-dasharray: 5 4; stroke: #8a9bb0; }
 .edge.dim { opacity: .1; }
 .edge.hi { stroke: var(--accent); }
-.col-h { fill: var(--muted); font: 500 10px var(--mono); letter-spacing: .14em; text-transform: uppercase; }
+.col-h { fill: #fff; font: 700 12px var(--font); letter-spacing: .06em; }
 .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--muted); padding: 8px 4px 2px; }
 .lg { display: inline-block; width: 26px; height: 0; border-top: 2px solid #5d86ad; vertical-align: middle; margin-right: 4px; }
 .lg.dashed { border-top-style: dashed; border-color: #8a9bb0; }

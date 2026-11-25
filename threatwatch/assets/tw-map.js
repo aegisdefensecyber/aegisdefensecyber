@@ -2,13 +2,13 @@
 (function () {
   "use strict";
   var SVGNS = "http://www.w3.org/2000/svg";
-  // Horizontal bands, top to bottom; each band stretches across the page (scrolls sideways).
+  // Six side-by-side columns, left to right, spanning the full page width.
   var ROWS = { technique: 0, actor: 1, campaign: 2, cve: 3, ioc: 4, industry: 5, geography: 5 };
-  var ROW_LABEL = ["ATT&CK technique", "Threat actor", "Campaign", "CVE", "IOC", "Industry / category"];
+  var ROW_LABEL = ["ATT&CK technique", "Threat actors", "Campaign", "CVE", "Indicator of compromise", "Industry / category"];
   var CONF = { low: 1, moderate: 2, high: 3 };
   var REL = { attributed: "conducts (attributed)", exploits: "exploits", observed_targeting: "targets",
               possible_exposure: "possible exposure", uses: "uses technique", indicator: "indicator" };
-  var NW = 150, NH = 40, SX = 162, RH = 118, LW = 132, TOP = 14;
+  var NH = 40, SY = 52, HEAD = 44, GAP = 12, PAD = 10;
 
   var G, byId = {}, selected = null;
   var $ = function (id) { return document.getElementById(id); };
@@ -102,26 +102,29 @@
     }
     place(2, true); place(1); place(3); place(0); place(4); place(5);
     var maxLen = Math.max.apply(null, rows.map(function (r) { return r.length; }).concat([1]));
-    var W = LW + maxLen * SX + 8, H = TOP + rows.length * RH - (RH - NH) + 12;
+    var wrap = svg.parentNode, W = Math.max(wrap.clientWidth - 20, 900);
+    var CW = (W - GAP * (rows.length - 1)) / rows.length, NW = CW - 2 * PAD;
+    var H = HEAD + maxLen * SY + 16;
     var pos = {};
-    var span = maxLen * SX;
-    rows.forEach(function (list, ri) {
-      var step = span / Math.max(list.length, 1);      // every band spans the full width
-      list.forEach(function (n, i) { pos[n.id] = { x: LW + (i + 0.5) * step - SX / 2, y: TOP + ri * RH }; });
+    rows.forEach(function (list, ci) {
+      var step = (maxLen * SY) / Math.max(list.length, 1);   // every column spans the full height
+      var x = ci * (CW + GAP) + PAD;
+      list.forEach(function (n, i) { pos[n.id] = { x: x, y: HEAD + (i + 0.5) * step - NH / 2 + 6 }; });
     });
     svg.setAttribute("viewBox", "0 0 " + W + " " + H);
     svg.setAttribute("width", W);
     svg.setAttribute("height", H);
     ROW_LABEL.forEach(function (l, i) {
-      var y = TOP + i * RH;
-      svg.appendChild(sv("rect", { x: 0, y: y - 6, width: W, height: NH + 12, "class": "band" + (i % 2 ? " alt" : "") }));
-      var words = l.split(" / "), t = sv("text", { x: 10, y: y + (words.length > 1 ? 16 : 24), "class": "row-h" });
-      words.forEach(function (w, wi) { var ts = sv("tspan", { x: 10, dy: wi ? 13 : 0 }); ts.textContent = w + (wi < words.length - 1 ? " /" : ""); t.appendChild(ts); });
-      svg.appendChild(t);
+      var x = i * (CW + GAP);
+      svg.appendChild(sv("rect", { x: x, y: 0, width: CW, height: H, rx: 4, "class": "col-bg" }));
+      svg.appendChild(sv("rect", { x: x, y: 0, width: CW, height: 34, rx: 4, "class": "col-head" }));
+      var t = sv("text", { x: x + CW / 2, y: 22, "text-anchor": "middle", "class": "col-h" });
+      t.textContent = l.toUpperCase(); svg.appendChild(t);
     });
+    var maxChars = Math.max(8, Math.floor((NW - 18) / 7));
 
     if (!view.edges.length) {
-      var t = sv("text", { x: 8, y: TOP + 20, fill: "#B1C3D3", "font-size": "14" });
+      var t = sv("text", { x: 8, y: HEAD + 30, fill: "#B1C3D3", "font-size": "14" });
       t.textContent = "No verified relationships match these filters.";
       svg.appendChild(t);
     }
@@ -130,11 +133,11 @@
     view.edges.forEach(function (e) {
       var a = pos[e.source], b = pos[e.target];
       if (!a || !b) return;
-      var top = a.y <= b.y ? a : b, bot = a.y <= b.y ? b : a;
-      var x1 = top.x + NW / 2, y1 = top.y + NH, x2 = bot.x + NW / 2, y2 = bot.y, my = (y1 + y2) / 2;
+      var l = a.x <= b.x ? a : b, r = a.x <= b.x ? b : a;
+      var x1 = l.x + NW, y1 = l.y + NH / 2, x2 = r.x, y2 = r.y + NH / 2, mx = (x1 + x2) / 2;
       var cls = "edge" + (e.relation === "possible_exposure" ? " exposure" : "");
       if (linked) cls += linked.edges[e.id] ? " hi" : " dim";
-      var p = sv("path", { d: "M" + x1 + "," + y1 + " C" + x1 + "," + my + " " + x2 + "," + my + " " + x2 + "," + y2,
+      var p = sv("path", { d: "M" + x1 + "," + y1 + " C" + mx + "," + y1 + " " + mx + "," + y2 + " " + x2 + "," + y2,
                            "class": cls, "stroke-width": { low: 1, moderate: 2, high: 3.5 }[e.confidence] });
       var tt = sv("title", {}); tt.textContent = byId[e.source].label + " — " + REL[e.relation] + " — " + byId[e.target].label + " (" + e.confidence + " confidence)";
       p.appendChild(tt);
@@ -150,7 +153,7 @@
                           "aria-label": n.type + ": " + n.label + ". Press Enter for details." });
         g.appendChild(sv("rect", { width: NW, height: NH, rx: 5 }));
         var k = sv("text", { x: 9, y: 14, "class": "k" }); k.textContent = n.type === "ioc" ? "IOC · " + (n.iocType || "") : n.type; g.appendChild(k);
-        var lab = sv("text", { x: 9, y: 30 }); lab.textContent = trunc(n.label, 21); g.appendChild(lab);
+        var lab = sv("text", { x: 9, y: 30 }); lab.textContent = trunc(n.label, maxChars); g.appendChild(lab);
         var tt = sv("title", {}); tt.textContent = n.label; g.appendChild(tt);
         g.addEventListener("click", function () { select(n.id); });
         g.addEventListener("keydown", function (ev) { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); select(n.id, true); } });
@@ -291,6 +294,7 @@
     $("f-reset").addEventListener("click", function () { $("filters").reset(); selected = null; clearDetails(); render(); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && selected) { selected = null; clearDetails(); render(); } });
     render();
+    var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(render, 150); });
   }).catch(function () {
     $("dataset-banner").appendChild(el("p", { cls: "notice", text: "Relationship data could not be loaded." }));
   });

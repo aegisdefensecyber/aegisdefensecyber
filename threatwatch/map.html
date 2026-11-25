@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/tw.css?v=20261122c">
 <script src="assets/tw-subscribe.js?v=20261124a" defer></script>
-<link rel="stylesheet" href="assets/tw-map.css?v=20261125b">
-<script src="assets/tw-map.js?v=20261125b" defer></script>
+<link rel="stylesheet" href="assets/tw-map.css?v=20261125c">
+<script src="assets/tw-map.js?v=20261125c" defer></script>
 </head>
 <body class="wide">
 <a class="skip" href="#main">Skip to the explorer</a>
@@ -39,7 +39,7 @@
   </div>
 </header>
 
-<main id="main" class="wide">
+<main id="main" class="wide full">
   <div class="eyebrow" id="last-updated" data-src="data/relationships.json" data-field="dataset.updatedAt">Last updated …</div>
   <h1>Techniques, threat actors, campaigns, CVEs, IOCs &amp; industries</h1>
   <p class="meta">Built from <a href="https://attack.mitre.org/campaigns/">MITRE ATT&amp;CK</a>: exploitation techniques → threat groups → the campaigns ATT&amp;CK attributes to them → the CVEs they exploited → indicators of compromise from <a href="https://www.cisa.gov/news-events/cybersecurity-advisories">CISA advisories</a> and <a href="https://threatfox.abuse.ch/">abuse.ch ThreatFox</a> → the industries ATT&amp;CK describes them targeting. Every link cites its source. Select a node to see the evidence; IOCs are shown defanged.</p>
@@ -59,7 +59,7 @@
   <div class="map-grid">
     <figure class="graph-wrap" aria-labelledby="graph-cap">
       <figcaption id="graph-cap" class="sr-only">Relationship graph. Use Tab to move between nodes and Enter to pin details. A table listing the same relationships follows for screen readers.</figcaption>
-      <p class="graph-hint">Scroll sideways to see the whole map. Bands run top to bottom: technique, actor, campaign, CVE, IOC, industry.</p>
+      <p class="graph-hint">Columns run left to right: technique, threat actor, campaign, CVE, indicator of compromise, industry. Select any box to highlight its links.</p>
       <svg id="graph" role="group" aria-label="Threat relationship graph"></svg>
       <div class="legend" aria-label="Legend">
         <span><i class="lg solid"></i> Observed / attributed</span>
