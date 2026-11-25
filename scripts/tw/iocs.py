@@ -25,7 +25,8 @@ from typing import Any
 from .common import USER_AGENT, fetch_json, fetch_text, safe_url
 
 ADVISORY_RE = re.compile(r"\b(aa\d{2}-\d{3}[a-z])\b", re.I)
-STIX_LINK_RE = re.compile(r'href="(/sites/default/files/[^"]+?\.json)"', re.I)
+STIX_LINK_RE = re.compile(r'href="(?:https://www\.cisa\.gov)?(/sites/default/files/[^"?#]+?\.json)(?:[?#][^"]*)?"', re.I)
+DIAG: list[str] = []   # per-source notes printed by the catalog build
 PATTERNS = [  # (STIX pattern regex, our ioc type)
     (re.compile(r"ipv4-addr:value\s*=\s*'([^']+)'"), "ipv4"),
     (re.compile(r"ipv6-addr:value\s*=\s*'([^']+)'"), "ipv6"),
@@ -78,14 +79,17 @@ def cisa_iocs(codes: set[str], per_advisory: int = 4, max_advisories: int = 15) 
             html = fetch_text(page_url, timeout=40, retries=2, limit_mb=8)
             links = [l for l in STIX_LINK_RE.findall(html) if "stix" in l.lower()]
             if not links:
+                DIAG.append(f"CISA {code}: page fetched ({len(html)} bytes) but no STIX JSON link found")
                 continue
             doc = fetch_json("https://www.cisa.gov" + links[0], timeout=40, retries=2)
             iocs = stix_iocs(doc, per_advisory)
             for i in iocs:
                 i.update({"source": "CISA advisory", "url": page_url, "ref": code.upper()})
+            DIAG.append(f"CISA {code}: {len(iocs)} IOCs from {links[0]}")
             if iocs:
                 out[code] = iocs
-        except Exception:   # noqa: BLE001 — one bad advisory must not stop the rest
+        except Exception as exc:   # noqa: BLE001 — one bad advisory must not stop the rest
+            DIAG.append(f"CISA {code}: failed ({str(exc)[:160]})")
             ok = False
     return out, ok
 
@@ -101,6 +105,8 @@ def threatfox_iocs(names: list[str], per_name: int = 4) -> tuple[dict[str, list[
     """{actor name: [ioc...]} from ThreatFox tags; ({}, True) when no key is configured."""
     key = (os.environ.get("THREATFOX_AUTH_KEY") or "").strip()
     if not key or os.environ.get("TW_FIXTURES"):
+        if not key:
+            DIAG.append("ThreatFox: THREATFOX_AUTH_KEY not set, skipped")
         return {}, True
     out: dict[str, list[dict]] = {}
     ok = True
@@ -108,9 +114,11 @@ def threatfox_iocs(names: list[str], per_name: int = 4) -> tuple[dict[str, list[
     for name in names:
         try:
             doc = _threatfox({"query": "taginfo", "tag": name, "limit": 20}, key)
-        except (urllib.error.URLError, TimeoutError, ValueError):
+        except (urllib.error.URLError, TimeoutError, ValueError) as exc:
+            DIAG.append(f"ThreatFox {name}: failed ({str(exc)[:160]})")
             ok = False
             continue
+        DIAG.append(f"ThreatFox {name}: {doc.get('query_status')}, {len(doc.get('data') or []) if isinstance(doc.get('data'), list) else 0} rows")
         if doc.get("query_status") != "ok":
             continue
         rows = []
