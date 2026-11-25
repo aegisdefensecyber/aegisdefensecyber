@@ -40,7 +40,7 @@
 </header>
 
 <main id="main" class="wide">
-  <div class="eyebrow">Relationship Explorer</div>
+  <div class="eyebrow" id="last-updated" data-src="data/relationships.json" data-field="dataset.updatedAt">Last updated …</div>
   <h1>Threat actors, campaigns, CVEs &amp; techniques</h1>
   <p class="meta">Built from <a href="https://attack.mitre.org/campaigns/">MITRE ATT&amp;CK</a>: threat groups → the campaigns ATT&amp;CK attributes to them → the CVEs those campaigns exploited and the exploitation techniques they used. Every link cites its ATT&amp;CK record, and the map refreshes with each ATT&amp;CK release. Select a node to see the evidence.</p>
   <div id="dataset-banner" role="status"></div>
@@ -113,5 +113,6 @@
     </ul></nav>
   </div>
 </footer>
+<script src="assets/tw-updated.js?v=20261125a"></script>
 </body>
 </html>
