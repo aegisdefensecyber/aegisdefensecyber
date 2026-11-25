@@ -245,3 +245,8 @@ existed are reconstructed from catalog data (marked "reconstructed") the next ti
   Resend manually: Actions → Publish ThreatWatch → Run workflow → tick "send_email".
 - **Signup** posts the email address to a Zoho Campaigns signup form (double opt-in) configured
   in `threatwatch/subscription-config.json`; this site never stores addresses.
+
+- **Reliable scheduling (since 25 Nov 2026).** GitHub's cron dropped most fires on this
+  repository, so both workflows now wake every 15 minutes and a gate job
+  (`scripts/slot_gate.py`, sparse checkout, seconds) checks whether a slot is due; the full
+  test and publish jobs run only then. A missed fire is caught 15 minutes later.

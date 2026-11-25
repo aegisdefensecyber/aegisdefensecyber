@@ -1,10 +1,12 @@
 name: Global Intelligence
 
-# Builds global-intelligence/data/ from approved editorial records, four times a day
-# (07:00, 12:00, 17:00, 22:00 ET; each fired for both EST and EDT) and on every record change.
+# Builds global-intelligence/data/ from approved editorial records four times a day
+# (07:00, 12:00, 17:00, 22:00 ET) and on every record change. GitHub's cron drops fires on
+# this repository, so it wakes every 15 minutes and a cheap gate job (scripts/slot_gate.py)
+# decides whether the current slot still needs a build.
 on:
   schedule:
-    - cron: "55 1,2,10,11,15,16,20,21 * * *"
+    - cron: "12,27,42,57 * * * *"
   push:
     branches: [main]
     paths: ["global-intelligence/editorial/**", "scripts/tw/global_intel.py", "scripts/build_global.py"]
@@ -18,7 +20,31 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      due: ${{ steps.gate.outputs.due }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            scripts/slot_gate.py
+            global-intelligence/data/last-updated.json
+          sparse-checkout-cone-mode: false
+      - name: Is a build due?
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "Triggered by ${{ github.event_name }}: running."; echo "due=true" >> "$GITHUB_OUTPUT"
+          else
+            python3 scripts/slot_gate.py global
+          fi
+
   build:
+    needs: gate
+    if: needs.gate.outputs.due == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
