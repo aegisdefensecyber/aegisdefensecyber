@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/tw.css?v=20261122c">
 <script src="assets/tw-subscribe.js?v=20261124a" defer></script>
-<link rel="stylesheet" href="assets/tw-map.css?v=20261125c">
-<script src="assets/tw-map.js?v=20261125c" defer></script>
+<link rel="stylesheet" href="assets/tw-map.css?v=20261125d">
+<script src="assets/tw-map.js?v=20261125d" defer></script>
 </head>
 <body class="wide">
 <a class="skip" href="#main">Skip to the explorer</a>
@@ -59,13 +59,13 @@
   <div class="map-grid">
     <figure class="graph-wrap" aria-labelledby="graph-cap">
       <figcaption id="graph-cap" class="sr-only">Relationship graph. Use Tab to move between nodes and Enter to pin details. A table listing the same relationships follows for screen readers.</figcaption>
-      <p class="graph-hint">Columns run left to right: technique, threat actor, campaign, CVE, indicator of compromise, industry. Select any box to highlight its links.</p>
+      <p class="graph-hint">Columns run left to right: technique, threat actor, campaign, CVE, indicator of compromise, industry. Point at any box to light up its full chain; click to pin it and see details.</p>
       <svg id="graph" role="group" aria-label="Threat relationship graph"></svg>
       <div class="legend" aria-label="Legend">
         <span><i class="lg solid"></i> Observed / attributed</span>
         <span><i class="lg dashed"></i> Possible exposure (no observed victims)</span>
         <span><i class="lg thick"></i> High confidence</span>
-        <span><i class="lg thin"></i> Low confidence</span>
+        <span>Links that skip a column appear when you point at a box</span>
       </div>
     </figure>
     <aside id="details" class="details" aria-live="polite" aria-labelledby="details-title">

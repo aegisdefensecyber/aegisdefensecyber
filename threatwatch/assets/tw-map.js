@@ -8,7 +8,9 @@
   var CONF = { low: 1, moderate: 2, high: 3 };
   var REL = { attributed: "conducts (attributed)", exploits: "exploits", observed_targeting: "targets",
               possible_exposure: "possible exposure", uses: "uses technique", indicator: "indicator" };
-  var NH = 40, SY = 52, HEAD = 44, GAP = 12, PAD = 10;
+  var NH = 30, SY = 40, HEAD = 46, GAP = 10, PAD = 10;
+  var COLOR = ["#9b87d9", "#d97b7b", "#d9a94e", "#5f97d9", "#4bb8a9", "#6fbf7f"];
+  var EL = { nodes: {}, edges: [] }, hover = null;
 
   var G, byId = {}, selected = null;
   var $ = function (id) { return document.getElementById(id); };
@@ -117,52 +119,83 @@
     ROW_LABEL.forEach(function (l, i) {
       var x = i * (CW + GAP);
       svg.appendChild(sv("rect", { x: x, y: 0, width: CW, height: H, rx: 4, "class": "col-bg" }));
-      svg.appendChild(sv("rect", { x: x, y: 0, width: CW, height: 34, rx: 4, "class": "col-head" }));
-      var t = sv("text", { x: x + CW / 2, y: 22, "text-anchor": "middle", "class": "col-h" });
+      var t = sv("text", { x: x + CW / 2, y: 20, "text-anchor": "middle", "class": "col-h" });
       t.textContent = l.toUpperCase(); svg.appendChild(t);
+      svg.appendChild(sv("rect", { x: x + CW / 2 - 28, y: 30, width: 56, height: 2, rx: 1, fill: COLOR[i] }));
     });
-    var maxChars = Math.max(8, Math.floor((NW - 18) / 7));
+    var maxChars = Math.max(8, Math.floor((NW - 22) / 6.8));
 
     if (!view.edges.length) {
       var t = sv("text", { x: 8, y: HEAD + 30, fill: "#B1C3D3", "font-size": "14" });
       t.textContent = "No verified relationships match these filters.";
       svg.appendChild(t);
     }
-    var linked = selected ? connectedTo(selected, view.edges) : null;
+    EL = { nodes: {}, edges: [] };
     var eg = sv("g", {});
     view.edges.forEach(function (e) {
       var a = pos[e.source], b = pos[e.target];
       if (!a || !b) return;
       var l = a.x <= b.x ? a : b, r = a.x <= b.x ? b : a;
       var x1 = l.x + NW, y1 = l.y + NH / 2, x2 = r.x, y2 = r.y + NH / 2, mx = (x1 + x2) / 2;
-      var cls = "edge" + (e.relation === "possible_exposure" ? " exposure" : "");
-      if (linked) cls += linked.edges[e.id] ? " hi" : " dim";
+      var long = Math.abs(ROWS[byId[e.source].type] - ROWS[byId[e.target].type]) > 1;
+      var cls = "edge" + (e.relation === "possible_exposure" ? " exposure" : "") + (long ? " long" : "");
       var p = sv("path", { d: "M" + x1 + "," + y1 + " C" + mx + "," + y1 + " " + mx + "," + y2 + " " + x2 + "," + y2,
-                           "class": cls, "stroke-width": { low: 1, moderate: 2, high: 3.5 }[e.confidence] });
+                           "class": cls, "stroke-width": e.confidence === "high" ? 2 : 1 });
       var tt = sv("title", {}); tt.textContent = byId[e.source].label + " — " + REL[e.relation] + " — " + byId[e.target].label + " (" + e.confidence + " confidence)";
       p.appendChild(tt);
+      EL.edges.push({ e: e, el: p });
       eg.appendChild(p);
     });
     svg.appendChild(eg);
     rows.forEach(function (list) {
       list.forEach(function (n) {
         var p = pos[n.id];
-        var cls = "node" + (selected === n.id ? " sel" : "") + (linked && !linked.nodes[n.id] ? " dim" : "");
+        var cls = "node" + (selected === n.id ? " sel" : "");
         var g = sv("g", { "class": cls, transform: "translate(" + p.x + "," + p.y + ")", tabindex: "0", role: "button",
                           "aria-pressed": selected === n.id ? "true" : "false",
                           "aria-label": n.type + ": " + n.label + ". Press Enter for details." });
-        g.appendChild(sv("rect", { width: NW, height: NH, rx: 5 }));
-        var k = sv("text", { x: 9, y: 14, "class": "k" }); k.textContent = n.type === "ioc" ? "IOC · " + (n.iocType || "") : n.type; g.appendChild(k);
-        var lab = sv("text", { x: 9, y: 30 }); lab.textContent = trunc(n.label, maxChars); g.appendChild(lab);
+        g.appendChild(sv("rect", { width: NW, height: NH, rx: 4 }));
+        g.appendChild(sv("rect", { width: 3, height: NH, rx: 1.5, fill: COLOR[ROWS[n.type]], "class": "stripe" }));
+        var lab = sv("text", { x: 12, y: 19 }); lab.textContent = trunc(n.type === "ioc" ? n.label : n.label, maxChars); g.appendChild(lab);
         var tt = sv("title", {}); tt.textContent = n.label; g.appendChild(tt);
         g.addEventListener("click", function () { select(n.id); });
+        g.addEventListener("mouseenter", function () { hover = n.id; highlight(); });
+        g.addEventListener("mouseleave", function () { hover = null; highlight(); });
+        g.addEventListener("focus", function () { hover = n.id; highlight(); });
+        g.addEventListener("blur", function () { hover = null; highlight(); });
+        EL.nodes[n.id] = g;
         g.addEventListener("keydown", function (ev) { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); select(n.id, true); } });
         svg.appendChild(g);
       });
     });
+    EL.view = view.edges;
+    highlight();
     renderTable(view.edges);
     if (selected && !view.nodes[selected]) { selected = null; clearDetails(); }
     else if (selected) renderDetails(selected, view.edges);
+  }
+
+  // the whole chain through a node: walk left through lower columns and right through higher ones
+  function chain(id, edges) {
+    var out = { nodes: {}, edges: {} }, adj = {};
+    edges.forEach(function (e) { (adj[e.source] = adj[e.source] || []).push(e); (adj[e.target] = adj[e.target] || []).push(e); });
+    function walk(nid, dir) {
+      out.nodes[nid] = true;
+      (adj[nid] || []).forEach(function (e) {
+        var o = e.source === nid ? e.target : e.source, d = ROWS[byId[o].type] - ROWS[byId[nid].type];
+        if (d === 0 || (dir && Math.sign(d) !== dir)) return;
+        out.edges[e.id] = true;
+        if (!out.nodes[o]) walk(o, dir || Math.sign(d));
+      });
+    }
+    walk(id, 0);
+    return out;
+  }
+  function highlight() {
+    var focusId = hover || selected, c = focusId && EL.view ? chain(focusId, EL.view) : null;
+    $("graph").classList.toggle("focus", !!c);
+    EL.edges.forEach(function (x) { x.el.classList.toggle("hi", !!(c && c.edges[x.e.id])); });
+    Object.keys(EL.nodes).forEach(function (k) { EL.nodes[k].classList.toggle("hi", !!(c && c.nodes[k])); });
   }
 
   function connectedTo(id, edges) {
