@@ -10,6 +10,8 @@ on:
   push:
     branches: [main]
     paths: ["global-intelligence/editorial/**", "scripts/tw/global_intel.py", "scripts/build_global.py", ".github/heartbeat"]
+  repository_dispatch:
+    types: [threatwatch-update]   # external scheduler (cron-job.org): wakes both workflows
   workflow_dispatch:
 
 permissions:
@@ -36,11 +38,10 @@ jobs:
       - name: Is a build due?
         id: gate
         run: |
-          if [ "${{ github.event_name }}" != "schedule" ]; then
-            echo "Triggered by ${{ github.event_name }}: running."; echo "due=true" >> "$GITHUB_OUTPUT"
-          else
-            python3 scripts/slot_gate.py global
-          fi
+          case "${{ github.event_name }}" in
+            schedule|repository_dispatch) python3 scripts/slot_gate.py global ;;
+            *) echo "Triggered by ${{ github.event_name }}: running."; echo "due=true" >> "$GITHUB_OUTPUT" ;;
+          esac
 
   build:
     needs: gate
