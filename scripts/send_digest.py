@@ -44,7 +44,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_digest import EMAIL_DIR, SITE_URL  # noqa: E402
 from tw.common import DATA_DIR, read_json  # noqa: E402
 
-REQUIRED = ("ZOHO_CLIENT_ID", "ZOHO_CLIENT_SECRET", "ZOHO_REFRESH_TOKEN", "ZOHO_FROM_EMAIL")
+REQUIRED = ("ZOHO_CLIENT_ID", "ZOHO_CLIENT_SECRET", "ZOHO_REFRESH_TOKEN")
+CONFIG = Path(__file__).resolve().parent.parent / "threatwatch" / "subscription-config.json"
+
+
+def sender() -> tuple[str, str]:
+    """Sender address and name: threatwatch/subscription-config.json wins, then the env variables."""
+    try:
+        cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        cfg = {}
+    return (str(cfg.get("fromEmail") or _env("ZOHO_FROM_EMAIL")),
+            str(cfg.get("fromName") or _env("ZOHO_FROM_NAME", "AEGIS ThreatWatch")))
 DEFAULT_LIST = "ThreatWatch Daily Brief"
 UA = "aegis-threatwatch-digest/1.0"
 
@@ -125,8 +136,8 @@ def create_and_send(campaigns: str, token: str, edition: str, subject: str, cont
     params = {
         "resfmt": "JSON",
         "campaignname": f"ThreatWatch {edition}",
-        "from_email": _env("ZOHO_FROM_EMAIL"),
-        "from_name": _env("ZOHO_FROM_NAME", "AEGIS ThreatWatch"),
+        "from_email": sender()[0],
+        "from_name": sender()[1],
         "subject": subject,
         "content_url": content_url,
         "list_details": json.dumps({list_key(campaigns, token): []}),
@@ -147,7 +158,7 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    missing = [n for n in REQUIRED if not _env(n)]
+    missing = [n for n in REQUIRED if not _env(n)] + ([] if sender()[0] else ["ZOHO_FROM_EMAIL"])
     if missing:
         print(f"Email digest not configured (missing {', '.join(missing)}); nothing sent.")
         return 0

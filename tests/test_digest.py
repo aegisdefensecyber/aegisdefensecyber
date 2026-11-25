@@ -55,6 +55,7 @@ class DigestTests(unittest.TestCase):
                 return json.dumps({"code": "200", "campaign_status": "inprogress"})
             raise AssertionError(url)
         env = {n: "x" for n in send_digest.REQUIRED}   # no ZOHO_LIST_KEY: looked up by name
+        env["ZOHO_FROM_EMAIL"] = "old@example.org"   # the config file's fromEmail wins
         with tempfile.TemporaryDirectory() as d, mock.patch.dict(os.environ, env, clear=True), \
                 mock.patch.object(send_digest, "_request", fake), \
                 mock.patch.object(send_digest, "EMAIL_DIR", Path(d)), \
@@ -67,6 +68,7 @@ class DigestTests(unittest.TestCase):
         self.assertEqual(json.loads(create[1]["list_details"]), {"LISTKEY": []})
         self.assertEqual(create[1]["content_url"], "https://aegisdefensecyber.com/threatwatch/email/2026-11-24.html")
         self.assertEqual(create[2]["Authorization"], "Zoho-oauthtoken tok")
+        self.assertEqual(create[1]["from_email"], "threatwatch@aegisdefensecyber.com")
         self.assertTrue(any(c[0].endswith("sendcampaign") and c[1]["campaignkey"] == "123" for c in calls))
 
     def test_zoho_error_reports_failure(self):
