@@ -4,48 +4,126 @@
   "publishedAt": "2026-11-25T14:23:22Z",
   "window": {
     "start": "2026-11-24T23:13:57Z",
-    "end": "2026-11-25T14:23:22Z",
+    "end": "2026-11-25T17:00:57Z",
     "note": "KEV additions not present in the previous edition’s catalog snapshot."
   },
   "executive": {
-    "summary": "CISA published no new Known Exploited Vulnerabilities since the previous edition. That does not mean no new threats emerged — KEV is one confirmed-exploitation source, and campaigns or zero-days outside it are not covered by today’s automated feeds.",
+    "summary": "CISA added 1 vulnerability to the Known Exploited Vulnerabilities catalog since the previous edition, affecting Hewlett Packard Enterprise (HPE). 1 meet the emergency criteria (confirmed exploitation plus critical severity or unauthenticated network exposure).",
     "summarySource": "generated",
     "counts": {
-      "kevAdded": 0,
+      "kevAdded": 1,
       "kevRansomware": 0,
-      "emergency": 0,
+      "emergency": 1,
       "urgent": 0,
-      "criticalHigh": 0,
-      "materialChanges": 0,
-      "kevTotal": 1795
+      "criticalHigh": 1,
+      "materialChanges": 88,
+      "kevTotal": 1796
     },
-    "developments": []
+    "developments": [
+      "CVE-2026-103406 — Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router: Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability (emergency)",
+      "CVE-2026-40217: EPSS fell from 0.83 to 0.20 (score date 2026-11-25).",
+      "CVE-2026-39808: EPSS fell from 0.93 to 0.47 (score date 2026-11-25)."
+    ]
   },
   "kevLatest": {
-    "date": "2026-11-24",
-    "dueDate": "2026-11-27",
-    "catalogVersion": "2026.11.24",
-    "released": "2026-11-24T17:47:46.199Z",
+    "date": "2026-11-25",
+    "dueDate": "2026-11-28",
+    "catalogVersion": "2026.11.25",
+    "released": "2026-11-25T14:22:29.6361Z",
     "items": [
       {
-        "cve": "CVE-2026-131914",
-        "vendor": "Idunno",
-        "product": "AntiCsrf"
-      },
-      {
-        "cve": "CVE-2026-132165",
-        "vendor": "Drupal",
-        "product": "Core"
-      },
-      {
-        "cve": "CVE-2026-132224",
-        "vendor": "Optimizely",
-        "product": "Web Experimentation"
+        "cve": "CVE-2026-103406",
+        "vendor": "Hewlett Packard Enterprise (HPE)",
+        "product": "Juniper Session Smart Conductor and Session Smart Router"
       }
     ]
   },
-  "actions": [],
-  "cves": [],
+  "actions": [
+    {
+      "rank": 1,
+      "cve": "CVE-2026-103406",
+      "priority": "emergency",
+      "title": "Patch or mitigate Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router (CVE-2026-103406)",
+      "why": "Exploitation confirmed by CISA KEV; CVSS 3.1 9.8; network-reachable without authentication.",
+      "steps": [
+        "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+        "Identify internet-facing and internal Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router instances.",
+        "Confirm fixed versions in the vendor advisory before closing the action.",
+        "CISA due date for federal agencies: 2026-11-28."
+      ],
+      "evidence": [
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
+        "https://www.first.org/epss/"
+      ]
+    }
+  ],
+  "cves": [
+    {
+      "cve": "CVE-2026-103406",
+      "vendor": "Hewlett Packard Enterprise (HPE)",
+      "product": "Juniper Session Smart Conductor and Session Smart Router",
+      "name": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
+      "description": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID.",
+      "kev": {
+        "dateAdded": "2026-11-25",
+        "dueDate": "2026-11-28",
+        "ransomware": "unknown",
+        "requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
+      },
+      "exploitation": {
+        "status": "Confirmed exploited",
+        "basis": "Listed in CISA KEV (dateAdded is the listing date, not first exploitation)."
+      },
+      "exploitMaturity": null,
+      "cvss": {
+        "version": "3.1",
+        "score": 9.8,
+        "severity": "CRITICAL",
+        "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "attackVector": "NETWORK",
+        "privileges": "NONE",
+        "userInteraction": "NONE",
+        "source": "sirt@juniper.net"
+      },
+      "epss": {
+        "score": 0.0086,
+        "percentile": 0.56019,
+        "date": "2026-11-25"
+      },
+      "affectedVersions": null,
+      "fixedVersions": null,
+      "cwes": [
+        "CWE-78"
+      ],
+      "nvdStatus": "Undergoing Analysis",
+      "priority": "emergency",
+      "rationale": "Exploitation confirmed by CISA KEV; CVSS 3.1 9.8; network-reachable without authentication.",
+      "sources": [
+        {
+          "label": "CISA KEV",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "NVD",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
+        },
+        {
+          "label": "FIRST EPSS",
+          "url": "https://www.first.org/epss/"
+        },
+        {
+          "label": "KEV reference",
+          "url": "https://supportportal.juniper.net/s/article/2026-10-On-Demand-Security-Bulletin-Session-Smart-Router-and-Session-Smart-Conductor-Multiple-internally-discovered-vulnerabilities-resolved"
+        }
+      ],
+      "unknown": [
+        "Affected versions",
+        "Fixed versions",
+        "Exploit maturity"
+      ]
+    }
+  ],
   "overflow": 0,
   "campaigns": {
     "status": "not_covered",
@@ -64,7 +142,9 @@
   },
   "remediation": {
     "groups": {
-      "emergency": [],
+      "emergency": [
+        "CVE-2026-103406"
+      ],
       "urgent": [],
       "routine": [],
       "monitor": []
@@ -76,28 +156,474 @@
       "monitor": "Track for exploitation or scope changes."
     }
   },
-  "changes": [],
+  "changes": [
+    {
+      "cve": "CVE-2026-103406",
+      "type": "kev_added",
+      "detail": "Added to CISA KEV on 2026-11-25."
+    },
+    {
+      "cve": "CVE-2026-40217",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.83 to 0.20 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-39808",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.93 to 0.47 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-35273",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.97 to 0.09 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-34910",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.90 to 0.46 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-34909",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.69 to 0.02 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-34908",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.89 to 0.15 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-34486",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.99 to 0.07 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-33824",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.77 to 0.02 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-28318",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.87 to 0.19 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-25089",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.76 to 0.04 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-21962",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.73 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-21589",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.91 to 0.04 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-20316",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.35 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-20262",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.29 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-20253",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.97 to 0.15 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-20245",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.25 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-20230",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.89 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-20079",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.89 to 0.12 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-19490",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.33 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-18556",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.44 to 0.08 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-16232",
+      "type": "epss_change",
+      "detail": "EPSS rose from 0.04 to 0.80 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-133968",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.50 to 0.27 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-129448",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.40 to 0.24 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-12569",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.46 to 0.02 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-124194",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.25 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-123158",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.96 to 0.14 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-116606",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.75 to 0.14 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-111560",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.64 to 0.11 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-111497",
+      "type": "epss_change",
+      "detail": "EPSS fell from 1.00 to 0.33 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-110447",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.76 to 0.33 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-109619",
+      "type": "epss_change",
+      "detail": "EPSS fell from 1.00 to 0.21 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-109618",
+      "type": "epss_change",
+      "detail": "EPSS fell from 1.00 to 0.45 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-10520",
+      "type": "epss_change",
+      "detail": "EPSS fell from 1.00 to 0.61 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-105134",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.82 to 0.55 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-105133",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.84 to 0.09 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-104935",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.93 to 0.25 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-102895",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.19 to 0.09 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-102764",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.58 to 0.03 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-102489",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.50 to 0.15 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-0770",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.63 to 0.41 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2025-68686",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.29 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2025-67038",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.21 to 0.03 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2025-62593",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.60 to 0.03 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2024-21182",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.74 to 0.04 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2023-49105",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.47 to 0.36 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2021-27137",
+      "type": "epss_change",
+      "detail": "EPSS rose from 0.04 to 0.16 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-97229",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.74 to 0.12 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-94127",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.27 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-93616",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.92 to 0.21 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-90817",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.34 to 0.19 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-88779",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.11 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-88772",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.77 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-88771",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.82 to 0.02 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-87902",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.96 to 0.27 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-86950",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.27 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-86218",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.15 to 0.04 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-86060",
+      "type": "epss_change",
+      "detail": "EPSS rose from 0.06 to 0.36 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-85706",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.97 to 0.09 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-85102",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.54 to 0.10 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-82078",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.61 to 0.04 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-81578",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.84 to 0.04 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-8037",
+      "type": "epss_change",
+      "detail": "EPSS fell from 1.00 to 0.70 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-76504",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.39 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-76461",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.40 to 0.03 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-76460",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.76 to 0.12 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-75650",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.99 to 0.35 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-73570",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.77 to 0.12 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-72898",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.99 to 0.19 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-71362",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.92 to 0.24 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-65400",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.18 to 0.02 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-63077",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.94 to 0.10 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-56291",
+      "type": "epss_change",
+      "detail": "EPSS rose from 0.15 to 0.81 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-56164",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.27 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-55040",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.70 to 0.18 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-5430",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.79 to 0.06 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-50751",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.85 to 0.06 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-50522",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.99 to 0.22 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-48939",
+      "type": "epss_change",
+      "detail": "EPSS rose from 0.20 to 0.91 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-48908",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.88 to 0.15 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-48907",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.85 to 0.16 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-48710",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.70 to 0.07 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-48558",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.80 to 0.06 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-48356",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.82 to 0.08 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-46817",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.12 to 0.01 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-46300",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.17 to 0.03 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-45659",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.80 to 0.03 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-45247",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.82 to 0.19 (score date 2026-11-25)."
+    },
+    {
+      "cve": "CVE-2026-42271",
+      "type": "epss_change",
+      "detail": "EPSS fell from 0.91 to 0.07 (score date 2026-11-25)."
+    }
+  ],
   "sources": [
     {
       "name": "CISA Known Exploited Vulnerabilities",
       "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-      "version": "2026.11.24",
-      "released": "2026-11-24T17:47:46.199Z",
-      "fetchedAt": "2026-11-25T14:23:22Z",
+      "version": "2026.11.25",
+      "released": "2026-11-25T14:22:29.6361Z",
+      "fetchedAt": "2026-11-25T17:00:57Z",
       "status": "ok"
     },
     {
       "name": "FIRST EPSS",
       "url": "https://www.first.org/epss/",
-      "fetchedAt": "2026-11-25T14:23:22Z",
+      "fetchedAt": "2026-11-25T17:00:57Z",
       "status": "ok",
       "note": "Probability estimate; not evidence of exploitation."
     },
     {
       "name": "NVD CVE API 2.0",
       "url": "https://nvd.nist.gov/",
-      "fetchedAt": "2026-11-25T14:23:22Z",
-      "status": "no data",
+      "fetchedAt": "2026-11-25T17:00:57Z",
+      "status": "ok",
       "note": "Enrichment can lag publication by days."
     }
   ],
@@ -112,15 +638,19 @@
       "Zero-days not yet in CISA KEV",
       "Vendor-specific fixed-version validation"
     ],
-    "unknownFields": [],
+    "unknownFields": [
+      "Affected versions",
+      "Exploit maturity",
+      "Fixed versions"
+    ],
     "editorial": {
       "present": false,
       "reviewedBy": null,
       "reviewedAt": null
     }
   },
-  "updatedAt": "2026-11-25T14:23:22Z",
-  "updateSlot": "07:00",
+  "updatedAt": "2026-11-25T17:00:57Z",
+  "updateSlot": "12:00",
   "report": {
     "version": 1,
     "title": [
@@ -140,7 +670,7 @@
         "blocks": [
           {
             "type": "p",
-            "text": "The leading newly prioritized issue is **CVE-2025-34035 (Engeniustech Esr600 Firmware)**, a critical OS command injection flaw; it is reported exploited by ENISA EUVD since 2026-11-25. No fixed release is mapped in NVD data yet. **CVE-2025-49931 (Crocoblock JetSearch)** is another important newly highlighted issue; it is reported exploited by ENISA EUVD since 2026-11-25."
+            "text": "The leading newly prioritized issue is **CVE-2025-34035 (Engeniustech Esr600 Firmware)**, a critical OS command injection flaw; it is reported exploited by ENISA EUVD since 2026-11-25. No fixed release is mapped in NVD data yet. **CVE-2026-103406 (Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router)** is another important newly highlighted issue; it is listed in CISA KEV on 2026-11-25 (exploitation confirmed by CISA) and reported exploited by ENISA EUVD since 2026-11-25."
           },
           {
             "type": "table",
@@ -151,33 +681,33 @@
             "rows": [
               [
                 "Newly prioritized CVEs",
-                "7: Engeniustech Esr600 Firmware, Crocoblock JetSearch, JetBooking WordPress plugin, CVE-2026-133335, Ffmpeg, CVE-2026-135202 and 1 more"
+                "8: Engeniustech Esr600 Firmware, Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router, Crocoblock JetSearch, JetBooking WordPress plugin, CVE-2026-133335, CVE-2026-135202 and 2 more"
               ],
               [
                 "Latest KEV baseline",
-                "1,795 (catalog version 2026.11.24, released 2026-11-24)"
+                "1,796 (catalog version 2026.11.25, released 2026-11-25)"
               ],
               [
                 "New KEV additions",
-                "None verified in reporting window"
+                "CVE-2026-103406 (Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router)"
               ],
               [
                 "New zero-day / in-the-wild reports",
-                "CVE-2025-34035 (Engeniustech Esr600 Firmware), CVE-2025-49931 (Crocoblock JetSearch), CVE-2026-3496 (JetBooking WordPress plugin) and CVE-2026-133335 (CVE-2026-133335)"
+                "CVE-2025-34035 (Engeniustech Esr600 Firmware), CVE-2026-103406 (Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router), CVE-2025-49931 (Crocoblock JetSearch) and CVE-2026-3496 (JetBooking WordPress plugin)"
               ],
               [
                 "Emergency candidates",
-                "4 newly highlighted: exposed Engeniustech Esr600 Firmware, exposed Crocoblock JetSearch, exposed JetBooking WordPress plugin and exposed CVE-2026-133335"
+                "5 newly highlighted: exposed Engeniustech Esr600 Firmware, exposed Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router, exposed Crocoblock JetSearch and exposed JetBooking WordPress plugin"
               ],
               [
                 "Complete worldwide High/Critical count",
-                "Not established; 464 High/Critical CVEs published to NVD in the window (NVD-scored only)"
+                "Not established; 495 High/Critical CVEs published to NVD in the window (NVD-scored only)"
               ]
             ]
           },
           {
             "type": "p",
-            "text": "**Top five actions:** (1) Isolate or patch exposed Engeniustech Esr600 Firmware (CVE-2025-34035); (2) isolate or patch exposed Crocoblock JetSearch (CVE-2025-49931); (3) isolate or patch exposed JetBooking WordPress plugin (CVE-2026-3496); (4) close previously reported Project MONAI MONAI Label, N-able MailAssure, Idunno AntiCsrf and Drupal Core KEV exposure; (5) examine Engeniustech Esr600 Firmware hosts for unexpected child processes and outbound connections."
+            "text": "**Top five actions:** (1) Isolate or patch exposed Engeniustech Esr600 Firmware (CVE-2025-34035); (2) isolate or patch exposed Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router (CVE-2026-103406); (3) isolate or patch exposed Crocoblock JetSearch (CVE-2025-49931); (4) close previously reported Project MONAI MONAI Label, N-able MailAssure, Idunno AntiCsrf and Drupal Core KEV exposure; (5) examine Engeniustech Esr600 Firmware hosts for unexpected child processes and outbound connections."
           }
         ]
       },
@@ -200,7 +730,7 @@
             "rows": [
               [
                 "EPSS / percentile",
-                "31.6% probability / 98th percentile (FIRST EPSS)"
+                "23.3% probability / 98th percentile (FIRST EPSS)"
               ],
               [
                 "CISA KEV",
@@ -222,6 +752,39 @@
           },
           {
             "type": "p",
+            "text": "**CVE-2026-103406 - Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS command injection (CVSS 9.8).** An Improper Neutralization of Special Elements used in an OS Command vulnerability in the AutomatedProvisioner in Juniper Networks Session Smart Conductor allows a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+          },
+          {
+            "type": "table",
+            "columns": [
+              "Field",
+              "Status"
+            ],
+            "rows": [
+              [
+                "EPSS / percentile",
+                "0.9% probability / 56th percentile (FIRST EPSS)"
+              ],
+              [
+                "CISA KEV",
+                "Listed 2026-11-25; federal due date 2026-11-28"
+              ],
+              [
+                "Exploitation",
+                "Listed in CISA KEV on 2026-11-25 (exploitation confirmed by CISA) and reported exploited by ENISA EUVD since 2026-11-25; independently corroborated victim evidence not established"
+              ],
+              [
+                "Public exploit",
+                "No public exploit or proof-of-concept identified in tracked sources"
+              ],
+              [
+                "Mitigation",
+                "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk guidance and CISA’s “Forensics Triage Requirements”. Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable."
+              ]
+            ]
+          },
+          {
+            "type": "p",
             "text": "**CVE-2025-49931 - Crocoblock JetSearch SQL injection (CVSS 9.3).** Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Crocoblock JetSearch jet-search allows Blind SQL Injection.This issue affects JetSearch: from n/a through 3.5.10. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
           },
           {
@@ -233,7 +796,7 @@
             "rows": [
               [
                 "EPSS / percentile",
-                "0.5% probability / 43rd percentile (FIRST EPSS)"
+                "0.6% probability / 43rd percentile (FIRST EPSS)"
               ],
               [
                 "CISA KEV",
@@ -266,7 +829,7 @@
             "rows": [
               [
                 "EPSS / percentile",
-                "0.3% probability / 24th percentile (FIRST EPSS)"
+                "0.5% probability / 38th percentile (FIRST EPSS)"
               ],
               [
                 "CISA KEV",
@@ -321,23 +884,15 @@
           },
           {
             "type": "p",
-            "text": "**CVE-2026-135736 - Ffmpeg out-of-bounds write (CVSS 9.2).** FFmpeg 4.4 before 9.1 contains a heap out-of-bounds read and write vulnerability in libavfilter/vf_deband.c that allows attackers to corrupt heap memory by sending a runtime coupling command. Attackers can send a 'deband coupling 1' command via sendcmd or an unauthenticated zmq filter, making chroma planes be processed at luma dimensions to crash the process or potentially execute code. Affected releases (NVD): ffmpeg >= 4.4, < 9.1. Fixed version (first unaffected release per NVD ranges): ffmpeg 9.1. Attack path: network-accessible; no authentication required; no user interaction required."
-          },
-          {
-            "type": "p",
-            "text": "EPSS: 0.7% probability / 53rd percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified. Mitigation: Update to a fixed release (ffmpeg 9.1); remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
-          },
-          {
-            "type": "p",
             "text": "**CVE-2026-135202 - CVE-2026-135202 remote code execution (CVSS 9.8).** Several plugins for WordPress published by WP connect (Orders Sync to Airtable for WooCommerce, Add-On for Contact Form 7 to Notion, WP Sync for Notion – Notion to WordPress, Add-On for Contact Form 7 to Airtable, Add-on Brevo for Gravity Forms, and Air WP Sync – Airtable to WordPress) contain embedded malicious code (a backdoor) in the versions listed. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
           },
           {
             "type": "p",
-            "text": "EPSS: 0.6% probability / 49th percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
+            "text": "EPSS: 2.7% probability / 86th percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
           },
           {
             "type": "p",
-            "text": "Also prioritized: CVE-2026-135743 (Ffmpeg, urgent). Details are in the Vulnerability Validation catalog."
+            "text": "Also prioritized: CVE-2026-136404 (CVE-2026-136404, urgent); CVE-2026-136411 (BusyBox, urgent). Details are in the Vulnerability Validation catalog."
           }
         ]
       },
@@ -349,15 +904,15 @@
         "blocks": [
           {
             "type": "p",
-            "text": "CVE-2025-34035 (Engeniustech Esr600 Firmware): reported exploited by ENISA EUVD since 2026-11-25. No named actor, verified victim count or campaign is established in tracked sources. CVE-2025-49931 (Crocoblock JetSearch): reported exploited by ENISA EUVD since 2026-11-25. No named actor, verified victim count or campaign is established in tracked sources. CVE-2026-3496 (JetBooking WordPress plugin): reported exploited by ENISA EUVD since 2026-11-25. No named actor, verified victim count or campaign is established in tracked sources. No campaign-specific IP addresses, hashes or domains are collected by ThreatWatch's automated feeds."
+            "text": "CVE-2025-34035 (Engeniustech Esr600 Firmware): reported exploited by ENISA EUVD since 2026-11-25. No named actor, verified victim count or campaign is established in tracked sources. CVE-2026-103406 (Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router): listed in CISA KEV on 2026-11-25 (exploitation confirmed by CISA) and reported exploited by ENISA EUVD since 2026-11-25. No named actor, verified victim count or campaign is established in tracked sources. CVE-2025-49931 (Crocoblock JetSearch): reported exploited by ENISA EUVD since 2026-11-25. No named actor, verified victim count or campaign is established in tracked sources. CVE-2026-3496 (JetBooking WordPress plugin): reported exploited by ENISA EUVD since 2026-11-25. No named actor, verified victim count or campaign is established in tracked sources. No campaign-specific IP addresses, hashes or domains are collected by ThreatWatch's automated feeds."
           },
           {
             "type": "p",
-            "text": "No new CISA KEV additions were verified in the reporting window. The latest additions remain the 3 entries added November 24, 2026: Idunno AntiCsrf, Drupal Core and Optimizely Web Experimentation. The federal remediation deadline for those entries is **November 27, 2026**. This deadline applies to covered federal agencies under applicable requirements; it is not a universal private-sector mandate."
+            "text": "CISA added 1 vulnerability to the KEV catalog in the reporting window: Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router. The federal remediation deadline is **November 28, 2026**. This deadline applies to covered federal agencies under applicable requirements; it is not a universal private-sector mandate."
           },
           {
             "type": "p",
-            "text": "**Defensive hunting:** for Engeniustech Esr600 Firmware (CVE-2025-34035), inspect unexpected child processes of the service, new scheduled jobs or services, and unusual outbound connections from the host; for Crocoblock JetSearch (CVE-2025-49931), review database errors and anomalous queries originating from the application; for JetBooking WordPress plugin (CVE-2026-3496), review database errors and anomalous queries originating from the application; for CVE-2026-133335 (CVE-2026-133335), inspect unexpected file writes outside the application's data directories, new web-accessible files, modified application code, altered SSH authorized_keys files and suspicious scheduled jobs."
+            "text": "**Defensive hunting:** for Engeniustech Esr600 Firmware (CVE-2025-34035), inspect unexpected child processes of the service, new scheduled jobs or services, and unusual outbound connections from the host; for Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router (CVE-2026-103406), inspect unexpected child processes of the service, new scheduled jobs or services, and unusual outbound connections from the host; for Crocoblock JetSearch (CVE-2025-49931), review database errors and anomalous queries originating from the application; for JetBooking WordPress plugin (CVE-2026-3496), review database errors and anomalous queries originating from the application."
           }
         ]
       },
@@ -428,6 +983,10 @@
                 "Unknown. Exploitation reported; identity, motivation and geographic targeting not established."
               ],
               [
+                "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router operators",
+                "Unknown. Exploitation reported; identity, motivation and geographic targeting not established."
+              ],
+              [
                 "Crocoblock JetSearch operators",
                 "Unknown. Exploitation reported; identity, motivation and geographic targeting not established."
               ],
@@ -440,10 +999,6 @@
                 "Unknown. Exploitation reported; identity, motivation and geographic targeting not established."
               ],
               [
-                "Ffmpeg operators",
-                "No confirmed malicious exploitation or attribution."
-              ],
-              [
                 "CVE-2026-135202 operators",
                 "No confirmed malicious exploitation or attribution."
               ]
@@ -451,7 +1006,7 @@
           },
           {
             "type": "p",
-            "text": "**MITRE ATT&CK defensive mapping:** T1190 (Exploit Public-Facing Application) may be relevant to exposed Engeniustech Esr600 Firmware, Crocoblock JetSearch, JetBooking WordPress plugin and CVE-2026-133335 services. These mappings support defensive detection and do not establish actor attribution."
+            "text": "**MITRE ATT&CK defensive mapping:** T1190 (Exploit Public-Facing Application) may be relevant to exposed Engeniustech Esr600 Firmware, Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router, Crocoblock JetSearch and JetBooking WordPress plugin services. These mappings support defensive detection and do not establish actor attribution."
           }
         ]
       },
@@ -476,6 +1031,11 @@
               ],
               [
                 "Emergency",
+                "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router (CVE-2026-103406) reachable from untrusted networks",
+                "Isolate immediately; investigate and mitigate within 24 hours"
+              ],
+              [
+                "Emergency",
                 "Crocoblock JetSearch (CVE-2025-49931) reachable from untrusted networks",
                 "Isolate immediately; investigate and mitigate within 24 hours"
               ],
@@ -493,11 +1053,6 @@
                 "Emergency",
                 "Unremediated confirmed-exploited Drupal Core, Idunno AntiCsrf, N-able MailAssure, Optimizely Web Experimentation or Project MONAI MONAI Label exposure",
                 "Immediate containment and applicable forensic triage"
-              ],
-              [
-                "Urgent",
-                "Vulnerable Ffmpeg (CVE-2026-135736)",
-                "Update to 9.1 in 24-72 hours"
               ],
               [
                 "Urgent",
@@ -586,6 +1141,10 @@
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34035"
       },
       {
+        "label": "CVE-2026-103406 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406"
+      },
+      {
         "label": "CVE-2025-49931 NVD record",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-49931"
       },
@@ -596,14 +1155,6 @@
       {
         "label": "CVE-2026-133335 NVD record",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133335"
-      },
-      {
-        "label": "Ffmpeg vendor advisory",
-        "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/26081"
-      },
-      {
-        "label": "CVE-2026-135736 NVD record",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135736"
       },
       {
         "label": "CVE-2026-135202 NVD record",
@@ -620,15 +1171,16 @@
     ],
     "footer": "Enterprise Cyber Threat Intelligence | 25 Nov 2026",
     "reviewedBy": null,
-    "generatedAt": "2026-11-25T14:25:22Z",
+    "generatedAt": "2026-11-25T17:03:02Z",
     "prioritized": [
       "CVE-2025-34035",
+      "CVE-2026-103406",
       "CVE-2025-49931",
       "CVE-2026-3496",
       "CVE-2026-133335",
-      "CVE-2026-135736",
       "CVE-2026-135202",
-      "CVE-2026-135743"
+      "CVE-2026-136404",
+      "CVE-2026-136411"
     ]
   }
 }
