@@ -10,6 +10,9 @@ name: Publish ThreatWatch
 on:
   schedule:
     - cron: "7,22,37,52 * * * *"
+  push:
+    branches: [main]
+    paths: [".github/heartbeat"]   # backup trigger: a scheduled task touches this file 4x a day
   repository_dispatch:
     types: [threatwatch-update]   # optional external scheduler fallback
   workflow_dispatch:
@@ -54,11 +57,10 @@ jobs:
       - name: Is an update slot due?
         id: gate
         run: |
-          if [ "${{ github.event_name }}" != "schedule" ]; then
-            echo "Triggered by ${{ github.event_name }}: running."; echo "due=true" >> "$GITHUB_OUTPUT"
-          else
-            python3 scripts/slot_gate.py threatwatch
-          fi
+          case "${{ github.event_name }}" in
+            schedule|push) python3 scripts/slot_gate.py threatwatch ;;
+            *) echo "Triggered by ${{ github.event_name }}: running."; echo "due=true" >> "$GITHUB_OUTPUT" ;;
+          esac
 
   test:
     needs: gate
