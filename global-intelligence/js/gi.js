@@ -53,11 +53,10 @@
       });
     var t = $("gi-times");
     t.textContent = "";
-    t.appendChild(document.createTextNode("Collected "));
-    t.appendChild(el("b", { text: fmt(upd.collected_at, true) }));
-    t.appendChild(document.createTextNode(" · Last editorial verification "));
+    var lu = $("gi-last-updated");
+    if (lu) lu.textContent = "Last updated " + fmt(upd.collected_at || upd.generated_at, true);
+    t.appendChild(document.createTextNode("Last editorial verification "));
     t.appendChild(el("b", { text: fmt(upd.last_verified, true) }));
-    t.appendChild(document.createTextNode(" · " + (upd.cadence || "")));
     if (upd.demo) $("gi-demo").hidden = false;
     // executive summary: first paragraph visible, the rest expandable
     var paras = String(sum.summary || "").split(/\n\n+/);
