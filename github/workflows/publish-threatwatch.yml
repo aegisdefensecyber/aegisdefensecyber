@@ -1,0 +1,108 @@
+name: Publish ThreatWatch
+
+# Four updates a day at the 07:00, 12:00, 17:00 and 22:00 America/New_York slots.
+# The 07:00 slot publishes the day's new edition (and emails subscribers); later
+# slots refresh that edition with fresh data (website only).
+# GitHub cron is UTC and best-effort (runs can be late or dropped), so each slot is
+# fired for both EST and EDT and the publisher's slot gate decides what to do:
+#   :50 past 10/11 UTC -> 07:00 slot   :50 past 15/16 UTC -> 12:00 slot
+#   :50 past 20/21 UTC -> 17:00 slot   :50 past 01/02 UTC -> 22:00 slot
+# The off-season fire of each pair, and the :20 fires, act as catch-up retries.
+# The publisher runs each slot at most once, so extra fires are harmless no-ops.
+on:
+  schedule:
+    - cron: "50 1,2,10,11,15,16,20,21 * * *"
+    - cron: "20 4,13,18,23 * * *"
+  repository_dispatch:
+    types: [threatwatch-update]   # optional external scheduler fallback
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Run an update now even if this slot already ran"
+        type: boolean
+        default: false
+      refresh_report:
+        description: "Only re-compose today's brief document (after adding an editorial file)"
+        type: boolean
+        default: false
+      send_email:
+        description: "(Re)send today's morning email to subscribers"
+        type: boolean
+        default: false
+  pull_request:
+    paths: ["scripts/**", "tests/**", "threatwatch/**", ".github/workflows/publish-threatwatch.yml"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: threatwatch-publish
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # TODO before merge: pin these actions to full commit SHAs.
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests (offline fixtures)
+        run: python -m unittest discover -s tests -v
+      - name: Validate committed public data
+        run: python scripts/validate_data.py
+
+  publish:
+    if: github.event_name != 'pull_request'
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build brief and CVE catalog
+        id: build
+        env:
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+          VULNCHECK_API_KEY: ${{ secrets.VULNCHECK_API_KEY }}
+        run: |
+          set +e
+          if [ "${{ inputs.refresh_report }}" = "true" ]; then python scripts/build_brief.py --refresh-report
+          elif [ "${{ inputs.force }}" = "true" ]; then python scripts/build_brief.py --force; else python scripts/build_brief.py; fi
+          echo "exit=$?" >> "$GITHUB_OUTPUT"
+      - name: Commit generated data
+        run: |
+          git config user.name "aegis-threatwatch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add threatwatch/data threatwatch/email 2>/dev/null || git add threatwatch/data
+          if git diff --cached --quiet; then echo "No data changes."; exit 0; fi
+          git commit -m "ThreatWatch: edition ${{ steps.build.outputs.edition || 'status update' }}"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push
+      - name: Email the morning brief to subscribers (Zoho Campaigns)
+        if: steps.build.outputs.published == 'true' || inputs.send_email == true
+        continue-on-error: true   # email problems never fail or roll back the brief
+        env:
+          ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
+          ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
+          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
+          ZOHO_LIST_KEY: ${{ secrets.ZOHO_LIST_KEY }}
+          ZOHO_FROM_EMAIL: ${{ vars.ZOHO_FROM_EMAIL }}
+          ZOHO_FROM_NAME: ${{ vars.ZOHO_FROM_NAME }}
+          ZOHO_TOPIC_ID: ${{ vars.ZOHO_TOPIC_ID }}
+          ZOHO_ACCOUNTS_URL: ${{ vars.ZOHO_ACCOUNTS_URL }}
+          ZOHO_CAMPAIGNS_URL: ${{ vars.ZOHO_CAMPAIGNS_URL }}
+        run: python scripts/send_digest.py
+      - name: Fail if a quality gate blocked publication
+        if: steps.build.outputs.exit != '0'
+        run: |
+          echo "::error::Publication blocked — see the 'Build brief' / 'Build CVE catalog' logs. Last good data remains live."
+          exit 1
