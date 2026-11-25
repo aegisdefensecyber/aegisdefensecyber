@@ -46,13 +46,15 @@ class DigestTests(unittest.TestCase):
                 return "<!-- tw-edition:2026-11-24 -->"
             if url.endswith("/oauth/v2/token"):
                 return json.dumps({"access_token": "tok"})
+            if "getmailinglists" in url:
+                return json.dumps({"code": "200", "list_of_details": [
+                    {"listname": "Other", "listkey": "NOPE"}, {"listname": "ThreatWatch Daily Brief", "listkey": "LISTKEY"}]})
             if url.endswith("createCampaign"):
                 return json.dumps({"code": "200", "campaignKey": "123"})
             if url.endswith("sendcampaign"):
                 return json.dumps({"code": "200", "campaign_status": "inprogress"})
             raise AssertionError(url)
-        env = {n: "x" for n in send_digest.REQUIRED}
-        env["ZOHO_LIST_KEY"] = "LISTKEY"
+        env = {n: "x" for n in send_digest.REQUIRED}   # no ZOHO_LIST_KEY: looked up by name
         with tempfile.TemporaryDirectory() as d, mock.patch.dict(os.environ, env, clear=True), \
                 mock.patch.object(send_digest, "_request", fake), \
                 mock.patch.object(send_digest, "EMAIL_DIR", Path(d)), \

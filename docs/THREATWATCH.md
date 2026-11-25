@@ -239,7 +239,7 @@ existed are reconstructed from catalog data (marked "reconstructed") the next ti
   brief to `threatwatch/email/<edition>.html` (14 kept), and the workflow runs
   `scripts/send_digest.py`, which creates and sends a Zoho Campaigns campaign with that page as
   content. Updates at 12:00/17:00/22:00 never email. Email failures never block publishing.
-  Secrets: `ZOHO_CLIENT_ID`, `ZOHO_CLIENT_SECRET`, `ZOHO_REFRESH_TOKEN`, `ZOHO_LIST_KEY`;
+  Secrets: `ZOHO_CLIENT_ID`, `ZOHO_CLIENT_SECRET`, `ZOHO_REFRESH_TOKEN` (the list "ThreatWatch Daily Brief" is found by name; `ZOHO_LIST_KEY` optional);
   variables: `ZOHO_FROM_EMAIL` (and optional `ZOHO_FROM_NAME`, `ZOHO_TOPIC_ID`,
   `ZOHO_ACCOUNTS_URL`, `ZOHO_CAMPAIGNS_URL` for non-US Zoho data centres).
   Resend manually: Actions → Publish ThreatWatch → Run workflow → tick "send_email".

@@ -15,7 +15,8 @@ script prints a notice and exits 0, so publishing is never blocked by email.
 
 Environment (GitHub → Settings → Secrets and variables → Actions):
   ZOHO_CLIENT_ID, ZOHO_CLIENT_SECRET, ZOHO_REFRESH_TOKEN   secrets (Self Client in api-console.zoho.com)
-  ZOHO_LIST_KEY                                            mailing list key
+  ZOHO_LIST_KEY       optional: mailing list key; if unset the list is looked up by name
+  ZOHO_LIST_NAME      optional, default "ThreatWatch Daily Brief"
   ZOHO_FROM_EMAIL                                          verified sender, e.g. info@aegisdefensecyber.com
   ZOHO_FROM_NAME      optional, default "AEGIS ThreatWatch"
   ZOHO_TOPIC_ID       optional, only for accounts using Zoho topic management
@@ -43,7 +44,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_digest import EMAIL_DIR, SITE_URL  # noqa: E402
 from tw.common import DATA_DIR, read_json  # noqa: E402
 
-REQUIRED = ("ZOHO_CLIENT_ID", "ZOHO_CLIENT_SECRET", "ZOHO_REFRESH_TOKEN", "ZOHO_LIST_KEY", "ZOHO_FROM_EMAIL")
+REQUIRED = ("ZOHO_CLIENT_ID", "ZOHO_CLIENT_SECRET", "ZOHO_REFRESH_TOKEN", "ZOHO_FROM_EMAIL")
+DEFAULT_LIST = "ThreatWatch Daily Brief"
 UA = "aegis-threatwatch-digest/1.0"
 
 
@@ -105,6 +107,19 @@ def _zoho_ok(raw: str, what: str) -> dict:
     return doc
 
 
+def list_key(campaigns: str, token: str) -> str:
+    if _env("ZOHO_LIST_KEY"):
+        return _env("ZOHO_LIST_KEY")
+    name = _env("ZOHO_LIST_NAME", DEFAULT_LIST)
+    raw = _request(f"{campaigns}/api/v1.1/getmailinglists?resfmt=JSON&range=200",
+                   headers={"Authorization": f"Zoho-oauthtoken {token}"})
+    doc = _zoho_ok(raw, "getmailinglists")
+    for lst in doc.get("list_of_details") or []:
+        if str(lst.get("listname", "")).strip().lower() == name.lower():
+            return str(lst["listkey"])
+    raise DigestError(f"mailing list {name!r} not found in Zoho Campaigns")
+
+
 def create_and_send(campaigns: str, token: str, edition: str, subject: str, content_url: str) -> str:
     auth = {"Authorization": f"Zoho-oauthtoken {token}"}
     params = {
@@ -114,7 +129,7 @@ def create_and_send(campaigns: str, token: str, edition: str, subject: str, cont
         "from_name": _env("ZOHO_FROM_NAME", "AEGIS ThreatWatch"),
         "subject": subject,
         "content_url": content_url,
-        "list_details": json.dumps({_env("ZOHO_LIST_KEY"): []}),
+        "list_details": json.dumps({list_key(campaigns, token): []}),
     }
     if _env("ZOHO_TOPIC_ID"):
         params["topicId"] = _env("ZOHO_TOPIC_ID")
@@ -149,7 +164,8 @@ def main() -> int:
         wait_until_live(content_url, edition)
         token = access_token(accounts)
         if args.dry_run:
-            print(f"Dry run OK: page live at {content_url}; Zoho token works; nothing sent.")
+            key = list_key(campaigns, token)
+            print(f"Dry run OK: page live at {content_url}; Zoho token works; list key {key[:6]}…; nothing sent.")
             return 0
         key = create_and_send(campaigns, token, edition, meta["subject"], content_url)
     except (DigestError, urllib.error.URLError, TimeoutError, ValueError, KeyError) as exc:
