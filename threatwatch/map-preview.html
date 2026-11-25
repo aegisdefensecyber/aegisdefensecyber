@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<title>Threat Map preview | Aegis ThreatWatch</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Explore evidence-linked relationships between threat actors, campaigns, CVEs, industries and geographies.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action https://zgnp-zngp.maillist-manage.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tw.css?v=20261122c">
+<script src="assets/tw-subscribe.js?v=20261124a" defer></script>
+<link rel="stylesheet" href="assets/tw-map-preview.css?v=1">
+<script src="assets/tw-map-preview.js?v=1" defer></script>
+</head>
+<body class="wide">
+<a class="skip" href="#main">Skip to the explorer</a>
+<header class="tw-head">
+  <div class="tw-head-in">
+    <a class="brand" href="../" aria-label="AEGIS Global Intelligence — home">
+      <svg width="28" height="32" viewBox="0 0 42 48" fill="none" aria-hidden="true">
+        <path d="M21 2L4 9V22C4 33 12 43 21 46C30 43 38 33 38 22V9L21 2Z" fill="url(#twsg)" stroke="rgba(47,127,255,0.5)" stroke-width="0.5"/>
+        <text x="21" y="31" text-anchor="middle" font-family="Exo 2" font-weight="800" font-size="18" fill="white">A</text>
+        <defs><linearGradient id="twsg" x1="21" y1="2" x2="21" y2="46" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2f7fff"/><stop offset="100%" stop-color="#0a2060"/></linearGradient></defs>
+      </svg>
+      <span class="brand-txt"><b>AEGIS</b><span>Cyber Solutions · <em>ThreatWatch</em></span></span>
+    </a>
+    <nav aria-label="ThreatWatch">
+      <ul class="tw-nav">
+        <li><a class="home" href="../">← Global Intelligence</a></li>
+        <li><a href="./">Daily Brief</a></li>
+        <li><a href="monthly.html">Monthly Summary</a></li>
+        <li><a href="map.html" aria-current="page">Threat Map</a></li>
+        <li><a href="validate.html">Vulnerability Validation</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wide full">
+  <div class="eyebrow" id="last-updated" data-src="data/relationships.json" data-field="dataset.updatedAt">Last updated …</div>
+  <h1>Techniques, threat actors, campaigns, CVEs, IOCs &amp; industries</h1>
+  <p class="meta">Built from <a href="https://attack.mitre.org/campaigns/">MITRE ATT&amp;CK</a>: exploitation techniques → threat groups → the campaigns ATT&amp;CK attributes to them → the CVEs they exploited → indicators of compromise from <a href="https://www.cisa.gov/news-events/cybersecurity-advisories">CISA advisories</a> and <a href="https://threatfox.abuse.ch/">abuse.ch ThreatFox</a> → the industries ATT&amp;CK describes them targeting. Every link cites its source. Select a node to see the evidence; IOCs are shown defanged.</p>
+  <div id="dataset-banner" role="status"></div>
+
+  <form id="filters" class="filters" aria-label="Filter relationships">
+    <label>Search actor, alias or CVE<input type="search" id="f-q" autocomplete="off" placeholder="e.g. APT28, Volt Typhoon or CVE-2021-44228"></label>
+    <label>Industry / category<select id="f-ind"><option value="">All industries</option></select></label>
+    <label>Victim geography<select id="f-geo"><option value="">All regions</option></select></label>
+    <label>Minimum confidence<select id="f-conf"><option value="low">Low and above</option><option value="moderate">Moderate and above</option><option value="high">High only</option></select></label>
+    <label>Evidence type<select id="f-ev"><option value="">All evidence</option></select></label>
+    <label>Observed since<input type="date" id="f-since"></label>
+    <label class="chk"><input type="checkbox" id="f-exposure" checked> Include possible exposure</label>
+    <button type="button" class="btn secondary" id="f-reset">Reset</button>
+  </form>
+
+  <div class="map-grid">
+    <figure class="graph-wrap" aria-labelledby="graph-cap">
+      <figcaption id="graph-cap" class="sr-only">Relationship graph. Use Tab to move between nodes and Enter to pin details. A table listing the same relationships follows for screen readers.</figcaption>
+      <p class="graph-hint">Preview of the calmer design. Point at any box to light up its full chain; click to pin it and see details.</p>
+      <svg id="graph" role="group" aria-label="Threat relationship graph"></svg>
+      <div class="legend" aria-label="Legend">
+        <span><i class="lg solid"></i> Observed / attributed</span>
+        <span><i class="lg dashed"></i> Possible exposure (no observed victims)</span>
+        <span><i class="lg thick"></i> High confidence</span>
+        <span>Links that skip a column appear when you point at a box</span>
+      </div>
+    </figure>
+    <aside id="details" class="details" aria-live="polite" aria-labelledby="details-title">
+      <h2 id="details-title">Details</h2>
+      <p class="muted">Select a node to see connected records, evidence, observation dates and why each relationship exists.</p>
+    </aside>
+  </div>
+
+  <!-- Relationship list: hidden on screen, kept for screen readers as the text alternative to the graph -->
+  <section class="sr-only" aria-labelledby="list-title">
+    <h2 id="list-title">Relationship list</h2>
+    <p class="muted" id="list-count"></p>
+    <div class="tbl-wrap"><table id="rel-table">
+      <caption>Every relationship matching the current filters, with evidence.</caption>
+      <thead><tr><th scope="col">From</th><th scope="col">Relationship</th><th scope="col">To</th><th scope="col">Confidence</th><th scope="col">Observed</th><th scope="col">Evidence</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+</main>
+
+<section id="subscribe" class="sub-band" aria-labelledby="subscribe-title">
+  <div class="sub-in">
+    <div class="sub-copy">
+      <h2 id="subscribe-title">Get the daily brief by email</h2>
+      <p>Free ThreatWatch updates in your inbox. Email address only; you’ll confirm by email, and you can unsubscribe anytime.</p>
+    </div>
+    <form id="subscribe-form" class="sub-form" method="post" target="_blank" novalidate>
+      <label for="sub-email" class="sr-only">Email address</label>
+      <input id="sub-email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="254" placeholder="you@company.com">
+
+      <button type="submit">Subscribe</button>
+      <p id="sub-msg" class="sub-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+
+<footer class="tw-foot">
+  <div class="tw-foot-in">
+    <span>© 2026 Aegis Cyber Solutions LLC · ThreatWatch is free and public.</span>
+    <nav aria-label="Footer"><ul>
+      <li><a href="../">Global Intelligence</a></li>
+      <li><a href="./">Daily Brief</a></li>
+      <li><a href="./#methodology">Methodology</a></li>
+      <li><a href="mailto:info@aegisdefensecyber.com">Contact</a></li>
+    </ul></nav>
+  </div>
+</footer>
+<script src="assets/tw-updated.js?v=20261125a"></script>
+</body>
+</html>
