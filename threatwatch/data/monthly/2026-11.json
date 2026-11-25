@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "month": "2026-11",
   "complete": false,
-  "updatedAt": "2026-11-24T23:13:57Z",
+  "updatedAt": "2026-11-25T14:23:22Z",
   "metrics": [
     {
       "id": "kev_added",
@@ -10,8 +10,8 @@
       "value": 29,
       "rule": "CVE entries whose CISA dateAdded falls in the month.",
       "source": "CISA KEV",
-      "window": "2026-11-01 to 2026-11-24 (dateAdded, ET calendar)",
-      "updatedAt": "2026-11-24T23:13:57Z"
+      "window": "2026-11-01 to 2026-11-25 (dateAdded, ET calendar)",
+      "updatedAt": "2026-11-25T14:23:22Z"
     },
     {
       "id": "vendors",
@@ -19,8 +19,8 @@
       "value": 26,
       "rule": "Unique vendorProject values among the month’s KEV entries.",
       "source": "CISA KEV",
-      "window": "2026-11-01 to 2026-11-24 (dateAdded, ET calendar)",
-      "updatedAt": "2026-11-24T23:13:57Z"
+      "window": "2026-11-01 to 2026-11-25 (dateAdded, ET calendar)",
+      "updatedAt": "2026-11-25T14:23:22Z"
     },
     {
       "id": "ransomware",
@@ -28,8 +28,8 @@
       "value": 1,
       "rule": "Month’s KEV entries where CISA sets knownRansomwareCampaignUse = Known.",
       "source": "CISA KEV",
-      "window": "2026-11-01 to 2026-11-24 (dateAdded, ET calendar)",
-      "updatedAt": "2026-11-24T23:13:57Z"
+      "window": "2026-11-01 to 2026-11-25 (dateAdded, ET calendar)",
+      "updatedAt": "2026-11-25T14:23:22Z"
     },
     {
       "id": "epss90",
@@ -37,8 +37,8 @@
       "value": 15,
       "rule": "Month’s KEV entries with EPSS percentile ≥ 0.90 (scores as of 2026-11-24).",
       "source": "FIRST EPSS",
-      "window": "2026-11-01 to 2026-11-24 (dateAdded, ET calendar)",
-      "updatedAt": "2026-11-24T23:13:57Z"
+      "window": "2026-11-01 to 2026-11-25 (dateAdded, ET calendar)",
+      "updatedAt": "2026-11-25T14:23:22Z"
     }
   ],
   "notice": "These are CISA KEV catalog counts, not a count of total cyber incidents.",
@@ -383,7 +383,7 @@
         "blocks": [
           {
             "type": "p",
-            "text": "CISA added **29 vulnerabilities** to the KEV catalog in November 2026 (month to date through November 25, 2026), spanning 26 vendors. CISA flags known ransomware use for 1 of them. The highest-likelihood additions by EPSS were **CVE-2026-123158 (OpenBSD OpenSSH)** and **CVE-2026-40217 (BerriAI LiteLLM)**."
+            "text": "CISA added **29 vulnerabilities** to the KEV catalog in November 2026 (month to date through November 25, 2026), spanning 26 vendors. CISA flags known ransomware use for 1 of them. The highest-likelihood additions by EPSS were **CVE-2026-123158 (OpenBSD OpenSSH)** and **CVE-2026-40217 (BerriAI LiteLLM)**. Outside KEV, 4 further CVEs were reported exploited or tracked as zero-days by Google Project Zero, ENISA EUVD or VulnCheck."
           },
           {
             "type": "table",
@@ -410,7 +410,7 @@
               ],
               [
                 "Exploited or zero-day outside KEV",
-                "0 (Project Zero, ENISA EUVD, VulnCheck)"
+                "4 (Project Zero, ENISA EUVD, VulnCheck)"
               ],
               [
                 "Public exploit code referenced",
@@ -418,7 +418,7 @@
               ],
               [
                 "CVEs published to NVD",
-                "13,826 (6,870 High/Critical)"
+                "14,230 (6,983 High/Critical)"
               ]
             ]
           },
@@ -494,6 +494,18 @@
                 "Vanderbilt University Research Electronic Data Capture (REDCap)",
                 "arbitrary file write",
                 "CISA KEV 2026-11-18; ENISA EUVD; EPSS 98th pct; public exploit"
+              ],
+              [
+                "CVE-2026-127057",
+                "CVE-2026-127057",
+                "vulnerability",
+                "ENISA EUVD; EPSS 53rd pct; no public exploit identified"
+              ],
+              [
+                "CVE-2025-34035",
+                "Engeniustech Esr600 Firmware",
+                "OS command injection",
+                "ENISA EUVD; EPSS 98th pct; public exploit"
               ]
             ]
           },
@@ -526,12 +538,42 @@
             "text": "Known ransomware use (CISA): CVE-2024-10441 (Synology DiskStation Manager (DSM))."
           },
           {
+            "type": "table",
+            "columns": [
+              "Date",
+              "CVE",
+              "Report"
+            ],
+            "rows": [
+              [
+                "2026-11-20",
+                "CVE-2026-127057 (CVE-2026-127057)",
+                "ENISA EUVD"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2025-34035 (Engeniustech Esr600 Firmware)",
+                "ENISA EUVD"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2025-49931 (Crocoblock JetSearch)",
+                "ENISA EUVD"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2026-3496 (JetBooking WordPress plugin)",
+                "ENISA EUVD"
+              ]
+            ]
+          },
+          {
             "type": "p",
             "text": "No campaign-specific IP addresses, hashes or domains are collected by ThreatWatch's automated feeds. Victim counts and campaign scope are not established unless cited in section 5."
           },
           {
             "type": "p",
-            "text": "**Defensive hunting focus:** unexpected child processes and outbound connections (10 CVEs); unauthorized administrative access and configuration changes (8 CVEs); unusual requests and changes (7 CVEs)."
+            "text": "**Defensive hunting focus:** unexpected child processes and outbound connections (11 CVEs); unauthorized administrative access and configuration changes (8 CVEs); unusual requests and changes (8 CVEs)."
           }
         ]
       },
@@ -658,7 +700,7 @@
             ],
             "rows": [
               [
-                "Remaining 29 exploited CVEs",
+                "Remaining 33 exploited CVEs",
                 "Unknown; identity, motivation and geographic targeting not established in tracked sources."
               ]
             ]
@@ -687,6 +729,11 @@
                 "Emergency",
                 "Unremediated internet-facing Apache Axis, Apache Roller, Barracuda Networks Barracuda Email Security Gateway (ESG), Barracuda Networks Multiple Products, BerriAI LiteLLM and Broadcom VMware vCenter and others",
                 "Immediate containment and applicable forensic triage"
+              ],
+              [
+                "Urgent",
+                "Products with exploitation reported outside KEV: CVE-2026-127057, Crocoblock JetSearch, Engeniustech Esr600 Firmware and JetBooking WordPress plugin",
+                "Apply vendor fixes in 24-72 hours"
               ],
               [
                 "Urgent",
@@ -882,6 +929,11 @@
               ],
               [
                 "2026-11-20",
+                "CVE-2026-127057",
+                "CVE-2026-127057: exploitation reported by ENISA EUVD"
+              ],
+              [
+                "2026-11-20",
                 "CVE-2026-129448",
                 "Apache Roller Deserialization of Untrusted Data Vulnerability"
               ],
@@ -914,6 +966,21 @@
                 "2026-11-24",
                 "CVE-2026-132224",
                 "Optimizely Web Experimentation External Control of Critical State Data Vulnerability"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2025-34035",
+                "Engeniustech Esr600 Firmware: exploitation reported by ENISA EUVD"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2025-49931",
+                "Crocoblock JetSearch: exploitation reported by ENISA EUVD"
+              ],
+              [
+                "2026-11-25",
+                "CVE-2026-3496",
+                "JetBooking WordPress plugin: exploitation reported by ENISA EUVD"
               ]
             ]
           }
@@ -948,9 +1015,13 @@
       {
         "label": "FIRST EPSS",
         "url": "https://www.first.org/epss/"
+      },
+      {
+        "label": "Google Project Zero 0day In the Wild tracker",
+        "url": "https://docs.google.com/spreadsheets/d/1lkNJ0uQwbeC1ZTRrxdtuPLCIl7mlUreoKfSIgajnSyY"
       }
     ],
     "footer": "Enterprise Cyber Threat Intelligence | November 2026",
-    "generatedAt": "2026-11-25T05:15:58Z"
+    "generatedAt": "2026-11-25T14:25:22Z"
   }
 }

@@ -1,0 +1,634 @@
+{
+  "schemaVersion": 1,
+  "edition": "2026-11-25",
+  "publishedAt": "2026-11-25T14:23:22Z",
+  "window": {
+    "start": "2026-11-24T23:13:57Z",
+    "end": "2026-11-25T14:23:22Z",
+    "note": "KEV additions not present in the previous edition’s catalog snapshot."
+  },
+  "executive": {
+    "summary": "CISA published no new Known Exploited Vulnerabilities since the previous edition. That does not mean no new threats emerged — KEV is one confirmed-exploitation source, and campaigns or zero-days outside it are not covered by today’s automated feeds.",
+    "summarySource": "generated",
+    "counts": {
+      "kevAdded": 0,
+      "kevRansomware": 0,
+      "emergency": 0,
+      "urgent": 0,
+      "criticalHigh": 0,
+      "materialChanges": 0,
+      "kevTotal": 1795
+    },
+    "developments": []
+  },
+  "kevLatest": {
+    "date": "2026-11-24",
+    "dueDate": "2026-11-27",
+    "catalogVersion": "2026.11.24",
+    "released": "2026-11-24T17:47:46.199Z",
+    "items": [
+      {
+        "cve": "CVE-2026-131914",
+        "vendor": "Idunno",
+        "product": "AntiCsrf"
+      },
+      {
+        "cve": "CVE-2026-132165",
+        "vendor": "Drupal",
+        "product": "Core"
+      },
+      {
+        "cve": "CVE-2026-132224",
+        "vendor": "Optimizely",
+        "product": "Web Experimentation"
+      }
+    ]
+  },
+  "actions": [],
+  "cves": [],
+  "overflow": 0,
+  "campaigns": {
+    "status": "not_covered",
+    "items": [],
+    "note": "No reviewed, source-linked intelligence for this section in today’s edition."
+  },
+  "industries": {
+    "status": "not_covered",
+    "items": [],
+    "note": "No reviewed, source-linked intelligence for this section in today’s edition."
+  },
+  "actors": {
+    "status": "not_covered",
+    "items": [],
+    "note": "No reviewed, source-linked intelligence for this section in today’s edition."
+  },
+  "remediation": {
+    "groups": {
+      "emergency": [],
+      "urgent": [],
+      "routine": [],
+      "monitor": []
+    },
+    "guidance": {
+      "emergency": "Mitigate exposed instances within 24–72 hours (guidance, not policy).",
+      "urgent": "Remediate within the CISA due date or your next emergency change window.",
+      "routine": "Remediate in the normal patch cycle; prerequisites limit exposure.",
+      "monitor": "Track for exploitation or scope changes."
+    }
+  },
+  "changes": [],
+  "sources": [
+    {
+      "name": "CISA Known Exploited Vulnerabilities",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "version": "2026.11.24",
+      "released": "2026-11-24T17:47:46.199Z",
+      "fetchedAt": "2026-11-25T14:23:22Z",
+      "status": "ok"
+    },
+    {
+      "name": "FIRST EPSS",
+      "url": "https://www.first.org/epss/",
+      "fetchedAt": "2026-11-25T14:23:22Z",
+      "status": "ok",
+      "note": "Probability estimate; not evidence of exploitation."
+    },
+    {
+      "name": "NVD CVE API 2.0",
+      "url": "https://nvd.nist.gov/",
+      "fetchedAt": "2026-11-25T14:23:22Z",
+      "status": "no data",
+      "note": "Enrichment can lag publication by days."
+    }
+  ],
+  "coverage": {
+    "covered": [
+      "CISA KEV additions",
+      "FIRST EPSS",
+      "NVD CVSS and references"
+    ],
+    "notCovered": [
+      "Campaign, threat actor and industry analysis (requires reviewed editorial input)",
+      "Zero-days not yet in CISA KEV",
+      "Vendor-specific fixed-version validation"
+    ],
+    "unknownFields": [],
+    "editorial": {
+      "present": false,
+      "reviewedBy": null,
+      "reviewedAt": null
+    }
+  },
+  "updatedAt": "2026-11-25T14:23:22Z",
+  "updateSlot": "07:00",
+  "report": {
+    "version": 1,
+    "title": [
+      "DAILY ENTERPRISE CYBERSECURITY",
+      "THREAT INTELLIGENCE BRIEF"
+    ],
+    "dateLabel": "Wednesday, November 25, 2026",
+    "window": "Reporting window: November 24-25, 2026",
+    "prepared": "Automated edition, issued 7:00 AM ET and updated at 12:00, 5:00 and 10:00 PM ET",
+    "sourceNote": "This brief is compiled automatically from public sources (CISA KEV, NVD, FIRST EPSS, Google Project Zero, ENISA EUVD, Metasploit, Exploit-DB, PoC-in-GitHub, MITRE ATT&CK). Exploitation statuses reflect what those sources report; anything they do not establish is stated as not established or not verified.",
+    "sections": [
+      {
+        "id": "summary",
+        "num": 1,
+        "title": "Executive Intelligence Summary",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The leading newly prioritized issue is **CVE-2025-34035 (Engeniustech Esr600 Firmware)**, a critical OS command injection flaw; it is reported exploited by ENISA EUVD since 2026-11-25. No fixed release is mapped in NVD data yet. **CVE-2025-49931 (Crocoblock JetSearch)** is another important newly highlighted issue; it is reported exploited by ENISA EUVD since 2026-11-25."
+          },
+          {
+            "type": "table",
+            "columns": [
+              "Metric",
+              "Assessment"
+            ],
+            "rows": [
+              [
+                "Newly prioritized CVEs",
+                "7: Engeniustech Esr600 Firmware, Crocoblock JetSearch, JetBooking WordPress plugin, CVE-2026-133335, Ffmpeg, CVE-2026-135202 and 1 more"
+              ],
+              [
+                "Latest KEV baseline",
+                "1,795 (catalog version 2026.11.24, released 2026-11-24)"
+              ],
+              [
+                "New KEV additions",
+                "None verified in reporting window"
+              ],
+              [
+                "New zero-day / in-the-wild reports",
+                "CVE-2025-34035 (Engeniustech Esr600 Firmware), CVE-2025-49931 (Crocoblock JetSearch), CVE-2026-3496 (JetBooking WordPress plugin) and CVE-2026-133335 (CVE-2026-133335)"
+              ],
+              [
+                "Emergency candidates",
+                "4 newly highlighted: exposed Engeniustech Esr600 Firmware, exposed Crocoblock JetSearch, exposed JetBooking WordPress plugin and exposed CVE-2026-133335"
+              ],
+              [
+                "Complete worldwide High/Critical count",
+                "Not established; 464 High/Critical CVEs published to NVD in the window (NVD-scored only)"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**Top five actions:** (1) Isolate or patch exposed Engeniustech Esr600 Firmware (CVE-2025-34035); (2) isolate or patch exposed Crocoblock JetSearch (CVE-2025-49931); (3) isolate or patch exposed JetBooking WordPress plugin (CVE-2026-3496); (4) close previously reported Project MONAI MONAI Label, N-able MailAssure, Idunno AntiCsrf and Drupal Core KEV exposure; (5) examine Engeniustech Esr600 Firmware hosts for unexpected child processes and outbound connections."
+          }
+        ]
+      },
+      {
+        "id": "critical",
+        "num": 2,
+        "title": "Critical Vulnerability Intelligence",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**CVE-2025-34035 - Engeniustech Esr600 Firmware OS command injection (CVSS 10).** An OS command injection vulnerability exists in EnGenius EnShare Cloud Service version 1.4.11 and earlier. The usbinteract.cgi script fails to properly sanitize user input passed to the path parameter, allowing unauthenticated remote attackers to inject arbitrary shell commands. The injected commands are executed with root privileges, leading to full system compromise. Affected releases (NVD): esr300 firmware = 1.1.0.28; esr300 firmware = 1.3.1.42; esr300 firmware = 1.4.0; +22 more. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+          },
+          {
+            "type": "table",
+            "columns": [
+              "Field",
+              "Status"
+            ],
+            "rows": [
+              [
+                "EPSS / percentile",
+                "31.6% probability / 98th percentile (FIRST EPSS)"
+              ],
+              [
+                "CISA KEV",
+                "Not listed in latest verified baseline"
+              ],
+              [
+                "Exploitation",
+                "Reported exploited by ENISA EUVD since 2026-11-25; independently corroborated victim evidence not established"
+              ],
+              [
+                "Public exploit",
+                "Public exploit code referenced: 1 Exploit-DB entry; weaponized exploit not verified"
+              ],
+              [
+                "Mitigation",
+                "Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; investigate for signs of prior compromise"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**CVE-2025-49931 - Crocoblock JetSearch SQL injection (CVSS 9.3).** Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Crocoblock JetSearch jet-search allows Blind SQL Injection.This issue affects JetSearch: from n/a through 3.5.10. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+          },
+          {
+            "type": "table",
+            "columns": [
+              "Field",
+              "Status"
+            ],
+            "rows": [
+              [
+                "EPSS / percentile",
+                "0.5% probability / 43rd percentile (FIRST EPSS)"
+              ],
+              [
+                "CISA KEV",
+                "Not listed in latest verified baseline"
+              ],
+              [
+                "Exploitation",
+                "Reported exploited by ENISA EUVD since 2026-11-25; independently corroborated victim evidence not established"
+              ],
+              [
+                "Public exploit",
+                "No public exploit or proof-of-concept identified in tracked sources"
+              ],
+              [
+                "Mitigation",
+                "Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; investigate for signs of prior compromise"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**CVE-2026-3496 - JetBooking WordPress plugin SQL injection (CVSS 7.5).** The JetBooking plugin for WordPress is vulnerable to SQL Injection via the 'check_in_date' parameter in all versions up to, and including, 4.0.3. This is due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+          },
+          {
+            "type": "table",
+            "columns": [
+              "Field",
+              "Status"
+            ],
+            "rows": [
+              [
+                "EPSS / percentile",
+                "0.3% probability / 24th percentile (FIRST EPSS)"
+              ],
+              [
+                "CISA KEV",
+                "Not listed in latest verified baseline"
+              ],
+              [
+                "Exploitation",
+                "Reported exploited by ENISA EUVD since 2026-11-25; independently corroborated victim evidence not established"
+              ],
+              [
+                "Public exploit",
+                "No public exploit or proof-of-concept identified in tracked sources"
+              ],
+              [
+                "Mitigation",
+                "Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; investigate for signs of prior compromise"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**CVE-2026-133335 - CVE-2026-133335 path traversal (CVSS 9.2).** Joomla Extension - virtuemart.net - Unauthenticated local file inclusion leading to remote code execution via controller fallback in VirtueMart extension 4.0.0-4.8.7 - The main controller of the component fell back to including a controller file derived from the request without filtering the name, allowing path traversal to arbitrary local PHP files. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+          },
+          {
+            "type": "table",
+            "columns": [
+              "Field",
+              "Status"
+            ],
+            "rows": [
+              [
+                "EPSS / percentile",
+                "Not verified"
+              ],
+              [
+                "CISA KEV",
+                "Not listed in latest verified baseline"
+              ],
+              [
+                "Exploitation",
+                "Described in its CVE record as exploited in the wild (not yet corroborated by CISA KEV, Project Zero, EUVD or VulnCheck); independently corroborated victim evidence not established"
+              ],
+              [
+                "Public exploit",
+                "No public exploit or proof-of-concept identified in tracked sources"
+              ],
+              [
+                "Mitigation",
+                "Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; investigate for signs of prior compromise"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**CVE-2026-135736 - Ffmpeg out-of-bounds write (CVSS 9.2).** FFmpeg 4.4 before 9.1 contains a heap out-of-bounds read and write vulnerability in libavfilter/vf_deband.c that allows attackers to corrupt heap memory by sending a runtime coupling command. Attackers can send a 'deband coupling 1' command via sendcmd or an unauthenticated zmq filter, making chroma planes be processed at luma dimensions to crash the process or potentially execute code. Affected releases (NVD): ffmpeg >= 4.4, < 9.1. Fixed version (first unaffected release per NVD ranges): ffmpeg 9.1. Attack path: network-accessible; no authentication required; no user interaction required."
+          },
+          {
+            "type": "p",
+            "text": "EPSS: 0.7% probability / 53rd percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified. Mitigation: Update to a fixed release (ffmpeg 9.1); remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
+          },
+          {
+            "type": "p",
+            "text": "**CVE-2026-135202 - CVE-2026-135202 remote code execution (CVSS 9.8).** Several plugins for WordPress published by WP connect (Orders Sync to Airtable for WooCommerce, Add-On for Contact Form 7 to Notion, WP Sync for Notion – Notion to WordPress, Add-On for Contact Form 7 to Airtable, Add-on Brevo for Gravity Forms, and Air WP Sync – Airtable to WordPress) contain embedded malicious code (a backdoor) in the versions listed. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+          },
+          {
+            "type": "p",
+            "text": "EPSS: 0.6% probability / 49th percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
+          },
+          {
+            "type": "p",
+            "text": "Also prioritized: CVE-2026-135743 (Ffmpeg, urgent). Details are in the Vulnerability Validation catalog."
+          }
+        ]
+      },
+      {
+        "id": "exploitation",
+        "num": 3,
+        "title": "Active Exploitation and Threat Campaigns",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "CVE-2025-34035 (Engeniustech Esr600 Firmware): reported exploited by ENISA EUVD since 2026-11-25. No named actor, verified victim count or campaign is established in tracked sources. CVE-2025-49931 (Crocoblock JetSearch): reported exploited by ENISA EUVD since 2026-11-25. No named actor, verified victim count or campaign is established in tracked sources. CVE-2026-3496 (JetBooking WordPress plugin): reported exploited by ENISA EUVD since 2026-11-25. No named actor, verified victim count or campaign is established in tracked sources. No campaign-specific IP addresses, hashes or domains are collected by ThreatWatch's automated feeds."
+          },
+          {
+            "type": "p",
+            "text": "No new CISA KEV additions were verified in the reporting window. The latest additions remain the 3 entries added November 24, 2026: Idunno AntiCsrf, Drupal Core and Optimizely Web Experimentation. The federal remediation deadline for those entries is **November 27, 2026**. This deadline applies to covered federal agencies under applicable requirements; it is not a universal private-sector mandate."
+          },
+          {
+            "type": "p",
+            "text": "**Defensive hunting:** for Engeniustech Esr600 Firmware (CVE-2025-34035), inspect unexpected child processes of the service, new scheduled jobs or services, and unusual outbound connections from the host; for Crocoblock JetSearch (CVE-2025-49931), review database errors and anomalous queries originating from the application; for JetBooking WordPress plugin (CVE-2026-3496), review database errors and anomalous queries originating from the application; for CVE-2026-133335 (CVE-2026-133335), inspect unexpected file writes outside the application's data directories, new web-accessible files, modified application code, altered SSH authorized_keys files and suspicious scheduled jobs."
+          }
+        ]
+      },
+      {
+        "id": "industry",
+        "num": 4,
+        "title": "Industry and Market Threat Landscape",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": [
+              "Industry / market",
+              "Observed activity vs. possible exposure"
+            ],
+            "rows": [
+              [
+                "Healthcare / medical imaging",
+                "Possible CVE-2026-133335, CVE-2026-135202 and Crocoblock JetSearch exposure; targeting unknown"
+              ],
+              [
+                "Education / research",
+                "Possible CVE-2026-133335, CVE-2026-135202 and Crocoblock JetSearch exposure; targeting unknown"
+              ],
+              [
+                "Technology / software",
+                "Potential CVE-2026-133335, CVE-2026-135202, Crocoblock JetSearch and Engeniustech Esr600 Firmware dependency exposure"
+              ],
+              [
+                "Government / defense",
+                "Possible CVE-2026-133335, CVE-2026-135202 and Crocoblock JetSearch exposure; no new sector-specific targeting confirmed"
+              ],
+              [
+                "Financial services",
+                "Possible CVE-2026-133335, CVE-2026-135202 and Crocoblock JetSearch exposure; targeting unknown"
+              ],
+              [
+                "Manufacturing / energy / utilities",
+                "Possible CVE-2026-133335, CVE-2026-135202 and Crocoblock JetSearch exposure; targeting unknown"
+              ],
+              [
+                "Retail / transportation",
+                "CVE-2026-135202 relevant to this sector; confirmed sector targeting not established"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Geography and organization-size targeting were not reliably established. Product use indicates possible exposure, not observed attacker selection."
+          }
+        ]
+      },
+      {
+        "id": "actors",
+        "num": 5,
+        "title": "Threat Actor Intelligence",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": [
+              "Actor / cluster",
+              "Attribution and activity"
+            ],
+            "rows": [
+              [
+                "Engeniustech Esr600 Firmware operators",
+                "Unknown. Exploitation reported; identity, motivation and geographic targeting not established."
+              ],
+              [
+                "Crocoblock JetSearch operators",
+                "Unknown. Exploitation reported; identity, motivation and geographic targeting not established."
+              ],
+              [
+                "JetBooking WordPress plugin operators",
+                "Unknown. Exploitation reported; identity, motivation and geographic targeting not established."
+              ],
+              [
+                "CVE-2026-133335 operators",
+                "Unknown. Exploitation reported; identity, motivation and geographic targeting not established."
+              ],
+              [
+                "Ffmpeg operators",
+                "No confirmed malicious exploitation or attribution."
+              ],
+              [
+                "CVE-2026-135202 operators",
+                "No confirmed malicious exploitation or attribution."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**MITRE ATT&CK defensive mapping:** T1190 (Exploit Public-Facing Application) may be relevant to exposed Engeniustech Esr600 Firmware, Crocoblock JetSearch, JetBooking WordPress plugin and CVE-2026-133335 services. These mappings support defensive detection and do not establish actor attribution."
+          }
+        ]
+      },
+      {
+        "id": "remediation",
+        "num": 6,
+        "title": "Enterprise Risk and Remediation Decisions",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": [
+              "Priority",
+              "Scenario",
+              "Suggested window"
+            ],
+            "rows": [
+              [
+                "Emergency",
+                "Engeniustech Esr600 Firmware (CVE-2025-34035) reachable from untrusted networks",
+                "Isolate immediately; investigate and mitigate within 24 hours"
+              ],
+              [
+                "Emergency",
+                "Crocoblock JetSearch (CVE-2025-49931) reachable from untrusted networks",
+                "Isolate immediately; investigate and mitigate within 24 hours"
+              ],
+              [
+                "Emergency",
+                "JetBooking WordPress plugin (CVE-2026-3496) reachable from untrusted networks",
+                "Isolate immediately; investigate and mitigate within 24 hours"
+              ],
+              [
+                "Emergency",
+                "CVE-2026-133335 reachable from untrusted networks",
+                "Isolate immediately; investigate and mitigate within 24 hours"
+              ],
+              [
+                "Emergency",
+                "Unremediated confirmed-exploited Drupal Core, Idunno AntiCsrf, N-able MailAssure, Optimizely Web Experimentation or Project MONAI MONAI Label exposure",
+                "Immediate containment and applicable forensic triage"
+              ],
+              [
+                "Urgent",
+                "Vulnerable Ffmpeg (CVE-2026-135736)",
+                "Update to 9.1 in 24-72 hours"
+              ],
+              [
+                "Urgent",
+                "Vulnerable CVE-2026-135202 (CVE-2026-135202)",
+                "Apply applicable vendor fix in 24-72 hours"
+              ],
+              [
+                "Routine",
+                "Affected but effectively restricted software",
+                "Controlled maintenance window"
+              ],
+              [
+                "Monitor",
+                "Verified fixed or nonaffected software",
+                "Watch for material new evidence"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Response windows are recommendations, not mandatory policy. No organization-specific exposure, compromise, asset criticality or patch status was established."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "num": 7,
+        "title": "Significant Changes to Previously Reported Issues",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": [
+              "Issue",
+              "Material development"
+            ],
+            "rows": [
+              [
+                "Idunno AntiCsrf CVE-2026-131914",
+                "No significant new development established since November 24"
+              ],
+              [
+                "Drupal Core CVE-2026-132165",
+                "No significant new development established since November 24"
+              ],
+              [
+                "Optimizely Web Experimentation CVE-2026-132224",
+                "No significant new development established since November 24"
+              ],
+              [
+                "CVE-2026-129514 CVE-2026-129514",
+                "Public exploit code now referenced"
+              ],
+              [
+                "TOTOLINK A7100RU CVE-2026-134882",
+                "No significant new development established since November 24"
+              ],
+              [
+                "OAuth API CVE-2026-120382",
+                "No significant new development established since November 24"
+              ],
+              [
+                "BISHENG CVE-2026-135211",
+                "No significant new development established since November 24"
+              ],
+              [
+                "CVE-2026-133469 CVE-2026-133469",
+                "No significant new development established since November 23"
+              ],
+              [
+                "N-able MailAssure CVE-2026-134624",
+                "No significant new development established since November 23"
+              ],
+              [
+                "CVE-2026-134815 CVE-2026-134815",
+                "No significant new development established since November 23"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "label": "CVE-2025-34035 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-34035"
+      },
+      {
+        "label": "CVE-2025-49931 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-49931"
+      },
+      {
+        "label": "CVE-2026-3496 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3496"
+      },
+      {
+        "label": "CVE-2026-133335 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133335"
+      },
+      {
+        "label": "Ffmpeg vendor advisory",
+        "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/26081"
+      },
+      {
+        "label": "CVE-2026-135736 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135736"
+      },
+      {
+        "label": "CVE-2026-135202 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135202"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      },
+      {
+        "label": "FIRST EPSS",
+        "url": "https://www.first.org/epss/"
+      }
+    ],
+    "footer": "Enterprise Cyber Threat Intelligence | 25 Nov 2026",
+    "reviewedBy": null,
+    "generatedAt": "2026-11-25T14:25:22Z",
+    "prioritized": [
+      "CVE-2025-34035",
+      "CVE-2025-49931",
+      "CVE-2026-3496",
+      "CVE-2026-133335",
+      "CVE-2026-135736",
+      "CVE-2026-135202",
+      "CVE-2026-135743"
+    ]
+  }
+}
