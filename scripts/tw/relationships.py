@@ -181,14 +181,27 @@ def build_graph(bundle: dict, cve_info: dict[str, dict], version: str | None, no
     }
 
 
-def ioc_queries(graph: dict, bundle: dict) -> tuple[dict[str, set[str]], list[str]]:
-    """CISA advisory codes cited by ATT&CK for each mapped campaign/actor node, and actor names for ThreatFox."""
-    by_ext = {}
+def ioc_queries(graph: dict, bundle: dict) -> tuple[dict[str, set[str]], dict[str, list[str]]]:
+    """CISA advisory codes cited by ATT&CK for each mapped campaign/actor node, and ThreatFox search terms
+    per actor: the actor's name, then the malware families ATT&CK says it uses."""
+    by_ext, by_id = {}, {}
     for o in bundle.get("objects", []):
+        by_id[o.get("id")] = o
         if o.get("type") in ("campaign", "intrusion-set") and not o.get("revoked"):
             by_ext[_ext(o).get("external_id")] = o
+    uses: dict[str, list[str]] = {}
+    for r in bundle.get("objects", []):
+        if r.get("type") == "relationship" and r.get("relationship_type") == "uses" and not r.get("revoked"):
+            m = by_id.get(r.get("target_ref")) or {}
+            src = by_id.get(r.get("source_ref")) or {}
+            if m.get("type") == "malware" and not m.get("revoked") and m.get("name") and src.get("type") == "intrusion-set":
+                uses.setdefault(r.get("source_ref"), []).append(m["name"])
+    users: dict[str, int] = {}
+    for fams in uses.values():
+        for f in set(fams):
+            users[f] = users.get(f, 0) + 1
     codes: dict[str, set[str]] = {}
-    names: list[str] = []
+    names: dict[str, list[str]] = {}
     for n in graph["nodes"]:
         if n["type"] in ("campaign", "actor"):
             o = by_ext.get(n.get("attackId")) or {}
@@ -196,7 +209,10 @@ def ioc_queries(graph: dict, bundle: dict) -> tuple[dict[str, set[str]], list[st
             if c:
                 codes[n["id"]] = c
             if n["type"] == "actor":
-                names.append(n["label"])
+                # skip commodity malware shared by many groups (e.g. Cobalt Strike); most specific first
+                fams = sorted({f for f in uses.get(o.get("id"), []) if users.get(f, 0) <= 3},
+                              key=lambda f: (users.get(f, 0), f))
+                names[n["label"]] = [n["label"]] + fams
     return codes, names
 
 
@@ -239,7 +255,9 @@ def add_iocs(graph: dict, codes: dict[str, set[str]], cisa: dict[str, list[dict]
             continue
         for i in threatfox.get(n["label"], []):
             lvl = i.get("confidenceLevel") or 0
-            put(n["id"], i, "high" if lvl >= 75 else "moderate" if lvl >= 50 else "low",
-                f"abuse.ch ThreatFox tags this indicator {n['label']}"
-                + (f" ({i['malware']})" if i.get("malware") else "") + f"; reporter confidence {lvl}%.")
+            put(n["id"], i, "low" if i.get("via") else "high" if lvl >= 75 else "moderate" if lvl >= 50 else "low",
+                (f"abuse.ch ThreatFox lists this indicator for {i['via']}, malware MITRE ATT&CK attributes to {n['label']}"
+                 if i.get("via") else f"abuse.ch ThreatFox tags this indicator {n['label']}"
+                 + (f" ({i['malware']})" if i.get("malware") else ""))
+                + f"; reporter confidence {lvl}%.")
     return added

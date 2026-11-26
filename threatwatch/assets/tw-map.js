@@ -127,9 +127,11 @@
     var total = colW.reduce(function (a, b) { return a + b; }, 0), CG = GAP;
     // never squeeze columns below their labels: on narrow screens the map scrolls sideways instead
     var minGap = 28;
+    // columns sit close together (at most 40px apart); the group is centred in the available width
+    var maxGap = 40, lead = 0;
     if (total + minGap * (rows.length - 1) > W) { W = total + minGap * (rows.length - 1); CG = minGap; }
-    else CG = (W - total) / (rows.length - 1);
-    var colX = [], acc = 0;
+    else { CG = Math.min(maxGap, (W - total) / (rows.length - 1)); lead = (W - total - CG * (rows.length - 1)) / 2; }
+    var colX = [], acc = lead;
     colW.forEach(function (w) { colX.push(acc); acc += w + CG; });
     // Labels never get cut off: a label too long for its box wraps onto more lines and the box grows.
     var TOPY = HEAD + 4, VG = 10, LH = 14, pos = {};

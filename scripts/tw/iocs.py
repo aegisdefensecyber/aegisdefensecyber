@@ -25,7 +25,8 @@ from typing import Any
 from .common import USER_AGENT, fetch_json, fetch_text, safe_url
 
 ADVISORY_RE = re.compile(r"\b(aa\d{2}-\d{3}[a-z])\b", re.I)
-STIX_LINK_RE = re.compile(r'href="(?:https://www\.cisa\.gov)?(/sites/default/files/[^"?#]+?\.json)(?:[?#][^"]*)?"', re.I)
+STIX_LINK_RE = re.compile(r'href=["\'](?:https?://(?:www\.)?cisa\.gov)?(/sites/default/files/[^"\'?#]+?\.json)(?:[?#][^"\']*)?["\']', re.I)
+FILE_LINK_RE = re.compile(r'href=["\'](?:https?://(?:www\.)?cisa\.gov)?(/sites/default/files/[^"\'?#]+)', re.I)
 DIAG: list[str] = []   # per-source notes printed by the catalog build
 PATTERNS = [  # (STIX pattern regex, our ioc type)
     (re.compile(r"ipv4-addr:value\s*=\s*'([^']+)'"), "ipv4"),
@@ -77,9 +78,11 @@ def cisa_iocs(codes: set[str], per_advisory: int = 4, max_advisories: int = 15) 
         page_url = CISA_BASE + code
         try:
             html = fetch_text(page_url, timeout=40, retries=2, limit_mb=8)
-            links = [l for l in STIX_LINK_RE.findall(html) if "stix" in l.lower()]
+            found = STIX_LINK_RE.findall(html)
+            links = sorted(found, key=lambda l: (0 if "stix" in l.lower() else 1 if code in l.lower() else 2))
             if not links:
-                DIAG.append(f"CISA {code}: page fetched ({len(html)} bytes) but no STIX JSON link found")
+                files = sorted(set(FILE_LINK_RE.findall(html)))[:6]
+                DIAG.append(f"CISA {code}: no STIX JSON link; file links on page: {files or 'none'}")
                 continue
             doc = fetch_json("https://www.cisa.gov" + links[0], timeout=40, retries=2)
             iocs = stix_iocs(doc, per_advisory)
@@ -101,8 +104,12 @@ def _threatfox(body: dict, key: str) -> Any:
         return json.loads(r.read(20 * 1024 * 1024))
 
 
-def threatfox_iocs(names: list[str], per_name: int = 4) -> tuple[dict[str, list[dict]], bool]:
-    """{actor name: [ioc...]} from ThreatFox tags; ({}, True) when no key is configured."""
+def threatfox_iocs(queries, per_name: int = 4) -> tuple[dict[str, list[dict]], bool]:
+    """{actor name: [ioc...]} from ThreatFox. queries maps an actor name to search terms: its own name,
+    then the malware families MITRE ATT&CK says it uses (ThreatFox labels indicators by malware family).
+    ({}, True) when no key is configured."""
+    if isinstance(queries, list):
+        queries = {q: [q] for q in queries}
     key = (os.environ.get("THREATFOX_AUTH_KEY") or "").strip()
     if not key or os.environ.get("TW_FIXTURES"):
         if not key:
@@ -111,28 +118,48 @@ def threatfox_iocs(names: list[str], per_name: int = 4) -> tuple[dict[str, list[
     out: dict[str, list[dict]] = {}
     ok = True
     kind = {"ip:port": "ipv4", "domain": "domain", "url": "url", "sha256_hash": "sha256", "md5_hash": "md5"}
-    for name in names:
-        try:
-            doc = _threatfox({"query": "taginfo", "tag": name, "limit": 20}, key)
-        except (urllib.error.URLError, TimeoutError, ValueError) as exc:
-            DIAG.append(f"ThreatFox {name}: failed ({str(exc)[:160]})")
-            ok = False
-            continue
-        DIAG.append(f"ThreatFox {name}: {doc.get('query_status')}, {len(doc.get('data') or []) if isinstance(doc.get('data'), list) else 0} rows")
-        if doc.get("query_status") != "ok":
-            continue
+    cache: dict[str, list] = {}
+
+    def search(term: str, first: bool) -> list:
+        nonlocal ok
+        if term in cache:
+            return cache[term]
+        data: list = []
+        bodies = [{"query": "taginfo", "tag": term, "limit": 20}]
+        if not first:
+            bodies.append({"query": "malwareinfo", "malware": term, "limit": 20})
+        for body in bodies:
+            try:
+                doc = _threatfox(body, key)
+            except (urllib.error.URLError, TimeoutError, ValueError) as exc:
+                DIAG.append(f"ThreatFox {term}: failed ({str(exc)[:120]})")
+                ok = False
+                break
+            if doc.get("query_status") == "ok" and isinstance(doc.get("data"), list) and doc["data"]:
+                data = doc["data"]
+                DIAG.append(f"ThreatFox {term} ({body['query']}): {len(data)} rows")
+                break
+        cache[term] = data
+        return data
+
+    for name, terms in queries.items():
         rows = []
-        for d in doc.get("data") or []:
-            v = str(d.get("ioc") or "")
-            t = kind.get(d.get("ioc_type"))
-            if not t or not VALUE_OK.match(v):
-                continue
-            conf = int(d.get("confidence_level") or 0)
-            rows.append({"type": t, "value": v, "seen": str(d.get("first_seen") or "")[:10],
-                         "malware": d.get("malware_printable"), "confidenceLevel": conf,
-                         "source": "abuse.ch ThreatFox", "ref": f"ThreatFox #{d.get('id')}",
-                         "url": safe_url(f"https://threatfox.abuse.ch/ioc/{d.get('id')}/"),
-                         "report": safe_url(d.get("reference"))})
+        for ti, term in enumerate(terms[:9]):
+            for d in search(term, ti == 0):
+                v = str(d.get("ioc") or "")
+                t = kind.get(d.get("ioc_type"))
+                if not t or not VALUE_OK.match(v):
+                    continue
+                conf = int(d.get("confidence_level") or 0)
+                rows.append({"type": t, "value": v, "seen": str(d.get("first_seen") or "")[:10],
+                             "malware": d.get("malware_printable"), "confidenceLevel": conf, "via": term if ti else None,
+                             "source": "abuse.ch ThreatFox", "ref": f"ThreatFox #{d.get('id')}",
+                             "url": safe_url(f"https://threatfox.abuse.ch/ioc/{d.get('id')}/"),
+                             "report": safe_url(d.get("reference"))})
+            if len(rows) >= per_name:
+                break
+        if not rows:
+            DIAG.append(f"ThreatFox {name}: nothing for {', '.join(terms[:9])}")
         rows.sort(key=lambda r: (-r["confidenceLevel"], r["seen"]), reverse=False)
         if rows:
             out[name] = rows[:per_name]

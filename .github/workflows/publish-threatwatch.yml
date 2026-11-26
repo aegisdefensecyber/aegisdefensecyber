@@ -6,7 +6,8 @@ name: Publish ThreatWatch
 # GitHub's cron is best effort and on this repository it drops most fires, so the
 # workflow wakes every 15 minutes and a cheap gate job (scripts/slot_gate.py, sparse
 # checkout, a few seconds) decides whether a slot is due. Only then do the tests and
-# the full publish run. Manual runs, repository_dispatch and pull requests skip the gate.
+# the full publish run. Manual runs and pull requests skip the gate. A push to .github/heartbeat
+# whose commit message contains [force-update] runs a forced update (no email: same-day edition).
 on:
   schedule:
     - cron: "7,22,37,52 * * * *"
@@ -57,6 +58,9 @@ jobs:
       - name: Is an update slot due?
         id: gate
         run: |
+          if [ "${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[force-update]') }}" = "true" ]; then
+            echo "Push asked for [force-update]: running."; echo "due=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
           case "${{ github.event_name }}" in
             schedule|push|repository_dispatch) python3 scripts/slot_gate.py threatwatch ;;
             *) echo "Triggered by ${{ github.event_name }}: running."; echo "due=true" >> "$GITHUB_OUTPUT" ;;
@@ -101,7 +105,7 @@ jobs:
         run: |
           set +e
           if [ "${{ inputs.refresh_report }}" = "true" ]; then python scripts/build_brief.py --refresh-report
-          elif [ "${{ inputs.force }}" = "true" ]; then python scripts/build_brief.py --force; else python scripts/build_brief.py; fi
+          elif [ "${{ inputs.force == true || (github.event_name == 'push' && contains(github.event.head_commit.message, '[force-update]')) }}" = "true" ]; then python scripts/build_brief.py --force; else python scripts/build_brief.py; fi
           echo "exit=$?" >> "$GITHUB_OUTPUT"
       - name: Commit generated data
         run: |
