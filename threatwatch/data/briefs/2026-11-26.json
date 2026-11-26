@@ -4,7 +4,7 @@
   "publishedAt": "2026-11-26T11:53:55Z",
   "window": {
     "start": "2026-11-26T04:55:50Z",
-    "end": "2026-11-26T11:53:55Z",
+    "end": "2026-11-26T16:54:38Z",
     "note": "KEV additions not present in the previous edition’s catalog snapshot."
   },
   "executive": {
@@ -16,10 +16,13 @@
       "emergency": 0,
       "urgent": 0,
       "criticalHigh": 0,
-      "materialChanges": 0,
+      "materialChanges": 2,
       "kevTotal": 1805
     },
-    "developments": []
+    "developments": [
+      "CVE-2026-133469: EPSS rose from 0.01 to 0.32 (score date 2026-11-26).",
+      "CVE-2026-97229: EPSS rose from 0.12 to 0.74 (score date 2026-11-26)."
+    ]
   },
   "kevLatest": {
     "date": "2026-11-25",
@@ -111,27 +114,38 @@
       "monitor": "Track for exploitation or scope changes."
     }
   },
-  "changes": [],
+  "changes": [
+    {
+      "cve": "CVE-2026-133469",
+      "type": "epss_change",
+      "detail": "EPSS rose from 0.01 to 0.32 (score date 2026-11-26)."
+    },
+    {
+      "cve": "CVE-2026-97229",
+      "type": "epss_change",
+      "detail": "EPSS rose from 0.12 to 0.74 (score date 2026-11-26)."
+    }
+  ],
   "sources": [
     {
       "name": "CISA Known Exploited Vulnerabilities",
       "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "version": "2026.11.25",
       "released": "2026-11-25T19:48:12.4344Z",
-      "fetchedAt": "2026-11-26T11:53:55Z",
+      "fetchedAt": "2026-11-26T16:54:39Z",
       "status": "ok"
     },
     {
       "name": "FIRST EPSS",
       "url": "https://www.first.org/epss/",
-      "fetchedAt": "2026-11-26T11:53:55Z",
+      "fetchedAt": "2026-11-26T16:54:39Z",
       "status": "ok",
       "note": "Probability estimate; not evidence of exploitation."
     },
     {
       "name": "NVD CVE API 2.0",
       "url": "https://nvd.nist.gov/",
-      "fetchedAt": "2026-11-26T11:53:55Z",
+      "fetchedAt": "2026-11-26T16:54:39Z",
       "status": "no data",
       "note": "Enrichment can lag publication by days."
     }
@@ -154,8 +168,8 @@
       "reviewedAt": null
     }
   },
-  "updatedAt": "2026-11-26T11:53:55Z",
-  "updateSlot": "07:00",
+  "updatedAt": "2026-11-26T16:54:38Z",
+  "updateSlot": "12:00",
   "report": {
     "version": 1,
     "title": [
@@ -175,7 +189,7 @@
         "blocks": [
           {
             "type": "p",
-            "text": "The leading newly prioritized issue is **CVE-2026-123903 (VMware vSphere Foundation)**, a critical authentication bypass flaw. Malicious exploitation was not confirmed by tracked sources. No fixed release is mapped in NVD data yet. **CVE-2026-125812 (WP Media WP Rocket)** is another important newly highlighted issue; malicious exploitation was not confirmed."
+            "text": "The leading newly prioritized issue is **CVE-2026-77230 (Camunda)**, a critical unsafe deserialization flaw. Malicious exploitation was not confirmed by tracked sources. No fixed release is mapped in NVD data yet. **CVE-2026-135150 (In Eclipse Ditto)** is another important newly highlighted issue; malicious exploitation was not confirmed."
           },
           {
             "type": "table",
@@ -186,7 +200,7 @@
             "rows": [
               [
                 "Newly prioritized CVEs",
-                "3: VMware vSphere Foundation, WP Media WP Rocket and Camunda"
+                "3: Camunda, In Eclipse Ditto and WP Media WP Rocket"
               ],
               [
                 "Latest KEV baseline",
@@ -202,13 +216,13 @@
               ],
               [
                 "Complete worldwide High/Critical count",
-                "Not established; 252 High/Critical CVEs published to NVD in the window (NVD-scored only)"
+                "Not established; 418 High/Critical CVEs published to NVD in the window (NVD-scored only)"
               ]
             ]
           },
           {
             "type": "p",
-            "text": "**Top five actions:** (1) Apply the vendor fix for VMware vSphere Foundation (CVE-2026-123903); (2) apply the vendor fix for WP Media WP Rocket (CVE-2026-125812); (3) apply the vendor fix for Camunda (CVE-2026-77230); (4) close previously reported Project MONAI MONAI Label, Vates Xen Orchestra, N-able MailAssure and Idunno AntiCsrf KEV exposure; (5) examine VMware vSphere Foundation hosts for unauthorized administrative access and configuration changes."
+            "text": "**Top five actions:** (1) Apply the vendor fix for Camunda (CVE-2026-77230); (2) apply the vendor fix for In Eclipse Ditto (CVE-2026-135150); (3) apply the vendor fix for WP Media WP Rocket (CVE-2026-125812); (4) close previously reported Project MONAI MONAI Label, Vates Xen Orchestra, N-able MailAssure and Idunno AntiCsrf KEV exposure; (5) examine Camunda hosts for unexpected child processes and outbound connections."
           }
         ]
       },
@@ -220,7 +234,7 @@
         "blocks": [
           {
             "type": "p",
-            "text": "**CVE-2026-123903 - VMware vSphere Foundation authentication bypass (CVSS 9.8).** VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service. Broadcom has evaluated the severity of this issue to be in the Critical severity range with a maximum CVSSv3 base score of 9.8. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+            "text": "**CVE-2026-77230 - Camunda unsafe deserialization (CVSS 9.2).** Camunda 8.8.0 before 8.8.47, 8.9.0 before 8.9.29, 8.10.0 before 8.10.10, and 8.11.0-alpha1 contain an insecure deserialization vulnerability in the persistent web session feature, which stores session attributes as Java-serialized data in secondary storage and deserializes them via an ObjectInputStream without an ObjectInputFilter. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
           },
           {
             "type": "table",
@@ -231,7 +245,7 @@
             "rows": [
               [
                 "EPSS / percentile",
-                "Not verified"
+                "1.6% probability / 76th percentile (FIRST EPSS)"
               ],
               [
                 "CISA KEV",
@@ -243,7 +257,7 @@
               ],
               [
                 "Public exploit",
-                "Public exploit code referenced: 2 unvetted GitHub repositories; weaponized exploit not verified"
+                "Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified"
               ],
               [
                 "Mitigation",
@@ -253,19 +267,19 @@
           },
           {
             "type": "p",
+            "text": "**CVE-2026-135150 - In Eclipse Ditto authentication bypass (CVSS 9.1).** In Eclipse Ditto versions 1.1.0 to 3.9.9, the nginx reverse proxy configurations shipped with Ditto (Helm chart, Docker Compose, Kubernetes and OpenShift deployment files) forward a client-supplied `x-ditto-pre-authenticated` header to the Ditto gateway on locations that do not apply nginx authentication, such as `/api/2/connections`. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+          },
+          {
+            "type": "p",
+            "text": "EPSS: 1.3% probability / 70th percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
+          },
+          {
+            "type": "p",
             "text": "**CVE-2026-125812 - WP Media WP Rocket path traversal (CVSS 9.8).** Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in WP Media WP Rocket wp-rocket allows Path Traversal.This issue affects WP Rocket: from n/a before 3.24.2. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
           },
           {
             "type": "p",
-            "text": "EPSS: Not verified. CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
-          },
-          {
-            "type": "p",
-            "text": "**CVE-2026-77230 - Camunda unsafe deserialization (CVSS 9.2).** Camunda 8.8.0 before 8.8.47, 8.9.0 before 8.9.29, 8.10.0 before 8.10.10, and 8.11.0-alpha1 contain an insecure deserialization vulnerability in the persistent web session feature, which stores session attributes as Java-serialized data in secondary storage and deserializes them via an ObjectInputStream without an ObjectInputFilter. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
-          },
-          {
-            "type": "p",
-            "text": "EPSS: Not verified. CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
+            "text": "EPSS: 1.0% probability / 62nd percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
           }
         ]
       },
@@ -285,7 +299,7 @@
           },
           {
             "type": "p",
-            "text": "**Defensive hunting:** for VMware vSphere Foundation (CVE-2026-123903), review administrative logins, newly created accounts or API tokens, and configuration changes made without a matching change record; for WP Media WP Rocket (CVE-2026-125812), inspect unexpected file writes outside the application's data directories, new web-accessible files, modified application code, altered SSH authorized_keys files and suspicious scheduled jobs; for Camunda (CVE-2026-77230), inspect unexpected child processes of the service, new scheduled jobs or services, and unusual outbound connections from the host."
+            "text": "**Defensive hunting:** for Camunda (CVE-2026-77230), inspect unexpected child processes of the service, new scheduled jobs or services, and unusual outbound connections from the host; for In Eclipse Ditto (CVE-2026-135150), review administrative logins, newly created accounts or API tokens, and configuration changes made without a matching change record; for WP Media WP Rocket (CVE-2026-125812), inspect unexpected file writes outside the application's data directories, new web-accessible files, modified application code, altered SSH authorized_keys files and suspicious scheduled jobs."
           }
         ]
       },
@@ -304,31 +318,31 @@
             "rows": [
               [
                 "Healthcare / medical imaging",
-                "Possible Camunda, VMware vSphere Foundation and WP Media WP Rocket exposure; targeting unknown"
+                "Possible Camunda, In Eclipse Ditto and WP Media WP Rocket exposure; targeting unknown"
               ],
               [
                 "Education / research",
-                "Possible Camunda, VMware vSphere Foundation and WP Media WP Rocket exposure; targeting unknown"
+                "Possible Camunda, In Eclipse Ditto and WP Media WP Rocket exposure; targeting unknown"
               ],
               [
                 "Technology / software",
-                "Potential Camunda, VMware vSphere Foundation and WP Media WP Rocket dependency exposure"
+                "Potential Camunda, In Eclipse Ditto and WP Media WP Rocket dependency exposure"
               ],
               [
                 "Government / defense",
-                "Possible Camunda, VMware vSphere Foundation and WP Media WP Rocket exposure; no new sector-specific targeting confirmed"
+                "Possible Camunda, In Eclipse Ditto and WP Media WP Rocket exposure; no new sector-specific targeting confirmed"
               ],
               [
                 "Financial services",
-                "Possible Camunda, VMware vSphere Foundation and WP Media WP Rocket exposure; targeting unknown"
+                "Possible Camunda, In Eclipse Ditto and WP Media WP Rocket exposure; targeting unknown"
               ],
               [
                 "Manufacturing / energy / utilities",
-                "Possible Camunda, VMware vSphere Foundation and WP Media WP Rocket exposure; targeting unknown"
+                "Possible Camunda, In Eclipse Ditto and WP Media WP Rocket exposure; targeting unknown"
               ],
               [
                 "Retail / transportation",
-                "Possible Camunda, VMware vSphere Foundation and WP Media WP Rocket exposure; targeting unknown"
+                "Possible Camunda, In Eclipse Ditto and WP Media WP Rocket exposure; targeting unknown"
               ]
             ]
           },
@@ -352,22 +366,22 @@
             ],
             "rows": [
               [
-                "VMware vSphere Foundation operators",
+                "Camunda operators",
+                "No confirmed malicious exploitation or attribution."
+              ],
+              [
+                "In Eclipse Ditto operators",
                 "No confirmed malicious exploitation or attribution."
               ],
               [
                 "WP Media WP Rocket operators",
-                "No confirmed malicious exploitation or attribution."
-              ],
-              [
-                "Camunda operators",
                 "No confirmed malicious exploitation or attribution."
               ]
             ]
           },
           {
             "type": "p",
-            "text": "**MITRE ATT&CK defensive mapping:** T1190 (Exploit Public-Facing Application) may be relevant to exposed VMware vSphere Foundation, WP Media WP Rocket and Camunda services. These mappings support defensive detection and do not establish actor attribution."
+            "text": "**MITRE ATT&CK defensive mapping:** T1190 (Exploit Public-Facing Application) may be relevant to exposed Camunda, In Eclipse Ditto and WP Media WP Rocket services. These mappings support defensive detection and do not establish actor attribution."
           }
         ]
       },
@@ -392,17 +406,17 @@
               ],
               [
                 "Urgent",
-                "Vulnerable VMware vSphere Foundation (CVE-2026-123903)",
+                "Vulnerable Camunda (CVE-2026-77230)",
+                "Apply applicable vendor fix in 24-72 hours"
+              ],
+              [
+                "Urgent",
+                "Vulnerable In Eclipse Ditto (CVE-2026-135150)",
                 "Apply applicable vendor fix in 24-72 hours"
               ],
               [
                 "Urgent",
                 "Vulnerable WP Media WP Rocket (CVE-2026-125812)",
-                "Apply applicable vendor fix in 24-72 hours"
-              ],
-              [
-                "Urgent",
-                "Vulnerable Camunda (CVE-2026-77230)",
                 "Apply applicable vendor fix in 24-72 hours"
               ],
               [
@@ -483,16 +497,16 @@
     ],
     "references": [
       {
-        "label": "CVE-2026-123903 NVD record",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123903"
+        "label": "CVE-2026-77230 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77230"
+      },
+      {
+        "label": "CVE-2026-135150 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135150"
       },
       {
         "label": "CVE-2026-125812 NVD record",
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125812"
-      },
-      {
-        "label": "CVE-2026-77230 NVD record",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77230"
       },
       {
         "label": "CISA KEV catalog",
@@ -505,11 +519,11 @@
     ],
     "footer": "Enterprise Cyber Threat Intelligence | 26 Nov 2026",
     "reviewedBy": null,
-    "generatedAt": "2026-11-26T12:07:19Z",
+    "generatedAt": "2026-11-26T17:09:55Z",
     "prioritized": [
-      "CVE-2026-123903",
-      "CVE-2026-125812",
-      "CVE-2026-77230"
+      "CVE-2026-77230",
+      "CVE-2026-135150",
+      "CVE-2026-125812"
     ]
   }
 }
