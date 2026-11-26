@@ -26,6 +26,38 @@
   function sv(tag, attrs) { var n = document.createElementNS(SVGNS, tag); Object.keys(attrs || {}).forEach(function (k) { n.setAttribute(k, attrs[k]); }); return n; }
   function safeHref(u) { return typeof u === "string" && /^https:\/\/[^\s"'<>]+$/.test(u) ? u : null; }
   function link(u, t) { var h = safeHref(u); return h ? el("a", { href: h, rel: "noopener noreferrer", text: t }) : document.createTextNode(t); }
+  // ---- indicator research links: point to pages ABOUT an indicator, never to the indicator itself
+  function refang(v) { return String(v).replace(/\[\.\]/g, ".").replace(/^hxxp/i, "http").replace(/\[:\]/g, ":"); }
+  function iocSource(id) {
+    var e = (G.edges || []).filter(function (x) { return x.target === id || x.source === id; })[0];
+    return e && e.evidence && safeHref(e.evidence.url) ? e.evidence.url : null;
+  }
+  function iocLinks(n) {
+    var v = refang(n.label), t = n.iocType, out = [], enc = encodeURIComponent;
+    var src = iocSource(n.id);
+    if (src) out.push([src, n.source === "CISA advisory" ? "CISA advisory " + (n.ref || "") : "ThreatFox record"]);
+    if (/^(sha256|sha1|md5)$/.test(t) && /^[0-9a-fA-F]{32,64}$/.test(v)) {
+      out.push(["https://www.virustotal.com/gui/file/" + v.toLowerCase(), "VirusTotal"]);
+      out.push(["https://otx.alienvault.com/indicator/file/" + v.toLowerCase(), "AlienVault OTX"]);
+      out.push(["https://bazaar.abuse.ch/browse.php?search=" + enc((t === "md5" ? "md5:" : t === "sha1" ? "sha1:" : "sha256:") + v.toLowerCase()), "MalwareBazaar"]);
+    } else if (t === "domain" && /^[A-Za-z0-9.-]{3,253}$/.test(v)) {
+      out.push(["https://www.virustotal.com/gui/domain/" + v.toLowerCase(), "VirusTotal"]);
+      out.push(["https://otx.alienvault.com/indicator/domain/" + v.toLowerCase(), "AlienVault OTX"]);
+    } else if (/^ipv[46]$/.test(t)) {
+      var ip = v.replace(/:\d+$/, "");
+      if (/^[0-9a-fA-F.:]{3,45}$/.test(ip)) {
+        out.push(["https://www.virustotal.com/gui/ip-address/" + ip, "VirusTotal"]);
+        out.push(["https://otx.alienvault.com/indicator/ip/" + ip, "AlienVault OTX"]);
+        out.push(["https://www.abuseipdb.com/check/" + ip, "AbuseIPDB"]);
+      }
+    } else if (t === "url") {
+      out.push(["https://www.virustotal.com/gui/search/" + enc(enc(v)), "VirusTotal"]);
+      out.push(["https://urlhaus.abuse.ch/browse.php?search=" + enc(v), "URLhaus"]);
+    }
+    return out.filter(function (x) { return safeHref(x[0]); });
+  }
+  function newTab(a) { a.target = "_blank"; return a; }
+
   function trunc(s, n) { return s.length > n ? s.slice(0, n - 1) + "…" : s; }
 
   // ------------------------------------------------------------ filtering
@@ -118,7 +150,7 @@
     function tw(t, f) { cv.font = f + " " + font; return cv.measureText(t).width; }
     var colW = rows.map(function (list, i) {
       var small = subs[i] > 1, f = small ? "600 11px" : "600 12px";
-      var box = list.reduce(function (m, n) { return Math.max(m, tw(n.label, f)); }, 0) + (small ? 20 : 28);
+      var box = list.reduce(function (m, n) { return Math.max(m, tw(n.label, f)); }, 0) + (small ? 20 : 28) + (i === 4 ? 26 : 0);
       box = Math.min(box, i === 0 ? 300 : 280);
       var inner = subs[i] * box + (subs[i] - 1) * SUBGAP;
       var head = tw(ROW_LABEL[i].toUpperCase(), "700 11.5px") + ROW_LABEL[i].length * 1.2 + 16;
@@ -153,7 +185,7 @@
       var s = subs[ci], w = (colW[ci] - 2 * PAD - (s - 1) * SUBGAP) / s, x0 = colX[ci] + PAD;
       var sm = s > 1, f = sm ? "600 11px" : "600 12px";
       list.forEach(function (n, i) {
-        var ls = lines(n.label, f, w - (sm ? 14 : 20));
+        var ls = lines(n.label, f, w - (sm ? 14 : 20) - (n.type === "ioc" ? 26 : 0));
         pos[n.id] = { x: x0 + (s > 1 ? (i % s) * (w + SUBGAP) : 0), y: 0, w: w, h: Math.max(NH, ls.length * LH + 14), lines: ls, sm: sm };
       });
       if (s > 1) {                                           // grid: each row as tall as its tallest box
@@ -234,6 +266,19 @@
         });
         g.appendChild(lab);
         var tt = sv("title", {}); tt.textContent = n.label; g.appendChild(tt);
+        if (n.type === "ioc") {
+          var first = iocLinks(n)[0];
+          if (first) {
+            var a = sv("a", { href: first[0], target: "_blank", rel: "noopener noreferrer", "class": "ioc-go",
+                              "aria-label": "Read about this indicator on " + first[1] });
+            a.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", first[0]);
+            a.appendChild(sv("rect", { x: p.w - 26, y: 0, width: 26, height: p.h, rx: 4 }));
+            var ic = sv("text", { x: p.w - 13, y: p.h / 2 + 4, "text-anchor": "middle" }); ic.textContent = "↗"; a.appendChild(ic);
+            var at = sv("title", {}); at.textContent = "Read about this indicator (" + first[1] + ")"; a.appendChild(at);
+            a.addEventListener("click", function (ev) { ev.stopPropagation(); });
+            g.appendChild(a);
+          }
+        }
         g.addEventListener("click", function () { select(n.id); });
         g.addEventListener("mouseenter", function () { hover = n.id; highlight(); });
         g.addEventListener("mouseleave", function () { hover = null; highlight(); });
@@ -317,12 +362,18 @@
       facts.push("Value (defanged, do not visit): " + n.label);
       facts.push("Source: " + n.source + (n.ref ? " · " + n.ref : ""));
       facts.push("First seen: " + (n.firstSeen || "Unknown") + (n.malware ? " · malware: " + n.malware : ""));
+      var rl = iocLinks(n);
     } else if (n.type === "industry") {
       facts.push("Category taken from MITRE ATT&CK's descriptions of the linked campaigns and actors.");
     } else if (n.type === "geography") {
       facts.push("Scope: " + (n.scope || "victim geography") + " — not actor origin.");
     }
     if (facts.length) d.appendChild(el("ul", null, facts.map(function (f) { return el("li", { text: f }); })));
+    if (n.type === "ioc" && rl && rl.length) {
+      d.appendChild(el("h3", { text: "Research this indicator" }));
+      d.appendChild(el("p", { cls: "ioc-links" }, rl.map(function (x) { return newTab(link(x[0], x[1] + " ↗")); })));
+      d.appendChild(el("p", { cls: "muted", text: "These open reports about the indicator on research sites; they never open the indicator itself." }));
+    }
     if (n.profile) d.appendChild(el("p", null, [link(n.profile, "Profile reference")]));
     if (n.url) d.appendChild(el("p", null, [link(n.url, "MITRE ATT&CK entry")]));
 
@@ -359,6 +410,10 @@
     $("clear-sel").addEventListener("click", function () { selected = null; render(); clearDetails(); });
   }
 
+  function cellFor(n) {
+    var l = n.type === "ioc" ? iocLinks(n)[0] : null;
+    return l ? el("td", null, [newTab(link(l[0], n.label + " ↗"))]) : el("td", { text: n.label });
+  }
   function renderTable(edges) {
     var tb = $("rel-table").querySelector("tbody"); tb.textContent = "";
     $("list-count").textContent = edges.length + " relationship" + (edges.length === 1 ? "" : "s") + " shown.";
@@ -366,7 +421,7 @@
     edges.forEach(function (e) {
       var ev = e.evidence || {};
       tb.appendChild(el("tr", null, [
-        el("td", { text: byId[e.source].label }), el("td", { text: REL[e.relation] }), el("td", { text: byId[e.target].label }),
+        cellFor(byId[e.source]), el("td", { text: REL[e.relation] }), cellFor(byId[e.target]),
         el("td", { text: e.confidence }), el("td", { text: (ev.firstObserved || "?") + " – " + (ev.lastObserved || "?") }),
         el("td", null, [link(ev.url, ev.type || "source")])
       ]));
