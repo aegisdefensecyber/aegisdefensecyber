@@ -1,0 +1,15 @@
+name: Probe CIRCL (temporary)
+on:
+  push:
+    branches: [main]
+    paths: [".github/probe/**"]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: { persist-credentials: false }
+      - run: python3 .github/probe/circl_probe.py
