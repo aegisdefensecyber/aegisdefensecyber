@@ -264,6 +264,7 @@
     var advs = r.vendorAdvisories || [];
     if (r.vendorPublishedOnly) d.appendChild(el("p", { cls: "notice", text: "Vendor-published, awaiting CVE record: " + (advs[0] && advs[0].vendor ? advs[0].vendor : "the vendor") +
       " has released an advisory for this CVE, but NVD and the official CVE List don’t have a record yet. Details below come from the vendor advisory and will be replaced by NVD data once it is published." }));
+    else if (r.cveListOnly) d.appendChild(el("p", { cls: "notice", text: "Published in the official CVE List; NVD hasn’t analysed it yet. Details below come from the CVE record and any vendor advisories, and will be enriched with NVD data once available." }));
     else if (r.nvdPending) d.appendChild(el("p", { cls: "notice", text: "NVD details for this CVE haven’t been collected yet. CVSS and affected versions show as Unknown until the next catalog runs fill them in." }));
 
     // risk badges

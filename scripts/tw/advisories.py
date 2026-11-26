@@ -29,8 +29,8 @@ from .common import USER_AGENT, safe_url
 
 CVE_RE = re.compile(r"CVE-\d{4}-\d{4,7}")
 RETAIN_DAYS = 90
-FIRST_LOOKBACK_DAYS = 30
-PER_PROVIDER = int(os.environ.get("TW_ADV_PER_PROVIDER") or 60)
+FIRST_LOOKBACK_DAYS = 90
+PER_PROVIDER = int(os.environ.get("TW_ADV_PER_PROVIDER") or 80)
 TIME_BUDGET = float(os.environ.get("TW_ADV_BUDGET_S") or 480)
 
 AGGREGATORS = [

@@ -1,0 +1,25 @@
+main.full { max-width: none; padding-left: 24px; padding-right: 24px; }
+.ax-filters { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px 14px; align-items: end;
+  background: var(--content); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; margin: 0 0 12px; }
+.ax-filters label { display: grid; gap: 4px; font-size: 13px; color: var(--muted); min-width: 0; }
+.ax-filters label.wide { grid-column: span 2; }
+.ax-filters input[type=search], .ax-filters select { width: 100%; min-width: 0; box-sizing: border-box; }
+.ax-filters label.chk { display: flex; gap: 8px; align-items: center; }
+.ax-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+@media (min-width: 1200px) { .ax-filters { grid-template-columns: 2fr repeat(5, minmax(0, 1fr)) auto auto; } .ax-filters label.wide { grid-column: auto; } }
+.ax-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+.ax-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.ax-table th { text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted);
+  background: var(--content); padding: 9px 10px; position: sticky; top: 0; }
+.ax-table td { padding: 9px 10px; border-top: 1px solid var(--border); vertical-align: top; }
+.ax-table td .muted { font-size: 12px; margin-top: 2px; }
+.ax-table tbody tr:hover { background: rgba(255,255,255,.02); }
+.sev { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; font-weight: 600; background: rgba(255,255,255,.06); }
+.sev.crit { background: rgba(217,90,90,.25); color: #ffb3b3; } .sev.high { background: rgba(217,141,78,.25); color: #ffd0a8; }
+.sev.med { background: rgba(217,169,78,.2); color: #f3dc9e; } .sev.low { background: rgba(95,151,217,.2); color: #b8d4ff; }
+.expl { color: #ff9b9b; font-size: 12px; font-weight: 600; margin-top: 3px; }
+.fixed { color: #8fe0a3; font-weight: 600; }
+.st { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; font-weight: 600; }
+.st.ok { background: rgba(111,191,127,.2); color: #a9e7b6; } .st.warn { background: rgba(217,169,78,.2); color: #f3dc9e; }
+.st.bad { background: rgba(217,90,90,.25); color: #ffb3b3; }
+.ax-sources { margin-top: 28px; }

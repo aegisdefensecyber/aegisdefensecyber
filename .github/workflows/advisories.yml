@@ -1,0 +1,83 @@
+name: Collect security advisories
+
+# Twice a day: CIRCL Vulnerability-Lookup (vendor & CERT CSAF, CERT-FR, JVN, NCSC-NL, CERT-Bund, CISA,
+# GitHub reviewed + unreviewed, OSV distro/package feeds, Debian, CVE List) plus direct vendor feeds,
+# into threatwatch/data/advisories/. The CVE catalog build reads these files.
+# GitHub's scheduler can skip runs, so the heartbeat push (4x a day) also wakes this workflow;
+# the gate only lets it run when the last collection is more than 11 hours old.
+on:
+  schedule:
+    - cron: "23 10,22 * * *"          # ~5:23 AM and 5:23 PM ET
+  push:
+    branches: [main]
+    paths: [".github/heartbeat"]
+  repository_dispatch:
+    types: [advisories-update]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: threatwatch-publish          # shares the lock with the brief/catalog build: one writer at a time
+  cancel-in-progress: false
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      due: ${{ steps.gate.outputs.due }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            threatwatch/data/advisories/sources.json
+          sparse-checkout-cone-mode: false
+      - id: gate
+        run: |
+          if [ "${{ github.event_name == 'push' && contains(github.event.head_commit.message, '[force-update]') }}" = "true" ] \
+             || [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "${{ github.event_name }}" = "repository_dispatch" ]; then
+            echo "due=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          python3 - <<'PY'
+          import json, os, datetime as dt
+          try:
+              g = json.load(open("threatwatch/data/advisories/sources.json"))["generatedAt"]
+              age = (dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(g.replace("Z", "+00:00"))).total_seconds() / 3600
+          except Exception:
+              age = 999
+          due = age > 11
+          print(f"Last advisory collection {age:.1f} h ago -> due={due}")
+          open(os.environ["GITHUB_OUTPUT"], "a").write(f"due={'true' if due else 'false'}\n")
+          PY
+
+  collect:
+    needs: gate
+    if: needs.gate.outputs.due == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect advisories
+        env:
+          TW_ADV_BUDGET_S: "1500"
+          CIRCL_API_KEY: ${{ secrets.CIRCL_API_KEY }}
+        run: python scripts/build_advisories.py
+      - name: Validate committed public data
+        run: python scripts/validate_data.py
+      - name: Commit advisory repository
+        run: |
+          git config user.name "aegis-threatwatch-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add threatwatch/data/advisories
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          git commit -m "Advisories: twice-daily collection $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push

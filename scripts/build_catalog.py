@@ -99,6 +99,41 @@ def cached_source(name: str, label: str, fn, warnings: list[str], meta: dict, ke
         return old.get("data") or {}
 
 
+GROUP_LABEL = {"github": "GitHub Advisory Database", "direct_csaf": "CSAF", "fortinet": "Vendor feed", "paloalto": "Vendor feed"}
+
+
+def advisories_by_cve(items: list[dict]) -> tuple[dict[str, list[dict]], dict[str, dict]]:
+    """Per-CVE vendor-advisory summaries (catalog format) and CVE List records, from repository items."""
+    by: dict[str, list[dict]] = {}
+    cve5: dict[str, dict] = {}
+    for a in items:
+        if a["src"] == "cvelistv5":
+            for c in a.get("cves") or []:
+                cve5[c] = a
+            continue
+        src = a["src"]
+        kind = "CSAF" if src.startswith("csaf_") or src == "direct_csaf" else GROUP_LABEL.get(src) or (
+            "National CERT" if src.startswith(("certfr", "jvndb")) else "Distro / package advisory")
+        summary = {"source": kind, "feed": src, "vendor": a.get("vendor"), "publisher": a.get("vendor"), "id": a.get("id"),
+                   "title": a.get("title"), "url": a.get("url"), "csaf": None, "released": a.get("released"),
+                   "updated": a.get("updated"), "cvss": a.get("cvss"), "severity": a.get("sev"),
+                   "products": a.get("products") or [], "productsMore": 0,
+                   "fixes": [{"type": "vendor_fix", "text": f.get("t") or "", "url": f.get("u")} for f in a.get("fix") or []],
+                   "exploited": True if a.get("expl") else None, "exploitNote": None, "description": None, "cwe": None,
+                   "otherCves": max(0, len(a.get("cves") or []) - 1)}
+        for c in a.get("cves") or []:
+            by.setdefault(c, []).append(summary)
+    for c, lst in by.items():   # most recent first, one per advisory, max 6
+        seen, keep = set(), []
+        for x in sorted(lst, key=lambda x: x.get("updated") or "", reverse=True):
+            k = (x.get("vendor"), x.get("id"))
+            if k not in seen:
+                seen.add(k)
+                keep.append(x)
+        by[c] = keep[:6]
+    return by, cve5
+
+
 def build(now, warnings: list[str]) -> dict:
     kev = collect_kev()
     kev_by = {r["cve"]: r for r in kev["records"]}
@@ -155,24 +190,15 @@ def build(now, warnings: list[str]) -> dict:
     universe = set(kev_by) | set(brief_cves) | exploited
     universe |= {c for c, n in nvd_cache.items() if C.keep_non_kev(n, now, RETAIN_DAYS)}
 
-    # ---- vendor security advisories (CSAF providers, GitHub, vendor feeds): CVEs vendors published,
-    # often before NVD / the CVE List. Recent ones join the catalog even without an NVD record.
-    adv_path = DATA_DIR / "advisories" / "index.json"
-    adv = read_json(adv_path, {}) or {}
-    if intel_on and not os.environ.get("TW_FIXTURES") and os.environ.get("TW_ADV_FETCH", "1") == "1":
-        try:
-            from tw.advisories import collect as collect_advisories
-            adv, adv_state = collect_advisories(adv, read_json(DATA_DIR / "advisories" / "state.json", {}) or {}, now)
-            write_json(adv_path, adv)
-            write_json(DATA_DIR / "advisories" / "state.json", adv_state)
-            print(f"Vendor advisories: {adv['count']} CVEs · " + "; ".join(
-                f"{k} {'ok' if v.get('ok') else 'FAILED'}" for k, v in adv.get("sources", {}).items()))
-        except Exception as exc:  # noqa: BLE001 — keep the previous advisory index
-            warnings.append(f"Vendor advisory refresh failed; previous advisories kept ({exc})"[:300])
-    adv_by = adv.get("cves") or {}
+    # ---- vendor security advisories: read from the advisory repository that build_advisories.py fills
+    # twice a day (CIRCL Vulnerability-Lookup + direct vendor feeds). Recent CVEs they name join the
+    # catalog even without an NVD record; the CVE List copy (cvelistv5) supplies their basic details.
+    from tw.advrepo import Repo
+    adv_by, cve5_by = advisories_by_cve(Repo(DATA_DIR / "advisories").recent(now, RETAIN_DAYS))
     recent_year = now.year - 1
     adv_new = {c for c, lst in adv_by.items()
                if int(c.split("-")[1]) >= recent_year or any(a.get("exploited") for a in lst)}
+    adv_new |= {c for c in cve5_by if int(c.split("-")[1]) >= recent_year}
     universe |= adv_new
 
     # ---- per-CVE NVD lookups for KEV / zero-day / brief CVEs still missing NVD data (zero-days first)
@@ -281,6 +307,12 @@ def build(now, warnings: list[str]) -> dict:
         }
         fb = (src.get("p0") or {}).get(cid) or (src.get("vulncheck") or {}).get(cid)
         advs = adv_by.get(cid) or []
+        if not fb and not nvd and cid in cve5_by:
+            c5 = cve5_by[cid]
+            prod5 = (c5.get("products") or [None])[0]
+            if prod5 and c5.get("vendor") and prod5.lower().startswith(c5["vendor"].lower() + " "):
+                prod5 = prod5[len(c5["vendor"]) + 1:]
+            fb = {"vendor": c5.get("vendor"), "product": prod5, "description": c5.get("title")}
         if not fb and advs:
             a0 = advs[0]
             prod0 = (a0.get("products") or [None])[0]
@@ -296,7 +328,12 @@ def build(now, warnings: list[str]) -> dict:
                       "none proves a specific asset is vulnerable or compromised. PoC repositories are unvetted.")
         r["curatedPlaybook"] = cid in playbooks
         r["vendorAdvisories"] = advs
-        r["vendorPublishedOnly"] = bool(advs) and not nvd
+        r["vendorPublishedOnly"] = bool(advs) and not nvd and cid not in cve5_by
+        if not nvd and cid in cve5_by:
+            c5 = cve5_by[cid]
+            r["cveListOnly"] = True
+            if c5.get("cvss") is not None and not r.get("cvss"):
+                r["cvss"] = {"version": None, "score": c5["cvss"], "severity": c5.get("sev"), "vector": None, "source": "CVE List record"}
         if advs and not r.get("cvss"):
             best = max((a for a in advs if a.get("cvss") is not None), key=lambda a: a["cvss"], default=None)
             if best:

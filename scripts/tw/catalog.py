@@ -218,7 +218,7 @@ def validate_record(r: Any) -> list[str]:
         if d.get("reviewStatus") not in ("reviewed", "unreviewed", "rejected"):
             errs.append(f"{c}: bad detection reviewStatus")
     if r.get("nvdPending") and not r.get("kev") and not (r.get("exploitation") or {}).get("sources") \
-            and not r.get("vendorAdvisories"):
+            and not r.get("vendorAdvisories") and not r.get("cveListOnly"):
         errs.append(f"{c}: record has neither NVD data nor an exploitation source")
     for s in (r.get("exploitation") or {}).get("sources", []):
         if not safe_url(s.get("url")):

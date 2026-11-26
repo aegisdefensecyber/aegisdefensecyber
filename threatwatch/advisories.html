@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<title>Advisory Explorer | Aegis ThreatWatch</title>
+<meta name="description" content="Every security advisory AEGIS collects: vendor PSIRTs, national CERTs, CSAF feeds, GitHub and Linux distributions, with or without a CVE. Filter, search and export.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action https://zgnp-zngp.maillist-manage.com">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tw.css?v=20261126a">
+<script src="assets/tw-subscribe.js?v=20261124a" defer></script>
+<link rel="stylesheet" href="assets/tw-advisories.css?v=1">
+<script src="assets/tw-advisories.js?v=1" defer></script>
+</head>
+<body class="wide">
+<a class="skip" href="#main">Skip to advisories</a>
+<header class="tw-head">
+  <div class="tw-head-in">
+    <a class="brand" href="../" aria-label="AEGIS Global Intelligence — home">
+      <svg width="28" height="32" viewBox="0 0 42 48" fill="none" aria-hidden="true">
+        <path d="M21 2L4 9V22C4 33 12 43 21 46C30 43 38 33 38 22V9L21 2Z" fill="url(#twsg)" stroke="rgba(47,127,255,0.5)" stroke-width="0.5"/>
+        <text x="21" y="31" text-anchor="middle" font-family="Exo 2" font-weight="800" font-size="18" fill="white">A</text>
+        <defs><linearGradient id="twsg" x1="21" y1="2" x2="21" y2="46" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2f7fff"/><stop offset="100%" stop-color="#0a2060"/></linearGradient></defs>
+      </svg>
+      <span class="brand-txt"><b>AEGIS</b><span>Cyber Solutions · <em>ThreatWatch</em></span></span>
+    </a>
+    <nav aria-label="ThreatWatch">
+      <ul class="tw-nav">
+        <li><a class="home" href="../">← Global Intelligence</a></li>
+        <li><a href="./">Daily Brief</a></li>
+        <li><a href="monthly.html">Monthly Summary</a></li>
+        <li><a href="map.html">Threat Map</a></li>
+        <li><a href="validate.html">Vulnerability Validation</a></li>
+        <li><a href="advisories.html" aria-current="page">Advisory Explorer</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wide full">
+  <section class="vv-hero" aria-labelledby="ax-title">
+    <div class="eyebrow" id="last-updated" data-src="data/advisories/sources.json" data-field="generatedAt">Last updated …</div>
+    <h1 id="ax-title">Advisory Explorer</h1>
+    <p class="lead">Every security advisory AEGIS collects, twice a day: vendor PSIRTs, national CERTs (CERT-FR, CERT-Bund, NCSC-NL, JVN, CISA), CSAF feeds, GitHub and Linux distributions. Advisories without a CVE ID and advisories covering many CVEs are kept whole. Nothing is filtered by severity.</p>
+    <p class="meta" id="ax-summary" role="status">Loading…</p>
+  </section>
+
+  <form id="ax-filters" class="ax-filters" aria-label="Filter advisories">
+    <label class="wide">Search<input type="search" id="ax-q" placeholder="Vendor, product, CVE, advisory ID or title…" autocomplete="off" spellcheck="false"></label>
+    <label>Period
+      <select id="ax-days"><option value="1">Last 24 hours</option><option value="3">Last 3 days</option><option value="7" selected>Last 7 days</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option><option value="365">Last 12 months</option></select>
+    </label>
+    <label>Activity
+      <select id="ax-kind"><option value="">New and updated</option><option value="new">New releases only</option><option value="updated">Updated (released earlier)</option></select>
+    </label>
+    <label>Source type<select id="ax-group"><option value="">All sources</option></select></label>
+    <label>Severity
+      <select id="ax-sev"><option value="">Any</option><option value="CRITICAL">Critical</option><option value="HIGH">High</option><option value="MEDIUM">Medium</option><option value="LOW">Low</option><option value="NONE">Unscored</option></select>
+    </label>
+    <label>CVE
+      <select id="ax-cve"><option value="">With or without</option><option value="with">Has a CVE ID</option><option value="without">No CVE ID</option></select>
+    </label>
+    <label class="chk"><input type="checkbox" id="ax-expl"> Exploitation reported</label>
+    <div class="ax-actions">
+      <button type="button" class="btn secondary" id="ax-csv">Export CSV</button>
+      <button type="button" class="btn secondary" id="ax-json">Export JSON</button>
+    </div>
+  </form>
+
+  <p class="muted" id="ax-count" aria-live="polite"></p>
+  <div class="ax-table-wrap">
+    <table class="ax-table" id="ax-table">
+      <thead><tr><th scope="col">Released</th><th scope="col">Source</th><th scope="col">Advisory</th><th scope="col">Vendor / product</th><th scope="col">CVEs</th><th scope="col">Severity</th><th scope="col">Fix</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <p><button type="button" class="btn secondary" id="ax-more" hidden>Show more</button></p>
+
+  <section aria-labelledby="ax-src-title" class="ax-sources">
+    <h2 id="ax-src-title">Source status</h2>
+    <p class="muted">Each source is collected incrementally. “Days since newest” shows how recent the latest advisory from that source is; a source that stops updating or fails is flagged so gaps are visible instead of assumed away.</p>
+    <div class="ax-table-wrap"><table class="ax-table" id="ax-src"><thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Last success</th><th>New this run</th><th>Stored</th><th>Days since newest</th></tr></thead><tbody></tbody></table></div>
+  </section>
+  <p class="notice info">Coverage is as complete as the configured sources: no single repository lists every advisory worldwide. Source records are summarised; always read the original advisory, linked on each row, before acting.</p>
+</main>
+
+<section id="subscribe" class="sub-band" aria-labelledby="subscribe-title">
+  <div class="sub-in">
+    <div class="sub-copy">
+      <h2 id="subscribe-title">Get the daily brief by email</h2>
+      <p>Free ThreatWatch updates in your inbox. Email address only; you’ll confirm by email, and you can unsubscribe anytime.</p>
+    </div>
+    <form id="subscribe-form" class="sub-form" method="post" target="_blank" novalidate>
+      <label for="sub-email" class="sr-only">Email address</label>
+      <input id="sub-email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="254" placeholder="you@company.com">
+
+      <button type="submit">Subscribe</button>
+      <p id="sub-msg" class="sub-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+
+<footer class="tw-foot">
+  <div class="tw-foot-in">
+    <span>© 2026 Aegis Cyber Solutions LLC · ThreatWatch is free and public.</span>
+    <nav aria-label="Footer"><ul>
+      <li><a href="../">Global Intelligence</a></li>
+      <li><a href="./">Daily Brief</a></li>
+      <li><a href="./#methodology">Methodology</a></li>
+      <li><a href="mailto:info@aegisdefensecyber.com">Contact</a></li>
+    </ul></nav>
+  </div>
+</footer>
+<script src="assets/tw-updated.js?v=20261125a"></script>
+</body>
+</html>
