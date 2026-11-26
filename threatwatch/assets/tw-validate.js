@@ -78,6 +78,12 @@
     page = Math.min(page, pages - 1);
     $("vv-count").textContent = total + " CVE" + (total === 1 ? "" : "s") + " match" + (total === 1 ? "es" : "") +
       (total ? "." : ". Try a CVE ID, vendor or product, or clear the filters.");
+    var qid = $("vv-q").value.trim().toUpperCase();
+    if (CVE_RE.test(qid) && !last.some(function (r) { return r[0] === qid; })) {
+      var la = el("a", { href: "?cve=" + qid, text: "Look up " + qid + " in the official CVE List" });
+      la.addEventListener("click", function (ev) { ev.preventDefault(); go(qid, true); window.scrollTo(0, 0); });
+      $("vv-count").appendChild(el("span", null, [" " + qid + " isn’t in the ThreatWatch catalog. ", la, "."]));
+    }
     last.slice(page * PAGE, page * PAGE + PAGE).forEach(function (r) {
       var o = row(r), e = ep(o.cve);
       var a = el("a", { href: "?cve=" + o.cve, text: o.cve });
@@ -138,7 +144,71 @@
     }).catch(function () { d.removeChild(d.lastChild); notFound(d, cve); });
   }
 
+  // CVEs outside the catalog: fetch the official CVE List record live (assets/tw-cvelist.js)
+  var cveIdxP = null;
   function notFound(d, cve) {
+    if (!window.TWCveList) { notFoundPlain(d, cve); return; }
+    var wait = el("p", { cls: "muted", text: "Not in the ThreatWatch catalog — fetching " + cve + " from the official CVE List…" });
+    d.appendChild(wait);
+    cveIdxP = cveIdxP || getJSON("data/cve-index.json").catch(function () { return { cves: {} }; });
+    Promise.all([window.TWCveList.lookup(cve), cveIdxP]).then(function (res) {
+      d.removeChild(wait);
+      if (!res[0]) {
+        d.appendChild(el("h2", { text: cve }));
+        d.appendChild(el("p", { cls: "notice", text: cve + " isn’t in the official CVE List. It may not exist, or may not be published yet. Check the ID." }));
+        return;
+      }
+      renderLive(d, res[0], ((res[1] || {}).cves || {})[cve] || []);
+    }).catch(function () { d.removeChild(wait); notFoundPlain(d, cve); });
+  }
+
+  function renderLive(d, r, groups) {
+    var cv = r.cvss, e = ep(r.cve);
+    d.appendChild(el("div", { cls: "vv-head" }, [el("h2", { text: r.cve }),
+      el("span", { cls: "meta", text: [r.vendor, r.product].filter(Boolean).join(" ") || "Product not stated" })]));
+    d.appendChild(el("p", { cls: "notice info", text: "This CVE isn’t in the ThreatWatch catalog, so this record was fetched live from the official CVE List (CVE Program, with CISA’s added scores). Exploit, detection and test-plan data are only available for catalog CVEs." }));
+    if (r.state === "REJECTED") d.appendChild(el("p", { cls: "notice", text: "This CVE ID was REJECTED by the CVE Program and does not describe a valid vulnerability." }));
+    if (r.title) d.appendChild(el("p", { cls: "lead", text: r.title }));
+    if (r.description) d.appendChild(el("p", { text: r.description }));
+    var expl = r.ssvc && r.ssvc.Exploitation;
+    var badges = [
+      ["kev", !!r.kev, "KEV-listed", r.kev ? "Added " + (r.kev.dateAdded || "date unknown") : "Not in CISA KEV"],
+      ["itw", expl === "active", "CISA: exploitation", expl ? "CISA SSVC: " + expl + (r.ssvc.Automatable ? " · automatable: " + r.ssvc.Automatable : "") : "No CISA assessment"],
+      ["crit", !!(cv && cv.score >= 9), "Critical CVSS", cv ? "CVSS " + cv.version + " " + cv.score + " " + (cv.severity || "") + " · scored by " + cv.by : "Not scored"],
+      ["epss", !!(e && e.percentile >= 0.95), "High EPSS", e ? (e.score * 100).toFixed(1) + "% · " + pct(e.percentile) + " pct" : "EPSS not held for this CVE"],
+      ["exp", groups.length > 0, "Threat actor use (ATT&CK)", groups.length ? groups.map(function (g) { return g.name; }).filter(function (v, i, a) { return a.indexOf(v) === i; }).slice(0, 6).join(", ") : "None recorded in MITRE ATT&CK"]
+    ];
+    d.appendChild(el("div", { cls: "badges", role: "list", "aria-label": "Risk indicators" }, badges.map(function (b) {
+      return el("div", { cls: "rbadge " + b[0] + (b[1] ? " on" : " off"), role: "listitem" },
+        [el("b", { text: b[2] + (b[1] ? "" : ": no") }), el("span", { text: b[3] })]);
+    })));
+    var facts = [
+      ["Published", r.published || "Unknown"], ["Last updated", r.updated || "Unknown"], ["Assigned by", r.assigner || "Unknown"],
+      ["Weakness (CWE)", null], ["Affected", r.affected.length ? r.affected.join("; ") : "Not stated in the record"]
+    ];
+    var dl = el("dl", { cls: "facts" });
+    facts.forEach(function (f) {
+      var dd = el("dd");
+      if (f[0] === "Weakness (CWE)") {
+        if (!r.cwes.length) dd.textContent = "Not stated";
+        r.cwes.forEach(function (c, i) {
+          var num = /^CWE-(\d+)$/.exec(c);
+          if (i) dd.appendChild(document.createTextNode(", "));
+          dd.appendChild(num ? link("https://cwe.mitre.org/data/definitions/" + num[1] + ".html", c) : document.createTextNode(c));
+        });
+      } else dd.textContent = f[1];
+      dl.appendChild(el("dt", { text: f[0] })); dl.appendChild(dd);
+    });
+    d.appendChild(dl);
+    if (r.references.length) {
+      d.appendChild(el("h3", { text: "References" }));
+      d.appendChild(el("ul", null, r.references.map(function (x) { return el("li", null, [link(x.url, x.name)]); })));
+    }
+    d.appendChild(el("p", null, [el("a", { href: "map.html?q=" + encodeURIComponent(r.cve), text: "See " + r.cve + " on the Threat Map" }), " · ",
+      link(r.recordUrl, "CVE.org record"), " · ", link("https://nvd.nist.gov/vuln/detail/" + r.cve, "NVD")]));
+  }
+
+  function notFoundPlain(d, cve) {
     d.appendChild(el("h2", { text: cve }));
     d.appendChild(el("p", { cls: "notice", text: "This CVE isn’t in the ThreatWatch catalog. " + ((status && status.coverage) || "") }));
     d.appendChild(el("p", null, ["Check the official record on ", link("https://nvd.nist.gov/vuln/detail/" + cve, "NVD"),

@@ -107,3 +107,25 @@ class Stix1XmlTest(unittest.TestCase):
              '<DomainNameObj:Value>bad.example.com</DomainNameObj:Value>')
         got = {(i["type"], i["value"]) for i in stix1_iocs(x, 10)}
         self.assertEqual(got, {("ipv4", "185.10.20.30"), ("sha256", "b" * 64), ("domain", "bad.example.com")})
+
+
+class CveIndexTest(unittest.TestCase):
+    def test_group_and_malware_mentions(self):
+        from tw.relationships import build_cve_index
+        ref = lambda i, u: {"external_references": [{"source_name": "mitre-attack", "external_id": i, "url": u}]}
+        b = {"objects": [
+            {"id": "intrusion-set--1", "type": "intrusion-set", "name": "APTX", "aliases": ["APTX", "Ghost"], **ref("G9999", "https://attack.mitre.org/groups/G9999")},
+            {"id": "malware--1", "type": "malware", "name": "BadRAT", **ref("S9999", "https://attack.mitre.org/software/S9999")},
+            {"id": "attack-pattern--1", "type": "attack-pattern", "name": "Exploit Public-Facing Application", **ref("T1190", "https://attack.mitre.org/techniques/T1190")},
+            {"id": "relationship--1", "type": "relationship", "relationship_type": "uses", "source_ref": "intrusion-set--1",
+             "target_ref": "attack-pattern--1", "description": "APTX exploited CVE-2024-1111 on edge devices.(Citation: X)"},
+            {"id": "relationship--2", "type": "relationship", "relationship_type": "uses", "source_ref": "intrusion-set--1", "target_ref": "malware--1"},
+            {"id": "relationship--3", "type": "relationship", "relationship_type": "uses", "source_ref": "malware--1",
+             "target_ref": "attack-pattern--1", "description": "BadRAT can exploit CVE-2023-2222."},
+        ]}
+        x = build_cve_index(b, "2026-11-26T00:00:00Z")["cves"]
+        a = x["CVE-2024-1111"][0]
+        self.assertEqual((a["name"], a["confidence"], a["technique"]["id"], a["via"]), ("APTX", "high", "T1190", None))
+        self.assertNotIn("Citation", a["why"])
+        m = x["CVE-2023-2222"][0]
+        self.assertEqual((m["name"], m["confidence"], m["via"]), ("APTX", "moderate", "BadRAT"))

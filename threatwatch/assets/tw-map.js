@@ -549,6 +549,8 @@
       $(id).addEventListener(id === "f-q" ? "input" : "change", id === "f-q" ? onQuery : render);
     });
     $("filters").addEventListener("submit", function (e) { e.preventDefault(); });
+    var q0 = new URLSearchParams(location.search).get("q");
+    if (q0) { $("f-q").value = q0.slice(0, 80); setTimeout(onQuery, 0); }
     $("f-reset").addEventListener("click", function () { $("filters").reset(); selected = null; clearDetails(); render(); });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && selected) { selected = null; clearDetails(); render(); } });
     render();
