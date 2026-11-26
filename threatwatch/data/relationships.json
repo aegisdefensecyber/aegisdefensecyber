@@ -3,7 +3,7 @@
   "dataset": {
     "status": "verified",
     "label": "Relationships from MITRE ATT&CK Enterprise 20.1: groups, their campaigns, the CVEs and exploitation techniques used, targeted industries, and indicators of compromise from CISA advisories and abuse.ch ThreatFox. Every link cites its source.",
-    "updatedAt": "2026-11-26T03:01:29Z",
+    "updatedAt": "2026-11-26T03:06:52Z",
     "source": "https://attack.mitre.org/campaigns/"
   },
   "nodes": [
@@ -738,6 +738,46 @@
       "label": "Legal"
     },
     {
+      "id": "o-e5c0de32ada1",
+      "type": "ioc",
+      "label": "3C9DC8ADA56ADF9CEBFC501A2D3946680DCB0534A137E2E27A7FCB5994CD9DE6",
+      "iocType": "sha256",
+      "source": "CISA advisory",
+      "ref": "AA22-264A",
+      "firstSeen": null,
+      "malware": null
+    },
+    {
+      "id": "o-4441712552da",
+      "type": "ioc",
+      "label": "45BF0057B3121C6E444B316AFAFDD802D16083282D1CBFDE3CDBF2A9D0915ACE",
+      "iocType": "sha256",
+      "source": "CISA advisory",
+      "ref": "AA22-264A",
+      "firstSeen": null,
+      "malware": null
+    },
+    {
+      "id": "o-d2209d227717",
+      "type": "ioc",
+      "label": "63DD02C371E84323C4FD9A161A75E0F525423219E8A6EC1B95DD9EDA182AF2C9",
+      "iocType": "sha256",
+      "source": "CISA advisory",
+      "ref": "AA22-264A",
+      "firstSeen": null,
+      "malware": null
+    },
+    {
+      "id": "o-586d800f5ab2",
+      "type": "ioc",
+      "label": "7AD64B64E0A4E510BE42BA631868BBDA8779139DC0DAAD9395AB048306CC83C5",
+      "iocType": "sha256",
+      "source": "CISA advisory",
+      "ref": "AA22-264A",
+      "firstSeen": null,
+      "malware": null
+    },
+    {
       "id": "o-609056f01b89",
       "type": "ioc",
       "label": "e[.]hoki5[.]org",
@@ -816,46 +856,6 @@
       "ref": "ThreatFox #1833896",
       "firstSeen": "2026-06-19",
       "malware": "Coreshell"
-    },
-    {
-      "id": "o-2b3cf1eaebaf",
-      "type": "ioc",
-      "label": "047ac6aebe0fe80f9f09c5c548233407",
-      "iocType": "md5",
-      "source": "abuse.ch ThreatFox",
-      "ref": "ThreatFox #1893074",
-      "firstSeen": "2026-09-02",
-      "malware": "Medusa"
-    },
-    {
-      "id": "o-ed1b83e5741f",
-      "type": "ioc",
-      "label": "1079d416e093ba40aa9e95a4c2a5b61f",
-      "iocType": "md5",
-      "source": "abuse.ch ThreatFox",
-      "ref": "ThreatFox #1893078",
-      "firstSeen": "2026-09-02",
-      "malware": "Medusa"
-    },
-    {
-      "id": "o-a0a608b84270",
-      "type": "ioc",
-      "label": "0f76936e237bd87dfa2378106099a673",
-      "iocType": "md5",
-      "source": "abuse.ch ThreatFox",
-      "ref": "ThreatFox #1893077",
-      "firstSeen": "2026-09-02",
-      "malware": "Medusa"
-    },
-    {
-      "id": "o-f900ebc70d51",
-      "type": "ioc",
-      "label": "0e43a0f747a60855209b311d727a20bf",
-      "iocType": "md5",
-      "source": "abuse.ch ThreatFox",
-      "ref": "ThreatFox #1893076",
-      "firstSeen": "2026-09-02",
-      "malware": "Medusa"
     }
   ],
   "edges": [
@@ -2797,6 +2797,74 @@
     },
     {
       "id": "e122",
+      "source": "k-C0038",
+      "target": "o-e5c0de32ada1",
+      "relation": "indicator",
+      "confidence": "high",
+      "why": "CISA advisory AA22-264A, which MITRE ATT&CK cites for HomeLand Justice, lists this indicator.",
+      "evidence": {
+        "type": "CISA advisory",
+        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-264a",
+        "reportDate": "2026-11-26",
+        "firstObserved": null,
+        "lastObserved": null,
+        "provenance": "AA22-264A",
+        "report": null
+      }
+    },
+    {
+      "id": "e123",
+      "source": "k-C0038",
+      "target": "o-4441712552da",
+      "relation": "indicator",
+      "confidence": "high",
+      "why": "CISA advisory AA22-264A, which MITRE ATT&CK cites for HomeLand Justice, lists this indicator.",
+      "evidence": {
+        "type": "CISA advisory",
+        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-264a",
+        "reportDate": "2026-11-26",
+        "firstObserved": null,
+        "lastObserved": null,
+        "provenance": "AA22-264A",
+        "report": null
+      }
+    },
+    {
+      "id": "e124",
+      "source": "k-C0038",
+      "target": "o-d2209d227717",
+      "relation": "indicator",
+      "confidence": "high",
+      "why": "CISA advisory AA22-264A, which MITRE ATT&CK cites for HomeLand Justice, lists this indicator.",
+      "evidence": {
+        "type": "CISA advisory",
+        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-264a",
+        "reportDate": "2026-11-26",
+        "firstObserved": null,
+        "lastObserved": null,
+        "provenance": "AA22-264A",
+        "report": null
+      }
+    },
+    {
+      "id": "e125",
+      "source": "k-C0038",
+      "target": "o-586d800f5ab2",
+      "relation": "indicator",
+      "confidence": "high",
+      "why": "CISA advisory AA22-264A, which MITRE ATT&CK cites for HomeLand Justice, lists this indicator.",
+      "evidence": {
+        "type": "CISA advisory",
+        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-264a",
+        "reportDate": "2026-11-26",
+        "firstObserved": null,
+        "lastObserved": null,
+        "provenance": "AA22-264A",
+        "report": null
+      }
+    },
+    {
+      "id": "e126",
       "source": "a-G1015",
       "target": "o-609056f01b89",
       "relation": "indicator",
@@ -2813,7 +2881,7 @@
       }
     },
     {
-      "id": "e123",
+      "id": "e127",
       "source": "a-G1015",
       "target": "o-4581a42a8f5a",
       "relation": "indicator",
@@ -2830,7 +2898,7 @@
       }
     },
     {
-      "id": "e124",
+      "id": "e128",
       "source": "a-G1015",
       "target": "o-c8833ad54b9a",
       "relation": "indicator",
@@ -2847,7 +2915,7 @@
       }
     },
     {
-      "id": "e125",
+      "id": "e129",
       "source": "a-G1015",
       "target": "o-1f45c30c4b30",
       "relation": "indicator",
@@ -2864,7 +2932,7 @@
       }
     },
     {
-      "id": "e126",
+      "id": "e130",
       "source": "a-G0007",
       "target": "o-f130b007757a",
       "relation": "indicator",
@@ -2881,7 +2949,7 @@
       }
     },
     {
-      "id": "e127",
+      "id": "e131",
       "source": "a-G0007",
       "target": "o-7cfdaa260063",
       "relation": "indicator",
@@ -2898,7 +2966,7 @@
       }
     },
     {
-      "id": "e128",
+      "id": "e132",
       "source": "a-G0007",
       "target": "o-a0fd31c744bc",
       "relation": "indicator",
@@ -2915,7 +2983,7 @@
       }
     },
     {
-      "id": "e129",
+      "id": "e133",
       "source": "a-G0007",
       "target": "o-76d922572a59",
       "relation": "indicator",
@@ -2929,74 +2997,6 @@
         "lastObserved": "2026-06-19",
         "provenance": "ThreatFox #1833896",
         "report": "https://github.com/yankywilson/terndoor-uat9244"
-      }
-    },
-    {
-      "id": "e130",
-      "source": "a-G1048",
-      "target": "o-2b3cf1eaebaf",
-      "relation": "indicator",
-      "confidence": "low",
-      "why": "abuse.ch ThreatFox lists this indicator for MEDUSA, malware MITRE ATT&CK attributes to UNC3886; reporter confidence 50%.",
-      "evidence": {
-        "type": "abuse.ch ThreatFox",
-        "url": "https://threatfox.abuse.ch/ioc/1893074/",
-        "reportDate": "2026-09-02",
-        "firstObserved": "2026-09-02",
-        "lastObserved": "2026-09-02",
-        "provenance": "ThreatFox #1893074",
-        "report": "https://threatcluster.io/cluster/china-nexus-threat-actor-fire-ant-targets-critical-infrastru-98a55c29"
-      }
-    },
-    {
-      "id": "e131",
-      "source": "a-G1048",
-      "target": "o-ed1b83e5741f",
-      "relation": "indicator",
-      "confidence": "low",
-      "why": "abuse.ch ThreatFox lists this indicator for MEDUSA, malware MITRE ATT&CK attributes to UNC3886; reporter confidence 50%.",
-      "evidence": {
-        "type": "abuse.ch ThreatFox",
-        "url": "https://threatfox.abuse.ch/ioc/1893078/",
-        "reportDate": "2026-09-02",
-        "firstObserved": "2026-09-02",
-        "lastObserved": "2026-09-02",
-        "provenance": "ThreatFox #1893078",
-        "report": "https://threatcluster.io/cluster/china-nexus-threat-actor-fire-ant-targets-critical-infrastru-98a55c29"
-      }
-    },
-    {
-      "id": "e132",
-      "source": "a-G1048",
-      "target": "o-a0a608b84270",
-      "relation": "indicator",
-      "confidence": "low",
-      "why": "abuse.ch ThreatFox lists this indicator for MEDUSA, malware MITRE ATT&CK attributes to UNC3886; reporter confidence 50%.",
-      "evidence": {
-        "type": "abuse.ch ThreatFox",
-        "url": "https://threatfox.abuse.ch/ioc/1893077/",
-        "reportDate": "2026-09-02",
-        "firstObserved": "2026-09-02",
-        "lastObserved": "2026-09-02",
-        "provenance": "ThreatFox #1893077",
-        "report": "https://threatcluster.io/cluster/china-nexus-threat-actor-fire-ant-targets-critical-infrastru-98a55c29"
-      }
-    },
-    {
-      "id": "e133",
-      "source": "a-G1048",
-      "target": "o-f900ebc70d51",
-      "relation": "indicator",
-      "confidence": "low",
-      "why": "abuse.ch ThreatFox lists this indicator for MEDUSA, malware MITRE ATT&CK attributes to UNC3886; reporter confidence 50%.",
-      "evidence": {
-        "type": "abuse.ch ThreatFox",
-        "url": "https://threatfox.abuse.ch/ioc/1893076/",
-        "reportDate": "2026-09-02",
-        "firstObserved": "2026-09-02",
-        "lastObserved": "2026-09-02",
-        "provenance": "ThreatFox #1893076",
-        "report": "https://threatcluster.io/cluster/china-nexus-threat-actor-fire-ant-targets-critical-infrastru-98a55c29"
       }
     }
   ]
