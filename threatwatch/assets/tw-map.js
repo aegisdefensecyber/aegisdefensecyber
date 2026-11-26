@@ -125,36 +125,64 @@
       return Math.max(inner + 2 * PAD, head, 150);
     });
     var total = colW.reduce(function (a, b) { return a + b; }, 0), CG = GAP;
-    if (total + GAP * (rows.length - 1) > W) {
-      var k = (W - GAP * (rows.length - 1)) / total;
-      colW = colW.map(function (w) { return w * k; });
-    } else CG = (W - total) / (rows.length - 1);
+    // never squeeze columns below their labels: on narrow screens the map scrolls sideways instead
+    var minGap = 28;
+    if (total + minGap * (rows.length - 1) > W) { W = total + minGap * (rows.length - 1); CG = minGap; }
+    else CG = (W - total) / (rows.length - 1);
     var colX = [], acc = 0;
     colW.forEach(function (w) { colX.push(acc); acc += w + CG; });
-    var TOPY = HEAD + 4, BOT = TOPY + (TR - 1) * SY, H = BOT + NH + 14;
-    var pos = {};
+    // Labels never get cut off: a label too long for its box wraps onto more lines and the box grows.
+    var TOPY = HEAD + 4, VG = 10, LH = 14, pos = {};
+    function lines(txt, f, room) {
+      var out = [], cur = "";
+      txt.split(/(\s+|(?<=[\/.\-_\]]))/).filter(function (x) { return x && !/^\s+$/.test(x); }).forEach(function (wd) {
+        var tryS = cur ? cur + (/[\/.\-_\]]$/.test(cur) ? "" : " ") + wd : wd;
+        if (!cur || tw(tryS, f) <= room) { cur = tryS; }
+        else { out.push(cur); cur = wd; }
+        while (tw(cur, f) > room && cur.length > 1) {      // a single token longer than the box: hard-break it
+          var k = cur.length; while (k > 1 && tw(cur.slice(0, k), f) > room) k--;
+          out.push(cur.slice(0, k)); cur = cur.slice(k);
+        }
+      });
+      if (cur) out.push(cur);
+      return out.length ? out : [txt];
+    }
     rows.forEach(function (list, ci) {
       var s = subs[ci], w = (colW[ci] - 2 * PAD - (s - 1) * SUBGAP) / s, x0 = colX[ci] + PAD;
+      var sm = s > 1, f = sm ? "600 11px" : "600 12px";
       list.forEach(function (n, i) {
-        pos[n.id] = s > 1 ? { x: x0 + (i % s) * (w + SUBGAP), y: TOPY + Math.floor(i / s) * SY, w: w, fixed: true, sm: true }
-                          : { x: x0, y: TOPY + i * SY, w: w };
+        var ls = lines(n.label, f, w - (sm ? 14 : 20));
+        pos[n.id] = { x: x0 + (s > 1 ? (i % s) * (w + SUBGAP) : 0), y: 0, w: w, h: Math.max(NH, ls.length * LH + 14), lines: ls, sm: sm };
       });
+      if (s > 1) {                                           // grid: each row as tall as its tallest box
+        var y = TOPY;
+        for (var r = 0; r * s < list.length; r++) {
+          var row = list.slice(r * s, r * s + s), rh = Math.max.apply(null, row.map(function (n) { return pos[n.id].h; }));
+          row.forEach(function (n) { pos[n.id].y = y; });
+          y += rh + VG;
+        }
+      } else {
+        var y2 = TOPY; list.forEach(function (n) { pos[n.id].y = y2; y2 += pos[n.id].h + VG; });
+      }
     });
-    // Single columns: each box moves level with the boxes it links to (no big gaps), keeping SY apart.
+    function bottomOf(list) { return list.reduce(function (m, n) { return Math.max(m, pos[n.id].y + pos[n.id].h); }, TOPY); }
+    var BOTTOM = Math.max.apply(null, rows.map(bottomOf));
+    // Single columns: each box moves level with the boxes it links to, keeping boxes apart.
     for (var pass = 0; pass < 4; pass++) {
       rows.forEach(function (list, ci) {
         if (subs[ci] > 1 || !list.length) return;
         list.forEach(function (n) {
-          var ys = (adj[n.id] || []).filter(function (o) { return pos[o]; }).map(function (o) { return pos[o].y; });
-          n._d = ys.length ? ys.reduce(function (a, b) { return a + b; }, 0) / ys.length : pos[n.id].y;
+          var cs = (adj[n.id] || []).filter(function (o) { return pos[o]; }).map(function (o) { return pos[o].y + pos[o].h / 2; });
+          n._d = (cs.length ? cs.reduce(function (a, b) { return a + b; }, 0) / cs.length : pos[n.id].y + pos[n.id].h / 2) - pos[n.id].h / 2;
         });
         list.sort(function (a, b) { return a._d - b._d; });
-        var prev = -1e9;
-        list.forEach(function (n) { var y = Math.max(n._d, prev + SY, TOPY); pos[n.id].y = y; prev = y; });
-        var next = 1e9;
-        for (var i = list.length - 1; i >= 0; i--) { var q = pos[list[i].id]; q.y = Math.min(q.y, next - SY, BOT); next = q.y; }
+        var prevB = -1e9;
+        list.forEach(function (n) { var q = pos[n.id]; q.y = Math.max(n._d, prevB + VG, TOPY); prevB = q.y + q.h; });
+        var nextT = 1e9;
+        for (var i = list.length - 1; i >= 0; i--) { var q = pos[list[i].id]; q.y = Math.min(q.y, nextT - VG - q.h, BOTTOM - q.h); nextT = q.y; }
       });
     }
+    var H = BOTTOM + 14;
     svg.setAttribute("viewBox", "0 0 " + W + " " + H);
     svg.setAttribute("width", W);
     svg.setAttribute("height", H);
@@ -177,7 +205,7 @@
       var a = pos[e.source], b = pos[e.target];
       if (!a || !b) return;
       var l = a.x <= b.x ? a : b, r = a.x <= b.x ? b : a;
-      var x1 = l.x + l.w, y1 = l.y + NH / 2, x2 = r.x, y2 = r.y + NH / 2, mx = (x1 + x2) / 2;
+      var x1 = l.x + l.w, y1 = l.y + l.h / 2, x2 = r.x, y2 = r.y + r.h / 2, mx = (x1 + x2) / 2;
       var long = Math.abs(ROWS[byId[e.source].type] - ROWS[byId[e.target].type]) > 1;
       var cls = "edge" + (e.relation === "possible_exposure" ? " exposure" : "") + (long ? " long" : "");
       var p = sv("path", { d: "M" + x1 + "," + y1 + " C" + mx + "," + y1 + " " + mx + "," + y2 + " " + x2 + "," + y2,
@@ -195,12 +223,14 @@
         var g = sv("g", { "class": cls, transform: "translate(" + p.x + "," + p.y + ")", tabindex: "0", role: "button",
                           "aria-pressed": selected === n.id ? "true" : "false",
                           "aria-label": n.type + ": " + n.label + ". Press Enter for details." });
-        g.appendChild(sv("rect", { width: p.w, height: NH, rx: 4 }));
-        g.appendChild(sv("rect", { width: 3, height: NH, rx: 1.5, fill: COLOR[ROWS[n.type]], "class": "stripe" }));
-        var small = !!p.sm, f = small ? "600 11px" : "600 12px", room = p.w - (small ? 14 : 20), txt = n.label;
-        if (tw(txt, f) > room) { while (txt.length > 4 && tw(txt + "…", f) > room) txt = txt.slice(0, -1); txt += "…"; }
-        var lab = sv("text", small ? { x: 10, y: 19, "class": "sm" } : { x: 12, y: 19 });
-        lab.textContent = txt; g.appendChild(lab);
+        g.appendChild(sv("rect", { width: p.w, height: p.h, rx: 4 }));
+        g.appendChild(sv("rect", { width: 3, height: p.h, rx: 1.5, fill: COLOR[ROWS[n.type]], "class": "stripe" }));
+        var lab = sv("text", p.sm ? { x: 10, y: 0, "class": "sm" } : { x: 12, y: 0 });
+        var y0 = (p.h - p.lines.length * LH) / 2 + LH - 3;
+        p.lines.forEach(function (ln, li) {
+          var ts = sv("tspan", { x: p.sm ? 10 : 12, y: y0 + li * LH }); ts.textContent = ln; lab.appendChild(ts);
+        });
+        g.appendChild(lab);
         var tt = sv("title", {}); tt.textContent = n.label; g.appendChild(tt);
         g.addEventListener("click", function () { select(n.id); });
         g.addEventListener("mouseenter", function () { hover = n.id; highlight(); });
