@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "date": "2022-01-28",
+  "count": 2,
+  "items": [
+    {
+      "id": "msrc_CVE-2022-23852",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Expat (aka libexpat) before 2.4.4 has a signed integer overflow in XML_GetBuffer for configurations with a nonzero XML_CONTEXT_BYTES.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-23852.json",
+      "released": "2022-01-28T00:00:00Z",
+      "updated": "2026-11-16T22:21:53Z",
+      "cves": [
+        "CVE-2022-23852"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "expat",
+        "azl4 python3.6 0:3.6.15-62.azl4"
+      ],
+      "fix": [
+        {
+          "t": "2.4.4-1:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.4.8-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "openSUSE-SU-2022:0226-1",
+      "src": "csaf_opensuse",
+      "vendor": "SUSE",
+      "title": "Security update for log4j12",
+      "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/543MEJC5CUZO2UZUL4R43HGV5KUNNJ4U/",
+      "released": "2022-01-28T16:22:03Z",
+      "updated": "2026-11-15T18:48:24Z",
+      "cves": [
+        "CVE-2022-23302",
+        "CVE-2022-23305",
+        "CVE-2022-23307"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "openSUSE Leap 15.3"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

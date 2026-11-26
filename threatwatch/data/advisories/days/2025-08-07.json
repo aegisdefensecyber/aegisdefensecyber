@@ -1,0 +1,494 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-08-07",
+  "count": 19,
+  "items": [
+    {
+      "id": "msrc_CVE-2023-26819",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "cJSON 1.7.15 might allow a denial of service via a crafted JSON document such as {\"a\": true, \"b\": [ null,9999999999999999999999999999999999999999999999912345678901234567]}.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2023-26819.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-11-16T22:15:27Z",
+      "cves": [
+        "CVE-2023-26819"
+      ],
+      "sev": "LOW",
+      "cvss": 2.9,
+      "products": [
+        "Azure Linux",
+        "ceph",
+        "libglvnd",
+        "cjson",
+        "azl3 apparmor 0:3.1.7-1.azl3",
+        "cbl2 libglvnd 1.3.2-5"
+      ],
+      "fix": [
+        {
+          "t": "0:1.7.0-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.7.19-2.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38071",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "x86/mm: Check return value from memblock_phys_alloc_range()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38071.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-10-23T01:45:14Z",
+      "cves": [
+        "CVE-2025-38071"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38080",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "drm/amd/display: Increase block_sequence array size",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38080.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-25T02:42:27Z",
+      "cves": [
+        "CVE-2025-38080"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38081",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "spi-rockchip: Fix register out of bounds access",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38081.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-10-23T01:44:21Z",
+      "cves": [
+        "CVE-2025-38081"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38118",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Bluetooth: MGMT: Fix UAF on mgmt_remove_adv_monitor_complete",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38118.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-07T01:51:34Z",
+      "cves": [
+        "CVE-2025-38118"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38127",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "ice: fix Tx scheduler error handling in XDP callback",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38127.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-14T01:50:08Z",
+      "cves": [
+        "CVE-2025-38127"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38192",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "net: clear the dst when changing skb protocol",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38192.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-25T02:43:51Z",
+      "cves": [
+        "CVE-2025-38192"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38198",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "fbcon: Make sure modelist not set on unregistered console",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38198.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-25T01:47:49Z",
+      "cves": [
+        "CVE-2025-38198"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38208",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "smb: client: add NULL check in automount_fullpath",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38208.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-25T02:42:57Z",
+      "cves": [
+        "CVE-2025-38208"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38215",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "fbdev: Fix do_register_framebuffer to prevent null-ptr-deref in fb_videomode_to_var",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38215.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-25T01:48:32Z",
+      "cves": [
+        "CVE-2025-38215"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38300",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "crypto: sun8i-ce-cipher - fix error handling in sun8i_ce_cipher_prepare()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38300.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-10T03:28:08Z",
+      "cves": [
+        "CVE-2025-38300"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38331",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "net: ethernet: cortina: Use TOE/TSO on all TCP",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38331.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-10T03:28:19Z",
+      "cves": [
+        "CVE-2025-38331"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38334",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "x86/sgx: Prevent attempts to reclaim poisoned pages",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38334.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-10T03:27:58Z",
+      "cves": [
+        "CVE-2025-38334"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38369",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "dmaengine: idxd: Check availability of workqueue allocated by idxd wq driver before using",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38369.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-25T02:43:39Z",
+      "cves": [
+        "CVE-2025-38369"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38422",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "net: lan743x: Modify the EEPROM and OTP size for PCI1xxxx devices",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38422.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-25T01:50:01Z",
+      "cves": [
+        "CVE-2025-38422"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38436",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "drm/scheduler: signal scheduled fence when kill job",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38436.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-09-25T02:44:34Z",
+      "cves": [
+        "CVE-2025-38436"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.96.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-49177",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Xorg-x11-server-xwayland: xorg-x11-server: tigervnc: data leak in xfixes extension's xfixessetclientdisconnectmode",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-49177.json",
+      "released": "2025-08-07T00:00:00Z",
+      "updated": "2026-11-16T22:27:14Z",
+      "cves": [
+        "CVE-2025-49177"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.1,
+      "products": [
+        "Azure Linux",
+        "xorg-x11-server-Xwayland",
+        "wayland",
+        "azl4 wayland 0:1.26.0-6.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:24.1.6-2.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "JVNDB-2025-010854",
+      "src": "jvndb",
+      "vendor": "Trend Micro, Inc.",
+      "title": "Trend Micro Endpoint security products for enterprises vulnerable to multiple OS command injection",
+      "url": "https://jvndb.jvn.jp/en/contents/2025/JVNDB-2025-010854.html",
+      "released": "2025-08-07T03:25:00Z",
+      "updated": "2026-11-18T08:36:00Z",
+      "cves": [
+        "CVE-2025-54948",
+        "CVE-2025-54987"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.4,
+      "products": [
+        "Trend Micro Apex One"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:13335",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "glib: buffer overflow in set_connect_msg()",
+      "url": "https://access.redhat.com/errata/RHSA-2025:13335",
+      "released": "2025-08-07T07:50:20Z",
+      "updated": "2026-11-26T05:21:58Z",
+      "cves": [
+        "CVE-2024-52533",
+        "CVE-2025-4373",
+        "CVE-2025-6021",
+        "CVE-2025-6965",
+        "CVE-2025-7425",
+        "CVE-2025-8058",
+        "CVE-2025-49794",
+        "CVE-2025-49796"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "fix": [
+        {
+          "t": "The Insights proxy container image provided here is downloaded by the Red Hat Insights proxy product RPM. Before applying this update, make sure all previously released errata relevant to your system have been applied.",
+          "u": "https://access.redhat.com/errata/RHSA-2025:13335"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options don't meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        },
+        {
+          "t": "Currently, no mitigation is available for this vulnerability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    }
+  ]
+}

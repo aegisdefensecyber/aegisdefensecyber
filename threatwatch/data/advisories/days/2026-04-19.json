@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-04-19",
+  "count": 3,
+  "items": [
+    {
+      "id": "openSUSE-SU-2026:10579-1",
+      "src": "csaf_opensuse",
+      "vendor": "SUSE",
+      "title": "python310-3.10.20-5.1 on GA media",
+      "url": "https://www.suse.com/security/cve/CVE-2026-3446/",
+      "released": "2026-04-19T00:00:00Z",
+      "updated": "2026-09-17T17:01:35Z",
+      "cves": [
+        "CVE-2026-3446"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "openSUSE Tumbleweed"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-5160",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Versions of the package github.com/yuin/goldmark/renderer/html before 1.7.17 are vulnerable to Cross-site Scripting (XSS) due to improper ordering of URL validation and normalization. The renderer validates link destina…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-5160.json",
+      "released": "2026-04-19T01:01:39Z",
+      "updated": "2026-11-20T01:10:06Z",
+      "cves": [
+        "CVE-2026-5160"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.1,
+      "products": [
+        "Azure Linux",
+        "gh",
+        "telegraf",
+        "golang-github-yuin-goldmark"
+      ],
+      "fix": [
+        {
+          "t": "0:1.31.0-19.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.62.0-15.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.7.17-1.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-6100",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Use-after-free in lzma.LZMADecompressor, bz2.BZ2Decompressor, and gzip.GzipFile after re-use under memory pressure",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-6100.json",
+      "released": "2026-04-19T01:01:45Z",
+      "updated": "2026-11-16T23:00:57Z",
+      "cves": [
+        "CVE-2026-6100"
+      ],
+      "products": [
+        "Azure Linux",
+        "python3",
+        "azl4 python3.10 0:3.10.21-5.azl4",
+        "azl4 python3.11 0:3.11.16-5.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:3.12.9-14.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

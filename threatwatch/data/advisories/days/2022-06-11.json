@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "date": "2022-06-11",
+  "count": 1,
+  "items": [
+    {
+      "id": "msrc_CVE-2022-27782",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "libcurl would reuse a previously created connection even when a TLS or SSHrelated option had been changed that should have prohibited reuse.libcurl keeps previously used connections in a connection pool for subsequenttr…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-27782.json",
+      "released": "2022-06-11T00:00:00Z",
+      "updated": "2026-11-16T22:25:22Z",
+      "cves": [
+        "CVE-2022-27782"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "curl",
+        "azl3 rust 0:1.86.0-1.azl3",
+        "azl3 rust 0:1.75.0-14.azl3",
+        "azl4 mupdf 0:1.27.2-3.azl4"
+      ],
+      "fix": [
+        {
+          "t": "7.84.0-1:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:7.83.1-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

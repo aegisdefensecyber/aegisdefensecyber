@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-02-14",
+  "count": 3,
+  "items": [
+    {
+      "id": "msrc_CVE-2023-46137",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "twisted.web has disordered HTTP pipeline response",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-46137.json",
+      "released": "2025-02-14T00:00:00Z",
+      "updated": "2026-11-16T22:17:31Z",
+      "cves": [
+        "CVE-2023-46137"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "python-twisted",
+        "azl4 firefox 0:156.0.1-13.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:22.10.0-4.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-0725",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "gzip integer overflow",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-0725.json",
+      "released": "2025-02-14T00:00:00Z",
+      "updated": "2026-11-16T22:31:36Z",
+      "cves": [
+        "CVE-2025-0725"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "Azure Linux",
+        "mysql",
+        "curl",
+        "cbl2 curl 0:8.8.0-6.cbl2",
+        "cbl2 tensorflow 0:2.11.1-2.cbl2",
+        "azl3 tensorflow 0:2.16.1-9.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:8.0.40-4.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:8.11.1-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:8.0.40-6.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SCA-2025-0001",
+      "src": "direct_csaf",
+      "vendor": "SICK AG",
+      "title": "Operating System - Privilege Escalation",
+      "url": "https://www.sick.com/.well-known/csaf/white/2025/sca-2025-0001.json",
+      "released": "2025-02-14T01:00:00Z",
+      "updated": "2026-11-13T15:18:31Z",
+      "cves": [
+        "CVE-2025-0867",
+        "CVE-2022-0778"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "products": [
+        "SICK MEAC300 all versions with Firmware <4.0.54.21",
+        "SICK MEAC300 DE all Firmware versions"
+      ],
+      "fix": [
+        {
+          "t": "Users are strongly recommended to upgrade to the latest release of the MEAC300 (>=4.0.54.21) that includes a patch for the vulnerability.",
+          "u": null
+        },
+        {
+          "t": "Please make sure that you apply general security practices when operating the MEAC300 DE. The following General Security Practices and Operating Guidelines could mitigate the associated security risk.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    }
+  ]
+}

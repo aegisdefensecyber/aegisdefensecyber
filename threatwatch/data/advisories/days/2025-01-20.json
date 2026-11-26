@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-01-20",
+  "count": 2,
+  "items": [
+    {
+      "id": "RHBA-2025:0409",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang.org/x/net/html: Non-linear parsing of case-insensitive content in golang.org/x/net/html",
+      "url": "https://access.redhat.com/errata/RHBA-2025:0409",
+      "released": "2025-01-20T12:54:15Z",
+      "updated": "2026-11-26T05:22:00Z",
+      "cves": [
+        "CVE-2024-45338",
+        "CVE-2024-52798",
+        "CVE-2024-55565",
+        "CVE-2024-56201",
+        "CVE-2024-56326",
+        "CVE-2024-56334"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.0,
+      "fix": [
+        {
+          "t": "For more about Red Hat Developer Hub, see References links",
+          "u": "https://access.redhat.com/errata/RHBA-2025:0409"
+        },
+        {
+          "t": "Avoid using two parameters within a single path segment when the separator is not, for example, /:a-:b. Alternatively, you can define the regex used for both parameters and ensure they do not overlap to allow backtracking.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2025-0130",
+      "src": "csaf_certbund",
+      "vendor": "Amazon",
+      "title": "vim: Schwachstelle ermöglicht Denial of Service",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-0130",
+      "released": "2025-01-20T23:00:00Z",
+      "updated": "2026-11-17T23:00:00Z",
+      "cves": [
+        "CVE-2025-24014"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Amazon Linux 2",
+        "F5OS",
+        "vim",
+        "SUSE Linux",
+        "Ubuntu Linux"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    }
+  ]
+}

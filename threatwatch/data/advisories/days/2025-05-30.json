@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-05-30",
+  "count": 1,
+  "items": [
+    {
+      "id": "msrc_CVE-2025-47273",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "setuptools has a path traversal vulnerability in PackageIndex.download that leads to Arbitrary File Write",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-47273.json",
+      "released": "2025-05-30T00:00:00Z",
+      "updated": "2026-11-16T22:32:57Z",
+      "cves": [
+        "CVE-2025-47273"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Azure Linux",
+        "python-setuptools",
+        "cbl2 python-virtualenv 0:20.26.6-1.cbl2",
+        "azl3 python3 0:3.12.9-1.azl3",
+        "azl3 tensorflow 0:2.16.1-9.azl3",
+        "azl3 python-virtualenv 0:20.36.1-1.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:69.0.3-5.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

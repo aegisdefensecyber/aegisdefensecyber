@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "date": "2022-11-17",
+  "count": 1,
+  "items": [
+    {
+      "id": "msrc_CVE-2022-45061",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder such that a crafted unreasonably long name being presente…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-45061.json",
+      "released": "2022-11-17T00:00:00Z",
+      "updated": "2026-11-16T22:21:17Z",
+      "cves": [
+        "CVE-2022-45061"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "python3",
+        "python2",
+        "python3.6",
+        "python-py",
+        "azl4 docbook-style-xsl 0:1.79.2-28.azl4"
+      ],
+      "fix": [
+        {
+          "t": "3.7.16-1:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "2.7.18-14:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.9.14-5.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

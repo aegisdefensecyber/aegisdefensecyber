@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "date": "2021-07-03",
+  "count": 1,
+  "items": [
+    {
+      "id": "msrc_CVE-2021-33503",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in urllib3 before 1.26.5. When provided with a URL containing many @ characters in the authority component the authority regular expression exhibits catastrophic backtracking causing a denial of …",
+      "url": "https://msrc.microsoft.com/csaf/vex/2021/msrc_cve-2021-33503.json",
+      "released": "2021-07-03T00:00:00Z",
+      "updated": "2026-11-16T22:23:20Z",
+      "cves": [
+        "CVE-2021-33503"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "python-urllib3",
+        "azl3 mozjs 0:102.15.1-1.azl3",
+        "cbl2 python-virtualenv 0:20.26.6-1.cbl2",
+        "cbl2 python-virtualenv 20.26.6-1",
+        "azl4 python3.6 0:3.6.15-62.azl4"
+      ],
+      "fix": [
+        {
+          "t": "1.25.9-2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.25.9-3.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

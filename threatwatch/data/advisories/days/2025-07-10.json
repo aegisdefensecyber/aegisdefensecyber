@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-07-10",
+  "count": 3,
+  "items": [
+    {
+      "id": "msrc_CVE-2025-4574",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Crossbeam-channel: crossbeam-channel vulnerable to double free on drop",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-4574.json",
+      "released": "2025-07-10T00:00:00Z",
+      "updated": "2026-11-16T22:31:56Z",
+      "cves": [
+        "CVE-2025-4574"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Azure Linux",
+        "rust",
+        "kata-containers-cc",
+        "azl-compliance",
+        "kata-containers",
+        "azl4 firefox 0:156.0.1-13.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:1.75.0-16.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.86.0-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.0.2-2.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10823",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "net/http: Sensitive headers not cleared on cross-origin redirect in net/http",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10823",
+      "released": "2025-07-10T17:57:25Z",
+      "updated": "2026-11-26T05:21:58Z",
+      "cves": [
+        "CVE-2025-4673",
+        "CVE-2025-6020"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, refer to: https://docs.redhat.com/en/documentation/openshift_container_platform/latest/html/operators/administrator-tasks#olm-upgrading-operators",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10823"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        },
+        {
+          "t": "Disable the `pam_namespace` module if it is not essential for your environment, or carefully review and configure it to avoid operating on any directories or paths that can be influenced or controlled by unprivileged users, such as user ho…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2025-1529",
+      "src": "csaf_certbund",
+      "vendor": "Amazon",
+      "title": "Apache HTTP Server: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-1529",
+      "released": "2025-07-10T22:00:00Z",
+      "updated": "2026-11-11T23:00:00Z",
+      "cves": [
+        "CVE-2023-38709",
+        "CVE-2024-42516",
+        "CVE-2024-43204",
+        "CVE-2024-43394",
+        "CVE-2024-47252",
+        "CVE-2025-23048",
+        "CVE-2025-49630",
+        "CVE-2025-49812",
+        "CVE-2025-53020"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Amazon Linux 2",
+        "HTTP Server",
+        "Debian Linux",
+        "Dell Avamar",
+        "NetWorker",
+        "Dell PowerProtect Data Domain"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    }
+  ]
+}

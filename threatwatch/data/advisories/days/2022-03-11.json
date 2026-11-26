@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "date": "2022-03-11",
+  "count": 1,
+  "items": [
+    {
+      "id": "msrc_CVE-2022-24921",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "regexp.Compile in Go before 1.16.15 and 1.17.x before 1.17.8 allows stack exhaustion via a deeply nested expression.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-24921.json",
+      "released": "2022-03-11T00:00:00Z",
+      "updated": "2026-09-09T14:55:08Z",
+      "cves": [
+        "CVE-2022-24921"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "python-tensorboard",
+        "azl3 golang 0:1.24.3-1.azl3",
+        "azl3 golang 0:1.23.9-1.azl3"
+      ],
+      "fix": [
+        {
+          "t": "1.16.15-1:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.17.8-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.16.2-2.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

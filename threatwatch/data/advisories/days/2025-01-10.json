@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-01-10",
+  "count": 1,
+  "items": [
+    {
+      "id": "msrc_CVE-2024-45310",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "runc can be confused to create empty files/directories on the host",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-45310.json",
+      "released": "2025-01-10T00:00:00Z",
+      "updated": "2026-11-16T22:30:27Z",
+      "cves": [
+        "CVE-2024-45310"
+      ],
+      "sev": "LOW",
+      "cvss": 3.6,
+      "products": [
+        "Azure Linux",
+        "runc",
+        "moby-runc",
+        "azl3 kubernetes 0:1.30.10-7.azl3",
+        "azl3 kata-containers-cc 0:3.15.0.aks0-1.azl3",
+        "azl3 moby-engine 0:25.0.3-13.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:1.2.2-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1.1.9-8:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

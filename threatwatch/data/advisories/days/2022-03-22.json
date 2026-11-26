@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "date": "2022-03-22",
+  "count": 1,
+  "items": [
+    {
+      "id": "msrc_CVE-2022-0778",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Infinite loop in BN_mod_sqrt() reachable when parsing certificates",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-0778.json",
+      "released": "2022-03-22T00:00:00Z",
+      "updated": "2026-11-16T22:19:49Z",
+      "cves": [
+        "CVE-2022-0778"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "shim-unsigned-aarch64",
+        "shim-unsigned-x64",
+        "openssl",
+        "edk2",
+        "azl3 rust 0:1.86.0-1.azl3"
+      ],
+      "fix": [
+        {
+          "t": "-:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.1.1k-12.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:20240223gitedc6681206c1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-04-22",
+  "count": 6,
+  "items": [
+    {
+      "id": "msrc_CVE-2025-31344",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "The giflib open-source component has a buffer overflow vulnerability",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-31344.json",
+      "released": "2025-04-22T00:00:00Z",
+      "updated": "2026-11-16T22:27:49Z",
+      "cves": [
+        "CVE-2025-31344"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "Azure Linux",
+        "giflib",
+        "cbl2 tensorflow 0:2.11.1-2.cbl2",
+        "cbl2 tensorflow 2.11.1-2",
+        "azl3 tensorflow 0:2.16.1-9.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:5.2.1-9.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:5.2.2-14.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-32464",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "HAProxy 2.2 through 3.1.6, in certain uncommon configurations, has a sample_conv_regsub heap-based buffer overflow because of mishandling of the replacement of multiple short patterns with a longer one.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-32464.json",
+      "released": "2025-04-22T00:00:00Z",
+      "updated": "2026-11-16T22:28:14Z",
+      "cves": [
+        "CVE-2025-32464"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.8,
+      "products": [
+        "Azure Linux",
+        "haproxy",
+        "cbl2 haproxy 0:2.4.24-1.cbl2",
+        "cbl2 haproxy 2.4.24-1",
+        "azl4 haproxy 0:3.0.28-5.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:2.9.11-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-32728",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "In sshd in OpenSSH before 10.0, the DisableForwarding directive does not adhere to the documentation stating that it disables X11 and agent forwarding.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-32728.json",
+      "released": "2025-04-22T00:00:00Z",
+      "updated": "2026-11-16T22:28:16Z",
+      "cves": [
+        "CVE-2025-32728"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "Azure Linux",
+        "openssh",
+        "azl4 openssh 0:10.0p1-17.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:8.9p1-8.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:9.8p1-4.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-32906",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Libsoup: out of bounds reads in soup_headers_parse_request()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-32906.json",
+      "released": "2025-04-22T00:00:00Z",
+      "updated": "2026-11-16T22:28:25Z",
+      "cves": [
+        "CVE-2025-32906"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "libsoup",
+        "azl4 libsoup 0:2.74.3-12.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:3.4.4-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.0.4-3.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-32913",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Libsoup: null pointer dereference in soup_message_headers_get_content_disposition when \"filename\" parameter is present, but has no value in content-disposition header",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-32913.json",
+      "released": "2025-04-22T00:00:00Z",
+      "updated": "2026-11-16T22:29:14Z",
+      "cves": [
+        "CVE-2025-32913"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "libsoup",
+        "azl4 libsoup 0:2.74.3-12.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:3.0.4-3.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.4.4-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ESSA-2025:2889",
+      "src": "csaf_opensuse",
+      "vendor": "SUSE",
+      "title": "Security update for openssh",
+      "url": "https://lists.suse.com/pipermail/suse-liberty-linux-updates/2025-April/001052.html",
+      "released": "2025-04-22T02:07:24Z",
+      "updated": "2026-11-15T09:58:15Z",
+      "cves": [
+        "CVE-2018-20685",
+        "CVE-2019-6109",
+        "CVE-2019-6110",
+        "CVE-2019-6111",
+        "CVE-2020-14145"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Liberty Linux 7 LTSS"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

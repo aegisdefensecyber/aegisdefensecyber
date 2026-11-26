@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-11-08",
+  "count": 2,
+  "items": [
+    {
+      "id": "msrc_CVE-2025-10966",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "missing SFTP host verification with wolfSSH",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-10966.json",
+      "released": "2025-11-08T01:02:17Z",
+      "updated": "2026-11-16T22:32:33Z",
+      "cves": [
+        "CVE-2025-10966"
+      ],
+      "products": [
+        "Azure Linux",
+        "cmake",
+        "azl3 mysql 0:8.0.44-2.azl3",
+        "azl3 rust 0:1.75.0-21.azl3",
+        "azl3 tensorflow 0:2.16.1-9.azl3",
+        "cbl2 mysql 0:8.0.44-2.cbl2"
+      ],
+      "fix": [
+        {
+          "t": "0:3.21.4-22.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.30.3-12.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-37750",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "smb: client: fix UAF in decryption with multichannel",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-37750.json",
+      "released": "2025-11-08T01:08:19Z",
+      "updated": "2026-11-05T14:58:07Z",
+      "cves": [
+        "CVE-2025-37750"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "cbl2 kernel 0:5.15.186.1-1.cbl2"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

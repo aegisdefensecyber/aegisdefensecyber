@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "date": "2022-01-13",
+  "count": 2,
+  "items": [
+    {
+      "id": "msrc_CVE-2021-45960",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "In Expat (aka libexpat) before 2.4.3 a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g. allocating too few bytes or only freeing memory).",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2021-45960.json",
+      "released": "2022-01-13T00:00:00Z",
+      "updated": "2026-11-16T22:17:33Z",
+      "cves": [
+        "CVE-2021-45960"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Azure Linux",
+        "expat",
+        "azl4 python3.6 0:3.6.15-62.azl4"
+      ],
+      "fix": [
+        {
+          "t": "2.4.3-1:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "openSUSE-SU-2022:0069-1",
+      "src": "csaf_opensuse",
+      "vendor": "SUSE",
+      "title": "Security update for libmspack",
+      "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/IRYD4Y2CDUYSBVQUIDXTTBL6H6XYW54G/",
+      "released": "2022-01-13T14:12:42Z",
+      "updated": "2026-11-15T18:47:02Z",
+      "cves": [
+        "CVE-2018-18586"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "openSUSE Leap 15.3"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2024-02-19",
+  "count": 2,
+  "items": [
+    {
+      "id": "msrc_CVE-2023-42282",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "The ip package before 1.1.9 for Node.js might allow SSRF because some IP addresses (such as 0x7f.1) are improperly categorized as globally routable via isPublic.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2023-42282.json",
+      "released": "2024-02-19T00:00:00Z",
+      "updated": "2026-11-12T17:37:15Z",
+      "cves": [
+        "CVE-2023-42282"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "nodejs18",
+        "reaper",
+        "nodejs",
+        "azl4 grafana 0:10.2.6-25.azl4",
+        "azl4 js-d3-flame-graph 0:4.0.7-14.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:18.18.2-4.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.1.1-10.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:20.14.0-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "openSUSE-SU-2024:0053-1",
+      "src": "csaf_opensuse",
+      "vendor": "SUSE",
+      "title": "Security update for opera",
+      "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/JEOW7JNA5URR7GH7G6H4JCJ2CMZKOQEE/",
+      "released": "2024-02-19T09:01:03Z",
+      "updated": "2026-11-15T18:57:50Z",
+      "cves": [
+        "CVE-2024-1059",
+        "CVE-2024-1060",
+        "CVE-2024-1077",
+        "CVE-2024-1283",
+        "CVE-2024-1284"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "openSUSE Leap 15.5 NonFree"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

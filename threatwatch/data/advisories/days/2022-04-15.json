@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "date": "2022-04-15",
+  "count": 1,
+  "items": [
+    {
+      "id": "msrc_CVE-2022-28805",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "singlevar in lparser.c in Lua from (including) 5.4.0 up to (excluding) 5.4.4 lacks a certain luaK_exp2anyregup call leading to a heap-based buffer over-read that might affect a system that compiles untrusted Lua code.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-28805.json",
+      "released": "2022-04-15T00:00:00Z",
+      "updated": "2026-11-16T22:15:36Z",
+      "cves": [
+        "CVE-2022-28805"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Azure Linux",
+        "ntopng",
+        "lua",
+        "azl3 memcached 0:1.6.27-3.azl3",
+        "azl3 ceph 0:18.2.2-8.azl3",
+        "azl3 lua 0:5.4.6-1.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:5.2.1-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "5.3.5-9:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:5.4.3-2.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

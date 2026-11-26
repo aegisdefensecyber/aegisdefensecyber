@@ -1,0 +1,594 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-22",
+  "count": 26,
+  "items": [
+    {
+      "id": "msrc_CVE-2026-133949",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "pip bundles compromised eMudhra certificates via certifi",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-133949.json",
+      "released": "2026-11-22T01:02:36Z",
+      "updated": "2026-11-25T01:06:53Z",
+      "cves": [
+        "CVE-2026-133949"
+      ],
+      "products": [
+        "Azure Linux",
+        "python-pip",
+        "python-certifi",
+        "python-virtualenv",
+        "python3",
+        "tensorflow"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:101316",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "python-pip: python-pip: pip bundles compromised eMudhra certificates via certifi",
+      "url": "https://access.redhat.com/errata/RHSA-2026:101316",
+      "released": "2026-11-22T02:01:15Z",
+      "updated": "2026-11-26T05:21:43Z",
+      "cves": [
+        "CVE-2026-133949"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.8,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:101316"
+        },
+        {
+          "t": "Ensure the system ca-certificates package is updated per RHSB-2026-012 / CVE-2026-114406. For upstream pip installs or virtualenvs that still vendor certifi, upgrade pip to 26.2.2 or later (preferably after upgrading Python per CVE-2026-11…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:102012",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "sqlite: sqlite: Arbitrary command execution via .recover command",
+      "url": "https://access.redhat.com/errata/RHSA-2026:102012",
+      "released": "2026-11-22T17:34:38Z",
+      "updated": "2026-11-26T05:21:53Z",
+      "cves": [
+        "CVE-2026-119586"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:102012"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4722",
+      "src": "csaf_certbund",
+      "vendor": "Open Source",
+      "title": "expat: Schwachstelle ermöglicht Manipulation von Dateien",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4722",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "cves": [
+        "CVE-2026-134703"
+      ],
+      "sev": "LOW",
+      "products": [
+        "expat"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4723",
+      "src": "csaf_certbund",
+      "vendor": "F5",
+      "title": "F5 BIG-IP: Schwachstelle ermöglicht Codeausführung",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4723",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "cves": [
+        "CVE-2026-123637"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "BIG-IP"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4724",
+      "src": "csaf_certbund",
+      "vendor": "Meta",
+      "title": "Meta WhatsApp: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4724",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "cves": [
+        "CVE-2026-102769",
+        "CVE-2026-23871",
+        "CVE-2026-44908"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "WhatsApp"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4725",
+      "src": "csaf_certbund",
+      "vendor": "Open Source",
+      "title": "Langflow: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4725",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "cves": [
+        "CVE-2026-115549",
+        "CVE-2026-115550",
+        "CVE-2026-115555",
+        "CVE-2026-120038",
+        "CVE-2026-120039",
+        "CVE-2026-120054",
+        "CVE-2026-120068",
+        "CVE-2026-120069",
+        "CVE-2026-120071",
+        "CVE-2026-120073",
+        "CVE-2026-120077",
+        "CVE-2026-120078",
+        "CVE-2026-120079",
+        "CVE-2026-120083",
+        "CVE-2026-120087",
+        "CVE-2026-120598",
+        "CVE-2026-120601",
+        "CVE-2026-120628",
+        "CVE-2026-122088",
+        "CVE-2026-127061",
+        "CVE-2026-127065",
+        "CVE-2026-127066",
+        "CVE-2026-127067",
+        "CVE-2026-128866",
+        "CVE-2026-128867",
+        "CVE-2026-128876",
+        "CVE-2026-128877",
+        "CVE-2026-128878",
+        "CVE-2026-128879"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Langflow"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4726",
+      "src": "csaf_certbund",
+      "vendor": "Open Source",
+      "title": "Livewire: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4726",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Livewire"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4727",
+      "src": "csaf_certbund",
+      "vendor": "Open Source",
+      "title": "Snipe-IT: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4727",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "sev": "HIGH",
+      "products": [
+        "Snipe-IT"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4728",
+      "src": "csaf_certbund",
+      "vendor": "Mattermost",
+      "title": "Mattermost: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4728",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "cves": [
+        "CVE-2026-133561",
+        "CVE-2026-133878"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Mattermost"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4729",
+      "src": "csaf_certbund",
+      "vendor": "Open Source",
+      "title": "Gogs: Schwachstelle ermöglicht Codeausführung",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4729",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "cves": [
+        "CVE-2026-134808"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Gogs"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4730",
+      "src": "csaf_certbund",
+      "vendor": "Open Source",
+      "title": "OpenSSL: Schwachstelle ermöglicht Denial of Service",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4730",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "cves": [
+        "CVE-2026-121481"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "OpenSSL"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4731",
+      "src": "csaf_certbund",
+      "vendor": "Oracle",
+      "title": "Red Hat Enterprise Linux (lerc, librabbitmq, libgsf, xdg-desktop-portal, rapidjson): Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4731",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-24T23:00:00Z",
+      "cves": [
+        "CVE-2026-116124",
+        "CVE-2026-116620",
+        "CVE-2026-55888",
+        "CVE-2026-61547",
+        "CVE-2026-10758"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Oracle Linux",
+        "RESF Rocky Linux",
+        "Enterprise Linux",
+        "Red Hat Enterprise Linux"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4732",
+      "src": "csaf_certbund",
+      "vendor": "Open Source",
+      "title": "nginx-ui: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4732",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "sev": "MEDIUM",
+      "products": [
+        "nginx-ui"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4733",
+      "src": "csaf_certbund",
+      "vendor": "Fedora",
+      "title": "GPGME: Schwachstelle ermöglicht Codeausführung und Offenlegung von Informationen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4733",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-24T23:00:00Z",
+      "cves": [
+        "CVE-2026-129975"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Fedora Linux",
+        "Gentoo Linux",
+        "GPGME",
+        "Open Source Gpg4win",
+        "Red Hat Enterprise Linux",
+        "GnuPG VS-Desktop"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4734",
+      "src": "csaf_certbund",
+      "vendor": "Open Source",
+      "title": "PackageKit: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4734",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "sev": "HIGH",
+      "products": [
+        "PackageKit"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4735",
+      "src": "csaf_certbund",
+      "vendor": "Microsoft",
+      "title": "Microsoft ASP.NET Idunno.AntiCsrf: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode mit den Rechten des Dienstes",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4735",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "cves": [
+        "CVE-2026-131914"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "ASP.NET"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4736",
+      "src": "csaf_certbund",
+      "vendor": "Open Source",
+      "title": "Laravel: Schwachstelle ermöglicht Denial of Service",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4736",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Laravel"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4737",
+      "src": "csaf_certbund",
+      "vendor": "HCL",
+      "title": "HCL BigFix MCM: Schwachstelle ermöglicht Offenlegung von Informationen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4737",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "cves": [
+        "CVE-2026-107942"
+      ],
+      "sev": "LOW",
+      "products": [
+        "BigFix"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4738",
+      "src": "csaf_certbund",
+      "vendor": "IBM",
+      "title": "IBM Concert: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4738",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-22T23:00:00Z",
+      "cves": [
+        "CVE-2023-54404",
+        "CVE-2024-37568",
+        "CVE-2026-101899",
+        "CVE-2026-104874",
+        "CVE-2026-109527",
+        "CVE-2026-111063",
+        "CVE-2026-111064",
+        "CVE-2026-111065",
+        "CVE-2026-111066",
+        "CVE-2026-111748",
+        "CVE-2026-111749",
+        "CVE-2026-111750",
+        "CVE-2026-112906",
+        "CVE-2026-112909",
+        "CVE-2026-112911",
+        "CVE-2026-112912",
+        "CVE-2026-112914",
+        "CVE-2026-112915",
+        "CVE-2026-112934",
+        "CVE-2026-112935",
+        "CVE-2026-112937",
+        "CVE-2026-112939",
+        "CVE-2026-112940",
+        "CVE-2026-112941",
+        "CVE-2026-114614",
+        "CVE-2026-114615",
+        "CVE-2026-114616",
+        "CVE-2026-114617",
+        "CVE-2026-114618",
+        "CVE-2026-114619",
+        "CVE-2026-114620",
+        "CVE-2026-116672",
+        "CVE-2026-119108",
+        "CVE-2026-119284",
+        "CVE-2026-119323",
+        "CVE-2026-119355",
+        "CVE-2026-119356",
+        "CVE-2026-16221",
+        "CVE-2026-18446",
+        "CVE-2026-44495",
+        "CVE-2026-46595",
+        "CVE-2026-48815",
+        "CVE-2026-48990",
+        "CVE-2026-52869",
+        "CVE-2026-53655",
+        "CVE-2026-5423",
+        "CVE-2026-56851",
+        "CVE-2026-56852",
+        "CVE-2026-56854",
+        "CVE-2026-5724",
+        "CVE-2026-75507",
+        "CVE-2026-75508",
+        "CVE-2026-78659",
+        "CVE-2026-78660",
+        "CVE-2026-78661",
+        "CVE-2026-78663",
+        "CVE-2026-78669",
+        "CVE-2026-84304",
+        "CVE-2026-93753",
+        "CVE-2026-96760"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Concert"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4739",
+      "src": "csaf_certbund",
+      "vendor": "Apache",
+      "title": "Apache Solr: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4739",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-23T23:00:00Z",
+      "cves": [
+        "CVE-2026-53672",
+        "CVE-2026-86312"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Solr"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4740",
+      "src": "csaf_certbund",
+      "vendor": "OTRS",
+      "title": "OTRS: Schwachstelle ermöglicht Offenlegung von Informationen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4740",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-23T23:00:00Z",
+      "cves": [
+        "CVE-2026-93584"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "OTRS"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4741",
+      "src": "csaf_certbund",
+      "vendor": "Microsoft",
+      "title": "Microsoft 365 Copilot: Schwachstelle ermöglicht Privilegieneskalation",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4741",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-23T23:00:00Z",
+      "cves": [
+        "CVE-2026-50691"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4742",
+      "src": "csaf_certbund",
+      "vendor": "Microsoft",
+      "title": "Microsoft SharePoint: Schwachstelle ermöglicht Codeausführung",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4742",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-23T23:00:00Z",
+      "cves": [
+        "CVE-2026-70193"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Microsoft SharePoint"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4743",
+      "src": "csaf_certbund",
+      "vendor": "Microsoft",
+      "title": "Microsoft Azure: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4743",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-24T23:00:00Z",
+      "cves": [
+        "CVE-2026-109484",
+        "CVE-2026-109490",
+        "CVE-2026-118285",
+        "CVE-2026-118286",
+        "CVE-2026-120777",
+        "CVE-2026-62841",
+        "CVE-2026-65817",
+        "CVE-2026-69437",
+        "CVE-2026-69899",
+        "CVE-2026-70305",
+        "CVE-2026-81962"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Azure",
+        "Azure Linux",
+        "Entra",
+        "PowerShell"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-4744",
+      "src": "csaf_certbund",
+      "vendor": "Microsoft",
+      "title": "Microsoft PowerPoint: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode mit Benutzerrechten",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4744",
+      "released": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-23T23:00:00Z",
+      "cves": [
+        "CVE-2026-120787"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Microsoft PowerPoint"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    }
+  ]
+}

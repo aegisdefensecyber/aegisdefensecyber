@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-12-09",
+  "count": 2,
+  "items": [
+    {
+      "id": "RHSA-2025:22937",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "node-forge: node-forge: Interpretation conflict vulnerability allows bypassing cryptographic verifications",
+      "url": "https://access.redhat.com/errata/RHSA-2025:22937",
+      "released": "2025-12-09T14:59:02Z",
+      "updated": "2026-11-26T05:21:47Z",
+      "cves": [
+        "CVE-2025-12816",
+        "CVE-2025-64756",
+        "CVE-2025-66031"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "fix": [
+        {
+          "t": "See Kiali 2.4.11 documentation at https://docs.redhat.com/en/documentation/red_hat_openshift_service_mesh/3.0/html/observability/kiali-operator-provided-by-red-hat",
+          "u": "https://access.redhat.com/errata/RHSA-2025:22937"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "To mitigate this issue, avoid using the `glob` command-line interface with the `-c` or `--cmd` option when processing filenames from untrusted sources. If programmatic use of `glob` is necessary, ensure that filenames are thoroughly saniti…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2025-2812",
+      "src": "csaf_certbund",
+      "vendor": "Amazon",
+      "title": "Mozilla Firefox: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-2812",
+      "released": "2025-12-09T23:00:00Z",
+      "updated": "2026-11-05T23:00:00Z",
+      "cves": [
+        "CVE-2025-14321",
+        "CVE-2025-14322",
+        "CVE-2025-14323",
+        "CVE-2025-14324",
+        "CVE-2025-14325",
+        "CVE-2025-14326",
+        "CVE-2025-14327",
+        "CVE-2025-14328",
+        "CVE-2025-14329",
+        "CVE-2025-14330",
+        "CVE-2025-14331",
+        "CVE-2025-14332",
+        "CVE-2025-14333"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Amazon Linux 2",
+        "Debian Linux",
+        "Firefox",
+        "Firefox ESR",
+        "Thunderbird",
+        "Oracle Linux"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    }
+  ]
+}

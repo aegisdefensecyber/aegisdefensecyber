@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-05-03",
+  "count": 14,
+  "items": [
+    {
+      "id": "msrc_CVE-2026-7598",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "libssh2 userauth.c userauth_password integer overflow",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-7598.json",
+      "released": "2026-05-03T01:01:24Z",
+      "updated": "2026-11-21T01:15:22Z",
+      "cves": [
+        "CVE-2026-7598"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "Azure Linux",
+        "rust",
+        "libssh2",
+        "rust-libssh2-sys",
+        "cbl2 libssh2 0:1.9.0-4.cbl2",
+        "cbl2 nmap 0:7.93-4.cbl2"
+      ],
+      "fix": [
+        {
+          "t": "0:1.96.1-2.azl3:Security Update",
+          "u": null
+        },
+        {
+          "t": "0:1.11.1-2.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.11.1-13.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-37555",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in libsndfile 1.2.2 IMA ADPCM codec. The AIFF code path (line 241) was fixed with (sf_count_t) cast, but the WAV code path (line 235) and close path (line 167) were not. When samplesperblock (int…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-37555.json",
+      "released": "2026-05-03T01:01:33Z",
+      "updated": "2026-11-16T22:58:48Z",
+      "cves": [
+        "CVE-2026-37555"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "libsndfile",
+        "azl4 libsndfile 0:1.2.2-14.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:1.2.2-5.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-6845",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Binutils: binutils: denial of service via crafted elf file",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-6845.json",
+      "released": "2026-05-03T01:01:52Z",
+      "updated": "2026-11-16T23:11:43Z",
+      "cves": [
+        "CVE-2026-6845"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.0,
+      "products": [
+        "Azure Linux",
+        "binutils",
+        "cbl2 binutils 0:2.37-20.cbl2",
+        "cbl2 binutils 2.37-20",
+        "azl4 binutils 0:2.45.1-9.azl4",
+        "azl4 cross-binutils 0:2.45-4.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-6846",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Binutils: binutils: arbitrary code execution via malformed xcoff object file processing",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-6846.json",
+      "released": "2026-05-03T01:02:05Z",
+      "updated": "2026-11-16T23:11:49Z",
+      "cves": [
+        "CVE-2026-6846"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "gdb",
+        "binutils",
+        "azl4 binutils 0:2.45.1-9.azl4",
+        "azl4 cross-binutils 0:2.45-4.azl4",
+        "azl4 gdb 0:17.2-7.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:13.2-8.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.41-12.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-30656",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "A NULL pointer dereference vulnerability exists in fio (Flexible I/O Tester) v3.41 when parsing job files containing the fdp_pli option. The callback function str_fdp_pli_cb() does not validate the input pointer and cal…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-30656.json",
+      "released": "2026-05-03T01:02:35Z",
+      "updated": "2026-11-21T01:11:50Z",
+      "cves": [
+        "CVE-2026-30656"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "fio"
+      ],
+      "fix": [
+        {
+          "t": "0:3.37-4.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.40-6.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-6842",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Nano: nano: local attacker can inject malicious .desktop launcher due to insecure directory permissions",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-6842.json",
+      "released": "2026-05-03T01:02:43Z",
+      "updated": "2026-11-16T23:11:16Z",
+      "cves": [
+        "CVE-2026-6842"
+      ],
+      "sev": "LOW",
+      "cvss": 2.5,
+      "products": [
+        "Azure Linux",
+        "nano"
+      ],
+      "fix": [
+        {
+          "t": "0:6.4-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:8.5-7.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-6843",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Nano: nano: format string vulnerability leads to denial of service",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-6843.json",
+      "released": "2026-05-03T01:02:51Z",
+      "updated": "2026-11-16T23:11:23Z",
+      "cves": [
+        "CVE-2026-6843"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "nano"
+      ],
+      "fix": [
+        {
+          "t": "0:6.4-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:8.5-7.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2017-20230",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Storable versions before 3.05 for Perl has a stack overflow",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2017-20230.json",
+      "released": "2026-05-03T01:03:00Z",
+      "updated": "2026-11-19T14:04:31Z",
+      "cves": [
+        "CVE-2017-20230"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 10.0,
+      "products": [
+        "Azure Linux",
+        "perl",
+        "perl-Storable"
+      ],
+      "fix": [
+        {
+          "t": "4:5.42.2-525.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:3.37-522.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-32148",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Lockfile checksums not verified in Hex allows dependency integrity bypass",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-32148.json",
+      "released": "2026-05-03T01:03:30Z",
+      "updated": "2026-09-25T02:40:54Z",
+      "cves": [
+        "CVE-2026-32148"
+      ],
+      "products": [
+        "Azure Linux",
+        "rabbitmq-server"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-1328",
+      "src": "csaf_certbund",
+      "vendor": "Debian",
+      "title": "Red Hat Hardened Images RPMs: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1328",
+      "released": "2026-05-03T22:00:00Z",
+      "updated": "2026-11-03T23:00:00Z",
+      "cves": [
+        "CVE-2026-2625",
+        "CVE-2026-2950",
+        "CVE-2026-33813",
+        "CVE-2026-42371"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Debian Linux",
+        "Fedora Linux",
+        "BigFix",
+        "IBM MQ",
+        "IBM QRadar SIEM",
+        "Storage Scale"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-1332",
+      "src": "csaf_certbund",
+      "vendor": "Amazon",
+      "title": "libssh2: Schwachstelle ermöglicht Denial of Service",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1332",
+      "released": "2026-05-03T22:00:00Z",
+      "updated": "2026-11-16T23:00:00Z",
+      "cves": [
+        "CVE-2026-7598"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Amazon Linux 2",
+        "Debian Linux",
+        "Secure Connect Gateway",
+        "Fedora Linux",
+        "Gentoo Linux",
+        "Azure Linux"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-1335",
+      "src": "csaf_certbund",
+      "vendor": "Debian",
+      "title": "vim: Schwachstelle ermöglicht Codeausführung",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1335",
+      "released": "2026-05-03T22:00:00Z",
+      "updated": "2026-11-17T23:00:00Z",
+      "cves": [
+        "CVE-2026-44656"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Debian Linux",
+        "Dell Avamar",
+        "Dell NetWorker",
+        "Secure Connect Gateway",
+        "F5OS",
+        "Azure Linux"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-1343",
+      "src": "csaf_certbund",
+      "vendor": "Debian",
+      "title": "mutt: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1343",
+      "released": "2026-05-03T22:00:00Z",
+      "updated": "2026-11-12T23:00:00Z",
+      "cves": [
+        "CVE-2026-43859",
+        "CVE-2026-43860",
+        "CVE-2026-43861",
+        "CVE-2026-43862",
+        "CVE-2026-43863",
+        "CVE-2026-43864"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Debian Linux",
+        "mutt",
+        "SUSE Linux",
+        "SUSE openSUSE"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-1346",
+      "src": "csaf_certbund",
+      "vendor": "Amazon",
+      "title": "Linux Kernel: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1346",
+      "released": "2026-05-03T22:00:00Z",
+      "updated": "2026-11-23T23:00:00Z",
+      "cves": [
+        "CVE-2026-23234",
+        "CVE-2026-31693",
+        "CVE-2026-31694",
+        "CVE-2026-31695",
+        "CVE-2026-31696",
+        "CVE-2026-31697",
+        "CVE-2026-31698",
+        "CVE-2026-31699",
+        "CVE-2026-31700",
+        "CVE-2026-31701",
+        "CVE-2026-31702",
+        "CVE-2026-31703",
+        "CVE-2026-31704",
+        "CVE-2026-31705",
+        "CVE-2026-31706",
+        "CVE-2026-31707",
+        "CVE-2026-31708",
+        "CVE-2026-31709",
+        "CVE-2026-31710",
+        "CVE-2026-31711",
+        "CVE-2026-31712",
+        "CVE-2026-31713",
+        "CVE-2026-31714",
+        "CVE-2026-31715",
+        "CVE-2026-31716",
+        "CVE-2026-31717",
+        "CVE-2026-31718",
+        "CVE-2026-31719",
+        "CVE-2026-31720",
+        "CVE-2026-31721",
+        "CVE-2026-31722",
+        "CVE-2026-31723",
+        "CVE-2026-31724",
+        "CVE-2026-31725",
+        "CVE-2026-31726",
+        "CVE-2026-31727",
+        "CVE-2026-31728",
+        "CVE-2026-31729",
+        "CVE-2026-31730",
+        "CVE-2026-31731",
+        "CVE-2026-31732",
+        "CVE-2026-31733",
+        "CVE-2026-31734",
+        "CVE-2026-31735",
+        "CVE-2026-31736",
+        "CVE-2026-31737",
+        "CVE-2026-31738",
+        "CVE-2026-31739",
+        "CVE-2026-31740",
+        "CVE-2026-31741",
+        "CVE-2026-31742",
+        "CVE-2026-31743",
+        "CVE-2026-31744",
+        "CVE-2026-31745",
+        "CVE-2026-31746",
+        "CVE-2026-31747",
+        "CVE-2026-31748",
+        "CVE-2026-31749",
+        "CVE-2026-31750",
+        "CVE-2026-31751"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Amazon Linux 2",
+        "Debian Linux",
+        "Dell Avamar",
+        "Dell NetWorker",
+        "Secure Connect Gateway",
+        "F5 F5OS"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    }
+  ]
+}

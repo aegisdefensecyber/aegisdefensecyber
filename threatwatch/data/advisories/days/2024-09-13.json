@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "date": "2024-09-13",
+  "count": 4,
+  "items": [
+    {
+      "id": "msrc_CVE-2022-40898",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue discovered in Python Packaging Authority (PyPA) Wheel 0.37.1 and earlier allows remote attackers to cause a denial of service via attacker controlled input to wheel cli.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-40898.json",
+      "released": "2024-09-13T00:00:00Z",
+      "updated": "2026-11-16T22:18:33Z",
+      "cves": [
+        "CVE-2022-40898"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "python-wheel",
+        "azl3 mozjs 0:102.15.1-1.azl3",
+        "azl4 firefox 0:156.0.1-13.azl4",
+        "azl4 python-wheel0.37 0:0.37.1-33.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:0.43.0-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-45490",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in libexpat before 2.6.3. xmlparse.c does not reject a negative length for XML_ParseBuffer.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-45490.json",
+      "released": "2024-09-13T00:00:00Z",
+      "updated": "2026-11-16T22:30:53Z",
+      "cves": [
+        "CVE-2024-45490"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "expat",
+        "azl3 python3 0:3.12.3-5.azl3",
+        "cbl2 cmake 0:3.21.4-17.cbl2",
+        "cbl2 python3 3.9.19-13",
+        "cbl2 cmake 3.21.4-17"
+      ],
+      "fix": [
+        {
+          "t": "0:2.6.3-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-45491",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in libexpat before 2.6.3. dtdCopy in xmlparse.c can have an integer overflow for nDefaultAtts on 32-bit platforms (where UINT_MAX equals SIZE_MAX).",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-45491.json",
+      "released": "2024-09-13T00:00:00Z",
+      "updated": "2026-11-16T22:30:58Z",
+      "cves": [
+        "CVE-2024-45491"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "expat",
+        "cbl2 cmake 0:3.21.4-17.cbl2",
+        "cbl2 python3 3.9.19-13",
+        "cbl2 cmake 3.21.4-17",
+        "azl3 cmake 0:3.30.3-6.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:2.6.3-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-45492",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in libexpat before 2.6.3. nextScaffoldPart in xmlparse.c can have an integer overflow for m_groupSize on 32-bit platforms (where UINT_MAX equals SIZE_MAX).",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-45492.json",
+      "released": "2024-09-13T00:00:00Z",
+      "updated": "2026-11-16T22:31:04Z",
+      "cves": [
+        "CVE-2024-45492"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "expat",
+        "cbl2 cmake 0:3.21.4-17.cbl2",
+        "cbl2 cmake 3.21.4-17",
+        "azl3 python3 0:3.12.3-5.azl3",
+        "azl3 cmake 0:3.30.3-6.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:2.6.3-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

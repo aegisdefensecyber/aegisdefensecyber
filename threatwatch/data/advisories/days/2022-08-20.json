@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "date": "2022-08-20",
+  "count": 2,
+  "items": [
+    {
+      "id": "msrc_CVE-2022-2869",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "libtiff's tiffcrop tool has a uint32_t underflow which leads to out of bounds read and write in the extractContigSamples8bits routine. An attacker who supplies a crafted file to tiffcrop could trigger this flaw most lik…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-2869.json",
+      "released": "2022-08-20T00:00:00Z",
+      "updated": "2026-11-14T01:04:35Z",
+      "cves": [
+        "CVE-2022-2869"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "libtiff",
+        "azl4 wxGTK 0:3.2.8-6.azl4"
+      ],
+      "fix": [
+        {
+          "t": "4.5.0-1:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "openSUSE-SU-2022:10094-1",
+      "src": "csaf_opensuse",
+      "vendor": "SUSE",
+      "title": "Security update for trivy",
+      "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/TFXT5GO737TPBRXIUOZS7A3WOJKWSJAX/",
+      "released": "2022-08-20T10:02:00Z",
+      "updated": "2026-11-15T18:51:06Z",
+      "cves": [
+        "CVE-2022-1996",
+        "CVE-2022-23648",
+        "CVE-2022-28946"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Package Hub 15 SP3",
+        "openSUSE Leap 15.3"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

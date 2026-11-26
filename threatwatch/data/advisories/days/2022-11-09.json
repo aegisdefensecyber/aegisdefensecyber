@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "date": "2022-11-09",
+  "count": 1,
+  "items": [
+    {
+      "id": "msrc_CVE-2022-42919",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Python 3.9.x before 3.9.16 and 3.10.x before 3.10.9 on Linux allows local privilege escalation in a non-default configuration. The Python multiprocessing library when used with the forkserver start method on Linux allow…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-42919.json",
+      "released": "2022-11-09T00:00:00Z",
+      "updated": "2026-11-16T22:19:45Z",
+      "cves": [
+        "CVE-2022-42919"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "python3",
+        "azl4 python3.10 0:3.10.21-5.azl4",
+        "azl4 python3.6 0:3.6.15-62.azl4",
+        "azl4 python3.9 0:3.9.25-17.azl4"
+      ],
+      "fix": [
+        {
+          "t": "3.7.16-1:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.9.19-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "date": "2024-05-08",
+  "count": 1,
+  "items": [
+    {
+      "id": "msrc_CVE-2024-27982",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "The team has identified a critical vulnerability in the http server of the most recent version of Node where malformed headers can lead to HTTP request smuggling. Specifically if a space is placed before a content-lengt…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-27982.json",
+      "released": "2024-05-08T00:00:00Z",
+      "updated": "2026-11-16T22:30:20Z",
+      "cves": [
+        "CVE-2024-27982"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Azure Linux",
+        "nodejs18",
+        "nodejs",
+        "azl4 nodejs22 1:22.22.2-4.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:18.20.2-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:20.14.0-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

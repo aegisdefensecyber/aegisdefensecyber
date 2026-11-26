@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-05",
+  "count": 12,
+  "items": [
+    {
+      "id": "msrc_CVE-2026-85062",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Colord: Slow rejection of oversized malformed color strings",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-85062.json",
+      "released": "2026-09-05T01:24:45Z",
+      "updated": "2026-11-16T23:14:33Z",
+      "cves": [
+        "CVE-2026-85062"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 colord 0:1.4.6-1.azl3",
+        "azl4 colord 0:1.4.8-5.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-85396",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "rubyzip before 3.4.0 Path Traversal in Zip::Entry#extract via Sibling-Directory Prefix",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-85396.json",
+      "released": "2026-09-05T01:24:55Z",
+      "updated": "2026-11-16T23:15:29Z",
+      "cves": [
+        "CVE-2026-85396"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 rubygem-rubyzip 0:2.3.2-1.azl3",
+        "azl4 rubygem-rubyzip 0:2.3.2-15.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-85091",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "zlib 1.3.1.2 through 1.3.2 Heap Buffer Overflow via gz_vacate",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-85091.json",
+      "released": "2026-09-05T01:25:31Z",
+      "updated": "2026-11-17T14:02:00Z",
+      "cves": [
+        "CVE-2026-85091"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "Azure Linux",
+        "kata-containers",
+        "zlib",
+        "cloud-hypervisor",
+        "azl3 mariadb 0:10.11.18-1.azl3",
+        "azl3 mysql 0:8.0.46-1.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:1.3.2-2.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-33630",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "c-ares : Use-after-free / double-free in c-ares query-completion handling, remotely triggerable via ares_getaddrinfo() over TCP",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-33630.json",
+      "released": "2026-09-05T01:25:44Z",
+      "updated": "2026-11-16T22:55:41Z",
+      "cves": [
+        "CVE-2026-33630"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "fluent-bit",
+        "azl3 nodejs 0:24.18.1-1.azl3",
+        "azl4 fluent-bit 0:4.2.2-4.azl4",
+        "azl4 nodejs22 1:22.22.2-4.azl4",
+        "azl4 nodejs24 1:24.15.0-3.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:3.1.10-7.azl3:Security Update",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-85504",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "FreeIPMI before 1.6.19 has a stack-based buffer overflow in _ipmi_sel_oem_fujitsu_get_sel_entry_long_text in libfreeipmi/sel/ipmi-sel-string-fujitsu-irmc-common.c via malformed Fujitsu SEL long-text responses.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-85504.json",
+      "released": "2026-09-05T01:25:54Z",
+      "updated": "2026-09-10T03:31:19Z",
+      "cves": [
+        "CVE-2026-85504"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "freeipmi"
+      ],
+      "fix": [
+        {
+          "t": "0:1.6.19-1.azl3:Security Update",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-85508",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer overflow in _output_dell_system_info_cmc_ipv6_info in ipmi-oem/ipmi-oem-dell.c (cmc-ipv6-info subcommand to dell get-system-info).",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-85508.json",
+      "released": "2026-09-05T01:26:02Z",
+      "updated": "2026-09-10T03:31:28Z",
+      "cves": [
+        "CVE-2026-85508"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "freeipmi"
+      ],
+      "fix": [
+        {
+          "t": "0:1.6.19-1.azl3:Security Update",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-85505",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer over-read in ipmi_oem_fujitsu_get_sel_entry_long_text in ipmi-oem/ipmi-oem-fujitsu.c when a BMC provides a short response, a different vulnerability than CVE-2…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-85505.json",
+      "released": "2026-09-05T01:26:10Z",
+      "updated": "2026-09-10T03:31:37Z",
+      "cves": [
+        "CVE-2026-85505"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "freeipmi"
+      ],
+      "fix": [
+        {
+          "t": "0:1.6.19-1.azl3:Security Update",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-85509",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "FreeIPMI before 1.6.19 has a stack-based buffer overflow in _read_fru_data in libfreeipmi/fru/ipmi-fru.c when a BMC returns more bytes than requested.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-85509.json",
+      "released": "2026-09-05T01:26:19Z",
+      "updated": "2026-09-10T03:31:47Z",
+      "cves": [
+        "CVE-2026-85509"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "freeipmi"
+      ],
+      "fix": [
+        {
+          "t": "0:1.6.19-1.azl3:Security Update",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-85506",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer overflow in _get_dell_system_info_idrac_info in ipmi-oem/ipmi-oem-dell.c (idrac-info subcommand to dell get-system-info).",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-85506.json",
+      "released": "2026-09-05T01:26:27Z",
+      "updated": "2026-09-10T03:31:56Z",
+      "cves": [
+        "CVE-2026-85506"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "freeipmi"
+      ],
+      "fix": [
+        {
+          "t": "0:1.6.19-1.azl3:Security Update",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-85507",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer overflow in _output_dell_system_info_cmc_info in ipmi-oem/ipmi-oem-dell.c (cmc-info subcommand to dell get-system-info).",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-85507.json",
+      "released": "2026-09-05T01:26:35Z",
+      "updated": "2026-09-10T03:32:05Z",
+      "cves": [
+        "CVE-2026-85507"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "freeipmi"
+      ],
+      "fix": [
+        {
+          "t": "0:1.6.19-1.azl3:Security Update",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-84304",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "gRPC-Go: Heap Memory Exhaustion (OOM) via HTTP/2 DATA Frame Fragmentation",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-84304.json",
+      "released": "2026-09-05T01:37:48Z",
+      "updated": "2026-11-16T23:09:03Z",
+      "cves": [
+        "CVE-2026-84304"
+      ],
+      "products": [
+        "Azure Linux",
+        "docker-cli",
+        "flannel",
+        "kubevirt",
+        "multus",
+        "packer"
+      ],
+      "fix": [
+        {
+          "t": "0:4.0.2-11.azl3:Security Update",
+          "u": null
+        },
+        {
+          "t": "0:19.0.4-14.azl3:Security Update",
+          "u": null
+        },
+        {
+          "t": "0:2.27.0-15.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2026-78662",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Prevent DoS on deadlocked undecided channel in golang.org/x/crypto/ssh",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-78662.json",
+      "released": "2026-09-05T01:38:55Z",
+      "updated": "2026-11-21T01:17:49Z",
+      "cves": [
+        "CVE-2026-78662"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "cert-manager",
+        "kubernetes",
+        "moby-engine",
+        "docker-compose",
+        "cf-cli"
+      ],
+      "fix": [
+        {
+          "t": "0:1.12.15-14.azl3:Security Update",
+          "u": null
+        },
+        {
+          "t": "0:2.27.0-14.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:8.7.11-9.azl3:Security Update",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

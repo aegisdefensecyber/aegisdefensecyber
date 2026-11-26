@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "date": "2021-11-27",
+  "count": 1,
+  "items": [
+    {
+      "id": "msrc_CVE-2021-3672",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "A flaw was found in c-ares library where a missing input validation check of host names returned by DNS (Domain Name Servers) can lead to output of wrong hostnames which might potentially lead to Domain Hijacking. The h…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2021/msrc_cve-2021-3672.json",
+      "released": "2021-11-27T00:00:00Z",
+      "updated": "2026-11-16T22:15:23Z",
+      "cves": [
+        "CVE-2021-3672"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.6,
+      "products": [
+        "Azure Linux",
+        "pgbouncer",
+        "c-ares",
+        "ceph",
+        "azl3 rubygem-mini_portile2 0:2.8.4-1.azl3",
+        "azl3 tensorflow 0:2.16.1-9.azl3"
+      ],
+      "fix": [
+        {
+          "t": "1.16.1-1:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1.18.1-1:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:18.2.2-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-07-18",
+  "count": 2,
+  "items": [
+    {
+      "id": "msrc_CVE-2025-50181",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-50181.json",
+      "released": "2025-07-18T00:00:00Z",
+      "updated": "2026-11-16T22:28:27Z",
+      "cves": [
+        "CVE-2025-50181"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "python-urllib3",
+        "python-virtualenv",
+        "python-pip",
+        "azl3 tensorflow 0:2.16.1-9.azl3",
+        "cbl2 python3 3.9.19-13"
+      ],
+      "fix": [
+        {
+          "t": "0:2.0.7-2.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:20.26.6-2.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.26.19-2.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-6069",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "HTMLParser quadratic complexity when processing malformed inputs",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-6069.json",
+      "released": "2025-07-18T00:00:00Z",
+      "updated": "2026-11-16T22:27:04Z",
+      "cves": [
+        "CVE-2025-6069"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "Azure Linux",
+        "python3",
+        "azl3 tensorflow 0:2.16.1-9.azl3",
+        "azl4 python3.6 0:3.6.15-62.azl4",
+        "azl4 python3.9 0:3.9.25-17.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:3.9.19-14.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.12.9-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

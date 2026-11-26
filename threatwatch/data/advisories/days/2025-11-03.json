@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-11-03",
+  "count": 3,
+  "items": [
+    {
+      "id": "RHSA-2025:19421",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "cpython: Cpython infinite loop when parsing a tarfile",
+      "url": "https://access.redhat.com/errata/RHSA-2025:19421",
+      "released": "2025-11-03T07:30:00Z",
+      "updated": "2026-11-26T05:21:51Z",
+      "cves": [
+        "CVE-2025-8194",
+        "CVE-2025-47273",
+        "CVE-2025-48956",
+        "CVE-2025-57809"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For more information visit https://access.redhat.com/errata/RHSA-2025:19421",
+          "u": "https://access.redhat.com/errata/RHSA-2025:19421"
+        },
+        {
+          "t": "This flaw can be mitigated by adding the following code after importing the tarfile module (\"import tarfile\"): ~~~ import tarfile def _block_patched(self, count): if count < 0: # pragma: no cover raise tarfile.InvalidHeaderError(\"invalid o…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SCA-2025-0014",
+      "src": "direct_csaf",
+      "vendor": "SICK AG",
+      "title": "Privilege Escalation Through CodeMeter Installer on Windows",
+      "url": "https://www.sick.com/.well-known/csaf/white/2025/sca-2025-0014.json",
+      "released": "2025-11-03T14:00:00Z",
+      "updated": "2026-11-13T15:18:31Z",
+      "cves": [
+        "CVE-2025-47809"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.7,
+      "products": [
+        "SICK CODE-LOC with Firmware < LLS-2.8.1.24092R",
+        "SICK LIDAR-LOC with Firmware < LLS-2.8.1.24092R"
+      ],
+      "fix": [
+        {
+          "t": "On Microsoft Windows systems, it is strongly recommended to upgrade to the latest version (LLS-2.8.1.24092R).",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2025-2485",
+      "src": "csaf_certbund",
+      "vendor": "Amazon",
+      "title": "cURL (wcurl): Schwachstelle ermöglicht Manipulation von Dateien",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-2485",
+      "released": "2025-11-03T23:00:00Z",
+      "updated": "2026-11-11T23:00:00Z",
+      "cves": [
+        "CVE-2025-11563"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Amazon Linux 2",
+        "ECS",
+        "Secure Connect Gateway",
+        "Gentoo Linux",
+        "cURL",
+        "Linux"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    }
+  ]
+}

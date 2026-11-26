@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "date": "2023-09-04",
+  "count": 2,
+  "items": [
+    {
+      "id": "msrc_CVE-2020-22217",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Buffer overflow vulnerability in c-ares before 1_16_1 thru 1_17_0 via function ares_parse_soa_reply in ares_parse_soa_reply.c.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2020-22217.json",
+      "released": "2023-09-04T00:00:00Z",
+      "updated": "2026-11-16T22:27:13Z",
+      "cves": [
+        "CVE-2020-22217"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Azure Linux",
+        "python-gevent",
+        "cbl2 ceph 0:16.2.10-7.cbl2",
+        "azl3 ceph 0:18.2.2-8.azl3",
+        "azl3 grpc 0:1.42.0-7.azl3",
+        "azl3 tensorflow 0:2.16.1-9.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:21.1.2-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2020-22218",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in function _libssh2_packet_add in libssh2 1.10.0 allows attackers to access out of bounds memory.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2020-22218.json",
+      "released": "2023-09-04T00:00:00Z",
+      "updated": "2026-11-16T22:27:16Z",
+      "cves": [
+        "CVE-2020-22218"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "libssh2",
+        "azl4 nmap 4:7.92-12.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:1.9.0-3.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

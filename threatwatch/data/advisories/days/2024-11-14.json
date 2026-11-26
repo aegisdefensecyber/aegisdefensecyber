@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "date": "2024-11-14",
+  "count": 2,
+  "items": [
+    {
+      "id": "msrc_CVE-2024-4741",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Use After Free with SSL_free_buffers",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-4741.json",
+      "released": "2024-11-14T00:00:00Z",
+      "updated": "2026-11-14T01:12:00Z",
+      "cves": [
+        "CVE-2024-4741"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "hvloader",
+        "openssl",
+        "edk2",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "azl4 qemu 2:10.1.5-2.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:1.0.1-6.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.1.1k-31.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:20240524git3e722403cd16-6.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-9676",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Podman: buildah: cri-o: symlink traversal vulnerability in the containers/storage library can cause denial of service (dos)",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-9676.json",
+      "released": "2024-11-14T00:00:00Z",
+      "updated": "2026-11-16T22:30:33Z",
+      "cves": [
+        "CVE-2024-9676"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Azure Linux",
+        "skopeo",
+        "cri-o",
+        "cbl2 libcontainers-common 0:20210626-7.cbl2",
+        "azl3 libcontainers-common 0:20240213-3.azl3",
+        "cbl2 libcontainers-common 20210626-7"
+      ],
+      "fix": [
+        {
+          "t": "0:1.14.2-9.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.14.4-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.22.3-14.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

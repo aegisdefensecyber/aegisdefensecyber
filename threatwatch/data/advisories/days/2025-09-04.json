@@ -1,0 +1,4368 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-09-04",
+  "count": 163,
+  "items": [
+    {
+      "id": "msrc_CVE-2025-1365",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "GNU elfutils eu-readelf readelf.c process_symtab buffer overflow",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-1365.json",
+      "released": "2025-09-04T00:00:27Z",
+      "updated": "2026-11-16T22:27:51Z",
+      "cves": [
+        "CVE-2025-1365"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "elfutils",
+        "azl3 elfutils 0:0.189-4.azl3",
+        "azl4 rust-libbpf-sys 0:1.6.2-4.azl4",
+        "azl4 udev-hid-bpf 0:2.1.0.20240704-12.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:0.189-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-4802",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Untrusted LD_LIBRARY_PATH environment variable vulnerability in the GNU C Library version 2.27 to 2.38 allows attacker controlled loading of dynamically shared library in statically compiled setuid binaries that call dl…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-4802.json",
+      "released": "2025-09-04T00:02:07Z",
+      "updated": "2026-09-25T02:36:26Z",
+      "cves": [
+        "CVE-2025-4802"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "glibc"
+      ],
+      "fix": [
+        {
+          "t": "0:2.38-12.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-22121",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "ext4: fix out-of-bound read in ext4_xattr_inode_dec_ref_all()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-22121.json",
+      "released": "2025-09-04T00:04:25Z",
+      "updated": "2026-10-16T01:45:15Z",
+      "cves": [
+        "CVE-2025-22121"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.4,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.121.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-45781",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Grub2: fs/ufs: oob write in the heap",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-45781.json",
+      "released": "2025-09-04T00:05:26Z",
+      "updated": "2026-11-16T22:31:58Z",
+      "cves": [
+        "CVE-2024-45781"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.7,
+      "products": [
+        "Azure Linux",
+        "grub2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.06-15.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.06-25.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:2.12-53.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-29087",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "In SQLite 3.44.0 through 3.49.0 before 3.49.1, the concat_ws() SQL function can cause memory to be written beyond the end of a malloc-allocated buffer. If the separator argument is attacker-controlled and has a large st…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-29087.json",
+      "released": "2025-09-04T00:06:55Z",
+      "updated": "2026-11-16T22:36:18Z",
+      "cves": [
+        "CVE-2025-29087"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 libdb 0:5.3.28-7.cbl2",
+        "azl3 libdb 0:5.3.28-9.azl3",
+        "cbl2 sqlite 0:3.39.2-3.cbl2",
+        "azl3 sqlite 0:3.44.0-1.azl3",
+        "cbl2 sqlite 3.39.2-3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-45290",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Memory exhaustion in multipart form parsing in net/textproto and net/http",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2023-45290.json",
+      "released": "2025-09-04T00:08:16Z",
+      "updated": "2026-11-16T22:16:27Z",
+      "cves": [
+        "CVE-2023-45290"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "azl4 cross-gcc 0:15.2.1-1.azl4",
+        "azl4 gcc 0:15.3.1-1.azl4",
+        "cbl2 msft-golang 0:1.24.1-2.cbl2",
+        "cbl2 tensorflow 0:2.11.1-2.cbl2"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2019-1547",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "ECDSA remote timing attack",
+      "url": "https://msrc.microsoft.com/csaf/vex/2019/msrc_cve-2019-1547.json",
+      "released": "2025-09-04T00:10:29Z",
+      "updated": "2026-11-21T01:10:49Z",
+      "cves": [
+        "CVE-2019-1547"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.7,
+      "products": [
+        "Azure Linux",
+        "edk2",
+        "hvloader",
+        "openssl",
+        "rust",
+        "cbl2 rust 0:1.72.0-15.cbl2"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-5889",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "juliangruber brace-expansion index.js expand redos",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-5889.json",
+      "released": "2025-09-04T00:10:37Z",
+      "updated": "2026-11-16T22:34:34Z",
+      "cves": [
+        "CVE-2025-5889"
+      ],
+      "sev": "LOW",
+      "cvss": 3.1,
+      "products": [
+        "Azure Linux",
+        "nodejs18",
+        "cbl2 python-tensorboard 0:2.11.0-3.cbl2",
+        "cbl2 reaper 3.1.1-19",
+        "azl3 python-tensorboard 0:2.16.2-6.azl3",
+        "cbl2 reaper 0:3.1.1-19.cbl2"
+      ],
+      "fix": [
+        {
+          "t": "0:18.20.3-9.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-29406",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Insufficient sanitization of Host header in net/http",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-29406.json",
+      "released": "2025-09-04T00:12:26Z",
+      "updated": "2026-11-16T22:16:04Z",
+      "cves": [
+        "CVE-2023-29406"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "msft-golang",
+        "azl3 golang 0:1.23.9-1.azl3",
+        "azl3 gcc 0:13.2.0-7.azl3",
+        "cbl2 python-tensorboard 0:2.11.0-3.cbl2"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.20.7-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-3277",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An integer overflow can be triggered in SQLite’s `concat_ws()` function. The resulting, truncated integer is then used to allocate a buffer. When SQLite then writes the resulting string to the buffer, it uses the origin…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-3277.json",
+      "released": "2025-09-04T00:14:10Z",
+      "updated": "2026-11-16T22:28:23Z",
+      "cves": [
+        "CVE-2025-3277"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 libdb 5.3.28-7",
+        "azl3 sqlite 0:3.44.0-1.azl3",
+        "cbl2 sqlite 0:3.39.2-3.cbl2",
+        "azl3 libdb 0:5.3.28-9.azl3",
+        "cbl2 libdb 0:5.3.28-7.cbl2"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-21732",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "RDMA/mlx5: Fix a race for an ODP MR which leads to CQE with error",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-21732.json",
+      "released": "2025-09-04T00:16:07Z",
+      "updated": "2026-11-05T15:03:29Z",
+      "cves": [
+        "CVE-2025-21732"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.7,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.96.2-1.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-58058",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "github.com/ulikunitz/xz leaks memory when decoding a corrupted multiple LZMA archives",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-58058.json",
+      "released": "2025-09-04T00:16:28Z",
+      "updated": "2026-11-16T22:32:53Z",
+      "cves": [
+        "CVE-2025-58058"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "containerized-data-importer",
+        "cri-o",
+        "packer",
+        "jx",
+        "skopeo"
+      ],
+      "fix": [
+        {
+          "t": "0:3.2.236-23.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.9.5-15.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.14.2-12.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-26756",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "md: Don't register sync_thread for reshape directly",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-26756.json",
+      "released": "2025-09-04T00:20:09Z",
+      "updated": "2026-11-05T15:05:09Z",
+      "cves": [
+        "CVE-2024-26756"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-21985",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "drm/amd/display: Fix out-of-bound accesses",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-21985.json",
+      "released": "2025-09-04T00:20:38Z",
+      "updated": "2026-11-05T15:03:36Z",
+      "cves": [
+        "CVE-2025-21985"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "cbl2 kernel 0:5.15.186.1-1.cbl2",
+        "azl3 kernel 0:6.6.112.1-2.azl3",
+        "azl3 kernel 0:6.6.117.1-1.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2021-43666",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "A Denial of Service vulnerability exists in mbed TLS 3.0.0 and earlier in the mbedtls_pkcs12_derivation function when an input password's length is 0.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2021-43666.json",
+      "released": "2025-09-04T00:22:28Z",
+      "updated": "2026-11-16T22:16:40Z",
+      "cves": [
+        "CVE-2021-43666"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "cbl2 qemu 6.2.0-24",
+        "azl4 fluent-bit 0:4.2.2-4.azl4",
+        "azl4 librist 0:0.2.7-13.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2018-16875",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "The crypto/x509 package of Go before 1.10.6 and 1.11.x before 1.11.3 does not limit the amount of work performed for each chain verification, which might allow attackers to craft pathological inputs leading to a CPU den…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2018/msrc_cve-2018-16875.json",
+      "released": "2025-09-04T00:22:48Z",
+      "updated": "2026-09-09T14:55:28Z",
+      "cves": [
+        "CVE-2018-16875"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "azl3 golang 0:1.24.3-1.azl3",
+        "azl3 golang 0:1.23.12-1.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-1150",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "GNU Binutils ld libbfd.c bfd_malloc memory leak",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-1150.json",
+      "released": "2025-09-04T00:22:55Z",
+      "updated": "2026-11-16T22:35:18Z",
+      "cves": [
+        "CVE-2025-1150"
+      ],
+      "sev": "LOW",
+      "cvss": 3.1,
+      "products": [
+        "Azure Linux",
+        "binutils",
+        "gdb",
+        "azl4 binutils 0:2.45.1-9.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-55199",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Helm Charts with Specific JSON Schema Values Can Cause Memory Exhaustion",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-55199.json",
+      "released": "2025-09-04T00:23:40Z",
+      "updated": "2026-09-07T01:49:19Z",
+      "cves": [
+        "CVE-2025-55199"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Azure Linux",
+        "helm"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-21892",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "RDMA/mlx5: Fix the recovery flow of the UMR QP",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-21892.json",
+      "released": "2025-09-04T00:24:07Z",
+      "updated": "2026-11-05T15:03:42Z",
+      "cves": [
+        "CVE-2025-21892"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 kernel 0:6.6.96.2-1.azl3",
+        "azl3 kernel 0:6.6.112.1-2.azl3",
+        "azl3 kernel 0:6.6.117.1-1.azl3",
+        "azl3 kernel 0:6.6.119.3-1.azl3",
+        "azl3 kernel 0:6.6.130.1-3.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2015-7511",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Libgcrypt before 1.6.5 does not properly perform elliptic-point curve multiplication during decryption, which makes it easier for physically proximate attackers to extract ECDH keys by measuring electromagnetic emanatio…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2016/msrc_cve-2015-7511.json",
+      "released": "2025-09-04T00:25:12Z",
+      "updated": "2026-11-16T22:18:14Z",
+      "cves": [
+        "CVE-2015-7511"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 grub2 0:2.06-23.azl3",
+        "azl4 grub2 1:2.12-53.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-57804",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "scsi: mpi3mr: Fix corrupt config pages PHY state is switched in sysfs",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-57804.json",
+      "released": "2025-09-04T00:29:05Z",
+      "updated": "2026-11-05T15:03:45Z",
+      "cves": [
+        "CVE-2024-57804"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 kernel 0:6.6.96.2-1.azl3",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.112.1-2.azl3",
+        "azl3 kernel 0:6.6.117.1-1.azl3",
+        "azl3 kernel 0:6.6.119.3-1.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-5642",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Buffer overread when using an empty list with SSLContext.set_npn_protocols()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-5642.json",
+      "released": "2025-09-04T00:29:08Z",
+      "updated": "2026-11-16T22:35:26Z",
+      "cves": [
+        "CVE-2024-5642"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 python3 0:3.9.19-13.cbl2",
+        "azl4 python3.6 0:3.6.15-62.azl4",
+        "azl4 python3.9 0:3.9.25-17.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-24783",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Verify panics on certificates with an unknown public key algorithm in crypto/x509",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-24783.json",
+      "released": "2025-09-04T00:29:44Z",
+      "updated": "2026-11-16T22:28:06Z",
+      "cves": [
+        "CVE-2024-24783"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "cbl2 gcc 0:11.2.0-8.cbl2",
+        "cbl2 golang 0:1.22.7-3.cbl2",
+        "azl3 gcc 0:13.2.0-7.azl3",
+        "cbl2 tensorflow 0:2.11.1-2.cbl2"
+      ],
+      "fix": [
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38022",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "RDMA/core: Fix \"KASAN: slab-use-after-free Read in ib_register_device\" problem",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38022.json",
+      "released": "2025-09-04T00:31:51Z",
+      "updated": "2026-09-29T01:52:50Z",
+      "cves": [
+        "CVE-2025-38022"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.121.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-21885",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "RDMA/bnxt_re: Fix the page details for the srq created by kernel consumers",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-21885.json",
+      "released": "2025-09-04T00:32:12Z",
+      "updated": "2026-11-05T15:03:51Z",
+      "cves": [
+        "CVE-2025-21885"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.96.2-1.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-23167",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "A flaw in Node.js 20's HTTP parser allows improper termination of HTTP/1 headers using `\\r\\n\\rX` instead of the required `\\r\\n\\r\\n`. This inconsistency enables request smuggling, allowing attackers to bypass proxy-based…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-23167.json",
+      "released": "2025-09-04T00:32:59Z",
+      "updated": "2026-11-16T22:33:18Z",
+      "cves": [
+        "CVE-2025-23167"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Azure Linux",
+        "nodejs",
+        "fluent-bit",
+        "nodejs18",
+        "cbl2 nghttp2 0:1.57.0-2.cbl2",
+        "azl3 nodejs 0:20.14.0-15.azl3"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-37745",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "PM: hibernate: Avoid deadlock in hibernate_compressor_param_set()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-37745.json",
+      "released": "2025-09-04T00:34:28Z",
+      "updated": "2026-11-05T15:03:56Z",
+      "cves": [
+        "CVE-2025-37745"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-1.azl3",
+        "azl3 kernel 0:6.6.96.2-2.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-22115",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "btrfs: fix block group refcount race in btrfs_create_pending_block_groups()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-22115.json",
+      "released": "2025-09-04T00:35:46Z",
+      "updated": "2026-11-05T15:03:58Z",
+      "cves": [
+        "CVE-2025-22115"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 kernel 0:6.6.104.2-4.azl3",
+        "azl3 kernel 0:6.6.112.1-2.azl3",
+        "azl3 kernel 0:6.6.117.1-1.azl3",
+        "azl3 kernel 0:6.6.121.1-1.azl3",
+        "azl3 kernel 0:6.6.130.1-3.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-1371",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "GNU elfutils eu-read readelf.c handle_dynamic_symtab null pointer dereference",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-1371.json",
+      "released": "2025-09-04T00:37:33Z",
+      "updated": "2026-11-16T22:27:54Z",
+      "cves": [
+        "CVE-2025-1371"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 elfutils 0:0.189-4.azl3",
+        "azl4 rust-libbpf-sys 0:1.6.2-4.azl4",
+        "azl4 udev-hid-bpf 0:2.1.0.20240704-12.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2019-16910",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Arm Mbed TLS before 2.19.0 and Arm Mbed Crypto before 2.0.0, when deterministic ECDSA is enabled, use an RNG with insufficient entropy for blinding, which might allow an attacker to recover a private key via side-channe…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2019/msrc_cve-2019-16910.json",
+      "released": "2025-09-04T00:38:18Z",
+      "updated": "2026-11-21T01:11:17Z",
+      "cves": [
+        "CVE-2019-16910"
+      ],
+      "products": [
+        "Azure Linux",
+        "fluent-bit",
+        "cbl2 qemu 6.2.0-24",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "azl4 qemu 2:10.1.5-2.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-29400",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Improper handling of empty HTML attributes in html/template",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-29400.json",
+      "released": "2025-09-04T00:39:00Z",
+      "updated": "2026-11-12T17:35:05Z",
+      "cves": [
+        "CVE-2023-29400"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "msft-golang",
+        "cbl2 tensorflow 0:2.11.1-2.cbl2",
+        "cbl2 python-tensorboard 0:2.11.0-3.cbl2",
+        "azl3 tensorflow 0:2.16.1-9.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.20.7-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-41067",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "btrfs: scrub: handle RST lookup error correctly",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-41067.json",
+      "released": "2025-09-04T00:39:06Z",
+      "updated": "2026-11-05T15:04:03Z",
+      "cves": [
+        "CVE-2024-41067"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-1180",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "GNU Binutils ld elf-eh-frame.c _bfd_elf_write_section_eh_frame memory corruption",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-1180.json",
+      "released": "2025-09-04T00:39:36Z",
+      "updated": "2026-11-19T14:02:33Z",
+      "cves": [
+        "CVE-2025-1180"
+      ],
+      "sev": "LOW",
+      "cvss": 3.1,
+      "products": [
+        "Azure Linux",
+        "gdb",
+        "binutils",
+        "crash",
+        "azl3 binutils 0:2.41-13.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:8.0.4-5.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:8.0.1-5.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-26759",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "mm/swap: fix race when skipping swapcache",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-26759.json",
+      "released": "2025-09-04T00:41:06Z",
+      "updated": "2026-09-30T01:46:51Z",
+      "cves": [
+        "CVE-2024-26759"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2022-35409",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in Mbed TLS before 2.28.1 and 3.x before 3.2.0. In some configurations, an unauthenticated attacker can send an invalid ClientHello message to a DTLS server that causes a heap-based buffer over-r…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-35409.json",
+      "released": "2025-09-04T00:42:29Z",
+      "updated": "2026-11-16T22:17:38Z",
+      "cves": [
+        "CVE-2022-35409"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Azure Linux",
+        "qemu",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "cbl2 qemu 6.2.0-24",
+        "azl4 fluent-bit 0:4.2.2-4.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-22111",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "net: Remove RTNL dance for SIOCBRADDIF and SIOCBRDELIF.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-22111.json",
+      "released": "2025-09-04T00:44:03Z",
+      "updated": "2026-11-10T01:44:12Z",
+      "cves": [
+        "CVE-2025-22111"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.96.2-1.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.121.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-57898",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "wifi: cfg80211: clear link ID from bitmap during link delete after clean up",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-57898.json",
+      "released": "2025-09-04T00:46:51Z",
+      "updated": "2026-11-05T15:04:08Z",
+      "cves": [
+        "CVE-2024-57898"
+      ],
+      "sev": "LOW",
+      "cvss": 3.3,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "cbl2 kernel 0:5.15.200.1-1.cbl2",
+        "cbl2 kernel 0:5.15.202.1-1.cbl2",
+        "cbl2 kernel 5.15.202.1-1",
+        "cbl2 kernel 0:5.15.186.1-1.cbl2"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-24785",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Errors returned from JSON marshaling may break template escaping in html/template",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-24785.json",
+      "released": "2025-09-04T00:47:50Z",
+      "updated": "2026-11-16T22:28:15Z",
+      "cves": [
+        "CVE-2024-24785"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.4,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "cbl2 gcc 0:11.2.0-8.cbl2",
+        "cbl2 golang 0:1.22.7-3.cbl2",
+        "azl3 gcc 0:13.2.0-7.azl3",
+        "cbl2 python-tensorboard 0:2.11.0-3.cbl2"
+      ],
+      "fix": [
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-24856",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "NULL pointer deference in acpi_db_convert_to_package of Linux acpi module",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-24856.json",
+      "released": "2025-09-04T00:49:55Z",
+      "updated": "2026-10-24T14:47:32Z",
+      "cves": [
+        "CVE-2024-24856"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-1.azl3",
+        "azl3 kernel 0:6.6.104.2-4.azl3",
+        "azl3 kernel 0:6.6.112.1-2.azl3",
+        "azl3 kernel 0:6.6.119.3-3.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.159.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-47794",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "bpf: Prevent tailcall infinite loop caused by freplace",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-47794.json",
+      "released": "2025-09-04T00:54:29Z",
+      "updated": "2026-11-05T15:04:10Z",
+      "cves": [
+        "CVE-2024-47794"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-1.azl3",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.104.2-4.azl3",
+        "azl3 kernel 0:6.6.112.1-2.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-45284",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Incorrect detection of reserved device names on Windows in path/filepath",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-45284.json",
+      "released": "2025-09-04T00:55:21Z",
+      "updated": "2026-11-12T17:37:22Z",
+      "cves": [
+        "CVE-2023-45284"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "azl4 cross-gcc 0:15.2.1-1.azl4",
+        "cbl2 python-tensorboard 0:2.11.0-3.cbl2",
+        "azl3 tensorflow 0:2.16.1-9.azl3",
+        "azl3 golang 0:1.24.3-1.azl3"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-4969",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Libsoup: off-by-one out-of-bounds read in find_boundary() in soup-multipart.c",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-4969.json",
+      "released": "2025-09-04T00:56:39Z",
+      "updated": "2026-11-16T22:27:44Z",
+      "cves": [
+        "CVE-2025-4969"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Azure Linux",
+        "libsoup",
+        "azl4 libsoup 0:2.74.3-12.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:3.0.4-9.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.4.4-9.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38531",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "iio: common: st_sensors: Fix use of uninitialize device structs",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38531.json",
+      "released": "2025-09-04T01:02:17Z",
+      "updated": "2026-10-17T01:49:26Z",
+      "cves": [
+        "CVE-2025-38531"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38678",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "netfilter: nf_tables: reject duplicate device on updates",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38678.json",
+      "released": "2025-09-04T01:02:24Z",
+      "updated": "2026-09-24T01:56:01Z",
+      "cves": [
+        "CVE-2025-38678"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.117.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-2295",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Potential iSCSI R2T PDU Vulnerability",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-2295.json",
+      "released": "2025-09-04T01:04:20Z",
+      "updated": "2026-11-16T22:33:00Z",
+      "cves": [
+        "CVE-2025-2295"
+      ],
+      "sev": "LOW",
+      "cvss": 3.5,
+      "products": [
+        "Azure Linux",
+        "edk2",
+        "hvloader",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "cbl2 qemu 6.2.0-24"
+      ],
+      "fix": [
+        {
+          "t": "0:1.0.1-16.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:20240524git3e722403cd16-14.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:20230301gitf80f052277c8-45.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38041",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "clk: sunxi-ng: h616: Reparent GPU clock during frequency changes",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38041.json",
+      "released": "2025-09-04T01:05:50Z",
+      "updated": "2026-11-05T15:05:33Z",
+      "cves": [
+        "CVE-2025-38041"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-2310",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "HDF5 Metadata Attribute Decoder H5MM_strndup heap-based overflow",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-2310.json",
+      "released": "2025-09-04T01:09:05Z",
+      "updated": "2026-11-16T22:33:15Z",
+      "cves": [
+        "CVE-2025-2310"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "hdf5",
+        "azl4 hdf5 0:1.14.6-9.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:1.14.6-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-45289",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Incorrect forwarding of sensitive headers and cookies on HTTP redirect in net/http",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2023-45289.json",
+      "released": "2025-09-04T01:09:58Z",
+      "updated": "2026-11-12T17:37:28Z",
+      "cves": [
+        "CVE-2023-45289"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "azl4 cross-gcc 0:15.2.1-1.azl4",
+        "azl4 gcc 0:15.3.1-1.azl4",
+        "cbl2 golang 0:1.22.7-3.cbl2",
+        "azl3 gcc 0:13.2.0-7.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-42317",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "mm/huge_memory: avoid PMD-size page cache if needed",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-42317.json",
+      "released": "2025-09-04T01:10:23Z",
+      "updated": "2026-11-05T15:04:18Z",
+      "cves": [
+        "CVE-2024-42317"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38064",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "virtio: break and reset virtio devices on device_shutdown()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38064.json",
+      "released": "2025-09-04T01:11:55Z",
+      "updated": "2026-11-05T15:05:39Z",
+      "cves": [
+        "CVE-2025-38064"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2018-1000215",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Dave Gamble cJSON version 1.7.6 and earlier contains a CWE-772 vulnerability in cJSON library that can result in Denial of Service",
+      "url": "https://msrc.microsoft.com/csaf/vex/2018/msrc_cve-2018-1000215.json",
+      "released": "2025-09-04T01:12:38Z",
+      "updated": "2026-11-16T22:18:26Z",
+      "cves": [
+        "CVE-2018-1000215"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "libglvnd",
+        "cbl2 pytorch 2.5.1-1",
+        "azl3 ceph 0:18.2.2-8.azl3",
+        "cbl2 pytorch 0:2.5.1-1.cbl2",
+        "azl4 ceph 2:19.2.6-5.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:1.7.0-2.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-37807",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "bpf: Fix kmemleak warning for percpu hashmap",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-37807.json",
+      "released": "2025-09-04T01:13:30Z",
+      "updated": "2026-11-05T15:04:23Z",
+      "cves": [
+        "CVE-2025-37807"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2022-41724",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Panic on large handshake records in crypto/tls",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2022-41724.json",
+      "released": "2025-09-04T01:14:18Z",
+      "updated": "2026-11-12T17:28:39Z",
+      "cves": [
+        "CVE-2022-41724"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "gcc",
+        "msft-golang",
+        "cbl2 tensorflow 0:2.11.1-2.cbl2",
+        "azl3 tensorflow 0:2.16.1-9.azl3"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1.17.13-2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "9.1.0-7:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-2308",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "HDF5 Scale-Offset Filter H5Z__scaleoffset_decompress_one_byte heap-based overflow",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-2308.json",
+      "released": "2025-09-04T01:14:31Z",
+      "updated": "2026-11-16T22:33:10Z",
+      "cves": [
+        "CVE-2025-2308"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "hdf5",
+        "azl4 hdf5 0:1.14.6-9.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:1.14.6-6.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38524",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "rxrpc: Fix recv-recv race of completed call",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38524.json",
+      "released": "2025-09-04T01:16:14Z",
+      "updated": "2026-10-17T01:49:20Z",
+      "cves": [
+        "CVE-2025-38524"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.104.2-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-22026",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "nfsd: don't ignore the return code of svc_proc_register()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-22026.json",
+      "released": "2025-09-04T01:19:07Z",
+      "updated": "2026-09-13T01:49:34Z",
+      "cves": [
+        "CVE-2025-22026"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.126.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-2309",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "HDF5 Type Conversion Logic H5T__bit_copy heap-based overflow",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-2309.json",
+      "released": "2025-09-04T01:19:47Z",
+      "updated": "2026-11-16T22:33:13Z",
+      "cves": [
+        "CVE-2025-2309"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "hdf5",
+        "azl4 hdf5 0:1.14.6-9.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:1.14.6-6.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-21927",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "nvme-tcp: fix potential memory corruption in nvme_tcp_recv_pdu()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-21927.json",
+      "released": "2025-09-04T01:20:13Z",
+      "updated": "2026-11-05T14:57:42Z",
+      "cves": [
+        "CVE-2025-21927"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38544",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "rxrpc: Fix bug due to prealloc collision",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38544.json",
+      "released": "2025-09-04T01:23:01Z",
+      "updated": "2026-10-17T01:49:31Z",
+      "cves": [
+        "CVE-2025-38544"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.104.2-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-37856",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "btrfs: harden block_group::bg_list against list_del() races",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-37856.json",
+      "released": "2025-09-04T01:23:30Z",
+      "updated": "2026-11-05T15:04:28Z",
+      "cves": [
+        "CVE-2025-37856"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.104.2-4.azl3",
+        "azl3 kernel 0:6.6.96.2-1.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2022-49218",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "drm/dp: Fix OOB read when handling Post Cursor2 register",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2022-49218.json",
+      "released": "2025-09-04T01:25:00Z",
+      "updated": "2026-09-17T01:49:07Z",
+      "cves": [
+        "CVE-2022-49218"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-45285",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Command 'go get' may unexpectedly fallback to insecure git in cmd/go",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-45285.json",
+      "released": "2025-09-04T01:31:42Z",
+      "updated": "2026-11-12T17:37:24Z",
+      "cves": [
+        "CVE-2023-45285"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "msft-golang",
+        "azl4 cross-gcc 0:15.2.1-1.azl4",
+        "azl4 gcc 0:15.3.1-1.azl4",
+        "azl3 tensorflow 0:2.16.1-9.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.22.3-1..cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-53154",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "parse_string in cJSON before 1.7.18 has a heap-based buffer over-read via {\"1\":1, with no trailing newline if cJSON_ParseWithLength is called.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2023-53154.json",
+      "released": "2025-09-04T01:32:31Z",
+      "updated": "2026-11-16T22:21:37Z",
+      "cves": [
+        "CVE-2023-53154"
+      ],
+      "sev": "LOW",
+      "cvss": 2.9,
+      "products": [
+        "Azure Linux",
+        "apparmor",
+        "azl3 ceph 0:18.2.2-8.azl3",
+        "cbl2 libglvnd 0:1.3.2-5.cbl2",
+        "azl3 libglvnd 0:1.7.0-2.azl3",
+        "cbl2 libglvnd 1.3.2-5"
+      ],
+      "fix": [
+        {
+          "t": "0:3.0.4-5.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.1.7-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-21949",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "LoongArch: Set hugetlb mmap base address aligned with pmd size",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-21949.json",
+      "released": "2025-09-04T01:35:21Z",
+      "updated": "2026-11-05T14:57:44Z",
+      "cves": [
+        "CVE-2025-21949"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.112.1-2.azl3",
+        "azl3 kernel 0:6.6.117.1-1.azl3",
+        "azl3 kernel 0:6.6.119.3-1.azl3",
+        "azl3 kernel 0:6.6.130.1-3.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-37882",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "usb: xhci: Fix isochronous Ring Underrun/Overrun event handling",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-37882.json",
+      "released": "2025-09-04T01:40:47Z",
+      "updated": "2026-11-05T15:04:33Z",
+      "cves": [
+        "CVE-2025-37882"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.112.1-2.azl3",
+        "azl3 kernel 0:6.6.117.1-1.azl3",
+        "azl3 kernel 0:6.6.119.3-1.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38140",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "dm: limit swapping tables for devices with zone write plugs",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38140.json",
+      "released": "2025-09-04T01:41:02Z",
+      "updated": "2026-11-05T15:05:50Z",
+      "cves": [
+        "CVE-2025-38140"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38303",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Bluetooth: eir: Fix possible crashes on eir_create_adv_data",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38303.json",
+      "released": "2025-09-04T01:42:05Z",
+      "updated": "2026-11-05T15:06:13Z",
+      "cves": [
+        "CVE-2025-38303"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-37822",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "riscv: uprobes: Add missing fence.i after building the XOL buffer",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-37822.json",
+      "released": "2025-09-04T01:43:52Z",
+      "updated": "2026-10-05T01:47:23Z",
+      "cves": [
+        "CVE-2025-37822"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-1.azl3",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.104.2-4.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.121.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-22022",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "usb: xhci: Apply the link chain quirk on NEC isoc endpoints",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-22022.json",
+      "released": "2025-09-04T01:48:11Z",
+      "updated": "2026-11-10T01:43:57Z",
+      "cves": [
+        "CVE-2025-22022"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.96.2-1.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.121.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-39319",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Improper handling of special tags within script contexts in html/template",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-39319.json",
+      "released": "2025-09-04T01:51:46Z",
+      "updated": "2026-11-12T17:36:53Z",
+      "cves": [
+        "CVE-2023-39319"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.1,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "msft-golang",
+        "azl4 cross-gcc 0:15.2.1-1.azl4",
+        "azl4 gcc 0:15.3.1-1.azl4",
+        "azl3 gcc 0:13.2.0-7.azl3"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.20.10-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-58006",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "PCI: dwc: ep: Prevent changing BAR size/flags in pci_epc_set_bar()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-58006.json",
+      "released": "2025-09-04T01:52:18Z",
+      "updated": "2026-11-05T15:04:38Z",
+      "cves": [
+        "CVE-2024-58006"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.6,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-0690",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Grub2: read: integer overflow may lead to out-of-bounds write",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-0690.json",
+      "released": "2025-09-04T01:55:00Z",
+      "updated": "2026-11-16T22:31:34Z",
+      "cves": [
+        "CVE-2025-0690"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.1,
+      "products": [
+        "Azure Linux",
+        "grub2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.06-15.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.06-25.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:2.12-53.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-7069",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "HDF5 H5FSsection.c H5FS__sect_link_size heap-based overflow",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-7069.json",
+      "released": "2025-09-04T01:57:23Z",
+      "updated": "2026-11-16T22:30:27Z",
+      "cves": [
+        "CVE-2025-7069"
+      ],
+      "sev": "LOW",
+      "cvss": 3.3,
+      "products": [
+        "Azure Linux",
+        "hdf5",
+        "azl3 hdf5 0:1.14.4.3-1.azl3",
+        "cbl2 hdf5 1.14.4-1",
+        "azl4 hdf5 0:1.14.6-9.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38279",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "bpf: Do not include stack ptr register in precision backtracking bookkeeping",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38279.json",
+      "released": "2025-09-04T02:00:17Z",
+      "updated": "2026-11-05T15:06:18Z",
+      "cves": [
+        "CVE-2025-38279"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-40325",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "md/raid10: wait barrier before returning discard request with REQ_NOWAIT",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-40325.json",
+      "released": "2025-09-04T02:00:27Z",
+      "updated": "2026-11-05T15:04:45Z",
+      "cves": [
+        "CVE-2025-40325"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.96.2-1.azl3",
+        "azl3 kernel 0:6.6.104.2-4.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-7425",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Libxslt: heap use-after-free in libxslt caused by atype corruption in xmlattrptr",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-7425.json",
+      "released": "2025-09-04T02:04:37Z",
+      "updated": "2026-11-16T22:31:33Z",
+      "cves": [
+        "CVE-2025-7425"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "libxslt",
+        "libxml2",
+        "azl4 libxml2 0:2.12.10-8.azl4",
+        "azl4 libxslt 0:1.1.43-8.azl4",
+        "azl4 rubygem-nokogiri 0:1.19.4-1.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:2.11.5-8.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-8224",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "GNU Binutils BFD Library elf.c bfd_elf_get_str_section null pointer dereference",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-8224.json",
+      "released": "2025-09-04T02:04:38Z",
+      "updated": "2026-11-16T22:32:09Z",
+      "cves": [
+        "CVE-2025-8224"
+      ],
+      "sev": "LOW",
+      "cvss": 3.3,
+      "products": [
+        "Azure Linux",
+        "binutils",
+        "cbl2 crash 0:8.0.1-5.cbl2",
+        "azl3 crash 0:9.0.0-2.azl3",
+        "azl3 gdb 0:13.2-7.azl3",
+        "azl3 binutils 0:2.41-7.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-29409",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Large RSA keys can cause high CPU usage in crypto/tls",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-29409.json",
+      "released": "2025-09-04T02:10:32Z",
+      "updated": "2026-11-16T22:16:07Z",
+      "cves": [
+        "CVE-2023-29409"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "msft-golang",
+        "azl3 gcc 0:13.2.0-7.azl3",
+        "cbl2 python-tensorboard 0:2.11.0-3.cbl2",
+        "azl3 python-tensorboard 0:2.16.2-6.azl3"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.20.7-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-7424",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Libxslt: type confusion in xmlnode.psvi between stylesheet and source nodes",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-7424.json",
+      "released": "2025-09-04T02:12:04Z",
+      "updated": "2026-11-16T22:31:26Z",
+      "cves": [
+        "CVE-2025-7424"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "libxslt"
+      ],
+      "fix": [
+        {
+          "t": "0:1.1.43-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.1.34-10.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.1.43-9.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38269",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "btrfs: exit after state insertion failure at btrfs_convert_extent_bit()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38269.json",
+      "released": "2025-09-04T02:13:28Z",
+      "updated": "2026-11-05T15:06:24Z",
+      "cves": [
+        "CVE-2025-38269"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-3416",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Rust-openssl: rust-openssl use-after-free in `md::fetch` and `cipher::fetch`",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-3416.json",
+      "released": "2025-09-04T02:13:49Z",
+      "updated": "2026-11-16T22:29:25Z",
+      "cves": [
+        "CVE-2025-3416"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 rpm-ostree 0:2024.4-3.azl3",
+        "azl3 python-cryptography 0:42.0.5-3.azl3",
+        "azl3 rust 0:1.75.0-14.azl3",
+        "azl3 rust 0:1.86.0-1.azl3",
+        "cbl2 rust 0:1.72.0-10.cbl2"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38520",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "drm/amdkfd: Don't call mmput from MMU notifier callback",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38520.json",
+      "released": "2025-09-04T02:14:26Z",
+      "updated": "2026-10-17T01:49:39Z",
+      "cves": [
+        "CVE-2025-38520"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.104.2-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38029",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "kasan: avoid sleepable page allocation from atomic context",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38029.json",
+      "released": "2025-09-04T02:14:45Z",
+      "updated": "2026-11-05T15:05:44Z",
+      "cves": [
+        "CVE-2025-38029"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38096",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "wifi: iwlwifi: don't warn when if there is a FW error",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38096.json",
+      "released": "2025-09-04T02:15:10Z",
+      "updated": "2026-11-05T15:05:56Z",
+      "cves": [
+        "CVE-2025-38096"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.96.2-1.azl3",
+        "azl3 kernel 0:6.6.104.2-4.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-23131",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "dlm: prevent NPD when writing a positive value to event_done",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-23131.json",
+      "released": "2025-09-04T02:15:43Z",
+      "updated": "2026-11-10T01:44:21Z",
+      "cves": [
+        "CVE-2025-23131"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-1.azl3",
+        "azl3 kernel 0:6.6.96.2-2.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.144.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-8177",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "LibTIFF thumbnail.c setrow buffer overflow",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-8177.json",
+      "released": "2025-09-04T02:16:00Z",
+      "updated": "2026-11-16T22:32:01Z",
+      "cves": [
+        "CVE-2025-8177"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "libtiff",
+        "azl4 wxGTK 0:3.2.8-6.azl4",
+        "azl4 ghostscript 0:10.05.1-9.azl4",
+        "azl4 python-wxpython4 0:4.2.4-4.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:4.6.0-7.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:4.6.0-8.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38272",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "net: dsa: b53: do not enable EEE on bcm63xx",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38272.json",
+      "released": "2025-09-04T02:17:12Z",
+      "updated": "2026-11-05T15:06:30Z",
+      "cves": [
+        "CVE-2025-38272"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-8961",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "LibTIFF tiffcrop tiffcrop.c main memory corruption",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-8961.json",
+      "released": "2025-09-04T02:20:45Z",
+      "updated": "2026-11-16T22:33:03Z",
+      "cves": [
+        "CVE-2025-8961"
+      ],
+      "sev": "LOW",
+      "cvss": 3.3,
+      "products": [
+        "Azure Linux",
+        "libtiff",
+        "azl4 wxGTK 0:3.2.8-6.azl4",
+        "azl4 ghostscript 0:10.05.1-9.azl4",
+        "azl4 python-wxpython4 0:4.2.4-4.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:4.6.0-11.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-8176",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "LibTIFF tiffmedian.c get_histogram use after free",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-8176.json",
+      "released": "2025-09-04T02:22:03Z",
+      "updated": "2026-11-16T22:31:57Z",
+      "cves": [
+        "CVE-2025-8176"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "libtiff",
+        "azl4 wxGTK 0:3.2.8-6.azl4",
+        "azl4 ghostscript 0:10.05.1-9.azl4",
+        "azl4 python-wxpython4 0:4.2.4-4.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:4.6.0-7.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:4.6.0-8.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-21786",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "workqueue: Put the pwq after detaching the rescuer from the pool",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-21786.json",
+      "released": "2025-09-04T02:25:22Z",
+      "updated": "2026-11-05T15:05:15Z",
+      "cves": [
+        "CVE-2025-21786"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2022-50230",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "arm64: set UXN on swapper page tables",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2022-50230.json",
+      "released": "2025-09-04T02:27:11Z",
+      "updated": "2026-10-23T01:44:53Z",
+      "cves": [
+        "CVE-2022-50230"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.96.2-1.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-24537",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Infinite loop in parsing in go/scanner",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-24537.json",
+      "released": "2025-09-04T02:29:22Z",
+      "updated": "2026-11-12T17:33:15Z",
+      "cves": [
+        "CVE-2023-24537"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "msft-golang",
+        "azl3 gcc 0:13.2.0-7.azl3",
+        "azl3 golang 0:1.23.9-1.azl3",
+        "azl3 tensorflow 0:2.16.1-9.azl3"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.20.11-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2020-36476",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in Mbed TLS before 2.24.0 (and before 2.16.8 LTS and before 2.7.17 LTS). There is missing zeroization of plaintext buffers in mbedtls_ssl_read to erase unused application data from memory.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2021/msrc_cve-2020-36476.json",
+      "released": "2025-09-04T02:31:03Z",
+      "updated": "2026-11-21T01:14:01Z",
+      "cves": [
+        "CVE-2020-36476"
+      ],
+      "products": [
+        "Azure Linux",
+        "fluent-bit",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "cbl2 qemu 6.2.0-24",
+        "azl4 qemu 2:10.1.5-2.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-8194",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Tarfile infinite loop during parsing with negative member offset",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-8194.json",
+      "released": "2025-09-04T02:31:30Z",
+      "updated": "2026-11-16T22:32:06Z",
+      "cves": [
+        "CVE-2025-8194"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "python3",
+        "python3.6",
+        "azl3 tensorflow 0:2.16.1-9.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:3.12.9-4.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.9.19-15.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.6.15-62.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38591",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "bpf: Reject narrower access to pointer ctx fields",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38591.json",
+      "released": "2025-09-04T02:32:08Z",
+      "updated": "2026-11-05T15:06:43Z",
+      "cves": [
+        "CVE-2025-38591"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-26914",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "drm/amd/display: fix incorrect mpc_combine array size",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-26914.json",
+      "released": "2025-09-04T02:34:14Z",
+      "updated": "2026-11-05T15:04:51Z",
+      "cves": [
+        "CVE-2024-26914"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "cbl2 kernel 0:5.15.186.1-1.cbl2"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-7207",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "mruby nregs codegen.c scope_new heap-based overflow",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-7207.json",
+      "released": "2025-09-04T02:39:43Z",
+      "updated": "2026-11-16T22:31:14Z",
+      "cves": [
+        "CVE-2025-7207"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 rust 0:1.72.0-10.cbl2",
+        "azl3 rust 0:1.75.0-16.azl3",
+        "cbl2 nghttp2 0:1.57.0-2.cbl2",
+        "azl3 nghttp2 0:1.61.0-2.azl3",
+        "azl3 rust 0:1.86.0-3.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-36024",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "drm/amd/display: Disable idle reallow as part of command/gpint execution",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-36024.json",
+      "released": "2025-09-04T02:42:30Z",
+      "updated": "2026-11-05T15:04:58Z",
+      "cves": [
+        "CVE-2024-36024"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.7,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.96.2-1.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38590",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "net/mlx5e: Remove skb secpath if xfrm state is not found",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38590.json",
+      "released": "2025-09-04T02:47:43Z",
+      "updated": "2026-09-09T01:49:14Z",
+      "cves": [
+        "CVE-2025-38590"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.104.2-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-4056",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Glib: glib crash after long command line",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-4056.json",
+      "released": "2025-09-04T02:50:16Z",
+      "updated": "2026-11-16T22:29:56Z",
+      "cves": [
+        "CVE-2025-4056"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 glib 0:2.78.6-2.azl3",
+        "cbl2 glib 0:2.71.0-5.cbl2",
+        "azl4 glib 1:1.2.10-79.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2022-41725",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Excessive resource consumption in mime/multipart",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2022-41725.json",
+      "released": "2025-09-04T02:53:04Z",
+      "updated": "2026-11-16T22:19:31Z",
+      "cves": [
+        "CVE-2022-41725"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "gcc",
+        "msft-golang",
+        "azl3 gcc 0:13.2.0-7.azl3",
+        "cbl2 tensorflow 0:2.11.1-2.cbl2"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1.17.13-2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "9.1.0-7:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-4373",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Glib: buffer underflow on glib through glib/gstring.c via function g_string_insert_unichar",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-4373.json",
+      "released": "2025-09-04T02:58:55Z",
+      "updated": "2026-11-16T22:31:07Z",
+      "cves": [
+        "CVE-2025-4373"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.8,
+      "products": [
+        "Azure Linux",
+        "glib",
+        "azl4 glib 1:1.2.10-79.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:2.71.0-6.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.71.0-7.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.78.6-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-58266",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "The shlex crate before 1.2.1 for Rust allows unquoted and unescaped instances of the { and \\xa0 characters, which may facilitate command injection.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-58266.json",
+      "released": "2025-09-04T03:03:00Z",
+      "updated": "2026-11-16T22:27:17Z",
+      "cves": [
+        "CVE-2024-58266"
+      ],
+      "sev": "LOW",
+      "cvss": 3.2,
+      "products": [
+        "Azure Linux",
+        "kata-containers",
+        "kata-containers-cc",
+        "rust",
+        "azl3 rust 0:1.75.0-30.azl3",
+        "azl4 clevis-pin-tpm2 0:0.5.3-13.azl4"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-4435",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Tarfile extracts filtered members when errorlevel=0",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-4435.json",
+      "released": "2025-09-04T03:03:02Z",
+      "updated": "2026-11-16T22:31:22Z",
+      "cves": [
+        "CVE-2025-4435"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "python3",
+        "python3.6",
+        "azl3 tensorflow 0:2.16.1-9.azl3"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.6.15-62.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38585",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "staging: media: atomisp: Fix stack buffer overflow in gmin_get_var_int()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38585.json",
+      "released": "2025-09-04T03:03:20Z",
+      "updated": "2026-11-05T15:06:50Z",
+      "cves": [
+        "CVE-2025-38585"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-57254",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An integer overflow in sqfs_inode_size in Das U-Boot before 2025.01-rc1 occurs in the symlink size calculation via a crafted squashfs filesystem.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-57254.json",
+      "released": "2025-09-04T03:04:13Z",
+      "updated": "2026-11-16T22:35:59Z",
+      "cves": [
+        "CVE-2024-57254"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "cbl2 qemu 6.2.0-24",
+        "azl4 qemu 2:10.1.5-2.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-30258",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "In GnuPG before 2.5.5, if a user chooses to import a certificate with certain crafted subkey data that lacks a valid backsig or that has incorrect usage flags, the user loses the ability to verify signatures made from c…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-30258.json",
+      "released": "2025-09-04T03:09:31Z",
+      "updated": "2026-10-08T01:50:07Z",
+      "cves": [
+        "CVE-2025-30258"
+      ],
+      "sev": "LOW",
+      "cvss": 2.7,
+      "products": [
+        "Azure Linux",
+        "gnupg2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.4.8-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-32911",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Libsoup: double free on soup_message_headers_get_content_disposition() through \"soup-message-headers.c\" via \"params\" ghashtable value",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-32911.json",
+      "released": "2025-09-04T03:10:11Z",
+      "updated": "2026-11-16T22:29:09Z",
+      "cves": [
+        "CVE-2025-32911"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.0,
+      "products": [
+        "Azure Linux",
+        "libsoup",
+        "azl4 libsoup 0:2.74.3-12.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:3.4.4-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "3.0.4-3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-45283",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Insecure parsing of Windows paths with a \\??\\ prefix in path/filepath",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-45283.json",
+      "released": "2025-09-04T03:15:18Z",
+      "updated": "2026-11-12T17:37:20Z",
+      "cves": [
+        "CVE-2023-45283"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "msft-golang",
+        "azl4 cross-gcc 0:15.2.1-1.azl4",
+        "azl4 gcc 0:15.3.1-1.azl4",
+        "azl3 gcc 0:13.2.0-7.azl3"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.20.11-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-54126",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "WebAssembly Micro Runtime's `--addr-pool` option allows all IPv4 addresses when subnet mask is not specified",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-54126.json",
+      "released": "2025-09-04T03:22:55Z",
+      "updated": "2026-11-16T22:31:11Z",
+      "cves": [
+        "CVE-2025-54126"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Azure Linux",
+        "fluent-bit",
+        "azl4 linux-sgx 0:2.28-9.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:3.1.9-5.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:3.0.6-3.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-7598",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Network restriction bypass via race condition during namespace termination",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-7598.json",
+      "released": "2025-09-04T03:23:10Z",
+      "updated": "2026-10-14T02:39:14Z",
+      "cves": [
+        "CVE-2024-7598"
+      ],
+      "sev": "LOW",
+      "cvss": 3.1,
+      "products": [
+        "Azure Linux",
+        "kubernetes",
+        "azl3 kubernetes 0:1.30.10-9.azl3",
+        "azl3 kubernetes 0:1.30.10-11.azl3",
+        "cbl2 kubernetes 0:1.28.4-18.cbl2"
+      ],
+      "fix": [
+        {
+          "t": "0:1.30.10-27.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.30.10-26.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-53605",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "The protobuf crate before 3.7.2 for Rust allows uncontrolled recursion in the protobuf::coded_input_stream::CodedInputStream::skip_group parsing of unknown fields in untrusted input.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-53605.json",
+      "released": "2025-09-04T03:26:57Z",
+      "updated": "2026-10-07T01:48:58Z",
+      "cves": [
+        "CVE-2025-53605"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Azure Linux",
+        "kata-containers",
+        "kata-containers-cc",
+        "rust"
+      ],
+      "fix": [
+        {
+          "t": "0:3.19.1.kata2-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.86.0-4.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.72.0-11.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2021-44732",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Mbed TLS before 3.0.1 has a double free in certain out-of-memory conditions, as demonstrated by an mbedtls_ssl_set_session() failure.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2021/msrc_cve-2021-44732.json",
+      "released": "2025-09-04T03:28:34Z",
+      "updated": "2026-11-16T22:16:53Z",
+      "cves": [
+        "CVE-2021-44732"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "cbl2 qemu 6.2.0-24",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "azl4 fluent-bit 0:4.2.2-4.azl4",
+        "azl4 librist 0:0.2.7-13.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-8354",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Qemu-kvm: usb: assertion failure in usb_ep_get()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-8354.json",
+      "released": "2025-09-04T03:32:24Z",
+      "updated": "2026-11-16T22:29:21Z",
+      "cves": [
+        "CVE-2024-8354"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "qemu",
+        "azl4 qemu 2:10.1.5-2.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:9.1.0-3.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "6.2.0-27:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-24540",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Improper handling of JavaScript whitespace in html/template",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-24540.json",
+      "released": "2025-09-04T03:33:46Z",
+      "updated": "2026-11-16T22:26:36Z",
+      "cves": [
+        "CVE-2023-24540"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "msft-golang",
+        "azl3 gcc 0:13.2.0-7.azl3",
+        "azl3 golang 0:1.23.9-1.azl3",
+        "cbl2 tensorflow 0:2.11.1-2.cbl2"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.20.11-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2022-49651",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "srcu: Tighten cleanup_srcu_struct() GP checks",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2022-49651.json",
+      "released": "2025-09-04T03:37:05Z",
+      "updated": "2026-09-22T14:46:50Z",
+      "cves": [
+        "CVE-2022-49651"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-57857",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "RDMA/siw: Remove direct link to net_device",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-57857.json",
+      "released": "2025-09-04T03:42:28Z",
+      "updated": "2026-11-05T15:05:26Z",
+      "cves": [
+        "CVE-2024-57857"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38556",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "HID: core: Harden s32ton() against conversion to 0 bits",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38556.json",
+      "released": "2025-09-04T03:43:17Z",
+      "updated": "2026-10-20T01:43:40Z",
+      "cves": [
+        "CVE-2025-38556"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2022-27536",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Certificate.Verify in crypto/x509 in Go 1.18.x before 1.18.1 can be caused to panic on macOS when presented with certain malformed certificates. This allows a remote TLS server to cause a TLS client to panic.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-27536.json",
+      "released": "2025-09-04T03:43:28Z",
+      "updated": "2026-11-16T22:25:04Z",
+      "cves": [
+        "CVE-2022-27536"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "azl3 golang 0:1.23.9-1.azl3",
+        "azl3 golang 0:1.24.3-1.azl3",
+        "azl3 golang 0:1.27.1-1.azl3",
+        "azl3 gcc 0:13.2.0-7.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-49795",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Libxml: null pointer dereference leads to denial of service (dos)",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-49795.json",
+      "released": "2025-09-04T03:44:32Z",
+      "updated": "2026-11-16T22:28:00Z",
+      "cves": [
+        "CVE-2025-49795"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "libxml2",
+        "azl4 libxml2 0:2.12.10-8.azl4",
+        "azl4 rubygem-nokogiri 0:1.19.4-1.azl4",
+        "azl4 vtk 0:9.2.6-49.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:2.10.4-9.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.11.5-7.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-57984",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "i3c: dw: Fix use-after-free in dw_i3c_master driver due to race condition",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-57984.json",
+      "released": "2025-09-04T03:45:33Z",
+      "updated": "2026-10-21T01:44:30Z",
+      "cves": [
+        "CVE-2024-57984"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-57255",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An integer overflow in sqfs_resolve_symlink in Das U-Boot before 2025.01-rc1 occurs via a crafted squashfs filesystem with an inode size of 0xffffffff, resulting in a malloc of zero and resultant memory overwrite.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-57255.json",
+      "released": "2025-09-04T03:52:20Z",
+      "updated": "2026-11-16T22:36:02Z",
+      "cves": [
+        "CVE-2024-57255"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "cbl2 qemu 6.2.0-24",
+        "azl4 qemu 2:10.1.5-2.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-58251",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "In netstat in BusyBox through 1.37.0, local users can launch of network application with an argv[0] containing an ANSI terminal escape sequence, leading to a denial of service (terminal locked up) when netstat is used b…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-58251.json",
+      "released": "2025-09-04T03:56:51Z",
+      "updated": "2026-11-16T22:27:14Z",
+      "cves": [
+        "CVE-2024-58251"
+      ],
+      "sev": "LOW",
+      "cvss": 2.5,
+      "products": [
+        "Azure Linux",
+        "busybox",
+        "azl4 busybox 1:1.37.0-6.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-7783",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Usage of unsafe random function in form-data for choosing boundary",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-7783.json",
+      "released": "2025-09-04T04:02:28Z",
+      "updated": "2026-11-16T22:31:53Z",
+      "cves": [
+        "CVE-2025-7783"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 reaper 0:3.1.1-19.cbl2",
+        "cbl2 python-tensorboard 0:2.11.0-3.cbl2",
+        "azl3 python-tensorboard 0:2.16.2-6.azl3",
+        "azl4 grafana 0:10.2.6-25.azl4",
+        "azl4 grafana-pcp 0:5.3.0-6.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-21693",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "mm: zswap: properly synchronize freeing resources during CPU hotunplug",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-21693.json",
+      "released": "2025-09-04T04:03:26Z",
+      "updated": "2026-11-19T14:02:37Z",
+      "cves": [
+        "CVE-2025-21693"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-46394",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "In tar in BusyBox through 1.37.0, a TAR archive can have filenames hidden from a listing through the use of terminal escape sequences.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-46394.json",
+      "released": "2025-09-04T04:04:08Z",
+      "updated": "2026-11-16T22:32:06Z",
+      "cves": [
+        "CVE-2025-46394"
+      ],
+      "sev": "LOW",
+      "cvss": 3.2,
+      "products": [
+        "Azure Linux",
+        "busybox",
+        "azl4 busybox 1:1.37.0-6.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-24539",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Improper sanitization of CSS values in html/template",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-24539.json",
+      "released": "2025-09-04T04:09:59Z",
+      "updated": "2026-11-12T17:33:25Z",
+      "cves": [
+        "CVE-2023-24539"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "msft-golang",
+        "azl3 golang 0:1.23.9-1.azl3",
+        "cbl2 python-tensorboard 0:2.11.0-3.cbl2",
+        "azl3 golang 0:1.27.1-1.azl3"
+      ],
+      "fix": [
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.20.11-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.20.7-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-57259",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "sqfs_search_dir in Das U-Boot before 2025.01-rc1 exhibits an off-by-one error and resultant heap memory corruption for squashfs directory listing because the path separator is not considered in a size calculation.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-57259.json",
+      "released": "2025-09-04T04:14:59Z",
+      "updated": "2026-11-16T22:26:49Z",
+      "cves": [
+        "CVE-2024-57259"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "cbl2 qemu 6.2.0-24",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "azl4 qemu 2:10.1.5-2.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2018-19416",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in sysstat 12.1.1. The remap_struct function in sa_common.c has an out-of-bounds read during a memmove call, as demonstrated by sadf.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2018/msrc_cve-2018-19416.json",
+      "released": "2025-09-04T04:18:37Z",
+      "updated": "2026-11-16T22:21:49Z",
+      "cves": [
+        "CVE-2018-19416"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 sysstat 0:12.7.6-1.azl3",
+        "cbl2 sysstat 12.7.6-1",
+        "cbl2 sysstat 0:12.7.6-1.cbl2",
+        "azl4 sysstat 0:12.7.8-4.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-38584",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "padata: Fix pd UAF once and for all",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-38584.json",
+      "released": "2025-09-04T04:21:24Z",
+      "updated": "2026-10-16T01:45:29Z",
+      "cves": [
+        "CVE-2025-38584"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.0,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-57258",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Integer overflows in memory allocation in Das U-Boot before 2025.01-rc1 occur for a crafted squashfs filesystem via sbrk, via request2size, or because ptrdiff_t is mishandled on x86_64.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-57258.json",
+      "released": "2025-09-04T04:25:09Z",
+      "updated": "2026-11-16T22:26:46Z",
+      "cves": [
+        "CVE-2024-57258"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "cbl2 qemu 6.2.0-24",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "azl4 qemu 2:10.1.5-2.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2010-4756",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "The glob implementation in the GNU C Library (aka glibc or libc6) allows remote authenticated users to cause a denial of service (CPU and memory consumption) via crafted glob expressions that do not match any pathnames,…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2011/msrc_cve-2010-4756.json",
+      "released": "2025-09-04T04:29:41Z",
+      "updated": "2026-11-16T22:20:55Z",
+      "cves": [
+        "CVE-2010-4756"
+      ],
+      "products": [
+        "Azure Linux",
+        "glibc",
+        "azl3 orangefs 0:2.9.8-3.azl3",
+        "cbl2 orangefs 2.9.8-3",
+        "cbl2 orangefs 0:2.9.8-3.cbl2",
+        "azl4 glibc 0:2.42-17.azl4"
+      ],
+      "fix": [
+        {
+          "t": "2.28-24:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.35-7.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-51480",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Path Traversal vulnerability in onnx.external_data_helper.save_external_data in ONNX 1.17.0 allows attackers to overwrite arbitrary files by supplying crafted external_data.location paths containing traversal sequences,…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-51480.json",
+      "released": "2025-09-04T04:33:02Z",
+      "updated": "2026-11-16T22:29:05Z",
+      "cves": [
+        "CVE-2025-51480"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Azure Linux",
+        "pytorch",
+        "azl4 onnx 0:1.17.0-15.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:2.2.2-15.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-30359",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "webpack-dev-server users' source code may be stolen when they access a malicious web site",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-30359.json",
+      "released": "2025-09-04T04:45:07Z",
+      "updated": "2026-11-16T22:27:29Z",
+      "cves": [
+        "CVE-2025-30359"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 python-tensorboard 0:2.16.2-6.azl3",
+        "cbl2 reaper 3.1.1-18",
+        "azl4 grafana 0:10.2.6-25.azl4",
+        "azl4 js-d3-flame-graph 0:4.0.7-14.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-27809",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Mbed TLS before 2.28.10 and 3.x before 3.6.3, on the client side, accepts servers that have trusted certificates for arbitrary hostnames unless the TLS client application calls mbedtls_ssl_set_hostname.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-27809.json",
+      "released": "2025-09-04T04:49:10Z",
+      "updated": "2026-11-16T22:35:29Z",
+      "cves": [
+        "CVE-2025-27809"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "cbl2 qemu 6.2.0-24",
+        "azl4 fluent-bit 0:4.2.2-4.azl4",
+        "azl4 librist 0:0.2.7-13.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-49292",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Possible private key restoration in go package github.com/ecies/go",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-49292.json",
+      "released": "2025-09-04T04:54:22Z",
+      "updated": "2026-11-16T22:18:17Z",
+      "cves": [
+        "CVE-2023-49292"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.9,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "azl3 golang 0:1.23.9-1.azl3",
+        "azl3 golang 0:1.27.0-1.azl3",
+        "azl4 golang 0:1.26.9-2.azl4"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-25260",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "elfutils v0.189 was discovered to contain a NULL pointer dereference via the handle_verdef() function at readelf.c.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-25260.json",
+      "released": "2025-09-04T04:57:15Z",
+      "updated": "2026-11-16T22:29:40Z",
+      "cves": [
+        "CVE-2024-25260"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.0,
+      "products": [
+        "Azure Linux",
+        "elfutils",
+        "azl4 elfutils 0:0.196-2.azl4",
+        "azl4 rust-libbpf-sys 0:1.6.2-4.azl4",
+        "azl4 udev-hid-bpf 0:2.1.0.20240704-12.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:0.189-6.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-44905",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "hdf5 v1.14.6 was discovered to contain a heap buffer overflow via the H5Z__filter_scaleoffset function.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-44905.json",
+      "released": "2025-09-04T04:59:10Z",
+      "updated": "2026-11-16T22:31:31Z",
+      "cves": [
+        "CVE-2025-44905"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Azure Linux",
+        "hdf5",
+        "azl4 hdf5 0:1.14.6-9.azl4",
+        "azl4 vtk 0:9.2.6-49.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:1.14.6-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-57257",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "A stack consumption issue in sqfs_size in Das U-Boot before 2025.01-rc1 occurs via a crafted squashfs filesystem with deep symlink nesting.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-57257.json",
+      "released": "2025-09-04T04:59:51Z",
+      "updated": "2026-11-16T22:26:44Z",
+      "cves": [
+        "CVE-2024-57257"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "cbl2 qemu 6.2.0-24",
+        "azl4 qemu 2:10.1.5-2.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2020-36478",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in Mbed TLS before 2.25.0 (and before 2.16.9 LTS and before 2.7.18 LTS). A NULL algorithm parameters entry looks identical to an array of REAL (size zero) and thus the certificate is considered v…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2021/msrc_cve-2020-36478.json",
+      "released": "2025-09-04T05:05:02Z",
+      "updated": "2026-11-21T01:14:14Z",
+      "cves": [
+        "CVE-2020-36478"
+      ],
+      "products": [
+        "Azure Linux",
+        "fluent-bit",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "cbl2 qemu 6.2.0-24",
+        "azl4 qemu 2:10.1.5-2.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-29405",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Improper sanitization of LDFLAGS with embedded spaces in go command with cgo in cmd/go",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-29405.json",
+      "released": "2025-09-04T05:08:03Z",
+      "updated": "2026-09-17T01:48:08Z",
+      "cves": [
+        "CVE-2023-29405"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "msft-golang",
+        "cbl2 tensorflow 0:2.11.1-2.cbl2",
+        "azl3 python-tensorboard 0:2.16.2-6.azl3",
+        "azl3 golang 0:1.24.3-1.azl3"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.20.7-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-30360",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-30360.json",
+      "released": "2025-09-04T05:10:20Z",
+      "updated": "2026-11-16T22:27:33Z",
+      "cves": [
+        "CVE-2025-30360"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 python-tensorboard 0:2.16.2-6.azl3",
+        "cbl2 reaper 3.1.1-18",
+        "azl4 grafana 0:10.2.6-25.azl4",
+        "azl4 js-d3-flame-graph 0:4.0.7-14.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2022-36113",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Extracting malicious crates can corrupt arbitrary files",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-36113.json",
+      "released": "2025-09-04T05:16:16Z",
+      "updated": "2026-11-16T22:17:44Z",
+      "cves": [
+        "CVE-2022-36113"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.6,
+      "products": [
+        "Azure Linux",
+        "rust",
+        "azl3 rust 0:1.86.0-1.azl3",
+        "azl4 rust 0:1.99.0-2.azl4"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-29403",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Unsafe behavior in setuid/setgid binaries in runtime",
+      "url": "https://msrc.microsoft.com/csaf/vex/2023/msrc_cve-2023-29403.json",
+      "released": "2025-09-04T05:23:28Z",
+      "updated": "2026-09-17T01:52:50Z",
+      "cves": [
+        "CVE-2023-29403"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "golang",
+        "msft-golang",
+        "azl3 tensorflow 0:2.16.1-9.azl3",
+        "cbl2 python-tensorboard 0:2.11.0-3.cbl2",
+        "azl3 golang 0:1.24.3-1.azl3"
+      ],
+      "fix": [
+        {
+          "t": "Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.21.6-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:1.20.7-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2022-30790",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Das U-Boot 2022.01 has a Buffer Overflow, a different issue than CVE-2022-30552.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2022/msrc_cve-2022-30790.json",
+      "released": "2025-09-04T05:27:36Z",
+      "updated": "2026-11-16T22:16:37Z",
+      "cves": [
+        "CVE-2022-30790"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "cbl2 qemu 6.2.0-24",
+        "azl4 qemu 2:10.1.5-2.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-37842",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "spi: fsl-qspi: use devm function instead of driver remove",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-37842.json",
+      "released": "2025-09-04T05:46:32Z",
+      "updated": "2026-10-06T01:56:35Z",
+      "cves": [
+        "CVE-2025-37842"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel",
+        "azl3 kernel 0:6.6.92.2-1.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-42040",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Buffer Overflow vulnerability in the net/bootp.c in DENEX U-Boot from its initial commit in 2002 (3861aa5) up to today on any platform allows an attacker on the local network to leak memory from four up to 32 bytes of m…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-42040.json",
+      "released": "2025-09-04T05:46:46Z",
+      "updated": "2026-11-16T22:29:44Z",
+      "cves": [
+        "CVE-2024-42040"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 qemu 0:6.2.0-24.cbl2",
+        "azl3 qemu 0:8.2.0-16.azl3",
+        "cbl2 qemu 6.2.0-24",
+        "azl4 qemu 2:10.1.5-2.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-0741",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An out of bounds write in ANGLE could have allowed an attacker to corrupt memory leading to a potentially exploitable crash. This vulnerability affects Firefox < 122, Firefox ESR < 115.7, and Thunderbird < 115.7.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-0741.json",
+      "released": "2025-09-04T06:10:17Z",
+      "updated": "2026-11-16T22:26:43Z",
+      "cves": [
+        "CVE-2024-0741"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 mozjs 0:102.15.1-1.azl3",
+        "azl4 qt5-qtbase 0:5.15.18-4.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-45780",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Grub2: fs/tar: integer overflow causes heap oob write",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-45780.json",
+      "released": "2025-09-04T06:35:46Z",
+      "updated": "2026-11-16T22:31:54Z",
+      "cves": [
+        "CVE-2024-45780"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.7,
+      "products": [
+        "Azure Linux",
+        "grub2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.06-25.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.06-15.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:2.12-53.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-37860",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "sfc: fix NULL dereferences in ef100_process_design_param()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-37860.json",
+      "released": "2025-09-04T06:36:55Z",
+      "updated": "2026-11-05T14:57:54Z",
+      "cves": [
+        "CVE-2025-37860"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-45779",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Grub2: fs/bfs: integer overflow leads to heap oob read in the bfs parser",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-45779.json",
+      "released": "2025-09-04T06:42:54Z",
+      "updated": "2026-11-16T22:31:49Z",
+      "cves": [
+        "CVE-2024-45779"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.0,
+      "products": [
+        "Azure Linux",
+        "grub2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.06-25.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.06-15.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:2.12-53.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-0689",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Grub2: udf: heap based buffer overflow in grub_udf_read_block() may lead to arbitrary code execution",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-0689.json",
+      "released": "2025-09-04T06:48:57Z",
+      "updated": "2026-11-16T22:31:29Z",
+      "cves": [
+        "CVE-2025-0689"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.7,
+      "products": [
+        "Azure Linux",
+        "grub2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.06-25.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.06-15.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:2.12-53.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-1125",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Grub2: fs/hfs: integer overflow may lead to heap based out-of-bounds write",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-1125.json",
+      "released": "2025-09-04T06:54:25Z",
+      "updated": "2026-11-16T22:33:30Z",
+      "cves": [
+        "CVE-2025-1125"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.7,
+      "products": [
+        "Azure Linux",
+        "grub2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.06-15.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.06-25.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:2.12-53.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-21635",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "rds: sysctl: rds_tcp_{rcv,snd}buf: avoid using current->nsproxy",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-21635.json",
+      "released": "2025-09-04T06:59:21Z",
+      "updated": "2026-11-05T15:04:38Z",
+      "cves": [
+        "CVE-2025-21635"
+      ],
+      "products": [
+        "Azure Linux",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.112.1-2.azl3",
+        "azl3 kernel 0:6.6.117.1-1.azl3",
+        "azl3 kernel 0:6.6.119.3-3.azl3",
+        "azl3 kernel 0:6.6.121.1-1.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-45782",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Grub2: fs/hfs: strcpy() using the volume name (fs/hfs.c:382)",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-45782.json",
+      "released": "2025-09-04T07:36:59Z",
+      "updated": "2026-11-16T22:32:04Z",
+      "cves": [
+        "CVE-2024-45782"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "grub2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.06-15.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.06-25.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:2.12-53.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-23848",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "In the Linux kernel through 6.7.1, there is a use-after-free in cec_queue_msg_fh, related to drivers/media/cec/core/cec-adap.c and drivers/media/cec/core/cec-api.c.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-23848.json",
+      "released": "2025-09-04T07:38:03Z",
+      "updated": "2026-11-05T14:56:17Z",
+      "cves": [
+        "CVE-2024-23848"
+      ],
+      "products": [
+        "Azure Linux",
+        "cbl2 kernel 0:5.15.186.1-1.cbl2",
+        "azl3 kernel 0:6.6.96.2-1.azl3",
+        "azl3 kernel 0:6.6.96.2-2.azl3",
+        "azl3 kernel 0:6.6.112.1-2.azl3",
+        "azl3 kernel 0:6.6.117.1-1.azl3"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-0678",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Grub2: squash4: integer overflow may lead to heap based out-of-bounds write when reading data",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-0678.json",
+      "released": "2025-09-04T07:43:19Z",
+      "updated": "2026-11-16T22:31:09Z",
+      "cves": [
+        "CVE-2025-0678"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Azure Linux",
+        "grub2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.06-25.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.06-15.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:2.12-53.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-0686",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Grub2: romfs: integer overflow when handling symlinks may lead to heap based out-of-bounds write when reading dat",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-0686.json",
+      "released": "2025-09-04T07:49:23Z",
+      "updated": "2026-11-16T22:31:24Z",
+      "cves": [
+        "CVE-2025-0686"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.4,
+      "products": [
+        "Azure Linux",
+        "grub2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.06-25.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "2.06-15:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:2.12-53.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-0684",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Grub2: reiserfs: integer overflow when handling symlinks may lead to heap based out-of-bounds write when reading data",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-0684.json",
+      "released": "2025-09-04T07:58:23Z",
+      "updated": "2026-11-16T22:31:14Z",
+      "cves": [
+        "CVE-2025-0684"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.4,
+      "products": [
+        "Azure Linux",
+        "grub2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.06-25.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "2.06-15:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:2.12-53.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2025-0685",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Grub2: jfs: integer overflow when handling symlinks may lead to heap based out-of-bounds write when reading data",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-0685.json",
+      "released": "2025-09-04T08:05:32Z",
+      "updated": "2026-11-16T22:31:19Z",
+      "cves": [
+        "CVE-2025-0685"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.4,
+      "products": [
+        "Azure Linux",
+        "grub2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.06-15.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.06-25.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:2.12-53.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-45778",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Grub2: fs/bfs: integer overflow in the bfs parser.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2024-45778.json",
+      "released": "2025-09-04T08:11:42Z",
+      "updated": "2026-11-16T22:31:41Z",
+      "cves": [
+        "CVE-2024-45778"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.1,
+      "products": [
+        "Azure Linux",
+        "grub2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.06-15.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.06-25.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "1:2.12-53.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2025-1976",
+      "src": "csaf_certbund",
+      "vendor": "Amazon",
+      "title": "Linux Kernel: Mehrere Schwachstellen ermöglichen Denial of Service",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-1976",
+      "released": "2025-09-04T22:00:00Z",
+      "updated": "2026-11-23T23:00:00Z",
+      "cves": [
+        "CVE-2025-38679",
+        "CVE-2025-38680",
+        "CVE-2025-38681",
+        "CVE-2025-38682",
+        "CVE-2025-38683",
+        "CVE-2025-38684",
+        "CVE-2025-38685",
+        "CVE-2025-38686",
+        "CVE-2025-38687",
+        "CVE-2025-38688",
+        "CVE-2025-38689",
+        "CVE-2025-38690",
+        "CVE-2025-38691",
+        "CVE-2025-38692",
+        "CVE-2025-38693",
+        "CVE-2025-38694",
+        "CVE-2025-38695",
+        "CVE-2025-38696",
+        "CVE-2025-38697",
+        "CVE-2025-38698",
+        "CVE-2025-38699",
+        "CVE-2025-38700",
+        "CVE-2025-38701",
+        "CVE-2025-38702",
+        "CVE-2025-38703",
+        "CVE-2025-38704",
+        "CVE-2025-38705",
+        "CVE-2025-38706",
+        "CVE-2025-38707",
+        "CVE-2025-38708",
+        "CVE-2025-38709",
+        "CVE-2025-38710",
+        "CVE-2025-38711",
+        "CVE-2025-38712",
+        "CVE-2025-38713",
+        "CVE-2025-38714",
+        "CVE-2025-38715",
+        "CVE-2025-38716",
+        "CVE-2025-38717",
+        "CVE-2025-38718",
+        "CVE-2025-38719",
+        "CVE-2025-38720",
+        "CVE-2025-38721",
+        "CVE-2025-38722",
+        "CVE-2025-38723",
+        "CVE-2025-38724",
+        "CVE-2025-38725",
+        "CVE-2025-38726",
+        "CVE-2025-38727",
+        "CVE-2025-38728",
+        "CVE-2025-38729",
+        "CVE-2025-38730"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Amazon Linux 2",
+        "Debian Linux",
+        "Dell Avamar",
+        "ECS",
+        "NetWorker",
+        "Dell NetWorker"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2025-1981",
+      "src": "csaf_certbund",
+      "vendor": "Amazon",
+      "title": "ImageMagick (MagickCore blob): Schwachstelle ermöglicht Codeausführung",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-1981",
+      "released": "2025-09-04T22:00:00Z",
+      "updated": "2026-11-11T23:00:00Z",
+      "cves": [
+        "CVE-2025-57807"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Amazon Linux 2",
+        "Debian Linux",
+        "Gentoo Linux",
+        "ImageMagick",
+        "SUSE Linux",
+        "SUSE openSUSE"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "date": "2021-02-25",
+  "count": 3,
+  "items": [
+    {
+      "id": "msrc_CVE-2021-27218",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in GNOME GLib before 2.66.7 and 2.67.x before 2.67.4. If g_byte_array_new_take() was called with a buffer of 4GB or more on a 64-bit platform the length would be truncated modulo 2**32 causing un…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2021/msrc_cve-2021-27218.json",
+      "released": "2021-02-25T00:00:00Z",
+      "updated": "2026-11-16T22:21:26Z",
+      "cves": [
+        "CVE-2021-27218"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "glib",
+        "azl4 glib 1:1.2.10-79.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:2.60.1-5.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2021-27219",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "An issue was discovered in GNOME GLib before 2.66.6 and 2.67.x before 2.67.3. The function g_bytes_new has an integer overflow on 64-bit platforms due to an implicit cast from 64 bits to 32 bits. The overflow could pote…",
+      "url": "https://msrc.microsoft.com/csaf/vex/2021/msrc_cve-2021-27219.json",
+      "released": "2021-02-25T00:00:00Z",
+      "updated": "2026-11-16T22:21:28Z",
+      "cves": [
+        "CVE-2021-27219"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "glib",
+        "azl4 glib 1:1.2.10-79.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:2.60.1-5.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "openSUSE-SU-2021:0341-1",
+      "src": "csaf_opensuse",
+      "vendor": "SUSE",
+      "title": "Security update for nghttp2",
+      "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/XIUODYDMMPC4VZZIR4DRKRPVXGPEDZRO/",
+      "released": "2021-02-25T17:06:03Z",
+      "updated": "2026-11-15T18:28:20Z",
+      "cves": [
+        "CVE-2019-18802"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "openSUSE Leap 15.2"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}

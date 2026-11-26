@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "date": "2024-11-16",
+  "count": 1,
+  "items": [
+    {
+      "id": "msrc_CVE-2024-52533",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "gio/gsocks4aproxy.c in GNOME GLib before 2.82.1 has an off-by-one error and resultant buffer overflow because SOCKS4_CONN_MSG_LEN is not sufficient for a trailing '\\0' character.",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-52533.json",
+      "released": "2024-11-16T00:00:00Z",
+      "updated": "2026-11-14T01:12:11Z",
+      "cves": [
+        "CVE-2024-52533"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Azure Linux",
+        "glib",
+        "azl4 glib 1:1.2.10-79.azl4"
+      ],
+      "fix": [
+        {
+          "t": "0:2.71.0-3.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:2.78.1-5.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    }
+  ]
+}
