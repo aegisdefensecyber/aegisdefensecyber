@@ -169,15 +169,6 @@ def build(now, warnings: list[str]) -> dict:
                 f"{k} {'ok' if v.get('ok') else 'FAILED'}" for k, v in adv.get("sources", {}).items()))
         except Exception as exc:  # noqa: BLE001 — keep the previous advisory index
             warnings.append(f"Vendor advisory refresh failed; previous advisories kept ({exc})"[:300])
-    # ---- NVD CPE dictionary -> vendor/product lists for the search box (resumable, a share per run)
-    if intel_on and not os.environ.get("TW_FIXTURES") and os.environ.get("TW_CPE_FETCH", "1") == "1":
-        try:
-            from tw.cpe import refresh as refresh_cpe
-            cst = refresh_cpe(DATA_DIR / "cpe", now, warnings)
-            print(f"CPE dictionary: {cst.get('vendors')} vendors · "
-                  + ("complete" if cst.get("complete") else f"{cst.get('startIndex')}/{cst.get('totalResults')} names read"))
-        except Exception as exc:  # noqa: BLE001
-            warnings.append(f"CPE dictionary refresh failed ({exc})"[:300])
     adv_by = adv.get("cves") or {}
     recent_year = now.year - 1
     adv_new = {c for c, lst in adv_by.items()
@@ -339,6 +330,12 @@ def build(now, warnings: list[str]) -> dict:
     for cid in set(existing) - set(records):
         (CVE_DIR / cid.split("-")[1] / f"{cid}.json").unlink(missing_ok=True)
         removed += 1
+    try:   # vendor/product suggestions: major vendors and products that have CVEs in this catalog
+        from tw.products import build as build_products
+        pm = build_products(records, DATA_DIR / "cpe", iso(now))
+        print(f"Search suggestions: {pm['vendors']} vendors, {pm['products']} products")
+    except Exception as exc:  # noqa: BLE001
+        warnings.append(f"Vendor/product suggestions not refreshed ({exc})"[:300])
     rows = sorted((C.index_row(r) for r in records.values()), key=lambda x: (x[8] or "", x[0]), reverse=True)
     # ---- Threat Map: sourced relationships from MITRE ATT&CK (keeps the last good file on any failure)
     try:

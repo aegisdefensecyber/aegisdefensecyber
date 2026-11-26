@@ -778,17 +778,20 @@
       var b = /[a-z0-9]/.test(q[0]) ? q[0] : "_";
       (cpeCache[b] = cpeCache[b] || getJSON("data/cpe/" + b + ".json").catch(function () { return { vendors: {} }; })).then(function (d) {
         if ($("vv-q").value.trim().toLowerCase().replace(/\s+/g, "_") !== q) return;
-        var parts = q.split("_"), out = [], vendors = d.vendors || {};
-        Object.keys(vendors).some(function (v) {
-          if (v.indexOf(parts[0]) !== 0 && v.indexOf(q) !== 0) return false;
-          if (v.indexOf(q) === 0 && out.indexOf(v) < 0) out.push(v.replace(/_/g, " "));
-          vendors[v].some(function (pp) {
-            var prod = pp.slice(2), full = v + "_" + prod;
-            if (full.indexOf(q) === 0 || (v === parts[0] && prod.indexOf(parts.slice(1).join("_")) === 0)) out.push((v + " " + prod).replace(/_/g, " "));
-            return out.length >= 40;
+        // major vendors/products that have CVEs in the catalog, most CVEs first
+        var parts = q.split("_"), rest = parts.slice(1).join("_"), out = [], vendors = d.vendors || {};
+        Object.keys(vendors).forEach(function (v) {
+          var info = vendors[v];
+          if (v.indexOf(q) === 0) out.push([v.replace(/_/g, " "), info.n + 1e6]);
+          if (v.indexOf(parts[0]) !== 0) return;
+          (info.products || []).forEach(function (pc) {
+            var full = v + "_" + pc[0];
+            if (full.indexOf(q) === 0 || (v === parts[0] && rest && pc[0].indexOf(rest) >= 0))
+              out.push([(v + " " + pc[0]).replace(/_/g, " "), pc[1]]);
           });
-          return out.length >= 40;
         });
+        out.sort(function (a, b) { return b[1] - a[1]; });
+        out = out.map(function (x) { return x[0]; });
         dl.textContent = "";
         out.slice(0, 40).forEach(function (s) { dl.appendChild(el("option", { value: s })); });
       });

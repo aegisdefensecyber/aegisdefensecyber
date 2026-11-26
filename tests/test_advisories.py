@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from tw.advisories import parse_csaf, parse_fortinet_rss, parse_ghsa, parse_panw  # noqa: E402
-from tw.cpe import reduce_page  # noqa: E402
+from tw.products import build as build_products  # noqa: E402
 
 CSAF = {
     "document": {
@@ -70,12 +70,20 @@ class FeedsTest(unittest.TestCase):
         self.assertEqual((a["cve"], a["exploited"], a["url"]), ("CVE-2026-0300", True, "https://security.paloaltonetworks.com/CVE-2026-0300"))
 
 
-class CpeTest(unittest.TestCase):
-    def test_reduce(self):
-        r = reduce_page([{"cpe": {"cpeName": "cpe:2.3:a:microsoft:exchange_server:2019:cu1:*:*:*:*:*:*"}},
-                         {"cpe": {"cpeName": "cpe:2.3:o:microsoft:windows_11:23h2:*:*:*:*:*:*:*"}},
-                         {"cpe": {"cpeName": "cpe:2.3:a:old:thing:1:*:*:*:*:*:*:*", "deprecated": True}}])
-        self.assertEqual(r, {"m": {"microsoft": {"a:exchange_server", "o:windows_11"}}})
+class ProductsTest(unittest.TestCase):
+    def test_major_vendors_only(self):
+        import json
+        import tempfile
+        recs = {f"CVE-2026-{i:04d}": {"affected": [{"vendor": "microsoft", "product": "exchange_server"}], "kev": None} for i in range(4)}
+        recs["CVE-2026-9999"] = {"affected": [{"vendor": "tinyco", "product": "widget"}], "kev": None}
+        recs["CVE-2026-8888"] = {"affected": [], "vendor": "Ivanti", "product": "Connect Secure", "kev": {"dateAdded": "2026-01-01"}}
+        with tempfile.TemporaryDirectory() as d:
+            meta = build_products(recs, Path(d), "2026-11-26T00:00:00Z")
+            m = json.loads((Path(d) / "m.json").read_text())["vendors"]
+            self.assertEqual(m["microsoft"], {"n": 4, "products": [["exchange_server", 4]]})
+            self.assertFalse((Path(d) / "t.json").exists())          # 1 CVE, not KEV: dropped
+            self.assertIn("ivanti", json.loads((Path(d) / "i.json").read_text())["vendors"])
+            self.assertEqual(meta["vendors"], 2)
 
 
 if __name__ == "__main__":
