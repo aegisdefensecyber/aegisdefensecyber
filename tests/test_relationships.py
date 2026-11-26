@@ -97,3 +97,13 @@ class IocAndIndustryTests(unittest.TestCase):
         labels = sorted(x["label"] for x in g["nodes"] if x["type"] == "ioc")
         self.assertEqual(labels, ["192[.]0[.]2[.]1", "bad[.]example"])
         self.assertTrue(all(e["relation"] == "indicator" and e["evidence"]["url"].startswith("https://") for e in g["edges"]))
+
+
+class Stix1XmlTest(unittest.TestCase):
+    def test_reads_cybox_values(self):
+        from tw.iocs import stix1_iocs
+        x = ('<AddressObj:Address_Value condition="Equals">185.10.20.30##comma##not-an-ip</AddressObj:Address_Value>'
+             '<cyboxCommon:Simple_Hash_Value>' + "b" * 64 + '</cyboxCommon:Simple_Hash_Value>'
+             '<DomainNameObj:Value>bad.example.com</DomainNameObj:Value>')
+        got = {(i["type"], i["value"]) for i in stix1_iocs(x, 10)}
+        self.assertEqual(got, {("ipv4", "185.10.20.30"), ("sha256", "b" * 64), ("domain", "bad.example.com")})

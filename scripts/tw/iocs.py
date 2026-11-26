@@ -42,6 +42,39 @@ CISA_BASE = "https://www.cisa.gov/news-events/cybersecurity-advisories/"
 THREATFOX_API = "https://threatfox-api.abuse.ch/api/v1/"
 
 
+# STIX 1.x XML (older CISA advisories): cybox observable values, namespace prefix ignored
+STIX1_RX = [
+    (re.compile(r"<\w+:Address_Value[^>]*>([^<]+)<", re.I), "ipv4"),
+    (re.compile(r"<DomainNameObj:Value[^>]*>([^<]+)<", re.I), "domain"),
+    (re.compile(r"<URIObj:Value[^>]*>([^<]+)<", re.I), "url"),
+    (re.compile(r"<\w+:Simple_Hash_Value[^>]*>([^<]+)<", re.I), "hash"),
+]
+STIX1_LINK_RE = re.compile(r'href=["\'](?:https?://(?:www\.)?cisa\.gov)?(/sites/default/files/[^"\'?#]+?\.stix\.xml)', re.I)
+
+
+def stix1_iocs(xml: str, limit: int) -> list[dict]:
+    found: list[dict] = []
+    for rx, kind in STIX1_RX:
+        for raw in rx.findall(xml or ""):
+            for v in str(raw).split("##comma##"):
+                v = v.strip()
+                k = kind
+                if kind == "hash":
+                    k = {64: "sha256", 40: "sha1", 32: "md5"}.get(len(v))
+                    if not k or not re.fullmatch(r"[0-9a-fA-F]+", v):
+                        continue
+                if kind == "ipv4" and not re.fullmatch(r"\d{1,3}(\.\d{1,3}){3}", v):
+                    continue
+                if VALUE_OK.match(v):
+                    found.append({"type": k, "value": v, "seen": ""})
+    found.sort(key=lambda i: (PREFER.get(i["type"], 9), i["value"]))
+    seen, out = set(), []
+    for i in found:
+        if i["value"] not in seen:
+            seen.add(i["value"]); out.append(i)
+    return out[:limit]
+
+
 def advisory_codes(obj: dict) -> set[str]:
     out = set()
     for r in obj.get("external_references") or []:
@@ -81,7 +114,17 @@ def cisa_iocs(codes: set[str], per_advisory: int = 4, max_advisories: int = 15) 
             found = STIX_LINK_RE.findall(html)
             links = sorted(found, key=lambda l: (0 if "stix" in l.lower() else 1 if code in l.lower() else 2))
             if not links:
-                files = sorted(set(FILE_LINK_RE.findall(html)))[:6]
+                xml_links = STIX1_LINK_RE.findall(html)
+                if xml_links:
+                    xml = fetch_text("https://www.cisa.gov" + xml_links[0], timeout=40, retries=2, limit_mb=20)
+                    iocs = stix1_iocs(xml, per_advisory)
+                    for i in iocs:
+                        i.update({"source": "CISA advisory", "url": page_url, "ref": code.upper()})
+                    DIAG.append(f"CISA {code}: {len(iocs)} IOCs from STIX XML {xml_links[0]}")
+                    if iocs:
+                        out[code] = iocs
+                    continue
+                files = [f for f in sorted(set(FILE_LINK_RE.findall(html))) if "/css/" not in f][:6]
                 DIAG.append(f"CISA {code}: no STIX JSON link; file links on page: {files or 'none'}")
                 continue
             doc = fetch_json("https://www.cisa.gov" + links[0], timeout=40, retries=2)

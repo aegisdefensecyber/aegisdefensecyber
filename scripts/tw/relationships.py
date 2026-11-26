@@ -181,6 +181,10 @@ def build_graph(bundle: dict, cve_info: dict[str, dict], version: str | None, no
     }
 
 
+# ATT&CK malware names that ThreatFox uses for an unrelated family (searching them would mislabel IOCs)
+NAME_CLASH = {"MEDUSA"}   # UNC3886 rootkit vs ThreatFox "Medusa" botnet/ransomware
+
+
 def ioc_queries(graph: dict, bundle: dict) -> tuple[dict[str, set[str]], dict[str, list[str]]]:
     """CISA advisory codes cited by ATT&CK for each mapped campaign/actor node, and ThreatFox search terms
     per actor: the actor's name, then the malware families ATT&CK says it uses."""
@@ -210,7 +214,7 @@ def ioc_queries(graph: dict, bundle: dict) -> tuple[dict[str, set[str]], dict[st
                 codes[n["id"]] = c
             if n["type"] == "actor":
                 # skip commodity malware shared by many groups (e.g. Cobalt Strike); most specific first
-                fams = sorted({f for f in uses.get(o.get("id"), []) if users.get(f, 0) <= 3},
+                fams = sorted({f for f in uses.get(o.get("id"), []) if users.get(f, 0) <= 3 and f.upper() not in NAME_CLASH},
                               key=lambda f: (users.get(f, 0), f))
                 names[n["label"]] = [n["label"]] + fams
     return codes, names
