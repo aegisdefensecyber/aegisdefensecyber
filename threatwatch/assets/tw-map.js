@@ -105,19 +105,38 @@
     place(2, true); place(1); place(3); place(0); place(4); place(5);
     var maxLen = Math.max.apply(null, rows.map(function (r) { return r.length; }).concat([1]));
     var wrap = svg.parentNode, W = Math.max(wrap.clientWidth - 20, 900);
-    var CW = (W - GAP * (rows.length - 1)) / rows.length, NW = CW - 2 * PAD, SUBGAP = 6;
+    var SUBGAP = 6;
     // Long columns wrap into side-by-side sub-columns so the map stays short; short columns keep one.
     // only CVE and IOC columns wrap (short codes); names elsewhere need the full width
     var WRAPS = { 3: true, 4: true };
     var TR = Math.max(8, Math.max.apply(null, rows.map(function (l, i) { return WRAPS[i] ? Math.ceil(l.length / 2) : l.length; })));
     var subs = rows.map(function (l, i) { return WRAPS[i] && l.length > TR ? Math.min(3, Math.ceil(l.length / TR)) : 1; });
     TR = Math.max.apply(null, rows.map(function (l, i) { return Math.ceil(l.length / subs[i]); }).concat([1]));
+    // Column widths fit their longest label and header; leftover width becomes space between columns.
+    var font = getComputedStyle(svg).fontFamily || "sans-serif";
+    var cv = render._cv || (render._cv = document.createElement("canvas").getContext("2d"));
+    function tw(t, f) { cv.font = f + " " + font; return cv.measureText(t).width; }
+    var colW = rows.map(function (list, i) {
+      var small = subs[i] > 1, f = small ? "600 11px" : "600 12px";
+      var box = list.reduce(function (m, n) { return Math.max(m, tw(n.label, f)); }, 0) + (small ? 20 : 28);
+      box = Math.min(box, i === 0 ? 300 : 280);
+      var inner = subs[i] * box + (subs[i] - 1) * SUBGAP;
+      var head = tw(ROW_LABEL[i].toUpperCase(), "700 11.5px") + ROW_LABEL[i].length * 1.2 + 16;
+      return Math.max(inner + 2 * PAD, head, 150);
+    });
+    var total = colW.reduce(function (a, b) { return a + b; }, 0), CG = GAP;
+    if (total + GAP * (rows.length - 1) > W) {
+      var k = (W - GAP * (rows.length - 1)) / total;
+      colW = colW.map(function (w) { return w * k; });
+    } else CG = (W - total) / (rows.length - 1);
+    var colX = [], acc = 0;
+    colW.forEach(function (w) { colX.push(acc); acc += w + CG; });
     var TOPY = HEAD + 4, BOT = TOPY + (TR - 1) * SY, H = BOT + NH + 14;
     var pos = {};
     rows.forEach(function (list, ci) {
-      var s = subs[ci], w = (NW - (s - 1) * SUBGAP) / s, x0 = ci * (CW + GAP) + PAD;
+      var s = subs[ci], w = (colW[ci] - 2 * PAD - (s - 1) * SUBGAP) / s, x0 = colX[ci] + PAD;
       list.forEach(function (n, i) {
-        pos[n.id] = s > 1 ? { x: x0 + (i % s) * (w + SUBGAP), y: TOPY + Math.floor(i / s) * SY, w: w, fixed: true }
+        pos[n.id] = s > 1 ? { x: x0 + (i % s) * (w + SUBGAP), y: TOPY + Math.floor(i / s) * SY, w: w, fixed: true, sm: true }
                           : { x: x0, y: TOPY + i * SY, w: w };
       });
     });
@@ -140,7 +159,7 @@
     svg.setAttribute("width", W);
     svg.setAttribute("height", H);
     ROW_LABEL.forEach(function (l, i) {
-      var x = i * (CW + GAP);
+      var x = colX[i], CW = colW[i];
       svg.appendChild(sv("rect", { x: x, y: 0, width: CW, height: H, rx: 4, "class": "col-bg" }));
       var t = sv("text", { x: x + CW / 2, y: 20, "text-anchor": "middle", "class": "col-h" });
       t.textContent = l.toUpperCase(); svg.appendChild(t);
@@ -178,9 +197,10 @@
                           "aria-label": n.type + ": " + n.label + ". Press Enter for details." });
         g.appendChild(sv("rect", { width: p.w, height: NH, rx: 4 }));
         g.appendChild(sv("rect", { width: 3, height: NH, rx: 1.5, fill: COLOR[ROWS[n.type]], "class": "stripe" }));
-        var small = p.w < 170;
+        var small = !!p.sm, f = small ? "600 11px" : "600 12px", room = p.w - (small ? 14 : 20), txt = n.label;
+        if (tw(txt, f) > room) { while (txt.length > 4 && tw(txt + "…", f) > room) txt = txt.slice(0, -1); txt += "…"; }
         var lab = sv("text", small ? { x: 10, y: 19, "class": "sm" } : { x: 12, y: 19 });
-        lab.textContent = trunc(n.label, Math.max(8, Math.floor((p.w - (small ? 14 : 20)) / (small ? 6.1 : 6.8)))); g.appendChild(lab);
+        lab.textContent = txt; g.appendChild(lab);
         var tt = sv("title", {}); tt.textContent = n.label; g.appendChild(tt);
         g.addEventListener("click", function () { select(n.id); });
         g.addEventListener("mouseenter", function () { hover = n.id; highlight(); });
