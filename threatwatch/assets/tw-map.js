@@ -7,7 +7,8 @@
   var ROW_LABEL = ["ATT&CK technique", "Threat actors", "Campaign", "CVE", "Indicator of compromise", "Industry / category"];
   var CONF = { low: 1, moderate: 2, high: 3 };
   var REL = { attributed: "conducts (attributed)", exploits: "exploits", observed_targeting: "targets",
-              possible_exposure: "possible exposure", uses: "uses technique", indicator: "indicator" };
+              possible_exposure: "possible exposure", uses: "uses technique", indicator: "indicator",
+              maps_to: "maps to technique" };
   var NH = 30, SY = 40, HEAD = 46, GAP = 10, PAD = 10;
   var COLOR = ["#9b87d9", "#d97b7b", "#d9a94e", "#5f97d9", "#4bb8a9", "#6fbf7f"];
   var EL = { nodes: {}, edges: [] }, hover = null;
@@ -60,6 +61,89 @@
 
   function trunc(s, n) { return s.length > n ? s.slice(0, n - 1) + "…" : s; }
 
+  // ------------------------------------------------------------ any-CVE search
+  // Searching an exact CVE ID adds what public sources say about it: ATT&CK groups/campaigns that
+  // exploited it (cve-index.json), CTID technique mappings from the site's catalog, or — for CVEs
+  // outside the catalog — the official CVE List record, fetched live.
+  var CVE_Q = /^CVE-\d{4}-\d{4,7}$/i, cveIdxP = null, looked = {}, lookupNote = {}, xid = 0;
+  function getJSON(u) { return fetch(u, { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
+  function addNode(n) { if (!byId[n.id]) { byId[n.id] = n; G.nodes.push(n); } else { Object.keys(n).forEach(function (k) { if (byId[n.id][k] == null || byId[n.id][k] === "") byId[n.id][k] = n[k]; }); } return byId[n.id]; }
+  function addEdge(e) {
+    var dup = G.edges.some(function (x) { return x.source === e.source && x.target === e.target && x.relation === e.relation; });
+    if (!dup) { e.id = "x" + (++xid); G.edges.push(e); }
+  }
+  function ensureCve(raw) {
+    var id = raw.toUpperCase(), cid = "c-" + id;
+    if (looked[id]) return looked[id];
+    cveIdxP = cveIdxP || getJSON("data/cve-index.json").catch(function () { return { cves: {} }; });
+    var localP = getJSON("data/cves/" + id.split("-")[1] + "/" + id + ".json").catch(function () { return null; });
+    looked[id] = Promise.all([cveIdxP, localP]).then(function (res) {
+      var idx = (res[0].cves || {})[id] || [], rec = res[1];
+      var listP = rec ? Promise.resolve(null) : (window.TWCveList ? window.TWCveList.lookup(id).catch(function () { return "error"; }) : Promise.resolve("error"));
+      return listP.then(function (lst) {
+        var known = !!byId[cid];
+        if (!rec && !lst && !known && !idx.length) { lookupNote[id] = "notfound"; return; }
+        var cv = rec ? rec.cvss : lst && lst !== "error" ? lst.cvss : null;
+        var kev = rec ? !!(rec.kev && rec.kev.dateAdded) : !!(lst && lst.kev);
+        var exp = rec && rec.exploitation ? (rec.exploitation.inTheWild ? "confirmed" : rec.exploitation.zeroDay ? "zero-day" : null) : null;
+        if (!exp && lst && lst.ssvc && lst.ssvc.Exploitation) exp = "CISA SSVC: " + lst.ssvc.Exploitation;
+        addNode({ id: cid, type: "cve", label: id,
+          product: rec ? ((rec.vendor || "") + " " + (rec.product || "")).trim() : lst && lst !== "error" ? ((lst.vendor || "") + " " + (lst.product || "")).trim() : null,
+          kev: kev, exploitation: exp || (kev ? "confirmed" : null), epss: null, cvss: cv ? cv.score : null,
+          description: rec ? rec.description : lst && lst !== "error" ? lst.description : null,
+          recordFrom: rec ? "ThreatWatch catalog" : lst && lst !== "error" ? "official CVE List (fetched live)" : null,
+          recordUrl: "https://www.cve.org/CVERecord?id=" + id });
+        idx.forEach(function (r) {
+          var wid = (r.kind === "actor" ? "a-" : "k-") + r.attackId;
+          addNode(r.kind === "actor" ? { id: wid, type: "actor", label: r.name, aliases: r.aliases || [], profile: r.url, attackId: r.attackId }
+                                     : { id: wid, type: "campaign", label: r.name, url: r.url, attackId: r.attackId });
+          var ev = { type: "MITRE ATT&CK", url: r.url, provenance: "MITRE ATT&CK Enterprise" };
+          addEdge({ source: wid, target: cid, relation: "exploits", confidence: r.confidence, evidence: ev,
+                    why: (r.via ? "Via " + r.via + ", malware ATT&CK says " + r.name + " uses: " : "") + (r.why || "MITRE ATT&CK links " + r.name + " to " + id + ".") });
+          if (r.technique && r.technique.id) {
+            var tid = "t-" + r.technique.id;
+            addNode({ id: tid, type: "technique", label: r.technique.id + " " + r.technique.name, url: r.technique.url });
+            addEdge({ source: wid, target: tid, relation: "uses", confidence: r.confidence, evidence: ev,
+                      why: r.name + " used " + r.technique.name + " with " + id + " (MITRE ATT&CK)." });
+          }
+        });
+        ((rec && rec.attack && rec.attack.techniques) || []).forEach(function (t) {
+          if (!t.id) return;
+          var tid = "t-" + t.id;
+          addNode({ id: tid, type: "technique", label: t.id + " " + t.name, url: t.url });
+          addEdge({ source: tid, target: cid, relation: "maps_to", confidence: "moderate",
+                    evidence: { type: (t.via || "").indexOf("CTID") >= 0 ? "CTID KEV mapping" : "ATT&CK mapping", url: t.url, provenance: t.via || "" },
+                    why: "Mapped technique" + (t.mappingType ? " (" + t.mappingType.replace(/_/g, " ") + ")" : "") + (t.via ? " · " + t.via : "") + "." });
+        });
+        lookupNote[id] = lst === "error" ? "listerror" : "ok";
+      });
+    });
+    return looked[id];
+  }
+  function lookupStatus(text, cls) {
+    var p = $("cve-lookup");
+    if (!p) { p = el("p", { id: "cve-lookup", cls: "notice info" }); $("filters").insertAdjacentElement("afterend", p); }
+    p.className = "notice " + (cls || "info"); p.textContent = text || ""; p.hidden = !text;
+  }
+  function onQuery() {
+    var q = $("f-q").value.trim();
+    if (!CVE_Q.test(q)) { lookupStatus(""); render(); return; }
+    var id = q.toUpperCase();
+    lookupStatus("Looking up " + id + "…");
+    render();
+    ensureCve(id).then(function () {
+      if ($("f-q").value.trim().toUpperCase() !== id) return;
+      var note = lookupNote[id], n = byId["c-" + id];
+      if (note === "notfound") { lookupStatus(id + " was not found in the official CVE List. Check the ID.", "warn"); render(); return; }
+      var links = G.edges.filter(function (e) { return e.source === "c-" + id || e.target === "c-" + id; }).length;
+      lookupStatus(links ? id + ": " + links + " publicly sourced link" + (links === 1 ? "" : "s") + " shown. Select any box to see the evidence."
+        : id + " is a real CVE, but no public source we use (MITRE ATT&CK, CTID mappings, CISA, ThreatFox) links it to a threat actor, campaign, technique or indicator yet."
+          + (note === "listerror" ? " The CVE List could not be reached for its details." : ""), links ? "info" : "warn");
+      selected = n ? n.id : null;
+      render();
+    });
+  }
+
   // ------------------------------------------------------------ filtering
   function filteredEdges() {
     var minC = CONF[$("f-conf").value] || 1, ev = $("f-ev").value, since = $("f-since").value,
@@ -107,6 +191,8 @@
     if (sets.length) edges = edges.filter(function (e) { return sets.every(function (s) { return s[e.source] && s[e.target]; }); });
     var nodes = {};
     edges.forEach(function (e) { nodes[e.source] = nodes[e.target] = true; });
+    var qq = $("f-q").value.trim().toUpperCase();
+    if (CVE_Q.test(qq) && byId["c-" + qq]) nodes["c-" + qq] = true;   // a searched CVE shows even with no links
     return { edges: edges, nodes: nodes };
   }
 
@@ -228,7 +314,7 @@
       svg.appendChild(sv("rect", { x: x + CW / 2 - 28, y: 30, width: 56, height: 2, rx: 1, fill: COLOR[i] }));
     });
 
-    if (!view.edges.length) {
+    if (!Object.keys(view.nodes).length) {
       var t = sv("text", { x: 8, y: HEAD + 30, fill: "#B1C3D3", "font-size": "14" });
       t.textContent = "No verified relationships match these filters.";
       svg.appendChild(t);
@@ -355,6 +441,7 @@
       facts.push("Product: " + (n.product || "Unknown"));
       facts.push("Exploitation: " + (n.exploitation || "Unknown") + (n.kev ? " · in CISA KEV" : " · not in KEV"));
       facts.push("EPSS: " + (n.epss != null ? n.epss : "Unknown") + " · CVSS: " + (n.cvss != null ? n.cvss : "Unknown"));
+      if (n.recordFrom) facts.push("Record: " + n.recordFrom);
     } else if (n.type === "campaign") {
       facts.push("Timeframe: " + (n.timeframe || "Unknown"));
     } else if (n.type === "ioc") {
@@ -376,6 +463,13 @@
     }
     if (n.profile) d.appendChild(el("p", null, [link(n.profile, "Profile reference")]));
     if (n.url) d.appendChild(el("p", null, [link(n.url, "MITRE ATT&CK entry")]));
+    if (n.type === "cve") {
+      if (n.description) d.appendChild(el("p", { text: n.description.length > 600 ? n.description.slice(0, 599) + "…" : n.description }));
+      d.appendChild(el("p", { cls: "ioc-links" }, [
+        el("a", { href: "validate.html?cve=" + encodeURIComponent(n.label), text: "Open in Vulnerability Validation" }),
+        newTab(link("https://www.cve.org/CVERecord?id=" + n.label, "CVE.org record ↗")),
+        newTab(link("https://nvd.nist.gov/vuln/detail/" + n.label, "NVD ↗"))]));
+    }
 
     var mine = edges.filter(function (e) { return e.source === id || e.target === id; });
     d.appendChild(el("h3", { text: "Connected records (" + mine.length + ")" }));
@@ -452,7 +546,7 @@
     var types = {}; G.edges.forEach(function (e) { if (e.evidence && e.evidence.type) types[e.evidence.type] = true; });
     fill("f-ev", Object.keys(types).sort().map(function (t) { return [t, t]; }));
     ["f-q", "f-ind", "f-geo", "f-conf", "f-ev", "f-since", "f-exposure"].forEach(function (id) {
-      $(id).addEventListener(id === "f-q" ? "input" : "change", render);
+      $(id).addEventListener(id === "f-q" ? "input" : "change", id === "f-q" ? onQuery : render);
     });
     $("filters").addEventListener("submit", function (e) { e.preventDefault(); });
     $("f-reset").addEventListener("click", function () { $("filters").reset(); selected = null; clearDetails(); render(); });

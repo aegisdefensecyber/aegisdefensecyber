@@ -265,3 +265,84 @@ def add_iocs(graph: dict, codes: dict[str, set[str]], cisa: dict[str, list[dict]
                  + (f" ({i['malware']})" if i.get("malware") else ""))
                 + f"; reporter confidence {lvl}%.")
     return added
+
+
+def _sentence(text: str, cve: str, limit: int = 320) -> str:
+    """The sentence of an ATT&CK description that mentions the CVE, citations stripped."""
+    t = re.sub(r"\(Citation:[^)]*\)", "", text or "")
+    t = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", t)
+    for s in re.split(r"(?<=[.!?])\s+", t):
+        if cve in s:
+            s = " ".join(s.split())
+            return s if len(s) <= limit else s[: limit - 1] + "…"
+    return ""
+
+
+def build_cve_index(bundle: dict, now_iso: str) -> dict:
+    """Every CVE that MITRE ATT&CK ties to a group, campaign or malware, with the technique and the sentence.
+
+    Lets the Threat Map draw relationships for CVEs outside the default view when a researcher searches them.
+    Malware mentions are attributed to the groups ATT&CK says use that malware (lower confidence).
+    """
+    objs = {o["id"]: o for o in bundle.get("objects", []) if not o.get("revoked") and not o.get("x_mitre_deprecated")}
+
+    def ref(o):
+        e = _ext(o)
+        return e.get("external_id"), e.get("url")
+
+    users: dict[str, list[str]] = {}          # malware/tool id -> group ids that use it
+    for r in objs.values():
+        if r.get("type") == "relationship" and r.get("relationship_type") == "uses":
+            s, t = objs.get(r.get("source_ref")), objs.get(r.get("target_ref"))
+            if s and t and s["type"] == "intrusion-set" and t["type"] in ("malware", "tool"):
+                users.setdefault(t["id"], []).append(s["id"])
+
+    out: dict[str, list[dict]] = {}
+
+    def add(cve, who, tech, why, conf, via=None):
+        if who.get("type") not in ("intrusion-set", "campaign"):
+            return
+        wid, wurl = ref(who)
+        if not wid:
+            return
+        tid, turl = ref(tech) if tech else (None, None)
+        row = {"kind": "actor" if who["type"] == "intrusion-set" else "campaign", "attackId": wid, "name": who.get("name"),
+               "url": wurl, "aliases": [a for a in (who.get("aliases") or []) if a != who.get("name")][:6],
+               "technique": {"id": tid, "name": tech.get("name"), "url": turl} if tid else None,
+               "why": why, "confidence": conf, "via": via}
+        rows = out.setdefault(cve, [])
+        key = (row["attackId"], tid, via)
+        if not any((x["attackId"], (x["technique"] or {}).get("id"), x["via"]) == key for x in rows):
+            rows.append(row)
+
+    for r in objs.values():
+        if r.get("type") != "relationship" or r.get("relationship_type") != "uses":
+            continue
+        desc = r.get("description") or ""
+        cves = set(CVE_RE.findall(desc))
+        if not cves:
+            continue
+        s, t = objs.get(r.get("source_ref")), objs.get(r.get("target_ref"))
+        if not s or not t:
+            continue
+        tech = t if t.get("type") == "attack-pattern" else None
+        for c in cves:
+            why = _sentence(desc, c)
+            if s["type"] in ("intrusion-set", "campaign"):
+                add(c, s, tech, why, "high")
+            elif s["type"] in ("malware", "tool"):
+                for g in users.get(s["id"], []):
+                    add(c, objs[g], tech, why, "moderate", via=s.get("name"))
+    for o in objs.values():                    # CVEs named in group/campaign/malware descriptions
+        if o.get("type") not in ("intrusion-set", "campaign", "malware", "tool"):
+            continue
+        for c in set(CVE_RE.findall(o.get("description") or "")):
+            why = _sentence(o.get("description") or "", c)
+            if o["type"] in ("intrusion-set", "campaign"):
+                add(c, o, None, why, "high")
+            else:
+                for g in users.get(o["id"], []):
+                    add(c, objs[g], None, why, "moderate", via=o.get("name"))
+    return {"schemaVersion": 1, "generatedAt": now_iso, "source": "MITRE ATT&CK Enterprise",
+            "attackVersion": bundle.get("version") if isinstance(bundle, dict) else None,
+            "count": len(out), "cves": {k: out[k] for k in sorted(out)}}

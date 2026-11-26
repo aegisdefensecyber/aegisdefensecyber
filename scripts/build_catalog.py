@@ -299,6 +299,15 @@ def build(now, warnings: list[str]) -> dict:
                                "cvss": (r.get("cvss") or {}).get("score") if isinstance(r.get("cvss"), dict) else r.get("cvss")}
                     for r in records.values()}
             graph = build_graph(bundle, info, attack_bundle.get("version"), iso(now))
+            # every CVE ATT&CK ties to a group/campaign/malware: lets a Threat Map search draw any of them
+            try:
+                from tw.relationships import build_cve_index
+                cidx = build_cve_index(bundle, iso(now))
+                if cidx["count"] > 50:
+                    write_json(DATA_DIR / "cve-index.json", cidx)
+                    print(f"CVE index: {cidx['count']} CVEs linked to ATT&CK groups/campaigns")
+            except Exception as exc:  # noqa: BLE001 — keep the previous index
+                print(f"CVE index not refreshed: {exc}", file=sys.stderr)
             # IOCs (CISA advisories cited by ATT&CK + abuse.ch ThreatFox); a failing source keeps its last IOCs
             try:
                 from tw.relationships import add_iocs, ioc_queries
