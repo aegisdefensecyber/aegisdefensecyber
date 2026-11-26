@@ -4,7 +4,7 @@
   "publishedAt": "2026-11-26T11:53:55Z",
   "window": {
     "start": "2026-11-26T04:55:50Z",
-    "end": "2026-11-26T16:54:38Z",
+    "end": "2026-11-26T21:54:54Z",
     "note": "KEV additions not present in the previous edition’s catalog snapshot."
   },
   "executive": {
@@ -132,20 +132,20 @@
       "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "version": "2026.11.25",
       "released": "2026-11-25T19:48:12.4344Z",
-      "fetchedAt": "2026-11-26T16:54:39Z",
+      "fetchedAt": "2026-11-26T21:54:55Z",
       "status": "ok"
     },
     {
       "name": "FIRST EPSS",
       "url": "https://www.first.org/epss/",
-      "fetchedAt": "2026-11-26T16:54:39Z",
+      "fetchedAt": "2026-11-26T21:54:55Z",
       "status": "ok",
       "note": "Probability estimate; not evidence of exploitation."
     },
     {
       "name": "NVD CVE API 2.0",
       "url": "https://nvd.nist.gov/",
-      "fetchedAt": "2026-11-26T16:54:39Z",
+      "fetchedAt": "2026-11-26T21:54:55Z",
       "status": "no data",
       "note": "Enrichment can lag publication by days."
     }
@@ -168,8 +168,8 @@
       "reviewedAt": null
     }
   },
-  "updatedAt": "2026-11-26T16:54:38Z",
-  "updateSlot": "12:00",
+  "updatedAt": "2026-11-26T21:54:54Z",
+  "updateSlot": "17:00",
   "report": {
     "version": 1,
     "title": [
@@ -189,7 +189,7 @@
         "blocks": [
           {
             "type": "p",
-            "text": "The leading newly prioritized issue is **CVE-2026-77230 (Camunda)**, a critical unsafe deserialization flaw. Malicious exploitation was not confirmed by tracked sources. No fixed release is mapped in NVD data yet. **CVE-2026-135150 (In Eclipse Ditto)** is another important newly highlighted issue; malicious exploitation was not confirmed."
+            "text": "The leading newly prioritized issue is **CVE-2026-77230 (Open Source Camunda)**, a critical unsafe deserialization flaw. Malicious exploitation was not confirmed by tracked sources. No fixed release is mapped in NVD data yet. **CVE-2026-135150 (In Eclipse Ditto)** is another important newly highlighted issue; malicious exploitation was not confirmed."
           },
           {
             "type": "table",
@@ -200,7 +200,7 @@
             "rows": [
               [
                 "Newly prioritized CVEs",
-                "3: Camunda, In Eclipse Ditto and WP Media WP Rocket"
+                "3: Open Source Camunda, In Eclipse Ditto and WP Media WP Rocket"
               ],
               [
                 "Latest KEV baseline",
@@ -216,13 +216,13 @@
               ],
               [
                 "Complete worldwide High/Critical count",
-                "Not established; 418 High/Critical CVEs published to NVD in the window (NVD-scored only)"
+                "Not established; 497 High/Critical CVEs published to NVD in the window (NVD-scored only)"
               ]
             ]
           },
           {
             "type": "p",
-            "text": "**Top five actions:** (1) Apply the vendor fix for Camunda (CVE-2026-77230); (2) apply the vendor fix for In Eclipse Ditto (CVE-2026-135150); (3) apply the vendor fix for WP Media WP Rocket (CVE-2026-125812); (4) close previously reported Project MONAI MONAI Label, Vates Xen Orchestra, N-able MailAssure and Idunno AntiCsrf KEV exposure; (5) examine Camunda hosts for unexpected child processes and outbound connections."
+            "text": "**Top five actions:** (1) Apply the vendor fix for Open Source Camunda (CVE-2026-77230); (2) apply the vendor fix for In Eclipse Ditto (CVE-2026-135150); (3) apply the vendor fix for WP Media WP Rocket (CVE-2026-125812); (4) close previously reported Project MONAI MONAI Label, Vates Xen Orchestra, N-able MailAssure and Idunno AntiCsrf KEV exposure; (5) examine Open Source Camunda hosts for unexpected child processes and outbound connections."
           }
         ]
       },
@@ -234,7 +234,7 @@
         "blocks": [
           {
             "type": "p",
-            "text": "**CVE-2026-77230 - Camunda unsafe deserialization (CVSS 9.2).** Camunda 8.8.0 before 8.8.47, 8.9.0 before 8.9.29, 8.10.0 before 8.10.10, and 8.11.0-alpha1 contain an insecure deserialization vulnerability in the persistent web session feature, which stores session attributes as Java-serialized data in secondary storage and deserializes them via an ObjectInputStream without an ObjectInputFilter. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+            "text": "**CVE-2026-77230 - Open Source Camunda unsafe deserialization (CVSS 9.2).** Camunda 8.8.0 before 8.8.47, 8.9.0 before 8.9.29, 8.10.0 before 8.10.10, and 8.11.0-alpha1 contain an insecure deserialization vulnerability in the persistent web session feature, which stores session attributes as Java-serialized data in secondary storage and deserializes them via an ObjectInputStream without an ObjectInputFilter. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
           },
           {
             "type": "table",
@@ -299,7 +299,7 @@
           },
           {
             "type": "p",
-            "text": "**Defensive hunting:** for Camunda (CVE-2026-77230), inspect unexpected child processes of the service, new scheduled jobs or services, and unusual outbound connections from the host; for In Eclipse Ditto (CVE-2026-135150), review administrative logins, newly created accounts or API tokens, and configuration changes made without a matching change record; for WP Media WP Rocket (CVE-2026-125812), inspect unexpected file writes outside the application's data directories, new web-accessible files, modified application code, altered SSH authorized_keys files and suspicious scheduled jobs."
+            "text": "**Defensive hunting:** for Open Source Camunda (CVE-2026-77230), inspect unexpected child processes of the service, new scheduled jobs or services, and unusual outbound connections from the host; for In Eclipse Ditto (CVE-2026-135150), review administrative logins, newly created accounts or API tokens, and configuration changes made without a matching change record; for WP Media WP Rocket (CVE-2026-125812), inspect unexpected file writes outside the application's data directories, new web-accessible files, modified application code, altered SSH authorized_keys files and suspicious scheduled jobs."
           }
         ]
       },
@@ -318,31 +318,31 @@
             "rows": [
               [
                 "Healthcare / medical imaging",
-                "Possible Camunda, In Eclipse Ditto and WP Media WP Rocket exposure; targeting unknown"
+                "Possible In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket exposure; targeting unknown"
               ],
               [
                 "Education / research",
-                "Possible Camunda, In Eclipse Ditto and WP Media WP Rocket exposure; targeting unknown"
+                "Possible In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket exposure; targeting unknown"
               ],
               [
                 "Technology / software",
-                "Potential Camunda, In Eclipse Ditto and WP Media WP Rocket dependency exposure"
+                "Potential In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket dependency exposure"
               ],
               [
                 "Government / defense",
-                "Possible Camunda, In Eclipse Ditto and WP Media WP Rocket exposure; no new sector-specific targeting confirmed"
+                "Possible In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket exposure; no new sector-specific targeting confirmed"
               ],
               [
                 "Financial services",
-                "Possible Camunda, In Eclipse Ditto and WP Media WP Rocket exposure; targeting unknown"
+                "Possible In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket exposure; targeting unknown"
               ],
               [
                 "Manufacturing / energy / utilities",
-                "Possible Camunda, In Eclipse Ditto and WP Media WP Rocket exposure; targeting unknown"
+                "Possible In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket exposure; targeting unknown"
               ],
               [
                 "Retail / transportation",
-                "Possible Camunda, In Eclipse Ditto and WP Media WP Rocket exposure; targeting unknown"
+                "Possible In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket exposure; targeting unknown"
               ]
             ]
           },
@@ -366,7 +366,7 @@
             ],
             "rows": [
               [
-                "Camunda operators",
+                "Open Source Camunda operators",
                 "No confirmed malicious exploitation or attribution."
               ],
               [
@@ -381,7 +381,7 @@
           },
           {
             "type": "p",
-            "text": "**MITRE ATT&CK defensive mapping:** T1190 (Exploit Public-Facing Application) may be relevant to exposed Camunda, In Eclipse Ditto and WP Media WP Rocket services. These mappings support defensive detection and do not establish actor attribution."
+            "text": "**MITRE ATT&CK defensive mapping:** T1190 (Exploit Public-Facing Application) may be relevant to exposed Open Source Camunda, In Eclipse Ditto and WP Media WP Rocket services. These mappings support defensive detection and do not establish actor attribution."
           }
         ]
       },
@@ -406,7 +406,7 @@
               ],
               [
                 "Urgent",
-                "Vulnerable Camunda (CVE-2026-77230)",
+                "Vulnerable Open Source Camunda (CVE-2026-77230)",
                 "Apply applicable vendor fix in 24-72 hours"
               ],
               [
@@ -519,7 +519,7 @@
     ],
     "footer": "Enterprise Cyber Threat Intelligence | 26 Nov 2026",
     "reviewedBy": null,
-    "generatedAt": "2026-11-26T17:09:55Z",
+    "generatedAt": "2026-11-26T22:07:17Z",
     "prioritized": [
       "CVE-2026-77230",
       "CVE-2026-135150",
