@@ -394,9 +394,12 @@ def build(now, warnings: list[str]) -> dict:
                                         "count": len(rows), "items": rows})
     if nvd_ok:
         write_json(CVE_DIR / "state.json", {"nvdCursor": iso(now), "scope": scope})
-    pending = sum(1 for r in records.values() if r["nvdPending"])
+    vonly = sum(1 for r in records.values() if r.get("vendorPublishedOnly"))
+    pending = sum(1 for r in records.values() if r["nvdPending"] and not r.get("vendorPublishedOnly"))
     if pending:
         warnings.append(f"{pending} exploited CVEs awaiting NVD enrichment (filled over the next runs)")
+    if vonly:
+        print(f"{vonly} vendor-published CVEs have no NVD record yet (shown from vendor advisories)")
     return {
         "coverage": (f"Every CVE published in the last {RETAIN_DAYS} days"
                      + (f" with CVSS ≥ {C.MIN_CVSS:g}" if C.MIN_CVSS > 0 else "")
