@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "month": "2026-09",
   "complete": true,
-  "updatedAt": "2026-11-26T04:55:50Z",
+  "updatedAt": "2026-11-26T11:53:55Z",
   "metrics": [
     {
       "id": "kev_added",
@@ -11,7 +11,7 @@
       "rule": "CVE entries whose CISA dateAdded falls in the month.",
       "source": "CISA KEV",
       "window": "2026-09-01 to 2026-09-30 (dateAdded, ET calendar)",
-      "updatedAt": "2026-11-26T04:55:50Z"
+      "updatedAt": "2026-11-26T11:53:55Z"
     },
     {
       "id": "vendors",
@@ -20,7 +20,7 @@
       "rule": "Unique vendorProject values among the month’s KEV entries.",
       "source": "CISA KEV",
       "window": "2026-09-01 to 2026-09-30 (dateAdded, ET calendar)",
-      "updatedAt": "2026-11-26T04:55:50Z"
+      "updatedAt": "2026-11-26T11:53:55Z"
     },
     {
       "id": "ransomware",
@@ -29,7 +29,7 @@
       "rule": "Month’s KEV entries where CISA sets knownRansomwareCampaignUse = Known.",
       "source": "CISA KEV",
       "window": "2026-09-01 to 2026-09-30 (dateAdded, ET calendar)",
-      "updatedAt": "2026-11-26T04:55:50Z"
+      "updatedAt": "2026-11-26T11:53:55Z"
     },
     {
       "id": "epss90",
@@ -38,7 +38,7 @@
       "rule": "Month’s KEV entries with EPSS percentile ≥ 0.90 (scores as of 2026-11-25).",
       "source": "FIRST EPSS",
       "window": "2026-09-01 to 2026-09-30 (dateAdded, ET calendar)",
-      "updatedAt": "2026-11-26T04:55:50Z"
+      "updatedAt": "2026-11-26T11:53:55Z"
     }
   ],
   "notice": "These are CISA KEV catalog counts, not a count of total cyber incidents.",
@@ -572,7 +572,7 @@
               ],
               [
                 "CVEs published to NVD",
-                "14,927 (7,830 High/Critical)"
+                "16,490 (8,772 High/Critical)"
               ]
             ]
           },
@@ -651,13 +651,13 @@
               ],
               [
                 "CVE-2026-58400",
-                "GeoNetwork",
+                "Open Source GeoNetwork",
                 "code injection",
                 "ENISA EUVD; EPSS 91st pct; no public exploit identified"
               ],
               [
                 "CVE-2026-63219",
-                "GeoNetwork",
+                "Open Source GeoNetwork",
                 "missing authorization",
                 "ENISA EUVD; EPSS 66th pct; public exploit"
               ]
@@ -697,12 +697,12 @@
             "rows": [
               [
                 "2026-09-02",
-                "CVE-2026-58400 (GeoNetwork)",
+                "CVE-2026-58400 (Open Source GeoNetwork)",
                 "ENISA EUVD"
               ],
               [
                 "2026-09-02",
-                "CVE-2026-63219 (GeoNetwork)",
+                "CVE-2026-63219 (Open Source GeoNetwork)",
                 "ENISA EUVD"
               ],
               [
@@ -712,7 +712,7 @@
               ],
               [
                 "2026-09-25",
-                "CVE-2026-85103 (CVE-2026-85103)",
+                "CVE-2026-85103 (checkpoint Quantum Security Gateway)",
                 "ENISA EUVD"
               ]
             ]
@@ -802,27 +802,27 @@
             "rows": [
               [
                 "Healthcare / medical imaging",
-                "Possible Adobe Commerce and Magento, CVE-2026-85103 and Check Point Multiple Products exposure; targeting unknown"
+                "Possible Adobe Commerce and Magento, Check Point Multiple Products and JFrog Artifactory exposure; targeting unknown"
               ],
               [
                 "Education / research",
-                "Possible Adobe Commerce and Magento, CVE-2026-85103 and Check Point Multiple Products exposure; targeting unknown"
+                "Possible Adobe Commerce and Magento, Check Point Multiple Products and JFrog Artifactory exposure; targeting unknown"
               ],
               [
                 "Technology / software",
-                "Potential Adobe Commerce and Magento, CVE-2026-85103, Check Point Multiple Products and GeoNetwork dependency exposure"
+                "Potential Adobe Commerce and Magento, Check Point Multiple Products, JFrog Artifactory and Kestra OSS dependency exposure"
               ],
               [
                 "Government / defense",
-                "Possible Adobe Commerce and Magento, CVE-2026-85103 and Check Point Multiple Products exposure; no new sector-specific targeting confirmed"
+                "Possible Adobe Commerce and Magento, Check Point Multiple Products and JFrog Artifactory exposure; no new sector-specific targeting confirmed"
               ],
               [
                 "Financial services",
-                "Possible Adobe Commerce and Magento, CVE-2026-85103 and Check Point Multiple Products exposure; targeting unknown"
+                "Possible Adobe Commerce and Magento, Check Point Multiple Products and JFrog Artifactory exposure; targeting unknown"
               ],
               [
                 "Manufacturing / energy / utilities",
-                "Possible Adobe Commerce and Magento, CVE-2026-85103 and Check Point Multiple Products exposure; targeting unknown"
+                "Possible Adobe Commerce and Magento, Check Point Multiple Products and JFrog Artifactory exposure; targeting unknown"
               ],
               [
                 "Retail / transportation",
@@ -882,7 +882,7 @@
               ],
               [
                 "Urgent",
-                "Products with exploitation reported outside KEV: CVE-2026-85103, GeoNetwork and Mikrotik Routeros",
+                "Products with exploitation reported outside KEV: Mikrotik Routeros, Open Source GeoNetwork and checkpoint Quantum Security Gateway",
                 "Apply vendor fixes in 24-72 hours"
               ],
               [
@@ -935,7 +935,7 @@
               [
                 "2026-09-02",
                 "CVE-2026-58400",
-                "GeoNetwork: exploitation reported by ENISA EUVD"
+                "Open Source GeoNetwork: exploitation reported by ENISA EUVD"
               ],
               [
                 "2026-09-02",
@@ -945,7 +945,7 @@
               [
                 "2026-09-02",
                 "CVE-2026-63219",
-                "GeoNetwork: exploitation reported by ENISA EUVD"
+                "Open Source GeoNetwork: exploitation reported by ENISA EUVD"
               ],
               [
                 "2026-09-02",
@@ -1130,7 +1130,7 @@
               [
                 "2026-09-25",
                 "CVE-2026-85103",
-                "CVE-2026-85103: exploitation reported by ENISA EUVD"
+                "checkpoint Quantum Security Gateway: exploitation reported by ENISA EUVD"
               ],
               [
                 "2026-09-25",
@@ -1201,6 +1201,6 @@
       }
     ],
     "footer": "Enterprise Cyber Threat Intelligence | September 2026",
-    "generatedAt": "2026-11-26T04:58:08Z"
+    "generatedAt": "2026-11-26T12:07:20Z"
   }
 }
