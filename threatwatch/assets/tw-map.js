@@ -105,14 +105,37 @@
     place(2, true); place(1); place(3); place(0); place(4); place(5);
     var maxLen = Math.max.apply(null, rows.map(function (r) { return r.length; }).concat([1]));
     var wrap = svg.parentNode, W = Math.max(wrap.clientWidth - 20, 900);
-    var CW = (W - GAP * (rows.length - 1)) / rows.length, NW = CW - 2 * PAD;
-    var H = HEAD + maxLen * SY + 16;
+    var CW = (W - GAP * (rows.length - 1)) / rows.length, NW = CW - 2 * PAD, SUBGAP = 6;
+    // Long columns wrap into side-by-side sub-columns so the map stays short; short columns keep one.
+    // only CVE and IOC columns wrap (short codes); names elsewhere need the full width
+    var WRAPS = { 3: true, 4: true };
+    var TR = Math.max(8, Math.max.apply(null, rows.map(function (l, i) { return WRAPS[i] ? Math.ceil(l.length / 2) : l.length; })));
+    var subs = rows.map(function (l, i) { return WRAPS[i] && l.length > TR ? Math.min(3, Math.ceil(l.length / TR)) : 1; });
+    TR = Math.max.apply(null, rows.map(function (l, i) { return Math.ceil(l.length / subs[i]); }).concat([1]));
+    var TOPY = HEAD + 4, BOT = TOPY + (TR - 1) * SY, H = BOT + NH + 14;
     var pos = {};
     rows.forEach(function (list, ci) {
-      var step = (maxLen * SY) / Math.max(list.length, 1);   // every column spans the full height
-      var x = ci * (CW + GAP) + PAD;
-      list.forEach(function (n, i) { pos[n.id] = { x: x, y: HEAD + (i + 0.5) * step - NH / 2 + 6 }; });
+      var s = subs[ci], w = (NW - (s - 1) * SUBGAP) / s, x0 = ci * (CW + GAP) + PAD;
+      list.forEach(function (n, i) {
+        pos[n.id] = s > 1 ? { x: x0 + (i % s) * (w + SUBGAP), y: TOPY + Math.floor(i / s) * SY, w: w, fixed: true }
+                          : { x: x0, y: TOPY + i * SY, w: w };
+      });
     });
+    // Single columns: each box moves level with the boxes it links to (no big gaps), keeping SY apart.
+    for (var pass = 0; pass < 4; pass++) {
+      rows.forEach(function (list, ci) {
+        if (subs[ci] > 1 || !list.length) return;
+        list.forEach(function (n) {
+          var ys = (adj[n.id] || []).filter(function (o) { return pos[o]; }).map(function (o) { return pos[o].y; });
+          n._d = ys.length ? ys.reduce(function (a, b) { return a + b; }, 0) / ys.length : pos[n.id].y;
+        });
+        list.sort(function (a, b) { return a._d - b._d; });
+        var prev = -1e9;
+        list.forEach(function (n) { var y = Math.max(n._d, prev + SY, TOPY); pos[n.id].y = y; prev = y; });
+        var next = 1e9;
+        for (var i = list.length - 1; i >= 0; i--) { var q = pos[list[i].id]; q.y = Math.min(q.y, next - SY, BOT); next = q.y; }
+      });
+    }
     svg.setAttribute("viewBox", "0 0 " + W + " " + H);
     svg.setAttribute("width", W);
     svg.setAttribute("height", H);
@@ -123,7 +146,6 @@
       t.textContent = l.toUpperCase(); svg.appendChild(t);
       svg.appendChild(sv("rect", { x: x + CW / 2 - 28, y: 30, width: 56, height: 2, rx: 1, fill: COLOR[i] }));
     });
-    var maxChars = Math.max(8, Math.floor((NW - 22) / 6.8));
 
     if (!view.edges.length) {
       var t = sv("text", { x: 8, y: HEAD + 30, fill: "#B1C3D3", "font-size": "14" });
@@ -136,7 +158,7 @@
       var a = pos[e.source], b = pos[e.target];
       if (!a || !b) return;
       var l = a.x <= b.x ? a : b, r = a.x <= b.x ? b : a;
-      var x1 = l.x + NW, y1 = l.y + NH / 2, x2 = r.x, y2 = r.y + NH / 2, mx = (x1 + x2) / 2;
+      var x1 = l.x + l.w, y1 = l.y + NH / 2, x2 = r.x, y2 = r.y + NH / 2, mx = (x1 + x2) / 2;
       var long = Math.abs(ROWS[byId[e.source].type] - ROWS[byId[e.target].type]) > 1;
       var cls = "edge" + (e.relation === "possible_exposure" ? " exposure" : "") + (long ? " long" : "");
       var p = sv("path", { d: "M" + x1 + "," + y1 + " C" + mx + "," + y1 + " " + mx + "," + y2 + " " + x2 + "," + y2,
@@ -154,9 +176,11 @@
         var g = sv("g", { "class": cls, transform: "translate(" + p.x + "," + p.y + ")", tabindex: "0", role: "button",
                           "aria-pressed": selected === n.id ? "true" : "false",
                           "aria-label": n.type + ": " + n.label + ". Press Enter for details." });
-        g.appendChild(sv("rect", { width: NW, height: NH, rx: 4 }));
+        g.appendChild(sv("rect", { width: p.w, height: NH, rx: 4 }));
         g.appendChild(sv("rect", { width: 3, height: NH, rx: 1.5, fill: COLOR[ROWS[n.type]], "class": "stripe" }));
-        var lab = sv("text", { x: 12, y: 19 }); lab.textContent = trunc(n.type === "ioc" ? n.label : n.label, maxChars); g.appendChild(lab);
+        var small = p.w < 170;
+        var lab = sv("text", small ? { x: 10, y: 19, "class": "sm" } : { x: 12, y: 19 });
+        lab.textContent = trunc(n.label, Math.max(8, Math.floor((p.w - (small ? 14 : 20)) / (small ? 6.1 : 6.8)))); g.appendChild(lab);
         var tt = sv("title", {}); tt.textContent = n.label; g.appendChild(tt);
         g.addEventListener("click", function () { select(n.id); });
         g.addEventListener("mouseenter", function () { hover = n.id; highlight(); });
