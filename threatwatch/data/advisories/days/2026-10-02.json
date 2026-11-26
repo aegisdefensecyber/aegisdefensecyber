@@ -1,8 +1,26 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-02",
-  "count": 46,
+  "count": 73,
   "items": [
+    {
+      "id": "ELA-1841-1",
+      "src": "osv_debian_elts",
+      "vendor": "Debian Elts",
+      "title": "ELA-1841-1",
+      "url": "https://deb.freexian.com/extended-lts/tracker/ELA-1841-1",
+      "updated": "2026-10-02T00:00:00Z",
+      "products": [
+        "Debian: firefox-esr"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in firefox-esr 153.4.0esr-1~deb11u1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "CERTFR-2026-AVI-1247",
       "src": "certfr_avis",
@@ -1533,6 +1551,51 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RLSA-2026:74441",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: libpcap security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:74441",
+      "released": "2026-10-02T06:06:44Z",
+      "updated": "2026-10-16T12:15:49Z",
+      "cves": [
+        "CVE-2026-0799"
+      ],
+      "products": [
+        "Rocky Linux: libpcap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpcap 4:1.10.0-4.el9_8.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:74370",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: gvfs security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:74370",
+      "released": "2026-10-02T06:07:33Z",
+      "updated": "2026-10-16T12:15:46Z",
+      "cves": [
+        "CVE-2026-84268",
+        "CVE-2026-88924"
+      ],
+      "products": [
+        "Rocky Linux: gvfs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gvfs 0:1.48.1-8.el9_8.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "NCSC-2026-0398",
       "src": "csaf_ncscnl",
       "vendor": "Fortinet",
@@ -1604,6 +1667,414 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RUSTSEC-2026-0319",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "anymap2 is unmaintained",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0319.html",
+      "released": "2026-10-02T12:00:00Z",
+      "updated": "2026-10-02T08:58:33Z",
+      "products": [
+        "crates.io: anymap2"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0320",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Wasmtime wasi:http implementation panics with a zero timeout supplied",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0320.html",
+      "released": "2026-10-02T12:00:00Z",
+      "updated": "2026-10-24T06:25:41Z",
+      "cves": [
+        "CVE-2026-115382"
+      ],
+      "products": [
+        "crates.io: wasmtime-wasi-http"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime-wasi-http 48.0.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime-wasi-http 49.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0321",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "WASI preview 0 implementation of `poll_oneoff` circumvents fuel consumption",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0321.html",
+      "released": "2026-10-02T12:00:00Z",
+      "updated": "2026-10-24T06:25:41Z",
+      "cves": [
+        "CVE-2026-115380"
+      ],
+      "products": [
+        "crates.io: wasmtime-wasi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime-wasi 36.0.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime-wasi 48.0.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime-wasi 49.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0322",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Excessive allocated memory on the host when guests don't have stdio",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0322.html",
+      "released": "2026-10-02T12:00:00Z",
+      "updated": "2026-10-24T06:25:41Z",
+      "cves": [
+        "CVE-2026-115381"
+      ],
+      "products": [
+        "crates.io: wasmtime-wasi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime-wasi 36.0.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime-wasi 48.0.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime-wasi 49.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0323",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "fd_readdir copies uninitialized struct padding into guest memory",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0323.html",
+      "released": "2026-10-02T12:00:00Z",
+      "updated": "2026-10-24T06:25:41Z",
+      "cves": [
+        "CVE-2026-115386"
+      ],
+      "products": [
+        "crates.io: wasmtime-wasi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime-wasi 36.0.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime-wasi 48.0.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime-wasi 49.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0324",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Guest can panic host through filesystem timestamp before the epoch on wasip3",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0324.html",
+      "released": "2026-10-02T12:00:00Z",
+      "updated": "2026-10-24T06:25:41Z",
+      "cves": [
+        "CVE-2026-115385"
+      ],
+      "products": [
+        "crates.io: wasmtime-wasi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime-wasi 48.0.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime-wasi 49.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0325",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Mis-typed WebAssembly tag imports can lead to GC heap corruption",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0325.html",
+      "released": "2026-10-02T12:00:00Z",
+      "updated": "2026-10-24T06:25:41Z",
+      "cves": [
+        "CVE-2026-115383"
+      ],
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 48.0.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 49.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0326",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Rooting for GC values live across `try_call` may be missing, causing GC heap corruption",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0326.html",
+      "released": "2026-10-02T12:00:00Z",
+      "updated": "2026-10-24T06:25:41Z",
+      "cves": [
+        "CVE-2026-115379"
+      ],
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 48.0.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 49.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0327",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Wasmtime component async-lifted callback result count is unvalidated, causing a native stack buffer overflow",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0327.html",
+      "released": "2026-10-02T12:00:00Z",
+      "updated": "2026-10-24T06:25:41Z",
+      "cves": [
+        "CVE-2026-115384"
+      ],
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 48.0.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 49.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:73511",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: gawk security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:73511",
+      "released": "2026-10-02T12:00:58Z",
+      "updated": "2026-10-16T12:15:41Z",
+      "cves": [
+        "CVE-2026-40467",
+        "CVE-2026-40468"
+      ],
+      "products": [
+        "Rocky Linux: gawk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gawk 0:4.2.1-5.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:74947",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:74947",
+      "released": "2026-10-02T12:07:39Z",
+      "updated": "2026-10-30T06:48:26Z",
+      "cves": [
+        "CVE-2026-69304"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:74947"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:72785",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: ruby security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:72785",
+      "released": "2026-10-02T12:08:50Z",
+      "updated": "2026-10-16T12:15:49Z",
+      "cves": [
+        "CVE-2026-80212"
+      ],
+      "products": [
+        "Rocky Linux: ruby"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ruby 0:3.3.12-15.el10_2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:74464",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: ghostscript security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:74464",
+      "released": "2026-10-02T12:08:50Z",
+      "updated": "2026-10-16T12:15:49Z",
+      "cves": [
+        "CVE-2026-39919"
+      ],
+      "products": [
+        "Rocky Linux: ghostscript"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ghostscript 0:10.02.1-16.el10_2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:74442",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: libpcap security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:74442",
+      "released": "2026-10-02T12:09:30Z",
+      "updated": "2026-10-16T12:15:50Z",
+      "cves": [
+        "CVE-2026-0799"
+      ],
+      "products": [
+        "Rocky Linux: libpcap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpcap 4:1.10.4-7.el10_2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:74950",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:74950",
+      "released": "2026-10-02T12:29:48Z",
+      "updated": "2026-10-30T06:48:27Z",
+      "cves": [
+        "CVE-2026-69304"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:74950"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-104900",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Stored XSS via Unescaped Count Field Value in Remote Event Preview Index",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-104900",
+      "released": "2026-10-02T15:16:19Z",
+      "updated": "2026-10-02T15:16:25Z",
+      "cves": [
+        "CVE-2026-104900"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-104901",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP ID Translator: Unescaped Remote Event ID Enables Cross-Site Scripting via Linked Server",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-104901",
+      "released": "2026-10-02T15:21:32Z",
+      "updated": "2026-10-02T15:21:47Z",
+      "cves": [
+        "CVE-2026-104901"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.1,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:22013-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1627,6 +2098,114 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-104906",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP TAXII Object Viewer Stored XSS via Unescaped JSON Output",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-104906",
+      "released": "2026-10-02T15:49:26Z",
+      "updated": "2026-10-02T15:49:31Z",
+      "cves": [
+        "CVE-2026-104906"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.2,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-104907",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP: JavaScript Injection via Remote Tag ID in Event Preview Inline Handler",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-104907",
+      "released": "2026-10-02T15:51:26Z",
+      "updated": "2026-10-02T15:51:32Z",
+      "cves": [
+        "CVE-2026-104907"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.8,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-104908",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Decaying Model Import Mass Assignment Allows Cross-Organization Model Overwrite and Default Flagging",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-104908",
+      "released": "2026-10-02T15:56:06Z",
+      "updated": "2026-10-02T15:56:12Z",
+      "cves": [
+        "CVE-2026-104908"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-104910",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Information Disclosure via Related Events Listing Bypassing Per-Event Authorization",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-104910",
+      "released": "2026-10-02T16:01:15Z",
+      "updated": "2026-10-02T16:01:27Z",
+      "cves": [
+        "CVE-2026-104910"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-104912",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Correlation Authorization Bypass Exposes Restricted Event and Attribute Data",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-104912",
+      "released": "2026-10-02T16:04:40Z",
+      "updated": "2026-10-02T16:04:47Z",
+      "cves": [
+        "CVE-2026-104912"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-104914",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP: Soft-Deleted Attributes from Other Organizations Exposed via Attribute Search and Paginated View",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-104914",
+      "released": "2026-10-02T16:09:31Z",
+      "updated": "2026-10-02T16:09:38Z",
+      "cves": [
+        "CVE-2026-104914"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "MISP MISP"
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -1680,6 +2259,28 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:73979",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Critical: freerdp security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:73979",
+      "released": "2026-10-02T18:08:21Z",
+      "updated": "2026-10-16T12:15:49Z",
+      "cves": [
+        "CVE-2026-91949"
+      ],
+      "products": [
+        "Rocky Linux: freerdp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in freerdp 2:3.10.3-12.el10_2.13",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {

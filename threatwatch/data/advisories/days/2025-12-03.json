@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-12-03",
-  "count": 5,
+  "count": 25,
   "items": [
     {
       "id": "msrc_CVE-2022-50350",
@@ -88,6 +88,451 @@
         "kernel"
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2020-11998",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A regression has been introduced in the commit preventing JMX re-bind. By passing an empty environment map to RMIConnectorServer, instead of the map that contains the authentication credentials, it leaves ActiveMQ open …",
+      "released": "2025-12-03T14:35:10Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-11998"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2020-13920",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache ActiveMQ uses LocateRegistry.createRegistry() to create the JMX RMI registry and binds the server to the \"jmxrmi\" entry. It is possible to connect to the registry without authentication and call the rebind method…",
+      "released": "2025-12-03T14:35:12Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-13920"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2020-13947",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An instance of a cross-site scripting vulnerability was identified to be present in the web based administration console on the message.jsp page of Apache ActiveMQ versions 5.15.12 through 5.16.0.",
+      "released": "2025-12-03T14:35:13Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-13947"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in activemq 5.16.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2020-1941",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Apache ActiveMQ 5.0.0 to 5.15.11, the webconsole admin GUI is open to XSS, in the view that lists the contents of a queue.",
+      "released": "2025-12-03T14:35:14Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-1941"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2020-26217",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Remote Code Execution in XStream",
+      "url": "https://github.com/x-stream/xstream/commit/0fec095d534126931c99fd38e9c6d41f5c685c1a",
+      "released": "2025-12-03T14:35:16Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-26217"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2021-21341",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "XStream can cause a Denial of Service",
+      "released": "2025-12-03T14:35:17Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21341"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2021-21342",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A Server-Side Forgery Request can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host",
+      "released": "2025-12-03T14:35:19Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21342"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2021-21343",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "XStream is vulnerable to an Arbitrary File Deletion on the local host when unmarshalling as long as the executing process has sufficient rights",
+      "released": "2025-12-03T14:35:21Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21343"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2021-21344",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "released": "2025-12-03T14:35:22Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21344"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2021-21345",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "XStream is vulnerable to a Remote Command Execution attack",
+      "released": "2025-12-03T14:35:24Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21345"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2021-21346",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "released": "2025-12-03T14:35:26Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21346"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2021-21347",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "released": "2025-12-03T14:35:27Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21347"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2021-21348",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "XStream is vulnerable to an attack using Regular Expression for a Denial of Service (ReDos)",
+      "released": "2025-12-03T14:35:29Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21348"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2021-21349",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A Server-Side Forgery Request can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host",
+      "released": "2025-12-03T14:35:30Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21349"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2021-21350",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "released": "2025-12-03T14:35:32Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21350"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2021-21351",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "released": "2025-12-03T14:35:33Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21351"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2021-26117",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "ActiveMQ: LDAP-Authentication does not verify passwords on servers with anonymous bind",
+      "url": "https://lists.debian.org/debian-lts-announce/2021/03/msg00005.html",
+      "released": "2025-12-03T14:35:35Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-26117"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in activemq 5.16.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2022-41678",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache ActiveMQ: Insufficient API restrictions on Jolokia allow authenticated users to perform RCE",
+      "url": "https://activemq.apache.org/security-advisories.data/CVE-2022-41678-announcement.txt",
+      "released": "2025-12-03T14:35:37Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-41678"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.16.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in activemq 5.17.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-activemq-2023-46604",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache ActiveMQ, Apache ActiveMQ Legacy OpenWire Module: Unbounded deserialization causes ActiveMQ to be vulnerable to a remote code execution (RCE) attack",
+      "released": "2025-12-03T14:35:38Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-46604"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.15.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in activemq 5.16.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in activemq 5.17.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98646",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-61727 affecting package golang 1.27.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61727",
+      "released": "2025-12-03T20:16:25Z",
+      "updated": "2026-09-16T06:39:01Z",
+      "cves": [
+        "CVE-2025-61727"
+      ],
+      "products": [
+        "Azure Linux: golang"
+      ],
       "seen": "2026-11-26"
     },
     {

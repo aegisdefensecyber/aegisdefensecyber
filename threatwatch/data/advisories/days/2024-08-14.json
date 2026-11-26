@@ -1,8 +1,52 @@
 {
   "schemaVersion": 1,
   "date": "2024-08-14",
-  "count": 1,
+  "count": 3,
   "items": [
+    {
+      "id": "RUSTSEC-2024-0444",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Uncaught exception when transitioning the state of `AsyncGenerator` objects from within a property getter of `then`",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2024-0444.html",
+      "released": "2024-08-14T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2024-43367"
+      ],
+      "products": [
+        "crates.io: boa_engine"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in boa_engine 0.19.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2024-0450",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Memory exhaustion from an unchecked SSH packet length",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2024-0450.html",
+      "released": "2024-08-14T12:00:00Z",
+      "updated": "2026-11-12T07:53:20Z",
+      "cves": [
+        "CVE-2024-43410"
+      ],
+      "products": [
+        "crates.io: russh"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in russh 0.44.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "WID-SEC-W-2024-1863",
       "src": "csaf_certbund",

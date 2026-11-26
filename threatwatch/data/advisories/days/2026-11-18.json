@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-18",
-  "count": 118,
+  "count": 170,
   "items": [
     {
       "id": "CERTFR-2026-ALE-016",
@@ -583,6 +583,35 @@
     },
     {
       "id": "SSA-272816",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-272816: Java4Shell Vulnerability in Industrial Edge",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-272816.html",
+      "released": "2026-11-18T00:00:00Z",
+      "updated": "2026-11-23T00:00:00Z",
+      "cves": [
+        "CVE-2026-114938"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "Industrial Edge Device Kit",
+        "Industrial Edge Management Cloud",
+        "Industrial Edge Management Pro V1",
+        "Industrial Edge Management Pro V2",
+        "Industrial Edge Management Virtual"
+      ],
+      "fix": [
+        {
+          "t": "Block direct internet access to IEM Pro / IEM Virtual IEMs should not be directly accessible from the Internet without restrictions. Inbound access should be l…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-272816",
       "src": "direct_csaf",
       "vendor": "Siemens",
       "title": "CVE-2026-114938",
@@ -608,6 +637,56 @@
           "t": "Currently no fix is available",
           "u": null
         }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1585",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Heap-buffer-overflow in ndpi_search_dns_tcp_udp_internal",
+      "released": "2026-11-18T00:18:18Z",
+      "updated": "2026-11-18T00:18:18Z",
+      "products": [
+        "OSS-Fuzz: ndpi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ndpi 21622259e96a373b07b89703b1486b9e353fa3fa",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-l7mf-dv6n-pplj-ctuf",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "giflib v5.2.1 was discovered to contain a segmentation fault via the component getarg.c.",
+      "url": "https://scout.docker.com/v/DHI-l7mf-dv6n-pplj-ctuf",
+      "released": "2026-11-18T04:10:15Z",
+      "updated": "2026-11-23T22:30:16Z",
+      "cves": [
+        "CVE-2023-39742"
+      ],
+      "products": [
+        "Docker Hardened Images: giflib"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-vfsj-6j7n-go7e-orxd",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Heap-based Buffer Overflow vulnerability in openEuler giflib on Linux. This vulnerability is associated with program…",
+      "url": "https://scout.docker.com/v/DHI-vfsj-6j7n-go7e-orxd",
+      "released": "2026-11-18T04:10:15Z",
+      "updated": "2026-11-23T22:30:16Z",
+      "cves": [
+        "CVE-2025-31344"
+      ],
+      "products": [
+        "Docker Hardened Images: giflib"
       ],
       "seen": "2026-11-26"
     },
@@ -769,6 +848,97 @@
       "products": [
         "WRC-BE36QS-B"
       ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "VDE-2026-126",
+      "src": "csaf_phoenixcontactgmbhcokg",
+      "vendor": "Phoenix Contact",
+      "title": "Phoenix Contact: Privilege escalation vulnerability in the firmware of FL WLAN 23xx and FL WLAN 2x1x Devices",
+      "url": "https://certvde.com/en/advisories/VDE-2026-126",
+      "released": "2026-11-18T10:00:00Z",
+      "updated": "2026-11-18T10:00:00Z",
+      "cves": [
+        "CVE-2026-113497"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Hardware",
+        "FL WLAN 1020",
+        "FL WLAN 1120",
+        "FL WLAN 1022",
+        "FL WLAN 1122",
+        "FL WLAN 1121"
+      ],
+      "fix": [
+        {
+          "t": "Phoenix Contact strongly recommends to upgrade to firmware version 26.10 which fixes this vulnerability.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "VDE-2026-144",
+      "src": "csaf_phoenixcontactgmbhcokg",
+      "vendor": "Phoenix Contact",
+      "title": "Phoenix Contact: PHP2Shell in FL SWITCH, FL NAT and FL WLAN devices",
+      "url": "https://certvde.com/en/advisories/VDE-2026-144",
+      "released": "2026-11-18T10:00:00Z",
+      "updated": "2026-11-18T10:00:00Z",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Hardware",
+        "FL SWITCH 2005",
+        "FL SWITCH 2008",
+        "FL SWITCH 2016",
+        "FL SWITCH 2105",
+        "FL SWITCH 2108"
+      ],
+      "fix": [
+        {
+          "t": "Phoenix Contact strongly recommends to upgrade FL SWITCH and FL NAT devices to firmware version 3.60 and FL WLAN devices to firmware version 26.10, which fix t…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "VDE-2026-150",
+      "src": "csaf_phoenixcontactgmbhcokg",
+      "vendor": "Phoenix Contact",
+      "title": "Phoenix Contact: FL SWITCH, FL NAT and FL WLAN devices affected by BlastRADIUS",
+      "url": "https://certvde.com/en/advisories/VDE-2026-150",
+      "released": "2026-11-18T10:00:00Z",
+      "updated": "2026-11-18T10:00:00Z",
+      "cves": [
+        "CVE-2024-3596"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9,
+      "products": [
+        "Hardware",
+        "FL SWITCH 2005",
+        "FL SWITCH 2008",
+        "FL SWITCH 2016",
+        "FL SWITCH 2105",
+        "FL SWITCH 2108"
+      ],
+      "fix": [
+        {
+          "t": "Phoenix Contact strongly recommends to upgrade FL SWITCH and FL NAT devices to firmware version 3.60 and FL WLAN devices to firmware version 26.10, which inclu…",
+          "u": null
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-26"
     },
     {
@@ -976,6 +1146,213 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-132069",
+      "src": "gna-1",
+      "vendor": "misp",
+      "title": "MISP Authorization Bypass: Sync Users Can Modify and Read Non-Member Sharing Groups",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-132069",
+      "released": "2026-11-18T10:30:11Z",
+      "updated": "2026-11-18T10:31:16Z",
+      "cves": [
+        "CVE-2026-132069"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "misp misp"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0574",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`FindMutView::pop` after mutating the value would lead to a use after free",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0574.html",
+      "released": "2026-11-18T12:00:00Z",
+      "updated": "2026-11-19T08:55:47Z",
+      "products": [
+        "crates.io: heapless"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in heapless 0.9.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0575",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`Spsc::peek` used `Relaxed` ordering where it should have use `Acquire`",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0575.html",
+      "released": "2026-11-18T12:00:00Z",
+      "updated": "2026-11-19T08:55:47Z",
+      "products": [
+        "crates.io: heapless"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in heapless 0.9.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0576",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`IndexMap::truncate` could lead to an inconsistent state",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0576.html",
+      "released": "2026-11-18T12:00:00Z",
+      "updated": "2026-11-19T08:55:47Z",
+      "products": [
+        "crates.io: heapless"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in heapless 0.9.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0577",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Panicking `Drop` implementation could lead to UB",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0577.html",
+      "released": "2026-11-18T12:00:00Z",
+      "updated": "2026-11-19T08:55:47Z",
+      "products": [
+        "crates.io: heapless"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in heapless 0.9.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0578",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`SortedLinkedList::zeroize` lead to an inconsistent state",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0578.html",
+      "released": "2026-11-18T12:00:00Z",
+      "updated": "2026-11-19T08:55:47Z",
+      "products": [
+        "crates.io: heapless"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in heapless 0.9.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0579",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "The `Deque` implementation from `TryFrom` was wrong when the `Deque` ended up full",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0579.html",
+      "released": "2026-11-18T12:00:00Z",
+      "updated": "2026-11-19T08:55:47Z",
+      "products": [
+        "crates.io: heapless"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in heapless 0.9.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0580",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "The treiber stack implementation in heapless had a race condition",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0580.html",
+      "released": "2026-11-18T12:00:00Z",
+      "updated": "2026-11-19T08:55:47Z",
+      "products": [
+        "crates.io: heapless"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in heapless 0.9.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0581",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`Deque::make_contiguous` could lead to broken invariants",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0581.html",
+      "released": "2026-11-18T12:00:00Z",
+      "updated": "2026-11-19T08:55:47Z",
+      "products": [
+        "crates.io: heapless"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in heapless 0.9.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0582",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "On maps of `u16::MAX` elements, `IndexMap::insert` could lead to a broken invariant",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0582.html",
+      "released": "2026-11-18T12:00:00Z",
+      "updated": "2026-11-19T08:55:47Z",
+      "products": [
+        "crates.io: heapless"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in heapless 0.9.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-132144",
+      "src": "gna-1",
+      "vendor": "misp",
+      "title": "MISP: Non-admin users can change login email under external authentication to capture a directory identity",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-132144",
+      "released": "2026-11-18T13:15:22Z",
+      "updated": "2026-11-18T13:21:34Z",
+      "cves": [
+        "CVE-2026-132144"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.3,
+      "products": [
+        "misp misp"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "NCSC-2026-0497",
       "src": "csaf_ncscnl",
       "vendor": "Oracle",
@@ -1042,6 +1419,32 @@
         "Communications"
       ],
       "lang": "nl",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "sca-2026-0018",
+      "src": "csaf_sick",
+      "vendor": "SICK AG",
+      "title": "Vulnerability Affecting sick_scan_xd Driver",
+      "url": "https://www.sick.com/.well-known/csaf/white/2026/sca-2026-0018.json",
+      "released": "2026-11-18T14:47:00Z",
+      "updated": "2026-11-18T14:47:00Z",
+      "cves": [
+        "CVE-2026-123123"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SICK Open Source Solutions",
+        "sick_scan_xd"
+      ],
+      "fix": [
+        {
+          "t": "Users are recommended to upgrade to version 3.10.0.",
+          "u": null
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-26"
     },
     {
@@ -1122,6 +1525,118 @@
         "Oracle Financial Services Regulatory Reporting"
       ],
       "lang": "nl",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-b5tg-o5y3-6ebb-sr4t",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Origin",
+      "url": "https://scout.docker.com/v/DHI-b5tg-o5y3-6ebb-sr4t",
+      "released": "2026-11-18T14:50:03Z",
+      "updated": "2026-11-21T02:53:36Z",
+      "cves": [
+        "CVE-2026-67236"
+      ],
+      "products": [
+        "Docker Hardened Images: rabbitmq-4.3",
+        "Docker Hardened Images: rabbitmq-4.4",
+        "Docker Hardened Images: rabbitmq-4.4-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rabbitmq-4.4-fips 4.4.1-0",
+          "u": null
+        },
+        {
+          "t": "Fixed in rabbitmq-4.4 4.4.0-0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-mhxb-qp4a-fqvi-kwy4",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Summary",
+      "url": "https://scout.docker.com/v/DHI-mhxb-qp4a-fqvi-kwy4",
+      "released": "2026-11-18T14:50:03Z",
+      "updated": "2026-11-21T02:53:30Z",
+      "cves": [
+        "CVE-2026-67414"
+      ],
+      "products": [
+        "Docker Hardened Images: rabbitmq-4.3",
+        "Docker Hardened Images: rabbitmq-4.4",
+        "Docker Hardened Images: rabbitmq-4.4-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rabbitmq-4.4-fips 4.4.1-0",
+          "u": null
+        },
+        {
+          "t": "Fixed in rabbitmq-4.4 4.4.0-0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-oer7-bvul-4x2p-443u",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Origin",
+      "url": "https://scout.docker.com/v/DHI-oer7-bvul-4x2p-443u",
+      "released": "2026-11-18T14:50:03Z",
+      "updated": "2026-11-21T02:04:58Z",
+      "cves": [
+        "CVE-2026-66069"
+      ],
+      "products": [
+        "Docker Hardened Images: rabbitmq-4.3",
+        "Docker Hardened Images: rabbitmq-4.4",
+        "Docker Hardened Images: rabbitmq-4.4-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rabbitmq-4.4-fips 4.4.1-0",
+          "u": null
+        },
+        {
+          "t": "Fixed in rabbitmq-4.4 4.4.0-0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-y6ea-rn4f-n7ei-kqwq",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Origin",
+      "url": "https://scout.docker.com/v/DHI-y6ea-rn4f-n7ei-kqwq",
+      "released": "2026-11-18T14:50:09Z",
+      "updated": "2026-11-21T02:04:53Z",
+      "cves": [
+        "CVE-2026-67226"
+      ],
+      "products": [
+        "Docker Hardened Images: rabbitmq-4.3",
+        "Docker Hardened Images: rabbitmq-4.4",
+        "Docker Hardened Images: rabbitmq-4.4-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rabbitmq-4.4-fips 4.4.1-0",
+          "u": null
+        },
+        {
+          "t": "Fixed in rabbitmq-4.4 4.4.0-0",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -1281,6 +1796,118 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-pmxy-rid2-acjz-stsh",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Origin",
+      "url": "https://scout.docker.com/v/DHI-pmxy-rid2-acjz-stsh",
+      "released": "2026-11-18T14:54:18Z",
+      "updated": "2026-11-21T16:00:29Z",
+      "cves": [
+        "CVE-2026-66071"
+      ],
+      "products": [
+        "Docker Hardened Images: rabbitmq-4.3",
+        "Docker Hardened Images: rabbitmq-4.4",
+        "Docker Hardened Images: rabbitmq-4.4-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rabbitmq-4.4-fips 4.4.1-0",
+          "u": null
+        },
+        {
+          "t": "Fixed in rabbitmq-4.4 4.4.0-0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-rjwq-mqco-lmk7-hdab",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Origin",
+      "url": "https://scout.docker.com/v/DHI-rjwq-mqco-lmk7-hdab",
+      "released": "2026-11-18T14:55:25Z",
+      "updated": "2026-11-21T02:53:26Z",
+      "cves": [
+        "CVE-2026-67237"
+      ],
+      "products": [
+        "Docker Hardened Images: rabbitmq-4.3",
+        "Docker Hardened Images: rabbitmq-4.4",
+        "Docker Hardened Images: rabbitmq-4.4-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rabbitmq-4.4-fips 4.4.1-0",
+          "u": null
+        },
+        {
+          "t": "Fixed in rabbitmq-4.4 4.4.0-0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-abgq-csj5-qfy7-t7e3",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Origin",
+      "url": "https://scout.docker.com/v/DHI-abgq-csj5-qfy7-t7e3",
+      "released": "2026-11-18T15:01:39Z",
+      "updated": "2026-11-21T02:04:48Z",
+      "cves": [
+        "CVE-2026-67228"
+      ],
+      "products": [
+        "Docker Hardened Images: rabbitmq-4.3",
+        "Docker Hardened Images: rabbitmq-4.4",
+        "Docker Hardened Images: rabbitmq-4.4-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rabbitmq-4.4-fips 4.4.1-0",
+          "u": null
+        },
+        {
+          "t": "Fixed in rabbitmq-4.4 4.4.0-0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-hkel-jcvf-nxv7-pdqx",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Origin",
+      "url": "https://scout.docker.com/v/DHI-hkel-jcvf-nxv7-pdqx",
+      "released": "2026-11-18T15:01:39Z",
+      "updated": "2026-11-21T02:05:02Z",
+      "cves": [
+        "CVE-2026-67227"
+      ],
+      "products": [
+        "Docker Hardened Images: rabbitmq-4.3",
+        "Docker Hardened Images: rabbitmq-4.4",
+        "Docker Hardened Images: rabbitmq-4.4-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rabbitmq-4.4-fips 4.4.1-0",
+          "u": null
+        },
+        {
+          "t": "Fixed in rabbitmq-4.4 4.4.0-0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "NCSC-2026-0505",
       "src": "csaf_ncscnl",
       "vendor": "Oracle",
@@ -1305,6 +1932,22 @@
         "Oracle Universal Work Queue"
       ],
       "lang": "nl",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-bxve-zm6v-ddfx-rnn2",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Stack-based buffer overflow in cifskey.c or cifscreds.c in cifs-utils before 6.4, as used in pam_cifscreds, allows…",
+      "url": "https://scout.docker.com/v/DHI-bxve-zm6v-ddfx-rnn2",
+      "released": "2026-11-18T15:36:24Z",
+      "updated": "2026-11-24T01:12:24Z",
+      "cves": [
+        "CVE-2014-2830"
+      ],
+      "products": [
+        "Docker Hardened Images: cifs-utils"
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -1453,6 +2096,413 @@
         "core"
       ],
       "lang": "nl",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-tse7-whvi-7ydf-5tac",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "FFmpeg before 8.1.3 and 9.x before 9.0.2 contains an improper certificate validation vulnerability in tls_open() of…",
+      "url": "https://scout.docker.com/v/DHI-tse7-whvi-7ydf-5tac",
+      "released": "2026-11-18T19:45:51Z",
+      "updated": "2026-11-23T14:53:16Z",
+      "cves": [
+        "CVE-2026-107660"
+      ],
+      "products": [
+        "Docker Hardened Images: ffmpeg"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-xlgi-nu74-ibfb-r4t5",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A heap buffer overflow in the av_bprint_finalize() function of FFmpeg v8.0.1 allows attackers to cause a Denial of…",
+      "url": "https://scout.docker.com/v/DHI-xlgi-nu74-ibfb-r4t5",
+      "released": "2026-11-18T19:45:51Z",
+      "updated": "2026-11-23T14:53:28Z",
+      "cves": [
+        "CVE-2026-30999"
+      ],
+      "products": [
+        "Docker Hardened Images: ffmpeg"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-dznv-o3sz-gdre-k5aw",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "EDK2 contains vulnerabilities in",
+      "url": "https://scout.docker.com/v/DHI-dznv-o3sz-gdre-k5aw",
+      "released": "2026-11-18T19:50:55Z",
+      "updated": "2026-11-23T22:32:59Z",
+      "cves": [
+        "CVE-2026-14968"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-edtt-lmvx-tqeg-nbte",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "EDK2 contains a vulnerability in BIOS",
+      "url": "https://scout.docker.com/v/DHI-edtt-lmvx-tqeg-nbte",
+      "released": "2026-11-18T19:50:55Z",
+      "updated": "2026-11-23T22:32:59Z",
+      "cves": [
+        "CVE-2026-18448"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-fepb-44j2-ccdh-yfw3",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Nmap through 7.70, when the -sV option is used, allows remote attackers to cause a denial of service (stack consumption…",
+      "url": "https://scout.docker.com/v/DHI-fepb-44j2-ccdh-yfw3",
+      "released": "2026-11-18T19:50:55Z",
+      "updated": "2026-11-23T15:20:36Z",
+      "cves": [
+        "CVE-2018-15173"
+      ],
+      "products": [
+        "Docker Hardened Images: nmap"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-zwo5-mk24-7nqo-2nwy",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Nmap versions up to and including 7.99 contains a denial of service vulnerability that allows remote attackers to crash…",
+      "url": "https://scout.docker.com/v/DHI-zwo5-mk24-7nqo-2nwy",
+      "released": "2026-11-18T19:50:55Z",
+      "updated": "2026-11-23T15:20:36Z",
+      "cves": [
+        "CVE-2026-72712"
+      ],
+      "products": [
+        "Docker Hardened Images: nmap"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-bxlu-kh6h-z6ee-6zpu",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A heap buffer overflow in reading encoding files in X.Org libfontenc before 1.11.0 could be used by local attackers…",
+      "url": "https://scout.docker.com/v/DHI-bxlu-kh6h-z6ee-6zpu",
+      "released": "2026-11-18T19:55:06Z",
+      "updated": "2026-11-24T03:47:43Z",
+      "cves": [
+        "CVE-2026-109908"
+      ],
+      "products": [
+        "Docker Hardened Images: libfontenc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libfontenc 1.1.10-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in libfontenc 1:1.1.8-1+deb13u0+dhi1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-gdkb-bg4u-ky3w-y23l",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java…",
+      "url": "https://scout.docker.com/v/DHI-gdkb-bg4u-ky3w-y23l",
+      "released": "2026-11-18T19:55:06Z",
+      "updated": "2026-11-23T17:53:16Z",
+      "cves": [
+        "CVE-2026-114938"
+      ],
+      "products": [
+        "Docker Hardened Images: openjdk17",
+        "Docker Hardened Images: openjdk21",
+        "Docker Hardened Images: openjdk25"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-2f53-ut4y-ygqt-dcsj",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A out of bounds read after using negative integers during offset calculation during PCF decoding in X.Org libXfont…",
+      "url": "https://scout.docker.com/v/DHI-2f53-ut4y-ygqt-dcsj",
+      "released": "2026-11-18T19:56:12Z",
+      "updated": "2026-11-23T14:52:50Z",
+      "cves": [
+        "CVE-2026-109909"
+      ],
+      "products": [
+        "Docker Hardened Images: libxfont"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-pm6u-jl5j-prj2-drxm",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Use of uninitialized memory when processing certain font files in X.Org libXfont before 2.0.10 could be used by…",
+      "url": "https://scout.docker.com/v/DHI-pm6u-jl5j-prj2-drxm",
+      "released": "2026-11-18T19:56:12Z",
+      "updated": "2026-11-23T14:53:16Z",
+      "cves": [
+        "CVE-2026-109920"
+      ],
+      "products": [
+        "Docker Hardened Images: libxfont"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-egrr-6l55-mrik-qgla",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK product of Oracle Java SE (component: Libraries)…",
+      "url": "https://scout.docker.com/v/DHI-egrr-6l55-mrik-qgla",
+      "released": "2026-11-18T20:41:05Z",
+      "updated": "2026-11-23T17:53:16Z",
+      "cves": [
+        "CVE-2026-114945"
+      ],
+      "products": [
+        "Docker Hardened Images: openjdk21",
+        "Docker Hardened Images: openjdk25"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-rfd2-qpgq-as3a-a3qi",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK product of Oracle Java SE (component: Libraries)…",
+      "url": "https://scout.docker.com/v/DHI-rfd2-qpgq-as3a-a3qi",
+      "released": "2026-11-18T20:41:05Z",
+      "updated": "2026-11-23T17:53:16Z",
+      "cves": [
+        "CVE-2026-114942"
+      ],
+      "products": [
+        "Docker Hardened Images: openjdk21",
+        "Docker Hardened Images: openjdk25"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-6b44-mlff-qs6z-ynm7",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "IO::Socket::SSL::PublicSuffix versions through 2.099 for Perl let an on-path attacker choose the installed public…",
+      "url": "https://scout.docker.com/v/DHI-6b44-mlff-qs6z-ynm7",
+      "released": "2026-11-18T20:42:12Z",
+      "updated": "2026-11-24T05:51:31Z",
+      "cves": [
+        "CVE-2026-129891"
+      ],
+      "products": [
+        "Docker Hardened Images: libio-socket-ssl-perl"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-kppl-zkfz-uoas-zx6m",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "IO::Socket::SSL::PublicSuffix versions through 2.099 for Perl allow code injection via a fetched list line that closes…",
+      "url": "https://scout.docker.com/v/DHI-kppl-zkfz-uoas-zx6m",
+      "released": "2026-11-18T20:42:12Z",
+      "updated": "2026-11-24T05:52:02Z",
+      "cves": [
+        "CVE-2026-129892"
+      ],
+      "products": [
+        "Docker Hardened Images: libio-socket-ssl-perl"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-132636",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Event Search Discloses Hidden Attribute and Object Data via Missing Sub-Entity Authorization",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-132636",
+      "released": "2026-11-18T20:45:22Z",
+      "updated": "2026-11-18T20:45:38Z",
+      "cves": [
+        "CVE-2026-132636"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-132637",
+      "src": "gna-1",
+      "vendor": "misp",
+      "title": "MISP Event Correlations Endpoint Missing Authorization on Queried Event and Hidden Attributes",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-132637",
+      "released": "2026-11-18T20:50:50Z",
+      "updated": "2026-11-18T20:51:00Z",
+      "cves": [
+        "CVE-2026-132637"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "misp misp"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-132641",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP EventDelegationsController Missing Authorization Check on sharing_group_id Allows Unauthorized Sharing Group Name Disclosure",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-132641",
+      "released": "2026-11-18T20:59:38Z",
+      "updated": "2026-11-18T20:59:50Z",
+      "cves": [
+        "CVE-2026-132641"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-132642",
+      "src": "gna-1",
+      "vendor": "misp",
+      "title": "MISP Tag Endpoints Bypass ACL Visibility, Allowing Unauthorized Tag Modification and Enumeration on Hidden Events",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-132642",
+      "released": "2026-11-18T21:04:29Z",
+      "updated": "2026-11-18T21:04:45Z",
+      "cves": [
+        "CVE-2026-132642"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "misp misp"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-132643",
+      "src": "gna-1",
+      "vendor": "misp",
+      "title": "MISP Anonymised Sightings Reporter Identity Disclosure via Organisation Filter",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-132643",
+      "released": "2026-11-18T21:08:19Z",
+      "updated": "2026-11-18T21:08:33Z",
+      "cves": [
+        "CVE-2026-132643"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "misp misp"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-132644",
+      "src": "gna-1",
+      "vendor": "misp",
+      "title": "MISP Galaxy Cluster Import Authorization Bypass Allows Cross-Organization Cluster Takeover",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-132644",
+      "released": "2026-11-18T21:13:31Z",
+      "updated": "2026-11-18T21:13:47Z",
+      "cves": [
+        "CVE-2026-132644"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "misp misp"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-132645",
+      "src": "gna-1",
+      "vendor": "misp",
+      "title": "MISP Galaxy Import Authorization Bypass Allows Unauthorized Overwrite of Default and Other Organizations' Galaxies",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-132645",
+      "released": "2026-11-18T21:18:53Z",
+      "updated": "2026-11-18T21:19:05Z",
+      "cves": [
+        "CVE-2026-132645"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "misp misp"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-2oql-tcvm-mswy-qfhe",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Uncontrolled resource consumption vulnerability in the Qt Framework HTTP response handling functionality of the Qt…",
+      "url": "https://scout.docker.com/v/DHI-2oql-tcvm-mswy-qfhe",
+      "released": "2026-11-18T21:20:36Z",
+      "updated": "2026-11-23T22:32:59Z",
+      "cves": [
+        "CVE-2026-116337"
+      ],
+      "products": [
+        "Docker Hardened Images: qtbase-opensource-src"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-76an-b43n-cs3c-yjgy",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "The http.cookies.Morsel class allows separator semicolons in attribute",
+      "url": "https://scout.docker.com/v/DHI-76an-b43n-cs3c-yjgy",
+      "released": "2026-11-18T21:23:45Z",
+      "updated": "2026-11-23T23:39:06Z",
+      "cves": [
+        "CVE-2026-16052"
+      ],
+      "products": [
+        "Docker Hardened Images: python3.13"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-ze4x-ceoi-b7f4-b4y5",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK product of Oracle Java SE (component: Compiler). Supported…",
+      "url": "https://scout.docker.com/v/DHI-ze4x-ceoi-b7f4-b4y5",
+      "released": "2026-11-18T21:30:01Z",
+      "updated": "2026-11-23T17:53:16Z",
+      "cves": [
+        "CVE-2026-114941"
+      ],
+      "products": [
+        "Docker Hardened Images: openjdk21",
+        "Docker Hardened Images: openjdk25"
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -2596,7 +3646,7 @@
       "title": "NGINX: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4658",
       "released": "2026-11-18T23:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-113425",
         "CVE-2026-121810",
@@ -2863,7 +3913,7 @@
       "title": "Ruby: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4668",
       "released": "2026-11-18T23:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-132825"
       ],
@@ -3129,7 +4179,7 @@
       "title": "WebKitGTK: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4675",
       "released": "2026-11-18T23:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-112599",
         "CVE-2026-112615",
@@ -3313,7 +4363,7 @@
       "title": "PHP: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4684",
       "released": "2026-11-18T23:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-126714",
         "CVE-2026-115560",
@@ -3367,7 +4417,7 @@
       "title": "Drupal Core: Mehrere Schwachstellen ermöglichen Codeausführung",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4686",
       "released": "2026-11-18T23:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-132165",
         "CVE-2026-132166"

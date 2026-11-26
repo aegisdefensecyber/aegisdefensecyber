@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-07-08",
-  "count": 5,
+  "count": 21,
   "items": [
     {
       "id": "ICSA-25-191-06",
@@ -11,6 +11,44 @@
       "url": "https://cert-portal.siemens.com/productcert/html/ssa-904646.html",
       "released": "2025-07-08T00:00:00Z",
       "updated": "2026-11-17T07:00:00Z",
+      "cves": [
+        "CVE-2025-40742"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "SIPROTEC 5 6MD84 (CP300)",
+        "SIPROTEC 5 6MD85 (CP200)",
+        "SIPROTEC 5 6MD85 (CP300)",
+        "SIPROTEC 5 6MD86 (CP200)",
+        "SIPROTEC 5 6MD86 (CP300)",
+        "SIPROTEC 5 6MD89 (CP300)"
+      ],
+      "fix": [
+        {
+          "t": "Update to V11.0 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109757433/"
+        },
+        {
+          "t": "Update to V11.0 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109757430/"
+        },
+        {
+          "t": "Update to V11.0 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109742950/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-904646",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-904646: Sensitive Data Exposure Vulnerability in SIPROTEC 5 Devices",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-904646.html",
+      "released": "2025-07-08T00:00:00Z",
+      "updated": "2026-11-10T00:00:00Z",
       "cves": [
         "CVE-2025-40742"
       ],
@@ -113,6 +151,459 @@
           "u": "https://support.industry.siemens.com/cs/ww/en/view/109742950/"
         }
       ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10549",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: podman security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10549",
+      "released": "2025-07-08T01:00:08Z",
+      "updated": "2026-10-12T20:15:25Z",
+      "cves": [
+        "CVE-2025-6032"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.3,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10549"
+        },
+        {
+          "t": "Download the VM image manually with another tool that verifies the TLS certificate and then pass the local image as a file path to podman, for example: # podma…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10550",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: podman security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10550",
+      "released": "2025-07-08T01:13:03Z",
+      "updated": "2026-10-12T20:15:25Z",
+      "cves": [
+        "CVE-2025-6032"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.3,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10550"
+        },
+        {
+          "t": "Download the VM image manually with another tool that verifies the TLS certificate and then pass the local image as a file path to podman, for example: # podma…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10551",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: container-tools:rhel8 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10551",
+      "released": "2025-07-08T01:25:43Z",
+      "updated": "2026-10-12T20:15:25Z",
+      "cves": [
+        "CVE-2025-6032"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.3,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10551"
+        },
+        {
+          "t": "Download the VM image manually with another tool that verifies the TLS certificate and then pass the local image as a file path to podman, for example: # podma…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10585",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: jq security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10585",
+      "released": "2025-07-08T11:18:39Z",
+      "updated": "2026-10-22T20:22:47Z",
+      "cves": [
+        "CVE-2024-23337",
+        "CVE-2025-48060"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 9)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10585"
+        },
+        {
+          "t": "Do not process untrusted input with the jq command line JSON processor.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10613",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: jq security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10613",
+      "released": "2025-07-08T12:30:13Z",
+      "updated": "2026-10-22T20:22:48Z",
+      "cves": [
+        "CVE-2024-23337",
+        "CVE-2025-48060"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS EUS (v.9.4)",
+        "Red Hat CodeReady Linux Builder EUS (v.9.4)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10613"
+        },
+        {
+          "t": "Do not process untrusted input with the jq command line JSON processor.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10616",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: jq security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10616",
+      "released": "2025-07-08T12:30:14Z",
+      "updated": "2026-10-22T20:22:49Z",
+      "cves": [
+        "CVE-2024-23337",
+        "CVE-2025-48060"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream E4S (v.9.0)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10616"
+        },
+        {
+          "t": "Do not process untrusted input with the jq command line JSON processor.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10615",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: jq security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10615",
+      "released": "2025-07-08T12:32:49Z",
+      "updated": "2026-10-22T20:22:48Z",
+      "cves": [
+        "CVE-2024-23337",
+        "CVE-2025-48060"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream E4S (v.9.2)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10615"
+        },
+        {
+          "t": "Do not process untrusted input with the jq command line JSON processor.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10619",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: jq security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10619",
+      "released": "2025-07-08T12:33:34Z",
+      "updated": "2026-10-22T20:22:50Z",
+      "cves": [
+        "CVE-2024-23337",
+        "CVE-2025-48060"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream E4S (v.8.8)",
+        "Red Hat Enterprise Linux AppStream TUS (v.8.8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10619"
+        },
+        {
+          "t": "Do not process untrusted input with the jq command line JSON processor.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10621",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: jq security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10621",
+      "released": "2025-07-08T12:34:30Z",
+      "updated": "2026-10-22T20:22:50Z",
+      "cves": [
+        "CVE-2024-23337",
+        "CVE-2025-48060"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream AUS (v.8.4)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10621"
+        },
+        {
+          "t": "Do not process untrusted input with the jq command line JSON processor.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10622",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: jq security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10622",
+      "released": "2025-07-08T12:35:49Z",
+      "updated": "2026-10-22T20:22:50Z",
+      "cves": [
+        "CVE-2024-23337",
+        "CVE-2025-48060"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream AUS (v. 8.2)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10622"
+        },
+        {
+          "t": "Do not process untrusted input with the jq command line JSON processor.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10620",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: jq security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10620",
+      "released": "2025-07-08T12:44:14Z",
+      "updated": "2026-10-22T20:22:50Z",
+      "cves": [
+        "CVE-2024-23337",
+        "CVE-2025-48060"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream AUS (v.8.6)",
+        "Red Hat Enterprise Linux AppStream E4S (v.8.6)",
+        "Red Hat Enterprise Linux AppStream TUS (v.8.6)",
+        "Red Hat Enterprise Linux AppStream EUS EXTENSION (v.8.6)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10620"
+        },
+        {
+          "t": "Do not process untrusted input with the jq command line JSON processor.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10618",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: jq security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10618",
+      "released": "2025-07-08T12:44:44Z",
+      "updated": "2026-10-22T20:22:50Z",
+      "cves": [
+        "CVE-2024-23337",
+        "CVE-2025-48060"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)",
+        "Red Hat Enterprise Linux CRB (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10618"
+        },
+        {
+          "t": "Do not process untrusted input with the jq command line JSON processor.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2024-36350",
+      "src": "cvelistv5",
+      "vendor": "AMD",
+      "title": "A transient execution vulnerability in some AMD processors may allow an attacker to infer data from previous stores, potentially resulting in the leakage of privileged information.",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-36350",
+      "released": "2025-07-08T16:56:39Z",
+      "updated": "2026-11-12T19:32:09Z",
+      "cves": [
+        "CVE-2024-36350"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.6,
+      "products": [
+        "AMD AMD EPYC™ 9005 Series Processors",
+        "AMD AMD EPYC™ 8005 Series Processors",
+        "AMD AMD EPYC™ 4005 Series Processors",
+        "AMD AMD Ryzen™ 9000HX Series Processors",
+        "AMD AMD Ryzen™ AI 300 Series Processors",
+        "AMD AMD Ryzen™ 9000 Series Desktop Processors"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2024-36357",
+      "src": "cvelistv5",
+      "vendor": "AMD",
+      "title": "A transient execution vulnerability in some AMD processors may allow an attacker to infer data in the L1D cache, potentially resulting in the leakage of sensitive information across privileged boundaries.",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-36357",
+      "released": "2025-07-08T17:01:48Z",
+      "updated": "2026-11-12T19:31:45Z",
+      "cves": [
+        "CVE-2024-36357"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.6,
+      "products": [
+        "AMD AMD EPYC™ 9005 Series Processors",
+        "AMD AMD EPYC™ 8005 Series Processors",
+        "AMD AMD EPYC™ 4005 Series Processors",
+        "AMD AMD Ryzen™ 9000HX Series Processors",
+        "AMD AMD Ryzen™ AI 300 Series Processors",
+        "AMD AMD Ryzen™ 9000 Series Desktop Processors"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10668",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: podman security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10668",
+      "released": "2025-07-08T20:24:01Z",
+      "updated": "2026-10-12T20:15:26Z",
+      "cves": [
+        "CVE-2025-6032"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.3,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream EUS (v.9.4)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10668"
+        },
+        {
+          "t": "Download the VM image manually with another tool that verifies the TLS certificate and then pass the local image as a file path to podman, for example: # podma…",
+          "u": null
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-26"
     },
     {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-02",
-  "count": 4,
+  "count": 13,
   "items": [
     {
       "id": "openSUSE-SU-2026:10277-1",
@@ -31,6 +31,114 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:3507",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: valkey security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:3507",
+      "released": "2026-03-02T00:00:00Z",
+      "updated": "2026-10-29T09:58:07Z",
+      "cves": [
+        "CVE-2025-67733",
+        "CVE-2026-21863",
+        "CVE-2026-92925"
+      ],
+      "products": [
+        "AlmaLinux: valkey",
+        "AlmaLinux: valkey-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in valkey 8.0.7-1.el9_7",
+          "u": null
+        },
+        {
+          "t": "Fixed in valkey-devel 8.0.7-1.el9_7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0736-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 1 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260736-1/",
+      "released": "2026-03-02T07:04:29Z",
+      "updated": "2026-09-16T19:07:13Z",
+      "cves": [
+        "CVE-2025-38129"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP6",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0740-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for mozilla-nss",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260740-1/",
+      "released": "2026-03-02T08:10:37Z",
+      "updated": "2026-09-16T19:07:14Z",
+      "cves": [
+        "CVE-2026-2781"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.2"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0745-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 9 for SUSE Linux Enterprise 15 SP6)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260745-1/",
+      "released": "2026-03-02T09:34:17Z",
+      "updated": "2026-09-16T19:07:17Z",
+      "cves": [
+        "CVE-2025-38129"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20295-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -47,6 +155,120 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0043",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Timing Side-Channel in AES-CCM Tag Verification in AWS-LC",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0043.html",
+      "released": "2026-03-02T12:00:00Z",
+      "updated": "2026-11-09T10:48:10Z",
+      "cves": [
+        "CVE-2026-3337"
+      ],
+      "products": [
+        "crates.io: aws-lc-fips-sys"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in aws-lc-fips-sys 0.13.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0045",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Timing Side-Channel in AES-CCM Tag Verification in AWS-LC",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0045.html",
+      "released": "2026-03-02T12:00:00Z",
+      "updated": "2026-11-09T10:48:10Z",
+      "cves": [
+        "CVE-2026-3337"
+      ],
+      "products": [
+        "crates.io: aws-lc-sys"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in aws-lc-sys 0.38.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0046",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "PKCS7_verify Certificate Chain Validation Bypass in AWS-LC",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0046.html",
+      "released": "2026-03-02T12:00:00Z",
+      "updated": "2026-11-09T10:48:10Z",
+      "cves": [
+        "CVE-2026-3336"
+      ],
+      "products": [
+        "crates.io: aws-lc-sys"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in aws-lc-sys 0.38.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0047",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "PKCS7_verify Signature Validation Bypass in AWS-LC",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0047.html",
+      "released": "2026-03-02T12:00:00Z",
+      "updated": "2026-11-09T10:48:10Z",
+      "cves": [
+        "CVE-2026-3338"
+      ],
+      "products": [
+        "crates.io: aws-lc-sys"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in aws-lc-sys 0.38.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0748-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 0 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260748-1/",
+      "released": "2026-03-02T12:04:07Z",
+      "updated": "2026-09-16T19:07:19Z",
+      "cves": [
+        "CVE-2025-38129"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
       ],
       "fix": [
         {

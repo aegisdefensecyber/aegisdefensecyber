@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-09",
-  "count": 24,
+  "count": 29,
   "items": [
     {
       "id": "openSUSE-SU-2026:11472-1",
@@ -587,6 +587,82 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RUSTSEC-2026-0238",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Low-level GCM ignores the operation nonce",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0238.html",
+      "released": "2026-08-09T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "products": [
+        "crates.io: dcrypt-algorithms"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dcrypt-algorithms 2.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0239",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Streaming AEAD does not authenticate stream structure",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0239.html",
+      "released": "2026-08-09T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "products": [
+        "crates.io: dcrypt-symmetric"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dcrypt-symmetric 2.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0240",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Ed25519 identity public keys permit universal signature forgery",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0240.html",
+      "released": "2026-08-09T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "products": [
+        "crates.io: dcrypt-sign"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dcrypt-sign 2.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0242",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Safe ErrorRegistry APIs can cause undefined behavior",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0242.html",
+      "released": "2026-08-09T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "products": [
+        "crates.io: dcrypt-api"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dcrypt-api 2.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "WID-SEC-W-2026-2712",
       "src": "csaf_certbund",
       "vendor": "IBM",
@@ -683,6 +759,22 @@
         "Ubuntu Linux"
       ],
       "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-3955",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "A Server-Side Request Forgery (SSRF) vulnerability exists in nltk/nltk versions 3.9.4 and the current develop branch. The `nltk.pathsec.validate_network_url()` function, intended to prevent SSRF by rejecting internal ne…",
+      "url": "https://github.com/advisories/GHSA-2jhm-w3mp-jcwr",
+      "released": "2026-08-09T23:16:35Z",
+      "updated": "2026-09-10T12:38:45Z",
+      "cves": [
+        "CVE-2026-12372"
+      ],
+      "products": [
+        "PyPI: nltk"
+      ],
       "seen": "2026-11-26"
     }
   ]

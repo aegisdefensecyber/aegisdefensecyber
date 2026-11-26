@@ -1,8 +1,38 @@
 {
   "schemaVersion": 1,
   "date": "2023-09-06",
-  "count": 1,
+  "count": 3,
   "items": [
+    {
+      "id": "RHSA-2023:4898",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Container Platform 4.10.67 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2023:4898",
+      "released": "2023-09-06T01:21:13Z",
+      "updated": "2026-10-22T19:58:46Z",
+      "cves": [
+        "CVE-2023-1260"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.0,
+      "products": [
+        "Red Hat OpenShift Enterprise",
+        "Red Hat OpenShift Container Platform 4.10"
+      ],
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.10 see the following documentation, which will be updated shortly for this release, for important instructions on how to upg…",
+          "u": "https://access.redhat.com/errata/RHSA-2023:4898"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options don't meet the Red Hat Product Security criteria comprising ease of use an…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
     {
       "id": "openSUSE-SU-2023:0244-1",
       "src": "csaf_opensuse",
@@ -30,6 +60,38 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2023:4986",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang: net/http, net/textproto: denial of service from excessive memory allocation",
+      "url": "https://access.redhat.com/errata/RHSA-2023:4986",
+      "released": "2023-09-06T07:56:11Z",
+      "updated": "2026-11-26T17:20:56Z",
+      "cves": [
+        "CVE-2023-24534",
+        "CVE-2023-24536",
+        "CVE-2023-24537",
+        "CVE-2023-24538"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "fix": [
+        {
+          "t": "To update all RPMs for your particular architecture, run: rpm -Fvh [filenames] where [filenames] is a list of the RPMs you wish to upgrade. Only those RPMs which are currently installed will be updated. Those RPMs which are not installed b…",
+          "u": "https://access.redhat.com/errata/RHSA-2023:4986"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options don't meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        },
+        {
+          "t": "To mitigate this issue, upgrade Go to version 1.19.8, 1.20.3, or later, where the vulnerability has been addressed.",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

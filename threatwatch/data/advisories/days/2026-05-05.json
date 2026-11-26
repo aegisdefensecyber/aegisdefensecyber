@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-05-05",
-  "count": 22,
+  "count": 46,
   "items": [
     {
       "id": "openSUSE-SU-2026:10687-1",
@@ -281,6 +281,88 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:13577",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: kernel security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:13577",
+      "released": "2026-05-05T00:00:00Z",
+      "updated": "2026-10-26T00:43:30Z",
+      "cves": [
+        "CVE-2024-41073",
+        "CVE-2025-40252",
+        "CVE-2025-68724",
+        "CVE-2026-23401",
+        "CVE-2026-31402",
+        "CVE-2026-31431",
+        "CVE-2026-43077"
+      ],
+      "products": [
+        "AlmaLinux: bpftool",
+        "AlmaLinux: kernel",
+        "AlmaLinux: kernel-abi-stablelists",
+        "AlmaLinux: kernel-core",
+        "AlmaLinux: kernel-cross-headers",
+        "AlmaLinux: kernel-debug"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in bpftool 4.18.0-553.123.1.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel 4.18.0-553.123.1.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-abi-stablelists 4.18.0-553.123.1.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:13578",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: kernel-rt security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:13578",
+      "released": "2026-05-05T00:00:00Z",
+      "updated": "2026-10-26T00:01:47Z",
+      "cves": [
+        "CVE-2024-41073",
+        "CVE-2025-40252",
+        "CVE-2025-68724",
+        "CVE-2026-23401",
+        "CVE-2026-31402",
+        "CVE-2026-31431",
+        "CVE-2026-43077"
+      ],
+      "products": [
+        "AlmaLinux: kernel-rt",
+        "AlmaLinux: kernel-rt-core",
+        "AlmaLinux: kernel-rt-debug",
+        "AlmaLinux: kernel-rt-debug-core",
+        "AlmaLinux: kernel-rt-debug-devel",
+        "AlmaLinux: kernel-rt-debug-modules"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel-rt 4.18.0-553.123.1.rt7.464.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-rt-core 4.18.0-553.123.1.rt7.464.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-rt-debug 4.18.0-553.123.1.rt7.464.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20674-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -392,6 +474,121 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:1684-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 0 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261684-1/",
+      "released": "2026-05-05T06:34:20Z",
+      "updated": "2026-09-16T19:20:11Z",
+      "cves": [
+        "CVE-2025-38375",
+        "CVE-2025-39977",
+        "CVE-2025-71066",
+        "CVE-2026-23004",
+        "CVE-2026-23204",
+        "CVE-2026-31431"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1686-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 3 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261686-1/",
+      "released": "2026-05-05T06:34:25Z",
+      "updated": "2026-09-16T19:20:12Z",
+      "cves": [
+        "CVE-2025-39977",
+        "CVE-2025-71066",
+        "CVE-2026-23004",
+        "CVE-2026-23204",
+        "CVE-2026-31431"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1689-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 9 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261689-1/",
+      "released": "2026-05-05T06:34:34Z",
+      "updated": "2026-09-16T19:20:13Z",
+      "cves": [
+        "CVE-2026-23004",
+        "CVE-2026-23204",
+        "CVE-2026-31431"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1690-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 10 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261690-1/",
+      "released": "2026-05-05T06:34:37Z",
+      "updated": "2026-09-16T19:20:15Z",
+      "cves": [
+        "CVE-2026-31431"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20676-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -407,6 +604,35 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1691-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 8 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261691-1/",
+      "released": "2026-05-05T07:04:40Z",
+      "updated": "2026-09-16T19:20:16Z",
+      "cves": [
+        "CVE-2025-71066",
+        "CVE-2026-23004",
+        "CVE-2026-23204",
+        "CVE-2026-31431"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
       ],
       "fix": [
         {
@@ -443,6 +669,355 @@
       "fix": [
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1692-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for xen",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261692-1/",
+      "released": "2026-05-05T08:03:58Z",
+      "updated": "2026-09-16T19:20:17Z",
+      "cves": [
+        "CVE-2025-54505",
+        "CVE-2026-23557",
+        "CVE-2026-23558"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.3",
+        "SUSE Linux Enterprise Micro 5.4"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-apache-2026-23918",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache HTTP Server: http2: double free and possible RCE on early reset",
+      "released": "2026-05-05T08:38:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-23918"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: apache"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache 2.4.67",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-apache-2026-24072",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache HTTP Server: mod_rewrite elevation of privileges via ap_expr",
+      "released": "2026-05-05T08:38:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-24072"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: apache"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache 2.4.67",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-apache-2026-33006",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache HTTP Server: mod_auth_digest timing attack",
+      "released": "2026-05-05T08:39:01Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-33006"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: apache"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache 2.4.67",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-apache-2026-33007",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache HTTP Server: mod_authn_socache crash",
+      "released": "2026-05-05T08:39:03Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-33007"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: apache"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache 2.4.67",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-apache-2026-33523",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache HTTP Server: multiple modules: HTTP response splitting forwarding malicious status line",
+      "released": "2026-05-05T08:39:05Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-33523"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: apache"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache 2.4.67",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-apache-2026-33857",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache HTTP Server: Off-by-one OOB reads in AJP getter functions",
+      "released": "2026-05-05T08:39:07Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-33857"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: apache"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache 2.4.67",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-apache-2026-34032",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache HTTP Server: mod_proxy_ajp: Heap Buffer Over-Read Due to Missing Null-Termination Check (ajp_msg_get_string)",
+      "released": "2026-05-05T08:39:09Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-34032"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: apache"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache 2.4.67",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-apache-2026-34059",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache HTTP Server: mod_proxy_ajp: Heap Over-Read and memory disclosure in ajp_parse_data()",
+      "released": "2026-05-05T08:39:10Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-34059"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: apache"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache 2.4.67",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:13644",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: corosync security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:13644",
+      "released": "2026-05-05T09:31:59Z",
+      "updated": "2026-10-02T17:18:02Z",
+      "cves": [
+        "CVE-2026-35091",
+        "CVE-2026-35092"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 10)",
+        "Red Hat Enterprise Linux High Availability (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:13644"
+        },
+        {
+          "t": "Systems using totemudp or totemudpu should migrate to the supported knet transport and enable encryption. Disabling the Corosync service is a valid workaround …",
+          "u": null
+        },
+        {
+          "t": "Systems using totemudp or totemudpu should migrate to the supported knet transport and enable encryption.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:13657",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: corosync security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:13657",
+      "released": "2026-05-05T10:22:37Z",
+      "updated": "2026-10-02T17:18:00Z",
+      "cves": [
+        "CVE-2026-35091",
+        "CVE-2026-35092"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)",
+        "Red Hat Enterprise Linux CRB (v. 8)",
+        "Red Hat Enterprise Linux HighAvailability (v. 8)",
+        "Red Hat Enterprise Linux ResilientStorage (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:13657"
+        },
+        {
+          "t": "Systems using totemudp or totemudpu should migrate to the supported knet transport and enable encryption. Disabling the Corosync service is a valid workaround …",
+          "u": null
+        },
+        {
+          "t": "Systems using totemudp or totemudpu should migrate to the supported knet transport and enable encryption.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:13673",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: corosync security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:13673",
+      "released": "2026-05-05T10:35:12Z",
+      "updated": "2026-10-02T17:18:05Z",
+      "cves": [
+        "CVE-2026-35091",
+        "CVE-2026-35092"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 9)",
+        "Red Hat Enterprise Linux High Availability (v. 9)",
+        "Red Hat Enterprise Linux Resilient Storage (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:13673"
+        },
+        {
+          "t": "Systems using totemudp or totemudpu should migrate to the supported knet transport and enable encryption. Disabling the Corosync service is a valid workaround …",
+          "u": null
+        },
+        {
+          "t": "Systems using totemudp or totemudpu should migrate to the supported knet transport and enable encryption.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:13731",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: sudo security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:13731",
+      "released": "2026-05-05T12:40:12Z",
+      "updated": "2026-10-16T11:24:35Z",
+      "cves": [
+        "CVE-2026-35535"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream E4S (v.9.0)",
+        "Red Hat Enterprise Linux BaseOS E4S (v.9.0)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:13731"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
           "u": null
         }
       ],
@@ -577,6 +1152,46 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "UBUNTU-CVE-2026-7411",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "In Eclipse BaSyx Java Server SDK versions prior to 2.0.0-milestone-10, inadequate path normalization in the Submodel HTTP API allows an unauthenticated remote attacker to perform a path traversal attack. By supplying a …",
+      "released": "2026-05-05T16:16:00Z",
+      "updated": "2026-09-21T07:26:45Z",
+      "cves": [
+        "CVE-2026-7411"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: eclipse"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-5789-5fc7-67v3",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Jupyter Server: Path Traversal via incorrect startswith() root directory check allows access to sibling directories",
+      "url": "https://github.com/advisories/GHSA-5789-5fc7-67v3",
+      "released": "2026-05-05T16:49:10Z",
+      "updated": "2026-08-28T18:30:43Z",
+      "cves": [
+        "CVE-2026-35397"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: jupyter-server"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jupyter-server 2.18.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
       "id": "WID-SEC-W-2026-1363",
       "src": "csaf_certbund",
       "vendor": "Fedora",
@@ -699,6 +1314,62 @@
         "Google Container-Optimized OS"
       ],
       "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0300",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS: Unauthenticated user initiated Buffer Overflow Vulnerability in User-ID™ Authentication Portal",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0300",
+      "released": "2026-05-05T23:00:00Z",
+      "updated": "2026-05-28T00:00:00Z",
+      "cves": [
+        "CVE-2026-0300"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.3,
+      "products": [
+        "Cloud NGFW",
+        "PAN-OS",
+        "Prisma Access"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION SUGGESTED SOLUTION Cloud NGFW No action needed. PAN-OS 12.1 12.1.5 through 12.1.6 Upgrade to 12.1.7 or later. 12.1.2 through 12.1.4-h* Upgrade to 12.1.4-h5 or 12.1.7 or later. PAN-OS 11.2 11.2.11 or later Upgrade to 1…",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0300"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1694-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 6 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261694-1/",
+      "released": "2026-05-05T23:19:07Z",
+      "updated": "2026-09-16T19:20:19Z",
+      "cves": [
+        "CVE-2025-39977",
+        "CVE-2025-71066",
+        "CVE-2026-23004",
+        "CVE-2026-23204",
+        "CVE-2026-31431"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-26"
     }
   ]

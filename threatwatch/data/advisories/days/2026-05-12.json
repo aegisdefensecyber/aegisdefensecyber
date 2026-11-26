@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-05-12",
-  "count": 24,
+  "count": 30,
   "items": [
     {
       "id": "ICSA-26-134-06",
@@ -382,6 +382,125 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SSA-392349",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-392349: Denial of Service Vulnerability in Industrial Devices",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-392349.html",
+      "released": "2026-05-12T00:00:00Z",
+      "updated": "2026-11-10T00:00:00Z",
+      "cves": [
+        "CVE-2025-40833"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "IE/PB LINK HA (6GK1411-5BB00)",
+        "IE/PB link PN IO (6GK1411-5AB10)",
+        "RUGGEDCOM RM1224 LTE(4G) EU (6GK6108-4AM00-2BA2)",
+        "RUGGEDCOM RM1224 LTE(4G) NAM (6GK6108-4AM00-2DA2)",
+        "SCALANCE M804PB (6GK5804-0AP00-2AA2)",
+        "SCALANCE M812-1 ADSL-Router (6GK5812-1AA00-2AA2)"
+      ],
+      "fix": [
+        {
+          "t": "As a mitigation, disable the ethernet ports on the CPU and use a communication module (like CP) for communication instead",
+          "u": null
+        },
+        {
+          "t": "Restrict access to the affected systems to trusted IP addresses only",
+          "u": null
+        },
+        {
+          "t": "Update to V10.2 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109773044/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-545643",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-545643: Multiple Vulnerabilities in KACO Blueplanet Inverters",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-545643.html",
+      "released": "2026-05-12T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2025-40946",
+        "CVE-2026-41125"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.3,
+      "products": [
+        "blueplanet 100 NX3 M8",
+        "blueplanet 100 TL3 GEN2",
+        "blueplanet 105 TL3",
+        "blueplanet 105 TL3 GEN2",
+        "blueplanet 110 TL3",
+        "blueplanet 125 NX3 M10"
+      ],
+      "fix": [
+        {
+          "t": "Update to V3.91 or later version",
+          "u": "https://kaco-newenergy.com/service/mykacocom-customer-portal"
+        },
+        {
+          "t": "Update to V3.92 or later version",
+          "u": "https://kaco-newenergy.com/service/mykacocom-customer-portal"
+        },
+        {
+          "t": "Update to V6.1.4.9 or later version",
+          "u": "https://kaco-newenergy.com/service/mykacocom-customer-portal"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-967325",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-967325: Multiple Vulnerabilities in Palo Alto Networks PAN-OS before V11.2.10-h7 on RUGGEDCOM APE1808 Devices",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-967325.html",
+      "released": "2026-05-12T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-0256",
+        "CVE-2026-0257",
+        "CVE-2026-0258",
+        "CVE-2026-0261",
+        "CVE-2026-0262",
+        "CVE-2026-0264",
+        "CVE-2026-0265",
+        "CVE-2026-0269",
+        "CVE-2026-0300",
+        "CVE-2026-0301"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 10.0,
+      "products": [
+        "RUGGEDCOM APE1808"
+      ],
+      "fix": [
+        {
+          "t": "Upgrade Palo Alto Networks Virtual NGFW V11.2.10-h6. Contact customer support to receive patch and update information",
+          "u": null
+        },
+        {
+          "t": "Disable Authentication Override options (for generating and accepting cookies) in the GlobalProtect portal and gateway configuration",
+          "u": null
+        },
+        {
+          "t": "Use a dedicated certificate for Authentication Override cookies",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "ICSA-26-134-06",
       "src": "direct_csaf",
       "vendor": "Siemens",
@@ -634,6 +753,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RUSTSEC-2026-0140",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "DNS rebinding and cross-origin CSRF in dynoxide's MCP HTTP transport",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0140.html",
+      "released": "2026-05-12T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2026-42559"
+      ],
+      "products": [
+        "crates.io: dynoxide-rs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dynoxide-rs 0.9.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20742-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -684,6 +825,66 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:16354",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Logging for Red Hat OpenShift - 6.5.1",
+      "url": "https://access.redhat.com/errata/RHSA-2026:16354",
+      "released": "2026-05-12T15:15:57Z",
+      "updated": "2026-09-22T07:53:49Z",
+      "cves": [
+        "CVE-2026-32829"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Logging Subsystem for Red Hat OpenShift",
+        "Logging Subsystem for Red Hat OpenShift 6.5"
+      ],
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.21 see the following documentation, which will be updated shortly for this release, for important instructions on how to upg…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:16354"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-r29c-68gh-xp6x",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Tomcat - HTTP/2 request headers not validated",
+      "url": "https://github.com/advisories/GHSA-r29c-68gh-xp6x",
+      "released": "2026-05-12T18:30:38Z",
+      "updated": "2026-08-31T21:04:40Z",
+      "cves": [
+        "CVE-2026-41293"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Maven: org.apache.tomcat.embed:tomcat-embed-core",
+        "Maven: org.apache.tomcat:tomcat",
+        "Maven: org.apache.tomcat:tomcat-coyote"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.apache.tomcat.embed:tomcat-embed-core 9.0.118",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.tomcat.embed:tomcat-embed-core 10.1.55",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.tomcat.embed:tomcat-embed-core 11.0.22",
+          "u": null
+        }
+      ],
+      "reviewed": true,
       "seen": "2026-11-26"
     },
     {

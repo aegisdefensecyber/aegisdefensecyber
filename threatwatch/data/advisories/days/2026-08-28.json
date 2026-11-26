@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-28",
-  "count": 38,
+  "count": 167,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1089",
@@ -847,6 +847,46 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "UBUNTU-CVE-2026-40019",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "An unauthenticated attacker can send a truncated quoted argument to the ManageSieve login process, which makes it spin in an infinite loop consuming CPU. This can cause degradation or denial of service for Sieve script …",
+      "released": "2026-08-28T00:00:00Z",
+      "updated": "2026-09-02T16:15:05Z",
+      "cves": [
+        "CVE-2026-40019"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: dovecot"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1205",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Heap-buffer-overflow in decode_get_fpga_diagnostics_settings_resp",
+      "released": "2026-08-28T00:19:58Z",
+      "updated": "2026-08-28T00:19:58Z",
+      "products": [
+        "OSS-Fuzz: nsmd"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1210",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Heap-buffer-overflow in decode_get_histogram_format_resp",
+      "released": "2026-08-28T00:21:29Z",
+      "updated": "2026-08-28T00:21:29Z",
+      "products": [
+        "OSS-Fuzz: nsmd"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-11352",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -922,6 +962,91 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2022-1650",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2022-1650 in eventsource - Patched by Root",
+      "released": "2026-08-28T04:58:09Z",
+      "updated": "2026-08-28T04:58:09Z",
+      "cves": [
+        "CVE-2022-1650"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: @rootio/eventsource",
+        "Root: eventsource"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in eventsource 1.0.7-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in @rootio/eventsource 1.0.7-root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2021-26707",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2021-26707 in merge-deep - Patched by Root",
+      "released": "2026-08-28T05:12:56Z",
+      "updated": "2026-08-28T05:12:56Z",
+      "cves": [
+        "CVE-2021-26707"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: @rootio/merge-deep",
+        "Root: merge-deep"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in merge-deep 3.0.2-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in @rootio/merge-deep 3.0.2-root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-54466",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-54466 in websocket-driver - Patched by Root",
+      "released": "2026-08-28T06:51:13Z",
+      "updated": "2026-08-28T06:51:13Z",
+      "cves": [
+        "CVE-2026-54466"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: @rootio/websocket-driver",
+        "Root: websocket-driver"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in websocket-driver 0.7.4-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in websocket-driver 0.6.5-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in @rootio/websocket-driver 0.7.4-root.io.1",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -1199,6 +1324,545 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ROOT-APP-NPM-CVE-2021-23368",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2021-23368 in postcss - Patched by Root",
+      "released": "2026-08-28T07:39:33Z",
+      "updated": "2026-08-28T07:39:33Z",
+      "cves": [
+        "CVE-2021-23368"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: @rootio/postcss",
+        "Root: postcss"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in postcss 7.0.36-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in @rootio/postcss 7.0.36-root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2021-23382",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2021-23382 in postcss - Patched by Root",
+      "released": "2026-08-28T07:39:33Z",
+      "updated": "2026-08-28T07:39:33Z",
+      "cves": [
+        "CVE-2021-23382"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: @rootio/postcss",
+        "Root: postcss"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in postcss 5.2.18-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in postcss 5.2.18-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in postcss 5.2.18-aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2023-44270",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2023-44270 in postcss - Patched by Root",
+      "released": "2026-08-28T07:43:07Z",
+      "updated": "2026-08-28T07:43:07Z",
+      "cves": [
+        "CVE-2023-44270"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: @rootio/postcss",
+        "Root: postcss"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in postcss 7.0.39-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in postcss 7.0.39-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in postcss 5.2.18-aikido.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98135",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80598 affecting package kernel 6.6.150.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80598",
+      "released": "2026-08-28T08:16:43Z",
+      "updated": "2026-08-30T05:26:50Z",
+      "cves": [
+        "CVE-2026-80598"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98057",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80684 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80684",
+      "released": "2026-08-28T08:16:53Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80684"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98081",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80678 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80678",
+      "released": "2026-08-28T08:16:53Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80678"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98114",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80681 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80681",
+      "released": "2026-08-28T08:16:53Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80681"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98156",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80679 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80679",
+      "released": "2026-08-28T08:16:53Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80679"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98165",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80680 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80680",
+      "released": "2026-08-28T08:16:53Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80680"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98072",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80691 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80691",
+      "released": "2026-08-28T08:16:54Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80691"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98051",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80702 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80702",
+      "released": "2026-08-28T08:16:55Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80702"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98168",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80703 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80703",
+      "released": "2026-08-28T08:16:55Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80703"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98184",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80700 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80700",
+      "released": "2026-08-28T08:16:55Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80700"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98060",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80708 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80708",
+      "released": "2026-08-28T08:16:56Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80708"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98099",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80706 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80706",
+      "released": "2026-08-28T08:16:56Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80706"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98108",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80707 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80707",
+      "released": "2026-08-28T08:16:56Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80707"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98120",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80709 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80709",
+      "released": "2026-08-28T08:16:56Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80709"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98193",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80710 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80710",
+      "released": "2026-08-28T08:16:56Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80710"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98105",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80714 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80714",
+      "released": "2026-08-28T08:16:57Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80714"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98138",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80718 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80718",
+      "released": "2026-08-28T08:16:57Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80718"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98142",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80721 affecting package kernel 6.6.150.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80721",
+      "released": "2026-08-28T08:16:57Z",
+      "updated": "2026-08-30T05:26:50Z",
+      "cves": [
+        "CVE-2026-80721"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98171",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80716 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80716",
+      "released": "2026-08-28T08:16:57Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80716"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98190",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80717 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80717",
+      "released": "2026-08-28T08:16:57Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80717"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98129",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80722 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80722",
+      "released": "2026-08-28T08:16:58Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-80722"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21672-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1262,6 +1926,37 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ROOT-APP-NPM-CVE-2026-55553",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-55553 in urllib - Patched by Root",
+      "released": "2026-08-28T10:38:09Z",
+      "updated": "2026-08-28T10:38:09Z",
+      "cves": [
+        "CVE-2026-55553"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/urllib",
+        "Root: urllib"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in urllib 3.27.3-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in urllib 2.44.0-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in @rootio/urllib 3.27.3-root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "NCSC-2026-0333",
       "src": "csaf_ncscnl",
       "vendor": "Wibu Systems",
@@ -1285,6 +1980,60 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RLSA-2026:60394",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: libxml2 security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:60394",
+      "released": "2026-08-28T12:08:28Z",
+      "updated": "2026-09-11T12:13:52Z",
+      "cves": [
+        "CVE-2026-11979"
+      ],
+      "products": [
+        "Rocky Linux: libxml2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libxml2 0:2.12.5-10.el10_2.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98418",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82250 affecting package rust 1.75.0-30",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82250",
+      "released": "2026-08-28T12:16:36Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-82250"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98430",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82250 affecting package rust 1.90.0-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82250",
+      "released": "2026-08-28T12:16:36Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-82250"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "NCSC-2026-0334",
       "src": "csaf_ncscnl",
       "vendor": "PaperCut",
@@ -1300,6 +2049,1935 @@
         "PaperCut"
       ],
       "lang": "nl",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-grafana-2026-17033",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "CVE-2026-17033 CVE Record",
+      "url": "https://grafana.com/security/security-advisories/cve-2026-17033",
+      "released": "2026-08-28T14:43:54Z",
+      "updated": "2026-09-01T18:02:11Z",
+      "cves": [
+        "CVE-2026-17033"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: grafana"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana 12.4.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana 13.1.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-6303",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Source-address critical option not enforced for non-public-key auth callbacks in golang.org/x/crypto/ssh",
+      "released": "2026-08-28T14:47:45Z",
+      "updated": "2026-08-28T14:47:45Z",
+      "cves": [
+        "CVE-2026-56854"
+      ],
+      "products": [
+        "Go: golang.org/x/crypto"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang.org/x/crypto 0.55.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-vault-2026-5006",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Vault Vulnerable to Privilege Escalation via Slash Injection in Templated Policy Paths",
+      "url": "https://discuss.hashicorp.com/t/hcsec-2026-32-vault-vulnerable-to-privilege-escalation-via-slash-injection-in-templated-policy-paths",
+      "released": "2026-08-28T14:58:43Z",
+      "updated": "2026-08-28T15:12:02Z",
+      "cves": [
+        "CVE-2026-5006"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: vault"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vault 2.0.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-8jqh-95g6-7jpj",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Phalcon: Non-constant-time HMAC verification in `Encryption\\Crypt::decrypt` (timing side-channel)",
+      "url": "https://github.com/advisories/GHSA-8jqh-95g6-7jpj",
+      "released": "2026-08-28T16:01:05Z",
+      "updated": "2026-08-28T16:01:05Z",
+      "cves": [
+        "CVE-2026-54736"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: phalcon/cphalcon"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in phalcon/cphalcon 5.14.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-x7rj-f32v-7jjg",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Phalcon: Catastrophic backtracking (ReDoS) in the default Phalcon Router route lead to remote unauthenticated DoS",
+      "url": "https://github.com/advisories/GHSA-x7rj-f32v-7jjg",
+      "released": "2026-08-28T16:06:31Z",
+      "updated": "2026-08-28T16:06:31Z",
+      "cves": [
+        "CVE-2026-57584"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: phalcon/cphalcon"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in phalcon/cphalcon 5.15.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-8x7x-83cf-c3pg",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Hatchet allows cross-tenant write/DoS to other tenants' workers via Dispatcher gRPC UpsertWorkerLabels and Unsubscribe",
+      "url": "https://github.com/advisories/GHSA-8x7x-83cf-c3pg",
+      "released": "2026-08-28T16:08:58Z",
+      "updated": "2026-08-28T16:08:58Z",
+      "cves": [
+        "CVE-2026-54746"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/hatchet-dev/hatchet"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/hatchet-dev/hatchet 0.91.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-2vh6-hw4j-32ww",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "gix-packetline: reachable panic on empty side-band packet (pre-auth network DoS)",
+      "url": "https://github.com/advisories/GHSA-2vh6-hw4j-32ww",
+      "released": "2026-08-28T16:09:59Z",
+      "updated": "2026-08-28T16:09:59Z",
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: gix-packetline"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gix-packetline 0.21.5",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-fmgp-q6jx-gg3x",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "KubeVela Terraform remote loader DoS via unbounded file read",
+      "url": "https://github.com/advisories/GHSA-fmgp-q6jx-gg3x",
+      "released": "2026-08-28T16:13:19Z",
+      "updated": "2026-08-28T16:13:19Z",
+      "cves": [
+        "CVE-2026-55108"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/oam-dev/kubevela"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/oam-dev/kubevela 1.9.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/oam-dev/kubevela 1.10.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/oam-dev/kubevela 1.11.0-alpha.4",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-jw39-3688-r4rx",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Trestle has Server-Side Template Injection (SSTI) via Recursive Template Re-evaluation of Untrusted Data",
+      "url": "https://github.com/advisories/GHSA-jw39-3688-r4rx",
+      "released": "2026-08-28T16:15:38Z",
+      "updated": "2026-08-28T16:15:38Z",
+      "cves": [
+        "CVE-2026-54757"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: compliance-trestle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in compliance-trestle 3.12.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in compliance-trestle 4.1.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98391",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-37236 affecting package opa 0.63.0-5",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-37236",
+      "released": "2026-08-28T16:17:46Z",
+      "updated": "2026-09-16T06:39:01Z",
+      "cves": [
+        "CVE-2026-37236"
+      ],
+      "products": [
+        "Azure Linux: opa"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-p7gw-2pcp-5pf8",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Klever: Marketplace settlement mints KLV when referral % + royalty % exceed the bid (negative seller share silently skipped)",
+      "url": "https://github.com/advisories/GHSA-p7gw-2pcp-5pf8",
+      "released": "2026-08-28T16:22:15Z",
+      "updated": "2026-08-28T16:22:15Z",
+      "cves": [
+        "CVE-2026-54754"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/klever-io/klever-go"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/klever-io/klever-go 1.7.19",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-cgc5-v3f2-8m2v",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Klever: Integer overflow in split-royalty validation enables unbounded minting of KLV (native token)",
+      "url": "https://github.com/advisories/GHSA-cgc5-v3f2-8m2v",
+      "released": "2026-08-28T16:25:48Z",
+      "updated": "2026-08-28T16:25:48Z",
+      "cves": [
+        "CVE-2026-54755"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/klever-io/klever-go"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/klever-io/klever-go 1.7.19",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-mf5c-hw34-4hpp",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Aqua's archive extraction follows attacker-planted symlinks, allowing writes outside the install directory",
+      "url": "https://github.com/advisories/GHSA-mf5c-hw34-4hpp",
+      "released": "2026-08-28T16:27:08Z",
+      "updated": "2026-08-28T16:27:08Z",
+      "cves": [
+        "CVE-2026-55569"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/aquaproj/aqua/v2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/aquaproj/aqua/v2 2.60.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-2wvm-8mvp-22qv",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Pocket-ID has an Open Redirect on the OIDC /authorize page via unvalidated redirect_uri with prompt=none",
+      "url": "https://github.com/advisories/GHSA-2wvm-8mvp-22qv",
+      "released": "2026-08-28T16:28:20Z",
+      "updated": "2026-08-28T16:28:20Z",
+      "cves": [
+        "CVE-2026-55834"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/pocket-id/pocket-id/backend"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/pocket-id/pocket-id/backend 2.9.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-gpwf-4h98-v82q",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "datadog-opentelemetry has unbounded W3C tracestate parsing that may lead to DoS",
+      "url": "https://github.com/advisories/GHSA-gpwf-4h98-v82q",
+      "released": "2026-08-28T16:35:03Z",
+      "updated": "2026-08-28T16:35:03Z",
+      "cves": [
+        "CVE-2026-54788"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "crates.io: datadog-opentelemetry"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in datadog-opentelemetry 0.3.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-f27p-pw2p-9pr4",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Vikunja has a project duplication bypasses write-permission check on the target parent project",
+      "url": "https://github.com/advisories/GHSA-f27p-pw2p-9pr4",
+      "released": "2026-08-28T16:37:26Z",
+      "updated": "2026-08-28T16:37:26Z",
+      "cves": [
+        "CVE-2026-54766"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Go: code.vikunja.io/api"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in code.vikunja.io/api 2.4.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-44v6-7fxq-vgf4",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Vikunja has an incomplete fix for CVE-2026-35595: Write-only user can detach shared project from parent hierarchy via parent_project_id=0",
+      "url": "https://github.com/advisories/GHSA-44v6-7fxq-vgf4",
+      "released": "2026-08-28T16:39:08Z",
+      "updated": "2026-08-28T16:39:08Z",
+      "cves": [
+        "CVE-2026-55064"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Go: code.vikunja.io/api"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in code.vikunja.io/api 2.4.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-gg93-x632-9ccv",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Vikunja vulnerable to Improper Authorization and Authorization Bypass Through User-Controlled Key",
+      "url": "https://github.com/advisories/GHSA-gg93-x632-9ccv",
+      "released": "2026-08-28T16:50:34Z",
+      "updated": "2026-08-28T16:50:34Z",
+      "cves": [
+        "CVE-2026-55065"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: code.vikunja.io/api"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in code.vikunja.io/api 2.4.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-5pg6-m483-7vrg",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Vikunja has cross-tenant IDOR in kanban move-task endpoint via unauthorized body task_id",
+      "url": "https://github.com/advisories/GHSA-5pg6-m483-7vrg",
+      "released": "2026-08-28T16:52:16Z",
+      "updated": "2026-08-28T16:52:16Z",
+      "cves": [
+        "CVE-2026-55066"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: code.vikunja.io/api"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in code.vikunja.io/api 2.4.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-569v-q83c-3j3g",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Vikunja vulnerable to authenticated cross-tenant kanban-bucket relocation via `project_view_id` mass-assignment",
+      "url": "https://github.com/advisories/GHSA-569v-q83c-3j3g",
+      "released": "2026-08-28T16:55:16Z",
+      "updated": "2026-08-28T16:55:16Z",
+      "cves": [
+        "CVE-2026-55067"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Go: code.vikunja.io/api"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in code.vikunja.io/api 2.4.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-x8mj-6p3q-g5pp",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "free5GC NRF nnrf-nfm lacks NF Profile input validation — enables NF Registration Poisoning with arbitrary service endpoints",
+      "url": "https://github.com/advisories/GHSA-x8mj-6p3q-g5pp",
+      "released": "2026-08-28T16:58:13Z",
+      "updated": "2026-08-28T16:58:13Z",
+      "cves": [
+        "CVE-2026-55068"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/free5gc/free5gc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/free5gc/free5gc 4.2.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-3g44-3m7x-cgg2",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Yamcs vulnerable to authenticated RCE via StreamSQL aggregate-compiler column-name injection in Yamcs `executeSql`",
+      "url": "https://github.com/advisories/GHSA-3g44-3m7x-cgg2",
+      "released": "2026-08-28T17:06:56Z",
+      "updated": "2026-08-28T17:06:56Z",
+      "cves": [
+        "CVE-2026-55511"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Maven: org.yamcs:yamcs-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.13.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.12.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-962x-ccwf-8x6p",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Yamcs Core API has Multiple Missing Function Level Access Control vulnerabilities",
+      "url": "https://github.com/advisories/GHSA-962x-ccwf-8x6p",
+      "released": "2026-08-28T17:09:35Z",
+      "updated": "2026-08-28T17:09:35Z",
+      "cves": [
+        "CVE-2026-55521"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Maven: org.yamcs:yamcs-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.13.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.12.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-fwww-cp23-7f5g",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Yamcs's WebSocket subscription handlers omit the privilege checks their REST siblings enforce",
+      "url": "https://github.com/advisories/GHSA-fwww-cp23-7f5g",
+      "released": "2026-08-28T17:10:26Z",
+      "updated": "2026-08-28T17:10:26Z",
+      "cves": [
+        "CVE-2026-55545"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.yamcs:yamcs-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.12.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.13.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-cvw4-55pp-3hfq",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Yamcs's Missing Authorization on Role and Privilege Enumeration Endpoints Allows Any Authenticated User to Disclose Full Security Configuration",
+      "url": "https://github.com/advisories/GHSA-cvw4-55pp-3hfq",
+      "released": "2026-08-28T17:13:23Z",
+      "updated": "2026-08-28T17:13:23Z",
+      "cves": [
+        "CVE-2026-55547"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.yamcs:yamcs-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.13.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.12.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-8xjq-pr36-ccgf",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Yamcs: Insecure Direct Object Reference (IDOR) in PacketsApi allows unprivileged users to dump all telemetry packets",
+      "url": "https://github.com/advisories/GHSA-8xjq-pr36-ccgf",
+      "released": "2026-08-28T17:15:01Z",
+      "updated": "2026-08-28T17:15:02Z",
+      "cves": [
+        "CVE-2026-55548"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.yamcs:yamcs-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.13.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.12.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-rxpg-wjf8-qv9c",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Yamcs has Reflected XSS in the URL of the Authorize Endpoint",
+      "url": "https://github.com/advisories/GHSA-rxpg-wjf8-qv9c",
+      "released": "2026-08-28T17:17:50Z",
+      "updated": "2026-08-28T17:17:50Z",
+      "cves": [
+        "CVE-2026-55549"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.yamcs:yamcs-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.9.4",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-9jg3-g3wh-w9pj",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Yamcs has Unauthenticated Directory Traversal",
+      "url": "https://github.com/advisories/GHSA-9jg3-g3wh-w9pj",
+      "released": "2026-08-28T17:20:42Z",
+      "updated": "2026-08-28T17:20:42Z",
+      "cves": [
+        "CVE-2026-55552"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Maven: org.yamcs:yamcs-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.12.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-73mf-m39p-wpm9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Yamcs vulnerable to Remote Code Execution via instance-template argument YAML injection (createInstance)",
+      "url": "https://github.com/advisories/GHSA-73mf-m39p-wpm9",
+      "released": "2026-08-28T17:23:04Z",
+      "updated": "2026-08-28T17:23:04Z",
+      "cves": [
+        "CVE-2026-55559"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Maven: org.yamcs:yamcs-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.13.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.12.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-c64q-hj4j-375f",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Yamcs vulnerable to authenticated remote code execution via unescaped StreamSQL `LIKE` pattern compiled by Janino (`LikeExpression`)",
+      "url": "https://github.com/advisories/GHSA-c64q-hj4j-375f",
+      "released": "2026-08-28T17:30:32Z",
+      "updated": "2026-08-28T17:30:32Z",
+      "cves": [
+        "CVE-2026-55565"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Maven: org.yamcs:yamcs-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.13.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.12.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-9272-wg2r-7xmx",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Yamcs has DOM XSS in Extension Routing",
+      "url": "https://github.com/advisories/GHSA-9272-wg2r-7xmx",
+      "released": "2026-08-28T17:32:16Z",
+      "updated": "2026-08-28T17:32:16Z",
+      "cves": [
+        "CVE-2026-55566"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.yamcs:yamcs-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.13.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.yamcs:yamcs-core 5.12.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-whrx-mmgr-gpcf",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT has CSV formula injection in Activity Report export",
+      "url": "https://github.com/advisories/GHSA-whrx-mmgr-gpcf",
+      "released": "2026-08-28T17:46:16Z",
+      "updated": "2026-08-28T17:46:16Z",
+      "cves": [
+        "CVE-2026-55452"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-vgx7-c78r-69w9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT has an authorization bypass on bulk editing users",
+      "url": "https://github.com/advisories/GHSA-vgx7-c78r-69w9",
+      "released": "2026-08-28T17:48:36Z",
+      "updated": "2026-08-28T17:48:36Z",
+      "cves": [
+        "CVE-2026-55460"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-wg2f-x2c2-c4rp",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT has an Open Redirect After User Edit",
+      "url": "https://github.com/advisories/GHSA-wg2f-x2c2-c4rp",
+      "released": "2026-08-28T17:57:04Z",
+      "updated": "2026-08-28T17:57:04Z",
+      "cves": [
+        "CVE-2026-55461"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-fc33-6w3q-538h",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT has an authorization bypass on print inventory page",
+      "url": "https://github.com/advisories/GHSA-fc33-6w3q-538h",
+      "released": "2026-08-28T17:57:40Z",
+      "updated": "2026-08-28T17:57:40Z",
+      "cves": [
+        "CVE-2026-55462"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-r52f-r9v5-66xr",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT vulnerable to stored XSS via Markdown custom field",
+      "url": "https://github.com/advisories/GHSA-r52f-r9v5-66xr",
+      "released": "2026-08-28T17:58:55Z",
+      "updated": "2026-08-28T17:58:55Z",
+      "cves": [
+        "CVE-2026-55464"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-jhph-5q74-pmfx",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT vulnerable to stored XSS via inline-served attachment",
+      "url": "https://github.com/advisories/GHSA-jhph-5q74-pmfx",
+      "released": "2026-08-28T17:59:54Z",
+      "updated": "2026-08-28T17:59:54Z",
+      "cves": [
+        "CVE-2026-55466"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-xr9m-gphc-9p63",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT has a path traversal vulnerability via CSV import `image` field",
+      "url": "https://github.com/advisories/GHSA-xr9m-gphc-9p63",
+      "released": "2026-08-28T18:00:38Z",
+      "updated": "2026-08-28T18:00:38Z",
+      "cves": [
+        "CVE-2026-55469"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-8w8c-8mx9-52cw",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT's API Location Creation Bypasses FMCS Parent-Child Company Boundary Validation",
+      "url": "https://github.com/advisories/GHSA-8w8c-8mx9-52cw",
+      "released": "2026-08-28T18:01:06Z",
+      "updated": "2026-08-28T18:01:06Z",
+      "cves": [
+        "CVE-2026-55472"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-c6f4-wj38-m3g3",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT vulnerable to directory traversal in displaySig",
+      "url": "https://github.com/advisories/GHSA-c6f4-wj38-m3g3",
+      "released": "2026-08-28T18:01:32Z",
+      "updated": "2026-08-28T18:03:15Z",
+      "cves": [
+        "CVE-2026-55474"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.5.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-5wx7-xq8j-v4qm",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT's import created_by can be overwritten",
+      "url": "https://github.com/advisories/GHSA-5wx7-xq8j-v4qm",
+      "released": "2026-08-28T18:01:56Z",
+      "updated": "2026-08-28T18:01:56Z",
+      "cves": [
+        "CVE-2026-55475"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-53jc-27pc-x8r8",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT Vulnerable to Unauthorized Asset Request Cancellation via Unguarded cancel_by_admin Parameter",
+      "url": "https://github.com/advisories/GHSA-53jc-27pc-x8r8",
+      "released": "2026-08-28T18:02:16Z",
+      "updated": "2026-08-28T18:03:45Z",
+      "cves": [
+        "CVE-2026-55476"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-crv3-j83j-f3r6",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT has missing object-level authorization in Kits API",
+      "url": "https://github.com/advisories/GHSA-crv3-j83j-f3r6",
+      "released": "2026-08-28T18:02:31Z",
+      "updated": "2026-08-28T18:04:02Z",
+      "cves": [
+        "CVE-2026-55478"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-8frh-vhgh-64cf",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT has incorrect permission for legacy license checkin API",
+      "url": "https://github.com/advisories/GHSA-8frh-vhgh-64cf",
+      "released": "2026-08-28T18:02:55Z",
+      "updated": "2026-08-28T18:02:55Z",
+      "cves": [
+        "CVE-2026-55479"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-w7qw-5wfv-gwx9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT has CSS Injection via `header_color` Setting",
+      "url": "https://github.com/advisories/GHSA-w7qw-5wfv-gwx9",
+      "released": "2026-08-28T18:04:29Z",
+      "updated": "2026-08-28T18:04:29Z",
+      "cves": [
+        "CVE-2026-55481"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-35cr-9hqq-p2mg",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT: Cross-company deletion of pending checkout acceptances via unscoped report endpoint",
+      "url": "https://github.com/advisories/GHSA-35cr-9hqq-p2mg",
+      "released": "2026-08-28T18:04:57Z",
+      "updated": "2026-08-28T18:04:57Z",
+      "cves": [
+        "CVE-2026-55515"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-575r-357h-fhch",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT vulnerable to cross-company asset maintenance re-parenting via API update",
+      "url": "https://github.com/advisories/GHSA-575r-357h-fhch",
+      "released": "2026-08-28T18:06:05Z",
+      "updated": "2026-08-28T18:06:05Z",
+      "cves": [
+        "CVE-2026-55516"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-q79r-r9xg-r863",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Graylog Server: System Catalog titles endpoint can be used to retrieve values of protected database fields",
+      "url": "https://github.com/advisories/GHSA-q79r-r9xg-r863",
+      "released": "2026-08-28T18:09:29Z",
+      "updated": "2026-08-28T18:09:29Z",
+      "cves": [
+        "CVE-2026-55425"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.graylog2:graylog2-server"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.graylog2:graylog2-server 7.1.4",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-p6gw-4frg-j7jw",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "WsgiDAV MySQL provider has a blind SQL injection",
+      "url": "https://github.com/advisories/GHSA-p6gw-4frg-j7jw",
+      "released": "2026-08-28T18:12:17Z",
+      "updated": "2026-08-28T18:12:17Z",
+      "cves": [
+        "CVE-2026-55509"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: WsgiDAV"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in WsgiDAV 4.3.5",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-2gh4-jmwq-rr8w",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "piccolo-admin has a privilege escalation issue - admin to superuser via session-token disclosure in GET /api/tables/sessions/.",
+      "url": "https://github.com/advisories/GHSA-2gh4-jmwq-rr8w",
+      "released": "2026-08-28T18:14:13Z",
+      "updated": "2026-08-28T18:14:13Z",
+      "cves": [
+        "CVE-2026-55485"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: piccolo-admin"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in piccolo-admin 1.14.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-298f-872v-2rcx",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "ORAS CLI: Cyclic Referrer Graph Can Cause Unbounded Recursion and Resource Consumption",
+      "url": "https://github.com/advisories/GHSA-298f-872v-2rcx",
+      "released": "2026-08-28T18:19:15Z",
+      "updated": "2026-08-28T18:19:15Z",
+      "cves": [
+        "CVE-2026-55588"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Go: oras.land/oras"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in oras.land/oras 1.3.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-w98g-5w9p-p3rc",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Bifrost's SSRF deny-list is incomplete: isPublicIP permits CGNAT, IPv6 6to4/NAT64, and site-local in FetchAndEncodeURL",
+      "url": "https://github.com/advisories/GHSA-w98g-5w9p-p3rc",
+      "released": "2026-08-28T18:26:02Z",
+      "updated": "2026-08-28T18:26:02Z",
+      "cves": [
+        "CVE-2026-55245"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/maximhq/bifrost/core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/maximhq/bifrost/core 1.5.17",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-786w-p5pm-cvgh",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "phpSysInfo has an IP allowlist (PSI_ALLOWED) bypass via spoofed X-Forwarded-For / Client-IP headers",
+      "url": "https://github.com/advisories/GHSA-786w-p5pm-cvgh",
+      "released": "2026-08-28T18:30:55Z",
+      "updated": "2026-08-28T18:30:55Z",
+      "cves": [
+        "CVE-2026-55584"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: phpsysinfo/phpsysinfo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in phpsysinfo/phpsysinfo 3.4.6",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-8gmq-j984-vp4r",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "9router: Unauthenticated LLM proxy access via /codex rewrite authorization bypass",
+      "url": "https://github.com/advisories/GHSA-8gmq-j984-vp4r",
+      "released": "2026-08-28T18:32:01Z",
+      "updated": "2026-08-28T18:32:01Z",
+      "cves": [
+        "CVE-2026-55638"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: 9router"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in 9router 0.5.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-86m2-fcxq-5q7c",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "9router: Unauthenticated `/v1` proxy access via `Host`-header spoofing → open AI relay + SSRF",
+      "url": "https://github.com/advisories/GHSA-86m2-fcxq-5q7c",
+      "released": "2026-08-28T18:33:20Z",
+      "updated": "2026-08-28T18:33:20Z",
+      "cves": [
+        "CVE-2026-55641"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: 9router"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in 9router 0.5.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-9pwq-gcrx-wghh",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Buffa has a Use-After-Free in OwnedView via Unsound 'static Lifetime Promotion in Deref",
+      "url": "https://github.com/advisories/GHSA-9pwq-gcrx-wghh",
+      "released": "2026-08-28T18:33:58Z",
+      "updated": "2026-08-28T18:33:58Z",
+      "cves": [
+        "CVE-2026-55406"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: buffa"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in buffa 0.7.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-f9qc-qg88-7pq5",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Buffa Vulnerable to Memory Exhaustion Denial of Service in decode_unknown_field via Unbounded Allocation",
+      "url": "https://github.com/advisories/GHSA-f9qc-qg88-7pq5",
+      "released": "2026-08-28T18:34:22Z",
+      "updated": "2026-08-28T18:34:22Z",
+      "cves": [
+        "CVE-2026-55407"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: buffa"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in buffa 0.8.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-p68j-q7hf-3qcp",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Spinnaker: Improper yaml processing on kustomize bake operations",
+      "url": "https://github.com/advisories/GHSA-p68j-q7hf-3qcp",
+      "released": "2026-08-28T18:35:06Z",
+      "updated": "2026-08-28T18:35:06Z",
+      "cves": [
+        "CVE-2026-55175"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Maven: io.spinnaker.rosco:rosco-manifests"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in io.spinnaker.rosco:rosco-manifests 2025.3.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in io.spinnaker.rosco:rosco-manifests 2025.4.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in io.spinnaker.rosco:rosco-manifests 2026.0.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-jqvf-j3ww-r8c7",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "PowSyBl Core has Command Injection in LocalCommandExecutor-s",
+      "url": "https://github.com/advisories/GHSA-jqvf-j3ww-r8c7",
+      "released": "2026-08-28T18:37:28Z",
+      "updated": "2026-08-28T18:37:28Z",
+      "cves": [
+        "CVE-2026-55673"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Maven: com.powsybl:powsybl-computation-local"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in com.powsybl:powsybl-computation-local 7.2.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-x5g3-w747-2h8q",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "plone.app.portlets vulnerable to denial of service via RSS feed portlet",
+      "url": "https://github.com/advisories/GHSA-x5g3-w747-2h8q",
+      "released": "2026-08-28T18:41:35Z",
+      "updated": "2026-08-28T18:41:35Z",
+      "cves": [
+        "CVE-2026-55248"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "PyPI: plone.app.portlets"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in plone.app.portlets 7.0.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in plone.app.portlets 6.0.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in plone.app.portlets 5.0.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-wjmf-p669-5m5p",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Protego has exponential backtracking ReDoS in robots.txt URL wildcard matching",
+      "url": "https://github.com/advisories/GHSA-wjmf-p669-5m5p",
+      "released": "2026-08-28T18:43:02Z",
+      "updated": "2026-08-28T18:43:02Z",
+      "cves": [
+        "CVE-2026-55520"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: Protego"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in Protego 0.6.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-2p9g-x3cv-5hh4",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Private Weblate projects vulnerable to observable object existence disclosure via globally scoped object lookups",
+      "url": "https://github.com/advisories/GHSA-2p9g-x3cv-5hh4",
+      "released": "2026-08-28T18:46:54Z",
+      "updated": "2026-08-28T18:46:54Z",
+      "cves": [
+        "CVE-2026-55227"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: weblate"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in weblate 2026.7",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-2q2q-jr9g-v9rf",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Weblate has IDOR in GroupViewSet that allows authenticated project manager to gain unauthorized read access to any private project",
+      "url": "https://github.com/advisories/GHSA-2q2q-jr9g-v9rf",
+      "released": "2026-08-28T18:47:29Z",
+      "updated": "2026-08-28T18:47:29Z",
+      "cves": [
+        "CVE-2026-55228"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: Weblate"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in Weblate 2026.7",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-r82h-mqw3-fc56",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "plone.app.event vulnerable to denial of service via iCalendar import",
+      "url": "https://github.com/advisories/GHSA-r82h-mqw3-fc56",
+      "released": "2026-08-28T18:59:42Z",
+      "updated": "2026-08-28T18:59:42Z",
+      "cves": [
+        "CVE-2026-55247"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "PyPI: plone.app.event"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in plone.app.event 5.2.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in plone.app.event 6.0.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-cqhc-2h57-wpxf",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "MariaDB's connector leaks the cleartext password to an MitM despite `ssl: true`",
+      "url": "https://github.com/advisories/GHSA-cqhc-2h57-wpxf",
+      "released": "2026-08-28T19:03:38Z",
+      "updated": "2026-08-28T19:03:38Z",
+      "cves": [
+        "CVE-2026-55215"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb 3.2.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 3.3.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 3.4.6",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-h854-c3m3-mh5v",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Pimcore: Account Takeover via Password Reset URL Injection allows unauthenticated attacker to hijack any admin account with 2FA bypass",
+      "url": "https://github.com/advisories/GHSA-h854-c3m3-mh5v",
+      "released": "2026-08-28T19:04:16Z",
+      "updated": "2026-08-28T19:04:16Z",
+      "cves": [
+        "CVE-2026-55207"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: pimcore/studio-backend-bundle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pimcore/studio-backend-bundle 2025.4.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in pimcore/studio-backend-bundle 2026.1.6",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-79cw-hfcc-7mw9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Pimcore: SQL Injection via Column Name in DateFilter allows authenticated user to extract arbitrary database data including admin password hashes",
+      "url": "https://github.com/advisories/GHSA-79cw-hfcc-7mw9",
+      "released": "2026-08-28T19:04:54Z",
+      "updated": "2026-08-28T19:04:54Z",
+      "cves": [
+        "CVE-2026-55208"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: pimcore/studio-backend-bundle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pimcore/studio-backend-bundle 2025.4.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in pimcore/studio-backend-bundle 2026.1.6",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-f97c-ph8j-8vff",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Pimcore: Insufficient Permission Check on Class Definition Creation Endpoint Allows Privilege Escalation",
+      "url": "https://github.com/advisories/GHSA-f97c-ph8j-8vff",
+      "released": "2026-08-28T19:05:25Z",
+      "updated": "2026-08-28T19:05:25Z",
+      "cves": [
+        "CVE-2026-55212"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: pimcore/studio-backend-bundle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pimcore/studio-backend-bundle 2026.1.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in pimcore/studio-backend-bundle 2026.1.6",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-w23p-wrp7-ch38",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Pimcore Hotspotimage getDataFromResource() unrestricted Serialize::unserialize over object-store column (PHP Object Injection, CWE-502)",
+      "url": "https://github.com/advisories/GHSA-w23p-wrp7-ch38",
+      "released": "2026-08-28T19:13:25Z",
+      "updated": "2026-08-28T19:13:25Z",
+      "cves": [
+        "CVE-2026-55220"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Packagist: pimcore/pimcore"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pimcore/pimcore 2026.1.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in pimcore/pimcore 12.3.10",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-9x44-4gxf-8c25",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Pimcore Vulnerable to Remote Code Execution via DataObject Class-Definition Field Name",
+      "url": "https://github.com/advisories/GHSA-9x44-4gxf-8c25",
+      "released": "2026-08-28T19:17:42Z",
+      "updated": "2026-08-28T19:17:42Z",
+      "cves": [
+        "CVE-2026-55634"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Packagist: pimcore/pimcore"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pimcore/pimcore 12.3.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in pimcore/pimcore 2026.1.6",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-hr6j-w4mw-g9mj",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "alos-http has unauthenticated remote DoS: malformed path starting with \"?\" triggers out-of-bounds panic in sanitizeRequestPath, crashing entire server",
+      "url": "https://github.com/advisories/GHSA-hr6j-w4mw-g9mj",
+      "released": "2026-08-28T19:19:38Z",
+      "updated": "2026-08-28T19:19:38Z",
+      "cves": [
+        "CVE-2026-55484"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/guno1928/alos-http"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/guno1928/alos-http 0.0.0-20260617230736-314b6783e196",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-73p9-6hrp-8qhr",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "AIIR verification and policy gates could report success without enforcing the control (fail-open)",
+      "url": "https://github.com/advisories/GHSA-73p9-6hrp-8qhr",
+      "released": "2026-08-28T19:20:32Z",
+      "updated": "2026-08-28T19:20:32Z",
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: aiir"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in aiir 1.7.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-f2xf-7x3g-4272",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "PrivateBin has stored Cross-Side-Scripting (XSS) vulnerability in attachment download link via dangerous MIME types with required user-interaction",
+      "url": "https://github.com/advisories/GHSA-f2xf-7x3g-4272",
+      "released": "2026-08-28T20:22:59Z",
+      "updated": "2026-08-28T20:23:00Z",
+      "cves": [
+        "CVE-2026-55696"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: privatebin/privatebin"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in privatebin/privatebin 2.0.5",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-xrjc-c68j-hp7w",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "PrivateBin has reflected JSON injection in backend responses via unescaped REQUEST_URI",
+      "url": "https://github.com/advisories/GHSA-xrjc-c68j-hp7w",
+      "released": "2026-08-28T20:25:34Z",
+      "updated": "2026-08-28T20:25:34Z",
+      "cves": [
+        "CVE-2026-55891"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Packagist: privatebin/privatebin"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in privatebin/privatebin 2.0.5",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-v358-wf77-39xv",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "klever-go: Percentage-transfer royalty skips the source debit at exactly-100% splits",
+      "url": "https://github.com/advisories/GHSA-v358-wf77-39xv",
+      "released": "2026-08-28T20:27:44Z",
+      "updated": "2026-08-28T20:27:44Z",
+      "cves": [
+        "CVE-2026-55763"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/klever-io/klever-go"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/klever-io/klever-go 1.7.19-rc4",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-x626-fcwx-f5pc",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Portainer has Unauthenticated Restore Endpoint that Allows Admin Takeover on Uninitialized Instances",
+      "url": "https://github.com/advisories/GHSA-x626-fcwx-f5pc",
+      "released": "2026-08-28T20:28:19Z",
+      "updated": "2026-08-28T20:28:19Z",
+      "cves": [
+        "CVE-2026-55761"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/portainer/portainer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/portainer/portainer 2.39.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/portainer/portainer 2.43.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-p378-jp5r-gpgw",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "arc has unauthenticated cluster node admission when `cluster.shared_secret` is unset",
+      "url": "https://github.com/advisories/GHSA-p378-jp5r-gpgw",
+      "released": "2026-08-28T20:32:57Z",
+      "updated": "2026-08-28T20:32:57Z",
+      "cves": [
+        "CVE-2026-55678"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/basekick-labs/arc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/basekick-labs/arc 0.0.0-20260615160325-38402ad2ebdd",
+          "u": null
+        }
+      ],
+      "reviewed": true,
       "seen": "2026-11-26"
     },
     {
@@ -1352,6 +4030,498 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-42r5-vhpq-m858",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "MariaDB has Cleartext Transmission of Sensitive Information and Insufficiently Protected Credentials",
+      "url": "https://github.com/advisories/GHSA-42r5-vhpq-m858",
+      "released": "2026-08-28T22:04:53Z",
+      "updated": "2026-08-28T22:04:53Z",
+      "cves": [
+        "CVE-2026-55854"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb 3.2.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 3.3.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 3.4.6",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-mrpp-v6pg-p54x",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "klever-go: SFT add-quantity `int64` overflow bypasses a finite per-nonce MaxSupply",
+      "url": "https://github.com/advisories/GHSA-mrpp-v6pg-p54x",
+      "released": "2026-08-28T22:08:56Z",
+      "updated": "2026-08-28T22:08:56Z",
+      "cves": [
+        "CVE-2026-55764"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/klever-io/klever-go"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/klever-io/klever-go 1.7.19",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-gqr6-r77p-c2pj",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Fortigate syslog message parser can be exploited to modify or delete fields from the original message",
+      "url": "https://github.com/advisories/GHSA-gqr6-r77p-c2pj",
+      "released": "2026-08-28T22:13:00Z",
+      "updated": "2026-08-28T22:13:00Z",
+      "cves": [
+        "CVE-2026-55841"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Maven: org.graylog2:graylog2-server"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.graylog2:graylog2-server 6.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.graylog2:graylog2-server 7.0.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.graylog2:graylog2-server 7.1.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-j769-9gv9-65gr",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Graylog token revocation endpoint allows authenticated users to delete other users’ access tokens",
+      "url": "https://github.com/advisories/GHSA-j769-9gv9-65gr",
+      "released": "2026-08-28T22:15:41Z",
+      "updated": "2026-08-28T22:15:41Z",
+      "cves": [
+        "CVE-2026-55867"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.graylog2:graylog2-server"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.graylog2:graylog2-server 6.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.graylog2:graylog2-server 7.0.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.graylog2:graylog2-server 7.1.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-hgpf-8634-g44c",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "SeaweedFS: Improper authorization in the S3Tables / Iceberg REST management API lets a low-privileged S3 user enumerate administrator-owned table buckets",
+      "url": "https://github.com/advisories/GHSA-hgpf-8634-g44c",
+      "released": "2026-08-28T22:16:43Z",
+      "updated": "2026-08-28T22:16:43Z",
+      "cves": [
+        "CVE-2026-55873"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/seaweedfs/seaweedfs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/seaweedfs/seaweedfs 0.0.0-20260614205536-b13463880c1f",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-56wq-x3wv-3ff4",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "SeaweedFS: Path traversal in the S3 gateway X-Amz-Copy-Source header allows cross-bucket object read",
+      "url": "https://github.com/advisories/GHSA-56wq-x3wv-3ff4",
+      "released": "2026-08-28T22:17:33Z",
+      "updated": "2026-08-28T22:17:33Z",
+      "cves": [
+        "CVE-2026-55874"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/seaweedfs/seaweedfs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/seaweedfs/seaweedfs 0.0.0-20260612000715-b44cf51fe931",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-m4g4-86qc-v8w7",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "silverstripe/versioned has XSS in archive admin restore",
+      "url": "https://github.com/advisories/GHSA-m4g4-86qc-v8w7",
+      "released": "2026-08-28T22:19:32Z",
+      "updated": "2026-08-28T22:19:32Z",
+      "cves": [
+        "CVE-2026-55779"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: silverstripe/versioned"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in silverstripe/versioned 3.2.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-334q-h5g3-fpxv",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "free5GC AUSF authentication contexts can be overwritten by concurrent requests for the same SUPI",
+      "url": "https://github.com/advisories/GHSA-334q-h5g3-fpxv",
+      "released": "2026-08-28T22:24:11Z",
+      "updated": "2026-08-28T22:24:12Z",
+      "cves": [
+        "CVE-2026-55784"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/free5gc/ausf"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-fp46-6vfw-gc9c",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "free5GC AUSF uses non-constant-time authentication comparisons and logs XRES* in 5G-AKA",
+      "url": "https://github.com/advisories/GHSA-fp46-6vfw-gc9c",
+      "released": "2026-08-28T22:26:16Z",
+      "updated": "2026-08-28T22:26:16Z",
+      "cves": [
+        "CVE-2026-55785"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Go: github.com/free5gc/ausf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/free5gc/ausf 1.4.5",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-5v29-34h8-v68r",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "MapFish Print has XXE that allows reading arbitrary files of certain types",
+      "url": "https://github.com/advisories/GHSA-5v29-34h8-v68r",
+      "released": "2026-08-28T22:33:35Z",
+      "updated": "2026-08-28T22:33:35Z",
+      "cves": [
+        "CVE-2026-55848"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Maven: org.mapfish.print:print-lib",
+        "Maven: org.mapfish.print:print-servlet",
+        "Maven: org.mapfish:print.print-servlet"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.mapfish.print:print-lib 3.28.30",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.mapfish:print.print-servlet 3.28.30",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.mapfish.print:print-lib 3.30.32",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-j5g3-42wp-gqm3",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Snipe-IT has an Improper Privilege Management issue",
+      "url": "https://github.com/advisories/GHSA-j5g3-42wp-gqm3",
+      "released": "2026-08-28T22:37:24Z",
+      "updated": "2026-08-28T22:37:24Z",
+      "cves": [
+        "CVE-2026-55843"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: snipe/snipe-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snipe/snipe-it 8.6.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-g9jj-cgmh-9f38",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "MariaDB has cleartext password disclosure to a MITM on the initial-handshake",
+      "url": "https://github.com/advisories/GHSA-g9jj-cgmh-9f38",
+      "released": "2026-08-28T22:41:56Z",
+      "updated": "2026-08-28T22:41:56Z",
+      "cves": [
+        "CVE-2026-55856"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.mariadb.jdbc:mariadb-java-client"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.mariadb.jdbc:mariadb-java-client 2.7.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.mariadb.jdbc:mariadb-java-client 3.3.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.mariadb.jdbc:mariadb-java-client 3.4.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-qxvw-fvwx-5cp7",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "org.mariadb.jdbc:mariadb-java-client has Cleartext Transmission of Sensitive Information and Insufficiently Protected Credentials",
+      "url": "https://github.com/advisories/GHSA-qxvw-fvwx-5cp7",
+      "released": "2026-08-28T22:45:01Z",
+      "updated": "2026-08-28T22:45:01Z",
+      "cves": [
+        "CVE-2026-55857"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.mariadb.jdbc:mariadb-java-client"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.mariadb.jdbc:mariadb-java-client 2.7.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.mariadb.jdbc:mariadb-java-client 3.3.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.mariadb.jdbc:mariadb-java-client 3.4.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-xvr9-35cr-46v9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "org.mariadb.jdbc:mariadb-java-client has Inappropriate Encoding for Output Context",
+      "url": "https://github.com/advisories/GHSA-xvr9-35cr-46v9",
+      "released": "2026-08-28T22:47:19Z",
+      "updated": "2026-08-28T22:47:19Z",
+      "cves": [
+        "CVE-2026-55858"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.mariadb.jdbc:mariadb-java-client"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.mariadb.jdbc:mariadb-java-client 2.7.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.mariadb.jdbc:mariadb-java-client 3.3.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.mariadb.jdbc:mariadb-java-client 3.4.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-5rqc-86vf-g8r2",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "org.mariadb:r2dbc-mariadb has Inappropriate Encoding for Output Context and Improper Encoding or Escaping of Output",
+      "url": "https://github.com/advisories/GHSA-5rqc-86vf-g8r2",
+      "released": "2026-08-28T22:49:03Z",
+      "updated": "2026-08-28T22:49:03Z",
+      "cves": [
+        "CVE-2026-55859"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.mariadb:r2dbc-mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.mariadb:r2dbc-mariadb 1.4.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-c857-9x2m-cvh2",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "org.mariadb:r2dbc-mariadb vulnerable to cleartext password disclosure to a man-in-the-middle server (clear-text auth plugins not gated on a secure transport)",
+      "url": "https://github.com/advisories/GHSA-c857-9x2m-cvh2",
+      "released": "2026-08-28T22:50:56Z",
+      "updated": "2026-08-28T22:50:56Z",
+      "cves": [
+        "CVE-2026-55860"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.mariadb:r2dbc-mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.mariadb:r2dbc-mariadb 1.4.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-ffg3-p8fm-mjx2",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "RestrictedPython guard hooks can be shadowed via positional-only arguments",
+      "url": "https://github.com/advisories/GHSA-ffg3-p8fm-mjx2",
+      "released": "2026-08-28T22:51:35Z",
+      "updated": "2026-08-28T22:51:35Z",
+      "cves": [
+        "CVE-2026-55830"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: RestrictedPython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in RestrictedPython 8.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-g5xc-5w98-jfvm",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "MariaDB has possible SQL injection in Buffer parameter escaping under big5/gbk/sjis/cp932/gb18030 client charsets",
+      "url": "https://github.com/advisories/GHSA-g5xc-5w98-jfvm",
+      "released": "2026-08-28T22:53:12Z",
+      "updated": "2026-08-28T22:53:12Z",
+      "cves": [
+        "CVE-2026-55855"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb 3.2.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 3.3.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 3.4.6",
+          "u": null
+        }
+      ],
+      "reviewed": true,
       "seen": "2026-11-26"
     }
   ]

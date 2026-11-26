@@ -1,8 +1,20 @@
 {
   "schemaVersion": 1,
   "date": "2020-07-29",
-  "count": 2,
+  "count": 4,
   "items": [
+    {
+      "id": "OSV-2020-1540",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "UNKNOWN READ in eval_expr",
+      "released": "2020-07-29T00:00:39Z",
+      "updated": "2026-10-14T14:37:51Z",
+      "products": [
+        "OSS-Fuzz: augeas"
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "openSUSE-SU-2020:1111-1",
       "src": "csaf_opensuse",
@@ -20,6 +32,62 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 15.2"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-RU-2020:2072-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for ansible, crowbar-core, crowbar-ha, crowbar-openstack, etcd, flannel, grafana, keepalived, kibana, memcached, monasca-installer, openstack-dashboard-theme-SUSE, openstack-manila, openstack-neutron-fwa…",
+      "url": "https://lists.suse.com/pipermail/sle-updates/2020-July/015563.html",
+      "released": "2020-07-29T14:31:35Z",
+      "updated": "2026-09-15T08:47:12Z",
+      "cves": [
+        "CVE-2017-1000246",
+        "CVE-2017-4965",
+        "CVE-2017-4967",
+        "CVE-2018-1000115",
+        "CVE-2019-0201",
+        "CVE-2019-11596",
+        "CVE-2019-15026",
+        "CVE-2019-15043",
+        "CVE-2019-16785",
+        "CVE-2019-16786",
+        "CVE-2019-16789",
+        "CVE-2019-16792",
+        "CVE-2019-16865",
+        "CVE-2019-18874",
+        "CVE-2019-19844",
+        "CVE-2019-19911",
+        "CVE-2019-3498",
+        "CVE-2019-3828",
+        "CVE-2020-10663",
+        "CVE-2020-10743",
+        "CVE-2020-11076",
+        "CVE-2020-11077",
+        "CVE-2020-12052",
+        "CVE-2020-13254",
+        "CVE-2020-13379",
+        "CVE-2020-13596",
+        "CVE-2020-5247",
+        "CVE-2020-5312",
+        "CVE-2020-5313",
+        "CVE-2020-5390",
+        "CVE-2020-8151"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE OpenStack Cloud 7"
       ],
       "fix": [
         {

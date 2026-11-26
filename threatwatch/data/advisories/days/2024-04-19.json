@@ -1,8 +1,50 @@
 {
   "schemaVersion": 1,
   "date": "2024-04-19",
-  "count": 1,
+  "count": 3,
   "items": [
+    {
+      "id": "OSV-2024-278",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Security exception in com.puppycrawl.tools.checkstyle.grammar.java.JavaLanguageParser.expr",
+      "released": "2024-04-19T00:12:11Z",
+      "updated": "2026-10-31T14:33:57Z",
+      "products": [
+        "OSS-Fuzz: checkstyle"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2024-0336",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`rustls::ConnectionCommon::complete_io` could fall into an infinite loop based on network input",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2024-0336.html",
+      "released": "2024-04-19T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2024-32650"
+      ],
+      "products": [
+        "crates.io: rustls"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rustls 0.21.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in rustls 0.22.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in rustls 0.23.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "openSUSE-SU-2024:0111-1",
       "src": "csaf_opensuse",

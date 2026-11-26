@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-01-29",
-  "count": 17,
+  "count": 27,
   "items": [
     {
       "id": "openSUSE-SU-2026:10111-1",
@@ -217,6 +217,179 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:1536",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "containerd: OCI image importer memory exhaustion",
+      "url": "https://access.redhat.com/errata/RHSA-2026:1536",
+      "released": "2026-01-29T07:02:14Z",
+      "updated": "2026-11-26T17:21:11Z",
+      "cves": [
+        "CVE-2023-25153",
+        "CVE-2024-11831",
+        "CVE-2024-31884",
+        "CVE-2025-30204",
+        "CVE-2025-52555"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer to: https://access.redhat.com/articles/11258 For supported configurations, refe…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:1536"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0333-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openssl-1_0_0",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260333-1/",
+      "released": "2026-01-29T08:16:22Z",
+      "updated": "2026-09-16T19:01:35Z",
+      "cves": [
+        "CVE-2025-68160",
+        "CVE-2025-69420",
+        "CVE-2025-69421",
+        "CVE-2026-22796"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.2,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-appsmith-2026-24042",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Appsmith public apps can execute unpublished actions (viewMode confusion)",
+      "url": "https://github.com/appsmithorg/appsmith/security/advisories/GHSA-j9qq-4fj9-9883",
+      "released": "2026-01-29T08:36:35Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-24042"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: appsmith"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in appsmith 1.95.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0334-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libxml2",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260334-1/",
+      "released": "2026-01-29T10:01:36Z",
+      "updated": "2026-09-16T19:01:36Z",
+      "cves": [
+        "CVE-2026-0989"
+      ],
+      "sev": "LOW",
+      "cvss": 3.7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.2",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0336-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libxml2",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260336-1/",
+      "released": "2026-01-29T10:16:20Z",
+      "updated": "2026-09-16T19:01:39Z",
+      "cves": [
+        "CVE-2026-0989"
+      ],
+      "sev": "LOW",
+      "cvss": 3.7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-RU-2026:20192-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Recommended update for cloud-init",
+      "url": "https://lists.suse.com/pipermail/sle-updates/2026-February/043824.html",
+      "released": "2026-01-29T10:23:27Z",
+      "updated": "2026-09-16T18:55:15Z",
+      "cves": [
+        "CVE-2024-11584",
+        "CVE-2024-6174"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-RU-2026:20129-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -233,6 +406,33 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0337-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260337-1/",
+      "released": "2026-01-29T10:34:17Z",
+      "updated": "2026-09-16T19:01:40Z",
+      "cves": [
+        "CVE-2025-6075"
+      ],
+      "sev": "LOW",
+      "cvss": 2.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7",
+        "openSUSE Leap 15.6"
       ],
       "fix": [
         {
@@ -287,6 +487,39 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0341-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for java-11-openjdk",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260341-1/",
+      "released": "2026-01-29T14:58:19Z",
+      "updated": "2026-09-16T19:01:42Z",
+      "cves": [
+        "CVE-2026-21925",
+        "CVE-2026-21932",
+        "CVE-2026-21933",
+        "CVE-2026-21945"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
       ],
       "fix": [
         {
@@ -429,6 +662,64 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0343-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openssl-1_1",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260343-1/",
+      "released": "2026-01-29T18:34:02Z",
+      "updated": "2026-09-16T19:01:45Z",
+      "cves": [
+        "CVE-2025-68160",
+        "CVE-2025-69418",
+        "CVE-2025-69419",
+        "CVE-2025-69420",
+        "CVE-2025-69421",
+        "CVE-2026-22795",
+        "CVE-2026-22796"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.2,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.2"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0344-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for assertj-core",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260344-1/",
+      "released": "2026-01-29T20:04:07Z",
+      "updated": "2026-09-16T19:01:46Z",
+      "cves": [
+        "CVE-2026-24400"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "openSUSE Leap 15.6"
       ],
       "fix": [
         {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-04-01",
-  "count": 2,
+  "count": 4,
   "items": [
     {
       "id": "msrc_CVE-2025-30204",
@@ -39,6 +39,70 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-273995284",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In avdt_msg_ind of avdt_msg.cc, there is a possible memory corruption due to type confusion. This could lead to paired device escalation of privilege with no additional execution privileges needed. User interaction is n…",
+      "url": "https://source.android.com/security/bulletin/2025-04-01",
+      "released": "2025-04-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22435"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-04-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-04-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 13:2025-04-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-6jwp-4wvj-6597",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Pinot Vulnerable to Authentication Bypass",
+      "url": "https://github.com/advisories/GHSA-6jwp-4wvj-6597",
+      "released": "2025-04-01T09:30:20Z",
+      "updated": "2026-08-31T22:52:08Z",
+      "cves": [
+        "CVE-2024-56325"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Maven: org.apache.pinot:pinot-broker",
+        "Maven: org.apache.pinot:pinot-common",
+        "Maven: org.apache.pinot:pinot-controller"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.apache.pinot:pinot-broker 1.3.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.pinot:pinot-common 1.3.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.pinot:pinot-controller 1.3.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
       "seen": "2026-11-26"
     },
     {

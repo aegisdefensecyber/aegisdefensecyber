@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-24",
-  "count": 112,
+  "count": 137,
   "items": [
     {
       "id": "openSUSE-SU-2026:11582-1",
@@ -285,6 +285,35 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:59133",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: gstreamer1-plugins-good security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:59133",
+      "released": "2026-08-24T00:00:00Z",
+      "updated": "2026-09-10T18:23:56Z",
+      "cves": [
+        "CVE-2026-18295",
+        "CVE-2026-18296",
+        "CVE-2026-18298"
+      ],
+      "products": [
+        "AlmaLinux: gstreamer1-plugins-good",
+        "AlmaLinux: gstreamer1-plugins-good-gtk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gstreamer1-plugins-good 1.26.7-2.el10_2.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in gstreamer1-plugins-good-gtk 1.26.7-2.el10_2.7",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -2427,6 +2456,83 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-RU-2026:3712-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update 5.1.5 for Multi-Linux Manager Server",
+      "url": "https://lists.suse.com/pipermail/sle-updates/2026-August/049455.html",
+      "released": "2026-08-24T02:53:13Z",
+      "updated": "2026-09-16T18:55:33Z",
+      "cves": [
+        "CVE-2026-39821"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Multi-Linux Manager Proxy Extension for SLE 5.1",
+        "SUSE Multi-Linux Manager Server Extension for SLE 5.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-78306",
+      "src": "gna-1",
+      "vendor": "DJI",
+      "title": "DJI Drone Bluetooth Interface Unauthenticated DUML Command Execution",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-78306",
+      "released": "2026-08-24T08:05:00Z",
+      "updated": "2026-10-12T12:08:34Z",
+      "cves": [
+        "CVE-2026-78306"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.5,
+      "products": [
+        "DJI Neo",
+        "DJI Neo 2",
+        "DJI Flip",
+        "DJI Air 3",
+        "DJI Air 3S",
+        "DJI Avata 2"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-cosign-2026-22703",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Cosign verification accepts any valid Rekor entry under certain conditions",
+      "url": "https://github.com/sigstore/cosign/security/advisories/GHSA-whqx-f9j3-ch6m",
+      "released": "2026-08-24T09:32:29Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-22703"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: cosign"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cosign 2.6.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in cosign 3.0.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21626-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -2453,6 +2559,236 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RUSTSEC-2026-0331",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Panic on Decoding Short Hybrid Keys",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0331.html",
+      "released": "2026-08-24T12:00:00Z",
+      "updated": "2026-10-07T08:23:44Z",
+      "products": [
+        "crates.io: libcrux-kem"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libcrux-kem 0.0.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0437",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Rejected authentication challenges can poison the Key Vault scope cache",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0437.html",
+      "released": "2026-08-24T12:00:00Z",
+      "updated": "2026-11-05T08:50:49Z",
+      "products": [
+        "crates.io: azure_security_keyvault_certificates"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in azure_security_keyvault_certificates 1.0.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in azure_security_keyvault_certificates 1.1.0-beta.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0438",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Rejected authentication challenges can poison the Key Vault scope cache",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0438.html",
+      "released": "2026-08-24T12:00:00Z",
+      "updated": "2026-11-05T08:50:49Z",
+      "products": [
+        "crates.io: azure_security_keyvault_secrets"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in azure_security_keyvault_secrets 1.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0439",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Rejected authentication challenges can poison the Key Vault scope cache",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0439.html",
+      "released": "2026-08-24T12:00:00Z",
+      "updated": "2026-11-05T08:50:49Z",
+      "products": [
+        "crates.io: azure_security_keyvault_keys"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in azure_security_keyvault_keys 1.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:58555",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: NetworkManager security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:58555",
+      "released": "2026-08-24T12:00:58Z",
+      "updated": "2026-09-07T12:12:39Z",
+      "cves": [
+        "CVE-2026-10805"
+      ],
+      "products": [
+        "Rocky Linux: NetworkManager"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in NetworkManager 1:1.40.16-21.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:58562",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: python-urwid security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:58562",
+      "released": "2026-08-24T12:00:58Z",
+      "updated": "2026-09-07T12:12:39Z",
+      "cves": [
+        "CVE-2026-9323"
+      ],
+      "products": [
+        "Rocky Linux: python-urwid"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-urwid 0:1.3.1-5.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:58560",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: cups-filters security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:58560",
+      "released": "2026-08-24T12:04:48Z",
+      "updated": "2026-09-07T12:12:52Z",
+      "cves": [
+        "CVE-2026-64612"
+      ],
+      "products": [
+        "Rocky Linux: cups-filters"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cups-filters 0:1.28.7-27.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:58572",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: NetworkManager security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:58572",
+      "released": "2026-08-24T12:04:48Z",
+      "updated": "2026-09-07T12:12:52Z",
+      "cves": [
+        "CVE-2026-10805"
+      ],
+      "products": [
+        "Rocky Linux: NetworkManager"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in NetworkManager 1:1.54.3-5.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:58571",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: qemu-kvm security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:58571",
+      "released": "2026-08-24T12:08:18Z",
+      "updated": "2026-09-07T12:12:56Z",
+      "cves": [
+        "CVE-2026-48914"
+      ],
+      "products": [
+        "Rocky Linux: qemu-kvm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in qemu-kvm 8:10.1.0-16.el10_2.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:58561",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: python-urwid security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:58561",
+      "released": "2026-08-24T12:08:45Z",
+      "updated": "2026-09-07T12:12:57Z",
+      "cves": [
+        "CVE-2026-9323"
+      ],
+      "products": [
+        "Rocky Linux: python-urwid"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-urwid 0:2.5.3-4.el10_2.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-76844",
+      "src": "cvelistv5",
+      "vendor": "webpack",
+      "title": "webpack-dev-middleware before 7.4.6 and 8.3.0 Path Traversal via Non-Slash-Terminated publicPath",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-76844",
+      "released": "2026-08-24T13:12:01Z",
+      "updated": "2026-11-13T14:15:54Z",
+      "cves": [
+        "CVE-2026-76844"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.3,
+      "products": [
+        "webpack webpack-dev-middleware"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21629-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -2476,6 +2812,254 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-2x37-89hj-2j95",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Camel-Azure-Storage-Blob: the downloadBlobToFile operation built the local download target from the remote blob name without constraining it to the configured fileDir",
+      "url": "https://github.com/advisories/GHSA-2x37-89hj-2j95",
+      "released": "2026-08-24T18:31:51Z",
+      "updated": "2026-08-28T21:54:20Z",
+      "cves": [
+        "CVE-2026-66906"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Maven: org.apache.camel:camel-azure-storage-blob"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.apache.camel:camel-azure-storage-blob 4.14.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-azure-storage-blob 4.18.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-azure-storage-blob 4.22.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-7jwc-q3fj-c9pq",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Camel-Azure-Storage-DataLake: the downloadToFile operation built the local download target from the remote path name without constraining it to the configured fileDir",
+      "url": "https://github.com/advisories/GHSA-7jwc-q3fj-c9pq",
+      "released": "2026-08-24T18:31:51Z",
+      "updated": "2026-08-28T20:29:23Z",
+      "cves": [
+        "CVE-2026-60093"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.apache.camel:camel-azure-storage-datalake"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.apache.camel:camel-azure-storage-datalake 4.14.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-azure-storage-datalake 4.18.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-azure-storage-datalake 4.22.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-cx47-qxp5-mmh2",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Camel-Mail: the MimeMultipart data format copied MIME headers onto the Camel message without a header filter strategy when unmarshalling with headersInline enabled",
+      "url": "https://github.com/advisories/GHSA-cx47-qxp5-mmh2",
+      "released": "2026-08-24T18:31:51Z",
+      "updated": "2026-08-28T20:19:11Z",
+      "cves": [
+        "CVE-2026-59230"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.apache.camel:camel-mail"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.apache.camel:camel-mail 4.14.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-mail 4.18.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-mail 4.22.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-f78g-9385-qxqj",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Camel-Google-Storage: the consumer appended the remote object name to the configured downloadFileName directory without constraining the result",
+      "url": "https://github.com/advisories/GHSA-f78g-9385-qxqj",
+      "released": "2026-08-24T18:31:51Z",
+      "updated": "2026-08-28T21:55:10Z",
+      "cves": [
+        "CVE-2026-66907"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Maven: org.apache.camel:camel-google-storage"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.apache.camel:camel-google-storage 4.14.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-google-storage 4.18.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-google-storage 4.22.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-fpm2-m4qq-wghr",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Camel-platform-http-main: when JWT authentication was configured with a keystore but no issuer or audience, the iss and aud claims were never validated, so any unexpired token signed by a trusted key was accepted",
+      "url": "https://github.com/advisories/GHSA-fpm2-m4qq-wghr",
+      "released": "2026-08-24T18:31:51Z",
+      "updated": "2026-08-28T21:56:58Z",
+      "cves": [
+        "CVE-2026-66908"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Maven: org.apache.camel:camel-platform-http-main"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.apache.camel:camel-platform-http-main 4.22.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-m5r8-w65q-8wjf",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Camel-Atmosphere-Websocket: WebSocket dispatch header injection - the producer selected its target peers through Exchange headers whose names sat outside the filtered Camel namespace",
+      "url": "https://github.com/advisories/GHSA-m5r8-w65q-8wjf",
+      "released": "2026-08-24T18:31:51Z",
+      "updated": "2026-08-28T22:00:19Z",
+      "cves": [
+        "CVE-2026-71300"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Maven: org.apache.camel:camel-atmosphere-websocket"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.apache.camel:camel-atmosphere-websocket 4.14.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-atmosphere-websocket 4.18.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-atmosphere-websocket 4.22.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-vvwm-3j43-7pfm",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Camel-Knative: CloudEvent extension fields received in structured content mode were mapped onto message headers without applying any header filter strategy",
+      "url": "https://github.com/advisories/GHSA-vvwm-3j43-7pfm",
+      "released": "2026-08-24T18:31:51Z",
+      "updated": "2026-08-28T20:30:05Z",
+      "cves": [
+        "CVE-2026-63621"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: org.apache.camel:camel-knative"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.apache.camel:camel-knative 4.14.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-knative 4.18.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-knative 4.22.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-v7h8-xhh6-gfj4",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Camel-Undertow: the endpoint discarded the undertow-specific header filter strategy in favour of the base HTTP one, so the undertow filtering never ran on endpoint-configured routes",
+      "url": "https://github.com/advisories/GHSA-v7h8-xhh6-gfj4",
+      "released": "2026-08-24T18:31:52Z",
+      "updated": "2026-08-28T22:01:10Z",
+      "cves": [
+        "CVE-2026-78329"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Maven: org.apache.camel:camel-undertow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.apache.camel:camel-undertow 4.14.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-undertow 4.18.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.camel:camel-undertow 4.22.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
       "seen": "2026-11-26"
     },
     {
@@ -2553,6 +3137,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-97956",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-76098 affecting package python-mistune for versions less than 3.3.4-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76098",
+      "released": "2026-08-24T20:17:19Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-76098"
+      ],
+      "products": [
+        "Azure Linux: python-mistune"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-mistune 3.3.4-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21638-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -2616,6 +3222,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-97923",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-52492 affecting package libtiff 4.6.0-14",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-52492",
+      "released": "2026-08-24T21:17:19Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-52492"
+      ],
+      "products": [
+        "Azure Linux: libtiff"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "WID-SEC-W-2026-2980",
       "src": "csaf_certbund",
       "vendor": "Amazon",
@@ -2670,7 +3292,7 @@
       "title": "WebKitGTK: Schwachstelle ermöglicht Codeausführung",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2987",
       "released": "2026-08-24T22:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-78376"
       ],

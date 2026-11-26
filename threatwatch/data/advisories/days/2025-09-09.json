@@ -1,8 +1,41 @@
 {
   "schemaVersion": 1,
   "date": "2025-09-09",
-  "count": 3,
+  "count": 6,
   "items": [
+    {
+      "id": "SSA-563922",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-563922: Local Privilege Escalation Vulnerability in SIMOTION Tools",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-563922.html",
+      "released": "2025-09-09T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2025-43715"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "SIMATIC Technology Package TPCamGen (6ES7823-0FE30-1AA0)",
+        "SIMOTION OA MIIF (6AU1820-3DA20-0AB0)",
+        "SIMOTION OACAMGEN (6AU1820-3EA20-0AB0)",
+        "SIMOTION OALECO (6AU1820-3HA20-0AB0)",
+        "SIMOTION OAVIBX (6AU1820-3CA20-0AB0)"
+      ],
+      "fix": [
+        {
+          "t": "Ensure that no other users are logged in and that no unknown programs are running before starting the installation of the affected products",
+          "u": null
+        },
+        {
+          "t": "Update to V1.3.1 or later version To obtain the patch and update information, please contact your regular Siemens contact person.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
     {
       "id": "SSA-563922",
       "src": "direct_csaf",
@@ -41,6 +74,44 @@
     },
     {
       "id": "SEVD-2025-252-01",
+      "src": "csaf_se",
+      "vendor": "Schneider Electric",
+      "title": "Multiple Altivar Process Drives and Communication Modules",
+      "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2025-252-01&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2025-252-01.pdf",
+      "released": "2025-09-09T04:00:00Z",
+      "updated": "2026-10-13T07:00:00Z",
+      "cves": [
+        "CVE-2025-7746"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.1,
+      "products": [
+        "ATVdPAC module",
+        "Altivar Process Drives",
+        "ATV630",
+        "ATV650",
+        "ATV660",
+        "ATV680"
+      ],
+      "fix": [
+        {
+          "t": "Version 25.0 of VW3A3530D: ATVdPAC module includes a fix for this vulnerability and is available upon request from Schneider Electric's [Customer Care Center](…",
+          "u": null
+        },
+        {
+          "t": "The version 4.5 of ATV6xx drives includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-range/62317-altivar…",
+          "u": "https://www.se.com/ww/en/product-range/62317-altivar-process-atv600/#software-and-firmware"
+        },
+        {
+          "t": "The version 4.5 of ATV9xx drives includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-range/63124-altivar…",
+          "u": "https://www.se.com/ww/en/product-range/63124-altivar-process-atv900/#software-and-firmware"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SEVD-2025-252-01",
       "src": "direct_csaf",
       "vendor": "Schneider Electric",
       "title": "CVE-2025-7746",
@@ -72,6 +143,37 @@
         {
           "t": "The version 4.5 of ATV9xx drives includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-range/63124-altivar-process-atv900/#software-and-firmware",
           "u": "https://www.se.com/ww/en/product-range/63124-altivar-process-atv900/#software-and-firmware"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-envoy-2025-55162",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Envoy: oAuth2 Filter Signout route will not clear cookies because of missing \"secure;\" flag",
+      "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-95j4-hw7f-v2rh",
+      "released": "2025-09-09T05:40:18Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-55162"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: envoy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in envoy 1.32.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in envoy 1.33.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in envoy 1.34.5",
+          "u": null
         }
       ],
       "seen": "2026-11-26"

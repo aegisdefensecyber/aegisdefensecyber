@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-01-06",
-  "count": 6,
+  "count": 9,
   "items": [
     {
       "id": "openSUSE-SU-2026:10007-1",
@@ -125,6 +125,94 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Tumbleweed"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:0136",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: mariadb10.11 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:0136",
+      "released": "2026-01-06T00:00:00Z",
+      "updated": "2026-10-26T00:12:26Z",
+      "cves": [
+        "CVE-2023-52969",
+        "CVE-2023-52970",
+        "CVE-2023-52971",
+        "CVE-2025-13699",
+        "CVE-2025-21490",
+        "CVE-2025-30693",
+        "CVE-2025-30722",
+        "CVE-2026-21968"
+      ],
+      "products": [
+        "AlmaLinux: mariadb-common",
+        "AlmaLinux: mariadb-errmsg"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb-common 3:10.11.15-1.el10_1",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb-errmsg 3:10.11.15-1.el10_1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0036-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libpcap",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260036-1/",
+      "released": "2026-01-06T10:22:41Z",
+      "updated": "2026-09-16T18:57:01Z",
+      "cves": [
+        "CVE-2025-11961"
+      ],
+      "sev": "LOW",
+      "cvss": 3.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0041-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for rsync",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260041-1/",
+      "released": "2026-01-06T10:33:33Z",
+      "updated": "2026-09-16T18:57:04Z",
+      "cves": [
+        "CVE-2025-10158"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.3",
+        "SUSE Linux Enterprise Micro 5.4",
+        "SUSE Linux Enterprise Micro 5.5"
       ],
       "fix": [
         {

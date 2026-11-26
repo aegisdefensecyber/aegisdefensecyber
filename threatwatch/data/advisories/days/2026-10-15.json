@@ -1,8 +1,26 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-15",
-  "count": 65,
+  "count": 217,
   "items": [
+    {
+      "id": "ELA-1845-1",
+      "src": "osv_debian_elts",
+      "vendor": "Debian Elts",
+      "title": "ELA-1845-1",
+      "url": "https://deb.freexian.com/extended-lts/tracker/ELA-1845-1",
+      "updated": "2026-10-15T00:00:00Z",
+      "products": [
+        "Debian: firefox-esr"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in firefox-esr 153.5.0esr-1~deb11u1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "CERTFR-2026-AVI-1317",
       "src": "certfr_avis",
@@ -714,6 +732,31 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SSA-580366",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-580366: DLL Sideloading Vulnerability in Siemens Software Center",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-580366.html",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-19T00:00:00Z",
+      "cves": [
+        "CVE-2026-110936"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.7,
+      "products": [
+        "Siemens Software Center"
+      ],
+      "fix": [
+        {
+          "t": "Update to V4.0.9.8 or later version (All existing versions of SSC will be auto updated on next startup. The latest version can also be downloaded in the respec…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "ICSA-26-300-02",
       "src": "direct_csaf",
       "vendor": "Mitsubishi Electric",
@@ -772,6 +815,461 @@
       "fix": [
         {
           "t": "Update to V4.0.9.8 or later version (All existing versions of SSC will be auto updated on next startup. The latest version can also be downloaded in the respective link)",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83384",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: libsoup security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83384",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-15T09:08:03Z",
+      "cves": [
+        "CVE-2026-102556",
+        "CVE-2026-102557",
+        "CVE-2026-102558",
+        "CVE-2026-102559",
+        "CVE-2026-102560"
+      ],
+      "products": [
+        "AlmaLinux: libsoup",
+        "AlmaLinux: libsoup-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libsoup 2.72.0-16.el9_8.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in libsoup-devel 2.72.0-16.el9_8.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83460",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Critical: idm:DL1 security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83460",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-16T14:38:32Z",
+      "cves": [
+        "CVE-2025-59088",
+        "CVE-2026-11861",
+        "CVE-2026-13097",
+        "CVE-2026-18147",
+        "CVE-2026-19550",
+        "CVE-2026-73197",
+        "CVE-2026-73198",
+        "CVE-2026-76578",
+        "CVE-2026-79678"
+      ],
+      "products": [
+        "AlmaLinux: bind-dyndb-ldap",
+        "AlmaLinux: custodia",
+        "AlmaLinux: ipa-client",
+        "AlmaLinux: ipa-client-common",
+        "AlmaLinux: ipa-client-epn",
+        "AlmaLinux: ipa-client-samba"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in bind-dyndb-ldap 11.6-6.module_el8.10.0+3980+d78e8e90",
+          "u": null
+        },
+        {
+          "t": "Fixed in custodia 0.6.0-3.module_el8.6.0+2881+2f24dc92",
+          "u": null
+        },
+        {
+          "t": "Fixed in ipa-client 4.9.13-21.module_el8.10.0+4302+2d2000af.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83525",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: lrzsz security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83525",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-15T10:28:38Z",
+      "cves": [
+        "CVE-2026-105840",
+        "CVE-2026-105841"
+      ],
+      "products": [
+        "AlmaLinux: lrzsz"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in lrzsz 0.12.20-46.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83544",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: grafana security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83544",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-15T11:25:48Z",
+      "cves": [
+        "CVE-2026-15815"
+      ],
+      "products": [
+        "AlmaLinux: grafana",
+        "AlmaLinux: grafana-selinux"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana 9.2.10-35.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana-selinux 9.2.10-35.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83546",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: wireshark security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83546",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-16T08:47:51Z",
+      "cves": [
+        "CVE-2026-76880",
+        "CVE-2026-76886",
+        "CVE-2026-76919",
+        "CVE-2026-76927",
+        "CVE-2026-95387"
+      ],
+      "products": [
+        "AlmaLinux: wireshark",
+        "AlmaLinux: wireshark-cli",
+        "AlmaLinux: wireshark-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wireshark 1:3.4.10-9.el9_8.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in wireshark-cli 1:3.4.10-9.el9_8.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in wireshark-devel 1:3.4.10-9.el9_8.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83551",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: ghostscript security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83551",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-15T13:40:53Z",
+      "cves": [
+        "CVE-2026-101258",
+        "CVE-2026-103226"
+      ],
+      "products": [
+        "AlmaLinux: ghostscript-doc",
+        "AlmaLinux: ghostscript-tools-dvipdf",
+        "AlmaLinux: ghostscript-tools-fonts",
+        "AlmaLinux: ghostscript-tools-printing"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ghostscript-doc 10.02.1-16.el10_2.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in ghostscript-tools-dvipdf 10.02.1-16.el10_2.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in ghostscript-tools-fonts 10.02.1-16.el10_2.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83552",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: ghostscript security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83552",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-15T13:42:42Z",
+      "cves": [
+        "CVE-2026-101258",
+        "CVE-2026-103226"
+      ],
+      "products": [
+        "AlmaLinux: ghostscript",
+        "AlmaLinux: ghostscript-doc",
+        "AlmaLinux: ghostscript-tools-dvipdf",
+        "AlmaLinux: ghostscript-tools-fonts",
+        "AlmaLinux: ghostscript-tools-printing",
+        "AlmaLinux: ghostscript-x11"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ghostscript 9.27-19.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in ghostscript-doc 9.27-19.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in ghostscript-tools-dvipdf 9.27-19.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83553",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: ghostscript security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83553",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-16T08:45:50Z",
+      "cves": [
+        "CVE-2026-101258",
+        "CVE-2026-103226"
+      ],
+      "products": [
+        "AlmaLinux: ghostscript",
+        "AlmaLinux: ghostscript-doc",
+        "AlmaLinux: ghostscript-tools-dvipdf",
+        "AlmaLinux: ghostscript-tools-fonts",
+        "AlmaLinux: ghostscript-tools-printing",
+        "AlmaLinux: ghostscript-x11"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ghostscript 9.54.0-19.el9_8.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in ghostscript-doc 9.54.0-19.el9_8.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in ghostscript-tools-dvipdf 9.54.0-19.el9_8.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83561",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: rpcbind security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83561",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-16T08:43:42Z",
+      "cves": [
+        "CVE-2026-94640"
+      ],
+      "products": [
+        "AlmaLinux: rpcbind"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rpcbind 1.2.7-3.el10_2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83562",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: rpcbind security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83562",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-16T08:47:01Z",
+      "cves": [
+        "CVE-2026-94640"
+      ],
+      "products": [
+        "AlmaLinux: rpcbind"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rpcbind 1.2.6-7.el9_8.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83563",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: rpcbind security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83563",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-15T14:38:31Z",
+      "cves": [
+        "CVE-2026-94640"
+      ],
+      "products": [
+        "AlmaLinux: rpcbind"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rpcbind 1.2.5-11.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83618",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: libsoup3 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83618",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-16T08:43:56Z",
+      "cves": [
+        "CVE-2026-102555",
+        "CVE-2026-102556",
+        "CVE-2026-102557",
+        "CVE-2026-102558",
+        "CVE-2026-102559",
+        "CVE-2026-102560"
+      ],
+      "products": [
+        "AlmaLinux: libsoup3-doc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libsoup3-doc 3.6.5-3.el10_2.20",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:83657",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: wireshark security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83657",
+      "released": "2026-10-15T00:00:00Z",
+      "updated": "2026-10-16T08:39:43Z",
+      "cves": [
+        "CVE-2026-76880",
+        "CVE-2026-76886",
+        "CVE-2026-76919",
+        "CVE-2026-76927"
+      ],
+      "products": [
+        "AlmaLinux: wireshark",
+        "AlmaLinux: wireshark-cli",
+        "AlmaLinux: wireshark-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wireshark 1:2.6.2-21.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in wireshark-cli 1:2.6.2-21.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in wireshark-devel 1:2.6.2-21.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:82858",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: python36:3.6 security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:82858",
+      "released": "2026-10-15T00:01:17Z",
+      "updated": "2026-10-29T00:12:35Z",
+      "cves": [
+        "CVE-2026-88029"
+      ],
+      "products": [
+        "Rocky Linux: python-PyMySQL",
+        "Rocky Linux: python-distro",
+        "Rocky Linux: python-docs",
+        "Rocky Linux: python-docutils",
+        "Rocky Linux: python-nose",
+        "Rocky Linux: python-pygments"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python36 0:3.6.8-39.module+el8.10.0+1592+61442852",
+          "u": null
+        },
+        {
+          "t": "Fixed in python36 0:3.6.8-39.module+el8.10.0+1910+234ad790",
+          "u": null
+        },
+        {
+          "t": "Fixed in python-distro 0:1.4.0-2.module+el8.10.0+1910+234ad790",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80512",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: curl security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80512",
+      "released": "2026-10-15T00:08:46Z",
+      "updated": "2026-10-29T00:12:52Z",
+      "cves": [
+        "CVE-2026-10536",
+        "CVE-2026-5545",
+        "CVE-2026-6253",
+        "CVE-2026-6429",
+        "CVE-2026-7168"
+      ],
+      "products": [
+        "Rocky Linux: curl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in curl 0:8.12.1-4.el10_2.7",
           "u": null
         }
       ],
@@ -1487,6 +1985,48 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RLSA-2026:83460",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Critical: idm:DL1 security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:83460",
+      "released": "2026-10-15T06:29:02Z",
+      "updated": "2026-10-29T00:12:37Z",
+      "cves": [
+        "CVE-2026-11861",
+        "CVE-2026-13097",
+        "CVE-2026-18147",
+        "CVE-2026-19550",
+        "CVE-2026-73197",
+        "CVE-2026-73198",
+        "CVE-2026-76578",
+        "CVE-2026-79678"
+      ],
+      "products": [
+        "Rocky Linux: bind-dyndb-ldap",
+        "Rocky Linux: custodia",
+        "Rocky Linux: ipa",
+        "Rocky Linux: ipa-healthcheck",
+        "Rocky Linux: opendnssec",
+        "Rocky Linux: python-jwcrypto"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in bind-dyndb-ldap 0:11.6-6.module+el8.10.0+1960+1ed527b3",
+          "u": null
+        },
+        {
+          "t": "Fixed in custodia 0:0.6.0-3.module+el8.9.0+1371+ffa84eb9",
+          "u": null
+        },
+        {
+          "t": "Fixed in ipa 0:4.9.13-21.module+el8.10.0+40089+03bf3c1f",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "JVNDB-2026-000151",
       "src": "jvndb",
       "vendor": "Ministry of Land, Infrastructure, Transport and Tourism",
@@ -1612,6 +2152,2761 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "PYSEC-2026-4242",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "LlamaIndex DuckDBVectorStore vulnerable to SQL injection through ref_doc_id",
+      "url": "https://github.com/advisories/GHSA-6mcc-q3mg-3qg6",
+      "released": "2026-10-15T10:22:42Z",
+      "updated": "2026-10-15T10:22:42Z",
+      "cves": [
+        "CVE-2025-1750"
+      ],
+      "products": [
+        "PyPI: llama-index-vector-stores-duckdb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in llama-index-vector-stores-duckdb 0.12.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4299",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Scrapy: Arbitrary Module Import via Referrer-Policy Header in RefererMiddleware",
+      "url": "https://github.com/advisories/GHSA-cwxj-rr6w-m6w7",
+      "released": "2026-10-15T10:22:42Z",
+      "updated": "2026-10-15T14:38:10Z",
+      "cves": [
+        "CVE-2026-105782"
+      ],
+      "products": [
+        "PyPI: scrapy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in scrapy 2.14.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4203",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "BlenderMCP path traversal in download_polyhaven_asset allows arbitrary file writes",
+      "url": "https://github.com/advisories/GHSA-4h8q-hh2j-755w",
+      "released": "2026-10-15T10:22:43Z",
+      "updated": "2026-10-15T14:37:36Z",
+      "cves": [
+        "CVE-2026-66004"
+      ],
+      "products": [
+        "PyPI: blender-mcp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in blender-mcp 1.6.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4206",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "DeepTutor missing MCP tool authorization allows non-admin users to invoke unrestricted tools",
+      "url": "https://github.com/advisories/GHSA-jg88-rvpc-qvxj",
+      "released": "2026-10-15T10:22:43Z",
+      "updated": "2026-10-15T14:37:38Z",
+      "cves": [
+        "CVE-2026-58168"
+      ],
+      "products": [
+        "PyPI: deeptutor"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in deeptutor 1.4.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4218",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "geopy: Regular Expression Denial of Service (ReDoS) in geopy.Point",
+      "url": "https://github.com/advisories/GHSA-mhvh-fq92-pfmr",
+      "released": "2026-10-15T10:22:43Z",
+      "updated": "2026-10-15T14:37:41Z",
+      "cves": [
+        "CVE-2026-77387"
+      ],
+      "products": [
+        "PyPI: geopy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in geopy 2.5.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4219",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "GPT Researcher MCP STDIO configuration allows remote command execution",
+      "url": "https://github.com/advisories/GHSA-8j86-h8gg-797p",
+      "released": "2026-10-15T10:22:43Z",
+      "updated": "2026-10-15T14:37:42Z",
+      "cves": [
+        "CVE-2025-65720"
+      ],
+      "products": [
+        "PyPI: gpt-researcher"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4220",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Headroom vulnerable to Cross-Site WebSocket Hijacking (CSWSH)",
+      "url": "https://github.com/advisories/GHSA-h46j-26q3-rggf",
+      "released": "2026-10-15T10:22:43Z",
+      "updated": "2026-10-15T14:37:42Z",
+      "cves": [
+        "CVE-2026-71416"
+      ],
+      "products": [
+        "PyPI: headroom-ai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in headroom-ai 0.35.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4298",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "python-jose algorithm confusion guard bypassed by DER-encoded public keys",
+      "url": "https://github.com/advisories/GHSA-6c5p-j8vq-pqhj",
+      "released": "2026-10-15T10:22:43Z",
+      "updated": "2026-10-15T14:38:09Z",
+      "cves": [
+        "CVE-2026-85394"
+      ],
+      "products": [
+        "PyPI: python-jose"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4207",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Docling: Arbitrary local file read via draw:image xlink:href in the OpenDocument backend",
+      "url": "https://github.com/advisories/GHSA-4xhp-xg4w-8ppm",
+      "released": "2026-10-15T10:22:44Z",
+      "updated": "2026-10-15T14:37:40Z",
+      "cves": [
+        "CVE-2026-105751"
+      ],
+      "products": [
+        "PyPI: docling"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in docling 2.120.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4217",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "fsspec: Server-Side Template Injection in ReferenceFileSystem leads to Remote Code Execution",
+      "url": "https://github.com/advisories/GHSA-27vj-qcqg-25rc",
+      "released": "2026-10-15T10:22:44Z",
+      "updated": "2026-10-15T14:37:41Z",
+      "cves": [
+        "CVE-2026-104851"
+      ],
+      "products": [
+        "PyPI: fsspec"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fsspec 2026.6.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4232",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Langflow: Prompt injection in Langflow Smart Transform can lead to code execution",
+      "url": "https://github.com/advisories/GHSA-9fpm-3445-2vx4",
+      "released": "2026-10-15T10:22:44Z",
+      "updated": "2026-10-15T14:37:45Z",
+      "cves": [
+        "CVE-2026-7700"
+      ],
+      "products": [
+        "PyPI: langflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in langflow 1.10.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4233",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Langflow: Unauthenticated Flow Execution via Webhook Authentication Bypass",
+      "url": "https://github.com/advisories/GHSA-cf6m-vc3m-7cgm",
+      "released": "2026-10-15T10:22:44Z",
+      "updated": "2026-10-15T14:37:45Z",
+      "cves": [
+        "CVE-2026-8505"
+      ],
+      "products": [
+        "PyPI: langflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in langflow 1.9.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4235",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Langflow: Weak Fernet Key via random.seed()",
+      "url": "https://github.com/advisories/GHSA-jxw3-mjmx-3pqm",
+      "released": "2026-10-15T10:22:44Z",
+      "updated": "2026-10-15T14:37:45Z",
+      "cves": [
+        "CVE-2026-9205"
+      ],
+      "products": [
+        "PyPI: langflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in langflow 1.10.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4236",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Langflow: Title Authenticated Remote Code Execution in validate_code via Malicious Decorators Description",
+      "url": "https://github.com/advisories/GHSA-w584-2h2r-2hvf",
+      "released": "2026-10-15T10:22:44Z",
+      "updated": "2026-10-15T14:37:45Z",
+      "cves": [
+        "CVE-2026-51886"
+      ],
+      "products": [
+        "PyPI: langflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in langflow 1.10.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4240",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "LangGraph SDK custom auth silently ignores actions= on resource decorators",
+      "url": "https://github.com/advisories/GHSA-fvww-7h3r-vfhp",
+      "released": "2026-10-15T10:22:44Z",
+      "updated": "2026-10-15T14:37:45Z",
+      "cves": [
+        "CVE-2026-104873"
+      ],
+      "products": [
+        "PyPI: langgraph-sdk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in langgraph-sdk 0.4.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4294",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "pymongo: PYTHON-5994 Use exact match for file ID in GridFS delete methods",
+      "url": "https://github.com/advisories/GHSA-8fvv-fgr5-f8ch",
+      "released": "2026-10-15T10:22:44Z",
+      "updated": "2026-10-15T14:38:08Z",
+      "cves": [
+        "CVE-2026-88029"
+      ],
+      "products": [
+        "PyPI: pymongo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pymongo 4.18.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4301",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Snowflake drivers writes sensitive information to logs",
+      "url": "https://github.com/advisories/GHSA-qqj6-54q6-cxv6",
+      "released": "2026-10-15T10:22:44Z",
+      "updated": "2026-10-15T14:38:10Z",
+      "cves": [
+        "CVE-2026-86597"
+      ],
+      "products": [
+        "PyPI: snowflake-connector-python"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in snowflake-connector-python 4.7.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4243",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Mako: Path traversal via drive-letter URI on Windows in TemplateLookup",
+      "url": "https://github.com/advisories/GHSA-5639-2j2p-m4mx",
+      "released": "2026-10-15T10:22:45Z",
+      "updated": "2026-10-15T14:37:48Z",
+      "cves": [
+        "CVE-2026-102991"
+      ],
+      "products": [
+        "PyPI: mako"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mako 1.4.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4244",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Multidict: Reference leak in CIMultiDict/MultiDict items-view union and subtraction",
+      "url": "https://github.com/advisories/GHSA-54p9-h82j-f925",
+      "released": "2026-10-15T10:22:45Z",
+      "updated": "2026-10-15T14:37:51Z",
+      "cves": [
+        "CVE-2026-104874"
+      ],
+      "products": [
+        "PyPI: multidict"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in multidict 6.9.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4295",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PyMongo: PYTHON-5990 Forced Unix domain socket connection via a .sock KMS endpoint in client-side field level encryption",
+      "url": "https://github.com/advisories/GHSA-qx36-8mw2-4r3x",
+      "released": "2026-10-15T10:22:45Z",
+      "updated": "2026-10-15T14:38:08Z",
+      "cves": [
+        "CVE-2026-96747"
+      ],
+      "products": [
+        "PyPI: pymongo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pymongo 4.18.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4305",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "uv: Path traversal on Windows through wheel extraction",
+      "url": "https://github.com/advisories/GHSA-2cv4-cqwr-gwf7",
+      "released": "2026-10-15T10:22:45Z",
+      "updated": "2026-10-15T14:38:12Z",
+      "cves": [
+        "CVE-2026-104843"
+      ],
+      "products": [
+        "PyPI: uv"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in uv 0.12.18",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4306",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "vLLM: Loose `cache_salt` validation lets a single request kill EngineCore on LMCache-MP deployments — uncaught downstream `ValueError` denial of service",
+      "url": "https://github.com/advisories/GHSA-2823-qmq8-rwvj",
+      "released": "2026-10-15T10:22:45Z",
+      "updated": "2026-10-15T14:38:12Z",
+      "cves": [
+        "CVE-2026-105756"
+      ],
+      "products": [
+        "PyPI: vllm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vllm 0.30.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4307",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "vLLM: GLMGA video sampling permits request-driven CPU and memory exhaustion",
+      "url": "https://github.com/advisories/GHSA-58v5-2m8f-94pr",
+      "released": "2026-10-15T10:22:45Z",
+      "updated": "2026-10-15T14:38:12Z",
+      "cves": [
+        "CVE-2026-105760"
+      ],
+      "products": [
+        "PyPI: vllm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vllm 0.30.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4309",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "vLLM: Scale-out disaggregated multimodal transport trusts caller-supplied features",
+      "url": "https://github.com/advisories/GHSA-ph72-cqr5-qpp7",
+      "released": "2026-10-15T10:22:45Z",
+      "updated": "2026-10-15T14:38:13Z",
+      "cves": [
+        "CVE-2026-105754"
+      ],
+      "products": [
+        "PyPI: vllm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vllm 0.30.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4310",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "vLLM: Qwen2-VL / Qwen3-VL video samplers bound on request-controlled max_frames, which the num_frames ceiling does not reach",
+      "url": "https://github.com/advisories/GHSA-x6mc-67gf-chw4",
+      "released": "2026-10-15T10:22:45Z",
+      "updated": "2026-10-15T14:38:13Z",
+      "cves": [
+        "CVE-2026-105758"
+      ],
+      "products": [
+        "PyPI: vllm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vllm 0.30.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4209",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Docling: METS-GBS archive member limit enforced after full member enumeration (memory exhaustion during format detection)",
+      "url": "https://github.com/advisories/GHSA-3cr3-8m4c-fpxw",
+      "released": "2026-10-15T10:22:46Z",
+      "updated": "2026-10-15T14:37:39Z",
+      "cves": [
+        "CVE-2026-105747"
+      ],
+      "products": [
+        "PyPI: docling-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in docling-slim 2.131.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4215",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Docling: `enable_local_fetch` is not enforced in HTML browser-rendering mode",
+      "url": "https://github.com/advisories/GHSA-q43m-vhcp-mhvm",
+      "released": "2026-10-15T10:22:46Z",
+      "updated": "2026-10-15T14:37:39Z",
+      "cves": [
+        "CVE-2026-105750"
+      ],
+      "products": [
+        "PyPI: docling-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in docling-slim 2.118.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4231",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Langflow: PythonREPLComponent executes unsandboxed Python code, enabling authenticated RCE and privilege escalation",
+      "url": "https://github.com/advisories/GHSA-8qpj-27x8-pwpq",
+      "released": "2026-10-15T10:22:46Z",
+      "updated": "2026-10-15T14:37:44Z",
+      "cves": [
+        "CVE-2026-10561"
+      ],
+      "products": [
+        "PyPI: langflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in langflow 1.10.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4245",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "openapi-python-client: Malicious OpenAPI Documents can cause Arbitrary Code Generation",
+      "url": "https://github.com/advisories/GHSA-5293-mq8x-g3xj",
+      "released": "2026-10-15T10:22:46Z",
+      "updated": "2026-10-15T14:37:53Z",
+      "cves": [
+        "CVE-2026-105801"
+      ],
+      "products": [
+        "PyPI: openapi-python-client"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openapi-python-client 0.29.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4296",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PyMongo: PYTHON-5996 Heap out-of-bounds write via signed size overflow in BSON document encoding",
+      "url": "https://github.com/advisories/GHSA-v4x9-3549-crwv",
+      "released": "2026-10-15T10:22:46Z",
+      "updated": "2026-10-15T14:38:08Z",
+      "cves": [
+        "CVE-2026-96749"
+      ],
+      "products": [
+        "PyPI: pymongo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pymongo 4.18.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4297",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PyMongo: PYTHON-5986 Host injection in PyMongo connection string parsing via percent-encoded delimiters",
+      "url": "https://github.com/advisories/GHSA-vp6j-j7w5-5xjj",
+      "released": "2026-10-15T10:22:46Z",
+      "updated": "2026-10-15T14:38:08Z",
+      "cves": [
+        "CVE-2026-96748"
+      ],
+      "products": [
+        "PyPI: pymongo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pymongo 4.18.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4308",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "vLLM: Harmony tool continuations drop `cache_salt` — restoring a cross-tenant prefix-cache membership oracle",
+      "url": "https://github.com/advisories/GHSA-935w-9g4m-p28p",
+      "released": "2026-10-15T10:22:46Z",
+      "updated": "2026-10-15T14:38:13Z",
+      "cves": [
+        "CVE-2026-105752"
+      ],
+      "products": [
+        "PyPI: vllm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vllm 0.30.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4312",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Werkzeug safe_join() allows Windows special device names",
+      "url": "https://github.com/advisories/GHSA-g6x2-hccm-hh4m",
+      "released": "2026-10-15T10:22:46Z",
+      "updated": "2026-10-15T14:38:14Z",
+      "cves": [
+        "CVE-2026-102598"
+      ],
+      "products": [
+        "PyPI: werkzeug"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in werkzeug 3.1.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4313",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "wger: cross-tenant admin notes/contracts leak via gym=None bypass (5 views)",
+      "url": "https://github.com/advisories/GHSA-c72h-82w6-rqfp",
+      "released": "2026-10-15T10:22:46Z",
+      "updated": "2026-10-15T14:38:15Z",
+      "cves": [
+        "CVE-2026-43976"
+      ],
+      "products": [
+        "PyPI: wger"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4317",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "wger: trainer_login accepts GET - CSRF bypass enables forced session rebinding",
+      "url": "https://github.com/advisories/GHSA-xf64-4pmc-h8qf",
+      "released": "2026-10-15T10:22:46Z",
+      "updated": "2026-10-15T14:38:15Z",
+      "cves": [
+        "CVE-2026-45161"
+      ],
+      "products": [
+        "PyPI: wger"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4229",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Langflow: IP Spoofing Bypass via `X-Forwarded-For` Allowing Remote Configuration Write",
+      "url": "https://github.com/advisories/GHSA-4f6c-2vvp-gw82",
+      "released": "2026-10-15T10:22:47Z",
+      "updated": "2026-10-15T14:37:44Z",
+      "cves": [
+        "CVE-2026-105741"
+      ],
+      "products": [
+        "PyPI: langflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in langflow 1.10.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4252",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: AgentMail webhook mode accepts forged unsigned message.received events and invokes agents",
+      "url": "https://github.com/advisories/GHSA-7c92-x8vg-4258",
+      "released": "2026-10-15T10:22:47Z",
+      "updated": "2026-10-15T14:38:01Z",
+      "cves": [
+        "CVE-2026-61436"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4256",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Code Injection via f-string Interpolation in Deploy API Server Generation",
+      "url": "https://github.com/advisories/GHSA-g6j7-pffp-8whg",
+      "released": "2026-10-15T10:22:47Z",
+      "updated": "2026-10-15T14:38:02Z",
+      "cves": [
+        "CVE-2026-62176"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4259",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: AgentMail webhook lacks signature verification, allowing unauthenticated message injection and sender spoofing",
+      "url": "https://github.com/advisories/GHSA-qj9c-59p6-8cgx",
+      "released": "2026-10-15T10:22:47Z",
+      "updated": "2026-10-15T14:38:02Z",
+      "cves": [
+        "CVE-2026-61428"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4263",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Platform members can delete owner issue dependencies through member-owned related issues",
+      "url": "https://github.com/advisories/GHSA-mxmx-rh57-jx58",
+      "released": "2026-10-15T10:22:47Z",
+      "updated": "2026-10-15T14:38:00Z",
+      "cves": [
+        "CVE-2026-62179"
+      ],
+      "products": [
+        "PyPI: praisonai-platform"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai-platform 0.1.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4304",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Twisted: IMAP wildcardToRegexp() ReDoS",
+      "url": "https://github.com/advisories/GHSA-8pqf-f4m5-798g",
+      "released": "2026-10-15T10:22:47Z",
+      "updated": "2026-10-15T14:38:12Z",
+      "cves": [
+        "CVE-2026-106454"
+      ],
+      "products": [
+        "PyPI: twisted"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4314",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "wger: Cross-User Data Corruption via Missing Ownership Check on WorkoutLog.slot_entry",
+      "url": "https://github.com/advisories/GHSA-rjpf-7pf5-q54x",
+      "released": "2026-10-15T10:22:47Z",
+      "updated": "2026-10-15T14:38:15Z",
+      "cves": [
+        "CVE-2026-46438"
+      ],
+      "products": [
+        "PyPI: wger"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4315",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "wger: API credentials remain valid after logout/password change",
+      "url": "https://github.com/advisories/GHSA-v3x9-6gg8-c2c9",
+      "released": "2026-10-15T10:22:47Z",
+      "updated": "2026-10-15T14:38:15Z",
+      "cves": [
+        "CVE-2026-46437"
+      ],
+      "products": [
+        "PyPI: wger"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4316",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "wger: Trainer Privilege Escalation - Improper Privilege Management",
+      "url": "https://github.com/advisories/GHSA-x249-cx55-2h87",
+      "released": "2026-10-15T10:22:47Z",
+      "updated": "2026-10-15T14:38:15Z",
+      "cves": [
+        "CVE-2026-46434"
+      ],
+      "products": [
+        "PyPI: wger"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4221",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Hydra logging configuration permits unsafe callable resolution",
+      "url": "https://github.com/advisories/GHSA-c3wx-c55w-pxjq",
+      "released": "2026-10-15T10:22:48Z",
+      "updated": "2026-10-15T14:37:42Z",
+      "cves": [
+        "CVE-2026-106441"
+      ],
+      "products": [
+        "PyPI: hydra-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in hydra-core 1.3.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in hydra-core 1.4.0.dev9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4222",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Hydra: Mutable instantiate policy sets allow target blocklist bypass",
+      "url": "https://github.com/advisories/GHSA-mwj6-rfh8-7qf4",
+      "released": "2026-10-15T10:22:48Z",
+      "updated": "2026-10-15T14:37:43Z",
+      "cves": [
+        "CVE-2026-106439"
+      ],
+      "products": [
+        "PyPI: hydra-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in hydra-core 1.3.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in hydra-core 1.4.0.dev10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4223",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Hydra instantiate target blacklist bypasses permit code execution",
+      "url": "https://github.com/advisories/GHSA-rqx7-p7vv-w7hr",
+      "released": "2026-10-15T10:22:48Z",
+      "updated": "2026-10-15T14:37:43Z",
+      "cves": [
+        "CVE-2026-106442"
+      ],
+      "products": [
+        "PyPI: hydra-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in hydra-core 1.3.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in hydra-core 1.4.0.dev9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4224",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Hydra: Optuna custom_search_space can resolve and execute untrusted callables via get_method",
+      "url": "https://github.com/advisories/GHSA-5jjj-9xc3-rm56",
+      "released": "2026-10-15T10:22:48Z",
+      "updated": "2026-10-15T14:37:43Z",
+      "cves": [
+        "CVE-2026-106440"
+      ],
+      "products": [
+        "PyPI: hydra-optuna-sweeper"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in hydra-optuna-sweeper 1.3.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in hydra-optuna-sweeper 1.4.0.dev10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4230",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Langflow has Authenticated Cross-Project File Disclosure via Unscoped MCP Resource Handlers",
+      "url": "https://github.com/advisories/GHSA-4hmc-cfm3-w43c",
+      "released": "2026-10-15T10:22:48Z",
+      "updated": "2026-10-15T14:37:44Z",
+      "cves": [
+        "CVE-2026-105699"
+      ],
+      "products": [
+        "PyPI: langflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in langflow 1.9.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4234",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Langflow : Cross-user flow access and vertex execution via deprecated /api/v1/build/{flow_id}/vertices endpoints",
+      "url": "https://github.com/advisories/GHSA-gh98-4phw-6fmw",
+      "released": "2026-10-15T10:22:48Z",
+      "updated": "2026-10-15T14:37:45Z",
+      "cves": [
+        "CVE-2026-105698"
+      ],
+      "products": [
+        "PyPI: langflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in langflow 1.10.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4237",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Langflow: OS command injection (RCE) via arbitrary command in MCP stdio server configuration",
+      "url": "https://github.com/advisories/GHSA-w794-rj3p-xv45",
+      "released": "2026-10-15T10:22:48Z",
+      "updated": "2026-10-15T14:37:45Z",
+      "cves": [
+        "CVE-2026-105697"
+      ],
+      "products": [
+        "PyPI: langflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in langflow 1.10.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4238",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Langflow : Cross-user flow access and vertex execution via deprecated /api/v1/build/{flow_id}/vertices endpoints",
+      "url": "https://github.com/advisories/GHSA-gh98-4phw-6fmw",
+      "released": "2026-10-15T10:22:48Z",
+      "updated": "2026-10-15T14:37:44Z",
+      "cves": [
+        "CVE-2026-105698"
+      ],
+      "products": [
+        "PyPI: langflow-base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in langflow-base 0.10.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4239",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Langflow: OS command injection (RCE) via arbitrary command in MCP stdio server configuration",
+      "url": "https://github.com/advisories/GHSA-w794-rj3p-xv45",
+      "released": "2026-10-15T10:22:48Z",
+      "updated": "2026-10-15T14:37:44Z",
+      "cves": [
+        "CVE-2026-105697"
+      ],
+      "products": [
+        "PyPI: langflow-base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in langflow-base 0.10.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4241",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Langflow: OS command injection (RCE) via arbitrary command in MCP stdio server configuration",
+      "url": "https://github.com/advisories/GHSA-w794-rj3p-xv45",
+      "released": "2026-10-15T10:22:48Z",
+      "updated": "2026-10-15T14:37:45Z",
+      "cves": [
+        "CVE-2026-105697"
+      ],
+      "products": [
+        "PyPI: lfx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in lfx 1.10.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4269",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Crawl4AI/Chromium backend is also affected by the `web_crawl` SSRF validation bypass",
+      "url": "https://github.com/advisories/GHSA-6g59-gm2v-qhvq",
+      "released": "2026-10-15T10:22:48Z",
+      "updated": "2026-10-15T14:38:03Z",
+      "cves": [
+        "CVE-2026-61429"
+      ],
+      "products": [
+        "PyPI: praisonaiagents"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonaiagents 1.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4311",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "WeasyPrint: EPS images reach the Ghostscript interpreter resulting in RCE",
+      "url": "https://github.com/advisories/GHSA-r543-q48m-4c9j",
+      "released": "2026-10-15T10:22:48Z",
+      "updated": "2026-10-15T14:38:14Z",
+      "cves": [
+        "CVE-2026-106443"
+      ],
+      "products": [
+        "PyPI: weasyprint"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in weasyprint 70.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4208",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Docling: Crafted DoclingDocument JSON embeds local image files into converted output",
+      "url": "https://github.com/advisories/GHSA-p944-4xh2-x776",
+      "released": "2026-10-15T10:22:49Z",
+      "updated": "2026-10-15T14:37:40Z",
+      "cves": [
+        "CVE-2026-105748"
+      ],
+      "products": [
+        "PyPI: docling"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in docling 2.131.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4210",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Docling imports plugin entry points before the allow_external_plugins check",
+      "url": "https://github.com/advisories/GHSA-9jxx-vjrv-h2rq",
+      "released": "2026-10-15T10:22:49Z",
+      "updated": "2026-10-15T14:37:39Z",
+      "cves": [
+        "CVE-2026-105745"
+      ],
+      "products": [
+        "PyPI: docling-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in docling-slim 2.131.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4211",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Docling: Unbounded table rowspan/colspan in HTML, JATS, ODS and BoxNote backends causes CPU/memory exhaustion",
+      "url": "https://github.com/advisories/GHSA-cgc7-9qp3-86m3",
+      "released": "2026-10-15T10:22:49Z",
+      "updated": "2026-10-15T14:37:39Z",
+      "cves": [
+        "CVE-2026-105749"
+      ],
+      "products": [
+        "PyPI: docling-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in docling-slim 2.131.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4212",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Docling: Configured HTTP headers sent to every remote image host named by a document",
+      "url": "https://github.com/advisories/GHSA-p3fw-7699-7926",
+      "released": "2026-10-15T10:22:49Z",
+      "updated": "2026-10-15T14:37:39Z",
+      "cves": [
+        "CVE-2026-105742"
+      ],
+      "products": [
+        "PyPI: docling-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in docling-slim 2.132.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4213",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Docling: Crafted DoclingDocument JSON embeds local image files into converted output",
+      "url": "https://github.com/advisories/GHSA-p944-4xh2-x776",
+      "released": "2026-10-15T10:22:49Z",
+      "updated": "2026-10-15T14:37:39Z",
+      "cves": [
+        "CVE-2026-105748"
+      ],
+      "products": [
+        "PyPI: docling-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in docling-slim 2.131.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4214",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Docling has SSRF guard bypass in remote resource fetching (DNS rebinding / multi-record resolution; no IP validation in HTML render mode)",
+      "url": "https://github.com/advisories/GHSA-pc36-qwjq-x68c",
+      "released": "2026-10-15T10:22:49Z",
+      "updated": "2026-10-15T14:37:39Z",
+      "cves": [
+        "CVE-2026-105743"
+      ],
+      "products": [
+        "PyPI: docling-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in docling-slim 2.132.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4216",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Docling has arbitrary file read/write (and command execution when shell-escape is enabled) when rendering untrusted TikZ with the opt-in Tectonic engine",
+      "url": "https://github.com/advisories/GHSA-x3q2-h9hx-4r4j",
+      "released": "2026-10-15T10:22:49Z",
+      "updated": "2026-10-15T14:37:40Z",
+      "cves": [
+        "CVE-2026-105744"
+      ],
+      "products": [
+        "PyPI: docling-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in docling-slim 2.132.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4255",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Prompt Injection Defense Bypassed for HIGH-Level Threats",
+      "url": "https://github.com/advisories/GHSA-fj8f-m44g-c479",
+      "released": "2026-10-15T10:22:49Z",
+      "updated": "2026-10-15T14:38:02Z",
+      "cves": [
+        "CVE-2026-61439"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4265",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Human-in-the-loop tool approval is cached by tool name and silently reused for all subsequent calls with arbitrary arguments",
+      "url": "https://github.com/advisories/GHSA-29r9-67vg-qj56",
+      "released": "2026-10-15T10:22:49Z",
+      "updated": "2026-10-15T14:38:02Z",
+      "cves": [
+        "CVE-2026-60087"
+      ],
+      "products": [
+        "PyPI: praisonaiagents"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonaiagents 1.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4272",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: DNS rebinding bypass in `web_crawl` SSRF protection allows internal response disclosure",
+      "url": "https://github.com/advisories/GHSA-qg25-6gc4-48mg",
+      "released": "2026-10-15T10:22:49Z",
+      "updated": "2026-10-15T14:38:03Z",
+      "cves": [
+        "CVE-2026-61430"
+      ],
+      "products": [
+        "PyPI: praisonaiagents"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonaiagents 1.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4273",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Project config can auto-save agent output outside the project root",
+      "url": "https://github.com/advisories/GHSA-qjw5-xwrp-xwpq",
+      "released": "2026-10-15T10:22:49Z",
+      "updated": "2026-10-15T14:38:04Z",
+      "cves": [
+        "CVE-2026-60089"
+      ],
+      "products": [
+        "PyPI: praisonaiagents"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonaiagents 1.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4266",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: CodeAgent Executes LLM-Generated Code Without Sandboxing and Leaks All Environment Secrets",
+      "url": "https://github.com/advisories/GHSA-2xv2-w8cq-5gxw",
+      "released": "2026-10-15T10:22:50Z",
+      "updated": "2026-10-15T14:38:03Z",
+      "cves": [
+        "CVE-2026-61447"
+      ],
+      "products": [
+        "PyPI: praisonaiagents"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonaiagents 1.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4267",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Unsafe Dynamic Module Loading Leads to Arbitrary Code Execution via tools.py in AgentFlow",
+      "url": "https://github.com/advisories/GHSA-4gfv-wg42-7jw5",
+      "released": "2026-10-15T10:22:50Z",
+      "updated": "2026-10-15T14:38:03Z",
+      "cves": [
+        "CVE-2026-61437"
+      ],
+      "products": [
+        "PyPI: praisonaiagents"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonaiagents 1.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4268",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: FastContext path resolution permits absolute and traversal reads outside the workspace",
+      "url": "https://github.com/advisories/GHSA-4xxv-6wmf-xf45",
+      "released": "2026-10-15T10:22:50Z",
+      "updated": "2026-10-15T14:38:03Z",
+      "cves": [
+        "CVE-2026-61432"
+      ],
+      "products": [
+        "PyPI: praisonaiagents"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonaiagents 1.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4271",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Plugin Auto-Discovery Executes Arbitrary Python Files Without Verification",
+      "url": "https://github.com/advisories/GHSA-m6wp-h223-4c8g",
+      "released": "2026-10-15T10:22:50Z",
+      "updated": "2026-10-15T14:38:03Z",
+      "cves": [
+        "CVE-2026-61446"
+      ],
+      "products": [
+        "PyPI: praisonaiagents"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonaiagents 1.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4275",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI OpenTelemetry instrumentation: exception events on tool and agent run spans include content when `include_content=False`",
+      "url": "https://github.com/advisories/GHSA-4x9p-g9wm-8q7f",
+      "released": "2026-10-15T10:22:50Z",
+      "updated": "2026-10-15T14:38:05Z",
+      "cves": [
+        "CVE-2026-107291"
+      ],
+      "products": [
+        "PyPI: pydantic-ai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai 1.107.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai 2.44.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4277",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI: Event loop blocked by quadratic title extraction in `web_fetch`",
+      "url": "https://github.com/advisories/GHSA-fpf4-vwcp-v4hp",
+      "released": "2026-10-15T10:22:50Z",
+      "updated": "2026-10-15T14:38:06Z",
+      "cves": [
+        "CVE-2026-107290"
+      ],
+      "products": [
+        "PyPI: pydantic-ai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai 1.107.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai 2.44.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4282",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI: SSRF cloud-metadata blocklist bypass via IPv6 zone identifiers",
+      "url": "https://github.com/advisories/GHSA-vmxc-h2x2-jmf3",
+      "released": "2026-10-15T10:22:50Z",
+      "updated": "2026-10-15T14:38:06Z",
+      "cves": [
+        "CVE-2026-107289"
+      ],
+      "products": [
+        "PyPI: pydantic-ai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai 1.107.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai 2.44.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4284",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI OpenTelemetry instrumentation: exception events on tool and agent run spans include content when `include_content=False`",
+      "url": "https://github.com/advisories/GHSA-4x9p-g9wm-8q7f",
+      "released": "2026-10-15T10:22:50Z",
+      "updated": "2026-10-15T14:38:04Z",
+      "cves": [
+        "CVE-2026-107291"
+      ],
+      "products": [
+        "PyPI: pydantic-ai-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai-slim 1.107.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai-slim 2.44.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4286",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI: Event loop blocked by quadratic title extraction in `web_fetch`",
+      "url": "https://github.com/advisories/GHSA-fpf4-vwcp-v4hp",
+      "released": "2026-10-15T10:22:50Z",
+      "updated": "2026-10-15T14:38:04Z",
+      "cves": [
+        "CVE-2026-107290"
+      ],
+      "products": [
+        "PyPI: pydantic-ai-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai-slim 1.107.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai-slim 2.44.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4291",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI: SSRF cloud-metadata blocklist bypass via IPv6 zone identifiers",
+      "url": "https://github.com/advisories/GHSA-vmxc-h2x2-jmf3",
+      "released": "2026-10-15T10:22:50Z",
+      "updated": "2026-10-15T14:38:05Z",
+      "cves": [
+        "CVE-2026-107289"
+      ],
+      "products": [
+        "PyPI: pydantic-ai-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai-slim 1.107.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai-slim 2.44.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4260",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: PGVector and Cassandra knowledge stores interpolate vector dimensions into DDL",
+      "url": "https://github.com/advisories/GHSA-wf65-4jjx-q444",
+      "released": "2026-10-15T10:22:51Z",
+      "updated": "2026-10-15T14:38:02Z",
+      "cves": [
+        "CVE-2026-60090"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4270",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: SkillTools Executes Scripts Without Path Containment Validation",
+      "url": "https://github.com/advisories/GHSA-c44f-37qr-gw3f",
+      "released": "2026-10-15T10:22:51Z",
+      "updated": "2026-10-15T14:38:03Z",
+      "cves": [
+        "CVE-2026-61443"
+      ],
+      "products": [
+        "PyPI: praisonaiagents"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonaiagents 1.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4274",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI OpenTelemetry instrumentation: retry prompt content is not redacted when `include_content=False`",
+      "url": "https://github.com/advisories/GHSA-3gh4-cghq-f8v4",
+      "released": "2026-10-15T10:22:51Z",
+      "updated": "2026-10-15T14:38:05Z",
+      "cves": [
+        "CVE-2026-107293"
+      ],
+      "products": [
+        "PyPI: pydantic-ai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai 1.107.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai 2.27.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4278",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI Web chat UI (`Agent.to_web()`, `clai web`): a website visited by the developer can trigger agent runs and server-side tool execution on the local chat endpoint",
+      "url": "https://github.com/advisories/GHSA-h4xc-3qfq-jf93",
+      "released": "2026-10-15T10:22:51Z",
+      "updated": "2026-10-15T14:38:06Z",
+      "cves": [
+        "CVE-2026-107295"
+      ],
+      "products": [
+        "PyPI: pydantic-ai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai 1.107.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai 2.28.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4279",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI Web chat UI (`Agent.to_web()`, `clai web`): the local chat endpoint does not validate the `Host` header",
+      "url": "https://github.com/advisories/GHSA-q2xc-rrxj-58x9",
+      "released": "2026-10-15T10:22:51Z",
+      "updated": "2026-10-15T14:38:06Z",
+      "cves": [
+        "CVE-2026-107292"
+      ],
+      "products": [
+        "PyPI: pydantic-ai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai 1.107.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai 2.30.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4280",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI: Unbounded memory use when downloading remote content via web_fetch or FileUrl",
+      "url": "https://github.com/advisories/GHSA-v2xh-2vp8-57h8",
+      "released": "2026-10-15T10:22:51Z",
+      "updated": "2026-10-15T14:38:06Z",
+      "cves": [
+        "CVE-2026-107294"
+      ],
+      "products": [
+        "PyPI: pydantic-ai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai 1.107.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai 2.24.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4281",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI: Excessive resource use when local web fetching converts nested HTML",
+      "url": "https://github.com/advisories/GHSA-v36g-jcw9-x7cw",
+      "released": "2026-10-15T10:22:51Z",
+      "updated": "2026-10-15T14:38:06Z",
+      "cves": [
+        "CVE-2026-107287"
+      ],
+      "products": [
+        "PyPI: pydantic-ai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai 1.107.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai 2.52.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4283",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI OpenTelemetry instrumentation: retry prompt content is not redacted when `include_content=False`",
+      "url": "https://github.com/advisories/GHSA-3gh4-cghq-f8v4",
+      "released": "2026-10-15T10:22:51Z",
+      "updated": "2026-10-15T14:38:04Z",
+      "cves": [
+        "CVE-2026-107293"
+      ],
+      "products": [
+        "PyPI: pydantic-ai-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai-slim 1.107.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai-slim 2.27.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4287",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI Web chat UI (`Agent.to_web()`, `clai web`): a website visited by the developer can trigger agent runs and server-side tool execution on the local chat endpoint",
+      "url": "https://github.com/advisories/GHSA-h4xc-3qfq-jf93",
+      "released": "2026-10-15T10:22:51Z",
+      "updated": "2026-10-15T14:38:04Z",
+      "cves": [
+        "CVE-2026-107295"
+      ],
+      "products": [
+        "PyPI: pydantic-ai-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai-slim 1.107.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai-slim 2.28.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4288",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI Web chat UI (`Agent.to_web()`, `clai web`): the local chat endpoint does not validate the `Host` header",
+      "url": "https://github.com/advisories/GHSA-q2xc-rrxj-58x9",
+      "released": "2026-10-15T10:22:51Z",
+      "updated": "2026-10-15T14:38:05Z",
+      "cves": [
+        "CVE-2026-107292"
+      ],
+      "products": [
+        "PyPI: pydantic-ai-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai-slim 1.107.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai-slim 2.30.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4289",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI: Unbounded memory use when downloading remote content via web_fetch or FileUrl",
+      "url": "https://github.com/advisories/GHSA-v2xh-2vp8-57h8",
+      "released": "2026-10-15T10:22:51Z",
+      "updated": "2026-10-15T14:38:05Z",
+      "cves": [
+        "CVE-2026-107294"
+      ],
+      "products": [
+        "PyPI: pydantic-ai-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai-slim 1.107.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai-slim 2.24.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4290",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI: Excessive resource use when local web fetching converts nested HTML",
+      "url": "https://github.com/advisories/GHSA-v36g-jcw9-x7cw",
+      "released": "2026-10-15T10:22:51Z",
+      "updated": "2026-10-15T14:38:05Z",
+      "cves": [
+        "CVE-2026-107287"
+      ],
+      "products": [
+        "PyPI: pydantic-ai-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai-slim 1.107.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in pydantic-ai-slim 2.52.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4204",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "CairoSVG: Quadratic-time DoS parsing a crafted SVG",
+      "url": "https://github.com/advisories/GHSA-c3jg-qh8m-j3h2",
+      "released": "2026-10-15T10:22:52Z",
+      "updated": "2026-10-15T14:37:36Z",
+      "cves": [
+        "CVE-2026-107378"
+      ],
+      "products": [
+        "PyPI: cairosvg"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cairosvg 2.9.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4205",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "datamodel-code-generator: Protobuf weak-import path traversal allows files to be written outside the temporary directory",
+      "url": "https://github.com/advisories/GHSA-77xj-x4rm-935c",
+      "released": "2026-10-15T10:22:52Z",
+      "updated": "2026-10-15T14:37:37Z",
+      "cves": [
+        "CVE-2026-107377"
+      ],
+      "products": [
+        "PyPI: datamodel-code-generator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in datamodel-code-generator 0.81.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4247",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Call API localhost-only authentication bypass via spoofed Host header",
+      "url": "https://github.com/advisories/GHSA-2gpf-2492-q9jh",
+      "released": "2026-10-15T10:22:52Z",
+      "updated": "2026-10-15T14:38:00Z",
+      "cves": [
+        "CVE-2026-61435"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4248",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Prompt-injection defense blocks only when 3+ detector families fire simultaneously; realistic single-vector injections pass through unblocked",
+      "url": "https://github.com/advisories/GHSA-4r3p-w3mc-5v34",
+      "released": "2026-10-15T10:22:52Z",
+      "updated": "2026-10-15T14:38:01Z",
+      "cves": [
+        "CVE-2026-60086"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4251",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: API deploy code generator embeds unescaped YAML fields into Python source",
+      "url": "https://github.com/advisories/GHSA-79fv-7hq9-w7xg",
+      "released": "2026-10-15T10:22:52Z",
+      "updated": "2026-10-15T14:38:01Z",
+      "cves": [
+        "CVE-2026-61433"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4258",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: ContextGatherer include resolution permits absolute and traversal reads outside the workspace",
+      "url": "https://github.com/advisories/GHSA-q7m5-3jmv-vm48",
+      "released": "2026-10-15T10:22:52Z",
+      "updated": "2026-10-15T14:38:02Z",
+      "cves": [
+        "CVE-2026-61431"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4261",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Project custom command templates can read outside-workspace files into model prompts",
+      "url": "https://github.com/advisories/GHSA-xpx6-x8c2-mw5w",
+      "released": "2026-10-15T10:22:52Z",
+      "updated": "2026-10-15T14:38:02Z",
+      "cves": [
+        "CVE-2026-60088"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4276",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI: Concurrency-limited models can keep their slot when a streamed request ends early",
+      "url": "https://github.com/advisories/GHSA-6fqq-452j-qhrp",
+      "released": "2026-10-15T10:22:52Z",
+      "updated": "2026-10-15T14:38:06Z",
+      "cves": [
+        "CVE-2026-107286"
+      ],
+      "products": [
+        "PyPI: pydantic-ai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai 2.53.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4285",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Pydantic AI: Concurrency-limited models can keep their slot when a streamed request ends early",
+      "url": "https://github.com/advisories/GHSA-6fqq-452j-qhrp",
+      "released": "2026-10-15T10:22:52Z",
+      "updated": "2026-10-15T14:38:04Z",
+      "cves": [
+        "CVE-2026-107286"
+      ],
+      "products": [
+        "PyPI: pydantic-ai-slim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pydantic-ai-slim 2.53.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4227",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Indico: Cross-Site-Scripting in link fields",
+      "url": "https://github.com/advisories/GHSA-c4wc-ggrj-jg9v",
+      "released": "2026-10-15T10:22:53Z",
+      "updated": "2026-10-15T14:37:43Z",
+      "cves": [
+        "CVE-2026-107396"
+      ],
+      "products": [
+        "PyPI: indico"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in indico 3.3.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4228",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Indico: Cross-Site-Scripting in minutes editor",
+      "url": "https://github.com/advisories/GHSA-cw24-x4mj-fw3q",
+      "released": "2026-10-15T10:22:53Z",
+      "updated": "2026-10-15T14:37:43Z",
+      "cves": [
+        "CVE-2026-107397"
+      ],
+      "products": [
+        "PyPI: indico"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in indico 3.3.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4249",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Jobs API is unauthenticated by default and allows attacker-controlled webhook SSRF",
+      "url": "https://github.com/advisories/GHSA-4w49-gwv8-fpjg",
+      "released": "2026-10-15T10:22:53Z",
+      "updated": "2026-10-15T14:38:01Z",
+      "cves": [
+        "CVE-2026-60091"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4250",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: SecurityPolicy command/path/import restrictions are completely unenforced by the default SubprocessSandbox backend",
+      "url": "https://github.com/advisories/GHSA-5r6c-gj4g-r697",
+      "released": "2026-10-15T10:22:53Z",
+      "updated": "2026-10-15T14:38:01Z",
+      "cves": [
+        "CVE-2026-60085"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4253",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: AICoder Arbitrary File Write and Command Execution via LLM Tool Calls",
+      "url": "https://github.com/advisories/GHSA-9mp3-24cc-77mg",
+      "released": "2026-10-15T10:22:53Z",
+      "updated": "2026-10-15T14:38:01Z",
+      "cves": [
+        "CVE-2026-61445"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4254",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Shell command allowlist bypass via find -exec built-in action",
+      "url": "https://github.com/advisories/GHSA-cv3g-hj65-pcfh",
+      "released": "2026-10-15T10:22:53Z",
+      "updated": "2026-10-15T14:38:01Z",
+      "cves": [
+        "CVE-2026-61434"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4257",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: MCP HTTP-stream transport is unauthenticated by default, exposing tool enumeration and an unvalidated tool-call surface",
+      "url": "https://github.com/advisories/GHSA-hc5v-gxvj-58wh",
+      "released": "2026-10-15T10:22:53Z",
+      "updated": "2026-10-15T14:38:02Z",
+      "cves": [
+        "CVE-2026-61427"
+      ],
+      "products": [
+        "PyPI: praisonai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai 4.6.78",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4262",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Platform member PATCH routes allow owner resource rewrites and project lead reassignment delete bypass",
+      "url": "https://github.com/advisories/GHSA-c78w-2q4r-68r7",
+      "released": "2026-10-15T10:22:53Z",
+      "updated": "2026-10-15T14:38:00Z",
+      "cves": [
+        "CVE-2026-61442"
+      ],
+      "products": [
+        "PyPI: praisonai-platform"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai-platform 0.1.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4264",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PraisonAI: Platform members can rewrite shared labels and owner issue labels without owner/admin authorization",
+      "url": "https://github.com/advisories/GHSA-xxgv-vgvj-qvxh",
+      "released": "2026-10-15T10:22:53Z",
+      "updated": "2026-10-15T14:38:00Z",
+      "cves": [
+        "CVE-2026-61440"
+      ],
+      "products": [
+        "PyPI: praisonai-platform"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in praisonai-platform 0.1.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4201",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Banks: Symlink traversal and arbitrary file disclosure/overwrite in DirectoryPromptRegistry",
+      "url": "https://github.com/advisories/GHSA-556j-vv39-8rqv",
+      "released": "2026-10-15T10:22:54Z",
+      "updated": "2026-10-15T14:37:35Z",
+      "cves": [
+        "CVE-2026-107716"
+      ],
+      "products": [
+        "PyPI: banks"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in banks 2.5.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4202",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Banks: User-controlled prompt input can be parsed as privileged chat messages",
+      "url": "https://github.com/advisories/GHSA-hmq2-7hp6-7crh",
+      "released": "2026-10-15T10:22:54Z",
+      "updated": "2026-10-15T14:37:35Z",
+      "cves": [
+        "CVE-2026-107717"
+      ],
+      "products": [
+        "PyPI: banks"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in banks 2.5.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4225",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Indico: Incomplete Server-Side Request Forgery (SSRF) check",
+      "url": "https://github.com/advisories/GHSA-2v95-h47v-g4x9",
+      "released": "2026-10-15T10:22:54Z",
+      "updated": "2026-10-15T14:37:43Z",
+      "cves": [
+        "CVE-2026-107394"
+      ],
+      "products": [
+        "PyPI: indico"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in indico 3.3.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4226",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Indico: Missing access check in legacy session export API",
+      "url": "https://github.com/advisories/GHSA-6p4f-j8j6-463q",
+      "released": "2026-10-15T10:22:54Z",
+      "updated": "2026-10-15T14:37:43Z",
+      "cves": [
+        "CVE-2026-107395"
+      ],
+      "products": [
+        "PyPI: indico"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in indico 3.3.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4292",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "pyLoad: Unauthenticated access to /web/ bypasses authentication on sensitive templates and leaks internal error details via exception attribute typo",
+      "url": "https://github.com/advisories/GHSA-j92p-c242-7hfx",
+      "released": "2026-10-15T10:22:54Z",
+      "updated": "2026-10-15T14:38:08Z",
+      "cves": [
+        "CVE-2026-75597"
+      ],
+      "products": [
+        "PyPI: pyload-ng"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pyload-ng 0.5.0b3.dev101",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4293",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "pyLoad: Lack of Input Size Validation Leads to Denial of Service (DoS) and Process Termination",
+      "url": "https://github.com/advisories/GHSA-vq8p-m3wm-gv5f",
+      "released": "2026-10-15T10:22:54Z",
+      "updated": "2026-10-15T14:38:08Z",
+      "cves": [
+        "CVE-2026-48484"
+      ],
+      "products": [
+        "PyPI: pyload-ng"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pyload-ng 0.5.0b3.dev101",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4302",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Strawberry legacy graphql-ws retains naturally completed subscription slots",
+      "url": "https://github.com/advisories/GHSA-m952-2w3f-6r8h",
+      "released": "2026-10-15T10:22:54Z",
+      "updated": "2026-10-15T14:38:11Z",
+      "cves": [
+        "CVE-2026-107727"
+      ],
+      "products": [
+        "PyPI: strawberry-graphql"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in strawberry-graphql 0.327.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4303",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Strawberry GraphQL: Synchronous permission checks can treat an awaitable authorization result as truthy",
+      "url": "https://github.com/advisories/GHSA-pfvf-fwfp-25mp",
+      "released": "2026-10-15T10:22:54Z",
+      "updated": "2026-10-15T14:38:11Z",
+      "cves": [
+        "CVE-2026-107728"
+      ],
+      "products": [
+        "PyPI: strawberry-graphql"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in strawberry-graphql 0.326.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4200",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Apprise forwards configured auth headers across cross-origin HTTP redirects",
+      "url": "https://github.com/advisories/GHSA-856c-92hv-3vxx",
+      "released": "2026-10-15T10:22:55Z",
+      "updated": "2026-10-15T14:37:35Z",
+      "cves": [
+        "CVE-2026-59180"
+      ],
+      "products": [
+        "PyPI: apprise"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apprise 1.11.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4246",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "pacioli: A submit consent marker licensed cancellation of caller-named pre-existing documents",
+      "url": "https://github.com/advisories/GHSA-3hj7-6vmj-h8v4",
+      "released": "2026-10-15T10:22:55Z",
+      "updated": "2026-10-15T14:37:59Z",
+      "cves": [
+        "CVE-2026-107841"
+      ],
+      "products": [
+        "PyPI: pacioli-guard"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pacioli-guard 0.10.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4300",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Shiny for Python has path traversal in bookmark restore",
+      "url": "https://github.com/advisories/GHSA-47c3-hpmg-7j6p",
+      "released": "2026-10-15T10:22:55Z",
+      "updated": "2026-10-15T14:38:10Z",
+      "cves": [
+        "CVE-2026-108258"
+      ],
+      "products": [
+        "PyPI: shiny"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in shiny 1.6.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:83548",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "taffy: taffydb: Internal Property Tampering",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83548",
+      "released": "2026-10-15T10:30:05Z",
+      "updated": "2026-11-26T17:21:11Z",
+      "cves": [
+        "CVE-2019-10790",
+        "CVE-2023-25153",
+        "CVE-2023-28155",
+        "CVE-2023-46159",
+        "CVE-2024-5206",
+        "CVE-2024-11831",
+        "CVE-2024-37890",
+        "CVE-2024-47866",
+        "CVE-2025-7783",
+        "CVE-2025-30156",
+        "CVE-2025-47914",
+        "CVE-2025-50181",
+        "CVE-2025-50182",
+        "CVE-2025-58181",
+        "CVE-2025-59436",
+        "CVE-2025-64718",
+        "CVE-2025-64756",
+        "CVE-2026-50152"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "fix": [
+        {
+          "t": "The container images provided by this update can be downloaded from the Red Hat container registry at registry.redhat.io using the \"podman pull\" command.",
+          "u": "https://access.redhat.com/errata/RHSA-2026:83548"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        },
+        {
+          "t": "The issue can be mitigated by reducing the maximum allowed length of the request headers using the --max-http-header-size=size or the maxHeaderSize options so that no more headers than the server.maxHeadersCount limit can be sent. The issu…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:82807",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: kernel security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:82807",
+      "released": "2026-10-15T12:12:31Z",
+      "updated": "2026-10-29T12:12:15Z",
+      "cves": [
+        "CVE-2026-31678",
+        "CVE-2026-63920",
+        "CVE-2026-68108",
+        "CVE-2026-68236",
+        "CVE-2026-68278",
+        "CVE-2026-68409",
+        "CVE-2026-72318",
+        "CVE-2026-80887",
+        "CVE-2026-89811"
+      ],
+      "products": [
+        "Rocky Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 0:4.18.0-553.173.1.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:82919",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: environment-modules security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:82919",
+      "released": "2026-10-15T12:12:31Z",
+      "updated": "2026-10-29T12:12:15Z",
+      "cves": [
+        "CVE-2026-85013"
+      ],
+      "products": [
+        "Rocky Linux: environment-modules"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in environment-modules 0:4.5.2-5.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:82806",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: kernel-rt security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:82806",
+      "released": "2026-10-15T12:13:35Z",
+      "updated": "2026-10-29T12:12:27Z",
+      "cves": [
+        "CVE-2026-31678",
+        "CVE-2026-63920",
+        "CVE-2026-68108",
+        "CVE-2026-68236",
+        "CVE-2026-68278",
+        "CVE-2026-68409",
+        "CVE-2026-80887",
+        "CVE-2026-89811"
+      ],
+      "products": [
+        "Rocky Linux: kernel-rt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel-rt 0:4.18.0-553.173.1.rt7.514.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:22105-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1632,6 +4927,64 @@
       "fix": [
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:82883",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: hplip security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:82883",
+      "released": "2026-10-15T12:20:13Z",
+      "updated": "2026-10-29T12:12:32Z",
+      "cves": [
+        "CVE-2025-43023",
+        "CVE-2026-91097",
+        "CVE-2026-91098",
+        "CVE-2026-91099",
+        "CVE-2026-91100",
+        "CVE-2026-91101",
+        "CVE-2026-91102",
+        "CVE-2026-91103",
+        "CVE-2026-91104",
+        "CVE-2026-91105",
+        "CVE-2026-91106"
+      ],
+      "products": [
+        "Rocky Linux: hplip"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in hplip 0:3.26.6-1.el10_2.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "sca-2026-0015",
+      "src": "csaf_sick",
+      "vendor": "SICK AG",
+      "title": "Vulnerability Affecting Sick_Safetyscanners_Base CPP Driver",
+      "url": "https://www.sick.com/.well-known/csaf/white/2026/sca-2026-0015.json",
+      "released": "2026-10-15T13:00:00Z",
+      "updated": "2026-10-15T13:00:00Z",
+      "cves": [
+        "CVE-2026-101290"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SICK Open Source Solutions",
+        "Sick_Safetyscanners_Base CPP Driver"
+      ],
+      "fix": [
+        {
+          "t": "Users are recommended to upgrade to version 1.0.5.",
           "u": null
         }
       ],
@@ -1660,6 +5013,36 @@
           "u": null
         }
       ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:83629",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat OpenShift GitOps CLI tools version 1.22.2",
+      "url": "https://access.redhat.com/errata/RHSA-2026:83629",
+      "released": "2026-10-15T16:52:23Z",
+      "updated": "2026-10-16T12:00:59Z",
+      "cves": [
+        "CVE-2026-82277"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Red Hat OpenShift GitOps",
+        "Red Hat OpenShift GitOps 1.22"
+      ],
+      "fix": [
+        {
+          "t": "Red Hat OpenShift GitOps CLI tools version 1.22.2",
+          "u": "https://access.redhat.com/errata/RHSA-2026:83629"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-26"
     },
     {
@@ -1747,6 +5130,170 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-105032",
+      "src": "gna-1337",
+      "vendor": "EnergizeLab",
+      "title": "EnergizeLab Eilik AI Skill Upload Unauthenticated Path Traversal Arbitrary File Write",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-105032",
+      "released": "2026-10-15T20:42:04Z",
+      "updated": "2026-10-15T20:42:04Z",
+      "cves": [
+        "CVE-2026-105032"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "EnergizeLab FastAPI AI inference server"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-105033",
+      "src": "gna-1337",
+      "vendor": "EnergizeLab",
+      "title": "EnergizeLab AI Station Default Root Credentials with SSH Enabled",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-105033",
+      "released": "2026-10-15T20:42:34Z",
+      "updated": "2026-10-15T20:42:34Z",
+      "cves": [
+        "CVE-2026-105033"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "EnergizeLab AI Station firmware (RK3562)"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-105034",
+      "src": "gna-1337",
+      "vendor": "EnergizeLab",
+      "title": "EnergizeLab Eilik Unauthenticated Device-Token Issuance for Arbitrary Serial Numbers",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-105034",
+      "released": "2026-10-15T20:42:42Z",
+      "updated": "2026-10-15T20:42:42Z",
+      "cves": [
+        "CVE-2026-105034"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "EnergizeLab NestJS auth service"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-105035",
+      "src": "gna-1337",
+      "vendor": "EnergizeLab",
+      "title": "EnergizeLab FirmwareUpdater Universal Hard-Coded AES Key",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-105035",
+      "released": "2026-10-15T20:42:53Z",
+      "updated": "2026-10-15T20:42:53Z",
+      "cves": [
+        "CVE-2026-105035"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "EnergizeLab FirmwareUpdater"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-105036",
+      "src": "gna-1337",
+      "vendor": "EnergizeLab",
+      "title": "EnergizeLab Firmware Updates Downloaded over HTTP Without Integrity Checks",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-105036",
+      "released": "2026-10-15T20:43:04Z",
+      "updated": "2026-10-15T20:43:04Z",
+      "cves": [
+        "CVE-2026-105036"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "EnergizeLab Robot firmware (mode 104000)",
+        "EnergizeLab AI Station firmware (RK3562)",
+        "EnergizeLab Windows desktop app (EnergizeLabSetup-3.1.2-Win.exe)"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-105037",
+      "src": "gna-1337",
+      "vendor": "EnergizeLab",
+      "title": "EnergizeLab Station Middleware Authenticated Path Traversal Arbitrary File Read",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-105037",
+      "released": "2026-10-15T20:43:13Z",
+      "updated": "2026-10-15T20:43:13Z",
+      "cves": [
+        "CVE-2026-105037"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "products": [
+        "EnergizeLab station-middleware"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-105038",
+      "src": "gna-1337",
+      "vendor": "EnergizeLab",
+      "title": "EnergizeLab Eilik Unauthenticated AI Model Administration and Runtime Model Switching",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-105038",
+      "released": "2026-10-15T20:43:30Z",
+      "updated": "2026-10-15T20:43:30Z",
+      "cves": [
+        "CVE-2026-105038"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "EnergizeLab FastAPI AI inference server"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-105039",
+      "src": "gna-1337",
+      "vendor": "EnergizeLab",
+      "title": "EnergizeLab Station Middleware Admin APIs Missing Role Checks",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-105039",
+      "released": "2026-10-15T20:43:38Z",
+      "updated": "2026-10-15T20:43:38Z",
+      "cves": [
+        "CVE-2026-105039"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.6,
+      "products": [
+        "EnergizeLab station-middleware"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-105040",
+      "src": "gna-1337",
+      "vendor": "EnergizeLab",
+      "title": "EnergizeLab Eilik User-ID Mass Assignment Account Takeover",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-105040",
+      "released": "2026-10-15T20:43:47Z",
+      "updated": "2026-10-15T20:43:47Z",
+      "cves": [
+        "CVE-2026-105040"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "EnergizeLab NestJS auth service"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "WID-SEC-W-2026-3982",
       "src": "csaf_certbund",
       "vendor": "Debian",
@@ -1789,7 +5336,7 @@
       "title": "Eclipse Jetty: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3992",
       "released": "2026-10-15T22:00:00Z",
-      "updated": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-18659",
         "CVE-2026-18660",
@@ -1803,6 +5350,7 @@
       "products": [
         "Amazon Linux 2",
         "Jetty",
+        "SPSS",
         "Enterprise Linux",
         "Red Hat Enterprise Linux",
         "Red Hat JBoss A-MQ"
@@ -1913,7 +5461,7 @@
       "title": "Linux Kernel: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4008",
       "released": "2026-10-15T22:00:00Z",
-      "updated": "2026-11-23T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-98432",
         "CVE-2026-99999"

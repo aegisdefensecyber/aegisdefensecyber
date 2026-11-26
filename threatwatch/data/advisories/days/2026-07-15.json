@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-15",
-  "count": 32,
+  "count": 45,
   "items": [
     {
       "id": "openSUSE-SU-2026:11273-1",
@@ -367,6 +367,58 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:39868",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: nodejs:24 security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:39868",
+      "released": "2026-07-15T00:00:00Z",
+      "updated": "2026-10-26T00:06:52Z",
+      "cves": [
+        "CVE-2026-11525",
+        "CVE-2026-12151",
+        "CVE-2026-42338",
+        "CVE-2026-48615",
+        "CVE-2026-48617",
+        "CVE-2026-48618",
+        "CVE-2026-48619",
+        "CVE-2026-48928",
+        "CVE-2026-48930",
+        "CVE-2026-48931",
+        "CVE-2026-48933",
+        "CVE-2026-48934",
+        "CVE-2026-48935",
+        "CVE-2026-48937",
+        "CVE-2026-6733",
+        "CVE-2026-6734",
+        "CVE-2026-9678",
+        "CVE-2026-9697"
+      ],
+      "products": [
+        "AlmaLinux: nodejs",
+        "AlmaLinux: nodejs-devel",
+        "AlmaLinux: nodejs-docs",
+        "AlmaLinux: nodejs-full-i18n",
+        "AlmaLinux: nodejs-libs",
+        "AlmaLinux: nodejs-nodemon"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nodejs 1:24.18.0-1.module_el8.10.0+4228+2938bc94",
+          "u": null
+        },
+        {
+          "t": "Fixed in nodejs-devel 1:24.18.0-1.module_el8.10.0+4228+2938bc94",
+          "u": null
+        },
+        {
+          "t": "Fixed in nodejs-docs 1:24.18.0-1.module_el8.10.0+4228+2938bc94",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-57432",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -669,6 +721,41 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:39809",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat OpenStack Services on OpenShift 18.0 (erlang) security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:39809",
+      "released": "2026-07-15T09:55:47Z",
+      "updated": "2026-09-21T11:32:17Z",
+      "cves": [
+        "CVE-2026-42789",
+        "CVE-2026-42790"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.0,
+      "products": [
+        "Red Hat OpenStack Services on OpenShift",
+        "Red Hat OpenStack Services on OpenShift 18.0"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:39809"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        },
+        {
+          "t": "Ensure all TLS certificates used in the deployment include Subject Alternative Name (SAN) extensions with the appropriate DNS entries. Certificates relying sol…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21359-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -694,6 +781,256 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:39952",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs bug fix and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:39952",
+      "released": "2026-07-15T11:58:50Z",
+      "updated": "2026-10-16T11:25:05Z",
+      "cves": [
+        "CVE-2026-47300",
+        "CVE-2026-47303",
+        "CVE-2026-47304",
+        "CVE-2026-50659",
+        "CVE-2026-56170"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:39952"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-44787",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse: Signup-time primary_group_id assignment grants whisperer access",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-vmwq-jvxx-jwfx",
+      "released": "2026-07-15T15:56:12Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-44787"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2026.1.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.4.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.5.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-45780",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse: Private event sample invitees are serialized to non-invited event viewers",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-22v7-6wgj-g9f7",
+      "released": "2026-07-15T15:56:15Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-45780"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2026.1.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.4.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.5.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-46413",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse: Regular users can route multipart uploads into the admin backup store",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-3mvf-q9rg-w6m7",
+      "released": "2026-07-15T15:56:17Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-46413"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2026.1.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.4.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.5.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-53961",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse: Forged AWS SNS bounce notifications can disable a targeted user's email (missing TopicArn binding)",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-8f9m-v436-wr3x",
+      "released": "2026-07-15T15:56:21Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-53961"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2026.1.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.4.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.5.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-53962",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse: Insufficient SVG sanitization logic",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-jmcf-3367-78vv",
+      "released": "2026-07-15T15:56:22Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-53962"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2026.1.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.4.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.5.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-53963",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse: Stored-XSS in 2FA delete confirmation modal",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-wg5x-7f23-m3r5",
+      "released": "2026-07-15T15:56:23Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-53963"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2026.1.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.4.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.5.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-55424",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse: Topic featured link susceptible to stored XSS",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-695w-7fv8-mxg3",
+      "released": "2026-07-15T15:56:25Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-55424"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2026.1.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.4.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.5.1",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -752,13 +1089,57 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "PYSEC-2026-3624",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PyTorch Lightning through 2.6.5, fixed in commit d710d68, contains a remote code execution vulnerability in the _load_state function that imports and executes attacker-controlled module names from checkpoint _instantiat…",
+      "url": "https://github.com/advisories/GHSA-qqmf-gpg7-g8gw",
+      "released": "2026-07-15T18:16:48Z",
+      "updated": "2026-09-10T09:48:47Z",
+      "cves": [
+        "CVE-2026-58659"
+      ],
+      "products": [
+        "PyPI: lightning"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in lightning 2.6.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-3967",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "PyTorch Lightning through 2.6.5, fixed in commit d710d68, contains a remote code execution vulnerability in the _load_state function that imports and executes attacker-controlled module names from checkpoint _instantiat…",
+      "url": "https://github.com/advisories/GHSA-qqmf-gpg7-g8gw",
+      "released": "2026-07-15T18:16:48Z",
+      "updated": "2026-09-10T12:38:55Z",
+      "cves": [
+        "CVE-2026-58659"
+      ],
+      "products": [
+        "PyPI: pytorch-lightning"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pytorch-lightning 2.6.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "WID-SEC-W-2026-2379",
       "src": "csaf_certbund",
       "vendor": "Debian",
       "title": "Ruby: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2379",
       "released": "2026-07-15T22:00:00Z",
-      "updated": "2026-11-23T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-41316",
         "CVE-2026-42245",
@@ -898,6 +1279,27 @@
         "SUSE openSUSE"
       ],
       "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-7gcf-g7xr-8hxj",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "serde_with: KeyValueMap serialization panics on empty sequence or map entries",
+      "url": "https://github.com/advisories/GHSA-7gcf-g7xr-8hxj",
+      "released": "2026-07-15T22:41:01Z",
+      "updated": "2026-08-31T14:18:13Z",
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: serde_with"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in serde_with 3.21.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
       "seen": "2026-11-26"
     }
   ]

@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "date": "2024-03-13",
-  "count": 1,
+  "count": 2,
   "items": [
+    {
+      "id": "RHSA-2024:1321",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "pgx: SQL Injection via Line Comment Creation",
+      "url": "https://access.redhat.com/errata/RHSA-2024:1321",
+      "released": "2024-03-13T20:55:36Z",
+      "updated": "2026-11-26T17:22:52Z",
+      "cves": [
+        "CVE-2024-27289",
+        "CVE-2024-27304"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "If you are using an earlier version of RHACS 4.3, you are advised to upgrade to patch release 4.3.5.",
+          "u": "https://access.redhat.com/errata/RHSA-2024:1321"
+        },
+        {
+          "t": "A possible mitigation is to not use the simple protocol or do not place a minus directly before a placeholder.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "WID-SEC-W-2024-0630",
       "src": "csaf_certbund",

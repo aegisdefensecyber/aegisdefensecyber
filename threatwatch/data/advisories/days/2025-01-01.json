@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "date": "2025-01-01",
+  "count": 3,
+  "items": [
+    {
+      "id": "ASB-A-193031925",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of ConnectivityService.java, there is a possible way for a Wi-Fi AP to determine what site a device has connected to through a VPN due to side channel information disclosure. This could lead to rem…",
+      "url": "https://source.android.com/security/bulletin/2025-01-01",
+      "released": "2025-01-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-49734"
+      ],
+      "products": [
+        "Android: platform/frameworks/libs/net",
+        "Android: platform/packages/modules/Connectivity"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Connectivity 15-next:2025-01-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Connectivity 15:2025-01-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/libs/net 14:2025-01-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-233605527",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to obtain access to a folder due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges needed. User interaction is…",
+      "url": "https://source.android.com/security/bulletin/2025-01-01",
+      "released": "2025-01-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-43765"
+      ],
+      "products": [
+        "Android: platform/packages/apps/DocumentsUI"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/DocumentsUI 15-next:2025-01-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/DocumentsUI 12:2025-01-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/DocumentsUI 12L:2025-01-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-251514170",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In smp_proc_rand of smp_act.cc, there is a possible authentication bypass during legacy BLE pairing due to incorrect implementation of a protocol. This could lead to remote escalation of privilege with no additional exe…",
+      "url": "https://source.android.com/security/bulletin/2025-01-01",
+      "released": "2025-01-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-34722"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth",
+        "Android: platform/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-01-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 12:2025-01-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 12L:2025-01-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    }
+  ]
+}

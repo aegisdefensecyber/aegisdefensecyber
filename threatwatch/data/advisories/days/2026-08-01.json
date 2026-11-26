@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-01",
-  "count": 19,
+  "count": 23,
   "items": [
     {
       "id": "openSUSE-SU-2026:11414-1",
@@ -616,6 +616,80 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-3947",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "GitPython 3.1.50 fails to recognize joined short-option forms such as -u (the short form of --upload-pack= ) when enforcing its default unsafe-option gate. When an application passes attacker-influenced clone options in…",
+      "url": "https://www.vulncheck.com/advisories/gitpython-authentication-bypass-via-joined-short-options",
+      "released": "2026-08-01T13:17:02Z",
+      "updated": "2026-09-10T22:15:28Z",
+      "cves": [
+        "CVE-2026-67324"
+      ],
+      "products": [
+        "PyPI: gitpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitpython 3.1.51",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-3980",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "GitPython before 3.1.50 fails to validate newline characters in the section parameter of config_writer(), allowing attackers to inject arbitrary section headers into .git/config. Attackers can inject newlines to create …",
+      "url": "https://www.vulncheck.com/advisories/gitpython-before-newline-injection-via-config-writer-section",
+      "released": "2026-08-01T13:17:03Z",
+      "updated": "2026-09-17T08:35:35Z",
+      "cves": [
+        "CVE-2026-67326"
+      ],
+      "products": [
+        "PyPI: gitpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitpython 3.1.50",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-4ww2-rjh2-xpv9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Axios: Deep formToJSON Key Recursion Can Cause Denial of Service",
+      "url": "https://github.com/advisories/GHSA-4ww2-rjh2-xpv9",
+      "released": "2026-08-01T15:30:27Z",
+      "updated": "2026-08-31T20:02:56Z",
+      "sev": "MEDIUM",
+      "products": [
+        "npm: axios"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-f2r5-pqh9-r8f8",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Axios: Prototype pollution gadgets can alter axios request construction",
+      "url": "https://github.com/advisories/GHSA-f2r5-pqh9-r8f8",
+      "released": "2026-08-01T15:30:27Z",
+      "updated": "2026-08-31T19:51:19Z",
+      "sev": "MEDIUM",
+      "products": [
+        "npm: axios"
+      ],
+      "reviewed": true,
       "seen": "2026-11-26"
     }
   ]

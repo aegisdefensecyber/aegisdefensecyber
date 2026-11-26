@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-03",
-  "count": 16,
+  "count": 21,
   "items": [
     {
       "id": "openSUSE-SU-2026:11438-1",
@@ -169,6 +169,54 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:47084",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: libXfont2 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:47084",
+      "released": "2026-08-03T07:10:32Z",
+      "updated": "2026-10-16T22:01:46Z",
+      "cves": [
+        "CVE-2026-56001",
+        "CVE-2026-56002",
+        "CVE-2026-56003"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:47084"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4318",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "In nltk version 3.9.4, the `nltk.downloader.Downloader._download_package()` function writes downloaded package bytes to disk and may extract them before enforcing SHA-256 or MD5 checksum validation. This allows an attac…",
+      "released": "2026-08-03T08:17:17Z",
+      "updated": "2026-10-16T10:26:40Z",
+      "cves": [
+        "CVE-2026-12259"
+      ],
+      "products": [
+        "PyPI: nltk"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21518-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -250,6 +298,77 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0329",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Auto-Reseeding HMAC-DRBG could panic for some output lengths",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0329.html",
+      "released": "2026-08-03T12:00:00Z",
+      "updated": "2026-10-07T08:23:44Z",
+      "products": [
+        "crates.io: libcrux-hmac-drbg"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libcrux-hmac-drbg 0.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:49666",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: libyang security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:49666",
+      "released": "2026-08-03T12:06:22Z",
+      "updated": "2026-09-08T22:29:49Z",
+      "cves": [
+        "CVE-2026-44673"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream EUS (v. 10.0)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:49666"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-3981",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "GitPython before 3.1.53 fails to properly escape section names in git config files, allowing attackers to inject arbitrary configuration directives through malicious submodule names. Attackers can inject core.sshCommand…",
+      "url": "https://www.vulncheck.com/advisories/gitpython-before-config-injection-via-submodule-names",
+      "released": "2026-08-03T14:16:30Z",
+      "updated": "2026-09-17T08:35:35Z",
+      "cves": [
+        "CVE-2026-69097"
+      ],
+      "products": [
+        "PyPI: gitpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitpython 3.1.53",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {

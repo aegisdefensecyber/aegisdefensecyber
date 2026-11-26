@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-06-09",
-  "count": 31,
+  "count": 34,
   "items": [
     {
       "id": "ICSA-26-174-03",
@@ -392,6 +392,44 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SSA-434797",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-434797: Buffer Overflow Vulnerability in OpenSSL affecting Siemens Products",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-434797.html",
+      "released": "2026-06-09T00:00:00Z",
+      "updated": "2026-11-10T00:00:00Z",
+      "cves": [
+        "CVE-2025-15467"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "AI Lightweight Inference Server",
+        "Connector for Azure",
+        "Databus",
+        "HiMed Cockpit",
+        "RUGGEDCOM RM1224 LTE(4G) EU (6GK6108-4AM00-2BA2)",
+        "RUGGEDCOM RM1224 LTE(4G) NAM (6GK6108-4AM00-2DA2)"
+      ],
+      "fix": [
+        {
+          "t": "As a defense-in-depth measure, organizations may review whether affected systems are exposed to untrusted CMS/PKCS#7 content from external sources.",
+          "u": null
+        },
+        {
+          "t": "Do not accept files from untrusted and unvalidated sources in the affected applications",
+          "u": null
+        },
+        {
+          "t": "Restrict the port at the host with the DeviceConnectionProxy to secure destinations",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "ICSA-26-174-03",
       "src": "direct_csaf",
       "vendor": "Siemens",
@@ -717,6 +755,55 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:24758",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: libyang security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:24758",
+      "released": "2026-06-09T10:13:22Z",
+      "updated": "2026-09-08T22:29:48Z",
+      "cves": [
+        "CVE-2026-44673"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:24758"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2017-20251",
+      "src": "cvelistv5",
+      "vendor": "Themeisle",
+      "title": "WordPress Insert PHP Plugin < 2.5.1 PHP Code Injection via REST API",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2017-20251",
+      "released": "2026-06-09T11:48:39Z",
+      "updated": "2026-11-12T22:01:44Z",
+      "cves": [
+        "CVE-2017-20251"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Themeisle Woody Code Snippets"
+      ],
       "seen": "2026-11-26"
     },
     {

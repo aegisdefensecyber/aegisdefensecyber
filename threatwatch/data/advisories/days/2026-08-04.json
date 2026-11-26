@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-04",
-  "count": 20,
+  "count": 27,
   "items": [
     {
       "id": "openSUSE-SU-2026:11442-1",
@@ -306,6 +306,87 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "OSV-2026-1108",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Bad-cast to typename shared_ptr ::element_type' (aka 'Assimp::Blender::CollectionChild') from Assimp::Blender::CollectionObject",
+      "released": "2026-08-04T00:03:21Z",
+      "updated": "2026-11-10T14:33:13Z",
+      "products": [
+        "OSS-Fuzz: assimp"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1113",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Heap-buffer-overflow in Assimp::MD5::MD5MeshParser::MD5MeshParser",
+      "released": "2026-08-04T00:18:00Z",
+      "updated": "2026-11-11T14:36:14Z",
+      "products": [
+        "OSS-Fuzz: assimp"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1114",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Heap-buffer-overflow in Assimp::LWOImporter::LoadLWO2TextureHeader",
+      "released": "2026-08-04T00:21:06Z",
+      "updated": "2026-11-10T14:33:18Z",
+      "products": [
+        "OSS-Fuzz: assimp"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-94371",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-64563 affecting package kernel for versions less than 6.6.152.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64563",
+      "released": "2026-08-04T07:16:31Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-64563"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.152.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0274",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Double free / use-after-free in `ReadChunk::commit` when an element's `Drop` panics",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0274.html",
+      "released": "2026-08-04T12:00:00Z",
+      "updated": "2026-09-01T07:55:13Z",
+      "products": [
+        "crates.io: rtrb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rtrb 0.3.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in rtrb 0.4.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21529-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -409,6 +490,38 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "UBUNTU-CVE-2026-51400",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "An issue in Vim Project v9.2.0389 and earlier allows a local attacker to execute arbitrary code via the vms_fixfilename() function within file vim/src/os_vms.c",
+      "released": "2026-08-04T21:16:00Z",
+      "updated": "2026-10-17T09:44:22Z",
+      "cves": [
+        "CVE-2026-51400"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: vim"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-51401",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "An issue in Vim Project v9.2.0389 and earlier allows a local attacker to execute arbitrary code via the vms_fixfilename() function within file vim/src/os_vms.c",
+      "released": "2026-08-04T21:16:00Z",
+      "updated": "2026-10-17T09:44:22Z",
+      "cves": [
+        "CVE-2026-51401"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: vim"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "WID-SEC-W-2026-2645",
       "src": "csaf_certbund",
       "vendor": "Amazon",
@@ -464,7 +577,7 @@
       "title": "FasterXML Jackson: Schwachstelle ermöglicht Denial of Service",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2653",
       "released": "2026-08-04T22:00:00Z",
-      "updated": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-68494"
       ],
@@ -508,7 +621,7 @@
       "title": "X.Org X11 (libXfont2): Mehrere Schwachstellen ermöglichen Privilegieneskalation und Denial of Service",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2658",
       "released": "2026-08-04T22:00:00Z",
-      "updated": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-44950",
         "CVE-2026-59679"

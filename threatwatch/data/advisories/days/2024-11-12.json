@@ -1,8 +1,47 @@
 {
   "schemaVersion": 1,
   "date": "2024-11-12",
-  "count": 2,
+  "count": 5,
   "items": [
+    {
+      "id": "SEVD-2024-317-02",
+      "src": "csaf_se",
+      "vendor": "Schneider Electric",
+      "title": "Modicon Controllers M340 / Momentum / MC80 & EcoStruxure™ Control Expert",
+      "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2024-317-02&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2024-317-02.pdf",
+      "released": "2024-11-12T00:00:00Z",
+      "updated": "2026-09-08T07:00:00Z",
+      "cves": [
+        "CVE-2024-8933",
+        "CVE-2024-8935"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Modicon M340 CPU Firmware",
+        "Modicon M340 CPU Controller",
+        "Modicon MC80 Firmware",
+        "Modicon MC80 Controller",
+        "Modicon Momentum Unity M1E Processor Firmware",
+        "Modicon Momentum Unity M1E Processor Controller"
+      ],
+      "fix": [
+        {
+          "t": "Firmware SV2.90 includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-range/535-modicon-momentum/#software…",
+          "u": "https://www.se.com/ww/en/product-range/535-modicon-momentum/#software-and-firmware"
+        },
+        {
+          "t": "EcoStruxure™ Control Expert V16.2 HF003 includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-range/548-ec…",
+          "u": "https://www.se.com/ww/en/product-range/548-ecostruxure-control-expert-unity-pro/#software-and-firmware"
+        },
+        {
+          "t": "Version 3.70 of Modicon M340 includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-range/1468-modicon-m340…",
+          "u": "https://www.se.com/ww/en/product-range/1468-modicon-m340/#software-and-firmware"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
     {
       "id": "SEVD-2024-317-02",
       "src": "direct_csaf",
@@ -36,6 +75,55 @@
         {
           "t": "Version 3.70 of Modicon M340 includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-range/1468-modicon-m340/#software-and-firmware",
           "u": "https://www.se.com/ww/en/product-range/1468-modicon-m340/#software-and-firmware"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2024-52533",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2024-52533",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2024-52533",
+      "released": "2024-11-12T05:57:21Z",
+      "updated": "2026-08-31T08:45:58Z",
+      "cves": [
+        "CVE-2024-52533"
+      ],
+      "products": [
+        "Alpaquita: glib"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib 2.74.7-r2",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib 2.82.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-airflow-2024-50378",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Airflow: Secrets not masked in UI when sensitive variables are set via Airflow cli",
+      "url": "https://lists.apache.org/thread/17rxys384lzfd6nhm3fztzgvk47zy7jb",
+      "released": "2024-11-12T07:08:08Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-50378"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: airflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in airflow 2.10.3",
+          "u": null
         }
       ],
       "seen": "2026-11-26"

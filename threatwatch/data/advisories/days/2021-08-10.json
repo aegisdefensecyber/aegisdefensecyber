@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2021-08-10",
-  "count": 11,
+  "count": 13,
   "items": [
     {
       "id": "openSUSE-SU-2021:1118-1",
@@ -204,6 +204,45 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2021:3061",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: virt:rhel and virt-devel:rhel security and bug fix update",
+      "url": "https://access.redhat.com/errata/RHSA-2021:3061",
+      "released": "2021-08-10T11:58:46Z",
+      "updated": "2026-11-02T02:01:36Z",
+      "cves": [
+        "CVE-2020-13754",
+        "CVE-2020-27617",
+        "CVE-2021-20221",
+        "CVE-2021-3416",
+        "CVE-2021-3504"
+      ],
+      "products": [
+        "AlmaLinux: libguestfs-winsupport",
+        "AlmaLinux: libiscsi",
+        "AlmaLinux: libiscsi-devel",
+        "AlmaLinux: libiscsi-utils",
+        "AlmaLinux: libnbd",
+        "AlmaLinux: libnbd-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libguestfs-winsupport 8.2-1.module_el8.5.0+2608+72063365",
+          "u": null
+        },
+        {
+          "t": "Fixed in libiscsi 1.18.0-8.module_el8.6.0+2880+7d9e3703",
+          "u": null
+        },
+        {
+          "t": "Fixed in libiscsi 1.18.0-8.module_el8.5.0+2608+72063365",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2021:1134-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -236,6 +275,33 @@
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
           "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2021:3058",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: glib2 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2021:3058",
+      "released": "2021-08-10T13:17:56Z",
+      "updated": "2026-10-14T13:39:20Z",
+      "cves": [
+        "CVE-2021-27218"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat CodeReady Linux Builder (v. 8)",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2021:3058"
         }
       ],
       "lang": "en",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-06-23",
-  "count": 23,
+  "count": 33,
   "items": [
     {
       "id": "openSUSE-SU-2026:11104-1",
@@ -316,6 +316,146 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:28143",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: postgresql:16 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:28143",
+      "released": "2026-06-23T00:00:00Z",
+      "updated": "2026-10-26T00:04:32Z",
+      "cves": [
+        "CVE-2026-6472",
+        "CVE-2026-6473",
+        "CVE-2026-6474",
+        "CVE-2026-6475",
+        "CVE-2026-6477",
+        "CVE-2026-6478",
+        "CVE-2026-6479",
+        "CVE-2026-6637",
+        "CVE-2026-6638"
+      ],
+      "products": [
+        "AlmaLinux: pg_repack",
+        "AlmaLinux: pgaudit",
+        "AlmaLinux: postgres-decoderbufs",
+        "AlmaLinux: postgresql",
+        "AlmaLinux: postgresql-contrib",
+        "AlmaLinux: postgresql-docs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pg_repack 1.5.1-1.module_el8.10.0+4199+bf03c564",
+          "u": null
+        },
+        {
+          "t": "Fixed in pg_repack 1.5.1-1.module_el8.10.0+3930+ecf33554",
+          "u": null
+        },
+        {
+          "t": "Fixed in pg_repack 1.5.1-1.module_el8.10.0+4125+ceaf7d1b",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:28208",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: postgresql:13 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:28208",
+      "released": "2026-06-23T00:00:00Z",
+      "updated": "2026-10-26T00:05:20Z",
+      "cves": [
+        "CVE-2026-6473",
+        "CVE-2026-6475",
+        "CVE-2026-6477",
+        "CVE-2026-6478",
+        "CVE-2026-6637"
+      ],
+      "products": [
+        "AlmaLinux: pg_repack",
+        "AlmaLinux: pgaudit",
+        "AlmaLinux: postgres-decoderbufs",
+        "AlmaLinux: postgresql",
+        "AlmaLinux: postgresql-contrib",
+        "AlmaLinux: postgresql-docs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pg_repack 1.4.6-3.module_el8.6.0+2760+1746ec94",
+          "u": null
+        },
+        {
+          "t": "Fixed in pg_repack 1.4.6-3.module_el8.6.0+3095+ee60d910",
+          "u": null
+        },
+        {
+          "t": "Fixed in pgaudit 1.5.0-1.module_el8.6.0+2760+1746ec94",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-958",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Use-of-uninitialized-value in LibRaw::fbdd",
+      "released": "2026-06-23T00:11:20Z",
+      "updated": "2026-10-26T15:02:34Z",
+      "products": [
+        "OSS-Fuzz: libraw"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-55653",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Openssh: double free in red hat enterprise linux versions of openssh dh-gex client path during fips known-group validation leads to client-side denial of service",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-55653",
+      "released": "2026-06-23T03:36:22Z",
+      "updated": "2026-11-12T10:49:33Z",
+      "cves": [
+        "CVE-2026-55653"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "Red Hat Red Hat Enterprise Linux 10",
+        "Red Hat Red Hat Enterprise Linux 10.0 Extended Update Support",
+        "Red Hat Red Hat Enterprise Linux 8",
+        "Red Hat Red Hat Enterprise Linux 8",
+        "Red Hat Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support",
+        "Red Hat Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-55655",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Openssh: local mitm of x11 forwarding via abstract unix socket pre-binding in red hat enterprise linux openssh client versions",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-55655",
+      "released": "2026-06-23T03:36:25Z",
+      "updated": "2026-11-12T10:49:37Z",
+      "cves": [
+        "CVE-2026-55655"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5,
+      "products": [
+        "Red Hat Red Hat Enterprise Linux 10",
+        "Red Hat Red Hat Enterprise Linux 10.0 Extended Update Support",
+        "Red Hat Red Hat Enterprise Linux 8",
+        "Red Hat Red Hat Enterprise Linux 8",
+        "Red Hat Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support",
+        "Red Hat Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21151-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -340,6 +480,32 @@
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
           "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:27009",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Container Platform 4.22.2 bug fix and security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:27009",
+      "released": "2026-06-23T09:39:56Z",
+      "updated": "2026-09-09T15:41:45Z",
+      "cves": [
+        "CVE-2026-46579"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "Red Hat OpenShift Container Platform",
+        "Red Hat OpenShift Container Platform 4.22"
+      ],
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.22 see the following documentation, which will be updated shortly for this release, for important instructions on how to upg…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:27009"
         }
       ],
       "lang": "en",
@@ -532,6 +698,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-10609",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Openshift/cluster-logging-operator: cluster logging operator creates and forwards serviceaccount tokens without verifying clf creator authorization",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-10609",
+      "released": "2026-06-23T13:26:43Z",
+      "updated": "2026-11-13T12:37:12Z",
+      "cves": [
+        "CVE-2026-10609"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.8,
+      "products": [
+        "Red Hat Logging Subsystem for Red Hat OpenShift 6.5"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21040-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -545,6 +729,28 @@
         "openSUSE Leap 16.0"
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-apisix-2026-47341",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache APISIX: Session replay issue in hmac-auth",
+      "released": "2026-06-23T14:37:46Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-47341"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: apisix"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apisix 3.18.0",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -570,6 +776,28 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-91260",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-0864 affecting package python3 for versions less than 3.12.9-14",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0864",
+      "released": "2026-06-23T18:17:41Z",
+      "updated": "2026-09-08T17:33:11Z",
+      "cves": [
+        "CVE-2026-0864"
+      ],
+      "products": [
+        "Azure Linux: python3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python3 3.12.9-14",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -688,7 +916,7 @@
       "title": "FasterXML Jackson: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2058",
       "released": "2026-06-23T22:00:00Z",
-      "updated": "2026-11-11T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-50193",
         "CVE-2026-54512",
@@ -706,9 +934,31 @@
         "Fedora Linux",
         "IBM App Connect Enterprise",
         "IBM Business Automation Workflow",
-        "IBM Integration Bus"
+        "FileNet Content Manager"
       ],
       "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-91248",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-11972 affecting package python3 for versions less than 3.12.9-14",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11972",
+      "released": "2026-06-23T23:16:49Z",
+      "updated": "2026-09-08T17:33:11Z",
+      "cves": [
+        "CVE-2026-11972"
+      ],
+      "products": [
+        "Azure Linux: python3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python3 3.12.9-14",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

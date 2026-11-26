@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-19",
-  "count": 10,
+  "count": 17,
   "items": [
     {
       "id": "openSUSE-SU-2026:11309-1",
@@ -173,7 +173,7 @@
       "title": "Linux Kernel: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2403",
       "released": "2026-07-19T22:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-43500",
         "CVE-2026-53367",
@@ -315,6 +315,215 @@
         "SUSE openSUSE"
       ],
       "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-cilium-2026-56742",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Cilium: Namespaced HTTPRoutes can redirect traffic to other namespaces",
+      "url": "https://github.com/cilium/cilium/security/advisories/GHSA-w7c2-w76w-5hmj",
+      "released": "2026-07-19T23:37:51Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-56742"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: cilium"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cilium 1.17.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in cilium 1.18.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in cilium 1.19.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-cilium-2026-56743",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Cilium may unexpectedly allow ingress traffic from the local namespace when a Kubernetes NetworkPolicy is configured with an ipBlock match",
+      "url": "https://github.com/cilium/cilium/security/advisories/GHSA-fm8w-2m5w-9j7r",
+      "released": "2026-07-19T23:37:52Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-56743"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: cilium"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cilium 1.19.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-drupal-2026-55803",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Drupal core - Critical - PHP object injection - SA-CORE-2026-005",
+      "url": "https://www.drupal.org/sa-core-2026-005",
+      "released": "2026-07-19T23:39:37Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-55803"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: drupal"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in drupal 10.5.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in drupal 10.6.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in drupal 11.2.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-drupal-2026-55804",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Drupal core - Moderately critical - Gadget chain - SA-CORE-2026-006",
+      "url": "https://www.drupal.org/sa-core-2026-006",
+      "released": "2026-07-19T23:39:38Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-55804"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: drupal"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in drupal 10.5.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in drupal 10.6.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in drupal 11.2.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-drupal-2026-55806",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Drupal core - Less critical - Cache poisoning and open redirect - SA-CORE-2026-007",
+      "url": "https://www.drupal.org/sa-core-2026-007",
+      "released": "2026-07-19T23:39:40Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-55806"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: drupal"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in drupal 10.5.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in drupal 10.6.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in drupal 11.2.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-drupal-2026-55807",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Drupal core - Moderately critical - Server-side request forgery - SA-CORE-2026-008",
+      "url": "https://www.drupal.org/sa-core-2026-008",
+      "released": "2026-07-19T23:39:41Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-55807"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: drupal"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in drupal 10.5.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in drupal 10.6.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in drupal 11.2.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-drupal-2026-55808",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Drupal core - Moderately critical - Improper validation - SA-CORE-2026-009",
+      "url": "https://www.drupal.org/sa-core-2026-009",
+      "released": "2026-07-19T23:39:42Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-55808"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: drupal"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in drupal 10.5.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in drupal 10.6.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in drupal 11.2.14",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

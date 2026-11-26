@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-16",
-  "count": 2328,
+  "count": 2358,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1540",
@@ -1371,6 +1371,126 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "HSEC-2026-0015",
+      "src": "osv_haskell",
+      "vendor": "Haskell",
+      "title": "Missing validation of CONNECT requests in http2",
+      "released": "2026-11-16T02:22:07Z",
+      "updated": "2026-11-16T02:22:07Z",
+      "products": [
+        "Hackage: http2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in http2 5.4.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-129703",
+      "src": "gna-1",
+      "vendor": "vulnerability-lookup",
+      "title": "vulnerability-lookup: Feed key or API key authentication creates full web session bypassing password and 2FA",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-129703",
+      "released": "2026-11-16T08:31:28Z",
+      "updated": "2026-11-16T08:36:45Z",
+      "cves": [
+        "CVE-2026-129703"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "vulnerability-lookup vulnerability-lookup"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-129706",
+      "src": "gna-1",
+      "vendor": "vulnerability-lookup",
+      "title": "vulnerability-lookup: Session Persists After Password Change (CWE-613)",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-129706",
+      "released": "2026-11-16T08:44:56Z",
+      "updated": "2026-11-16T08:46:41Z",
+      "cves": [
+        "CVE-2026-129706"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "vulnerability-lookup vulnerability-lookup"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "VDE-2024-060",
+      "src": "csaf_welotecgmbh",
+      "vendor": "Welotec",
+      "title": "Welotec: PKfail in RSAPC UEFI Firmware",
+      "url": "https://certvde.com/en/advisories/VDE-2024-060/",
+      "released": "2026-11-16T11:00:00Z",
+      "updated": "2026-11-16T11:00:00Z",
+      "cves": [
+        "CVE-2024-8105"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.4,
+      "products": [
+        "Hardware",
+        "Industrial Computers",
+        "RSAPC MK1",
+        "RSAPC MK2"
+      ],
+      "fix": [
+        {
+          "t": "- Restrict physical access and local administrative access to affected devices to trusted personnel until the BIOS update has been installed.",
+          "u": null
+        },
+        {
+          "t": "Update the AMI BIOS on all listed RSAPC MK1 and MK2 devices to version 1.20 or later.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "VDE-2026-155",
+      "src": "csaf_welotecgmbh",
+      "vendor": "Welotec",
+      "title": "Welotec: IPv4 TCP Use-After-Free in egOS",
+      "url": "https://certvde.com/en/advisories/VDE-2026-155/",
+      "released": "2026-11-16T11:00:00Z",
+      "updated": "2026-11-16T11:00:00Z",
+      "cves": [
+        "CVE-2026-98432"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Hardware",
+        "Edge Gateways",
+        "EG400 Mk2",
+        "EG500",
+        "EG500 Mk2",
+        "EG600"
+      ],
+      "fix": [
+        {
+          "t": "- Do not expose egOS management interfaces or other TCP services directly to the internet or other untrusted networks. - Restrict inbound TCP access to trusted…",
+          "u": null
+        },
+        {
+          "t": "Update egOS on all affected products to version 1.11.2 or later.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "VDE-2024-060",
       "src": "direct_csaf",
       "vendor": "Welotec",
@@ -1427,6 +1547,797 @@
         },
         {
           "t": "Update egOS on all affected products to version 1.11.2 or later.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0552",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Bare LF in chunked trailers can consume pipelined requests or stall body decoding",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0552.html",
+      "released": "2026-11-16T12:00:00Z",
+      "updated": "2026-11-17T10:14:35Z",
+      "products": [
+        "crates.io: actix-http"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in actix-http 3.21.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0553",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Malformed quoted chunk extensions can end HTTP/1.1 request bodies early",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0553.html",
+      "released": "2026-11-16T12:00:00Z",
+      "updated": "2026-11-17T10:14:35Z",
+      "products": [
+        "crates.io: actix-http"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in actix-http 3.21.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0554",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Partial requests on keep-alive connections can bypass the request header timeout",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0554.html",
+      "released": "2026-11-16T12:00:00Z",
+      "updated": "2026-11-17T10:14:35Z",
+      "products": [
+        "crates.io: actix-http"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in actix-http 3.21.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0566",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "wasmtime-wasi: Unbounded host memory growth via empty writes to `AsyncWriteStream`",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0566.html",
+      "released": "2026-11-16T12:00:00Z",
+      "updated": "2026-11-19T08:42:17Z",
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 36.0.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 48.0.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 49.0.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0567",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Abort in Wasmtime builds without the `threads` cargo feature",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0567.html",
+      "released": "2026-11-16T12:00:00Z",
+      "updated": "2026-11-19T16:35:07Z",
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 48.0.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 49.0.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 50.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0568",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Stale GC heap base pointer in compiled code lets a Wasm guest abort the host process",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0568.html",
+      "released": "2026-11-16T12:00:00Z",
+      "updated": "2026-11-19T08:42:17Z",
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 48.0.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 49.0.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 50.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0569",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Panic in `Caller::get_module_export` when a host function isn't called from WebAssembly",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0569.html",
+      "released": "2026-11-16T12:00:00Z",
+      "updated": "2026-11-19T08:42:17Z",
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 36.0.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 48.0.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 49.0.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0570",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Abort in Wasmtime builds without the `gc` cargo feature",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0570.html",
+      "released": "2026-11-16T12:00:00Z",
+      "updated": "2026-11-19T08:42:17Z",
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 48.0.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 49.0.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 50.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0571",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "wasmtime-wasi-http: Empty Body Writes can result in Unbound Heap Usage with HTTP/2",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0571.html",
+      "released": "2026-11-16T12:00:00Z",
+      "updated": "2026-11-19T08:42:17Z",
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 36.0.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 48.0.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 49.0.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0572",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Panic when a component cancels a stream or future copy on the wrong end",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0572.html",
+      "released": "2026-11-16T12:00:00Z",
+      "updated": "2026-11-19T08:42:17Z",
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 48.0.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 49.0.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 50.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0573",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Process abort when a GC heap's reservation isn't a multiple of the page size",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0573.html",
+      "released": "2026-11-16T12:00:00Z",
+      "updated": "2026-11-19T16:35:07Z",
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 48.0.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 49.0.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 50.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "JLSEC-2026-1388",
+      "src": "osv_julia",
+      "vendor": "Julia",
+      "title": "Printing a `TLS.Config` exposes TLS session secrets in Reseau.jl",
+      "url": "https://github.com/JuliaServices/Reseau.jl/commit/e003febbe2a7605951e387d0e98bfb4f658c2534",
+      "released": "2026-11-16T13:05:52Z",
+      "updated": "2026-11-19T22:32:03Z",
+      "products": [
+        "Julia: Reseau"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in Reseau 1.7.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-129919",
+      "src": "gna-1",
+      "vendor": "kunai-project",
+      "title": "Kunai Mount Namespace Cache TOCTOU Allows Incorrect Event Resolution Against Host Files",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-129919",
+      "released": "2026-11-16T13:48:19Z",
+      "updated": "2026-11-16T13:49:41Z",
+      "cves": [
+        "CVE-2026-129919"
+      ],
+      "sev": "LOW",
+      "cvss": 2,
+      "products": [
+        "kunai-project Kunai"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:99132",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: webkit2gtk3 security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:99132",
+      "released": "2026-11-16T18:04:42Z",
+      "updated": "2026-11-26T12:18:38Z",
+      "cves": [
+        "CVE-2026-121032",
+        "CVE-2026-121072",
+        "CVE-2026-121084",
+        "CVE-2026-121086",
+        "CVE-2026-121148",
+        "CVE-2026-121160",
+        "CVE-2026-121197",
+        "CVE-2026-121227",
+        "CVE-2026-121230",
+        "CVE-2026-121249"
+      ],
+      "products": [
+        "Rocky Linux: webkit2gtk3",
+        "Rocky Linux: webkit2gtk3-debuginfo",
+        "Rocky Linux: webkit2gtk3-debugsource",
+        "Rocky Linux: webkit2gtk3-devel",
+        "Rocky Linux: webkit2gtk3-devel-debuginfo",
+        "Rocky Linux: webkit2gtk3-jsc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in webkit2gtk3 0:2.54.2-3.el9_9",
+          "u": null
+        },
+        {
+          "t": "Fixed in webkit2gtk3-debuginfo 0:2.54.2-3.el9_9",
+          "u": null
+        },
+        {
+          "t": "Fixed in webkit2gtk3-debugsource 0:2.54.2-3.el9_9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:99142",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: .NET 10.0 security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:99142",
+      "released": "2026-11-16T18:04:42Z",
+      "updated": "2026-11-26T12:18:38Z",
+      "cves": [
+        "CVE-2026-105544",
+        "CVE-2026-109475",
+        "CVE-2026-109476",
+        "CVE-2026-114146",
+        "CVE-2026-114147",
+        "CVE-2026-114149"
+      ],
+      "products": [
+        "Rocky Linux: aspnetcore-runtime-10.0",
+        "Rocky Linux: aspnetcore-runtime-dbg-10.0",
+        "Rocky Linux: aspnetcore-targeting-pack-10.0",
+        "Rocky Linux: dotnet-apphost-pack-10.0",
+        "Rocky Linux: dotnet-apphost-pack-10.0-debuginfo",
+        "Rocky Linux: dotnet-hostfxr-10.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in aspnetcore-runtime-10.0 0:10.0.15-1.el9_9",
+          "u": null
+        },
+        {
+          "t": "Fixed in aspnetcore-runtime-dbg-10.0 0:10.0.15-1.el9_9",
+          "u": null
+        },
+        {
+          "t": "Fixed in aspnetcore-targeting-pack-10.0 0:10.0.15-1.el9_9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:99144",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: .NET 9.0 security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:99144",
+      "released": "2026-11-16T18:04:42Z",
+      "updated": "2026-11-26T12:18:39Z",
+      "cves": [
+        "CVE-2026-105544",
+        "CVE-2026-109475",
+        "CVE-2026-109476",
+        "CVE-2026-114146",
+        "CVE-2026-114147",
+        "CVE-2026-114149"
+      ],
+      "products": [
+        "Rocky Linux: aspnetcore-runtime-9.0",
+        "Rocky Linux: aspnetcore-runtime-dbg-9.0",
+        "Rocky Linux: aspnetcore-targeting-pack-9.0",
+        "Rocky Linux: dotnet-apphost-pack-9.0",
+        "Rocky Linux: dotnet-apphost-pack-9.0-debuginfo",
+        "Rocky Linux: dotnet-hostfxr-9.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in aspnetcore-runtime-9.0 0:9.0.23-1.el9_9",
+          "u": null
+        },
+        {
+          "t": "Fixed in aspnetcore-runtime-dbg-9.0 0:9.0.23-1.el9_9",
+          "u": null
+        },
+        {
+          "t": "Fixed in aspnetcore-targeting-pack-9.0 0:9.0.23-1.el9_9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:99146",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: .NET 8.0 security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:99146",
+      "released": "2026-11-16T18:04:42Z",
+      "updated": "2026-11-26T12:18:38Z",
+      "cves": [
+        "CVE-2026-105544",
+        "CVE-2026-109475",
+        "CVE-2026-109476",
+        "CVE-2026-109478",
+        "CVE-2026-114146",
+        "CVE-2026-114147",
+        "CVE-2026-114149"
+      ],
+      "products": [
+        "Rocky Linux: aspnetcore-runtime-8.0",
+        "Rocky Linux: aspnetcore-runtime-dbg-8.0",
+        "Rocky Linux: aspnetcore-targeting-pack-8.0",
+        "Rocky Linux: dotnet-apphost-pack-8.0",
+        "Rocky Linux: dotnet-apphost-pack-8.0-debuginfo",
+        "Rocky Linux: dotnet-hostfxr-8.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in aspnetcore-runtime-8.0 0:8.0.34-1.el9_9",
+          "u": null
+        },
+        {
+          "t": "Fixed in aspnetcore-runtime-dbg-8.0 0:8.0.34-1.el9_9",
+          "u": null
+        },
+        {
+          "t": "Fixed in aspnetcore-targeting-pack-8.0 0:8.0.34-1.el9_9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:99172",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: grafana-pcp security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:99172",
+      "released": "2026-11-16T18:04:42Z",
+      "updated": "2026-11-26T12:18:38Z",
+      "cves": [
+        "CVE-2026-116591"
+      ],
+      "products": [
+        "Rocky Linux: grafana-pcp",
+        "Rocky Linux: grafana-pcp-debuginfo",
+        "Rocky Linux: grafana-pcp-debugsource"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana-pcp 0:5.1.1-17.el9_9.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana-pcp-debuginfo 0:5.1.1-17.el9_9.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana-pcp-debugsource 0:5.1.1-17.el9_9.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:99611",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: xorg-x11-server security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:99611",
+      "released": "2026-11-16T18:04:42Z",
+      "updated": "2026-11-26T12:18:39Z",
+      "cves": [
+        "CVE-2026-93520"
+      ],
+      "products": [
+        "Rocky Linux: xorg-x11-server-Xdmx",
+        "Rocky Linux: xorg-x11-server-Xdmx-debuginfo",
+        "Rocky Linux: xorg-x11-server-Xephyr",
+        "Rocky Linux: xorg-x11-server-Xephyr-debuginfo",
+        "Rocky Linux: xorg-x11-server-Xnest",
+        "Rocky Linux: xorg-x11-server-Xnest-debuginfo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in xorg-x11-server-common 0:1.20.11-39.el9_9.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in xorg-x11-server-debuginfo 0:1.20.11-39.el9_9.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in xorg-x11-server-debugsource 0:1.20.11-39.el9_9.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:98554",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: podman security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:98554",
+      "released": "2026-11-16T18:06:44Z",
+      "updated": "2026-11-26T12:20:05Z",
+      "cves": [
+        "CVE-2026-17106",
+        "CVE-2026-33818",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "Rocky Linux: podman",
+        "Rocky Linux: podman-debuginfo",
+        "Rocky Linux: podman-debugsource",
+        "Rocky Linux: podman-docker",
+        "Rocky Linux: podman-remote",
+        "Rocky Linux: podman-remote-debuginfo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in podman-docker 7:6.1.1-1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in podman-remote-debuginfo 7:6.1.1-1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in podman-debuginfo 7:6.1.1-1.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:98556",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: skopeo security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:98556",
+      "released": "2026-11-16T18:06:44Z",
+      "updated": "2026-11-26T12:20:06Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "Rocky Linux: skopeo",
+        "Rocky Linux: skopeo-debuginfo",
+        "Rocky Linux: skopeo-debugsource",
+        "Rocky Linux: skopeo-tests"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in skopeo 3:1.24.0-3.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in skopeo-debugsource 3:1.24.0-3.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in skopeo-debuginfo 3:1.24.0-3.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:98606",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: dogtag-pki security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:98606",
+      "released": "2026-11-16T18:06:44Z",
+      "updated": "2026-11-26T12:20:05Z",
+      "cves": [
+        "CVE-2026-89058",
+        "CVE-2026-89059",
+        "CVE-2026-89407",
+        "CVE-2026-89425",
+        "CVE-2026-91777"
+      ],
+      "products": [
+        "Rocky Linux: dogtag-pki-debugsource",
+        "Rocky Linux: idm-pki-acme",
+        "Rocky Linux: idm-pki-base",
+        "Rocky Linux: idm-pki-ca",
+        "Rocky Linux: idm-pki-java",
+        "Rocky Linux: idm-pki-kra"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in idm-pki-tools-debuginfo 0:11.9.0-9.el10_3.1.rocky.0.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in idm-pki-tools 0:11.9.0-9.el10_3.1.rocky.0.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in dogtag-pki-debugsource 0:11.9.0-9.el10_3.1.rocky.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:98619",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: nodejs26 security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:98619",
+      "released": "2026-11-16T18:06:44Z",
+      "updated": "2026-11-26T12:20:08Z",
+      "cves": [
+        "CVE-2026-102276",
+        "CVE-2026-102278",
+        "CVE-2026-105482",
+        "CVE-2026-105483",
+        "CVE-2026-106069",
+        "CVE-2026-109383",
+        "CVE-2026-109829",
+        "CVE-2026-109869",
+        "CVE-2026-13697",
+        "CVE-2026-48615",
+        "CVE-2026-48617",
+        "CVE-2026-48618",
+        "CVE-2026-48619",
+        "CVE-2026-48928",
+        "CVE-2026-48930",
+        "CVE-2026-48931",
+        "CVE-2026-48933",
+        "CVE-2026-48934",
+        "CVE-2026-48935",
+        "CVE-2026-48936",
+        "CVE-2026-56847",
+        "CVE-2026-56848",
+        "CVE-2026-56850",
+        "CVE-2026-58039",
+        "CVE-2026-58040",
+        "CVE-2026-58041",
+        "CVE-2026-58042",
+        "CVE-2026-58043",
+        "CVE-2026-58044",
+        "CVE-2026-58045",
+        "CVE-2026-87018"
+      ],
+      "products": [
+        "Rocky Linux: nodejs26",
+        "Rocky Linux: nodejs26-debuginfo",
+        "Rocky Linux: nodejs26-debugsource",
+        "Rocky Linux: nodejs26-devel",
+        "Rocky Linux: nodejs26-docs",
+        "Rocky Linux: nodejs26-full-i18n"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nodejs26-libs-debuginfo 1:26.12.1-3.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in nodejs26 1:26.12.1-3.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in nodejs26-full-i18n 1:26.12.1-3.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:98622",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: gnome-remote-desktop security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:98622",
+      "released": "2026-11-16T18:06:44Z",
+      "updated": "2026-11-26T12:20:06Z",
+      "cves": [
+        "CVE-2026-96541"
+      ],
+      "products": [
+        "Rocky Linux: gnome-remote-desktop",
+        "Rocky Linux: gnome-remote-desktop-debuginfo",
+        "Rocky Linux: gnome-remote-desktop-debugsource"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gnome-remote-desktop 0:49.3-18.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in gnome-remote-desktop-debugsource 0:49.3-18.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in gnome-remote-desktop-debuginfo 0:49.3-18.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:98639",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: grafana security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:98639",
+      "released": "2026-11-16T18:06:44Z",
+      "updated": "2026-11-26T12:20:04Z",
+      "cves": [
+        "CVE-2026-100105",
+        "CVE-2026-116591",
+        "CVE-2026-88967"
+      ],
+      "products": [
+        "Rocky Linux: grafana",
+        "Rocky Linux: grafana-debuginfo",
+        "Rocky Linux: grafana-debugsource",
+        "Rocky Linux: grafana-selinux"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana 0:12.4.3-3.el10_3.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana-debugsource 0:12.4.3-3.el10_3.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana-selinux 0:12.4.3-3.el10_3.6",
           "u": null
         }
       ],
@@ -10529,7 +11440,7 @@
       "title": "FluidSynth through 2.6.1 Out-of-Bounds Write via SoundFont Modulator Destination",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-111123.json",
       "released": "2026-11-16T22:35:36Z",
-      "updated": "2026-11-16T22:35:36Z",
+      "updated": "2026-11-26T01:05:16Z",
       "cves": [
         "CVE-2026-111123"
       ],
@@ -21193,12 +22104,13 @@
       "title": "Regression in FIPS enforcement of hash algorithms affecting only Python 3.14.10",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-119170.json",
       "released": "2026-11-16T22:45:56Z",
-      "updated": "2026-11-16T22:45:56Z",
+      "updated": "2026-11-26T01:06:49Z",
       "cves": [
         "CVE-2026-119170"
       ],
       "products": [
         "Azure Linux",
+        "azl4 python3.14 0:3.14.10-7.azl4",
         "azl4 python3-docs 0:3.14.10-2.azl4",
         "azl4 python3.14 0:3.14.10-6.azl4"
       ],
@@ -22764,7 +23676,7 @@
       "title": "opentelemetry-go: AttributeValueLengthLimit is fully bypassed by attribute values composed of valid U+FFFD runes",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-128085.json",
       "released": "2026-11-16T22:46:57Z",
-      "updated": "2026-11-19T01:08:47Z",
+      "updated": "2026-11-25T14:04:20Z",
       "cves": [
         "CVE-2026-128085"
       ],
@@ -22777,6 +23689,12 @@
         "cert-manager",
         "cloud-provider-kubevirt",
         "containerd2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.105.0-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
       ],
       "lang": "en",
       "seen": "2026-11-26"
@@ -23798,7 +24716,7 @@
       "title": "OpenTelemetry-Go: Eager W3C baggage-property materialization causes bounded memory-allocation amplification",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-128086.json",
       "released": "2026-11-16T22:47:39Z",
-      "updated": "2026-11-20T14:05:02Z",
+      "updated": "2026-11-25T14:04:10Z",
       "cves": [
         "CVE-2026-128086"
       ],
@@ -23811,6 +24729,12 @@
         "cert-manager",
         "cloud-provider-kubevirt",
         "containerd2"
+      ],
+      "fix": [
+        {
+          "t": "0:2.105.0-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
       ],
       "lang": "en",
       "seen": "2026-11-26"
@@ -34178,7 +35102,7 @@
       "title": "Gogs: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4603",
       "released": "2026-11-16T23:00:00Z",
-      "updated": "2026-11-16T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-52803"
       ],
@@ -34274,8 +35198,15 @@
       "title": "Mitel MiCollab: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4608",
       "released": "2026-11-16T23:00:00Z",
-      "updated": "2026-11-16T23:00:00Z",
-      "sev": "HIGH",
+      "updated": "2026-11-25T23:00:00Z",
+      "cves": [
+        "CVE-2026-133275",
+        "CVE-2026-133303",
+        "CVE-2026-133311",
+        "CVE-2026-133323",
+        "CVE-2026-133324"
+      ],
+      "sev": "CRITICAL",
       "products": [
         "MiCollab"
       ],
@@ -47430,7 +48361,7 @@
       "title": "containerd image-triggered daemon crash via malformed digest in subject-annotated descriptor",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-95839.json",
       "released": "2026-11-16T23:25:04Z",
-      "updated": "2026-11-23T01:05:05Z",
+      "updated": "2026-11-26T01:08:22Z",
       "cves": [
         "CVE-2026-95839"
       ],

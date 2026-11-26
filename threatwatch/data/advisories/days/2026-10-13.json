@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-13",
-  "count": 151,
+  "count": 207,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1295",
@@ -1295,6 +1295,652 @@
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
           "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-055299",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-055299: Out-of-bounds Read Vulnerability in Capital Embedded AR Classic",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-055299.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-89208"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Capital Embedded AR Classic 431-422",
+        "Capital Embedded AR Classic R20-11"
+      ],
+      "fix": [
+        {
+          "t": "Apply network segmentation and put the ECUs behind properly configured gateways/firewalls",
+          "u": null
+        },
+        {
+          "t": "Update to V2303 or later version",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-099819",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-099819: Denial of Service Vulnerability in SENTRON 3NA COM Fuse",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-099819.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2024-7322"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.8,
+      "products": [
+        "SENTRON 3NA COM Fuse"
+      ],
+      "fix": [
+        {
+          "t": "Update to V5.2 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109797242/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-148322",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-148322: WibuKey Denial of Service Vulnerability in PSS(R)SINCAL",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-148322.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-84854"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.0,
+      "products": [
+        "PSS(R)SINCAL V21.5",
+        "PSS(R)SINCAL V22.0",
+        "PSS(R)SINCAL V22.5"
+      ],
+      "fix": [
+        {
+          "t": "Install WIBU Systems WibuKey Runtime for Windows 6.72 or later version manually to fix the issue: Download the package from User Software - Wibu-Systems and fo…",
+          "u": null
+        },
+        {
+          "t": "Update to V22.5 Update 5 or later version",
+          "u": "https://www.simtec.cc/en/updates.aspx"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-159454",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-159454: Hard-coded Key Vulnerability in SIMATIC IPCs",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-159454.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-72895"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.7,
+      "products": [
+        "SIMATIC IPC BX-21A",
+        "SIMATIC IPC RW-543A",
+        "SIMATIC IPC227G / IPC277G / IPC277G PRO / IPC327G / IPC377G"
+      ],
+      "fix": [
+        {
+          "t": "Note: After upgrading to the fixed BIOS version, users must load the BIOS default settings. If Secure Boot keys were already provisioned, they must be provisio…",
+          "u": null
+        },
+        {
+          "t": "As a temporary mitigation, users can manually remove the test key from the database (e.g., \"DO NOT TRUST - AMI Test PK\" for RW-543A or \"insyde-ElkhartLake\" for…",
+          "u": null
+        },
+        {
+          "t": "Update to V1.1.4 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109763408/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-333035",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-333035: Multiple Vulnerabilities in APOGEE, TALON and Desigo PXC/PXM Products",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-333035.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-89208",
+        "CVE-2026-102073",
+        "CVE-2026-102074",
+        "CVE-2026-102075",
+        "CVE-2026-102076"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "APOGEE MBC (PPC) (BACnet)",
+        "APOGEE MBC (PPC) (P2 Ethernet)",
+        "APOGEE MEC (PPC) (BACnet)",
+        "APOGEE MEC (PPC) (P2 Ethernet)",
+        "APOGEE PXC Compact (BACnet)",
+        "APOGEE PXC Compact (P2 Ethernet)"
+      ],
+      "fix": [
+        {
+          "t": "&nbsp;CVE-2026-89208 - Apply network segmentation and put the controllers behind properly configured gateways/firewalls.",
+          "u": null
+        },
+        {
+          "t": "Disable the FTP/Web service (Note that the FTP/Web service is disabled by default on APOGEE, Desigo, and TALON products.)",
+          "u": null
+        },
+        {
+          "t": "Update to V2.8.21 or later version",
+          "u": "https://partnerportal.extranet.dc.siemens.com/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-377139",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-377139: Path Traversal Vulnerabilities in Industrial Edge Device Kit",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-377139.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-44414",
+        "CVE-2026-44415"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Industrial Edge Device Kit - arm64 V1.10",
+        "Industrial Edge Device Kit - arm64 V1.11",
+        "Industrial Edge Device Kit - arm64 V1.12",
+        "Industrial Edge Device Kit - arm64 V1.13",
+        "Industrial Edge Device Kit - arm64 V1.14",
+        "Industrial Edge Device Kit - arm64 V1.15"
+      ],
+      "fix": [
+        {
+          "t": "Ensure network access to affected products is limited to trusted parties only",
+          "u": null
+        },
+        {
+          "t": "Update to V1.26.2-1 or later version",
+          "u": null
+        },
+        {
+          "t": "Update to V1.27.1-1 or later version",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-390352",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-390352: Multiple Vulnerabilities in .NET Client Library for SIMATIC S7 Webserver API",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-390352.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-11-10T00:00:00Z",
+      "cves": [
+        "CVE-2026-85114",
+        "CVE-2026-85115"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        ".NET Client Library for SIMATIC S7 Webserver API"
+      ],
+      "fix": [
+        {
+          "t": "Update to V3.3.61 or later version",
+          "u": "https://github.com/siemens/simatic-s7-webserver-api/releases/tag/v3.3.61"
+        },
+        {
+          "t": "Update to V3.3.62 or later version",
+          "u": "https://github.com/siemens/simatic-s7-webserver-api/releases/tag/v3.3.62"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-457936",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-457936: Vulnerabilities in the additional GNU/Linux subsystem of the SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP V3.1.7",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-457936.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-11-10T00:00:00Z",
+      "cves": [
+        "CVE-2021-4189",
+        "CVE-2021-41617",
+        "CVE-2023-28531",
+        "CVE-2023-51384",
+        "CVE-2023-52927",
+        "CVE-2023-53292",
+        "CVE-2024-26783",
+        "CVE-2024-27056",
+        "CVE-2024-28757",
+        "CVE-2024-28956",
+        "CVE-2024-36903",
+        "CVE-2024-36927",
+        "CVE-2024-42079",
+        "CVE-2024-46786",
+        "CVE-2024-47736",
+        "CVE-2024-47809",
+        "CVE-2024-49968",
+        "CVE-2024-49994",
+        "CVE-2024-49998",
+        "CVE-2024-50014",
+        "CVE-2024-50063",
+        "CVE-2024-50164",
+        "CVE-2024-50298",
+        "CVE-2024-53124",
+        "CVE-2024-53170",
+        "CVE-2024-54458",
+        "CVE-2024-56631",
+        "CVE-2024-56703",
+        "CVE-2024-56719",
+        "CVE-2024-57917",
+        "CVE-2024-57924",
+        "CVE-2024-57973",
+        "CVE-2024-57977",
+        "CVE-2024-57979",
+        "CVE-2024-58011",
+        "CVE-2024-58016",
+        "CVE-2024-58020",
+        "CVE-2024-58056",
+        "CVE-2024-58058",
+        "CVE-2024-58061",
+        "CVE-2024-58086",
+        "CVE-2025-15649",
+        "CVE-2025-15661",
+        "CVE-2025-21645",
+        "CVE-2025-21648",
+        "CVE-2025-21655",
+        "CVE-2025-21676",
+        "CVE-2025-21682",
+        "CVE-2025-21702",
+        "CVE-2025-21705",
+        "CVE-2025-21706",
+        "CVE-2025-21707",
+        "CVE-2025-21718",
+        "CVE-2025-21731",
+        "CVE-2025-21745",
+        "CVE-2025-21758",
+        "CVE-2025-21760",
+        "CVE-2025-21764",
+        "CVE-2025-21765",
+        "CVE-2025-21780"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 10.0,
+      "products": [
+        "SIMATIC S7-1500 CPU 1518-4 PN/DP MFP (6ES7518-4AX00-1AB0)",
+        "SIMATIC S7-1500 CPU 1518-4 PN/DP MFP (6ES7518-4AX00-1AC0)",
+        "SIMATIC S7-1500 CPU 1518F-4 PN/DP MFP (6ES7518-4FX00-1AB0)",
+        "SIMATIC S7-1500 CPU 1518F-4 PN/DP MFP (6ES7518-4FX00-1AC0)",
+        "SIPLUS S7-1500 CPU 1518-4 PN/DP MFP (6AG1518-4AX00-4AC0)"
+      ],
+      "fix": [
+        {
+          "t": "Limit access to the interactive shell of the additional GNU/Linux subssytem to trusted personnel only.",
+          "u": null
+        },
+        {
+          "t": "Only build and run applications from trusted sources.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-508506",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-508506: Multiple Vulnerabilities in RUGGEDCOM CROSSBOW",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-508506.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-89196",
+        "CVE-2026-89197",
+        "CVE-2026-89198",
+        "CVE-2026-89199",
+        "CVE-2026-89200",
+        "CVE-2026-89201",
+        "CVE-2026-89202",
+        "CVE-2026-89203",
+        "CVE-2026-89204",
+        "CVE-2026-89205",
+        "CVE-2026-89206"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "RUGGEDCOM CROSSBOW"
+      ],
+      "fix": [
+        {
+          "t": "Update to V6.0 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/110006651/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-550198",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-550198: Authenticated Remote Code Execution in WinCC",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-550198.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-59241"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SIMATIC WinCC V7.5",
+        "SIMATIC WinCC V8.0",
+        "SIMATIC WinCC V8.1"
+      ],
+      "fix": [
+        {
+          "t": "Update to V8.0 Update 11 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109818723/"
+        },
+        {
+          "t": "Update to V8.1 Update 7 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109977191/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-591731",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-591731: Multiple Vulnerabilities in SIMATIC S7 PLCs Web Server",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-591731.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-63350",
+        "CVE-2026-63351",
+        "CVE-2026-63352",
+        "CVE-2026-63353",
+        "CVE-2026-63354",
+        "CVE-2026-63355",
+        "CVE-2026-63356",
+        "CVE-2026-63357"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.6,
+      "products": [
+        "SIMATIC Drive Controller CPU 1504D TF (6ES7615-4DF10-0AB0)",
+        "SIMATIC Drive Controller CPU 1507D TF (6ES7615-7DF10-0AB0)",
+        "SIMATIC ET 200SP CPU 1510SP F-1 PN (6ES7510-1SJ01-0AB0)",
+        "SIMATIC ET 200SP CPU 1510SP F-1 PN (6ES7510-1SK03-0AB0)",
+        "SIMATIC ET 200SP CPU 1510SP-1 PN (6ES7510-1DJ01-0AB0)",
+        "SIMATIC ET 200SP CPU 1510SP-1 PN (6ES7510-1DK03-0AB0)"
+      ],
+      "fix": [
+        {
+          "t": "Disable the webserver if not required on the affected systems. Restrict the access to Port 80/tcp and 443/tcp to trusted IP address only",
+          "u": null
+        },
+        {
+          "t": "Ensure only qualified personnel is authorized to access the web server",
+          "u": null
+        },
+        {
+          "t": "Only upload trusted trace files",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-765416",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-765416: Multiple SQLite Vulnerabilities in RUGGEDCOM CROSSBOW Station Access Controller",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-765416.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2025-6965",
+        "CVE-2025-70873",
+        "CVE-2025-71316",
+        "CVE-2026-11822",
+        "CVE-2026-11824"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "RUGGEDCOM CROSSBOW Station Access Controller (SAC)"
+      ],
+      "fix": [
+        {
+          "t": "Update to V6.0 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/110006651/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-784472",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-784472: Vulnerabilities in the additional GNU/Linux subsystem of the SIMATIC S7-1500 TM MFP V1.1.1",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-784472.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2023-52927",
+        "CVE-2023-53292",
+        "CVE-2023-54271",
+        "CVE-2024-26982",
+        "CVE-2024-36922",
+        "CVE-2024-40945",
+        "CVE-2024-47809",
+        "CVE-2024-49998",
+        "CVE-2024-53166",
+        "CVE-2024-56647",
+        "CVE-2024-56657",
+        "CVE-2024-56719",
+        "CVE-2024-57977",
+        "CVE-2024-57979",
+        "CVE-2024-57980",
+        "CVE-2024-57981",
+        "CVE-2024-57986",
+        "CVE-2024-57993",
+        "CVE-2024-57996",
+        "CVE-2024-58002",
+        "CVE-2024-58005",
+        "CVE-2024-58009",
+        "CVE-2024-58013",
+        "CVE-2024-58014",
+        "CVE-2024-58017",
+        "CVE-2024-58020",
+        "CVE-2024-58058",
+        "CVE-2024-58061",
+        "CVE-2024-58063",
+        "CVE-2024-58068",
+        "CVE-2024-58071",
+        "CVE-2024-58072",
+        "CVE-2024-58077",
+        "CVE-2024-58079",
+        "CVE-2024-58083",
+        "CVE-2025-21682",
+        "CVE-2025-21700",
+        "CVE-2025-21702",
+        "CVE-2025-21703",
+        "CVE-2025-21704",
+        "CVE-2025-21705",
+        "CVE-2025-21706",
+        "CVE-2025-21707",
+        "CVE-2025-21708",
+        "CVE-2025-21716",
+        "CVE-2025-21719",
+        "CVE-2025-21724",
+        "CVE-2025-21725",
+        "CVE-2025-21726",
+        "CVE-2025-21727",
+        "CVE-2025-21728",
+        "CVE-2025-21731",
+        "CVE-2025-21735",
+        "CVE-2025-21738",
+        "CVE-2025-21744",
+        "CVE-2025-21745",
+        "CVE-2025-21753",
+        "CVE-2025-21756",
+        "CVE-2025-21758",
+        "CVE-2025-21760"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 10.0,
+      "products": [
+        "SIMATIC S7-1500 TM MFP - GNU/Linux subsystem"
+      ],
+      "fix": [
+        {
+          "t": "Limit access to the interactive shell of the additional GNU/Linux subssytem to trusted personnel only.",
+          "u": null
+        },
+        {
+          "t": "Only build and run applications from trusted sources.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-832641",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-832641: Path Traversal Vulnerabilities in Siemens Industrial Edge Devices",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-832641.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-44414",
+        "CVE-2026-44415"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Industrial Edge Cloud Device (IECD)",
+        "Industrial Edge Own Device (IEOD)",
+        "Industrial Edge Virtual Device (IEVD)",
+        "SCALANCE LPE9413 (6GK5998-3GS01-2AC2)",
+        "SCALANCE LPE9433 (6GK5998-3GS11-2AC2)",
+        "SIMATIC HMI MTP1000 Unified Comfort Panel (6AV2128-3KB06-0AX1)"
+      ],
+      "fix": [
+        {
+          "t": "Ensure network access to affected products is limited to trusted parties only",
+          "u": null
+        },
+        {
+          "t": "Update to V1.28.1 or later version",
+          "u": "https://docs.industrial-operations-x.siemens.cloud/r/en-us/v1.28.1/industrial-edge-own-device/release-notes"
+        },
+        {
+          "t": "Update to V1.28.1 or later version",
+          "u": "https://docs.industrial-operations-x.siemens.cloud/r/en-us/v1.28.1/industrial-edge-virtual/cloud-device/release-notes"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-911336",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-911336: Multiple Vulnerabilities in Nozomi Guardian/CMC on RUGGEDCOM APE1808 Devices",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-911336.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-33387",
+        "CVE-2026-33388",
+        "CVE-2026-33389",
+        "CVE-2026-33391",
+        "CVE-2026-33920"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "RUGGEDCOM APE1808"
+      ],
+      "fix": [
+        {
+          "t": "Contact customer support to receive patch and update information",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-968435",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-968435: Multiple Vulnerabilities in Industrial Edge App Publisher",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-968435.html",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-78556",
+        "CVE-2026-78557"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.3,
+      "products": [
+        "Industrial Edge App Publisher"
+      ],
+      "fix": [
+        {
+          "t": "Update to V1.27.9 or later version",
+          "u": "https://docs.eu1.edge.siemens.cloud/develop_an_application/ieap/download_the_ie_ap.html"
         }
       ],
       "lang": "en",
@@ -3260,6 +3906,382 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:82013",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: libreoffice security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:82013",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-15T09:18:48Z",
+      "cves": [
+        "CVE-2026-63274",
+        "CVE-2026-63275",
+        "CVE-2026-63276",
+        "CVE-2026-63277"
+      ],
+      "products": [
+        "AlmaLinux: autocorr-af",
+        "AlmaLinux: autocorr-bg",
+        "AlmaLinux: autocorr-ca",
+        "AlmaLinux: autocorr-cs",
+        "AlmaLinux: autocorr-da",
+        "AlmaLinux: autocorr-de"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in autocorr-af 1:7.1.8.1-15.el9_8.3.alma.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in autocorr-bg 1:7.1.8.1-15.el9_8.3.alma.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in autocorr-ca 1:7.1.8.1-15.el9_8.3.alma.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:82015",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: xorg-x11-server security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:82015",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-14T09:06:53Z",
+      "cves": [
+        "CVE-2026-88812",
+        "CVE-2026-93521",
+        "CVE-2026-93523"
+      ],
+      "products": [
+        "AlmaLinux: xorg-x11-server-Xdmx",
+        "AlmaLinux: xorg-x11-server-Xephyr",
+        "AlmaLinux: xorg-x11-server-Xnest",
+        "AlmaLinux: xorg-x11-server-Xorg",
+        "AlmaLinux: xorg-x11-server-Xvfb",
+        "AlmaLinux: xorg-x11-server-common"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in xorg-x11-server-Xdmx 1.20.11-34.el9_8.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in xorg-x11-server-Xephyr 1.20.11-34.el9_8.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in xorg-x11-server-Xnest 1.20.11-34.el9_8.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:82040",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: python-tornado security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:82040",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-14T09:04:56Z",
+      "cves": [
+        "CVE-2026-103262"
+      ],
+      "products": [
+        "AlmaLinux: python3-tornado"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python3-tornado 6.5.10-1.el9_8.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:82041",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: python-tornado security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:82041",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-14T09:08:00Z",
+      "cves": [
+        "CVE-2026-103262"
+      ],
+      "products": [
+        "AlmaLinux: python3-tornado"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python3-tornado 6.5.10-1.el10_2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:82094",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: librabbitmq security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:82094",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-14T09:18:00Z",
+      "cves": [
+        "CVE-2026-44236"
+      ],
+      "products": [
+        "AlmaLinux: librabbitmq",
+        "AlmaLinux: librabbitmq-devel",
+        "AlmaLinux: librabbitmq-tools"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in librabbitmq 0.11.0-7.el9_8.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in librabbitmq-devel 0.11.0-7.el9_8.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in librabbitmq-tools 0.11.0-7.el9_8.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:82280",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: tftp security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:82280",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-14T09:18:52Z",
+      "cves": [
+        "CVE-2026-85234"
+      ],
+      "products": [
+        "AlmaLinux: tftp",
+        "AlmaLinux: tftp-server"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tftp 5.2-50.el10_2",
+          "u": null
+        },
+        {
+          "t": "Fixed in tftp-server 5.2-50.el10_2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:82295",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: hplip security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:82295",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-23T12:33:02Z",
+      "cves": [
+        "CVE-2020-6923",
+        "CVE-2025-43023",
+        "CVE-2026-91097",
+        "CVE-2026-91098",
+        "CVE-2026-91099",
+        "CVE-2026-91100",
+        "CVE-2026-91101",
+        "CVE-2026-91102",
+        "CVE-2026-91103",
+        "CVE-2026-91104",
+        "CVE-2026-91105",
+        "CVE-2026-91106"
+      ],
+      "products": [
+        "AlmaLinux: hplip",
+        "AlmaLinux: hplip-common",
+        "AlmaLinux: hplip-gui",
+        "AlmaLinux: hplip-libs",
+        "AlmaLinux: libsane-hpaio"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in hplip 3.26.6-3.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in hplip-common 3.26.6-3.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in hplip-gui 3.26.6-3.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:82345",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: OpenEXR security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:82345",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-14T09:31:24Z",
+      "cves": [
+        "CVE-2026-59184",
+        "CVE-2026-59186",
+        "CVE-2026-59189",
+        "CVE-2026-59981",
+        "CVE-2026-68515"
+      ],
+      "products": [
+        "AlmaLinux: OpenEXR-devel",
+        "AlmaLinux: OpenEXR-libs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in OpenEXR-devel 2.2.0-12.el8_10.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in OpenEXR-libs 2.2.0-12.el8_10.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-104635",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "Uncontrolled Recursion vulnerability in Protobuf.JSON.Decode in elixir-protobuf protobuf allows an unauthenticated remote attacker to crash the decoding process via a deeply nested JSON document. Any application that de…",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-104635"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: protobuf"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-107611",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "An out-of-bounds read vulnerability in the ZRLE decoder of GlavSoft TightVNC Viewer for Windows before 2.8.88 allows a malicious or compromised VNC server to read heap memory beyond the palette allocation and crash the …",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-107611"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: tightvnc"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-107612",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "Incorrect permission assignment in GlavSoft TightVNC Server for Windows before 2.8.88 allows a local authenticated user to read or overwrite the inter-process communication handles used between the TightVNC service and …",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-107612"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: tightvnc"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-107613",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "A NULL pointer dereference vulnerability in the Win8ScreenDriver component of GlavSoft TightVNC Server for Windows before 2.8.88 allows an attacker to crash the server, causing a denial of service. When re-initializatio…",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-107613"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: tightvnc"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-107614",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "An integer underflow in WinCursorShapeUtils::trimTransparent() in GlavSoft TightVNC Server for Windows before 2.8.88 allows a local authenticated user to crash the server, and potentially read out-of-bounds memory, by c…",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-107614"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: tightvnc"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-107615",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "An uncontrolled search path element vulnerability in GlavSoft TightVNC Server for Windows before 2.8.88 allows a local authenticated user to execute arbitrary code with SYSTEM privileges. DynamicLibrary::init() (and The…",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-107615"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: tightvnc"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-108266",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "Privasys rustls is a maintained fork of the rustls TLS library that adds RA-TLS challenge and channel-binding support. Prior to privasys-v0.8.1, the fork emitted RA-TLS challenge certificates whose quote ReportData was …",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2026-108266"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: rust-rustls"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "https://tailscale.com/security-bulletins/#ts-2026-012",
+      "src": "tailscale",
+      "vendor": "Tailscale",
+      "title": "TS-2026-012",
+      "url": "https://tailscale.com/security-bulletins/#ts-2026-012",
+      "released": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-108976",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -3888,6 +4910,62 @@
         {
           "t": "7.5.12:Security Update:https://github.com/PowerShell/Announcements/blob/main/pwsh/2026/10/CVE-2026-96251.md",
           "u": "https://github.com/PowerShell/Announcements/blob/main/pwsh/2026/10/CVE-2026-96251.md"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SEVD-2026-286-01",
+      "src": "csaf_se",
+      "vendor": "Schneider Electric",
+      "title": "Use of Unmaintained Third-Party Components vulnerability on Pro-face STW6000 and Harmony STW6",
+      "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2026-286-01&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2026-286-01.pdf",
+      "released": "2026-10-13T07:00:00Z",
+      "updated": "2026-10-13T07:00:00Z",
+      "cves": [
+        "CVE-2026-96434"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Pro-face STW6000",
+        "Harmony STW6"
+      ],
+      "fix": [
+        {
+          "t": "Customers should immediately apply the following mitigations to reduce the risk of exploit: • Use HMI only in a protected environment to minimize network expos…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SEVD-2026-286-02",
+      "src": "csaf_se",
+      "vendor": "Schneider Electric",
+      "title": "SAGE RTU",
+      "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2026-286-02&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2026-286-02.pdf",
+      "released": "2026-10-13T07:00:00Z",
+      "updated": "2026-10-13T07:00:00Z",
+      "cves": [
+        "CVE-2026-102250"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.2,
+      "products": [
+        "Sage RTU 1410",
+        "Sage RTU 1430",
+        "Sage RTU 1450",
+        "Sage RTU 2400",
+        "Sage RTU 3030 Magnum",
+        "Sage RTU 4400"
+      ],
+      "fix": [
+        {
+          "t": "Version C3414-500-S02L0 of SAGE RTU includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/download/document/C3414-…",
+          "u": "https://www.se.com/ww/en/download/document/C3414-500-S02L0_Firmware/"
         }
       ],
       "lang": "en",
@@ -5500,6 +6578,121 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RUSTSEC-2026-0386",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`AsyncFd::new` and related constructors violate I/O safety",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0386.html",
+      "released": "2026-10-13T12:00:00Z",
+      "updated": "2026-10-23T14:42:16Z",
+      "products": [
+        "crates.io: tokio"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tokio 1.51.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in tokio 1.53.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80506",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: emacs security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80506",
+      "released": "2026-10-13T12:00:56Z",
+      "updated": "2026-10-27T12:12:56Z",
+      "cves": [
+        "CVE-2026-77219",
+        "CVE-2026-79992"
+      ],
+      "products": [
+        "Rocky Linux: emacs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in emacs 1:26.1-15.el8_10.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80675",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: libxml2 security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80675",
+      "released": "2026-10-13T12:00:56Z",
+      "updated": "2026-10-27T12:12:56Z",
+      "cves": [
+        "CVE-2026-86142"
+      ],
+      "products": [
+        "Rocky Linux: libxml2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libxml2 0:2.9.7-21.el8_10.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80510",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: compat-openssl10 security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80510",
+      "released": "2026-10-13T12:01:18Z",
+      "updated": "2026-10-27T12:12:57Z",
+      "cves": [
+        "CVE-2026-84782"
+      ],
+      "products": [
+        "Rocky Linux: compat-openssl10"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in compat-openssl10 1:1.0.2o-4.el8_10.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80687",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: flatpak security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80687",
+      "released": "2026-10-13T12:01:18Z",
+      "updated": "2026-10-27T12:12:57Z",
+      "cves": [
+        "CVE-2026-90616",
+        "CVE-2026-96275",
+        "CVE-2026-96280",
+        "CVE-2026-96808"
+      ],
+      "products": [
+        "Rocky Linux: flatpak"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in flatpak 0:1.12.9-7.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:22093-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -5537,6 +6730,268 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80496",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: flatpak-builder security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80496",
+      "released": "2026-10-13T12:04:29Z",
+      "updated": "2026-10-27T12:13:10Z",
+      "cves": [
+        "CVE-2026-86320"
+      ],
+      "products": [
+        "Rocky Linux: flatpak-builder"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in flatpak-builder 0:1.2.3-1.el9_8.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80497",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: flatpak security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80497",
+      "released": "2026-10-13T12:04:29Z",
+      "updated": "2026-10-27T12:13:10Z",
+      "cves": [
+        "CVE-2026-90616",
+        "CVE-2026-96275",
+        "CVE-2026-96280",
+        "CVE-2026-96808"
+      ],
+      "products": [
+        "Rocky Linux: flatpak"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in flatpak 0:1.12.9-4.el9_8.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80504",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: jackson-core, jackson-databind, jackson-jaxrs-providers, and jackson-modules-base security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80504",
+      "released": "2026-10-13T12:04:29Z",
+      "updated": "2026-10-27T12:13:10Z",
+      "cves": [
+        "CVE-2026-68497"
+      ],
+      "products": [
+        "Rocky Linux: jackson-core",
+        "Rocky Linux: jackson-databind",
+        "Rocky Linux: jackson-jaxrs-providers",
+        "Rocky Linux: jackson-modules-base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jackson-core 0:2.21.6-1.el9_8",
+          "u": null
+        },
+        {
+          "t": "Fixed in jackson-databind 0:2.21.6-1.el9_8",
+          "u": null
+        },
+        {
+          "t": "Fixed in jackson-jaxrs-providers 0:2.21.6-1.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80507",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: emacs security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80507",
+      "released": "2026-10-13T12:04:29Z",
+      "updated": "2026-10-27T12:13:10Z",
+      "cves": [
+        "CVE-2026-77219",
+        "CVE-2026-79992"
+      ],
+      "products": [
+        "Rocky Linux: emacs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in emacs 1:27.2-18.el9_8.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80511",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: curl security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80511",
+      "released": "2026-10-13T12:04:29Z",
+      "updated": "2026-10-27T12:13:10Z",
+      "cves": [
+        "CVE-2026-11856",
+        "CVE-2026-8924"
+      ],
+      "products": [
+        "Rocky Linux: curl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in curl 0:7.76.1-40.el9_8.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80514",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: compat-openssl11 security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80514",
+      "released": "2026-10-13T12:04:29Z",
+      "updated": "2026-10-27T12:13:10Z",
+      "cves": [
+        "CVE-2026-63072",
+        "CVE-2026-84782"
+      ],
+      "products": [
+        "Rocky Linux: compat-openssl11"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in compat-openssl11 1:1.1.1k-5.el9_8.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80663",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: tftp security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80663",
+      "released": "2026-10-13T12:04:29Z",
+      "updated": "2026-10-27T12:13:10Z",
+      "cves": [
+        "CVE-2026-85234"
+      ],
+      "products": [
+        "Rocky Linux: tftp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tftp 0:5.2-40.el9_8.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80495",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: flatpak-builder security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80495",
+      "released": "2026-10-13T12:08:58Z",
+      "updated": "2026-10-27T12:13:15Z",
+      "cves": [
+        "CVE-2026-86320"
+      ],
+      "products": [
+        "Rocky Linux: flatpak-builder"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in flatpak-builder 0:1.4.4-1.el10_2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80498",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: flatpak security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80498",
+      "released": "2026-10-13T12:08:58Z",
+      "updated": "2026-10-27T12:13:15Z",
+      "cves": [
+        "CVE-2026-90616",
+        "CVE-2026-96275",
+        "CVE-2026-96280",
+        "CVE-2026-96808"
+      ],
+      "products": [
+        "Rocky Linux: flatpak"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in flatpak 0:1.16.0-9.el10_2.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80605",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Critical: cjose security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80605",
+      "released": "2026-10-13T12:08:58Z",
+      "updated": "2026-10-27T12:13:16Z",
+      "cves": [
+        "CVE-2026-53939"
+      ],
+      "products": [
+        "Rocky Linux: cjose"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cjose 0:0.6.2.2-7.el10_2.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:80664",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: environment-modules security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:80664",
+      "released": "2026-10-13T12:09:39Z",
+      "updated": "2026-10-27T12:13:18Z",
+      "cves": [
+        "CVE-2026-85013"
+      ],
+      "products": [
+        "Rocky Linux: environment-modules"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in environment-modules 0:5.6.1-2.el10_2.1",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -5580,6 +7035,27 @@
           "t": "Bender service updated to version 5.17.5 or later. The fix is planned in Q4 2026.",
           "u": null
         }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-11732",
+      "src": "cvelistv5",
+      "vendor": "NETGEAR",
+      "title": "An insufficient input validation vulnerability exists in the website blocking feature of certain NETGEAR RAX/CAX series models",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-11732",
+      "released": "2026-10-13T14:42:50Z",
+      "updated": "2026-11-13T06:43:03Z",
+      "cves": [
+        "CVE-2026-11732"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "NETGEAR CAX30",
+        "NETGEAR RAX30",
+        "NETGEAR RAX5",
+        "NETGEAR RAXE300"
       ],
       "seen": "2026-11-26"
     },
@@ -5643,6 +7119,52 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:82316",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Service Interconnect 2.2.3 Release (rpms)",
+      "url": "https://access.redhat.com/errata/RHSA-2026:82316",
+      "released": "2026-10-13T16:04:29Z",
+      "updated": "2026-10-13T23:46:39Z",
+      "cves": [
+        "CVE-2026-88763"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Red Hat Service Interconnect",
+        "Red Hat Service Interconnect 2 for RHEL 8",
+        "Red Hat Service Interconnect 2"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:82316"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-88833",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Busybox: busybox: udhcpc integer underflow in dhcp packet length calculation causes denial of service",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-88833",
+      "released": "2026-10-13T16:56:11Z",
+      "updated": "2026-11-13T13:32:56Z",
+      "cves": [
+        "CVE-2026-88833"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Red Hat Red Hat Hardened Images",
+        "Red Hat Red Hat Enterprise Linux 6"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "RHSA-2026:82359",
       "src": "direct_csaf",
       "vendor": "Red Hat",
@@ -5664,6 +7186,25 @@
           "t": "Build environments should avoid running LTO-enabled linking (ld with plugin support) against untrusted or externally-supplied object and archive files. The linker is a build-time tool, not present in production runtimes, so the realistic e…",
           "u": null
         }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-106172",
+      "src": "cvelistv5",
+      "vendor": "Fortinet",
+      "title": "A use of hard-coded cryptographic key vulnerability in Fortinet FortiSandbox 5.2.0 through 5.2.1, FortiSandbox 5.0.0 through 5.0.6, FortiSandbox 4.4 all versions, FortiSandbox Cloud 5.2.0 through 5.2.1, FortiSandbox Clo…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-106172",
+      "released": "2026-10-13T17:37:16Z",
+      "updated": "2026-11-13T10:04:26Z",
+      "cves": [
+        "CVE-2026-106172"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.9,
+      "products": [
+        "Fortinet FortiSandbox",
+        "Fortinet FortiSandbox Cloud"
       ],
       "seen": "2026-11-26"
     },
@@ -5791,6 +7332,32 @@
         "Azure CycleCloud 8.9.1"
       ],
       "lang": "nl",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:82280",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: tftp security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:82280",
+      "released": "2026-10-13T18:34:06Z",
+      "updated": "2026-10-27T12:13:16Z",
+      "cves": [
+        "CVE-2026-85234"
+      ],
+      "products": [
+        "Rocky Linux: tftp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tftp 0:5.2-50.el10",
+          "u": null
+        },
+        {
+          "t": "Fixed in tftp 0:5.2-50.el10_2",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -6173,6 +7740,32 @@
           "u": null
         }
       ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:82340",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Service Interconnect 2.2.3 Release (images)",
+      "url": "https://access.redhat.com/errata/RHSA-2026:82340",
+      "released": "2026-10-13T21:38:28Z",
+      "updated": "2026-10-13T23:46:37Z",
+      "cves": [
+        "CVE-2026-88763"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Red Hat Service Interconnect",
+        "Red Hat Service Interconnect 2"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:82340"
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-26"
     },
     {
@@ -6719,7 +8312,7 @@
       "title": "Mozilla Firefox und Thunderbrid: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3942",
       "released": "2026-10-13T22:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-109704",
         "CVE-2026-109705",

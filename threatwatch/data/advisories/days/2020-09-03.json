@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2020-09-03",
-  "count": 4,
+  "count": 5,
   "items": [
     {
       "id": "msrc_CVE-2020-24553",
@@ -104,6 +104,38 @@
       "products": [
         "SUSE Linux Enterprise",
         "SUSE Liberty Linux 8"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2020:3626",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Data Grid 8.1.0 Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2020:3626",
+      "released": "2020-09-03T16:50:20Z",
+      "updated": "2026-10-12T14:02:02Z",
+      "cves": [
+        "CVE-2020-9488",
+        "CVE-2020-10746",
+        "CVE-2020-11612"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.4,
+      "products": [
+        "Red Hat JBoss Data Grid",
+        "Red Hat Data Grid"
+      ],
+      "fix": [
+        {
+          "t": "Refer to the Data Grid 8.1 Upgrade Guide for instructions on upgrading to this version. The References section of this erratum contains a download link (you mu…",
+          "u": "https://access.redhat.com/errata/RHSA-2020:3626"
+        },
+        {
+          "t": "Previous versions can set the system property mail.smtp.ssl.checkserveridentity to true to globally enable hostname verification for SMTPS connections.",
+          "u": null
+        }
       ],
       "lang": "en",
       "seen": "2026-11-26"

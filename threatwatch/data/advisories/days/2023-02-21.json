@@ -1,8 +1,85 @@
 {
   "schemaVersion": 1,
   "date": "2023-02-21",
-  "count": 3,
+  "count": 6,
   "items": [
+    {
+      "id": "ALSA-2023:0848",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: php:8.0 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2023:0848",
+      "released": "2023-02-21T00:00:00Z",
+      "updated": "2026-11-05T10:20:34Z",
+      "cves": [
+        "CVE-2022-31628",
+        "CVE-2022-31629",
+        "CVE-2022-31630",
+        "CVE-2022-31631",
+        "CVE-2022-37454",
+        "CVE-2022-4900"
+      ],
+      "products": [
+        "AlmaLinux: apcu-panel",
+        "AlmaLinux: libzip",
+        "AlmaLinux: libzip-devel",
+        "AlmaLinux: libzip-tools",
+        "AlmaLinux: php",
+        "AlmaLinux: php-bcmath"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apcu-panel 5.1.20-1.module_el8.6.0+2739+efabdb8f",
+          "u": null
+        },
+        {
+          "t": "Fixed in libzip 1.7.3-1.module_el8.6.0+2739+efabdb8f",
+          "u": null
+        },
+        {
+          "t": "Fixed in libzip 1.7.3-1.module_el8.6.0+3061+6878dd1b",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2023:0852",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: httpd:2.4 security and bug fix update",
+      "url": "https://access.redhat.com/errata/RHSA-2023:0852",
+      "released": "2023-02-21T00:00:00Z",
+      "updated": "2026-11-05T03:25:16Z",
+      "cves": [
+        "CVE-2006-20001",
+        "CVE-2022-36760",
+        "CVE-2022-37436"
+      ],
+      "products": [
+        "AlmaLinux: httpd",
+        "AlmaLinux: httpd-devel",
+        "AlmaLinux: httpd-filesystem",
+        "AlmaLinux: httpd-manual",
+        "AlmaLinux: httpd-tools",
+        "AlmaLinux: mod_http2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in httpd 2.4.37-51.module_el8.7.0+3405+9516b832.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in httpd-devel 2.4.37-51.module_el8.7.0+3405+9516b832.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in httpd-filesystem 2.4.37-51.module_el8.7.0+3405+9516b832.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "ESEA-2023:0073",
       "src": "csaf_opensuse",
@@ -28,6 +105,18 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2023-89",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Heap-buffer-overflow in H5O__mtime_new_encode",
+      "released": "2023-02-21T13:00:30Z",
+      "updated": "2026-11-25T15:04:12Z",
+      "products": [
+        "OSS-Fuzz: hdf5"
+      ],
       "seen": "2026-11-26"
     },
     {

@@ -1,8 +1,53 @@
 {
   "schemaVersion": 1,
   "date": "2024-07-17",
-  "count": 1,
+  "count": 3,
   "items": [
+    {
+      "id": "BIT-discourse-2024-38360",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Denial of service via Watched Words in Discourse",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-68pm-hm8x-pq2p",
+      "released": "2024-07-17T09:56:10Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-38360"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 3.2.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2024-0354",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Usage of non-constant time base64 decoder could lead to leakage of secret key material",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2024-0354.html",
+      "released": "2024-07-17T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2024-40640"
+      ],
+      "products": [
+        "crates.io: vodozemac"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vodozemac 0.7.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "openSUSE-SU-2024:0203-1",
       "src": "csaf_opensuse",

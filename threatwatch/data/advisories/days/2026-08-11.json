@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-11",
-  "count": 129,
+  "count": 157,
   "items": [
     {
       "id": "ICSA-26-225-06",
@@ -292,6 +292,72 @@
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
           "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-127084",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-127084: Multiple Vulnerabilities in Fortigate NGFW before V7.6.7 on RUGGEDCOM APE1808 Devices",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-127084.html",
+      "released": "2026-08-11T00:00:00Z",
+      "updated": "2026-11-10T00:00:00Z",
+      "cves": [
+        "CVE-2026-23573",
+        "CVE-2026-59839",
+        "CVE-2026-71407",
+        "CVE-2026-71408",
+        "CVE-2026-84393",
+        "CVE-2026-106174"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "RUGGEDCOM APE1808"
+      ],
+      "fix": [
+        {
+          "t": "Update Fortigate NGFW to V7.6.7 or later following the secure update recommendation procedure. Contact customer support to receive detailed information",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-834709",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-834709: Missing Authentication Vulnerability in Node-RED on SIMATIC IoT2050 with Industrial OS",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-834709.html",
+      "released": "2026-08-11T00:00:00Z",
+      "updated": "2026-11-10T00:00:00Z",
+      "cves": [
+        "CVE-2026-58115"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 10.0,
+      "products": [
+        "SIMATIC IoT2050 Advanced (6ES7647-0BA00-1YA2)",
+        "SIMATIC IoT2050 Basic (6ES7647-0BA00-0YA2)",
+        "SIMATIC IoT2050 M.2 (6ES7647-0BB00-1YA2)",
+        "SIMATIC IoT2050 SM (6ES7647-0CA00-1AA2)"
+      ],
+      "fix": [
+        {
+          "t": "Harden the Node-RED installation (see Node-RED User Guide)",
+          "u": null
+        },
+        {
+          "t": "Uninstall Node-RED",
+          "u": null
+        },
+        {
+          "t": "Update to V4.3.4-1 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109741799/"
         }
       ],
       "lang": "en",
@@ -3266,6 +3332,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:51025",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Container Platform 4.21.28 bug fix and security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:51025",
+      "released": "2026-08-11T08:42:20Z",
+      "updated": "2026-09-21T17:12:19Z",
+      "cves": [
+        "CVE-2026-49332"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.5,
+      "products": [
+        "Red Hat OpenShift Container Platform",
+        "Red Hat OpenShift Container Platform 4.21"
+      ],
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.21 see the following documentation, which will be updated shortly for this release, for important instructions on how to upg…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:51025"
+        },
+        {
+          "t": "Upstream application hardening: validate X-Forwarded-User against the expected session identity. Reject requests where identity headers do not match the authen…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21561-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -3332,6 +3428,88 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RUSTSEC-2026-0270",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`sp-sized-chunks` is unmaintained",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0270.html",
+      "released": "2026-08-11T12:00:00Z",
+      "updated": "2026-08-31T08:41:58Z",
+      "products": [
+        "crates.io: sp-sized-chunks"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0484",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Inverted bitmap validation in `invalidate_l2_cached_ept`",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0484.html",
+      "released": "2026-08-11T12:00:00Z",
+      "updated": "2026-11-11T08:37:09Z",
+      "cves": [
+        "CVE-2026-20765"
+      ],
+      "products": [
+        "crates.io: tdx-guest"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tdx-guest 0.3.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0485",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`enter_l2_vcpu` passes the wrong RCX operand to `TDG.VP.ENTER`",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0485.html",
+      "released": "2026-08-11T12:00:00Z",
+      "updated": "2026-11-11T08:37:09Z",
+      "cves": [
+        "CVE-2026-20763"
+      ],
+      "products": [
+        "crates.io: tdx-guest"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tdx-guest 0.3.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:53459",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs bug fix and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:53459",
+      "released": "2026-08-11T12:33:27Z",
+      "updated": "2026-10-15T11:26:31Z",
+      "cves": [
+        "CVE-2026-9375"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:53459"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "RHSA-2026:53467",
       "src": "direct_csaf",
       "vendor": "Red Hat",
@@ -3358,6 +3536,242 @@
         },
         {
           "t": "To mitigate this issue, avoid processing untrusted or maliciously crafted TIFF images with the rgb2ycbcr utility. Users should exercise caution when handling TIFF files from unknown or suspicious sources.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:53451",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gstreamer1-plugins-good security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:53451",
+      "released": "2026-08-11T14:17:06Z",
+      "updated": "2026-10-07T17:14:54Z",
+      "cves": [
+        "CVE-2026-18649"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:53451"
+        },
+        {
+          "t": "The following mitigations can reduce risk before a patch is available: 1. Use SRTP or DTLS-SRTP: Deploy the srtpdec element in the pipeline before the depayloa…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:53452",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gstreamer1-plugins-good security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:53452",
+      "released": "2026-08-11T14:20:31Z",
+      "updated": "2026-10-07T17:14:54Z",
+      "cves": [
+        "CVE-2026-18649"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:53452"
+        },
+        {
+          "t": "The following mitigations can reduce risk before a patch is available: 1. Use SRTP or DTLS-SRTP: Deploy the srtpdec element in the pipeline before the depayloa…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95553",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-73074 affecting package vim for versions less than 9.2.0957-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73074",
+      "released": "2026-08-11T16:17:38Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-73074"
+      ],
+      "products": [
+        "Azure Linux: vim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim 9.2.0957-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95556",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-73072 affecting package vim for versions less than 9.2.0957-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73072",
+      "released": "2026-08-11T16:17:38Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-73072"
+      ],
+      "products": [
+        "Azure Linux: vim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim 9.2.0957-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95562",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-73076 affecting package vim for versions less than 9.2.0957-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73076",
+      "released": "2026-08-11T16:17:38Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-73076"
+      ],
+      "products": [
+        "Azure Linux: vim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim 9.2.0957-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95565",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-73070 affecting package vim for versions less than 9.2.0957-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73070",
+      "released": "2026-08-11T16:17:38Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-73070"
+      ],
+      "products": [
+        "Azure Linux: vim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim 9.2.0957-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95973",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-73075 affecting package vim for versions less than 9.2.0957-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73075",
+      "released": "2026-08-11T16:17:38Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-73075"
+      ],
+      "products": [
+        "Azure Linux: vim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim 9.2.0957-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95976",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-73071 affecting package vim for versions less than 9.2.0957-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73071",
+      "released": "2026-08-11T16:17:38Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-73071"
+      ],
+      "products": [
+        "Azure Linux: vim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim 9.2.0957-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95550",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-73078 affecting package vim for versions less than 9.2.0957-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73078",
+      "released": "2026-08-11T16:17:39Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-73078"
+      ],
+      "products": [
+        "Azure Linux: vim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim 9.2.0957-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95559",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-73077 affecting package vim for versions less than 9.2.0957-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73077",
+      "released": "2026-08-11T16:17:39Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-73077"
+      ],
+      "products": [
+        "Azure Linux: vim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim 9.2.0957-1",
           "u": null
         }
       ],
@@ -3422,6 +3836,71 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHEA-2026:53670",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Enhancement Advisory: OpenShift Virtualization v4.12 Images",
+      "url": "https://access.redhat.com/errata/RHEA-2026:53670",
+      "released": "2026-08-11T17:00:16Z",
+      "updated": "2026-09-21T17:22:31Z",
+      "cves": [
+        "CVE-2026-13622"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Container Native Virtualization",
+        "Red Hat Container Native Virtualization 4.12"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHEA-2026:53670"
+        },
+        {
+          "t": "Restrict pods/exec permissions in namespaces that run virtual machines. The pods/exec RBAC permission is required for the attack — removing it from VM operator…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:53671",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Virtualization v4.14 Images",
+      "url": "https://access.redhat.com/errata/RHSA-2026:53671",
+      "released": "2026-08-11T17:01:01Z",
+      "updated": "2026-10-12T20:47:23Z",
+      "cves": [
+        "CVE-2026-13201",
+        "CVE-2026-13622"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Container Native Virtualization",
+        "Red Hat Container Native Virtualization 4.14"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:53671"
+        },
+        {
+          "t": "The following measures reduce the attacker pool and limit secondary impact: Review RBAC policies to restrict pods/exec permissions on virt-launcher pods to onl…",
+          "u": null
+        },
+        {
+          "t": "Restrict pods/exec permissions in namespaces that run virtual machines. The pods/exec RBAC permission is required for the attack — removing it from VM operator…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21562-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -3474,6 +3953,76 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:53684",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Virtualization v4.17 Images",
+      "url": "https://access.redhat.com/errata/RHSA-2026:53684",
+      "released": "2026-08-11T17:04:24Z",
+      "updated": "2026-10-12T20:47:23Z",
+      "cves": [
+        "CVE-2026-13201",
+        "CVE-2026-13622"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Container Native Virtualization",
+        "Red Hat Container Native Virtualization 4.17"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:53684"
+        },
+        {
+          "t": "The following measures reduce the attacker pool and limit secondary impact: Review RBAC policies to restrict pods/exec permissions on virt-launcher pods to onl…",
+          "u": null
+        },
+        {
+          "t": "Restrict pods/exec permissions in namespaces that run virtual machines. The pods/exec RBAC permission is required for the attack — removing it from VM operator…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:53721",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Virtualization v4.16 Images",
+      "url": "https://access.redhat.com/errata/RHSA-2026:53721",
+      "released": "2026-08-11T17:12:31Z",
+      "updated": "2026-10-12T20:47:25Z",
+      "cves": [
+        "CVE-2026-13201",
+        "CVE-2026-13622"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Container Native Virtualization",
+        "Red Hat Container Native Virtualization 4.16"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:53721"
+        },
+        {
+          "t": "The following measures reduce the attacker pool and limit secondary impact: Review RBAC policies to restrict pods/exec permissions on virt-launcher pods to onl…",
+          "u": null
+        },
+        {
+          "t": "Restrict pods/exec permissions in namespaces that run virtual machines. The pods/exec RBAC permission is required for the attack — removing it from VM operator…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21567-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -3493,6 +4042,233 @@
       "fix": [
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:53797",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Virtualization v4.19 Images",
+      "url": "https://access.redhat.com/errata/RHSA-2026:53797",
+      "released": "2026-08-11T17:29:46Z",
+      "updated": "2026-10-12T20:47:27Z",
+      "cves": [
+        "CVE-2026-13201",
+        "CVE-2026-13622"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Container Native Virtualization",
+        "Red Hat Container Native Virtualization 4.19"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:53797"
+        },
+        {
+          "t": "The following measures reduce the attacker pool and limit secondary impact: Review RBAC policies to restrict pods/exec permissions on virt-launcher pods to onl…",
+          "u": null
+        },
+        {
+          "t": "Restrict pods/exec permissions in namespaces that run virtual machines. The pods/exec RBAC permission is required for the attack — removing it from VM operator…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:53826",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Virtualization v4.15 Images",
+      "url": "https://access.redhat.com/errata/RHSA-2026:53826",
+      "released": "2026-08-11T18:25:41Z",
+      "updated": "2026-10-12T20:47:27Z",
+      "cves": [
+        "CVE-2026-13201",
+        "CVE-2026-13622"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Container Native Virtualization",
+        "Red Hat Container Native Virtualization 4.15"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:53826"
+        },
+        {
+          "t": "The following measures reduce the attacker pool and limit secondary impact: Review RBAC policies to restrict pods/exec permissions on virt-launcher pods to onl…",
+          "u": null
+        },
+        {
+          "t": "Restrict pods/exec permissions in namespaces that run virtual machines. The pods/exec RBAC permission is required for the attack — removing it from VM operator…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:53838",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Virtualization v4.18 Images",
+      "url": "https://access.redhat.com/errata/RHSA-2026:53838",
+      "released": "2026-08-11T18:34:28Z",
+      "updated": "2026-10-12T20:47:28Z",
+      "cves": [
+        "CVE-2026-13201",
+        "CVE-2026-13622"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Container Native Virtualization",
+        "Red Hat Container Native Virtualization 4.18"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:53838"
+        },
+        {
+          "t": "The following measures reduce the attacker pool and limit secondary impact: Review RBAC policies to restrict pods/exec permissions on virt-launcher pods to onl…",
+          "u": null
+        },
+        {
+          "t": "Restrict pods/exec permissions in namespaces that run virtual machines. The pods/exec RBAC permission is required for the attack — removing it from VM operator…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:53846",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: isns-utils security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:53846",
+      "released": "2026-08-11T19:57:26Z",
+      "updated": "2026-08-31T08:07:12Z",
+      "cves": [
+        "CVE-2026-55995"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:53846"
+        },
+        {
+          "t": "If the iSNS service is not actively used, disable it to prevent exploitation. To disable the `isnsd` service, execute `systemctl disable --now isnsd`. If the i…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:53847",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: isns-utils security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:53847",
+      "released": "2026-08-11T20:18:31Z",
+      "updated": "2026-08-31T08:07:12Z",
+      "cves": [
+        "CVE-2026-55995"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:53847"
+        },
+        {
+          "t": "If the iSNS service is not actively used, disable it to prevent exploitation. To disable the `isnsd` service, execute `systemctl disable --now isnsd`. If the i…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5287",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Traefik: HTTP/3 mTLS bypass via exact SNI TLSOptions lookup for wildcard and mixed-case hosts in github.com/traefik/traefik",
+      "url": "https://github.com/traefik/traefik/security/advisories/GHSA-9cr8-q42q-g8m7",
+      "released": "2026-08-11T20:19:48Z",
+      "updated": "2026-11-24T15:56:00Z",
+      "cves": [
+        "CVE-2026-53622"
+      ],
+      "products": [
+        "Go: github.com/traefik/traefik",
+        "Go: github.com/traefik/traefik/v2",
+        "Go: github.com/traefik/traefik/v3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/traefik/traefik/v2 2.11.51",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/traefik/traefik/v3 3.6.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/traefik/traefik/v3 3.7.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:53848",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: isns-utils security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:53848",
+      "released": "2026-08-11T20:29:57Z",
+      "updated": "2026-08-31T08:07:12Z",
+      "cves": [
+        "CVE-2026-55995"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:53848"
+        },
+        {
+          "t": "If the iSNS service is not actively used, disable it to prevent exploitation. To disable the `isnsd` service, execute `systemctl disable --now isnsd`. If the i…",
           "u": null
         }
       ],

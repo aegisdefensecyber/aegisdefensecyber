@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-02-14",
-  "count": 3,
+  "count": 6,
   "items": [
     {
       "id": "msrc_CVE-2023-46137",
@@ -70,6 +70,40 @@
     },
     {
       "id": "SCA-2025-0001",
+      "src": "csaf_sick",
+      "vendor": "SICK AG",
+      "title": "Multiple vulnerabilities in SICK MEAC300",
+      "url": "https://www.sick.com/.well-known/csaf/white/2025/sca-2025-0001.json",
+      "released": "2025-02-14T01:00:00Z",
+      "updated": "2026-11-13T15:18:31Z",
+      "cves": [
+        "CVE-2025-0867",
+        "CVE-2022-0778"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "products": [
+        "MEAC",
+        "MEAC300",
+        "MEAC300 DE",
+        "MEAC 300 Firmware",
+        "MEAC300 DE Firmware"
+      ],
+      "fix": [
+        {
+          "t": "Users are strongly recommended to upgrade to the latest release of the MEAC300 (>=4.0.54.21) that includes a patch for the vulnerability.",
+          "u": null
+        },
+        {
+          "t": "Please make sure that you apply general security practices when operating the MEAC300 DE. The following General Security Practices and Operating Guidelines cou…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SCA-2025-0001",
       "src": "direct_csaf",
       "vendor": "SICK AG",
       "title": "Operating System - Privilege Escalation",
@@ -93,6 +127,55 @@
         },
         {
           "t": "Please make sure that you apply general security practices when operating the MEAC300 DE. The following General Security Practices and Operating Guidelines could mitigate the associated security risk.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PSF-2025-2",
+      "src": "osv_psf",
+      "vendor": "Psf",
+      "title": "There is a defect in the CPython standard library module “mimetypes” where on Windows the default list of known file locations are writable meaning other users can create invalid files to cause MemoryError to be raised …",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/thread/CDXW34ND2LSAOYAR5N6UNONP4ZBX4D6R/",
+      "released": "2025-02-14T16:18:00Z",
+      "updated": "2026-10-26T00:41:57Z",
+      "cves": [
+        "CVE-2024-3220"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in 04a29bf8f9ff8526cd96cb7368400173303a390a",
+          "u": null
+        },
+        {
+          "t": "Fixed in 5550519259656cbb8eeac09e3dbc0d5c248a4dea",
+          "u": null
+        },
+        {
+          "t": "Fixed in 76f4555c4ff10f5dda58d6528c17787df41e256c",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-56885",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-25204 affecting package gh for versions less than 2.62.0-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-25204",
+      "released": "2025-02-14T17:15:19Z",
+      "updated": "2026-09-08T17:33:11Z",
+      "cves": [
+        "CVE-2025-25204"
+      ],
+      "products": [
+        "Azure Linux: gh"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gh 2.62.0-6",
           "u": null
         }
       ],

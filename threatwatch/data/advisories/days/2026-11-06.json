@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-06",
-  "count": 55,
+  "count": 89,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1469",
@@ -1530,6 +1530,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RLBA-2026:56986",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important:virtio-win update",
+      "url": "https://errata.rockylinux.org/RLBA-2026:56986",
+      "released": "2026-11-06T00:04:50Z",
+      "updated": "2026-11-13T03:22:21Z",
+      "cves": [
+        "CVE-2026-46655"
+      ],
+      "products": [
+        "Rocky Linux: virtio-win"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in virtio-win 0:1.9.58-0.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "4TLB000837",
       "src": "csaf_abb",
       "vendor": "ABB",
@@ -1731,6 +1753,62 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-123660",
+      "src": "gna-1",
+      "vendor": "vulnerability-lookup",
+      "title": "Vulnerability-Lookup: memory amplification through webhook payload template format specifiers",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123660",
+      "released": "2026-11-06T08:43:00Z",
+      "updated": "2026-11-06T09:04:18Z",
+      "cves": [
+        "CVE-2026-123660"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "vulnerability-lookup vulnerability-lookup"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "sca-2026-0017",
+      "src": "csaf_sick",
+      "vendor": "SICK AG",
+      "title": "SICK Products affected by Brotli Vulnerability (Broccoli2Shell)",
+      "url": "https://www.sick.com/.well-known/csaf/white/2026/sca-2026-0017.json",
+      "released": "2026-11-06T09:59:00Z",
+      "updated": "2026-11-06T09:59:00Z",
+      "cves": [
+        "CVE-2026-111497"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Localization systems",
+        "CorivaHub",
+        "Insight Tools",
+        "Logistics Diagnostic Analytics",
+        "Package Analytics",
+        "Baggage Analytics"
+      ],
+      "fix": [
+        {
+          "t": "Users are recommended to re-install or upgrade to version 2026.1.3 while setting the global.imagePullPolicy to 'IfNotPresent'.",
+          "u": null
+        },
+        {
+          "t": "As an immediate risk reduction measure, customers should disable the affected services on affected systems: 1.Open Windows Services. 2.Stop the following servi…",
+          "u": null
+        },
+        {
+          "t": "Customers may disable the offline map functionality by setting corivaHubOfflineMap.enabled to false in the CorivaHub configuration. This prevents the affected …",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "sca-2026-0017",
       "src": "direct_csaf",
       "vendor": "SICK AG",
@@ -1768,6 +1846,38 @@
     },
     {
       "id": "VDE-2025-081",
+      "src": "csaf_wagogmbhcokg",
+      "vendor": "WAGO",
+      "title": "WAGO: Multiple PLCs and Communication Components are Affected by multiple Vulnerabilities leading to RCE",
+      "url": "https://www.wago.com/de-en/automation-technology/psirt",
+      "released": "2026-11-06T10:00:00Z",
+      "updated": "2026-11-06T10:00:00Z",
+      "cves": [
+        "CVE-2025-41700",
+        "CVE-2025-41738",
+        "CVE-2025-41739"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Hardware",
+        "CC100",
+        "PFC100 G2",
+        "PFC200 G2",
+        "TP600",
+        "Edge Controller"
+      ],
+      "fix": [
+        {
+          "t": "Update to Firmware version 4.10.0 (FW32) or higher. For the latest Custom Firmware please contact the WAGO support.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "VDE-2025-081",
       "src": "direct_csaf",
       "vendor": "WAGO",
       "title": "CODESYS Development System - Deserialization of Untrusted Data",
@@ -1792,6 +1902,632 @@
       "fix": [
         {
           "t": "Update to Firmware version 4.10.0 (FW32) or higher. For the latest Custom Firmware please contact the WAGO support.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0443",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Hidden file disclosure through Windows short names",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0443.html",
+      "released": "2026-11-06T12:00:00Z",
+      "updated": "2026-11-06T14:33:54Z",
+      "products": [
+        "crates.io: actix-files"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in actix-files 0.7.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0445",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Degraded secret zeroization capabilities",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0445.html",
+      "released": "2026-11-06T12:00:00Z",
+      "updated": "2026-11-06T14:33:54Z",
+      "products": [
+        "crates.io: vodozemac"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vodozemac 0.11.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0446",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Request smuggling through malformed chunked request trailers",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0446.html",
+      "released": "2026-11-06T12:00:00Z",
+      "updated": "2026-11-06T14:33:54Z",
+      "products": [
+        "crates.io: actix-http"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in actix-http 3.20.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0447",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Compressed request bodies can exhaust memory before extractor limits apply",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0447.html",
+      "released": "2026-11-06T12:00:00Z",
+      "updated": "2026-11-06T14:42:53Z",
+      "products": [
+        "crates.io: actix-web"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in actix-web 4.18.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0448",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Unbounded decompression can exhaust memory and CPU resources",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0448.html",
+      "released": "2026-11-06T12:00:00Z",
+      "updated": "2026-11-15T09:59:21Z",
+      "cves": [
+        "CVE-2026-128242"
+      ],
+      "products": [
+        "crates.io: actix-http"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in actix-http 3.20.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0451",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Degraded secret zeroization capabilities",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0451.html",
+      "released": "2026-11-06T12:00:00Z",
+      "updated": "2026-11-06T15:34:32Z",
+      "products": [
+        "crates.io: vodozemac"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vodozemac 0.11.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0455",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Large-window Brotli bodies bypass decompression memory limits",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0455.html",
+      "released": "2026-11-06T12:00:00Z",
+      "updated": "2026-11-06T15:34:32Z",
+      "products": [
+        "crates.io: actix-http"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in actix-http 3.20.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0466",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`build_dep` was removed from crates.io for malicious code",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0466.html",
+      "released": "2026-11-06T12:00:00Z",
+      "updated": "2026-11-10T12:49:43Z",
+      "products": [
+        "crates.io: build_dep"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0467",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`top_level_crate` was removed from crates.io for malicious code",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0467.html",
+      "released": "2026-11-06T12:00:00Z",
+      "updated": "2026-11-10T12:49:43Z",
+      "products": [
+        "crates.io: top_level_crate"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0468",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`shinchina` was removed from crates.io for malicious code",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0468.html",
+      "released": "2026-11-06T12:00:00Z",
+      "updated": "2026-11-10T12:49:43Z",
+      "products": [
+        "crates.io: shinchina"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0471",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`sec-gemini` was removed from crates.io for malicious code",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0471.html",
+      "released": "2026-11-06T12:00:00Z",
+      "updated": "2026-11-10T12:49:43Z",
+      "products": [
+        "crates.io: sec-gemini"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0472",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`shinchina-test` was removed from crates.io for malicious code",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0472.html",
+      "released": "2026-11-06T12:00:00Z",
+      "updated": "2026-11-10T12:49:43Z",
+      "products": [
+        "crates.io: shinchina-test"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:95281",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: xorg-x11-server-Xwayland security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95281",
+      "released": "2026-11-06T12:01:27Z",
+      "updated": "2026-11-20T12:04:22Z",
+      "cves": [
+        "CVE-2026-93520"
+      ],
+      "products": [
+        "Rocky Linux: xorg-x11-server-Xwayland",
+        "Rocky Linux: xorg-x11-server-Xwayland-debuginfo",
+        "Rocky Linux: xorg-x11-server-Xwayland-debugsource"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in xorg-x11-server-Xwayland 0:21.1.3-20.el8_10.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in xorg-x11-server-Xwayland-debuginfo 0:21.1.3-20.el8_10.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in xorg-x11-server-Xwayland-debugsource 0:21.1.3-20.el8_10.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:95482",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: gimp:2.8 security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95482",
+      "released": "2026-11-06T12:01:27Z",
+      "updated": "2026-11-20T12:04:22Z",
+      "cves": [
+        "CVE-2026-112257"
+      ],
+      "products": [
+        "Rocky Linux: gimp",
+        "Rocky Linux: gimp-debuginfo",
+        "Rocky Linux: gimp-debugsource",
+        "Rocky Linux: gimp-devel",
+        "Rocky Linux: gimp-devel-tools",
+        "Rocky Linux: gimp-devel-tools-debuginfo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gimp 2:2.8.22-26.module+el8.10.0+40407+12f45184.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in gimp-debuginfo 2:2.8.22-26.module+el8.10.0+40407+12f45184.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in gimp-debugsource 2:2.8.22-26.module+el8.10.0+40407+12f45184.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:95638",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: go-toolset:rhel8 security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95638",
+      "released": "2026-11-06T12:01:27Z",
+      "updated": "2026-11-20T12:04:22Z",
+      "cves": [
+        "CVE-2026-111943"
+      ],
+      "products": [
+        "Rocky Linux: delve",
+        "Rocky Linux: delve-debuginfo",
+        "Rocky Linux: delve-debugsource",
+        "Rocky Linux: go-toolset",
+        "Rocky Linux: golang",
+        "Rocky Linux: golang-bin"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in delve 0:1.26.1-2.module+el8.10.0+40408+b9bc4117",
+          "u": null
+        },
+        {
+          "t": "Fixed in delve-debuginfo 0:1.26.1-2.module+el8.10.0+40408+b9bc4117",
+          "u": null
+        },
+        {
+          "t": "Fixed in delve-debugsource 0:1.26.1-2.module+el8.10.0+40408+b9bc4117",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:95100",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: kernel-rt security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95100",
+      "released": "2026-11-06T12:02:13Z",
+      "updated": "2026-11-20T12:04:24Z",
+      "cves": [
+        "CVE-2026-52929",
+        "CVE-2026-64541",
+        "CVE-2026-74586",
+        "CVE-2026-80863",
+        "CVE-2026-80864",
+        "CVE-2026-89488"
+      ],
+      "products": [
+        "Rocky Linux: kernel-rt",
+        "Rocky Linux: kernel-rt-core",
+        "Rocky Linux: kernel-rt-debug",
+        "Rocky Linux: kernel-rt-debug-core",
+        "Rocky Linux: kernel-rt-debug-debuginfo",
+        "Rocky Linux: kernel-rt-debug-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel-rt-debug-core 0:4.18.0-553.184.1.rt7.525.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-rt 0:4.18.0-553.184.1.rt7.525.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-rt-core 0:4.18.0-553.184.1.rt7.525.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLBA-2026:70252",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important:virtio-win bug fix and enhancement update",
+      "url": "https://errata.rockylinux.org/RLBA-2026:70252",
+      "released": "2026-11-06T12:04:35Z",
+      "updated": "2026-11-20T12:06:07Z",
+      "cves": [
+        "CVE-2026-46655"
+      ],
+      "products": [
+        "Rocky Linux: virtio-win"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in virtio-win 0:1.9.61-0.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:95086",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: tesseract security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95086",
+      "released": "2026-11-06T12:04:35Z",
+      "updated": "2026-11-20T12:06:07Z",
+      "cves": [
+        "CVE-2026-88047",
+        "CVE-2026-88048",
+        "CVE-2026-88049",
+        "CVE-2026-88051",
+        "CVE-2026-88052",
+        "CVE-2026-88053"
+      ],
+      "products": [
+        "Rocky Linux: tesseract",
+        "Rocky Linux: tesseract-debuginfo",
+        "Rocky Linux: tesseract-debugsource",
+        "Rocky Linux: tesseract-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tesseract 0:4.1.1-11.el9_8",
+          "u": null
+        },
+        {
+          "t": "Fixed in tesseract-debuginfo 0:4.1.1-11.el9_8",
+          "u": null
+        },
+        {
+          "t": "Fixed in tesseract-debugsource 0:4.1.1-11.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:95272",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: osbuild-composer security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95272",
+      "released": "2026-11-06T12:04:35Z",
+      "updated": "2026-11-13T03:22:23Z",
+      "cves": [
+        "CVE-2026-84445"
+      ],
+      "products": [
+        "Rocky Linux: osbuild-composer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in osbuild-composer 0:165.1-5.el9_8.1.rocky.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:95370",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: kernel security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95370",
+      "released": "2026-11-06T12:04:35Z",
+      "updated": "2026-11-13T03:22:23Z",
+      "cves": [
+        "CVE-2026-64541",
+        "CVE-2026-68162",
+        "CVE-2026-68451",
+        "CVE-2026-68452",
+        "CVE-2026-72080",
+        "CVE-2026-72221",
+        "CVE-2026-72222",
+        "CVE-2026-74586",
+        "CVE-2026-74588",
+        "CVE-2026-74752",
+        "CVE-2026-80553",
+        "CVE-2026-80571",
+        "CVE-2026-80584",
+        "CVE-2026-89479",
+        "CVE-2026-89488",
+        "CVE-2026-98403"
+      ],
+      "products": [
+        "Rocky Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 0:5.14.0-687.66.1.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:95518",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: delve security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95518",
+      "released": "2026-11-06T12:04:35Z",
+      "updated": "2026-11-13T03:22:23Z",
+      "cves": [
+        "CVE-2026-111943",
+        "CVE-2026-97031"
+      ],
+      "products": [
+        "Rocky Linux: delve"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in delve 0:1.26.1-2.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:95618",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: glibc security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95618",
+      "released": "2026-11-06T12:04:35Z",
+      "updated": "2026-11-13T03:22:24Z",
+      "cves": [
+        "CVE-2026-8674",
+        "CVE-2026-86805",
+        "CVE-2026-89092",
+        "CVE-2026-95818"
+      ],
+      "products": [
+        "Rocky Linux: glibc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glibc 0:2.34-284.el9_8.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:95367",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: kernel security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95367",
+      "released": "2026-11-06T12:09:31Z",
+      "updated": "2026-11-13T03:26:22Z",
+      "cves": [
+        "CVE-2026-64378",
+        "CVE-2026-72080",
+        "CVE-2026-72221",
+        "CVE-2026-72222",
+        "CVE-2026-74586",
+        "CVE-2026-89488",
+        "CVE-2026-90315",
+        "CVE-2026-98974"
+      ],
+      "products": [
+        "Rocky Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 0:6.12.0-211.74.1.el10_2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:95519",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: delve security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95519",
+      "released": "2026-11-06T12:09:31Z",
+      "updated": "2026-11-13T03:26:22Z",
+      "cves": [
+        "CVE-2026-111943",
+        "CVE-2026-78667",
+        "CVE-2026-78669",
+        "CVE-2026-94440",
+        "CVE-2026-97031"
+      ],
+      "products": [
+        "Rocky Linux: delve"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in delve 0:1.26.1-3.el10_2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:95570",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: cockpit-files security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:95570",
+      "released": "2026-11-06T12:09:31Z",
+      "updated": "2026-11-13T03:26:22Z",
+      "cves": [
+        "CVE-2026-91202",
+        "CVE-2026-91203",
+        "CVE-2026-91205"
+      ],
+      "products": [
+        "Rocky Linux: cockpit-files"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cockpit-files 0:36.1-1.el10_2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSEC-2026-30",
+      "src": "osv_ocaml",
+      "vendor": "Ocaml",
+      "title": "Ephemeron data is freed while still referenced when the key is an `Infix_tag` closure",
+      "released": "2026-11-06T12:30:00Z",
+      "updated": "2026-11-06T12:30:00Z",
+      "products": [
+        "opam: ocaml"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ocaml 4.14.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in da301a20833b765e268d677fe693d29fe51793ad",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSEC-2026-28",
+      "src": "osv_ocaml",
+      "vendor": "Ocaml",
+      "title": "Unauthenticated arbitrary file read via path traversal in `/conferences/ocaml/**`",
+      "released": "2026-11-06T13:30:00Z",
+      "updated": "2026-11-06T13:30:00Z",
+      "fix": [
+        {
+          "t": "Fixed in 6b08ea625214fddcdd03cf990c004bc2dd77c17a",
           "u": null
         }
       ],
@@ -1916,6 +2652,42 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-100081",
+      "src": "cvelistv5",
+      "vendor": "Linux",
+      "title": "xen-netback: defer xenvif_mcast_addr_list_free()",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-100081",
+      "released": "2026-11-06T18:23:02Z",
+      "updated": "2026-11-13T14:17:19Z",
+      "cves": [
+        "CVE-2026-100081"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Linux Linux",
+        "Linux Linux"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-100082",
+      "src": "cvelistv5",
+      "vendor": "Linux",
+      "title": "xen-blkback: Avoid UAF when reading I/O statistics",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-100082",
+      "released": "2026-11-06T18:23:02Z",
+      "updated": "2026-11-13T14:17:20Z",
+      "cves": [
+        "CVE-2026-100082"
+      ],
+      "products": [
+        "Linux Linux",
+        "Linux Linux"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:22325-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1938,6 +2710,24 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-109683",
+      "src": "cvelistv5",
+      "vendor": "TP-Link Systems Inc.",
+      "title": "UPnP Newline Injection Vulnerability in TP-Link Archer BE805",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-109683",
+      "released": "2026-11-06T19:26:40Z",
+      "updated": "2026-11-12T18:59:22Z",
+      "cves": [
+        "CVE-2026-109683"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "TP-Link Systems Inc. Archer BE805 v1"
+      ],
       "seen": "2026-11-26"
     },
     {

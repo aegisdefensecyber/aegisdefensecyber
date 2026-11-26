@@ -1,8 +1,48 @@
 {
   "schemaVersion": 1,
   "date": "2024-02-13",
-  "count": 1,
+  "count": 2,
   "items": [
+    {
+      "id": "SEVD-2024-044-01",
+      "src": "csaf_se",
+      "vendor": "Schneider Electric",
+      "title": "EcoStruxure™ Control Expert, EcoStruxure™ Process Expert and Modicon M340, M580 and M580 Safety PLCs",
+      "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2024-044-01&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2024-044-01.pdf",
+      "released": "2024-02-13T12:41:43Z",
+      "updated": "2026-09-08T07:00:00Z",
+      "cves": [
+        "CVE-2023-6408",
+        "CVE-2023-6409",
+        "CVE-2023-27975"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "Modicon M340 CPU (part numbers BMXP34*)",
+        "Modicon M580 CPU (part numbers BMEP* and BMEH* excluding M580 CPU Safety)",
+        "Modicon M580 CPU Safety",
+        "EcoStruxure™ Control Expert",
+        "EcoStruxure™ Process Expert",
+        "Modicon M580 CPU (part numbers BMEP* and BMEH*, excluding M580 CPU Safety)"
+      ],
+      "fix": [
+        {
+          "t": "SV3.60 of Modicon M340 firmware includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-range/1468- modicon-…",
+          "u": "https://www.se.com/ww/en/product-range/1468-modicon-m340"
+        },
+        {
+          "t": "SV4.20 of Modicon M580 firmware includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-range/62098- modicon…",
+          "u": "https://www.se.com/ww/en/product-range/62098-%20modicon-m580-epac/%20-%20software-and-firmware"
+        },
+        {
+          "t": "Version 16.0 of EcoStruxure Control Expert includes a fix for these vulnerabilities and is available for download here: https://www.se.com/ww/en/product-range/…",
+          "u": "https://www.se.com/in/en/product-range/548-ecostruxure-control-expert-unity-pro/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
     {
       "id": "SEVD-2024-044-01",
       "src": "direct_csaf",

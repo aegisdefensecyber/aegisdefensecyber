@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2023-11-30",
-  "count": 4,
+  "count": 7,
   "items": [
     {
       "id": "openSUSE-SU-2023:0384-1",
@@ -85,6 +85,34 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2023:7612",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat build of Quarkus 3.2.9 release and security update",
+      "url": "https://access.redhat.com/errata/RHSA-2023:7612",
+      "released": "2023-11-30T11:36:55Z",
+      "updated": "2026-10-20T04:33:06Z",
+      "cves": [
+        "CVE-2023-6394",
+        "CVE-2023-39410",
+        "CVE-2023-43642"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat build of Quarkus",
+        "Red Hat build of Quarkus 3.2.9.Final"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2023:7612"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2023:0387-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -112,6 +140,60 @@
       "fix": [
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2023:7341",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "python-cryptography: memory corruption via immutable objects",
+      "url": "https://access.redhat.com/errata/RHSA-2023:7341",
+      "released": "2023-11-30T14:34:57Z",
+      "updated": "2026-11-26T17:21:03Z",
+      "cves": [
+        "CVE-2023-23931",
+        "CVE-2023-25577",
+        "CVE-2023-30861"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2023:7341"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2023:7617",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Build of Apache Camel for Quarkus 3.2.0 release (RHBQ 3.2.9.Final)",
+      "url": "https://access.redhat.com/errata/RHSA-2023:7617",
+      "released": "2023-11-30T15:00:38Z",
+      "updated": "2026-10-12T14:13:56Z",
+      "cves": [
+        "CVE-2023-5072",
+        "CVE-2023-39410"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Integration",
+        "Red Hat build of Apache Camel 4 for Quarkus 3"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2023:7617"
+        },
+        {
+          "t": "No current mitigation is available for this flaw.",
           "u": null
         }
       ],

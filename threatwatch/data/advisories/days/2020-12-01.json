@@ -1,8 +1,653 @@
 {
   "schemaVersion": 1,
   "date": "2020-12-01",
-  "count": 8,
+  "count": 34,
   "items": [
+    {
+      "id": "ASB-A-141745510",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In addWindow of WindowManagerService.java, there is a possible window overlay attack due to an insecure default value. This could lead to local escalation of privilege via tapjacking with no additional execution privile…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0099"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 8.0:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 8.1:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 9:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-147802478",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In do_epoll_ctl and ep_loop_check_proc of eventpoll.c, there is a possible use after free due to a logic error. This could lead to local escalation of privilege with no additional execution privileges needed. User inter…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0466"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-150371903",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In resolv_cache_lookup of res_cache.cpp, there is a possible side channel information disclosure. This could lead to local information disclosure of accessed web resources with no additional execution privileges needed.…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0464"
+      ],
+      "products": [
+        "Android: platform/frameworks/native",
+        "Android: platform/system/netd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/native 10:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/netd 10:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-150693166",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In audit_free_lsm_field of auditfilter.c, there is a possible bad kfree due to a logic error in audit_data_to_entry. This could lead to local escalation of privilege with no additional execution privileges needed. User …",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0444"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-154915372",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In bindWallpaperComponentLocked of WallpaperManagerService.java, there is a possible permission bypass due to an unsafe PendingIntent. This could lead to local escalation of privilege with User execution privileges need…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0294"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 8.0:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 8.1:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 9:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-157906412",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-157906412",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-11146"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-158484422",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In listen() and related functions of TelephonyRegistry.java, there is a possible permissions bypass of location permissions due to a missing permission check. This could lead to local information disclosure with no addi…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0468"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 10:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 11:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-158854097",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In smp_key_distribution of smp_act.cc, there are possible vulnerabilities in Cross-Transport Key Derivation due to weaknesses in the Bluetooth standard. This could lead to remote information disclosure with no additiona…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-15802"
+      ],
+      "products": [
+        "Android: platform/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/bt 8.0:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 8.1:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 9:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-159373687",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In sendConfiguredNetworkChangedBroadcast of WifiConfigManager.java, there is a possible leak of sensitive WiFi configuration data due to a missing permission check. This could lead to local information disclosure of WiF…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0459"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/frameworks/opt/net/wifi",
+        "Android: platform/packages/apps/Car/Settings",
+        "Android: platform/packages/apps/Settings",
+        "Android: platform/packages/services/Car"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 8.0:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/opt/net/wifi 8.0:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Car/Settings 8.0:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-160265164",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In SPDIFEncoder::writeBurstBufferBytes and related methods of SPDIFEncoder.cpp, there is a possible out of bounds write due to an integer overflow. This could lead to remote code execution with no additional execution p…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0458"
+      ],
+      "products": [
+        "Android: platform/system/media"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/media 8.0:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/media 8.1:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/media 9:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-162627132",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In createVirtualDisplay of DisplayManagerService.java, there is a possible way to create a trusted virtual display due to a missing permission check. This could lead to local escalation of privilege with no additional e…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0440"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-162844689",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In various methods of hid-multitouch.c, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User intera…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0465"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-163413737",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In createNameCredentialDialog of CertInstaller.java, there exists the possibility of improperly installed certificates due to a logic error. This could lead to remote information disclosure with no additional execution …",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0460"
+      ],
+      "products": [
+        "Android: platform/packages/apps/KeyChain"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/KeyChain 11:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-166268541",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In extend_frame_highbd of restoration.c, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User inter…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0470"
+      ],
+      "products": [
+        "Android: platform/external/libaom"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/libaom 10:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/libaom 11:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-168049959",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-168049959",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-11167"
+      ],
+      "products": [
+        "Android: platform/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/bt SoCVersion:2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-168050580",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-168050580",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-11185"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn SoCVersion:2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-168050601",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-168050601",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-11225"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn SoCVersion:2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-168051734",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-168051734",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-11217"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-168500792",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onUserStopped of Vpn.java, there is a possible resetting of user preferences due to a logic issue. This could lead to local information disclosure of secure network traffic over a non-VPN link with no additional exec…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0467"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 8.1:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 9:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 10:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-168692734",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In addEscrowToken of LockSettingsService.java, there is a possible loss of the synthetic password due to logic error. This could lead to local denial of service with no additional execution privileges needed. User inter…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0469"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-169342531",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In sdp_server_handle_client_req of sdp_server.cc, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure from the bluetooth server with no additional execu…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0463"
+      ],
+      "products": [
+        "Android: platform/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/bt 8.0:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 8.1:2020-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 9:2020-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-170367562",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "There is a possible out of bounds write due to a missing bounds check.",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0457"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-170372514",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "There is a possible out of bounds write due to a missing bounds check.",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0455"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-170378843",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "There is a possible out of bounds write due to a missing bounds check.",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0456"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-171413483",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In the Broadcom Nexus firmware, there is an insecure default password. This could lead to local escalation of privilege in the kernel with no additional execution privileges needed. User interaction is not needed for ex…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0016"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-171413798",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In the Broadcom Nexus firmware, there is an insecure default password. This could lead to local information disclosure in the kernel with no additional execution privileges needed. User interaction is not needed for exp…",
+      "url": "https://source.android.com/security/bulletin/2020-12-01",
+      "released": "2020-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-0019"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2020-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "openSUSE-SU-2020:2128-1",
       "src": "csaf_opensuse",

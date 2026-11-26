@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-22",
-  "count": 51,
+  "count": 59,
   "items": [
     {
       "id": "CERTFR-2026-ALE-008",
@@ -680,6 +680,120 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:43307",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: kernel security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:43307",
+      "released": "2026-07-22T00:00:00Z",
+      "updated": "2026-10-26T00:32:42Z",
+      "cves": [
+        "CVE-2025-71113",
+        "CVE-2026-23110",
+        "CVE-2026-46099",
+        "CVE-2026-46150",
+        "CVE-2026-46215",
+        "CVE-2026-53071",
+        "CVE-2026-63912",
+        "CVE-2026-72123"
+      ],
+      "products": [
+        "AlmaLinux: kernel",
+        "AlmaLinux: kernel-64k",
+        "AlmaLinux: kernel-64k-core",
+        "AlmaLinux: kernel-64k-debug",
+        "AlmaLinux: kernel-64k-debug-core",
+        "AlmaLinux: kernel-64k-debug-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 5.14.0-687.29.1.el9_8",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-64k 5.14.0-687.29.1.el9_8",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-64k-core 5.14.0-687.29.1.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-BF01272",
+      "src": "cleanstart",
+      "title": "Parsing an invalid SVCB or HTTPS RR can panic when the size of a parameter value overflows the message buffer",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-BF01272.json",
+      "released": "2026-07-22T00:33:38Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2026-46600",
+        "CVE-2026-56852"
+      ],
+      "products": [
+        "CleanStart: knative-serving"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in knative-serving 1.22.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-FV79231",
+      "src": "cleanstart",
+      "title": "Netty is a network application framework for development of protocol servers and clients",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-FV79231.json",
+      "released": "2026-07-22T00:41:44Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2021-0341",
+        "CVE-2022-1471",
+        "CVE-2023-3635",
+        "CVE-2025-67735",
+        "CVE-2026-33870",
+        "CVE-2026-33871",
+        "CVE-2026-41417",
+        "CVE-2026-42578",
+        "CVE-2026-42579",
+        "CVE-2026-42580",
+        "CVE-2026-42581",
+        "CVE-2026-42583",
+        "CVE-2026-42584",
+        "CVE-2026-42585",
+        "CVE-2026-42587",
+        "CVE-2026-44249",
+        "CVE-2026-45416",
+        "CVE-2026-45536",
+        "CVE-2026-45673",
+        "CVE-2026-45674",
+        "CVE-2026-47244",
+        "CVE-2026-47691",
+        "CVE-2026-48043",
+        "CVE-2026-50010",
+        "CVE-2026-50020",
+        "CVE-2026-50560",
+        "CVE-2026-54512",
+        "CVE-2026-54513",
+        "CVE-2026-54514",
+        "CVE-2026-54515"
+      ],
+      "products": [
+        "CleanStart: s3proxy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in s3proxy 3.3.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-26197",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -746,6 +860,106 @@
         "kernel"
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-64058",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-64058",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-64058",
+      "released": "2026-07-22T06:04:15Z",
+      "updated": "2026-09-28T20:02:02Z",
+      "cves": [
+        "CVE-2026-64058"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-64070",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-64070",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-64070",
+      "released": "2026-07-22T06:04:16Z",
+      "updated": "2026-09-28T20:02:02Z",
+      "cves": [
+        "CVE-2026-64070"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-63839",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-63839",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-63839",
+      "released": "2026-07-22T06:05:54Z",
+      "updated": "2026-09-25T20:01:29Z",
+      "cves": [
+        "CVE-2026-63839"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-32285",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-32285",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-32285",
+      "released": "2026-07-22T06:06:04Z",
+      "updated": "2026-09-08T12:19:51Z",
+      "cves": [
+        "CVE-2026-32285"
+      ],
+      "products": [
+        "Alpaquita: cri-tools"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cri-tools 1.35.0-r8",
+          "u": null
+        },
+        {
+          "t": "Fixed in cri-tools 1.35.0-r8",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -1208,6 +1422,37 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5102",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Default kuma-cp leaks admin token cross-origin via CORS wildcard + LocalhostIsAdmin in github.com/kumahq/kuma",
+      "url": "https://github.com/kumahq/kuma/security/advisories/GHSA-3vcp-chfh-f6r2",
+      "released": "2026-07-22T20:36:55Z",
+      "updated": "2026-11-23T20:04:20Z",
+      "cves": [
+        "CVE-2026-45021"
+      ],
+      "products": [
+        "Go: github.com/kumahq/kuma",
+        "Go: github.com/kumahq/kuma/v2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/kumahq/kuma/v2 2.7.25",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/kumahq/kuma/v2 2.11.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/kumahq/kuma/v2 2.12.10",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {

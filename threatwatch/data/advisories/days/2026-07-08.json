@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-08",
-  "count": 24,
+  "count": 46,
   "items": [
     {
       "id": "openSUSE-SU-2026:11210-1",
@@ -519,6 +519,29 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:36673",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: gstreamer1-plugins-ugly-free security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:36673",
+      "released": "2026-07-08T00:00:00Z",
+      "updated": "2026-11-05T22:04:36Z",
+      "cves": [
+        "CVE-2026-53703",
+        "CVE-2026-53704"
+      ],
+      "products": [
+        "AlmaLinux: gstreamer1-plugins-ugly-free"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gstreamer1-plugins-ugly-free 1.26.7-2.el10_2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-53317",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -534,6 +557,36 @@
       "products": [
         "Azure Linux",
         "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:34815",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Container Platform 4.18.47 bug fix and security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:34815",
+      "released": "2026-07-08T09:34:48Z",
+      "updated": "2026-10-09T01:22:27Z",
+      "cves": [
+        "CVE-2026-46243"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat OpenShift Enterprise",
+        "Red Hat OpenShift Container Platform 4.18"
+      ],
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.18 see the following documentation, which will be updated shortly for this release, for important instructions on how to upg…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:34815"
+        },
+        {
+          "t": "See the security bulletin for a detailed mitigation procedure.",
+          "u": null
+        }
       ],
       "lang": "en",
       "seen": "2026-11-26"
@@ -571,6 +624,378 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:36767",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "kernel: Bluetooth: Fix use-after-free bugs caused by sco_sock_timeout",
+      "url": "https://access.redhat.com/errata/RHSA-2026:36767",
+      "released": "2026-07-08T15:22:14Z",
+      "updated": "2026-11-26T17:23:02Z",
+      "cves": [
+        "CVE-2024-27398",
+        "CVE-2024-50125",
+        "CVE-2025-68183",
+        "CVE-2026-31408",
+        "CVE-2026-43027",
+        "CVE-2026-43125",
+        "CVE-2026-43279",
+        "CVE-2026-45984",
+        "CVE-2026-46152",
+        "CVE-2026-46189",
+        "CVE-2026-64439"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258 The system must be rebooted for this update to take effect.",
+          "u": "https://access.redhat.com/errata/RHSA-2026:36767"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options don't meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        },
+        {
+          "t": "To mitigate this issue, disable the Wi-Fi interface if wireless networking is not required. This can be achieved by preventing the `mac80211` kernel module from loading. To blacklist the `mac80211` module: `echo \"blacklist mac80211\" | sudo…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0276",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "Cortex XDR Broker VM: Privilege Escalation (PE) Vulnerability",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0276",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T16:00:00Z",
+      "cves": [
+        "CVE-2026-0276"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.8,
+      "products": [
+        "Cortex XDR Broker VM"
+      ],
+      "fix": [
+        {
+          "t": "This issue is fixed in Cortex XDR Broker VM 31.0.58, and all later Cortex XDR Broker VM versions. * If automatic upgrades are enabled for Broker VM, then no action is required at this time. * If automatic upgrades are not enabled for Broke…",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0276"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0277",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "Prisma Access Agent: Improper Certificate Validation on iOS",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0277",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T16:00:00Z",
+      "cves": [
+        "CVE-2026-0277"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "Prisma Access Agent"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION SUGGESTED SOLUTION Prisma Access Agent on iOS 25.0 through 26.2 Upgrade to 26.2.1 or later. Prisma Access Agent on Linux No action needed. Prisma Access Agent on Windows No action needed. Prisma Access Agent on macOS …",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0277"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0278",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "Prisma Access Agent: Multiple DLP Policy Bypass Vulnerabilities on Windows",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0278",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T16:00:00Z",
+      "cves": [
+        "CVE-2026-0278"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.4,
+      "products": [
+        "Prisma Access Agent"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION SUGGESTED SOLUTION Prisma Access Agent on Windows 24.0 through 26.2 Upgrade to 26.2.1 or later. Prisma Access Agent on macOS No action needed.",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0278"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0279",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS: Multiple Cross-Site Scripting (XSS) Vulnerabilities",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0279",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T20:30:00Z",
+      "cves": [
+        "CVE-2026-0279"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Cloud NGFW",
+        "PAN-OS",
+        "Prisma Access"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION SUGGESTED SOLUTION Cloud NGFW No action needed. PAN-OS 12.1 12.1.2 through 12.1.7-h* Upgrade to 12.1.8 or later. PAN-OS 11.2 11.2.0 through 11.2.12 Upgrade to 11.2.13 or later. PAN-OS 11.1 11.1.0 through 11.1.15-h* Up…",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0279"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0280",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS: IPv6 Firewall Policy Bypass",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0280",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T16:00:00Z",
+      "cves": [
+        "CVE-2026-0280"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "Cloud NGFW",
+        "PAN-OS",
+        "Panorama",
+        "Prisma Access"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION SUGGESTED SOLUTION Cloud NGFW No action needed. PAN-OS 12.1 12.1.5 through 12.1.7-h* Upgrade to 12.1.7-h2 or 12.1.8 or later. 12.1.2 through 12.1.4-h* Upgrade to 12.1.4-h8 or 12.1.8 or later. PAN-OS 11.2 11.2.11 throu…",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0280"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0281",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS: Information Disclosure Vulnerability in Management Web Interface",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0281",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T16:00:00Z",
+      "cves": [
+        "CVE-2026-0281"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Cloud NGFW",
+        "PAN-OS",
+        "Prisma Access"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION RANGE SUGGESTED SOLUTION Cloud NGFW No action needed. PAN-OS 12.1 12.1.2 through 12.1.7-h* Upgrade to 12.1.8 or later. PAN-OS 11.2 11.2.0 through 11.2.12 Upgrade to 11.2.13 or later. PAN-OS 11.1 11.1.0 through 11.1.15…",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0281"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0282",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS: File Deletion Vulnerability in Management Web Interface",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0282",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T16:00:00Z",
+      "cves": [
+        "CVE-2026-0282"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "Cloud NGFW",
+        "PAN-OS",
+        "Prisma Access"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION RANGE SUGGESTED SOLUTION Cloud NGFW All No action needed. PAN-OS 12.1 12.1.0 through 12.1.7-h* Upgrade to 12.1.8 or later. PAN-OS 11.2 11.2.0 through 11.2.12 Upgrade to 11.2.13 or later. PAN-OS 11.1 11.1.0 through 11.…",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0282"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0283",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS: Authentication Bypass Vulnerability in Large Scale VPN (LSVPN)",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0283",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T16:00:00Z",
+      "cves": [
+        "CVE-2026-0283"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Cloud NGFW",
+        "PAN-OS",
+        "Prisma Access"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION SUGGESTED SOLUTION Cloud NGFW All No action needed. PAN-OS 12.1 12.1.5 through 12.1.7-h* Upgrade to 12.1.7-h2 or 12.1.8 or later. 12.1.2 through 12.1.4-h* Upgrade to 12.1.4-h8 or 12.1.8 or later. PAN-OS 11.2 11.2.11 t…",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0283"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0284",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS: XML Injection Vulnerability in Large Scale VPN (LSVPN)",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0284",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T16:00:00Z",
+      "cves": [
+        "CVE-2026-0284"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Cloud NGFW",
+        "PAN-OS",
+        "Prisma Access"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION RANGE SUGGESTED SOLUTION Cloud NGFW No action needed. PAN-OS 12.1 12.1.5 through 12.1.7-h* Upgrade to 12.1.7-h2 or 12.1.8 or later. 12.1.2 through 12.1.4-h* Upgrade to 12.1.4-h8 or 12.1.8 or later. PAN-OS 11.2 11.2.11…",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0284"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0285",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS: Server-Side Request Forgery Vulnerability in Management Web Interface",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0285",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T16:00:00Z",
+      "cves": [
+        "CVE-2026-0285"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "Cloud NGFW",
+        "PAN-OS",
+        "Prisma Access"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION SUGGESTED SOLUTION Cloud NGFW No action needed. PAN-OS 12.1 12.1.5 through 12.1.7-h* Upgrade to 12.1.7-h2 or 12.1.8 or later. 12.1.2 through 12.1.4-h* Upgrade to 12.1.4-h8 or 12.1.8 or later. PAN-OS 11.2 11.2.11 throu…",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0285"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0286",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS: Authenticated Command Injection in CLI",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0286",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T16:00:00Z",
+      "cves": [
+        "CVE-2026-0286"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.5,
+      "products": [
+        "Cloud NGFW",
+        "PAN-OS",
+        "Prisma Access"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION SUGGESTED SOLUTION Cloud NGFW All No action needed. PAN-OS 12.1 12.1.5 through 12.1.7-h* Upgrade to 12.1.7-h2 or 12.1.8 or later. 12.1.2 through 12.1.4-h* Upgrade to 12.1.4-h8 or 12.1.8 or later. PAN-OS 11.2 11.2.11 t…",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0286"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0287",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS: Denial of Service Vulnerabilities in Network Traffic Processing",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0287",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T16:00:00Z",
+      "cves": [
+        "CVE-2026-0287"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "Cloud NGFW",
+        "PAN-OS",
+        "Prisma Access"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION RANGE SUGGESTED SOLUTION Cloud NGFW Customers who prefer to upgrade can work with Palo Alto Networks support to schedule an on-demand software upgrade. PAN-OS 12.1 12.1.5 through 12.1.7-h* Upgrade to 12.1.7-h2 or 12.1…",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0287"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-0288",
+      "src": "paloalto",
+      "vendor": "Palo Alto Networks",
+      "title": "PAN-OS: Buffer Overflow Vulnerabilities in User-ID Terminal Server Agent",
+      "url": "https://security.paloaltonetworks.com/CVE-2026-0288",
+      "released": "2026-07-08T16:00:00Z",
+      "updated": "2026-07-08T16:00:00Z",
+      "cves": [
+        "CVE-2026-0288"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.2,
+      "products": [
+        "Cloud NGFW",
+        "PAN-OS",
+        "Prisma Access"
+      ],
+      "fix": [
+        {
+          "t": "VERSION MINOR VERSION SUGGESTED SOLUTION Cloud NGFW No action needed. PAN-OS 12.1 12.1.5 through 12.1.7-h* Upgrade to 12.1.7-h2 or 12.1.8 or later. 12.1.2 through 12.1.4-h* Upgrade to 12.1.4-h8 or 12.1.8 or later. PAN-OS 11.2 11.2.11 throu…",
+          "u": "https://security.paloaltonetworks.com/CVE-2026-0288"
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -627,6 +1052,94 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-92303",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-39822 affecting package golang for versions less than 1.25.12-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39822",
+      "released": "2026-07-08T17:17:21Z",
+      "updated": "2026-09-01T17:35:12Z",
+      "cves": [
+        "CVE-2026-39822"
+      ],
+      "products": [
+        "Azure Linux: golang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang 1.25.12-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-92306",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-42505 affecting package golang for versions less than 1.25.12-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42505",
+      "released": "2026-07-08T17:17:21Z",
+      "updated": "2026-09-01T17:35:12Z",
+      "cves": [
+        "CVE-2026-42505"
+      ],
+      "products": [
+        "Azure Linux: golang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang 1.25.12-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-92220",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-59922 affecting package python-mistune for versions less than 3.3.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59922",
+      "released": "2026-07-08T17:17:27Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-59922"
+      ],
+      "products": [
+        "Azure Linux: python-mistune"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-mistune 3.3.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-92217",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-59925 affecting package python-mistune for versions less than 3.3.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59925",
+      "released": "2026-07-08T17:17:28Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-59925"
+      ],
+      "products": [
+        "Azure Linux: python-mistune"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-mistune 3.3.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21273-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -648,6 +1161,63 @@
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
           "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:36841",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:36841",
+      "released": "2026-07-08T18:31:24Z",
+      "updated": "2026-10-16T17:35:23Z",
+      "cves": [
+        "CVE-2026-50811"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:36841"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:36862",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:36862",
+      "released": "2026-07-08T20:16:29Z",
+      "updated": "2026-09-08T00:06:46Z",
+      "cves": [
+        "CVE-2026-50133",
+        "CVE-2026-58402",
+        "CVE-2026-58403",
+        "CVE-2026-58404"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.8,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:36862"
         }
       ],
       "lang": "en",

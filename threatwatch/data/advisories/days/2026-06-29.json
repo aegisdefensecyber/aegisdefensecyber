@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-06-29",
-  "count": 24,
+  "count": 32,
   "items": [
     {
       "id": "openSUSE-SU-2026:11143-1",
@@ -245,6 +245,39 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:33093",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: mariadb10.11 security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:33093",
+      "released": "2026-06-29T00:00:00Z",
+      "updated": "2026-11-05T22:05:29Z",
+      "cves": [
+        "CVE-2026-44168",
+        "CVE-2026-44170",
+        "CVE-2026-44171",
+        "CVE-2026-44173",
+        "CVE-2026-48163",
+        "CVE-2026-48165",
+        "CVE-2026-49261"
+      ],
+      "products": [
+        "AlmaLinux: mariadb-common",
+        "AlmaLinux: mariadb-errmsg"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb-common 3:10.11.18-1.el10_2.alma.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb-errmsg 3:10.11.18-1.el10_2.alma.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-58050",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -320,6 +353,176 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-appsmith-2026-50189",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Appsmith: RCE via Supervisord XML-RPC Admin Interface Exposed via /supervisor Caddy Route",
+      "url": "https://github.com/appsmithorg/appsmith/security/advisories/GHSA-v49v-673j-g4vj",
+      "released": "2026-06-29T05:37:56Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-50189"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: appsmith"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in appsmith 2.1.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-appsmith-2026-55454",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Appsmith: Caddy admin API exposed without authentication",
+      "url": "https://github.com/appsmithorg/appsmith/security/advisories/GHSA-8jvv-gwqg-6vjc",
+      "released": "2026-06-29T05:37:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-55454"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: appsmith"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in appsmith 2.1.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-envoy-2026-47204",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Envoy: grpc_stats filter segfault on Connect protocol requests to direct_response routes",
+      "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-3jxh-8p6x-7pf6",
+      "released": "2026-06-29T05:40:38Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-47204"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: envoy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in envoy 1.35.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in envoy 1.36.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in envoy 1.37.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-envoy-2026-47207",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Envoy crashes if multiple unexpected ext_proc responses are packed into one gRPC message",
+      "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-68cv-hq5f-g6xv",
+      "released": "2026-06-29T05:40:39Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-47207"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: envoy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in envoy 1.35.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in envoy 1.36.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in envoy 1.37.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-envoy-2026-47221",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Envoy: Null pointer deref in internal redirects",
+      "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-rcff-gw58-pjpr",
+      "released": "2026-06-29T05:40:41Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-47221"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: envoy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in envoy 1.35.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in envoy 1.36.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in envoy 1.37.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-envoy-2026-47692",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Envoy: PROXY Protocol v2 header generator emits \"skipped\" TLVs, causing 65 KB attacker-controlled spillover into the upstream application stream",
+      "url": "https://github.com/envoyproxy/envoy/security/advisories/GHSA-wh36-hm39-mm3r",
+      "released": "2026-06-29T05:40:42Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-47692"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: envoy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in envoy 1.35.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in envoy 1.36.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in envoy 1.37.5",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -562,6 +765,28 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-91743",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-13757 affecting package p11-kit for versions less than 0.26.5-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13757",
+      "released": "2026-06-29T19:16:40Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-13757"
+      ],
+      "products": [
+        "Azure Linux: p11-kit"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in p11-kit 0.26.5-1",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {

@@ -1,8 +1,48 @@
 {
   "schemaVersion": 1,
   "date": "2025-11-11",
-  "count": 3,
+  "count": 7,
   "items": [
+    {
+      "id": "SSA-267056",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-267056: Multiple Vulnerabilities in LOGO! 8 BM Devices",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-267056.html",
+      "released": "2025-11-11T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2025-40815",
+        "CVE-2025-40816",
+        "CVE-2025-40817"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.6,
+      "products": [
+        "LOGO! 12/24RCE (6ED1052-1MD08-0BA2)",
+        "LOGO! 12/24RCEo (6ED1052-2MD08-0BA2)",
+        "LOGO! 230RCE (6ED1052-1FB08-0BA2)",
+        "LOGO! 230RCEo (6ED1052-2FB08-0BA2)",
+        "LOGO! 24CE (6ED1052-1CC08-0BA2)",
+        "LOGO! 24CEo (6ED1052-2CC08-0BA2)"
+      ],
+      "fix": [
+        {
+          "t": "Protect the LSC access to the device with a strong password.",
+          "u": null
+        },
+        {
+          "t": "Update to V1.84.05 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/110006452/"
+        },
+        {
+          "t": "Restrict network access to port 10006/udp to trusted IP addresses.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
     {
       "id": "SSA-267056",
       "src": "direct_csaf",
@@ -64,6 +104,98 @@
         "azl4 fluent-bit 0:4.2.2-4.azl4"
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2025-64458",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Potential denial-of-service vulnerability in HttpResponseRedirect and HttpResponsePermanentRedirect on Windows",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2025-11-11T11:36:38Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-64458"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 4.2.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.1.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.2.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2025-64459",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Potential SQL injection via _connector keyword argument in QuerySet and Q objects",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2025-11-11T11:36:39Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-64459"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 4.2.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.1.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.2.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2025-0118",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Unsound API access to a WebAssembly shared linear memory",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2025-0118.html",
+      "released": "2025-11-11T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2025-64345"
+      ],
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 24.0.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 36.0.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 37.0.3",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {

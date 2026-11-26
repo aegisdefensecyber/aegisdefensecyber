@@ -1,8 +1,26 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-13",
-  "count": 177,
+  "count": 180,
   "items": [
+    {
+      "id": "OSV-2026-1267",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Security exception in com.code_intelligence.jazzer.sanitizers.RegexInjection.hookInternal",
+      "released": "2026-09-13T00:09:42Z",
+      "updated": "2026-09-13T00:09:42Z",
+      "products": [
+        "OSS-Fuzz: flyway"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in flyway af01b4cc086df2dd1bbc33b670924d3acd8c4373",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "msrc_CVE-2026-89611",
       "src": "csaf_microsoft",
@@ -3593,13 +3611,42 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "UBUNTU-CVE-2026-90678",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "An issue was discovered in HAProxy 3.3.0 through 3.4.4 and in 3.5-dev1 through 3.5-dev5. Exploitation requires an HTTP/3 frontend: HAProxy must be built with QUIC support and configured with a QUIC bind listener, and th…",
+      "released": "2026-09-13T04:17:00Z",
+      "updated": "2026-09-16T11:44:18Z",
+      "cves": [
+        "CVE-2026-90678"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: haproxy"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0283",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "clear_on_drop is unmaintained",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0283.html",
+      "released": "2026-09-13T12:00:00Z",
+      "updated": "2026-09-13T20:05:24Z",
+      "products": [
+        "crates.io: clear_on_drop"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "WID-SEC-W-2026-3321",
       "src": "csaf_certbund",
       "vendor": "Amazon",
       "title": "Linux Kernel: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3321",
       "released": "2026-09-13T22:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-80926",
         "CVE-2026-80927",

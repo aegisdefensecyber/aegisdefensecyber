@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-06-11",
-  "count": 27,
+  "count": 45,
   "items": [
     {
       "id": "openSUSE-SU-2026:10991-1",
@@ -427,6 +427,409 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:25341",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: tomcat9 update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:25341",
+      "released": "2026-06-11T00:00:00Z",
+      "updated": "2026-10-26T00:16:43Z",
+      "cves": [
+        "CVE-2025-66614",
+        "CVE-2026-24733",
+        "CVE-2026-24734",
+        "CVE-2026-24880",
+        "CVE-2026-25854",
+        "CVE-2026-29145",
+        "CVE-2026-34483",
+        "CVE-2026-34487",
+        "CVE-2026-34500"
+      ],
+      "products": [
+        "AlmaLinux: tomcat9",
+        "AlmaLinux: tomcat9-admin-webapps",
+        "AlmaLinux: tomcat9-docs-webapp",
+        "AlmaLinux: tomcat9-el-3.0-api",
+        "AlmaLinux: tomcat9-jsp-2.3-api",
+        "AlmaLinux: tomcat9-lib"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tomcat9 1:9.0.117-1.el10_2.alma.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat9-admin-webapps 1:9.0.117-1.el10_2.alma.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat9-docs-webapp 1:9.0.117-1.el10_2.alma.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:25149",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: rsync security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:25149",
+      "released": "2026-06-11T00:23:04Z",
+      "updated": "2026-10-09T23:26:17Z",
+      "cves": [
+        "CVE-2026-41035"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS E4S (v.8.8)",
+        "Red Hat Enterprise Linux BaseOS TUS (v.8.8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:25149"
+        },
+        {
+          "t": "To mitigate this vulnerability, avoid using the -X or --xattrs options with rsync if extended attribute handling is not essential for your operations. Disablin…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-LO88261",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LO88261.json",
+      "released": "2026-06-11T00:37:42Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: eck-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in eck-operator 3.2.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-GB30250",
+      "src": "cleanstart",
+      "title": "Security fixes for ghsa-72hv-8253-57qq, ghsa-qqpg-mvqg-649v applied in versions: 3.9.4-r0, 3.9.4-r6",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-GB30250.json",
+      "released": "2026-06-11T00:37:44Z",
+      "updated": "2026-09-09T10:17:53Z",
+      "products": [
+        "CleanStart: apache-zookeeper"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-zookeeper 3.9.4-r6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-YM13650",
+      "src": "cleanstart",
+      "title": "Netty is an asynchronous, event-driven network application framework",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-YM13650.json",
+      "released": "2026-06-11T00:38:12Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2026-42583"
+      ],
+      "products": [
+        "CleanStart: apache-zookeeper"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-zookeeper 3.8.6-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-CC73064",
+      "src": "cleanstart",
+      "title": "In Eclipse Jetty, the HTTP/1",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-CC73064.json",
+      "released": "2026-06-11T00:40:13Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2025-13151",
+        "CVE-2026-22695",
+        "CVE-2026-22801",
+        "CVE-2026-2332",
+        "CVE-2026-24515",
+        "CVE-2026-25210",
+        "CVE-2026-25646"
+      ],
+      "products": [
+        "CleanStart: apache-zookeeper"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-zookeeper 3.7.2-r6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-HW72470",
+      "src": "cleanstart",
+      "title": "Security fixes for ghsa-72hv-8253-57qq applied in versions: 3.6.4-r4",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-HW72470.json",
+      "released": "2026-06-11T00:40:14Z",
+      "updated": "2026-09-04T13:33:44Z",
+      "products": [
+        "CleanStart: apache-zookeeper"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-zookeeper 3.6.4-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-OK35650",
+      "src": "cleanstart",
+      "title": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succ...",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OK35650.json",
+      "released": "2026-06-11T00:41:13Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2025-61732",
+        "CVE-2025-68121"
+      ],
+      "products": [
+        "CleanStart: rancher-agent"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rancher-agent 2.13.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-AO11810",
+      "src": "cleanstart",
+      "title": "Netty is an asynchronous, event-driven network application framework",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-AO11810.json",
+      "released": "2026-06-11T00:41:43Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2025-13151",
+        "CVE-2026-22695",
+        "CVE-2026-22801",
+        "CVE-2026-24515",
+        "CVE-2026-25210",
+        "CVE-2026-25646",
+        "CVE-2026-42583"
+      ],
+      "products": [
+        "CleanStart: apache-zookeeper"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-zookeeper 3.9.5-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-SQ76279",
+      "src": "cleanstart",
+      "title": "Decoding a maliciously-crafted MIME header containing many invalid encoded-words can consume excessive CPU",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-SQ76279.json",
+      "released": "2026-06-11T00:58:17Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2026-25680",
+        "CVE-2026-25681",
+        "CVE-2026-27140",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-27145",
+        "CVE-2026-29181",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32288",
+        "CVE-2026-32289",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-33487",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-34986",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39834",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501",
+        "CVE-2026-42504",
+        "CVE-2026-42507",
+        "CVE-2026-42508",
+        "CVE-2026-46595"
+      ],
+      "products": [
+        "CleanStart: dex"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dex 2.45.1-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-NM83456",
+      "src": "cleanstart",
+      "title": "AIOHTTP is an asynchronous HTTP client/server framework for asyncio and Python",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NM83456.json",
+      "released": "2026-06-11T00:58:47Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2024-12797",
+        "CVE-2024-52303",
+        "CVE-2024-52304",
+        "CVE-2024-56201",
+        "CVE-2024-56326",
+        "CVE-2025-24023",
+        "CVE-2025-27516",
+        "CVE-2025-32962",
+        "CVE-2025-43859",
+        "CVE-2025-4565",
+        "CVE-2025-53643",
+        "CVE-2025-57804",
+        "CVE-2025-58065",
+        "CVE-2025-68480",
+        "CVE-2025-69223",
+        "CVE-2025-69224",
+        "CVE-2025-69225",
+        "CVE-2025-69226",
+        "CVE-2025-69227",
+        "CVE-2025-69228",
+        "CVE-2025-69229",
+        "CVE-2025-69230",
+        "CVE-2026-0994",
+        "CVE-2026-21226",
+        "CVE-2026-22815",
+        "CVE-2026-23490",
+        "CVE-2026-26007",
+        "CVE-2026-27205",
+        "CVE-2026-34073",
+        "CVE-2026-34513",
+        "CVE-2026-34514",
+        "CVE-2026-34515",
+        "CVE-2026-34516",
+        "CVE-2026-34517",
+        "CVE-2026-34518",
+        "CVE-2026-34519",
+        "CVE-2026-34520",
+        "CVE-2026-34525",
+        "CVE-2026-41066",
+        "CVE-2026-41205",
+        "CVE-2026-44307",
+        "CVE-2026-44405",
+        "CVE-2026-44503",
+        "CVE-2026-45409"
+      ],
+      "products": [
+        "CleanStart: airflow-2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in airflow-2 2.10.3-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-BM78291",
+      "src": "cleanstart",
+      "title": "Decoding a maliciously-crafted MIME header containing many invalid encoded-words can consume excessive CPU",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-BM78291.json",
+      "released": "2026-06-11T00:59:17Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2026-25680",
+        "CVE-2026-25681",
+        "CVE-2026-27140",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-27145",
+        "CVE-2026-29181",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32288",
+        "CVE-2026-32289",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-33487",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-34986",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39834",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501",
+        "CVE-2026-42504",
+        "CVE-2026-42507",
+        "CVE-2026-42508",
+        "CVE-2026-46595"
+      ],
+      "products": [
+        "CleanStart: dex"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dex 2.45.1-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-46433",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -573,6 +976,128 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:25170",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: rsync security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:25170",
+      "released": "2026-06-11T01:41:34Z",
+      "updated": "2026-10-09T23:26:17Z",
+      "cves": [
+        "CVE-2026-41035"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS AUS (v.8.4)",
+        "Red Hat Enterprise Linux BaseOS EUS EXTENSION (v.8.4)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:25170"
+        },
+        {
+          "t": "To mitigate this vulnerability, avoid using the -X or --xattrs options with rsync if extended attribute handling is not essential for your operations. Disablin…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:25172",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: rsync security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:25172",
+      "released": "2026-06-11T02:23:29Z",
+      "updated": "2026-10-09T23:26:18Z",
+      "cves": [
+        "CVE-2026-41035"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Server (v. 7 ELS)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:25172"
+        },
+        {
+          "t": "To mitigate this vulnerability, avoid using the -X or --xattrs options with rsync if extended attribute handling is not essential for your operations. Disablin…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:25173",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: rsync security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:25173",
+      "released": "2026-06-11T02:46:04Z",
+      "updated": "2026-10-09T23:26:18Z",
+      "cves": [
+        "CVE-2026-41035"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Server -EXTENSION(v. 6 ELS-EXTENSION)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:25173"
+        },
+        {
+          "t": "To mitigate this vulnerability, avoid using the -X or --xattrs options with rsync if extended attribute handling is not essential for your operations. Disablin…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:25190",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: rsync security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:25190",
+      "released": "2026-06-11T06:28:25Z",
+      "updated": "2026-10-09T23:26:19Z",
+      "cves": [
+        "CVE-2026-41035"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS AUS (v.8.6)",
+        "Red Hat Enterprise Linux BaseOS EUS EXTENSION (v.8.6)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:25190"
+        },
+        {
+          "t": "To mitigate this vulnerability, avoid using the -X or --xattrs options with rsync if extended attribute handling is not essential for your operations. Disablin…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20943-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -622,6 +1147,58 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:25225",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: mod_http2 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:25225",
+      "released": "2026-06-11T10:46:26Z",
+      "updated": "2026-10-14T12:48:16Z",
+      "cves": [
+        "CVE-2026-49975"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:25225"
+        },
+        {
+          "t": "See the security bulletin for a detailed mitigation procedure.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0494",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "SSH message fields allocated before their size is checked",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0494.html",
+      "released": "2026-06-11T12:00:00Z",
+      "updated": "2026-11-12T07:53:20Z",
+      "cves": [
+        "CVE-2026-48110"
+      ],
+      "products": [
+        "crates.io: russh"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in russh 0.61.0",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {

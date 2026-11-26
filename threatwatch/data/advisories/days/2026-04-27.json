@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-27",
-  "count": 13,
+  "count": 23,
   "items": [
     {
       "id": "openSUSE-SU-2026:10626-1",
@@ -122,6 +122,53 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:10766",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: firefox security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:10766",
+      "released": "2026-04-27T00:00:00Z",
+      "updated": "2026-10-29T06:56:58Z",
+      "cves": [
+        "CVE-2026-111497",
+        "CVE-2026-6746",
+        "CVE-2026-6747",
+        "CVE-2026-6748",
+        "CVE-2026-6749",
+        "CVE-2026-6750",
+        "CVE-2026-6751",
+        "CVE-2026-6752",
+        "CVE-2026-6753",
+        "CVE-2026-6754",
+        "CVE-2026-6757",
+        "CVE-2026-6759",
+        "CVE-2026-6761",
+        "CVE-2026-6762",
+        "CVE-2026-6763",
+        "CVE-2026-6764",
+        "CVE-2026-6765",
+        "CVE-2026-6766",
+        "CVE-2026-6767",
+        "CVE-2026-6769",
+        "CVE-2026-6770",
+        "CVE-2026-6771",
+        "CVE-2026-6772",
+        "CVE-2026-6776",
+        "CVE-2026-6785",
+        "CVE-2026-6786"
+      ],
+      "products": [
+        "AlmaLinux: firefox"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in firefox 140.10.0-1.el8_10.alma.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2017-3736",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -190,6 +237,91 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:1630-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 26 for SUSE Linux Enterprise 15 SP5)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261630-1/",
+      "released": "2026-04-27T08:04:19Z",
+      "updated": "2026-09-16T19:19:18Z",
+      "cves": [
+        "CVE-2026-23191",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1631-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 3 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261631-1/",
+      "released": "2026-04-27T08:04:29Z",
+      "updated": "2026-09-16T19:19:19Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:10758",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: sudo security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:10758",
+      "released": "2026-04-27T10:58:03Z",
+      "updated": "2026-10-16T11:24:29Z",
+      "cves": [
+        "CVE-2026-35535"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)",
+        "Red Hat Enterprise Linux BaseOS (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:10758"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20628-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -201,6 +333,165 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0112",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "PAX Header Desynchronization in astral-tokio-tar",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0112.html",
+      "released": "2026-04-27T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "products": [
+        "crates.io: astral-tokio-tar"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in astral-tokio-tar 0.6.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0113",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`unpack_in` can chmod arbitrary directories by following symlinks",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0113.html",
+      "released": "2026-04-27T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "products": [
+        "crates.io: astral-tokio-tar"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in astral-tokio-tar 0.6.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1632-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for freerdp",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261632-1/",
+      "released": "2026-04-27T12:04:30Z",
+      "updated": "2026-09-16T19:19:20Z",
+      "cves": [
+        "CVE-2026-25941",
+        "CVE-2026-25942",
+        "CVE-2026-25952",
+        "CVE-2026-25953",
+        "CVE-2026-25954",
+        "CVE-2026-25997",
+        "CVE-2026-26986",
+        "CVE-2026-27015",
+        "CVE-2026-27951",
+        "CVE-2026-29774",
+        "CVE-2026-29775",
+        "CVE-2026-29776",
+        "CVE-2026-31884",
+        "CVE-2026-31897"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1634-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for freerdp",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261634-1/",
+      "released": "2026-04-27T12:06:21Z",
+      "updated": "2026-09-16T19:19:23Z",
+      "cves": [
+        "CVE-2026-25941",
+        "CVE-2026-25942",
+        "CVE-2026-25952",
+        "CVE-2026-25953",
+        "CVE-2026-25954",
+        "CVE-2026-25997",
+        "CVE-2026-26986",
+        "CVE-2026-27015",
+        "CVE-2026-27951",
+        "CVE-2026-29774",
+        "CVE-2026-29775",
+        "CVE-2026-29776",
+        "CVE-2026-31884",
+        "CVE-2026-31897"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1635-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for freerdp",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261635-1/",
+      "released": "2026-04-27T12:06:35Z",
+      "updated": "2026-09-16T19:19:25Z",
+      "cves": [
+        "CVE-2026-25941",
+        "CVE-2026-25942",
+        "CVE-2026-25952",
+        "CVE-2026-25953",
+        "CVE-2026-25954",
+        "CVE-2026-25997",
+        "CVE-2026-26986",
+        "CVE-2026-27015",
+        "CVE-2026-27951",
+        "CVE-2026-29774",
+        "CVE-2026-29775",
+        "CVE-2026-29776",
+        "CVE-2026-31884",
+        "CVE-2026-31897"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
       ],
       "lang": "en",
       "seen": "2026-11-26"
@@ -277,6 +568,28 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-85274",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-3087 affecting package python3 for versions less than 3.12.9-14",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-3087",
+      "released": "2026-04-27T21:16:42Z",
+      "updated": "2026-09-08T17:33:11Z",
+      "cves": [
+        "CVE-2026-3087"
+      ],
+      "products": [
+        "Azure Linux: python3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python3 3.12.9-14",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {

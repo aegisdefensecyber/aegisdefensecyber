@@ -1,8 +1,286 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-27",
-  "count": 179,
+  "count": 191,
   "items": [
+    {
+      "id": "PYSEC-2026-4015",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "MONAI through 1.6.0 contains a remote code execution vulnerability in the bundle configuration engine that resolves _target_ values to arbitrary importable callables without an allow list and passes $ expressions to Pyt…",
+      "url": "https://www.vulncheck.com/advisories/monai-through-1.6.0-remote-code-execution-via-bundle-configuration",
+      "released": "2026-09-27T02:17:22Z",
+      "updated": "2026-10-01T08:46:46Z",
+      "cves": [
+        "CVE-2026-100840"
+      ],
+      "products": [
+        "PyPI: monai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in monai 1.6.1rc0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4016",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "In MONAI 1.6.0, PersistentDataset (monai/data/dataset.py) explicitly rejects the combination track_meta=True with weights_only=True, forcing users who cache MetaTensors (the default tensor type in MONAI >= 1.0) to run t…",
+      "url": "https://github.com/Project-MONAI/MONAI/security/advisories/GHSA-636w-j999-g7x5",
+      "released": "2026-09-27T02:17:22Z",
+      "updated": "2026-09-30T17:50:08Z",
+      "cves": [
+        "CVE-2026-100841"
+      ],
+      "products": [
+        "PyPI: monai"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4017",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "MONAI through 1.6.0 contains an eval injection vulnerability in _get_fake_spatial_shape() in monai/bundle/scripts.py. The function validates shape expressions with a helper that walks the AST and only collects ast.Name …",
+      "url": "https://www.vulncheck.com/advisories/monai-through-1.6.0-get-fake-spatial-shape-eval-sandbox-bypass-via-attribute-chains",
+      "released": "2026-09-27T02:17:22Z",
+      "updated": "2026-10-01T08:46:46Z",
+      "cves": [
+        "CVE-2026-100842"
+      ],
+      "products": [
+        "PyPI: monai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in monai 1.6.1rc0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4018",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "MONAI versions before 1.6.0 contain a remote code execution vulnerability in the algo_from_pickle() function due to unsafe pickle.loads() deserialization in monai/auto3dseg/utils.py. Attackers can craft malicious pickle…",
+      "url": "https://www.vulncheck.com/advisories/monai-before-1.6.0-remote-code-execution-via-algo-from-pickle",
+      "released": "2026-09-27T02:17:22Z",
+      "updated": "2026-10-01T08:46:46Z",
+      "cves": [
+        "CVE-2026-100843"
+      ],
+      "products": [
+        "PyPI: monai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in monai 1.6.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4019",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "MONAI before 1.6.0 is vulnerable to OS command injection in the nnUNetV2Runner component (monai.apps.nnunet.nnunetv2_runner). User-controlled values taken from the YAML configuration file (notably dataset_name_or_id) an…",
+      "url": "https://www.vulncheck.com/advisories/monai-before-1.6.0-os-command-injection-via-dataset-name-or-id",
+      "released": "2026-09-27T02:17:22Z",
+      "updated": "2026-10-01T08:46:46Z",
+      "cves": [
+        "CVE-2026-100844"
+      ],
+      "products": [
+        "PyPI: monai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in monai 1.6.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4020",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "MONAI before 1.6.0 contains an unsafe deserialization vulnerability in the NumpyReader class that unconditionally uses numpy.load with allow_pickle=True when loading .npy and .npz files. Attackers can craft malicious .n…",
+      "url": "https://www.vulncheck.com/advisories/monai-before-1.6.0-remote-code-execution-via-numpyreader",
+      "released": "2026-09-27T02:17:23Z",
+      "updated": "2026-10-01T08:46:46Z",
+      "cves": [
+        "CVE-2026-100845"
+      ],
+      "products": [
+        "PyPI: monai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in monai 1.6.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4021",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "MONAI before 1.5.2 contains a deserialization of untrusted data vulnerability in the algo_from_pickle function in monai/auto3dseg/utils.py. The function reads a .pkl file and passes its contents to pickle.loads without …",
+      "url": "https://www.vulncheck.com/advisories/monai-before-1.5.2-remote-code-execution-via-pickle-deserialization",
+      "released": "2026-09-27T02:17:23Z",
+      "updated": "2026-10-01T08:46:46Z",
+      "cves": [
+        "CVE-2026-100846"
+      ],
+      "products": [
+        "PyPI: monai"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in monai 1.5.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:68549",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: firefox security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:68549",
+      "released": "2026-09-27T06:01:34Z",
+      "updated": "2026-10-11T00:12:10Z",
+      "cves": [
+        "CVE-2026-16365",
+        "CVE-2026-75874",
+        "CVE-2026-84119",
+        "CVE-2026-84120",
+        "CVE-2026-84121",
+        "CVE-2026-84122",
+        "CVE-2026-84124",
+        "CVE-2026-84131",
+        "CVE-2026-84143",
+        "CVE-2026-84145"
+      ],
+      "products": [
+        "Rocky Linux: firefox"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in firefox 0:140.15.0-1.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:67133",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: firefox security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:67133",
+      "released": "2026-09-27T06:05:07Z",
+      "updated": "2026-10-11T00:12:14Z",
+      "cves": [
+        "CVE-2026-16365",
+        "CVE-2026-75874",
+        "CVE-2026-84119",
+        "CVE-2026-84120",
+        "CVE-2026-84121",
+        "CVE-2026-84122",
+        "CVE-2026-84124",
+        "CVE-2026-84131",
+        "CVE-2026-84143",
+        "CVE-2026-84145"
+      ],
+      "products": [
+        "Rocky Linux: firefox"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in firefox 0:140.15.0-1.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:67129",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: firefox security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:67129",
+      "released": "2026-09-27T06:09:48Z",
+      "updated": "2026-10-11T00:12:16Z",
+      "cves": [
+        "CVE-2026-16365",
+        "CVE-2026-75874",
+        "CVE-2026-84119",
+        "CVE-2026-84120",
+        "CVE-2026-84121",
+        "CVE-2026-84122",
+        "CVE-2026-84124",
+        "CVE-2026-84131",
+        "CVE-2026-84143",
+        "CVE-2026-84145"
+      ],
+      "products": [
+        "Rocky Linux: firefox"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in firefox 0:140.15.0-1.el10_2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0311",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Stack overflow on deeply nested LaTeX input",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0311.html",
+      "released": "2026-09-27T12:00:00Z",
+      "updated": "2026-09-28T08:34:35Z",
+      "products": [
+        "crates.io: latex-rust"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in latex-rust 1.0.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-101041",
+      "src": "gna-1",
+      "vendor": "vulnerability-lookup",
+      "title": "Vulnerability-Lookup - Race Condition in Account Recovery Token Consumption Allows Password Takeover",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-101041",
+      "released": "2026-09-27T14:47:33Z",
+      "updated": "2026-09-27T14:47:50Z",
+      "cves": [
+        "CVE-2026-101041"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "vulnerability-lookup vulnerability-lookup"
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "NCSC-2026-0394",
       "src": "csaf_ncscnl",
@@ -220,7 +498,7 @@
       "title": "QEMU: Schwachstelle ermöglicht Ausführen von beliebigem Programmcode mit Benutzerrechten",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3598",
       "released": "2026-09-27T22:00:00Z",
-      "updated": "2026-11-18T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-93834"
       ],
@@ -287,7 +565,7 @@
       "title": "Red Hat Enterprise Linux (rhc): Schwachstelle ermöglicht Denial of Service",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3605",
       "released": "2026-09-27T22:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-84445"
       ],

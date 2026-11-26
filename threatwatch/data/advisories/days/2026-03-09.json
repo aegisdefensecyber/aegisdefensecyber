@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-09",
-  "count": 6,
+  "count": 10,
   "items": [
     {
       "id": "openSUSE-SU-2026:10312-1",
@@ -81,6 +81,82 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:4059",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: postgresql:15 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:4059",
+      "released": "2026-03-09T00:00:00Z",
+      "updated": "2026-11-05T19:46:48Z",
+      "cves": [
+        "CVE-2026-2003",
+        "CVE-2026-2004",
+        "CVE-2026-2005",
+        "CVE-2026-2006"
+      ],
+      "products": [
+        "AlmaLinux: pg_repack",
+        "AlmaLinux: pgaudit",
+        "AlmaLinux: postgres-decoderbufs",
+        "AlmaLinux: postgresql",
+        "AlmaLinux: postgresql-contrib",
+        "AlmaLinux: postgresql-docs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pg_repack 1.4.8-1.module_el8.9.0+3706+885c732e",
+          "u": null
+        },
+        {
+          "t": "Fixed in pgaudit 1.7.0-1.module_el8.9.0+3706+885c732e",
+          "u": null
+        },
+        {
+          "t": "Fixed in postgres-decoderbufs 1.9.7-1.Final.module_el8.9.0+3706+885c732e",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:4063",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: postgresql:16 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:4063",
+      "released": "2026-03-09T00:00:00Z",
+      "updated": "2026-11-05T19:46:48Z",
+      "cves": [
+        "CVE-2026-2003",
+        "CVE-2026-2004",
+        "CVE-2026-2005",
+        "CVE-2026-2006"
+      ],
+      "products": [
+        "AlmaLinux: pg_repack",
+        "AlmaLinux: pgaudit",
+        "AlmaLinux: postgres-decoderbufs",
+        "AlmaLinux: postgresql",
+        "AlmaLinux: postgresql-contrib",
+        "AlmaLinux: postgresql-docs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pg_repack 1.5.1-1.module_el8.10.0+3930+ecf33554",
+          "u": null
+        },
+        {
+          "t": "Fixed in pg_repack 1.5.1-1.module_el8.10.0+4125+ceaf7d1b",
+          "u": null
+        },
+        {
+          "t": "Fixed in pgaudit 16.0-1.module_el8.10.0+3798+606ebb9f",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -186,6 +262,108 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0852-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for ImageMagick",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260852-1/",
+      "released": "2026-03-09T15:32:56Z",
+      "updated": "2026-09-16T19:08:41Z",
+      "cves": [
+        "CVE-2026-24481",
+        "CVE-2026-24484",
+        "CVE-2026-24485",
+        "CVE-2026-25576",
+        "CVE-2026-25637",
+        "CVE-2026-25638",
+        "CVE-2026-25795",
+        "CVE-2026-25796",
+        "CVE-2026-25797",
+        "CVE-2026-25798",
+        "CVE-2026-25799",
+        "CVE-2026-25897",
+        "CVE-2026-25898",
+        "CVE-2026-25965",
+        "CVE-2026-25966",
+        "CVE-2026-25967",
+        "CVE-2026-25968",
+        "CVE-2026-25969",
+        "CVE-2026-25970",
+        "CVE-2026-25971",
+        "CVE-2026-25983",
+        "CVE-2026-25985",
+        "CVE-2026-25986",
+        "CVE-2026-25987",
+        "CVE-2026-25988",
+        "CVE-2026-25989",
+        "CVE-2026-26066",
+        "CVE-2026-26284",
+        "CVE-2026-26983",
+        "CVE-2026-27798",
+        "CVE-2026-27799"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 15 SP6-LTSS",
+        "SUSE Linux Enterprise Server 15 SP6",
+        "SUSE Linux Enterprise Server for SAP Applications 15 SP6",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0854-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for ImageMagick",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260854-1/",
+      "released": "2026-03-09T15:34:51Z",
+      "updated": "2026-09-16T19:08:44Z",
+      "cves": [
+        "CVE-2026-24484",
+        "CVE-2026-24485",
+        "CVE-2026-25576",
+        "CVE-2026-25795",
+        "CVE-2026-25796",
+        "CVE-2026-25797",
+        "CVE-2026-25799",
+        "CVE-2026-25966",
+        "CVE-2026-25983",
+        "CVE-2026-25987",
+        "CVE-2026-25988",
+        "CVE-2026-26066",
+        "CVE-2026-26284",
+        "CVE-2026-26983",
+        "CVE-2026-27799"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5"
       ],
       "fix": [
         {

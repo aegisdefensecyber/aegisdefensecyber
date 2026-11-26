@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-03-10",
-  "count": 2,
+  "count": 11,
   "items": [
     {
       "id": "msrc_CVE-2025-27516",
@@ -39,6 +39,237 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-arangodb-2021-25940",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "ArangoDB - Insufficient Session Expiration after Password Change",
+      "url": "https://github.com/arangodb/arangodb/commit/e9c6ee9dcca7b9b4fbcd02a0b323d205bee838d3",
+      "released": "2025-03-10T08:12:14Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-25940"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: arangodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in arangodb 3.8.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2025-26699",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Django 5.1 before 5.1.7, 5.0 before 5.0.13, and 4.2 before 4.2.20. The django.utils.text.wrap() method and wordwrap template filter are subject to a potential denial-of-service attack when use…",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2025-03-10T08:13:13Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-26699"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 5.1.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2024-56374",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Django 5.1 before 5.1.5, 5.0 before 5.0.11, and 4.2 before 4.2.18. Lack of upper-bound limit enforcement in strings passed when performing IPv6 validation could lead to a potential denial-of-s…",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2025-03-10T08:13:20Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-56374"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 5.1.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2024-53908",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Django 5.1 before 5.1.4, 5.0 before 5.0.10, and 4.2 before 4.2.17. Direct usage of the django.db.models.fields.json.HasKey lookup, when an Oracle database is used, is subject to SQL injection …",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2025-03-10T08:13:29Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-53908"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 4.2.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.1.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2024-53907",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Django 5.1 before 5.1.4, 5.0 before 5.0.10, and 4.2 before 4.2.17. The strip_tags() method and striptags template filter are subject to a potential denial-of-service attack via certain inputs …",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2025-03-10T08:13:36Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-53907"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 4.2.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.1.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2024-39614",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Django 5.0 before 5.0.7 and 4.2 before 4.2.14. get_supported_language_variant() was subject to a potential denial-of-service attack when used with very long strings containing specific charact…",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2025-03-10T08:15:02Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-39614"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 4.2.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.0.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2024-39330",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Django 5.0 before 5.0.7 and 4.2 before 4.2.14. Derived classes of the django.core.files.storage.Storage base class, when they override generate_filename() without replicating the file-path val…",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2025-03-10T08:15:12Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-39330"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 4.2.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.0.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2024-39329",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Django 5.0 before 5.0.7 and 4.2 before 4.2.14. The django.contrib.auth.backends.ModelBackend.authenticate() method allows remote attackers to enumerate users via a timing attack involving logi…",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2025-03-10T08:15:20Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-39329"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 4.2.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.0.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2024-38875",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Django 4.2 before 4.2.14 and 5.0 before 5.0.7. urlize and urlizetrunc were subject to a potential denial of service attack via certain inputs with a very large number of brackets.",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2025-03-10T08:15:29Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-38875"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 4.2.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.0.7",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {

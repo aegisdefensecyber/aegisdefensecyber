@@ -1,8 +1,100 @@
 {
   "schemaVersion": 1,
   "date": "2024-07-18",
-  "count": 1,
+  "count": 6,
   "items": [
+    {
+      "id": "OSV-2024-659",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Index-out-of-bounds in gf_vvc_parse_nalu_bs",
+      "released": "2024-07-18T00:01:18Z",
+      "updated": "2026-11-17T14:28:37Z",
+      "products": [
+        "OSS-Fuzz: gpac"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gpac 2209355e00dc6de9f6ab97b97a242da9c523e509",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2024-661",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Security exception in java.base/java.util.ArrayList.",
+      "released": "2024-07-18T00:05:57Z",
+      "updated": "2026-10-22T21:06:31Z",
+      "products": [
+        "OSS-Fuzz: apache-poi"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2024-664",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Heap-buffer-overflow in gf_dash_group_get_template",
+      "released": "2024-07-18T00:13:55Z",
+      "updated": "2026-11-17T14:28:14Z",
+      "products": [
+        "OSS-Fuzz: gpac"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gpac 03ca9ca984a649bbb13289f2b7445a4651c39704",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2024-0355",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "gix-path can use a fake program files location",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2024-0355.html",
+      "released": "2024-07-18T12:00:00Z",
+      "updated": "2026-11-09T10:48:10Z",
+      "cves": [
+        "CVE-2024-40644"
+      ],
+      "products": [
+        "crates.io: gix-path"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gix-path 0.10.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2024-0356",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`UserIdentity::is_verified` not checking verification status of own user identity while performing the check",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2024-0356.html",
+      "released": "2024-07-18T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2024-40648"
+      ],
+      "products": [
+        "crates.io: matrix-sdk-crypto"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in matrix-sdk-crypto 0.7.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "openSUSE-SU-2024:0204-1",
       "src": "csaf_opensuse",

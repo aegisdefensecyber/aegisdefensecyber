@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-12-10",
-  "count": 13,
+  "count": 15,
   "items": [
     {
       "id": "ICSA-24-347-01",
@@ -195,6 +195,82 @@
         {
           "t": "Update to V14.3.0.12 or later version",
           "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-392859",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-392859: Local Arbitrary Code Execution Vulnerability in Siemens Engineering Platforms before V20",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-392859.html",
+      "released": "2024-12-10T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2024-52051"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "SIMATIC S7-PLCSIM V17",
+        "SIMATIC S7-PLCSIM V18",
+        "SIMATIC STEP 7 Safety V17",
+        "SIMATIC STEP 7 Safety V18",
+        "SIMATIC STEP 7 Safety V19",
+        "SIMATIC STEP 7 V17"
+      ],
+      "fix": [
+        {
+          "t": "Update to V17 Update 9 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109784441/"
+        },
+        {
+          "t": "Update to V18 Update 6 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109817218/"
+        },
+        {
+          "t": "Update to V19 Update 4 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109925643/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-800126",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-800126: Deserialization Vulnerability in Siemens Engineering Platforms before V20",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-800126.html",
+      "released": "2024-12-10T00:00:00Z",
+      "updated": "2026-11-10T00:00:00Z",
+      "cves": [
+        "CVE-2024-49849"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SIMATIC S7-PLCSIM V16",
+        "SIMATIC S7-PLCSIM V17",
+        "SIMATIC STEP 7 Safety V16",
+        "SIMATIC STEP 7 Safety V17",
+        "SIMATIC STEP 7 Safety V18",
+        "SIMATIC STEP 7 Safety V19"
+      ],
+      "fix": [
+        {
+          "t": "Avoid opening untrusted files from unknown sources in affected products",
+          "u": null
+        },
+        {
+          "t": "Update to V17 Update 9 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109784441/"
+        },
+        {
+          "t": "Update to V18 Update 6 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109817218/"
         }
       ],
       "lang": "en",

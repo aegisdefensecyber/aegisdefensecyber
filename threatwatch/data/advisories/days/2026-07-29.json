@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-29",
-  "count": 24,
+  "count": 36,
   "items": [
     {
       "id": "openSUSE-SU-2026:11405-1",
@@ -164,6 +164,32 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-64216",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-64216",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-64216",
+      "released": "2026-07-29T06:04:03Z",
+      "updated": "2026-09-28T20:02:02Z",
+      "cves": [
+        "CVE-2026-64216"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -417,6 +443,147 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RUSTSEC-2026-0257",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Unix `BROWSER` handling allows browser argument injection",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0257.html",
+      "released": "2026-07-29T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "products": [
+        "crates.io: webbrowser"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in webbrowser 1.2.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:47889",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:47889",
+      "released": "2026-07-29T13:21:56Z",
+      "updated": "2026-10-05T18:14:59Z",
+      "cves": [
+        "CVE-2026-49834",
+        "CVE-2026-54787"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:47889"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:47891",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:47891",
+      "released": "2026-07-29T13:28:25Z",
+      "updated": "2026-09-10T15:03:52Z",
+      "cves": [
+        "CVE-2026-49834",
+        "CVE-2026-54787"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:47891"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:47953",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: multicluster engine for Kubernetes v2.9.6 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:47953",
+      "released": "2026-07-29T14:48:37Z",
+      "updated": "2026-09-29T18:46:37Z",
+      "cves": [
+        "CVE-2026-16242",
+        "CVE-2026-17107"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.4,
+      "products": [
+        "multicluster engine for Kubernetes",
+        "multicluster engine for Kubernetes 2.9"
+      ],
+      "fix": [
+        {
+          "t": "For multicluster engine for Kubernetes, see the following documentation for details on how to install the images: https://access.redhat.com/documentation/en-us…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:47953"
+        },
+        {
+          "t": "Until an update that configures Konnectivity agent authentication is applied, restrict network access to the Konnectivity cluster (agent) endpoint so that only…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:47974",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: multicluster engine for Kubernetes v2.11.4 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:47974",
+      "released": "2026-07-29T14:57:02Z",
+      "updated": "2026-09-29T18:46:38Z",
+      "cves": [
+        "CVE-2026-16242",
+        "CVE-2026-17107"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.4,
+      "products": [
+        "multicluster engine for Kubernetes",
+        "multicluster engine for Kubernetes 2.11"
+      ],
+      "fix": [
+        {
+          "t": "For multicluster engine for Kubernetes, see the following documentation for details on how to install the images: https://access.redhat.com/documentation/en-us…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:47974"
+        },
+        {
+          "t": "Until an update that configures Konnectivity agent authentication is applied, restrict network access to the Konnectivity cluster (agent) endpoint so that only…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21479-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -455,6 +622,81 @@
           "u": "https://software.cisco.com"
         }
       ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:48238",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:48238",
+      "released": "2026-07-29T21:38:00Z",
+      "updated": "2026-10-05T18:15:57Z",
+      "cves": [
+        "CVE-2026-6879"
+      ],
+      "sev": "LOW",
+      "cvss": 2.2,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:48238"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:48246",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:48246",
+      "released": "2026-07-29T21:46:10Z",
+      "updated": "2026-10-05T18:15:58Z",
+      "cves": [
+        "CVE-2026-6879"
+      ],
+      "sev": "LOW",
+      "cvss": 2.2,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:48246"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:48253",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:48253",
+      "released": "2026-07-29T21:53:35Z",
+      "updated": "2026-10-05T18:15:58Z",
+      "cves": [
+        "CVE-2026-6879"
+      ],
+      "sev": "LOW",
+      "cvss": 2.2,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:48253"
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-26"
     },
     {
@@ -677,6 +919,91 @@
         "SUSE Linux"
       ],
       "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:48278",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:48278",
+      "released": "2026-07-29T22:09:50Z",
+      "updated": "2026-10-05T18:16:04Z",
+      "cves": [
+        "CVE-2026-6879"
+      ],
+      "sev": "LOW",
+      "cvss": 2.2,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:48278"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:48279",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:48279",
+      "released": "2026-07-29T22:11:16Z",
+      "updated": "2026-10-05T18:16:06Z",
+      "cves": [
+        "CVE-2026-6879"
+      ],
+      "sev": "LOW",
+      "cvss": 2.2,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:48279"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:48284",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: multicluster engine for Kubernetes v2.17.1 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:48284",
+      "released": "2026-07-29T22:22:22Z",
+      "updated": "2026-09-29T18:46:39Z",
+      "cves": [
+        "CVE-2026-16242",
+        "CVE-2026-17107"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.4,
+      "products": [
+        "multicluster engine for Kubernetes",
+        "multicluster engine for Kubernetes 2.17"
+      ],
+      "fix": [
+        {
+          "t": "For multicluster engine for Kubernetes, see the following documentation for details on how to install the images: https://access.redhat.com/documentation/en-us…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:48284"
+        },
+        {
+          "t": "Until an update that configures Konnectivity agent authentication is applied, restrict network access to the Konnectivity cluster (agent) endpoint so that only…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-26"
     }
   ]

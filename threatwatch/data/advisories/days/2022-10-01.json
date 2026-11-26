@@ -1,0 +1,986 @@
+{
+  "schemaVersion": 1,
+  "date": "2022-10-01",
+  "count": 40,
+  "items": [
+    {
+      "id": "ASB-A-195410559",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In bta_dm_remove_device of bta_dm_act.cc, there is a possible way for a BT device to receive a long term trackable identifier due to a permissions bypass. This could lead to remote information disclosure with no additio…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-39673"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 13:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-204906124",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getInputMethodWindowVisibleHeight of InputMethodManagerService.java, there is a possible way to determine when another app is showing an IME due to a missing permission check. This could lead to local information dis…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20394"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 10:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 11:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-205130886",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In createPresentationContext of Presentation.java, there is a possible way to start a foreground activity from background due to a missing permission check. This could lead to local escalation of privilege with no addit…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-39758"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 10:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 11:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-205570663",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In avrc_ctrl_pars_vendor_rsp of avrc_pars_ct.cc, there is a possible out of bounds read due to an integer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User i…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20410"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth",
+        "Android: platform/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/bt 10:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 11:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 12:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-224771921",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In queryInternal of CallLogProvider.java, there is a possible access to voicemail information due to SQL injection. This could lead to local information disclosure with no additional execution privileges needed. User in…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20351"
+      ],
+      "products": [
+        "Android: platform/packages/providers/ContactsProvider"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/providers/ContactsProvider 10:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/providers/ContactsProvider 11:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/providers/ContactsProvider 12:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-230794395",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In fdt_next_tag of fdt.c, there is a possible out of bounds read due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20412"
+      ],
+      "products": [
+        "Android: platform/external/dtc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/dtc 10:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/dtc 11:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/dtc 12:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-230867044",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In io_match_task of io_uring.c, there is a possible arbitrary code execution due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-1786"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-231322873",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In handleFullScreenIntent of StatusBarNotificationActivityStarter.java, there is a possible bypass of the restriction of starting activity from background due to a logic error in the code. This could lead to local escal…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20415"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 10:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 11:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-231986464",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In pickStartSeq of AAVCAssembler.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution privileges needed. User interacti…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20418"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 12:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/av 12L:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/av 13:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-234037216",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ims, there is a possible escalation of privilege due to a parcel format mismatch. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for ex…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-26472"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-234037999",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In telephony, there is a possible escalation of privilege due to a parcel format mismatch. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed …",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-26471"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-235823407",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In addAutomaticZenRule of ZenModeHelper.java, there is a possible permanent degradation of performance due to resource exhaustion. This could lead to local denial of service with User execution privileges needed. User i…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20425"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 10:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Settings 10:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 11:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-235850634",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In start of Threads.cpp, there is a possible way to record audio during a phone call due to a logic error in the code. This could lead to local information disclosure with User execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20413"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 10:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/av 11:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/av 12:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-237288416",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In audioTransportsToHal of HidlUtils.cpp, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User i…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20417"
+      ],
+      "products": [
+        "Android: platform/hardware/interfaces"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/hardware/interfaces 12:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/hardware/interfaces 12L:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/hardware/interfaces 13:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-237290578",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In setOptions of ActivityRecord.java, there is a possible load any arbitrary Java code into launcher process due to a logic error in the code. This could lead to local escalation of privilege with no additional executio…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20419"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 12L:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 13:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-237540956",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In emulation_proc_handler of armv8_deprecated.c, there is a possible way to corrupt memory due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User i…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20422"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-237717857",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In audioTransportsToHal of HidlUtils.cpp, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User i…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20416"
+      ],
+      "products": [
+        "Android: platform/hardware/interfaces"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/hardware/interfaces 12:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/hardware/interfaces 12L:2022-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/hardware/interfaces 13:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-238103939",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-238103939",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-33217"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-238103940",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-238103940",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-33214"
+      ],
+      "products": [
+        "Android: platform/hardware/qcom/display"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/hardware/qcom/display SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-238108281",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-238108281",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-22077"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-238108282",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-238108282",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-25723"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-238177383",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In io_identity_cow of io_uring.c, there is a possible way to corrupt memory due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not need…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20409"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-238214313",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-238214313",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-25720"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom-opensource/wlan/prima",
+        "Android: platform/vendor/qcom-opensource/wlan/qcacld-3.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom-opensource/wlan/prima SoCVersion:2022-10-05",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/qcom-opensource/wlan/qcacld-3.0 SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-238377411",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getBackgroundRestrictionExemptionReason of AppRestrictionController.java, there is a possible way to bypass device policy restrictions due to a logic error in the code. This could lead to local escalation of privileg…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20420"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 13:2022-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-239630375",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In binder_inc_ref_for_node of binder.c, there is a possible way to corrupt memory due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interactio…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20421"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-239842288",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In rndis_set_response of rndis.c, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege if a malicious USB device is attached with no additional execution p…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20423"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242221233",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "There is an missing authorization issue in the system service. Since the component does not have permission check , resulting in Local Elevation of privilege.",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20430"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242221238",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "There is an missing authorization issue in the system service. Since the component does not have permission check , resulting in Local Elevation of privilege.",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20431"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242221899",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "There is an missing authorization issue in the system service. Since the component does not have permission check and permission protection,, resulting in Local Elevation of privilege.",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20432"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242221901",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "There is an missing authorization issue in the system service. Since the component does not have permission check , resulting in Local Elevation of privilege.",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20433"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242244028",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "There is an missing authorization issue in the system service. Since the component does not have permission check , resulting in Local Elevation of privilege.",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20434"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242248367",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "There is a Unauthorized service in the system service, may cause the system reboot. Since the component does not have permission check and permission protection, resulting in EoP problem.",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20435"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242248369",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "There is an unauthorized service in the system service. Since the component does not have permission check, resulting in Local Elevation of privilege.",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20436"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242258929",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Messaging, There has unauthorized broadcast, this could cause Local Deny of Service.",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20437"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242259918",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Messaging, There has unauthorized broadcast, this could cause Local Deny of Service.",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20440"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242259920",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Messaging, There has unauthorized broadcast, this could cause Local Deny of Service.",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20438"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242266172",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Messaging, There has unauthorized provider, this could cause Local Deny of Service.",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20439"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242344778",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In dllist_remove_node of TBD, there is a possible use after free bug due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not need…",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0696"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242345085",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In DevmemIntHeapAcquire of TBD, there is a possible arbitrary code execution due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction …",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0951"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242345178",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In HTBLogKM of TBD, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege in the kernel with no additional execution privileges needed. User interaction …",
+      "url": "https://source.android.com/security/bulletin/2022-10-01",
+      "released": "2022-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0699"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    }
+  ]
+}

@@ -1,8 +1,53 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-22",
-  "count": 26,
+  "count": 29,
   "items": [
+    {
+      "id": "RLSA-2026:100991",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Critical: php:7.4 security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100991",
+      "released": "2026-11-22T00:01:27Z",
+      "updated": "2026-11-26T12:04:23Z",
+      "cves": [
+        "CVE-2026-126714",
+        "CVE-2026-127960",
+        "CVE-2026-128064",
+        "CVE-2026-128090",
+        "CVE-2026-129289",
+        "CVE-2026-129291",
+        "CVE-2026-129292",
+        "CVE-2026-129496",
+        "CVE-2026-129506",
+        "CVE-2026-129538",
+        "CVE-2026-15353"
+      ],
+      "products": [
+        "Rocky Linux: apcu-panel",
+        "Rocky Linux: libzip",
+        "Rocky Linux: libzip-debuginfo",
+        "Rocky Linux: libzip-debugsource",
+        "Rocky Linux: libzip-devel",
+        "Rocky Linux: libzip-tools"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apcu-panel 0:5.1.18-1.module+el8.10.0+1604+6558efc7",
+          "u": null
+        },
+        {
+          "t": "Fixed in apcu-panel 0:5.1.18-1.module+el8.10.0+1912+72767185",
+          "u": null
+        },
+        {
+          "t": "Fixed in php-pear 1:1.10.13-1.module+el8.10.0+1604+6558efc7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "msrc_CVE-2026-133949",
       "src": "csaf_microsoft",
@@ -45,6 +90,73 @@
         },
         {
           "t": "Ensure the system ca-certificates package is updated per RHSB-2026-012 / CVE-2026-114406. For upstream pip installs or virtualenvs that still vendor certifi, upgrade pip to 26.2.2 or later (preferably after upgrading Python per CVE-2026-11…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:101276",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Critical: php:8.2 security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:101276",
+      "released": "2026-11-22T06:01:26Z",
+      "updated": "2026-11-26T12:04:23Z",
+      "cves": [
+        "CVE-2026-115560",
+        "CVE-2026-126714",
+        "CVE-2026-127960",
+        "CVE-2026-128064",
+        "CVE-2026-128090",
+        "CVE-2026-129289",
+        "CVE-2026-129291",
+        "CVE-2026-129292",
+        "CVE-2026-129496",
+        "CVE-2026-129506",
+        "CVE-2026-129538",
+        "CVE-2026-15353"
+      ],
+      "products": [
+        "Rocky Linux: apcu-panel",
+        "Rocky Linux: libzip",
+        "Rocky Linux: libzip-debuginfo",
+        "Rocky Linux: libzip-debugsource",
+        "Rocky Linux: libzip-devel",
+        "Rocky Linux: libzip-tools"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apcu-panel 0:5.1.23-1.module+el8.10.0+1596+477f03f8",
+          "u": null
+        },
+        {
+          "t": "Fixed in apcu-panel 0:5.1.23-1.module+el8.10.0+1911+f499711e",
+          "u": null
+        },
+        {
+          "t": "Fixed in php-pear 1:1.10.14-1.module+el8.10.0+1596+477f03f8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "openSUSE-SU-2026:22433-1",
+      "src": "direct_csaf",
+      "vendor": "SUSE",
+      "title": "CVE-2026-107378",
+      "url": "https://bugzilla.suse.com/1284832",
+      "released": "2026-11-22T16:50:54Z",
+      "updated": "2026-11-26T10:31:09Z",
+      "cves": [
+        "CVE-2026-107378"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
           "u": null
         }
       ],
@@ -269,7 +381,7 @@
       "title": "Red Hat Enterprise Linux (lerc, librabbitmq, libgsf, xdg-desktop-portal, rapidjson): Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4731",
       "released": "2026-11-22T23:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-116124",
         "CVE-2026-116620",

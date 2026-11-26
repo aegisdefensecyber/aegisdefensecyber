@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-11-01",
-  "count": 1,
+  "count": 4,
   "items": [
     {
       "id": "msrc_CVE-2024-8006",
@@ -37,6 +37,72 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-242996380",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible permissions bypass due to a missing null check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed …",
+      "url": "https://source.android.com/security/bulletin/2024-11-01",
+      "released": "2024-11-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-34719"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Bluetooth",
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2024-11-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Bluetooth 12:2024-11-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Bluetooth 12L:2024-11-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2024-1254",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Security exception in org.apache.lucene.util.ArrayUtil.growExact",
+      "released": "2024-11-01T00:07:39Z",
+      "updated": "2026-10-30T16:22:56Z",
+      "products": [
+        "OSS-Fuzz: lucene"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-consul-2024-10086",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Consul Vulnerable To Reflected XSS On Content-Type Error Manipulation",
+      "url": "https://discuss.hashicorp.com/t/hcsec-2024-24-consul-vulnerable-to-reflected-xss-on-content-type-error-manipulation",
+      "released": "2024-11-01T07:07:47Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-10086"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: consul"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in consul 1.20.0",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "date": "2024-12-19",
+  "count": 2,
+  "items": [
+    {
+      "id": "RHSA-2024:11486",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "kernel: Bluetooth: l2cap: fix null-ptr-deref in l2cap_chan_timeout",
+      "url": "https://access.redhat.com/errata/RHSA-2024:11486",
+      "released": "2024-12-19T00:58:56Z",
+      "updated": "2026-11-26T17:22:51Z",
+      "cves": [
+        "CVE-2024-27399",
+        "CVE-2024-38564",
+        "CVE-2024-45020",
+        "CVE-2024-46697",
+        "CVE-2024-47675",
+        "CVE-2024-49888",
+        "CVE-2024-50099",
+        "CVE-2024-50110",
+        "CVE-2024-50115",
+        "CVE-2024-50124",
+        "CVE-2024-50125",
+        "CVE-2024-50142",
+        "CVE-2024-50148",
+        "CVE-2024-50192",
+        "CVE-2024-50223",
+        "CVE-2024-50255",
+        "CVE-2024-50262"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258 The system must be rebooted for this update to take effect.",
+          "u": "https://access.redhat.com/errata/RHSA-2024:11486"
+        },
+        {
+          "t": "To mitigate this issue, restrict the ability to load unprivileged BPF programs. This can be achieved by setting the `kernel.unprivileged_bpf_disabled` sysctl parameter to `1`. To apply this change immediately: `echo 1 > /proc/sys/kernel/un…",
+          "u": null
+        },
+        {
+          "t": "If the NFS server functionality is not required, disable the `nfs-server` service to mitigate this vulnerability. This can be achieved by running the following commands: ```bash sudo systemctl stop nfs-server sudo systemctl disable nfs-ser…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elasticsearch-2024-12539",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Elasticsearch Incorrect Authorization",
+      "url": "https://discuss.elastic.co/t/elasticsearch-8-16-2-8-17-0-security-update/372091",
+      "released": "2024-12-19T07:08:44Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-12539"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: elasticsearch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elasticsearch 8.17.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    }
+  ]
+}

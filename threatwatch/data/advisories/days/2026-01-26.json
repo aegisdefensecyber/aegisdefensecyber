@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-01-26",
-  "count": 16,
+  "count": 23,
   "items": [
     {
       "id": "openSUSE-SU-2026:10088-1",
@@ -380,6 +380,72 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:0290-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openvswitch3",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260290-1/",
+      "released": "2026-01-26T10:34:13Z",
+      "updated": "2026-09-16T19:00:41Z",
+      "cves": [
+        "CVE-2023-1668",
+        "CVE-2023-3152",
+        "CVE-2023-3153",
+        "CVE-2023-3966",
+        "CVE-2023-5366",
+        "CVE-2024-2182",
+        "CVE-2025-0650"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.5",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5-ESPOS",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5-LTSS",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5",
+        "SUSE Linux Enterprise Server 15 SP5-LTSS"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0006",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Wasmtime segfault or unused out-of-sandbox load with `f64.copysign` operator on x86-64",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0006.html",
+      "released": "2026-01-26T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2026-24116"
+      ],
+      "products": [
+        "crates.io: wasmtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wasmtime 36.0.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 40.0.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in wasmtime 41.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20113-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -405,6 +471,139 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0295-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for nodejs22",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260295-1/",
+      "released": "2026-01-26T13:19:01Z",
+      "updated": "2026-09-16T19:00:47Z",
+      "cves": [
+        "CVE-2025-55130",
+        "CVE-2025-55131",
+        "CVE-2025-55132",
+        "CVE-2025-59465",
+        "CVE-2025-59466",
+        "CVE-2026-21637",
+        "CVE-2026-22036"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 15 SP6-LTSS",
+        "SUSE Linux Enterprise Server 15 SP6",
+        "SUSE Linux Enterprise Server for SAP Applications 15 SP6",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-crossplane-2023-37900",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Crossplane vulnerable to denial of service from large image",
+      "url": "https://github.com/crossplane/crossplane/security/advisories/GHSA-68p4-95xf-7gx8",
+      "released": "2026-01-26T14:36:54Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-37900"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: crossplane"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in crossplane 1.11.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in crossplane 1.12.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-crossplane-2023-38495",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Crossplane vulnerable to possible image tampering from missing image validation for Packages",
+      "url": "https://github.com/crossplane/crossplane/blob/ac8b24fe739c5d942ea885157148497f196c3dd3/security/ADA-security-audit-23.pdf",
+      "released": "2026-01-26T14:36:56Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-38495"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: crossplane"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in crossplane 1.11.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in crossplane 1.12.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-75419",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-11065 affecting package gh for versions less than 2.62.0-13",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11065",
+      "released": "2026-01-26T20:16:06Z",
+      "updated": "2026-09-08T17:33:11Z",
+      "cves": [
+        "CVE-2025-11065"
+      ],
+      "products": [
+        "Azure Linux: gh"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gh 2.62.0-13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-75446",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-14459 affecting package kubevirt for versions less than 1.7.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-14459",
+      "released": "2026-01-26T20:16:07Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2025-14459"
+      ],
+      "products": [
+        "Azure Linux: kubevirt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kubevirt 1.7.0-1",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-06-25",
-  "count": 25,
+  "count": 46,
   "items": [
     {
       "id": "openSUSE-SU-2026:11115-1",
@@ -403,6 +403,78 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:29980",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: golang security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:29980",
+      "released": "2026-06-25T00:00:00Z",
+      "updated": "2026-10-26T00:17:51Z",
+      "cves": [
+        "CVE-2026-27145",
+        "CVE-2026-42504",
+        "CVE-2026-42507"
+      ],
+      "products": [
+        "AlmaLinux: golang-docs",
+        "AlmaLinux: golang-misc",
+        "AlmaLinux: golang-src",
+        "AlmaLinux: golang-tests"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang-docs 1.26.4-1.el10_2.alma.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang-misc 1.26.4-1.el10_2.alma.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang-src 1.26.4-1.el10_2.alma.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:29981",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: golang security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:29981",
+      "released": "2026-06-25T00:00:00Z",
+      "updated": "2026-10-26T00:30:53Z",
+      "cves": [
+        "CVE-2026-27145",
+        "CVE-2026-42504",
+        "CVE-2026-42507"
+      ],
+      "products": [
+        "AlmaLinux: go-toolset",
+        "AlmaLinux: golang",
+        "AlmaLinux: golang-bin",
+        "AlmaLinux: golang-docs",
+        "AlmaLinux: golang-misc",
+        "AlmaLinux: golang-race"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in go-toolset 1.26.4-1.el9_8",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang 1.26.4-1.el9_8",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang-bin 1.26.4-1.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "ICSA-26-260-06",
       "src": "csaf_cisa",
       "vendor": "ABB",
@@ -459,6 +531,59 @@
         {
           "t": "0:3.5.19-5.azl4:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
           "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:26543",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Container Platform 4.13.68 bug fix and security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:26543",
+      "released": "2026-06-25T06:32:12Z",
+      "updated": "2026-10-30T03:54:32Z",
+      "cves": [
+        "CVE-2026-1784",
+        "CVE-2026-35172"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat OpenShift Container Platform",
+        "Red Hat OpenShift Container Platform 4.13"
+      ],
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.13 see the following documentation, which will be updated shortly for this release, for important instructions on how to upg…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:26543"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:26529",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Container Platform 4.12.92 bug fix and security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:26529",
+      "released": "2026-06-25T06:58:37Z",
+      "updated": "2026-10-30T03:54:30Z",
+      "cves": [
+        "CVE-2026-35172"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat OpenShift Container Platform",
+        "Red Hat OpenShift Container Platform 4.12"
+      ],
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.12 see the following documentation, which will be updated shortly for this release, for important instructions on how to upg…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:26529"
         }
       ],
       "lang": "en",
@@ -708,6 +833,296 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GO-2026-5080",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Arbitrary PDF read via stampExpression and watermarkExpression in github.com/gotenberg/gotenberg",
+      "url": "https://github.com/gotenberg/gotenberg/security/advisories/GHSA-3cv5-q585-h563",
+      "released": "2026-06-25T18:26:48Z",
+      "updated": "2026-11-24T15:56:00Z",
+      "cves": [
+        "CVE-2026-42593"
+      ],
+      "products": [
+        "Go: github.com/gotenberg/gotenberg/v8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/gotenberg/gotenberg/v8 8.32.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5149",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Traefik: Pre-authentication decision bypass due to forwarded alias spoofing in github.com/traefik/traefik",
+      "url": "https://github.com/traefik/traefik/security/advisories/GHSA-5m6w-wvh7-57vm",
+      "released": "2026-06-25T18:26:48Z",
+      "updated": "2026-11-23T20:02:31Z",
+      "cves": [
+        "CVE-2026-39858"
+      ],
+      "products": [
+        "Go: github.com/traefik/traefik",
+        "Go: github.com/traefik/traefik/v2",
+        "Go: github.com/traefik/traefik/v3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/traefik/traefik/v2 2.11.43",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/traefik/traefik/v3 3.6.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/traefik/traefik/v3 3.7.0-rc.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5162",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "ExifTool dangerous tag blocklist bypass via group-prefixed tag names in github.com/gotenberg/gotenberg",
+      "url": "https://github.com/gotenberg/gotenberg/security/advisories/GHSA-62p3-hvxx-fxg4",
+      "released": "2026-06-25T18:26:48Z",
+      "updated": "2026-11-24T15:56:00Z",
+      "cves": [
+        "CVE-2026-40893"
+      ],
+      "products": [
+        "Go: github.com/gotenberg/gotenberg/v8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/gotenberg/gotenberg/v8 8.31.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5163",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Traefik's ForwardAuth trustForwardHeader=false allows spoofed X-Forwarded-Prefix to bypass authentication in github.com/traefik/traefik",
+      "url": "https://github.com/traefik/traefik/security/advisories/GHSA-6384-m2mw-rf54",
+      "released": "2026-06-25T18:26:48Z",
+      "updated": "2026-11-23T20:02:31Z",
+      "cves": [
+        "CVE-2026-35051"
+      ],
+      "products": [
+        "Go: github.com/traefik/traefik",
+        "Go: github.com/traefik/traefik/v2",
+        "Go: github.com/traefik/traefik/v3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/traefik/traefik/v2 2.11.43",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/traefik/traefik/v3 3.6.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/traefik/traefik/v3 3.7.0-rc.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5180",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Traefik has an StripPrefixRegex Middleware Authorization Bypass via Path/RawPath Desync in github.com/traefik/traefik",
+      "url": "https://github.com/traefik/traefik/security/advisories/GHSA-6jwx-7vp4-9847",
+      "released": "2026-06-25T18:43:15Z",
+      "updated": "2026-11-23T20:02:31Z",
+      "cves": [
+        "CVE-2026-40912"
+      ],
+      "products": [
+        "Go: github.com/traefik/traefik",
+        "Go: github.com/traefik/traefik/v2",
+        "Go: github.com/traefik/traefik/v3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/traefik/traefik/v2 2.11.43",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/traefik/traefik/v3 3.6.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/traefik/traefik/v3 3.7.0-rc.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5195",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Traefik: A timing side-channel vulnerability allows for valid username enumeration via BasicAuth middleware in github.com/traefik/traefik",
+      "url": "https://github.com/traefik/traefik/security/advisories/GHSA-6x2q-h3cr-8j2h",
+      "released": "2026-06-25T18:43:15Z",
+      "updated": "2026-11-23T20:02:31Z",
+      "cves": [
+        "CVE-2026-41263"
+      ],
+      "products": [
+        "Go: github.com/traefik/traefik",
+        "Go: github.com/traefik/traefik/v2",
+        "Go: github.com/traefik/traefik/v3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/traefik/traefik/v2 2.11.43",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/traefik/traefik/v3 3.6.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/traefik/traefik/v3 3.7.0-rc.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5234",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Gotenberg's ExifTool group-prefix syntax bypasses dangerous-tag blocklist in github.com/gotenberg/gotenberg",
+      "url": "https://github.com/gotenberg/gotenberg/security/advisories/GHSA-7v3r-m9c8-r855",
+      "released": "2026-06-25T18:43:15Z",
+      "updated": "2026-11-24T15:56:00Z",
+      "cves": [
+        "CVE-2026-42590"
+      ],
+      "products": [
+        "Go: github.com/gotenberg/gotenberg/v8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/gotenberg/gotenberg/v8 8.30.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5244",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "SSRF deny-list bypass in IsPublicIP via IPv6 prefixes in github.com/gotenberg/gotenberg",
+      "url": "https://github.com/gotenberg/gotenberg/security/advisories/GHSA-86m8-88fq-xfxp",
+      "released": "2026-06-25T18:43:15Z",
+      "updated": "2026-11-24T15:56:00Z",
+      "cves": [
+        "CVE-2026-45741"
+      ],
+      "products": [
+        "Go: github.com/gotenberg/gotenberg/v8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/gotenberg/gotenberg/v8 8.33.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5298",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Hash injection into trusted measurement list in parseEfiSignatureList in github.com/google/go-attestation",
+      "url": "https://github.com/google/go-attestation/security/advisories/GHSA-9r4w-jg96-92mv",
+      "released": "2026-06-25T18:43:19Z",
+      "updated": "2026-11-24T15:56:00Z",
+      "cves": [
+        "CVE-2026-12681"
+      ],
+      "products": [
+        "Go: github.com/google/go-attestation"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/google/go-attestation 0.6.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5337",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Kyverno: Cross-Namespace Read Bypasses RBAC Isolation (CVE-2026-22039 Incomplete Fix) in github.com/kyverno/kyverno",
+      "url": "https://github.com/kyverno/kyverno/security/advisories/GHSA-cvq5-hhx3-f99p",
+      "released": "2026-06-25T18:43:19Z",
+      "updated": "2026-11-23T20:03:54Z",
+      "cves": [
+        "CVE-2026-41068"
+      ],
+      "products": [
+        "Go: github.com/kyverno/kyverno"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/kyverno/kyverno 1.17.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5338",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "CRI checkpoint import allows local image tag poisoning in github.com/containerd/containerd/v2",
+      "url": "https://github.com/containerd/containerd/security/advisories/GHSA-cvxm-645q-p574",
+      "released": "2026-06-25T18:43:19Z",
+      "updated": "2026-11-23T20:02:36Z",
+      "cves": [
+        "CVE-2026-50195"
+      ],
+      "products": [
+        "Go: github.com/containerd/containerd/v2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/containerd/containerd/v2 2.1.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/containerd/containerd/v2 2.2.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/containerd/containerd/v2 2.3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21061-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -793,6 +1208,153 @@
         "Asterisk"
       ],
       "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5544",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Authenticate method auth bypass in github.com/open-telemetry/opentelemetry-collector-contrib/extension/azureauthextension",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/security/advisories/GHSA-pjv4-3c63-699f",
+      "released": "2026-06-25T22:34:34Z",
+      "updated": "2026-10-01T20:23:33Z",
+      "cves": [
+        "CVE-2026-42602"
+      ],
+      "products": [
+        "Go: github.com/open-telemetry/opentelemetry-collector-contrib/extension/azureauthextension"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/open-telemetry/opentelemetry-collector-contrib/extension/azureauthextension 0.151.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5594",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Kyverno has unrestricted outbound requests in Kyverno apiCall enabling SSRF in github.com/kyverno/kyverno",
+      "url": "https://github.com/kyverno/kyverno/security/advisories/GHSA-qr4g-8hrp-c4rw",
+      "released": "2026-06-25T22:34:34Z",
+      "updated": "2026-11-23T20:03:54Z",
+      "products": [
+        "Go: github.com/kyverno/kyverno"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/kyverno/kyverno 1.18.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5622",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Arbitrary host CRI log file read via symlink following in CRI checkpoint restore in github.com/containerd/containerd/v2",
+      "url": "https://github.com/containerd/containerd/security/advisories/GHSA-rgh6-rfwx-v388",
+      "released": "2026-06-25T22:34:34Z",
+      "updated": "2026-11-23T20:02:36Z",
+      "cves": [
+        "CVE-2026-53489"
+      ],
+      "products": [
+        "Go: github.com/containerd/containerd/v2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/containerd/containerd/v2 2.1.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/containerd/containerd/v2 2.2.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/containerd/containerd/v2 2.3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5627",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Gotenberg has a Server-Side Request Forgery (SSRF) Issue in github.com/gotenberg/gotenberg",
+      "url": "https://github.com/gotenberg/gotenberg/security/advisories/GHSA-rm4c-xj6x-49mw",
+      "released": "2026-06-25T22:34:34Z",
+      "updated": "2026-11-24T15:56:00Z",
+      "cves": [
+        "CVE-2026-42591"
+      ],
+      "products": [
+        "Go: github.com/gotenberg/gotenberg/v8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/gotenberg/gotenberg/v8 8.32.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5636",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Gotenberg has Unauthenticated RCE via ExifTool Metadata Key Injection in github.com/gotenberg/gotenberg",
+      "url": "https://github.com/gotenberg/gotenberg/security/advisories/GHSA-rqgh-gxv4-6657",
+      "released": "2026-06-25T22:34:38Z",
+      "updated": "2026-11-24T15:56:00Z",
+      "cves": [
+        "CVE-2026-42589"
+      ],
+      "products": [
+        "Go: github.com/gotenberg/gotenberg/v8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/gotenberg/gotenberg/v8 8.31.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5760",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Traefik Kubernetes CRD allows unauthorized cross-namespace middleware binding in github.com/traefik/traefik",
+      "url": "https://github.com/traefik/traefik/security/advisories/GHSA-xhjw-95fp-8vgq",
+      "released": "2026-06-25T22:34:41Z",
+      "updated": "2026-11-23T20:02:31Z",
+      "cves": [
+        "CVE-2026-41174"
+      ],
+      "products": [
+        "Go: github.com/traefik/traefik",
+        "Go: github.com/traefik/traefik/v2",
+        "Go: github.com/traefik/traefik/v3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/traefik/traefik/v2 2.11.43",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/traefik/traefik/v3 3.6.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/traefik/traefik/v3 3.7.0-rc.2",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

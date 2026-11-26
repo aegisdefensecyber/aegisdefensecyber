@@ -1,0 +1,638 @@
+{
+  "schemaVersion": 1,
+  "date": "2022-07-01",
+  "count": 25,
+  "items": [
+    {
+      "id": "ASB-A-191981182",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In enqueueNotificationInternal of NotificationManagerService.java, there is a possible way to run a foreground service without showing a notification due to improper input validation. This could lead to local escalation…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0981"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 10:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 11:2022-07-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-205571133",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In avrc_ctrl_pars_vendor_cmd of avrc_pars_ct.cc, there is a possible out of bounds read due to improper input validation. This could lead to remote information disclosure over Bluetooth with no additional execution priv…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20221"
+      ],
+      "products": [
+        "Android: platform/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/bt 10:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 11:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 12:2022-07-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-209075540",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-209075540",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-22058"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-213371834",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-213371834",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-22096"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom-opensource/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom-opensource/system/bt SoCVersion:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-213457638",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getSubscriptionProperty of SubscriptionController.java, there is a possible read of a sensitive identifier due to a missing permission check. This could lead to local information disclosure with no additional executi…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20225"
+      ],
+      "products": [
+        "Android: platform/frameworks/opt/telephony"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/opt/telephony 10:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/opt/telephony 11:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/opt/telephony 12:2022-07-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-213644870",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In finishDrawingWindow of WindowManagerService.java, there is a possible tapjacking due to improper input validation. This could lead to local escalation of privilege with User execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20226"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/frameworks/native"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 12:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/native 12:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12L:2022-07-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-213850092",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In various functions of C2DmaBufAllocator.cpp, there is a possible memory corruption due to a use after free. This could lead to remote information disclosure with no additional execution privileges needed. User interac…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20228"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 12:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/av 12L:2022-07-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-216825460",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In USB driver, there is a possible out of bounds read due to a heap buffer overflow. This could lead to local information disclosure with User execution privileges needed. User interaction is not needed for exploitation.",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20227"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-219015884",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In openFile of CallLogProvider.java, there is a possible permission bypass due to a path traversal error. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not n…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20220"
+      ],
+      "products": [
+        "Android: platform/packages/providers/ContactsProvider"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/providers/ContactsProvider 12:2022-07-05",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/providers/ContactsProvider 12L:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-220732646",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In AT_SKIP_REST of bta_hf_client_at.cc, there is a possible out of bounds read due to an incorrect bounds check. This could lead to remote information disclosure in the Bluetooth stack with no additional execution privi…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20224"
+      ],
+      "products": [
+        "Android: platform/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/bt 10:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 11:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 12:2022-07-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-221859869",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In choosePrivateKeyAlias of KeyChain.java, there is a possible access to the user's certificate due to improper input validation. This could lead to local information disclosure with no additional execution privileges n…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20230"
+      ],
+      "products": [
+        "Android: platform/packages/apps/KeyChain"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/KeyChain 10:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/KeyChain 11:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/KeyChain 12:2022-07-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-223578534",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In assertSafeToStartCustomActivity of AppRestrictionsFragment.java, there is a possible way to start a phone call without permissions due to a confused deputy. This could lead to local escalation of privilege with no ad…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20223"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 10:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Settings 11:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Settings 12:2022-07-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-224536184",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In bta_hf_client_handle_cind_list_item of bta_hf_client_at.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges need…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20229"
+      ],
+      "products": [
+        "Android: platform/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/bt 10:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 11:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 12:2022-07-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-224585613",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of StorageManagerService.java and UserManagerService.java, there is a possible way to leave user's directories unencrypted due to a logic error in the code. This could lead to local information dis…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20219"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 10:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 11:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12:2022-07-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-228078096",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In read_attr_value of gatt_db.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not n…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20222"
+      ],
+      "products": [
+        "Android: platform/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/bt 12:2022-07-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 12L:2022-07-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-231271468",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In telecom service, there is a possible information disclosure due to a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not n…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-21764"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-231275473",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In telecom service, there is a possible information disclosure due to a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not n…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-21763"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-231275475",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Modem 2G/3G CC, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution when decoding combined FACILITY with no additional execution privileges needed. User int…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20083"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-231275476",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Bluetooth, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for ex…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-21767"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-231281131",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Modem 2G RR, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution when decoding GPRS Packet Neighbour Cell Data (PNCD) improper neighbouring cell size with n…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-21744"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-231281132",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Bluetooth, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for ex…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-21768"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-231911916",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "android exported is used to set third-party app access permissions, and the default value of intent-filter is true. com.sprd.firewall has set exported as true.",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20216"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-232441378",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "There is a unauthorized broadcast in the SprdContactsProvider. A third-party app could use this issue to delete Fdn contact.",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20217"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-233124709",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "A drm driver have oob problem, could cause the system crash or EOP",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20236"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-233154555",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "'remap_pfn_range' here may map out of size kernel memory (for example, may map the kernel area), and because the 'vma->vm_page_prot' can also be controlled by userspace, so userspace may map the kernel area to be writab…",
+      "url": "https://source.android.com/security/bulletin/2022-07-01",
+      "released": "2022-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20238"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2022-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    }
+  ]
+}

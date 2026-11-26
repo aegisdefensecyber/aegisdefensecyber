@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 1,
+  "date": "2021-03-01",
+  "count": 15,
+  "items": [
+    {
+      "id": "ASB-A-158221622",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In do_rfc1035_name of util.c, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution when processing a malicious DNS server response with no additional execution …",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2017-14491"
+      ],
+      "products": [
+        "Android: platform/external/dnsmasq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/dnsmasq 8.1:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/dnsmasq 9:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/dnsmasq 10:2021-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-160610106",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Builtins::Generate_ArgumentsAdaptorTrampoline of builtins-arm.cc and related files, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote code execution in an unprivilege…",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0396"
+      ],
+      "products": [
+        "Android: platform/external/v8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/v8 8.1:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/v8 9:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/v8 10:2021-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-168041375",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Scanner::LiteralBuffer::NewCapacity of scanner.cc, there is a possible out of bounds write due to an integer overflow. This could lead to remote code execution if an attacker can supply a malicious PAC file, with no …",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0393"
+      ],
+      "products": [
+        "Android: platform/external/v8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/v8 8.1:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/v8 9:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/v8 10:2021-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-168917883",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-168917883",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-11290"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2021-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-170315126",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In StopServicesAndLogViolations of reboot.cpp, there is possible memory corruption due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interacti…",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0395"
+      ],
+      "products": [
+        "Android: platform/system/core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/core 11:2021-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-172349026",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-172349026",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-11223"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2021-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-172655291",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In android_os_Parcel_readString8 of android_os_Parcel.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges ne…",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0394"
+      ],
+      "products": [
+        "Android: platform/art",
+        "Android: platform/frameworks/native",
+        "Android: platform/system/tools/hidl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/art 8.1:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/art 9:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/art 10:2021-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-172841550",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onCreate() of ChooseTypeAndAccountActivity.java, there is a possible way to learn the existence of an account, without permissions, due to a tapjacking/overlay attack. This could lead to local escalation of privilege…",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0391"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 8.1:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 9:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 10:2021-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-173516292",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In bindServiceLocked of ActiveServices.java, there is a possible foreground service launch due to a confused deputy. This could lead to local escalation of privilege with User execution privileges needed. User interacti…",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0398"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-174052148",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In sdp_copy_raw_data of sdp_discovery.cc, there is a possible system compromise due to a double free. This could lead to remote code execution with no additional execution privileges needed. User interaction is not need…",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0397"
+      ],
+      "products": [
+        "Android: platform/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/bt 8.1:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 9:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 10:2021-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-174749461",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In various methods of WifiNetworkSuggestionsManager.java, there is a possible modification of suggested networks due to a missing permission check. This could lead to local escalation of privilege by a background user o…",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0390"
+      ],
+      "products": [
+        "Android: platform/frameworks/opt/net/wifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/opt/net/wifi 8.1:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/opt/net/wifi 9:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/opt/net/wifi 10:2021-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-175038160",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-175038160",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-11309"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2021-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-175038288",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-175038288",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-11308"
+      ],
+      "products": [
+        "Android: abl/tianocore/edk2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in abl/tianocore/edk2 SoCVersion:2021-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-175124730",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In main of main.cpp, there is a possible memory corruption due to a double free. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0392"
+      ],
+      "products": [
+        "Android: platform/system/connectivity/wificond"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/connectivity/wificond 9:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/connectivity/wificond 10:2021-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/connectivity/wificond 11:2021-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-176919394",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In qtaguid_untag of xt_qtaguid.c, there is a possible memory corruption due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not n…",
+      "url": "https://source.android.com/security/bulletin/2021-03-01",
+      "released": "2021-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0399"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    }
+  ]
+}

@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-18",
-  "count": 27,
+  "count": 159,
   "items": [
+    {
+      "id": "ELA-1826-1",
+      "src": "osv_debian_elts",
+      "vendor": "Debian Elts",
+      "title": "ELA-1826-1",
+      "url": "https://deb.freexian.com/extended-lts/tracker/ELA-1826-1",
+      "updated": "2026-09-18T00:00:00Z",
+      "products": [
+        "Debian: zip"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in zip 3.0-11+deb9u1",
+          "u": null
+        },
+        {
+          "t": "Fixed in zip 3.0-11+deb10u1",
+          "u": null
+        },
+        {
+          "t": "Fixed in zip 3.0-12+deb11u1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "CERTFR-2026-AVI-1199",
       "src": "certfr_avis",
@@ -754,6 +780,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "OSV-2026-1297",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "UNKNOWN READ in janet_to_string_b",
+      "released": "2026-09-18T00:21:36Z",
+      "updated": "2026-09-18T00:21:36Z",
+      "products": [
+        "OSS-Fuzz: janet"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in janet 4fc4c8c351aa7062083cd5ce9ffe411f1c3ae64d",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "7PAA010706",
       "src": "csaf_abb",
       "vendor": "ABB",
@@ -829,6 +873,34 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-AH35927",
+      "src": "cleanstart",
+      "title": "DefaultBaseTypeLimitingValidator is the PolymorphicTypeValidator applied automatically whenever @JsonTypeInfo is used without an explicitly configured custom validator",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-AH35927.json",
+      "released": "2026-09-18T00:39:58Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-18401",
+        "CVE-2026-19032",
+        "CVE-2026-19203",
+        "CVE-2026-57819",
+        "CVE-2026-64607",
+        "CVE-2026-64958",
+        "CVE-2026-71290",
+        "CVE-2026-83557"
+      ],
+      "products": [
+        "CleanStart: wso2is"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wso2is 7.3.0-r5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-86003",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -852,6 +924,111 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-AM62510",
+      "src": "cleanstart",
+      "title": "gRPC-Go is the Go language implementation of gRPC",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-AM62510.json",
+      "released": "2026-09-18T01:21:59Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-22871",
+        "CVE-2025-4674",
+        "CVE-2025-47903",
+        "CVE-2025-47906",
+        "CVE-2025-47907",
+        "CVE-2025-61727",
+        "CVE-2025-61729",
+        "CVE-2026-25679",
+        "CVE-2026-27142",
+        "CVE-2026-33186"
+      ],
+      "products": [
+        "CleanStart: consul-k8s-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in consul-k8s-fips 1.9.1-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4011",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Downloaded seed wheels (pip/setuptools) are not integrity-checked before use",
+      "url": "https://github.com/pypa/virtualenv/security/advisories/GHSA-94p9-xgh2-xp45",
+      "released": "2026-09-18T01:41:45Z",
+      "updated": "2026-09-30T16:13:20Z",
+      "cves": [
+        "CVE-2026-102930"
+      ],
+      "products": [
+        "PyPI: virtualenv"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in virtualenv 21.7.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4014",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Command injection via --prompt in activate.bat (batch activator)",
+      "url": "https://github.com/pypa/virtualenv/security/advisories/GHSA-x78j-v8h9-3j2q",
+      "released": "2026-09-18T01:41:45Z",
+      "updated": "2026-09-30T16:13:20Z",
+      "cves": [
+        "CVE-2026-102937"
+      ],
+      "products": [
+        "PyPI: virtualenv"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in virtualenv 21.7.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-MAVEN-CVE-2023-3894",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2023-3894 in com.fasterxml.jackson.dataformat:jackson-dataformat-toml - Patched by Root",
+      "released": "2026-09-18T02:03:58Z",
+      "updated": "2026-09-18T02:03:58Z",
+      "cves": [
+        "CVE-2023-3894"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: com.fasterxml.jackson.dataformat:jackson-dataformat-toml",
+        "Root: io.root.com.fasterxml.jackson.dataformat:jackson-dataformat-toml"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in com.fasterxml.jackson.dataformat:jackson-dataformat-toml 2.13.0-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.dataformat:jackson-dataformat-toml 2.12.7-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in io.root.com.fasterxml.jackson.dataformat:jackson-dataformat-toml 2.13.0-root.io.1",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -922,6 +1099,111 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "PYSEC-2026-4013",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "virtualenv bash and fish activation scripts execute commands embedded in paths",
+      "url": "https://github.com/pypa/virtualenv/security/advisories/GHSA-p58f-9548-mpm2",
+      "released": "2026-09-18T04:37:14Z",
+      "updated": "2026-09-30T16:13:20Z",
+      "cves": [
+        "CVE-2026-102925"
+      ],
+      "products": [
+        "PyPI: virtualenv"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in virtualenv 21.7.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2022-23646",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2022-23646 in next - Patched by Root",
+      "released": "2026-09-18T05:47:16Z",
+      "updated": "2026-09-18T05:47:16Z",
+      "cves": [
+        "CVE-2022-23646"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 12.1.0-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 12.1.0-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in @rootio/next 12.1.0-root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89774",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89774",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89774",
+      "released": "2026-09-18T06:05:45Z",
+      "updated": "2026-09-18T06:19:40Z",
+      "cves": [
+        "CVE-2026-89774"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.182-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.103-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.43-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89775",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89775",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89775",
+      "released": "2026-09-18T06:05:45Z",
+      "updated": "2026-09-25T20:02:07Z",
+      "cves": [
+        "CVE-2026-89775"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21874-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -973,6 +1255,2166 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BELL-CVE-2026-89790",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89790",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89790",
+      "released": "2026-09-18T06:05:46Z",
+      "updated": "2026-09-25T20:02:08Z",
+      "cves": [
+        "CVE-2026-89790"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89791",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89791",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89791",
+      "released": "2026-09-18T06:05:46Z",
+      "updated": "2026-09-25T20:02:08Z",
+      "cves": [
+        "CVE-2026-89791"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89793",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89793",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89793",
+      "released": "2026-09-18T06:05:46Z",
+      "updated": "2026-09-28T20:02:48Z",
+      "cves": [
+        "CVE-2026-89793"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89798",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89798",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89798",
+      "released": "2026-09-18T06:05:46Z",
+      "updated": "2026-09-28T20:02:49Z",
+      "cves": [
+        "CVE-2026-89798"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89800",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89800",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89800",
+      "released": "2026-09-18T06:05:46Z",
+      "updated": "2026-09-28T20:02:49Z",
+      "cves": [
+        "CVE-2026-89800"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89801",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89801",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89801",
+      "released": "2026-09-18T06:05:46Z",
+      "updated": "2026-09-28T20:02:49Z",
+      "cves": [
+        "CVE-2026-89801"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89802",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89802",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89802",
+      "released": "2026-09-18T06:05:46Z",
+      "updated": "2026-09-28T20:02:49Z",
+      "cves": [
+        "CVE-2026-89802"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89804",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89804 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89804",
+      "released": "2026-09-18T06:05:46Z",
+      "updated": "2026-09-18T06:19:42Z",
+      "cves": [
+        "CVE-2026-89804"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89805",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89805",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89805",
+      "released": "2026-09-18T06:05:47Z",
+      "updated": "2026-09-18T06:19:42Z",
+      "cves": [
+        "CVE-2026-89805"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89807",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89807",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89807",
+      "released": "2026-09-18T06:05:47Z",
+      "updated": "2026-09-28T20:02:49Z",
+      "cves": [
+        "CVE-2026-89807"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89809",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89809 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89809",
+      "released": "2026-09-18T06:05:47Z",
+      "updated": "2026-09-18T06:19:42Z",
+      "cves": [
+        "CVE-2026-89809"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89814",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89814",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89814",
+      "released": "2026-09-18T06:05:47Z",
+      "updated": "2026-09-25T20:02:10Z",
+      "cves": [
+        "CVE-2026-89814"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89815",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89815",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89815",
+      "released": "2026-09-18T06:05:47Z",
+      "updated": "2026-09-25T20:02:10Z",
+      "cves": [
+        "CVE-2026-89815"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89819",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89819",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89819",
+      "released": "2026-09-18T06:05:47Z",
+      "updated": "2026-09-28T20:02:49Z",
+      "cves": [
+        "CVE-2026-89819"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89820",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89820",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89820",
+      "released": "2026-09-18T06:05:47Z",
+      "updated": "2026-09-25T20:02:10Z",
+      "cves": [
+        "CVE-2026-89820"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89825",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89825",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89825",
+      "released": "2026-09-18T06:05:48Z",
+      "updated": "2026-09-28T20:02:50Z",
+      "cves": [
+        "CVE-2026-89825"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89826",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89826",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89826",
+      "released": "2026-09-18T06:05:48Z",
+      "updated": "2026-09-25T20:02:10Z",
+      "cves": [
+        "CVE-2026-89826"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89828",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89828",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89828",
+      "released": "2026-09-18T06:05:48Z",
+      "updated": "2026-09-25T20:02:11Z",
+      "cves": [
+        "CVE-2026-89828"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89829",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89829",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89829",
+      "released": "2026-09-18T06:05:48Z",
+      "updated": "2026-09-25T20:02:11Z",
+      "cves": [
+        "CVE-2026-89829"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89830",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89830",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89830",
+      "released": "2026-09-18T06:05:48Z",
+      "updated": "2026-09-28T20:02:50Z",
+      "cves": [
+        "CVE-2026-89830"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89831",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89831 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89831",
+      "released": "2026-09-18T06:05:48Z",
+      "updated": "2026-09-18T06:19:43Z",
+      "cves": [
+        "CVE-2026-89831"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89836",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89836 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89836",
+      "released": "2026-09-18T06:05:48Z",
+      "updated": "2026-09-18T06:19:44Z",
+      "cves": [
+        "CVE-2026-89836"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89839",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89839",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89839",
+      "released": "2026-09-18T06:05:49Z",
+      "updated": "2026-09-28T20:02:50Z",
+      "cves": [
+        "CVE-2026-89839"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89841",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89841",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89841",
+      "released": "2026-09-18T06:05:49Z",
+      "updated": "2026-09-25T20:02:11Z",
+      "cves": [
+        "CVE-2026-89841"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89842",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89842",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89842",
+      "released": "2026-09-18T06:05:49Z",
+      "updated": "2026-09-28T20:02:50Z",
+      "cves": [
+        "CVE-2026-89842"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89844",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89844",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89844",
+      "released": "2026-09-18T06:05:49Z",
+      "updated": "2026-09-28T20:02:50Z",
+      "cves": [
+        "CVE-2026-89844"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89857",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89857",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89857",
+      "released": "2026-09-18T06:05:50Z",
+      "updated": "2026-09-28T20:02:51Z",
+      "cves": [
+        "CVE-2026-89857"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89862",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89862",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89862",
+      "released": "2026-09-18T06:05:50Z",
+      "updated": "2026-09-18T06:19:46Z",
+      "cves": [
+        "CVE-2026-89862"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89867",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89867 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89867",
+      "released": "2026-09-18T06:05:50Z",
+      "updated": "2026-09-18T06:19:46Z",
+      "cves": [
+        "CVE-2026-89867"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89869",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89869",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89869",
+      "released": "2026-09-18T06:05:51Z",
+      "updated": "2026-09-25T20:02:13Z",
+      "cves": [
+        "CVE-2026-89869"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89873",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89873 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89873",
+      "released": "2026-09-18T06:05:51Z",
+      "updated": "2026-09-18T06:19:47Z",
+      "cves": [
+        "CVE-2026-89873"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89874",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89874",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89874",
+      "released": "2026-09-18T06:05:51Z",
+      "updated": "2026-09-28T20:02:52Z",
+      "cves": [
+        "CVE-2026-89874"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89875",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89875 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89875",
+      "released": "2026-09-18T06:05:51Z",
+      "updated": "2026-09-18T06:19:47Z",
+      "cves": [
+        "CVE-2026-89875"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89882",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89882 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89882",
+      "released": "2026-09-18T06:05:51Z",
+      "updated": "2026-09-18T06:19:48Z",
+      "cves": [
+        "CVE-2026-89882"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89885",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89885",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89885",
+      "released": "2026-09-18T06:05:52Z",
+      "updated": "2026-09-28T20:02:52Z",
+      "cves": [
+        "CVE-2026-89885"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89886",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89886",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89886",
+      "released": "2026-09-18T06:05:52Z",
+      "updated": "2026-09-28T20:02:52Z",
+      "cves": [
+        "CVE-2026-89886"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89889",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89889",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89889",
+      "released": "2026-09-18T06:05:52Z",
+      "updated": "2026-09-25T20:02:14Z",
+      "cves": [
+        "CVE-2026-89889"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89898",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89898",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89898",
+      "released": "2026-09-18T06:05:52Z",
+      "updated": "2026-09-28T20:02:53Z",
+      "cves": [
+        "CVE-2026-89898"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89899",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89899",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89899",
+      "released": "2026-09-18T06:05:52Z",
+      "updated": "2026-09-28T20:02:53Z",
+      "cves": [
+        "CVE-2026-89899"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89900",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89900",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89900",
+      "released": "2026-09-18T06:05:52Z",
+      "updated": "2026-09-28T20:02:53Z",
+      "cves": [
+        "CVE-2026-89900"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89902",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89902",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89902",
+      "released": "2026-09-18T06:05:53Z",
+      "updated": "2026-09-28T20:02:53Z",
+      "cves": [
+        "CVE-2026-89902"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89903",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89903",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89903",
+      "released": "2026-09-18T06:05:53Z",
+      "updated": "2026-09-28T20:02:53Z",
+      "cves": [
+        "CVE-2026-89903"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89904",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89904",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89904",
+      "released": "2026-09-18T06:05:53Z",
+      "updated": "2026-09-28T20:02:54Z",
+      "cves": [
+        "CVE-2026-89904"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89905",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89905 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89905",
+      "released": "2026-09-18T06:05:53Z",
+      "updated": "2026-09-18T06:19:50Z",
+      "cves": [
+        "CVE-2026-89905"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89908",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89908",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89908",
+      "released": "2026-09-18T06:05:53Z",
+      "updated": "2026-09-28T20:02:54Z",
+      "cves": [
+        "CVE-2026-89908"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89909",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89909",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89909",
+      "released": "2026-09-18T06:05:53Z",
+      "updated": "2026-09-28T20:02:54Z",
+      "cves": [
+        "CVE-2026-89909"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89910",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89910 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89910",
+      "released": "2026-09-18T06:05:53Z",
+      "updated": "2026-09-18T06:19:50Z",
+      "cves": [
+        "CVE-2026-89910"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89911",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89911",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89911",
+      "released": "2026-09-18T06:05:53Z",
+      "updated": "2026-09-25T20:02:16Z",
+      "cves": [
+        "CVE-2026-89911"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89914",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89914",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89914",
+      "released": "2026-09-18T06:05:53Z",
+      "updated": "2026-09-25T20:02:16Z",
+      "cves": [
+        "CVE-2026-89914"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89915",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89915",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89915",
+      "released": "2026-09-18T06:05:53Z",
+      "updated": "2026-09-25T20:02:16Z",
+      "cves": [
+        "CVE-2026-89915"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89916",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89916",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89916",
+      "released": "2026-09-18T06:05:53Z",
+      "updated": "2026-09-25T20:02:16Z",
+      "cves": [
+        "CVE-2026-89916"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89917",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89917",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89917",
+      "released": "2026-09-18T06:05:54Z",
+      "updated": "2026-09-25T20:02:16Z",
+      "cves": [
+        "CVE-2026-89917"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89918",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89918",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89918",
+      "released": "2026-09-18T06:05:54Z",
+      "updated": "2026-09-25T20:02:16Z",
+      "cves": [
+        "CVE-2026-89918"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89919",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89919 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89919",
+      "released": "2026-09-18T06:05:54Z",
+      "updated": "2026-09-18T06:19:51Z",
+      "cves": [
+        "CVE-2026-89919"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89928",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89928",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89928",
+      "released": "2026-09-18T06:05:54Z",
+      "updated": "2026-09-25T20:02:17Z",
+      "cves": [
+        "CVE-2026-89928"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89929",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89929",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89929",
+      "released": "2026-09-18T06:05:54Z",
+      "updated": "2026-09-28T20:02:54Z",
+      "cves": [
+        "CVE-2026-89929"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89931",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89931",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89931",
+      "released": "2026-09-18T06:05:54Z",
+      "updated": "2026-09-28T20:02:54Z",
+      "cves": [
+        "CVE-2026-89931"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89935",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89935",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89935",
+      "released": "2026-09-18T06:05:55Z",
+      "updated": "2026-09-25T20:02:17Z",
+      "cves": [
+        "CVE-2026-89935"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89938",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89938",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89938",
+      "released": "2026-09-18T06:05:55Z",
+      "updated": "2026-09-28T20:02:55Z",
+      "cves": [
+        "CVE-2026-89938"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89940",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89940",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89940",
+      "released": "2026-09-18T06:05:55Z",
+      "updated": "2026-09-28T20:02:55Z",
+      "cves": [
+        "CVE-2026-89940"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89941",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89941",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89941",
+      "released": "2026-09-18T06:05:55Z",
+      "updated": "2026-09-28T20:02:55Z",
+      "cves": [
+        "CVE-2026-89941"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89942",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89942",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89942",
+      "released": "2026-09-18T06:05:55Z",
+      "updated": "2026-09-28T20:02:55Z",
+      "cves": [
+        "CVE-2026-89942"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89943",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89943",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89943",
+      "released": "2026-09-18T06:05:55Z",
+      "updated": "2026-09-28T20:02:55Z",
+      "cves": [
+        "CVE-2026-89943"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89950",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89950",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89950",
+      "released": "2026-09-18T06:05:56Z",
+      "updated": "2026-09-28T20:02:56Z",
+      "cves": [
+        "CVE-2026-89950"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89961",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89961",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89961",
+      "released": "2026-09-18T06:05:56Z",
+      "updated": "2026-09-28T20:02:56Z",
+      "cves": [
+        "CVE-2026-89961"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89963",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89963",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89963",
+      "released": "2026-09-18T06:05:56Z",
+      "updated": "2026-09-28T20:02:56Z",
+      "cves": [
+        "CVE-2026-89963"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89966",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89966 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89966",
+      "released": "2026-09-18T06:05:57Z",
+      "updated": "2026-09-18T06:19:54Z",
+      "cves": [
+        "CVE-2026-89966"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89967",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89967 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89967",
+      "released": "2026-09-18T06:05:57Z",
+      "updated": "2026-09-18T06:19:54Z",
+      "cves": [
+        "CVE-2026-89967"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89974",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89974",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89974",
+      "released": "2026-09-18T06:05:57Z",
+      "updated": "2026-09-28T20:02:57Z",
+      "cves": [
+        "CVE-2026-89974"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89976",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89976 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89976",
+      "released": "2026-09-18T06:05:57Z",
+      "updated": "2026-09-18T06:19:55Z",
+      "cves": [
+        "CVE-2026-89976"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89977",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89977 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89977",
+      "released": "2026-09-18T06:05:57Z",
+      "updated": "2026-09-18T06:19:55Z",
+      "cves": [
+        "CVE-2026-89977"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89978",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89978",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89978",
+      "released": "2026-09-18T06:05:57Z",
+      "updated": "2026-09-25T20:02:20Z",
+      "cves": [
+        "CVE-2026-89978"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89981",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89981 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89981",
+      "released": "2026-09-18T06:05:58Z",
+      "updated": "2026-09-18T06:19:55Z",
+      "cves": [
+        "CVE-2026-89981"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89985",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-89985 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89985",
+      "released": "2026-09-18T06:05:58Z",
+      "updated": "2026-09-18T06:19:55Z",
+      "cves": [
+        "CVE-2026-89985"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89986",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89986",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89986",
+      "released": "2026-09-18T06:05:58Z",
+      "updated": "2026-09-28T20:02:57Z",
+      "cves": [
+        "CVE-2026-89986"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89990",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89990",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89990",
+      "released": "2026-09-18T06:05:58Z",
+      "updated": "2026-09-28T20:02:57Z",
+      "cves": [
+        "CVE-2026-89990"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89991",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89991",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89991",
+      "released": "2026-09-18T06:05:58Z",
+      "updated": "2026-09-25T20:02:21Z",
+      "cves": [
+        "CVE-2026-89991"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-89994",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-89994",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-89994",
+      "released": "2026-09-18T06:05:58Z",
+      "updated": "2026-09-28T20:02:58Z",
+      "cves": [
+        "CVE-2026-89994"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90001",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90001",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90001",
+      "released": "2026-09-18T06:05:59Z",
+      "updated": "2026-09-28T20:02:58Z",
+      "cves": [
+        "CVE-2026-90001"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90004",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-90004 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90004",
+      "released": "2026-09-18T06:05:59Z",
+      "updated": "2026-09-18T06:19:56Z",
+      "cves": [
+        "CVE-2026-90004"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90005",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90005",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90005",
+      "released": "2026-09-18T06:05:59Z",
+      "updated": "2026-09-25T20:02:22Z",
+      "cves": [
+        "CVE-2026-90005"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90006",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90006",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90006",
+      "released": "2026-09-18T06:05:59Z",
+      "updated": "2026-09-25T20:02:22Z",
+      "cves": [
+        "CVE-2026-90006"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90008",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90008",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90008",
+      "released": "2026-09-18T06:05:59Z",
+      "updated": "2026-09-25T20:02:22Z",
+      "cves": [
+        "CVE-2026-90008"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90009",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-90009 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90009",
+      "released": "2026-09-18T06:05:59Z",
+      "updated": "2026-09-18T06:19:57Z",
+      "cves": [
+        "CVE-2026-90009"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90010",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-90010 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90010",
+      "released": "2026-09-18T06:05:59Z",
+      "updated": "2026-09-18T06:19:57Z",
+      "cves": [
+        "CVE-2026-90010"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90012",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90012",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90012",
+      "released": "2026-09-18T06:06:00Z",
+      "updated": "2026-09-28T20:02:58Z",
+      "cves": [
+        "CVE-2026-90012"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90014",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-90014 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90014",
+      "released": "2026-09-18T06:06:00Z",
+      "updated": "2026-09-18T06:19:57Z",
+      "cves": [
+        "CVE-2026-90014"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90022",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90022",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90022",
+      "released": "2026-09-18T06:06:00Z",
+      "updated": "2026-09-28T20:02:59Z",
+      "cves": [
+        "CVE-2026-90022"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90024",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90024",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90024",
+      "released": "2026-09-18T06:06:00Z",
+      "updated": "2026-09-28T20:02:59Z",
+      "cves": [
+        "CVE-2026-90024"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90026",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90026",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90026",
+      "released": "2026-09-18T06:06:00Z",
+      "updated": "2026-09-28T20:02:59Z",
+      "cves": [
+        "CVE-2026-90026"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90027",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90027",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90027",
+      "released": "2026-09-18T06:06:00Z",
+      "updated": "2026-09-28T20:02:59Z",
+      "cves": [
+        "CVE-2026-90027"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90028",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-90028 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90028",
+      "released": "2026-09-18T06:06:01Z",
+      "updated": "2026-09-18T06:19:58Z",
+      "cves": [
+        "CVE-2026-90028"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90035",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90035",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90035",
+      "released": "2026-09-18T06:06:01Z",
+      "updated": "2026-09-28T20:02:59Z",
+      "cves": [
+        "CVE-2026-90035"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90036",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90036",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90036",
+      "released": "2026-09-18T06:06:01Z",
+      "updated": "2026-09-28T20:02:59Z",
+      "cves": [
+        "CVE-2026-90036"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90038",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-90038 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90038",
+      "released": "2026-09-18T06:06:01Z",
+      "updated": "2026-09-18T06:19:59Z",
+      "cves": [
+        "CVE-2026-90038"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90039",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90039",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90039",
+      "released": "2026-09-18T06:06:01Z",
+      "updated": "2026-09-28T20:03:00Z",
+      "cves": [
+        "CVE-2026-90039"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90042",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90042",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90042",
+      "released": "2026-09-18T06:06:01Z",
+      "updated": "2026-09-28T20:03:00Z",
+      "cves": [
+        "CVE-2026-90042"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90043",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-90043 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90043",
+      "released": "2026-09-18T06:06:01Z",
+      "updated": "2026-09-18T06:19:59Z",
+      "cves": [
+        "CVE-2026-90043"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90046",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90046",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90046",
+      "released": "2026-09-18T06:06:02Z",
+      "updated": "2026-09-25T20:02:24Z",
+      "cves": [
+        "CVE-2026-90046"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-90047",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-90047",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-90047",
+      "released": "2026-09-18T06:06:02Z",
+      "updated": "2026-09-25T20:02:24Z",
+      "cves": [
+        "CVE-2026-90047"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21875-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -999,6 +3441,99 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2025-48068",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2025-48068 in next - Patched by Root",
+      "released": "2026-09-18T07:11:42Z",
+      "updated": "2026-09-18T07:11:42Z",
+      "cves": [
+        "CVE-2025-48068"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.30-aikido.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.30-aikido.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.30-aikido.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2024-34350",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2024-34350 in next - Patched by Root",
+      "released": "2026-09-18T07:15:12Z",
+      "updated": "2026-09-18T07:15:12Z",
+      "cves": [
+        "CVE-2024-34350"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 13.4.19-aikido.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 13.4.19-aikido.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 13.4.19-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2024-39693",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2024-39693 in next - Patched by Root",
+      "released": "2026-09-18T07:15:12Z",
+      "updated": "2026-09-18T07:15:12Z",
+      "cves": [
+        "CVE-2024-39693"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 13.4.19-aikido.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 13.4.19-aikido.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 13.4.19-aikido.2",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -1085,6 +3620,99 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:67861",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gstreamer1-plugins-bad-free security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:67861",
+      "released": "2026-09-18T08:12:29Z",
+      "updated": "2026-09-18T11:33:07Z",
+      "cves": [
+        "CVE-2026-19387"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.6,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Server (v. 7 ELS)",
+        "Red Hat Enterprise Linux Server Optional (v. 7 ELS)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:67861"
+        },
+        {
+          "t": "To mitigate this issue, users should avoid playing or processing untrusted multi-channel IMA ADPCM WAV files. Additionally, consider sandboxing applications th…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-MAVEN-CVE-2026-41695",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-41695 in org.springframework.data:spring-data-commons - Patched by Root",
+      "released": "2026-09-18T08:23:48Z",
+      "updated": "2026-09-18T08:23:48Z",
+      "cves": [
+        "CVE-2026-41695"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: io.root.org.springframework.data:spring-data-commons",
+        "Root: org.springframework.data:spring-data-commons"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.springframework.data:spring-data-commons 4.0.5-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.springframework.data:spring-data-commons 3.5.11-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.springframework.data:spring-data-commons 3.5.10-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-MAVEN-CVE-2026-41716",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-41716 in org.springframework.data:spring-data-commons - Patched by Root",
+      "released": "2026-09-18T08:23:48Z",
+      "updated": "2026-09-18T08:23:48Z",
+      "cves": [
+        "CVE-2026-41716"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: io.root.org.springframework.data:spring-data-commons",
+        "Root: org.springframework.data:spring-data-commons"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.springframework.data:spring-data-commons 4.0.5-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.springframework.data:spring-data-commons 2.7.2-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.springframework.data:spring-data-commons 3.5.11-aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "NCSC-2026-0384",
       "src": "csaf_ncscnl",
       "vendor": "Check Point",
@@ -1147,6 +3775,127 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ROOT-APP-NPM-CVE-2024-56332",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2024-56332 in next - Patched by Root",
+      "released": "2026-09-18T08:59:55Z",
+      "updated": "2026-09-18T08:59:55Z",
+      "cves": [
+        "CVE-2024-56332"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.21-aikido.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.21-aikido.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.21-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2025-32421",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2025-32421 in next - Patched by Root",
+      "released": "2026-09-18T09:55:39Z",
+      "updated": "2026-09-18T09:55:39Z",
+      "cves": [
+        "CVE-2025-32421"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.24-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.24-aikido.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.24-aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-29074",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-29074 in svgo - Patched by Root",
+      "released": "2026-09-18T10:45:04Z",
+      "updated": "2026-09-18T10:45:04Z",
+      "cves": [
+        "CVE-2026-29074"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/svgo",
+        "Root: svgo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in svgo 2.8.0-aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in svgo 3.3.2-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in svgo 2.8.0-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-GHSA-2p49-hgcm-8545",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-2p49-hgcm-8545 in svgo - Patched by Root",
+      "released": "2026-09-18T10:45:42Z",
+      "updated": "2026-09-18T10:45:42Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/svgo",
+        "Root: svgo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in svgo 3.3.3-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in svgo 2.8.0-aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in svgo 1.3.2-aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21918-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1173,6 +3922,226 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0294",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Unsoundness in UTF-8 'String' trait",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0294.html",
+      "released": "2026-09-18T12:00:00Z",
+      "updated": "2026-11-11T10:29:55Z",
+      "products": [
+        "crates.io: iceoryx2-bb-container"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in iceoryx2-bb-container 0.10.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2025-61140",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2025-61140 in jsonpath - Patched by Root",
+      "released": "2026-09-18T12:23:41Z",
+      "updated": "2026-09-18T12:23:41Z",
+      "cves": [
+        "CVE-2025-61140"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: @rootio/jsonpath",
+        "Root: jsonpath"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jsonpath 1.2.0-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in @rootio/jsonpath 1.2.0-root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2026-41608",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-41608 in thrift - Patched by Root",
+      "released": "2026-09-18T13:02:00Z",
+      "updated": "2026-09-18T13:02:00Z",
+      "cves": [
+        "CVE-2026-41608"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.20.0+aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2026-43871",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-43871 in thrift - Patched by Root",
+      "released": "2026-09-18T13:02:00Z",
+      "updated": "2026-09-18T13:02:00Z",
+      "cves": [
+        "CVE-2026-43871"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.20.0+aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-3997",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "vLLM versions before 0.28.0 fail to validate the lower bound of token IDs in the /v1/embeddings and /pooling endpoints, allowing unauthenticated attackers to crash the engine by submitting negative token IDs. A single r…",
+      "url": "https://www.vulncheck.com/advisories/vllm-before-0.28.0-denial-of-service-via-negative-token-id",
+      "released": "2026-09-18T14:19:10Z",
+      "updated": "2026-09-29T08:46:05Z",
+      "cves": [
+        "CVE-2026-93592"
+      ],
+      "products": [
+        "PyPI: vllm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vllm 0.28.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-84444",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "libheif is a HEIF and AVIF file format decoder and encoder. Prior to 1.23.2, when WITH_UNCOMPRESSED_CODEC is enabled, heif_context_add_image_tile() accepts an independently constructed tile whose component-plane dimensi…",
+      "released": "2026-09-18T16:17:00Z",
+      "updated": "2026-09-23T23:36:45Z",
+      "cves": [
+        "CVE-2026-84444"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: libheif"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-103314",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-61548 affecting package rsyslog 8.2308.0-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61548",
+      "released": "2026-09-18T17:16:58Z",
+      "updated": "2026-09-21T05:34:22Z",
+      "cves": [
+        "CVE-2026-61548"
+      ],
+      "products": [
+        "Azure Linux: rsyslog"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-93753",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "deepmerge through 4.3.1 contains a prototype poisoning vulnerability in the mergeObject() function that fails to properly validate keys being written to target objects. Attackers can supply malicious source objects in m…",
+      "released": "2026-09-18T18:18:00Z",
+      "updated": "2026-10-17T09:58:01Z",
+      "cves": [
+        "CVE-2026-93753"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: node-deepmerge"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-61721",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "FluidSynth is a software synthesizer based on the SoundFont 2 specifications. From 2.5.0 until 2.5.6, the native DLS loader assigns file-controlled wsmp.loop_start and wsmp.loop_length values to samples without calling …",
+      "released": "2026-09-18T20:17:00Z",
+      "updated": "2026-09-23T23:31:26Z",
+      "cves": [
+        "CVE-2026-61721"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: fluidsynth"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-3998",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "vLLM before 0.29.0 validates allowed_token_ids against tokenizer length instead of model output logits width in SamplingParams._validate_allowed_token_ids(). Attackers can supply token IDs above the output vocabulary th…",
+      "url": "https://www.vulncheck.com/advisories/vllm-before-0.29.0-cross-request-logits-corruption-via-allowed-token-ids",
+      "released": "2026-09-18T20:17:34Z",
+      "updated": "2026-09-29T08:46:05Z",
+      "cves": [
+        "CVE-2026-93840"
+      ],
+      "products": [
+        "PyPI: vllm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vllm 0.29.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-3999",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "vLLM through 0.29.0 contains a memory corruption vulnerability in the Triton _bincount_kernel where prompt token IDs index the penalty prompt-presence bitset without bounds checking against vocabulary size. Attackers ca…",
+      "url": "https://www.vulncheck.com/advisories/vllm-through-0.29.0-adjacent-request-sampler-state-corruption-via-unvalidated-prompt-token-ids",
+      "released": "2026-09-18T20:17:34Z",
+      "updated": "2026-09-29T08:46:05Z",
+      "cves": [
+        "CVE-2026-93841"
+      ],
+      "products": [
+        "PyPI: vllm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vllm 0.30.0",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

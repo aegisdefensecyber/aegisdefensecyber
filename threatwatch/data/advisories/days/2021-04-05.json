@@ -1,8 +1,38 @@
 {
   "schemaVersion": 1,
   "date": "2021-04-05",
-  "count": 1,
+  "count": 2,
   "items": [
+    {
+      "id": "RHSA-2021:1063",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: openssl security update",
+      "url": "https://access.redhat.com/errata/RHSA-2021:1063",
+      "released": "2021-04-05T13:48:26Z",
+      "updated": "2026-09-21T05:39:44Z",
+      "cves": [
+        "CVE-2021-3449"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS EUS (v. 8.2)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258 For the upda…",
+          "u": "https://access.redhat.com/errata/RHSA-2021:1063"
+        },
+        {
+          "t": "This flaw can be mitigated by disabling TLS renegotiation on servers compiled with OpenSSL. It is enabled by default, but can be disabled for servers which do …",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
     {
       "id": "openSUSE-SU-2021:0513-1",
       "src": "csaf_opensuse",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2021-03-30",
-  "count": 2,
+  "count": 4,
   "items": [
     {
       "id": "openSUSE-SU-2021:0485-1",
@@ -19,6 +19,37 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 15.2"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-RU-2021:0985-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Recommended update for the Azure SDK and CLI",
+      "url": "https://lists.suse.com/pipermail/sle-updates/2021-March/018406.html",
+      "released": "2021-03-30T12:43:56Z",
+      "updated": "2026-09-15T08:47:25Z",
+      "cves": [
+        "CVE-2020-14343",
+        "CVE-2020-25659"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Basesystem 15 SP2",
+        "SUSE Linux Enterprise Server 15 SP2",
+        "SUSE Linux Enterprise Desktop 15 SP2",
+        "SUSE Linux Enterprise Server for SAP Applications 15 SP2",
+        "SUSE Linux Enterprise High Performance Computing 15 SP2"
       ],
       "fix": [
         {
@@ -52,6 +83,41 @@
       "fix": [
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2021:1024",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: openssl security update",
+      "url": "https://access.redhat.com/errata/RHSA-2021:1024",
+      "released": "2021-03-30T14:40:51Z",
+      "updated": "2026-10-08T23:51:14Z",
+      "cves": [
+        "CVE-2021-3449",
+        "CVE-2021-3450"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258 For the upda…",
+          "u": "https://access.redhat.com/errata/RHSA-2021:1024"
+        },
+        {
+          "t": "This flaw can be mitigated by disabling TLS renegotiation on servers compiled with OpenSSL. It is enabled by default, but can be disabled for servers which do …",
+          "u": null
+        },
+        {
+          "t": "The following conditions have to be met for an application compiled with OpenSSL to be vulnerable: - the CA trusted by the system must issue or have issued cer…",
           "u": null
         }
       ],

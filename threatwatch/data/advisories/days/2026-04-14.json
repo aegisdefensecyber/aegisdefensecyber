@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-14",
-  "count": 22,
+  "count": 42,
   "items": [
     {
       "id": "openSUSE-SU-2026:10540-1",
@@ -198,6 +198,44 @@
     },
     {
       "id": "SSA-628843",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-628843: Out of Bound Read Vulnerability in TPM 2.0",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-628843.html",
+      "released": "2026-04-14T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2025-2884"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.6,
+      "products": [
+        "SIMATIC CN 4100",
+        "SIMATIC Field PG M5",
+        "SIMATIC Field PG M6",
+        "SIMATIC IPC BX-32A",
+        "SIMATIC IPC BX-39A",
+        "SIMATIC IPC BX-56A"
+      ],
+      "fix": [
+        {
+          "t": "Update to V21.01.20 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109763408/"
+        },
+        {
+          "t": "Update to V25.02.16 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109763408/"
+        },
+        {
+          "t": "Update to V26.01.14 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109763408/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-628843",
       "src": "direct_csaf",
       "vendor": "Siemens",
       "title": "CVE-2025-2884",
@@ -229,6 +267,140 @@
         {
           "t": "Update to V25.02.16 or later version",
           "u": "https://support.industry.siemens.com/cs/ww/en/view/109763408/"
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-NH62318",
+      "src": "cleanstart",
+      "title": "Security fixes for ghsa-72hv-8253-57qq applied in versions: 3.6.4-r4",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NH62318.json",
+      "released": "2026-04-14T00:38:02Z",
+      "updated": "2026-09-04T13:33:44Z",
+      "products": [
+        "CleanStart: apache-zookeeper"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-zookeeper 3.6.4-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-KA64649",
+      "src": "cleanstart",
+      "title": "Security fixes for ghsa-72hv-8253-57qq applied in versions: 3.8.6-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KA64649.json",
+      "released": "2026-04-14T00:38:03Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "products": [
+        "CleanStart: apache-zookeeper"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-zookeeper 3.8.6-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-UA56590",
+      "src": "cleanstart",
+      "title": "Security fixes for ghsa-72hv-8253-57qq, ghsa-qqpg-mvqg-649v applied in versions: 3.9.4-r0, 3.9.4-r6",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-UA56590.json",
+      "released": "2026-04-14T00:38:03Z",
+      "updated": "2026-09-09T10:17:53Z",
+      "products": [
+        "CleanStart: apache-zookeeper"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-zookeeper 3.9.4-r6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-JH41080",
+      "src": "cleanstart",
+      "title": "In libexpat before 2",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JH41080.json",
+      "released": "2026-04-14T00:41:12Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2025-13151",
+        "CVE-2026-22695",
+        "CVE-2026-22801",
+        "CVE-2026-24515",
+        "CVE-2026-25210"
+      ],
+      "products": [
+        "CleanStart: apache-zookeeper"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-zookeeper 3.7.2-r5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-UN47141",
+      "src": "cleanstart",
+      "title": "In libexpat before 2",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-UN47141.json",
+      "released": "2026-04-14T00:42:12Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2025-13151",
+        "CVE-2026-22695",
+        "CVE-2026-22801",
+        "CVE-2026-24515",
+        "CVE-2026-25210"
+      ],
+      "products": [
+        "CleanStart: apache-zookeeper"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-zookeeper 3.9.5-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-WA14162",
+      "src": "cleanstart",
+      "title": "Delete function fails to properly validate offsets when processing malformed JSON input",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-WA14162.json",
+      "released": "2026-04-14T00:42:42Z",
+      "updated": "2026-09-09T10:55:12Z",
+      "cves": [
+        "CVE-2026-24051",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32285",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-39882",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: prometheus"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in prometheus 3.5.1-r1",
+          "u": null
         }
       ],
       "seen": "2026-11-26"
@@ -342,6 +514,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BELL-CVE-2026-23459",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-23459",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-23459",
+      "released": "2026-04-14T06:11:08Z",
+      "updated": "2026-09-25T20:01:29Z",
+      "cves": [
+        "CVE-2026-23459"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-32157",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -367,6 +561,125 @@
         {
           "t": "1.2.7099.0:Security Update:https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/windowsdesktop-whatsnew",
           "u": "https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/windowsdesktop-whatsnew"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1307-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for strongswan",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261307-1/",
+      "released": "2026-04-14T10:35:42Z",
+      "updated": "2026-09-16T19:14:54Z",
+      "cves": [
+        "CVE-2026-25075"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1308-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for sudo",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261308-1/",
+      "released": "2026-04-14T10:38:01Z",
+      "updated": "2026-09-16T19:14:56Z",
+      "cves": [
+        "CVE-2026-35535"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.5",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5-ESPOS",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5-LTSS",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5",
+        "SUSE Linux Enterprise Server 15 SP5-LTSS"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1312-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for bind",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261312-1/",
+      "released": "2026-04-14T10:46:32Z",
+      "updated": "2026-09-16T19:15:01Z",
+      "cves": [
+        "CVE-2026-1519"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 15 SP6-LTSS",
+        "SUSE Linux Enterprise Server 15 SP6",
+        "SUSE Linux Enterprise Server for SAP Applications 15 SP6",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1314-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for ignition",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261314-1/",
+      "released": "2026-04-14T11:07:12Z",
+      "updated": "2026-09-16T19:15:03Z",
+      "cves": [
+        "CVE-2026-33186"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for HPC 15 SP7",
+        "SUSE Linux Enterprise High Performance Computing 15 SP7",
+        "SUSE Linux Enterprise Server 15 SP6-LTSS",
+        "SUSE Linux Enterprise Server 15 SP6",
+        "SUSE Linux Enterprise Server for SAP Applications 15 SP6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
         }
       ],
       "lang": "en",
@@ -399,6 +712,80 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RUSTSEC-2026-0098",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Name constraints for URI names were incorrectly accepted",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0098.html",
+      "released": "2026-04-14T12:00:00Z",
+      "updated": "2026-09-19T08:42:27Z",
+      "cves": [
+        "CVE-2026-93600"
+      ],
+      "products": [
+        "crates.io: rustls-webpki"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rustls-webpki 0.103.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in rustls-webpki 0.104.0-alpha.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0099",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Name constraints were accepted for certificates asserting a wildcard name",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0099.html",
+      "released": "2026-04-14T12:00:00Z",
+      "updated": "2026-09-19T08:42:27Z",
+      "cves": [
+        "CVE-2026-93601"
+      ],
+      "products": [
+        "crates.io: rustls-webpki"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rustls-webpki 0.103.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in rustls-webpki 0.104.0-alpha.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0103",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Use-After-Free and Double Free in IntoIter::drop When Element Drop Panics",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0103.html",
+      "released": "2026-04-14T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2026-6654"
+      ],
+      "products": [
+        "crates.io: thin-vec"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thin-vec 0.2.16",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20532-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -414,6 +801,36 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1324-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for clamav",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261324-1/",
+      "released": "2026-04-14T13:15:31Z",
+      "updated": "2026-09-16T19:15:10Z",
+      "cves": [
+        "CVE-2026-20031"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
       ],
       "fix": [
         {
@@ -573,6 +990,137 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1329-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for xwayland",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261329-1/",
+      "released": "2026-04-14T17:06:20Z",
+      "updated": "2026-09-16T19:15:14Z",
+      "cves": [
+        "CVE-2026-33999",
+        "CVE-2026-34000",
+        "CVE-2026-34001",
+        "CVE-2026-34002",
+        "CVE-2026-34003"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1331-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for xorg-x11-server",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261331-1/",
+      "released": "2026-04-14T17:11:37Z",
+      "updated": "2026-09-16T19:15:17Z",
+      "cves": [
+        "CVE-2026-33999",
+        "CVE-2026-34000",
+        "CVE-2026-34001",
+        "CVE-2026-34002",
+        "CVE-2026-34003"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 15 SP6-LTSS",
+        "SUSE Linux Enterprise Server 15 SP6",
+        "SUSE Linux Enterprise Server for SAP Applications 15 SP6",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1332-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for xorg-x11-server",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261332-1/",
+      "released": "2026-04-14T17:15:06Z",
+      "updated": "2026-09-16T19:15:18Z",
+      "cves": [
+        "CVE-2026-33999",
+        "CVE-2026-34000",
+        "CVE-2026-34001",
+        "CVE-2026-34002",
+        "CVE-2026-34003"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1335-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for xorg-x11-server",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261335-1/",
+      "released": "2026-04-14T17:28:43Z",
+      "updated": "2026-09-16T19:15:20Z",
+      "cves": [
+        "CVE-2026-33999",
+        "CVE-2026-34000",
+        "CVE-2026-34001",
+        "CVE-2026-34002",
+        "CVE-2026-34003"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5-ESPOS",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5-LTSS",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5",
+        "SUSE Linux Enterprise Server 15 SP5-LTSS",
+        "SUSE Linux Enterprise Server 15 SP5"
       ],
       "fix": [
         {

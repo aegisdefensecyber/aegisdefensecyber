@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-07",
-  "count": 99,
+  "count": 113,
   "items": [
     {
       "id": "msrc_CVE-2026-55971",
@@ -144,6 +144,18 @@
         "azl4 python-furo 0:2025.09.25-5.azl4"
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1121",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Heap-buffer-overflow in cairo_type1_font_subset_for_each_glyph",
+      "released": "2026-08-07T00:22:32Z",
+      "updated": "2026-11-06T14:19:41Z",
+      "products": [
+        "OSS-Fuzz: poppler"
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -2399,6 +2411,277 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "PYSEC-2026-3954",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "A vulnerability in `nltk.downloader` in nltk/nltk versions <= 3.9.4 allows for cross-package resource and model poisoning. The downloader extracts package archives into shared namespaces such as `corpora/` and `taggers/…",
+      "url": "https://github.com/advisories/GHSA-ffj6-66c4-86gw",
+      "released": "2026-08-07T07:16:26Z",
+      "updated": "2026-09-10T12:38:45Z",
+      "cves": [
+        "CVE-2026-12261"
+      ],
+      "products": [
+        "PyPI: nltk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nltk 3.10.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95481",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-18938 affecting package p11-kit for versions less than 0.26.5-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18938",
+      "released": "2026-08-07T09:16:58Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-18938"
+      ],
+      "products": [
+        "Azure Linux: p11-kit"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in p11-kit 0.26.5-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0345",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Untrusted labels can inject SVG attributes, CSS values, and terminal escape sequences",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0345.html",
+      "released": "2026-08-07T12:00:00Z",
+      "updated": "2026-10-13T13:53:07Z",
+      "products": [
+        "crates.io: kuva"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kuva 0.3.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in kuva 0.4.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSEC-2026-14",
+      "src": "osv_ocaml",
+      "vendor": "Ocaml",
+      "title": "RSA signature verification raises undocumented exception",
+      "released": "2026-08-07T13:00:00Z",
+      "updated": "2026-09-10T09:45:00Z",
+      "cves": [
+        "CVE-2026-87735"
+      ],
+      "products": [
+        "opam: mirage-crypto-pk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mirage-crypto-pk 2.3.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in a0f59a0c90eb067505b55a03d3bb104eacd6dd33",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSEC-2026-15",
+      "src": "osv_ocaml",
+      "vendor": "Ocaml",
+      "title": "EC public key out of bounds read",
+      "released": "2026-08-07T13:00:00Z",
+      "updated": "2026-09-10T09:45:00Z",
+      "cves": [
+        "CVE-2026-87736"
+      ],
+      "products": [
+        "opam: mirage-crypto-ec"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mirage-crypto-ec 2.3.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in 1f0bf67044e67cf6e46911fcd77a0ff706b6c3e7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95453",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-20339 affecting package clamav for versions less than 1.5.4-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20339",
+      "released": "2026-08-07T17:17:02Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-20339"
+      ],
+      "products": [
+        "Azure Linux: clamav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in clamav 1.5.4-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95456",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-20337 affecting package clamav for versions less than 1.5.4-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20337",
+      "released": "2026-08-07T17:17:02Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-20337"
+      ],
+      "products": [
+        "Azure Linux: clamav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in clamav 1.5.4-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95459",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-20338 affecting package clamav for versions less than 1.5.4-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20338",
+      "released": "2026-08-07T17:17:02Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-20338"
+      ],
+      "products": [
+        "Azure Linux: clamav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in clamav 1.5.4-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95441",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-20348 affecting package clamav for versions less than 1.5.4-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20348",
+      "released": "2026-08-07T17:17:03Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-20348"
+      ],
+      "products": [
+        "Azure Linux: clamav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in clamav 1.5.4-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95444",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-20345 affecting package clamav for versions less than 1.5.4-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20345",
+      "released": "2026-08-07T17:17:03Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-20345"
+      ],
+      "products": [
+        "Azure Linux: clamav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in clamav 1.5.4-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95447",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-20347 affecting package clamav for versions less than 1.5.4-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20347",
+      "released": "2026-08-07T17:17:03Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-20347"
+      ],
+      "products": [
+        "Azure Linux: clamav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in clamav 1.5.4-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95450",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-20346 affecting package clamav for versions less than 1.5.4-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20346",
+      "released": "2026-08-07T17:17:03Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-20346"
+      ],
+      "products": [
+        "Azure Linux: clamav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in clamav 1.5.4-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "RHSA-2026:51861",
       "src": "direct_csaf",
       "vendor": "Red Hat",
@@ -2418,6 +2701,28 @@
         },
         {
           "t": "As a workaround, use 'restorecon -R /' directly instead of 'fixfiles relabel' or 'fixfiles restore' to perform filesystem relabeling. This avoids the vulnerable /tmp-specific find+chcon code path entirely. Note that this skips the /tmp cle…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-94610",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50540 affecting package kata-containers for versions less than 3.32.0.kata0-5",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50540",
+      "released": "2026-08-07T21:17:28Z",
+      "updated": "2026-09-22T05:34:53Z",
+      "cves": [
+        "CVE-2026-50540"
+      ],
+      "products": [
+        "Azure Linux: kata-containers"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kata-containers 3.32.0.kata0-5",
           "u": null
         }
       ],

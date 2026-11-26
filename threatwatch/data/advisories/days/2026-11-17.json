@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-17",
-  "count": 67,
+  "count": 85,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1547",
@@ -324,6 +324,42 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "OSV-2026-1575",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Use-of-uninitialized-value in zxc_decompress_chunk_wrapper_avx2",
+      "released": "2026-11-17T00:06:55Z",
+      "updated": "2026-11-17T00:06:55Z",
+      "products": [
+        "OSS-Fuzz: zxc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in zxc 1ec7c82e2eb8ba9b02f19a12d68766fabf044d84",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1576",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Use-of-uninitialized-value in fuzz_variants.c",
+      "released": "2026-11-17T00:11:21Z",
+      "updated": "2026-11-17T00:11:21Z",
+      "products": [
+        "OSS-Fuzz: zxc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in zxc 1ec7c82e2eb8ba9b02f19a12d68766fabf044d84",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-99294",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -452,6 +488,42 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "HSEC-2026-0017",
+      "src": "osv_haskell",
+      "vendor": "Haskell",
+      "title": "Out-of-bounds writes in BMP RLE and TIFF strip decoding",
+      "released": "2026-11-17T09:55:51Z",
+      "updated": "2026-11-17T09:55:51Z",
+      "products": [
+        "Hackage: JuicyPixels"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in JuicyPixels 3.3.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "HSEC-2026-0016",
+      "src": "osv_haskell",
+      "vendor": "Haskell",
+      "title": "Improper IP address validation in validateCertificateName",
+      "released": "2026-11-17T09:58:05Z",
+      "updated": "2026-11-17T09:58:05Z",
+      "products": [
+        "Hackage: crypton-x509-validation"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in crypton-x509-validation 1.10.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "Advisory2026-13_VDE-2026-145",
       "src": "csaf_codesysgmbh",
       "vendor": "CODESYS",
@@ -557,6 +629,37 @@
     },
     {
       "id": "PPSA-2026-007",
+      "src": "csaf_pilzgmbhcokg",
+      "vendor": "Pilz",
+      "title": "Pilz: Vulnerabilities in 'PHP' (PHP2Shell) for Industrial PC IndustrialPI",
+      "url": "https://certvde.com/en/advisories/VDE-2026-153/",
+      "released": "2026-11-17T11:00:00Z",
+      "updated": "2026-11-17T11:00:00Z",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Hardware",
+        "IndustrialPI 4",
+        "Firmware",
+        "IndustrialPI OS",
+        "Software",
+        "libapache2-mod-php8.2"
+      ],
+      "fix": [
+        {
+          "t": "Update the 'libapache2-mod-php8.2' package to version 8.2.35-1 or higher.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PPSA-2026-007",
       "src": "direct_csaf",
       "vendor": "Pilz",
       "title": "RCE via OOM corruption",
@@ -580,6 +683,216 @@
           "t": "Update the 'libapache2-mod-php8.2' package to version 8.2.35-1 or higher.",
           "u": null
         }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0560",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "STARTTLS response injection allows a man-in-the-middle to forge SMTP replies",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0560.html",
+      "released": "2026-11-17T12:00:00Z",
+      "updated": "2026-11-18T09:14:42Z",
+      "products": [
+        "crates.io: lettre"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in lettre 0.11.24",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0561",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Missing dot-stuffing after a bare LF or CR allows SMTP command injection",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0561.html",
+      "released": "2026-11-17T12:00:00Z",
+      "updated": "2026-11-18T09:14:42Z",
+      "products": [
+        "crates.io: lettre"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in lettre 0.11.24",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0562",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Panic on an `EHLO` reply line of only white space allows denial of service",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0562.html",
+      "released": "2026-11-17T12:00:00Z",
+      "updated": "2026-11-18T09:14:42Z",
+      "products": [
+        "crates.io: lettre"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in lettre 0.11.24",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0563",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Messages for an address with a quoted local part are sent to a different address",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0563.html",
+      "released": "2026-11-17T12:00:00Z",
+      "updated": "2026-11-18T09:14:42Z",
+      "products": [
+        "crates.io: lettre"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in lettre 0.11.24",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0564",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Panic on a mailbox display name containing CR or LF allows denial of service",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0564.html",
+      "released": "2026-11-17T12:00:00Z",
+      "updated": "2026-11-18T09:14:42Z",
+      "products": [
+        "crates.io: lettre"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in lettre 0.11.24",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0565",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Unbounded buffering of an SMTP reply allows a malicious server to exhaust memory",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0565.html",
+      "released": "2026-11-17T12:00:00Z",
+      "updated": "2026-11-18T09:14:42Z",
+      "products": [
+        "crates.io: lettre"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in lettre 0.11.24",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-ltmo-y6gy-6wai-exly",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cyrus SASL through 2.1.28 contains an authentication bypass vulnerability in the SRP server mechanism because…",
+      "url": "https://scout.docker.com/v/DHI-ltmo-y6gy-6wai-exly",
+      "released": "2026-11-17T12:48:58Z",
+      "updated": "2026-11-20T05:30:09Z",
+      "cves": [
+        "CVE-2026-129483"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-fky3-x6ec-spxd-i7lb",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A flaw was found in D-Bus. In configurations where the daemon falls back to using the Unix select() mechanism for event…",
+      "url": "https://scout.docker.com/v/DHI-fky3-x6ec-spxd-i7lb",
+      "released": "2026-11-17T15:38:48Z",
+      "updated": "2026-11-20T04:09:38Z",
+      "cves": [
+        "CVE-2026-128885"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-4sul-dqbe-aehs-soyb",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "An issue was discovered in systemd 253. An attacker can modify a sealed log file such that, in some views, not all…",
+      "url": "https://scout.docker.com/v/DHI-4sul-dqbe-aehs-soyb",
+      "released": "2026-11-17T17:52:21Z",
+      "updated": "2026-11-23T22:30:47Z",
+      "cves": [
+        "CVE-2023-31437"
+      ],
+      "products": [
+        "Docker Hardened Images: systemd"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-7txa-iidm-orml-txe7",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "An issue was discovered in systemd 253. An attacker can truncate a sealed log file and then resume log sealing such…",
+      "url": "https://scout.docker.com/v/DHI-7txa-iidm-orml-txe7",
+      "released": "2026-11-17T17:52:21Z",
+      "updated": "2026-11-23T22:41:20Z",
+      "cves": [
+        "CVE-2023-31438"
+      ],
+      "products": [
+        "Docker Hardened Images: systemd"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-wrry-fipi-h2vz-t3ah",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "An issue was discovered in systemd 253. An attacker can modify the contents of past events in a sealed log file and…",
+      "url": "https://scout.docker.com/v/DHI-wrry-fipi-h2vz-t3ah",
+      "released": "2026-11-17T17:52:21Z",
+      "updated": "2026-11-23T22:55:10Z",
+      "cves": [
+        "CVE-2023-31439"
+      ],
+      "products": [
+        "Docker Hardened Images: systemd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in systemd 257.13-1~deb13u1+dhi0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-xofi-7r32-gycl-5pn4",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "systemd, when updating file permissions, allows local users to change the permissions and SELinux security contexts for…",
+      "url": "https://scout.docker.com/v/DHI-xofi-7r32-gycl-5pn4",
+      "released": "2026-11-17T17:52:21Z",
+      "updated": "2026-11-23T14:53:28Z",
+      "cves": [
+        "CVE-2013-4392"
+      ],
+      "products": [
+        "Docker Hardened Images: systemd"
       ],
       "seen": "2026-11-26"
     },
@@ -1186,7 +1499,7 @@
       "title": "Oracle Java und GraalVM: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4624",
       "released": "2026-11-17T23:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-114939",
         "CVE-2026-114940",
@@ -1206,8 +1519,8 @@
         "Corretto",
         "Amazon Linux 2",
         "Azul Zulu",
-        "Catalyst",
-        "Cisco License On-Prem"
+        "Brocade SANnav",
+        "Catalyst"
       ],
       "lang": "de",
       "seen": "2026-11-26"
@@ -2038,6 +2351,18 @@
         "MISP"
       ],
       "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4388",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "agent-framework 1.26.1 and 1.26.2 contain credential-stealing code",
+      "released": "2026-11-17T23:18:29Z",
+      "updated": "2026-11-17T23:18:29Z",
+      "products": [
+        "PyPI: agent-framework"
+      ],
       "seen": "2026-11-26"
     }
   ]

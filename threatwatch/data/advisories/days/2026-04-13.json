@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-13",
-  "count": 13,
+  "count": 37,
   "items": [
     {
       "id": "openSUSE-SU-2026:10538-1",
@@ -82,6 +82,311 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:7666",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: nghttp2 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:7666",
+      "released": "2026-04-13T01:43:07Z",
+      "updated": "2026-10-15T19:17:45Z",
+      "cves": [
+        "CVE-2026-27135"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)",
+        "Red Hat Enterprise Linux BaseOS (v. 10)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:7666"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:7667",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: nghttp2 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:7667",
+      "released": "2026-04-13T02:25:06Z",
+      "updated": "2026-10-15T19:17:45Z",
+      "cves": [
+        "CVE-2026-27135"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 8)",
+        "Red Hat Enterprise Linux CRB (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:7667"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:7668",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: nghttp2 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:7668",
+      "released": "2026-04-13T02:37:51Z",
+      "updated": "2026-10-15T19:17:48Z",
+      "cves": [
+        "CVE-2026-27135"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 9)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:7668"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-airflow-2025-57735",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Airflow: Airflow Logout Not Invalidating JWT",
+      "released": "2026-04-13T05:37:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-57735"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: airflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in airflow 3.2.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-airflow-2026-34538",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Airflow: Authorization bypass in DagRun wait endpoint (XCom exposure)",
+      "released": "2026-04-13T05:38:18Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-34538"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: airflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in airflow 3.2.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elk-2026-33458",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Server-Side Request Forgery (SSRF) in Kibana One Workflow Leading to Information Disclosure",
+      "url": "https://discuss.elastic.co/t/kibana-9-3-3-security-update-esa-2026-28/385815",
+      "released": "2026-04-13T05:38:33Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-33458"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 9.3.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elk-2026-33459",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Uncontrolled Resource Consumption in Kibana Leading to Denial of Service",
+      "url": "https://discuss.elastic.co/t/kibana-8-19-14-9-2-8-9-3-3-security-update-esa-2026-26/385814",
+      "released": "2026-04-13T05:38:35Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-33459"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 8.19.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.2.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.3.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elk-2026-33460",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Incorrect Authorization in Kibana Fleet Leading to Information Disclosure",
+      "url": "https://discuss.elastic.co/t/kibana-8-19-14-9-2-8-9-3-3-security-update-esa-2026-25/385813",
+      "released": "2026-04-13T05:38:37Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-33460"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 8.19.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.2.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.3.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elk-2026-4498",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Execution with Unnecessary Privileges in Kibana Leading to reading index data beyond their direct Elasticsearch RBAC scope",
+      "url": "https://discuss.elastic.co/t/kibana-8-19-14-9-2-8-9-3-3-security-update-esa-2026-21/385811",
+      "released": "2026-04-13T05:38:40Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-4498"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 8.19.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.2.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.3.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1288-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 74 for SUSE Linux Enterprise 12 SP5)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261288-1/",
+      "released": "2026-04-13T06:34:14Z",
+      "updated": "2026-09-16T19:14:36Z",
+      "cves": [
+        "CVE-2023-53794",
+        "CVE-2025-71120",
+        "CVE-2026-22999",
+        "CVE-2026-23074",
+        "CVE-2026-23209"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1292-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python312",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261292-1/",
+      "released": "2026-04-13T08:10:43Z",
+      "updated": "2026-09-16T19:14:40Z",
+      "cves": [
+        "CVE-2025-13462",
+        "CVE-2026-3479",
+        "CVE-2026-3644",
+        "CVE-2026-4224",
+        "CVE-2026-4519"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 15 SP6-LTSS",
+        "SUSE Linux Enterprise Server 15 SP6",
+        "SUSE Linux Enterprise Server for SAP Applications 15 SP6",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20576-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -97,6 +402,64 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1293-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 75 for SUSE Linux Enterprise 12 SP5)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261293-1/",
+      "released": "2026-04-13T08:35:44Z",
+      "updated": "2026-09-16T19:14:41Z",
+      "cves": [
+        "CVE-2023-53794",
+        "CVE-2025-71120",
+        "CVE-2026-22999",
+        "CVE-2026-23074",
+        "CVE-2026-23209"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1294-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 77 for SUSE Linux Enterprise 12 SP5)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261294-1/",
+      "released": "2026-04-13T09:04:33Z",
+      "updated": "2026-09-16T19:14:42Z",
+      "cves": [
+        "CVE-2023-53794",
+        "CVE-2026-23074",
+        "CVE-2026-23209"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 12 SP5"
       ],
       "fix": [
         {
@@ -133,6 +496,35 @@
       "fix": [
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:7848",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs bug fix and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:7848",
+      "released": "2026-04-13T10:39:02Z",
+      "updated": "2026-09-08T05:26:57Z",
+      "cves": [
+        "CVE-2026-35166"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.6,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:7848"
+        },
+        {
+          "t": "To mitigate this issue, ensure that all markdown content processed by Hugo originates from trusted sources. Alternatively, implement custom render hooks for li…",
           "u": null
         }
       ],
@@ -224,6 +616,71 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:1296-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python39",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261296-1/",
+      "released": "2026-04-13T12:32:48Z",
+      "updated": "2026-09-16T19:14:43Z",
+      "cves": [
+        "CVE-2025-13462",
+        "CVE-2026-3644",
+        "CVE-2026-4224",
+        "CVE-2026-4519"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 15 SP5-LTSS",
+        "SUSE Linux Enterprise Server 15 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 15 SP5",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1297-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 71 for SUSE Linux Enterprise 12 SP5)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261297-1/",
+      "released": "2026-04-13T12:42:14Z",
+      "updated": "2026-09-16T19:14:44Z",
+      "cves": [
+        "CVE-2023-53794",
+        "CVE-2025-39973",
+        "CVE-2025-40018",
+        "CVE-2025-71120",
+        "CVE-2026-22999",
+        "CVE-2026-23074",
+        "CVE-2026-23209"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20578-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -280,6 +737,38 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:1298-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 72 for SUSE Linux Enterprise 12 SP5)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261298-1/",
+      "released": "2026-04-13T15:04:44Z",
+      "updated": "2026-09-16T19:14:45Z",
+      "cves": [
+        "CVE-2023-53794",
+        "CVE-2025-39973",
+        "CVE-2025-40018",
+        "CVE-2025-71120",
+        "CVE-2026-22999",
+        "CVE-2026-23074",
+        "CVE-2026-23209"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20525-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -301,6 +790,177 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1300-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for GraphicsMagick",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261300-1/",
+      "released": "2026-04-13T15:58:01Z",
+      "updated": "2026-09-16T19:14:48Z",
+      "cves": [
+        "CVE-2026-26284",
+        "CVE-2026-28690"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1301-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for tigervnc",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261301-1/",
+      "released": "2026-04-13T16:01:23Z",
+      "updated": "2026-09-16T19:14:49Z",
+      "cves": [
+        "CVE-2026-34352"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1302-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for tigervnc",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261302-1/",
+      "released": "2026-04-13T16:02:16Z",
+      "updated": "2026-09-16T19:14:50Z",
+      "cves": [
+        "CVE-2026-34352"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5-ESPOS",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5-LTSS",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5",
+        "SUSE Linux Enterprise Server 15 SP5-LTSS",
+        "SUSE Linux Enterprise Server 15 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1304-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 73 for SUSE Linux Enterprise 12 SP5)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261304-1/",
+      "released": "2026-04-13T16:04:42Z",
+      "updated": "2026-09-16T19:14:52Z",
+      "cves": [
+        "CVE-2023-53794",
+        "CVE-2025-39973",
+        "CVE-2025-40018",
+        "CVE-2025-71120",
+        "CVE-2026-22999",
+        "CVE-2026-23074",
+        "CVE-2026-23209"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-83051",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-6100 affecting package python3 for versions less than 3.12.9-14",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6100",
+      "released": "2026-04-13T18:16:31Z",
+      "updated": "2026-09-08T17:33:11Z",
+      "cves": [
+        "CVE-2026-6100"
+      ],
+      "products": [
+        "Azure Linux: python3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python3 3.12.9-14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1305-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 76 for SUSE Linux Enterprise 12 SP5)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261305-1/",
+      "released": "2026-04-13T18:34:02Z",
+      "updated": "2026-09-16T19:14:53Z",
+      "cves": [
+        "CVE-2023-53794",
+        "CVE-2025-71120",
+        "CVE-2026-22999",
+        "CVE-2026-23074",
+        "CVE-2026-23209"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 12 SP5"
       ],
       "fix": [
         {
@@ -404,6 +1064,28 @@
         "Azure Linux"
       ],
       "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-83054",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-4786 affecting package python3 for versions less than 3.12.9-14",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-4786",
+      "released": "2026-04-13T22:16:30Z",
+      "updated": "2026-09-08T17:33:11Z",
+      "cves": [
+        "CVE-2026-4786"
+      ],
+      "products": [
+        "Azure Linux: python3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python3 3.12.9-14",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

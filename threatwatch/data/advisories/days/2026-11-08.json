@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-08",
-  "count": 49,
+  "count": 170,
   "items": [
     {
       "id": "openSUSE-SU-2026:12481-1",
@@ -375,6 +375,81 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RLSA-2023:6944",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: protobuf-c security update",
+      "url": "https://errata.rockylinux.org/RLSA-2023:6944",
+      "released": "2026-11-08T00:01:19Z",
+      "updated": "2026-11-22T00:04:20Z",
+      "cves": [
+        "CVE-2022-48468"
+      ],
+      "products": [
+        "Rocky Linux: protobuf-c",
+        "Rocky Linux: protobuf-c-compiler",
+        "Rocky Linux: protobuf-c-compiler-debuginfo",
+        "Rocky Linux: protobuf-c-debuginfo",
+        "Rocky Linux: protobuf-c-debugsource",
+        "Rocky Linux: protobuf-c-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in protobuf-c-debugsource 0:1.3.0-8.el8",
+          "u": null
+        },
+        {
+          "t": "Fixed in protobuf-c 0:1.3.0-8.el8",
+          "u": null
+        },
+        {
+          "t": "Fixed in protobuf-c-compiler 0:1.3.0-8.el8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1511",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Heap-use-after-free in lj_cconv_ct_ct",
+      "released": "2026-11-08T00:21:53Z",
+      "updated": "2026-11-08T00:21:53Z",
+      "products": [
+        "OSS-Fuzz: tarantool"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tarantool 68fe9c1da2cf4f4a2d83ce7356faf30cd1c9d250",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1512",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Heap-buffer-overflow in cram_encode_container",
+      "released": "2026-11-08T00:22:15Z",
+      "updated": "2026-11-12T14:23:55Z",
+      "products": [
+        "OSS-Fuzz: htslib"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in htslib 711871ab53f8133115dceed997d11f481c024e0a",
+          "u": null
+        },
+        {
+          "t": "Fixed in htslib ae5f79dd51cd296195293690b6f59f0b982ae877",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-100080",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -461,6 +536,1109 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-123496",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja veans before 2.7.1 Symlink Following in veans init",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123496",
+      "released": "2026-11-08T01:37:14Z",
+      "updated": "2026-11-12T12:09:11Z",
+      "cves": [
+        "CVE-2026-123496"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.8,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123500",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja before 2.7.1 Insecure Permissions on Dump Archive via vikunja dump",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123500",
+      "released": "2026-11-08T01:37:16Z",
+      "updated": "2026-11-12T12:17:18Z",
+      "cves": [
+        "CVE-2026-123500"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123504",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja 0.22.0 before 2.7.1 Webhook URL Credential Exposure to Read-Only Members",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123504",
+      "released": "2026-11-08T01:37:19Z",
+      "updated": "2026-11-12T12:19:23Z",
+      "cves": [
+        "CVE-2026-123504"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123507",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja 0.24.0 before 2.7.1 Denial of Service via Nil Bucket Filter",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123507",
+      "released": "2026-11-08T01:37:21Z",
+      "updated": "2026-11-12T13:57:08Z",
+      "cves": [
+        "CVE-2026-123507"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.1,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123508",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja before 2.7.1 Supply Chain Risk via Unpinned xgo Release Toolchain",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123508",
+      "released": "2026-11-08T01:37:22Z",
+      "updated": "2026-11-12T12:20:41Z",
+      "cves": [
+        "CVE-2026-123508"
+      ],
+      "sev": "LOW",
+      "cvss": 3.1,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123511",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja before 2.7.1 Resource Exhaustion via CalDAV VTODO RELATED-TO Entries",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123511",
+      "released": "2026-11-08T01:37:24Z",
+      "updated": "2026-11-12T13:58:29Z",
+      "cves": [
+        "CVE-2026-123511"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123512",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja before 2.7.1 Sensitive Token Exposure via URL Query in Access Logs",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123512",
+      "released": "2026-11-08T01:37:25Z",
+      "updated": "2026-11-12T12:21:38Z",
+      "cves": [
+        "CVE-2026-123512"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.4,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123515",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja before 2.7.1 Client-Side Request Forgery via Stored Rich-Text Images",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123515",
+      "released": "2026-11-08T01:37:27Z",
+      "updated": "2026-11-12T13:59:20Z",
+      "cves": [
+        "CVE-2026-123515"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.1,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123516",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja before 2.7.1 Resource Exhaustion via Vikunja-File ZIP Import",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123516",
+      "released": "2026-11-08T01:37:28Z",
+      "updated": "2026-11-12T12:32:15Z",
+      "cves": [
+        "CVE-2026-123516"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123519",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja before 2.7.1 Memory Exhaustion DoS via WeKan and Vikunja-File Imports",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123519",
+      "released": "2026-11-08T01:37:30Z",
+      "updated": "2026-11-12T14:00:45Z",
+      "cves": [
+        "CVE-2026-123519"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123520",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja 0.18.0 before 2.7.1 Privilege Escalation via Account Deletion",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123520",
+      "released": "2026-11-08T01:37:31Z",
+      "updated": "2026-11-12T12:35:04Z",
+      "cves": [
+        "CVE-2026-123520"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123523",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja before 2.7.1 Memory Exhaustion via Unbounded Avatar Size Cache",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123523",
+      "released": "2026-11-08T01:37:33Z",
+      "updated": "2026-11-12T14:03:34Z",
+      "cves": [
+        "CVE-2026-123523"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123524",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja 0.23.0 before 2.7.1 Information Disclosure via Webhook related_tasks Payload",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123524",
+      "released": "2026-11-08T01:37:34Z",
+      "updated": "2026-11-12T12:38:23Z",
+      "cves": [
+        "CVE-2026-123524"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123527",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja 2.4.0 before 2.7.1 API Token Scope Collision Authorization Bypass",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123527",
+      "released": "2026-11-08T01:37:36Z",
+      "updated": "2026-11-12T14:04:40Z",
+      "cves": [
+        "CVE-2026-123527"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.4,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123528",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja before 2.7.1 Insufficient Session Expiration via HTTP Token Middleware",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123528",
+      "released": "2026-11-08T01:37:36Z",
+      "updated": "2026-11-12T17:50:29Z",
+      "cves": [
+        "CVE-2026-123528"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.6,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123531",
+      "src": "cvelistv5",
+      "vendor": "go-vikunja",
+      "title": "Vikunja 1.0.0 before 2.7.1 Pagination Limit Bypass via page=0 Parameter",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123531",
+      "released": "2026-11-08T01:37:40Z",
+      "updated": "2026-11-12T14:06:05Z",
+      "cves": [
+        "CVE-2026-123531"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "go-vikunja vikunja"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123532",
+      "src": "cvelistv5",
+      "vendor": "GitoxideLabs",
+      "title": "gix-fs before 0.24.1 NTLM Credential Disclosure via Windows Symlink UNC Probe",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123532",
+      "released": "2026-11-08T01:37:40Z",
+      "updated": "2026-11-12T12:44:47Z",
+      "cves": [
+        "CVE-2026-123532"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "GitoxideLabs gitoxide"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123535",
+      "src": "cvelistv5",
+      "vendor": "tornadoweb",
+      "title": "Tornado before 6.6 Cookie Attribute Injection via set_cookie max_age",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123535",
+      "released": "2026-11-08T01:37:43Z",
+      "updated": "2026-11-12T14:06:57Z",
+      "cves": [
+        "CVE-2026-123535"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.2,
+      "products": [
+        "tornadoweb tornado"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123536",
+      "src": "cvelistv5",
+      "vendor": "OpenIdentityPlatform",
+      "title": "OpenAM before 16.1.4 SSRF via Federation Configuration Wizard Metadata URLs",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123536",
+      "released": "2026-11-08T01:37:43Z",
+      "updated": "2026-11-12T12:50:04Z",
+      "cves": [
+        "CVE-2026-123536"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.1,
+      "products": [
+        "OpenIdentityPlatform OpenAM"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123539",
+      "src": "cvelistv5",
+      "vendor": "OpenIdentityPlatform",
+      "title": "OpenAM before 16.1.4 Stored XSS via OAuth 2.0 Consent Page Display Name",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123539",
+      "released": "2026-11-08T01:37:45Z",
+      "updated": "2026-11-12T14:07:56Z",
+      "cves": [
+        "CVE-2026-123539"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.8,
+      "products": [
+        "OpenIdentityPlatform OpenAM"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123540",
+      "src": "cvelistv5",
+      "vendor": "OpenIdentityPlatform",
+      "title": "OpenAM before 16.1.4 Incomplete Attribute Encoding in SAML 1.x Form POST",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123540",
+      "released": "2026-11-08T01:37:46Z",
+      "updated": "2026-11-12T12:52:06Z",
+      "cves": [
+        "CVE-2026-123540"
+      ],
+      "sev": "LOW",
+      "cvss": 2,
+      "products": [
+        "OpenIdentityPlatform OpenAM"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123543",
+      "src": "cvelistv5",
+      "vendor": "OpenIdentityPlatform",
+      "title": "OpenAM before 16.1.4 Unauthenticated DoS via Unbounded Java Deserialisation",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123543",
+      "released": "2026-11-08T01:37:49Z",
+      "updated": "2026-11-12T14:08:49Z",
+      "cves": [
+        "CVE-2026-123543"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "OpenIdentityPlatform OpenAM",
+        "OpenIdentityPlatform OpenAM",
+        "OpenIdentityPlatform OpenAM",
+        "OpenIdentityPlatform OpenAM"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123544",
+      "src": "cvelistv5",
+      "vendor": "OpenIdentityPlatform",
+      "title": "OpenAM before 16.1.4 Insufficient Response Validation in Internal SOAP Channel",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123544",
+      "released": "2026-11-08T01:37:50Z",
+      "updated": "2026-11-12T12:53:17Z",
+      "cves": [
+        "CVE-2026-123544"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.8,
+      "products": [
+        "OpenIdentityPlatform OpenAM",
+        "OpenIdentityPlatform OpenAM",
+        "OpenIdentityPlatform OpenAM"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123547",
+      "src": "cvelistv5",
+      "vendor": "OpenIdentityPlatform",
+      "title": "OpenAM before 16.1.4 Open Redirect via SAML v2.0 RelayState",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123547",
+      "released": "2026-11-08T01:37:52Z",
+      "updated": "2026-11-13T03:00:28Z",
+      "cves": [
+        "CVE-2026-123547"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.7,
+      "products": [
+        "OpenIdentityPlatform OpenAM",
+        "OpenIdentityPlatform OpenAM"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123548",
+      "src": "cvelistv5",
+      "vendor": "OpenIdentityPlatform",
+      "title": "OpenAM before 16.1.4 Open Redirect via WS-Federation and SAML v2.0 Pages",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123548",
+      "released": "2026-11-08T01:37:52Z",
+      "updated": "2026-11-12T12:54:22Z",
+      "cves": [
+        "CVE-2026-123548"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.7,
+      "products": [
+        "OpenIdentityPlatform OpenAM",
+        "OpenIdentityPlatform OpenAM"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123549",
+      "src": "cvelistv5",
+      "vendor": "OpenIdentityPlatform",
+      "title": "OpenAM before 16.1.4 Privilege Escalation via Self-Registration Attribute Bypass",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123549",
+      "released": "2026-11-08T01:37:53Z",
+      "updated": "2026-11-12T18:06:05Z",
+      "cves": [
+        "CVE-2026-123549"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "OpenIdentityPlatform OpenAM"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123551",
+      "src": "cvelistv5",
+      "vendor": "OpenIdentityPlatform",
+      "title": "OpenAM 14.0.0 before 16.1.4 Session Token Disclosure via Notification WebSocket",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123551",
+      "released": "2026-11-08T01:37:54Z",
+      "updated": "2026-11-13T03:01:14Z",
+      "cves": [
+        "CVE-2026-123551"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 10,
+      "products": [
+        "OpenIdentityPlatform OpenAM",
+        "OpenIdentityPlatform OpenAM",
+        "OpenIdentityPlatform OpenAM"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123552",
+      "src": "cvelistv5",
+      "vendor": "OpenIdentityPlatform",
+      "title": "OpenAM before 16.1.4 SSRF and CRL Tampering via Certificate CRL Distribution Point",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123552",
+      "released": "2026-11-08T01:37:55Z",
+      "updated": "2026-11-12T12:56:09Z",
+      "cves": [
+        "CVE-2026-123552"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "OpenIdentityPlatform OpenAM"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123555",
+      "src": "cvelistv5",
+      "vendor": "ZcashFoundation",
+      "title": "Zebra 2.3.0 before 7.0.0 Denial of Service via Unscored Script Verification Failures",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123555",
+      "released": "2026-11-08T01:37:57Z",
+      "updated": "2026-11-13T03:02:08Z",
+      "cves": [
+        "CVE-2026-123555"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "ZcashFoundation zebra",
+        "ZcashFoundation zebra"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123556",
+      "src": "cvelistv5",
+      "vendor": "ZcashFoundation",
+      "title": "Zebra 4.5.0 before 7.0.0 Honest Peer Ban via Mempool Lock-Time Scoring",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123556",
+      "released": "2026-11-08T01:37:58Z",
+      "updated": "2026-11-12T12:57:04Z",
+      "cves": [
+        "CVE-2026-123556"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "ZcashFoundation zebra"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123559",
+      "src": "cvelistv5",
+      "vendor": "ZcashFoundation",
+      "title": "Zebra before 7.0.0 Denial of Service via Quadratic Sighash Computation",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123559",
+      "released": "2026-11-08T01:38:00Z",
+      "updated": "2026-11-13T03:02:45Z",
+      "cves": [
+        "CVE-2026-123559"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "ZcashFoundation zebra"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123560",
+      "src": "cvelistv5",
+      "vendor": "ZcashFoundation",
+      "title": "Zebra before 7.0.0 Sync Denial of Service via Forged Checkpoint Block Body",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123560",
+      "released": "2026-11-08T01:38:01Z",
+      "updated": "2026-11-12T12:59:51Z",
+      "cves": [
+        "CVE-2026-123560"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "ZcashFoundation zebra"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123563",
+      "src": "cvelistv5",
+      "vendor": "sveltejs",
+      "title": "Devalue before 5.9.3 Typed-Array Allocation Validation Bypass via parse",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123563",
+      "released": "2026-11-08T01:38:03Z",
+      "updated": "2026-11-13T03:03:19Z",
+      "cves": [
+        "CVE-2026-123563"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "sveltejs devalue"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123564",
+      "src": "cvelistv5",
+      "vendor": "sveltejs",
+      "title": "Sveltejs devalue before 5.9.3 Memory Exhaustion via uneval Sparse Arrays",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123564",
+      "released": "2026-11-08T01:38:03Z",
+      "updated": "2026-11-12T13:02:42Z",
+      "cves": [
+        "CVE-2026-123564"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "sveltejs devalue"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123567",
+      "src": "cvelistv5",
+      "vendor": "sveltejs",
+      "title": "Sveltejs devalue before 5.6.4 Prototype Injection via parse and unflatten",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123567",
+      "released": "2026-11-08T01:38:05Z",
+      "updated": "2026-11-13T03:03:53Z",
+      "cves": [
+        "CVE-2026-123567"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "sveltejs devalue"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123568",
+      "src": "cvelistv5",
+      "vendor": "sveltejs",
+      "title": "Sveltejs devalue before 5.6.3 Prototype Pollution via uneval Output",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123568",
+      "released": "2026-11-08T01:38:06Z",
+      "updated": "2026-11-12T13:03:37Z",
+      "cves": [
+        "CVE-2026-123568"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.4,
+      "products": [
+        "sveltejs devalue"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123571",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS from 0.26.0 before 0.26.2 Panic via TSIG RDATA Decoding",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123571",
+      "released": "2026-11-08T01:38:08Z",
+      "updated": "2026-11-13T03:04:27Z",
+      "cves": [
+        "CVE-2026-123571"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123572",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory-dns 0.20.1 before 0.26.2 Panic DoS via SVCB/HTTPS Zone Parser",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123572",
+      "released": "2026-11-08T01:38:09Z",
+      "updated": "2026-11-12T17:51:02Z",
+      "cves": [
+        "CVE-2026-123572"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123575",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS before 0.26.2 DoH Memory Exhaustion via Incomplete Request Bodies",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123575",
+      "released": "2026-11-08T01:38:11Z",
+      "updated": "2026-11-13T03:05:28Z",
+      "cves": [
+        "CVE-2026-123575"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123576",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS 0.24.0 through 0.26.1 Memory Exhaustion via DNS-over-QUIC Requests",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123576",
+      "released": "2026-11-08T01:38:11Z",
+      "updated": "2026-11-12T13:05:36Z",
+      "cves": [
+        "CVE-2026-123576"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123579",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS 0.26.0-beta.1 before 0.26.2 DNSSEC Validation Bypass via Wildcard Expansion",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123579",
+      "released": "2026-11-08T01:38:14Z",
+      "updated": "2026-11-13T03:06:13Z",
+      "cves": [
+        "CVE-2026-123579"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123580",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory-DNS 0.26.0-beta.1 before 0.26.2 DNSSEC Nonexistence Proof Forgery via NSEC3",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123580",
+      "released": "2026-11-08T01:38:14Z",
+      "updated": "2026-11-12T13:08:17Z",
+      "cves": [
+        "CVE-2026-123580"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123583",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS 0.25.0 through 0.25.2 Missing Bailiwick Filtering on Negative Responses",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123583",
+      "released": "2026-11-08T01:38:16Z",
+      "updated": "2026-11-13T03:06:43Z",
+      "cves": [
+        "CVE-2026-123583"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123584",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory-DNS 0.26.0 before 0.26.2 UDP Client Denial of Service via Spoofed Responses",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123584",
+      "released": "2026-11-08T01:38:17Z",
+      "updated": "2026-11-12T13:14:32Z",
+      "cves": [
+        "CVE-2026-123584"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123587",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory-DNS 0.26.0 before 0.26.2 DNSSEC Nonexistence Forgery via Wraparound NSEC",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123587",
+      "released": "2026-11-08T01:38:19Z",
+      "updated": "2026-11-13T03:07:16Z",
+      "cves": [
+        "CVE-2026-123587"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.9,
+      "products": [
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123588",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS Recursive Resolver Denial of Service via Cached Empty Connection Pool",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123588",
+      "released": "2026-11-08T01:38:20Z",
+      "updated": "2026-11-12T13:26:43Z",
+      "cves": [
+        "CVE-2026-123588"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123591",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS 0.26.0-beta.1 before 0.26.2 DNSSEC Validation Bypass via Missing RFC 6840 Checks",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123591",
+      "released": "2026-11-08T01:38:22Z",
+      "updated": "2026-11-13T03:08:40Z",
+      "cves": [
+        "CVE-2026-123591"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123592",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS 0.26.0-beta.1 before 0.26.2 DNSSEC Validation Bypass via Name Hash Collision",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123592",
+      "released": "2026-11-08T01:38:23Z",
+      "updated": "2026-11-12T13:28:44Z",
+      "cves": [
+        "CVE-2026-123592"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123595",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS through 0.26.0-alpha.1 DNSSEC Validation Bypass via Ancestor-Delegation NSEC3",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123595",
+      "released": "2026-11-08T01:38:25Z",
+      "updated": "2026-11-13T03:09:41Z",
+      "cves": [
+        "CVE-2026-123595"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123596",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS through 0.26.0-alpha.1 DNSSEC Validation Bypass via Ancestor-Delegation NSEC",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123596",
+      "released": "2026-11-08T01:38:25Z",
+      "updated": "2026-11-12T13:30:41Z",
+      "cves": [
+        "CVE-2026-123596"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123599",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS before 0.26.0-beta.1 DNSSEC Validation Bypass via Non-IN Class Records",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123599",
+      "released": "2026-11-08T01:38:27Z",
+      "updated": "2026-11-13T03:10:14Z",
+      "cves": [
+        "CVE-2026-123599"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123600",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS hickory-proto 0.25.0-alpha.3 through 0.25.2 NSEC3 Apex NODATA Validation Bypass",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123600",
+      "released": "2026-11-08T01:38:28Z",
+      "updated": "2026-11-12T13:32:13Z",
+      "cves": [
+        "CVE-2026-123600"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123603",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS Missing IPv4-Mapped IPv6 Canonicalization Access Control Bypass",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123603",
+      "released": "2026-11-08T01:38:30Z",
+      "updated": "2026-11-13T03:10:51Z",
+      "cves": [
+        "CVE-2026-123603"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123604",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS 0.26.0-beta.1 before 0.26.2 Resource Exhaustion DoS via NameServerPool::try_send TC-Retry Loop",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123604",
+      "released": "2026-11-08T01:38:31Z",
+      "updated": "2026-11-12T13:34:44Z",
+      "cves": [
+        "CVE-2026-123604"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123607",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS NSEC3 Closest-Encloser Proof Unbounded Loop Denial of Service",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123607",
+      "released": "2026-11-08T01:38:33Z",
+      "updated": "2026-11-13T03:11:42Z",
+      "cves": [
+        "CVE-2026-123607"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "hickory-dns hickory-dns",
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123608",
+      "src": "cvelistv5",
+      "vendor": "hickory-dns",
+      "title": "Hickory DNS hickory-proto 0.3.1 before 0.26.1 CPU Exhaustion via BinEncoder Name Compression",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123608",
+      "released": "2026-11-08T01:38:34Z",
+      "updated": "2026-11-12T13:38:37Z",
+      "cves": [
+        "CVE-2026-123608"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "hickory-dns hickory-dns"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123611",
+      "src": "cvelistv5",
+      "vendor": "rustls",
+      "title": "rustls before 0.23.46 Key Exchange Downgrade via Unauthenticated ServerHello",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123611",
+      "released": "2026-11-08T01:38:36Z",
+      "updated": "2026-11-13T03:12:15Z",
+      "cves": [
+        "CVE-2026-123611"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "rustls rustls"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123612",
+      "src": "cvelistv5",
+      "vendor": "rustls",
+      "title": "rustls 0.23.44 and 0.23.45 ECH Rejection Application Data Disclosure",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123612",
+      "released": "2026-11-08T01:38:36Z",
+      "updated": "2026-11-12T13:40:04Z",
+      "cves": [
+        "CVE-2026-123612"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.6,
+      "products": [
+        "rustls rustls"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123615",
+      "src": "cvelistv5",
+      "vendor": "imgproxy",
+      "title": "imgproxy before 4.0.17 Out-of-Bounds Write in ICO Loader",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123615",
+      "released": "2026-11-08T01:38:39Z",
+      "updated": "2026-11-13T03:13:20Z",
+      "cves": [
+        "CVE-2026-123615"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "imgproxy imgproxy"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123616",
+      "src": "cvelistv5",
+      "vendor": "imgproxy",
+      "title": "imgproxy 3.3.0 before 4.0.16 Memory Exhaustion DoS via ICO Loader",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123616",
+      "released": "2026-11-08T01:38:40Z",
+      "updated": "2026-11-12T17:52:10Z",
+      "cves": [
+        "CVE-2026-123616"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "imgproxy imgproxy"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:22252-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -486,6 +1664,1018 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124326",
+      "src": "cvelistv5",
+      "vendor": "DataLinkDC",
+      "title": "DataLinkDC Dinky Catalogue Upload CatalogueController.java file.getOriginalFilename path traversal",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124326",
+      "released": "2026-11-08T10:00:35Z",
+      "updated": "2026-11-13T03:14:02Z",
+      "cves": [
+        "CVE-2026-124326"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.4,
+      "products": [
+        "DataLinkDC Dinky"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124425",
+      "src": "cvelistv5",
+      "vendor": "parse-community",
+      "title": "Parse Server 9.10.6-alpha.1 before 9.10.7-alpha.2 Information Disclosure via Save Response",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124425",
+      "released": "2026-11-08T13:15:23Z",
+      "updated": "2026-11-13T03:14:55Z",
+      "cves": [
+        "CVE-2026-124425"
+      ],
+      "sev": "LOW",
+      "cvss": 3.1,
+      "products": [
+        "parse-community parse-server",
+        "parse-community parse-server"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124426",
+      "src": "cvelistv5",
+      "vendor": "craftcms",
+      "title": "Craft CMS before 5.11.2 GraphQL Sites Scope Bypass via localized Field",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124426",
+      "released": "2026-11-08T13:15:23Z",
+      "updated": "2026-11-12T18:08:04Z",
+      "cves": [
+        "CVE-2026-124426"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "craftcms cms"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124427",
+      "src": "cvelistv5",
+      "vendor": "craftcms",
+      "title": "Craft CMS 5.0.0 before 5.11.2 GraphQL Schema Scope Bypass via prev/next",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124427",
+      "released": "2026-11-08T13:15:24Z",
+      "updated": "2026-11-12T18:05:56Z",
+      "cves": [
+        "CVE-2026-124427"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "craftcms cms"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124429",
+      "src": "cvelistv5",
+      "vendor": "craftcms",
+      "title": "Craft CMS 5.0.0 before 5.11.2 Privilege Escalation via Public Registration",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124429",
+      "released": "2026-11-08T13:15:26Z",
+      "updated": "2026-11-13T03:15:29Z",
+      "cves": [
+        "CVE-2026-124429"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "craftcms cms"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124430",
+      "src": "cvelistv5",
+      "vendor": "craftcms",
+      "title": "Craft CMS 5.10.0 before 5.11.2 RCE via app/render-elements Signing Oracle",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124430",
+      "released": "2026-11-08T13:15:26Z",
+      "updated": "2026-11-12T19:14:05Z",
+      "cves": [
+        "CVE-2026-124430"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "craftcms cms"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124433",
+      "src": "cvelistv5",
+      "vendor": "thorsten",
+      "title": "phpMyFAQ before 4.1.11 Insufficient Authorization in Group Deletion via GroupController",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124433",
+      "released": "2026-11-08T13:15:28Z",
+      "updated": "2026-11-13T03:16:23Z",
+      "cves": [
+        "CVE-2026-124433"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "thorsten phpMyFAQ"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124434",
+      "src": "cvelistv5",
+      "vendor": "getgrav",
+      "title": "Grav Lightbox Gallery 1.1.0 before 1.3.2 File Read via Shortcode Media Actions",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124434",
+      "released": "2026-11-08T13:15:29Z",
+      "updated": "2026-11-12T19:15:34Z",
+      "cves": [
+        "CVE-2026-124434"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "getgrav grav"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124437",
+      "src": "cvelistv5",
+      "vendor": "scriban",
+      "title": "Scriban before 7.5.3 Denial of Service via Unguarded Builtins and Recursion",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124437",
+      "released": "2026-11-08T13:15:31Z",
+      "updated": "2026-11-13T03:18:04Z",
+      "cves": [
+        "CVE-2026-124437"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "scriban scriban",
+        "scriban scriban"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124438",
+      "src": "cvelistv5",
+      "vendor": "scriban",
+      "title": "Scriban before 7.5.2 Delegate Target Exposure via array.map Member Access",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124438",
+      "released": "2026-11-08T13:15:32Z",
+      "updated": "2026-11-12T19:25:13Z",
+      "cves": [
+        "CVE-2026-124438"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "scriban scriban",
+        "scriban scriban"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124441",
+      "src": "cvelistv5",
+      "vendor": "kyverno",
+      "title": "Kyverno before 1.19.2 Authorization Bypass via Variable Generate Target Kind",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124441",
+      "released": "2026-11-08T13:15:34Z",
+      "updated": "2026-11-13T03:19:27Z",
+      "cves": [
+        "CVE-2026-124441"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "kyverno kyverno"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124442",
+      "src": "cvelistv5",
+      "vendor": "AzuraCast",
+      "title": "AzuraCast before 0.24.0 SSRF Filter Bypass via Webhook Connector Redirects",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124442",
+      "released": "2026-11-08T13:15:35Z",
+      "updated": "2026-11-12T19:26:21Z",
+      "cves": [
+        "CVE-2026-124442"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "AzuraCast AzuraCast"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124445",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR 7.0.1 before 8.4.0 OneTimeAuth Token Replay and PIN Brute Force",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124445",
+      "released": "2026-11-08T13:15:37Z",
+      "updated": "2026-11-13T03:20:20Z",
+      "cves": [
+        "CVE-2026-124445"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124446",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 Arbitrary File Read and Write via FaxSMS disposeDocument",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124446",
+      "released": "2026-11-08T13:15:38Z",
+      "updated": "2026-11-12T19:27:17Z",
+      "cves": [
+        "CVE-2026-124446"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124449",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.4.0 Missing Authorization via FHIR Media and QuestionnaireResponse Routes",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124449",
+      "released": "2026-11-08T13:15:41Z",
+      "updated": "2026-11-13T03:21:09Z",
+      "cves": [
+        "CVE-2026-124449"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124450",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 Arbitrary File Read/Write via disposeDocument",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124450",
+      "released": "2026-11-08T13:15:41Z",
+      "updated": "2026-11-12T19:32:48Z",
+      "cves": [
+        "CVE-2026-124450"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124453",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 IDOR in Portal Patient Settings via persist.php",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124453",
+      "released": "2026-11-08T13:15:43Z",
+      "updated": "2026-11-13T03:22:30Z",
+      "cves": [
+        "CVE-2026-124453"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124455",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 IDOR via Portal OnsiteDocument Pid_Equals Mass-Assignment",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124455",
+      "released": "2026-11-08T13:15:44Z",
+      "updated": "2026-11-12T19:37:04Z",
+      "cves": [
+        "CVE-2026-124455"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124458",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.4.0 FHIR Patient Compartment Bypass via Person Endpoint",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124458",
+      "released": "2026-11-08T13:15:46Z",
+      "updated": "2026-11-13T03:23:26Z",
+      "cves": [
+        "CVE-2026-124458"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124459",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 Cross-Patient IDOR via Encounter Form Viewers and Save Handlers",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124459",
+      "released": "2026-11-08T13:15:47Z",
+      "updated": "2026-11-12T19:39:45Z",
+      "cves": [
+        "CVE-2026-124459"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124462",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 Patient Portal IDOR via Case-Sensitive Pid Parameter",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124462",
+      "released": "2026-11-08T13:15:49Z",
+      "updated": "2026-11-13T03:24:15Z",
+      "cves": [
+        "CVE-2026-124462"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124463",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 Stored XSS via CAMOS Rx Print View",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124463",
+      "released": "2026-11-08T13:15:49Z",
+      "updated": "2026-11-12T13:43:28Z",
+      "cves": [
+        "CVE-2026-124463"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.3,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124467",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.4.0 Remote Code Execution via ESign LFI and fax upload",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124467",
+      "released": "2026-11-08T13:15:51Z",
+      "updated": "2026-11-13T03:25:08Z",
+      "cves": [
+        "CVE-2026-124467"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124468",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 SQL Injection via Patient Insurance and Employer REST API",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124468",
+      "released": "2026-11-08T13:15:52Z",
+      "updated": "2026-11-12T13:48:23Z",
+      "cves": [
+        "CVE-2026-124468"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124471",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 Missing Authorization and IDOR via sl_eob_invoice.php",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124471",
+      "released": "2026-11-08T13:15:54Z",
+      "updated": "2026-11-13T03:26:11Z",
+      "cves": [
+        "CVE-2026-124471"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124472",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 Missing Authorization via sl_eob_patient_note.php",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124472",
+      "released": "2026-11-08T13:15:55Z",
+      "updated": "2026-11-12T13:51:25Z",
+      "cves": [
+        "CVE-2026-124472"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124476",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 IDOR via form_pid in portal/lib/paylib.php",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124476",
+      "released": "2026-11-08T13:15:57Z",
+      "updated": "2026-11-13T03:27:30Z",
+      "cves": [
+        "CVE-2026-124476"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124477",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 Missing Authorization via delete_Recall in save.php",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124477",
+      "released": "2026-11-08T13:15:57Z",
+      "updated": "2026-11-12T13:52:14Z",
+      "cves": [
+        "CVE-2026-124477"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124480",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.4.0 Authorization Bypass via FHIR QuestionnaireResponse APICSRFTOKEN",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124480",
+      "released": "2026-11-08T13:16:00Z",
+      "updated": "2026-11-13T03:28:57Z",
+      "cves": [
+        "CVE-2026-124480"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124481",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.4.0 Cross-Patient Payment Tampering via Rainforest Portal Payments",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124481",
+      "released": "2026-11-08T13:16:00Z",
+      "updated": "2026-11-12T13:54:15Z",
+      "cves": [
+        "CVE-2026-124481"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124484",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.4.0 Missing Authorization in Portal Onsite-Document APIs",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124484",
+      "released": "2026-11-08T13:16:02Z",
+      "updated": "2026-11-13T03:30:03Z",
+      "cves": [
+        "CVE-2026-124484"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124485",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 Cross-Patient Document Disclosure via Onsite Documents API",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124485",
+      "released": "2026-11-08T13:16:03Z",
+      "updated": "2026-11-12T14:07:37Z",
+      "cves": [
+        "CVE-2026-124485"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124488",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 Authorization Bypass via load_form.php High-Sensitivity Encounters",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124488",
+      "released": "2026-11-08T13:16:05Z",
+      "updated": "2026-11-13T03:31:23Z",
+      "cves": [
+        "CVE-2026-124488"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124489",
+      "src": "cvelistv5",
+      "vendor": "openemr",
+      "title": "OpenEMR before 8.3.0 Broken Access Control via portal_payment.php",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124489",
+      "released": "2026-11-08T13:16:06Z",
+      "updated": "2026-11-12T14:09:00Z",
+      "cves": [
+        "CVE-2026-124489"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "openemr openemr"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124492",
+      "src": "cvelistv5",
+      "vendor": "JiHong88",
+      "title": "SunEditor before 3.4.0 Stored XSS via Link Modal Bookmark List",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124492",
+      "released": "2026-11-08T13:16:08Z",
+      "updated": "2026-11-13T03:32:42Z",
+      "cves": [
+        "CVE-2026-124492"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.3,
+      "products": [
+        "JiHong88 suneditor"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124493",
+      "src": "cvelistv5",
+      "vendor": "JiHong88",
+      "title": "SunEditor before 3.4.0 Stored XSS via DocumentType Header textContent",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124493",
+      "released": "2026-11-08T13:16:09Z",
+      "updated": "2026-11-12T14:12:42Z",
+      "cves": [
+        "CVE-2026-124493"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.3,
+      "products": [
+        "JiHong88 suneditor"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124331",
+      "src": "cvelistv5",
+      "vendor": "Jinher",
+      "title": "Jinher OA ProjectAfficheManage.aspx sql injection",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124331",
+      "released": "2026-11-08T13:45:18Z",
+      "updated": "2026-11-13T03:33:53Z",
+      "cves": [
+        "CVE-2026-124331"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "Jinher OA"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124474",
+      "src": "cvelistv5",
+      "vendor": "meeting-room-booking-system",
+      "title": "MRBS before 1.12.3 Reflected XSS via error parameter of view_entry.php",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124474",
+      "released": "2026-11-08T13:52:33Z",
+      "updated": "2026-11-13T03:35:51Z",
+      "cves": [
+        "CVE-2026-124474"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.1,
+      "products": [
+        "meeting-room-booking-system mrbs-code"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124551",
+      "src": "cvelistv5",
+      "vendor": "classroomio",
+      "title": "ClassroomIO through 1.0.0 Cross-Organization Course Disclosure via Clone Endpoint",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124551",
+      "released": "2026-11-08T13:52:34Z",
+      "updated": "2026-11-12T14:18:44Z",
+      "cves": [
+        "CVE-2026-124551"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6,
+      "products": [
+        "classroomio classroomio"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2024-41786",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "IBM Engineering Requirements Management DOORS Next for J2EE File Disclosure Rule",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-41786",
+      "released": "2026-11-08T15:54:09Z",
+      "updated": "2026-11-12T20:16:34Z",
+      "cves": [
+        "CVE-2024-41786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "IBM Engineering Requirements Management DOORS Next"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-102618",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "IBM i is Affected by a Protection Mechanism Failure",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-102618",
+      "released": "2026-11-08T16:09:57Z",
+      "updated": "2026-11-12T20:16:15Z",
+      "cves": [
+        "CVE-2026-102618"
+      ],
+      "sev": "LOW",
+      "cvss": 3.6,
+      "products": [
+        "IBM i"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-107331",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "DataStage on Cloud Pak for Data has several vulnerabilities",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-107331",
+      "released": "2026-11-08T16:52:46Z",
+      "updated": "2026-11-12T20:13:42Z",
+      "cves": [
+        "CVE-2026-107331"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "products": [
+        "IBM DataStage on Cloud Pak for Data"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-112369",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "Multiple security vulnerabilities are addressed with IBM Process Mining Interim Fix for October 2026",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-112369",
+      "released": "2026-11-08T16:57:33Z",
+      "updated": "2026-11-12T20:15:57Z",
+      "cves": [
+        "CVE-2026-112369"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "IBM Process Mining"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-116500",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "Unbound Recursion in QPY deserialization can lead to denial of service",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-116500",
+      "released": "2026-11-08T17:04:53Z",
+      "updated": "2026-11-12T20:07:54Z",
+      "cves": [
+        "CVE-2026-116500"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.2,
+      "products": [
+        "IBM Qiskit SDK"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-120113",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "Multiple vulnerabilities in IBM Aspera Connect",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-120113",
+      "released": "2026-11-08T17:12:01Z",
+      "updated": "2026-11-12T20:13:42Z",
+      "cves": [
+        "CVE-2026-120113"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.4,
+      "products": [
+        "IBM Aspera Connect"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-14963",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "IBM Cognos Command Center has addressed vulnerabilities",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-14963",
+      "released": "2026-11-08T17:33:37Z",
+      "updated": "2026-11-12T20:15:22Z",
+      "cves": [
+        "CVE-2026-14963"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "IBM Cognos Command Center"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-16433",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "DataStage on Cloud Pak for Data has several vulnerabilities",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-16433",
+      "released": "2026-11-08T17:37:18Z",
+      "updated": "2026-11-12T20:15:06Z",
+      "cves": [
+        "CVE-2026-16433"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "IBM DataStage on Cloud Pak for Data"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-18194",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "IBM App Connect Enterprise is vulnerable to a clickjacking attack",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-18194",
+      "released": "2026-11-08T17:52:41Z",
+      "updated": "2026-11-12T20:14:50Z",
+      "cves": [
+        "CVE-2026-18194"
+      ],
+      "sev": "LOW",
+      "cvss": 2.5,
+      "products": [
+        "IBM App Connect Enterprise"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-18546",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "CockroachDB PostgreSQL for IBM VPC is affected by multiple vulnerabilities",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-18546",
+      "released": "2026-11-08T18:05:24Z",
+      "updated": "2026-11-12T20:14:33Z",
+      "cves": [
+        "CVE-2026-18546"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.4,
+      "products": [
+        "IBM CockroachDB PostgreSQL for IBM VPC"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-2477",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "Multiple vulnerabilities in IBM watsonx Orchestrate with watsonx Assistant Cartridge",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-2477",
+      "released": "2026-11-08T18:29:53Z",
+      "updated": "2026-11-12T20:14:17Z",
+      "cves": [
+        "CVE-2026-2477"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "IBM watsonx Orchestrate Cartridge for Cloud Pak for Data"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-77153",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "IBM i is Affected By Missing Authorization Vulnerability in Host-Based Printer Subsystem []",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-77153",
+      "released": "2026-11-08T18:38:57Z",
+      "updated": "2026-11-12T20:14:01Z",
+      "cves": [
+        "CVE-2026-77153"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.8,
+      "products": [
+        "IBM i"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-81542",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "DataStage on Cloud Pak for Data has several vulnerabilities",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-81542",
+      "released": "2026-11-08T18:41:04Z",
+      "updated": "2026-11-12T20:13:45Z",
+      "cves": [
+        "CVE-2026-81542"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.4,
+      "products": [
+        "IBM DataStage on Cloud Pak for Data"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-84237",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "IBM Guardium Data Protection is affected by multiple vulnerabilities",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-84237",
+      "released": "2026-11-08T18:42:24Z",
+      "updated": "2026-11-12T20:13:42Z",
+      "cves": [
+        "CVE-2026-84237"
+      ],
+      "sev": "LOW",
+      "cvss": 3.1,
+      "products": [
+        "IBM Guardium Data Protection"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-93005",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "Multiple security vulnerabilities are addressed with IBM Process Mining Interim Fix for October 2026",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-93005",
+      "released": "2026-11-08T18:46:24Z",
+      "updated": "2026-11-12T20:07:38Z",
+      "cves": [
+        "CVE-2026-93005"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "IBM Process Mining"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-16697",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "This Power System update is being released to address",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-16697",
+      "released": "2026-11-08T19:15:04Z",
+      "updated": "2026-11-12T20:07:21Z",
+      "cves": [
+        "CVE-2026-16697"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "IBM OPENBMC",
+        "IBM Power Hardware Management Console"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-118904",
+      "src": "cvelistv5",
+      "vendor": "IBM",
+      "title": "IBM webMethods Integration Server is affected by vulnerabilty in backup code validation during 2FA Authentication.",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-118904",
+      "released": "2026-11-08T19:48:22Z",
+      "updated": "2026-11-12T20:13:29Z",
+      "cves": [
+        "CVE-2026-118904"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "IBM webMethods Integration Server"
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -1056,7 +3246,7 @@
       "title": "rclone: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4412",
       "released": "2026-11-08T23:00:00Z",
-      "updated": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-134348",
         "CVE-2026-134349",
@@ -1068,7 +3258,8 @@
       ],
       "sev": "HIGH",
       "products": [
-        "rclone"
+        "rclone",
+        "Red Hat Enterprise Linux"
       ],
       "lang": "de",
       "seen": "2026-11-26"
@@ -1165,7 +3356,7 @@
       "title": "Ruby: Mehrere Schwachstellen ermöglichen Codeausführung",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4416",
       "released": "2026-11-08T23:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-110264",
         "CVE-2026-93577",
@@ -1181,6 +3372,42 @@
         "Red Hat Enterprise Linux"
       ],
       "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124498",
+      "src": "cvelistv5",
+      "vendor": "Convene",
+      "title": "Convene Azeus Convene Board Management Portal dummy_launcher.jsp cross site scripting",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124498",
+      "released": "2026-11-08T23:00:25Z",
+      "updated": "2026-11-12T14:23:01Z",
+      "cves": [
+        "CVE-2026-124498"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.1,
+      "products": [
+        "Convene Azeus Convene Board Management Portal"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124501",
+      "src": "cvelistv5",
+      "vendor": "Tidelift",
+      "title": "Tidelift moto AWS Batch Emulation models.py privileges management",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124501",
+      "released": "2026-11-08T23:45:25Z",
+      "updated": "2026-11-13T03:37:48Z",
+      "cves": [
+        "CVE-2026-124501"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "Tidelift moto"
+      ],
       "seen": "2026-11-26"
     }
   ]

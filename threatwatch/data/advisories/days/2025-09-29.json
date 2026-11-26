@@ -1,8 +1,47 @@
 {
   "schemaVersion": 1,
   "date": "2025-09-29",
-  "count": 5,
+  "count": 10,
   "items": [
+    {
+      "id": "ALSA-2025:16919",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: kernel security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:16919",
+      "released": "2025-09-29T00:00:00Z",
+      "updated": "2026-10-30T01:16:17Z",
+      "cves": [
+        "CVE-2022-50087",
+        "CVE-2025-22026",
+        "CVE-2025-37797",
+        "CVE-2025-37823",
+        "CVE-2025-38718"
+      ],
+      "products": [
+        "AlmaLinux: bpftool",
+        "AlmaLinux: kernel",
+        "AlmaLinux: kernel-abi-stablelists",
+        "AlmaLinux: kernel-core",
+        "AlmaLinux: kernel-cross-headers",
+        "AlmaLinux: kernel-debug"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in bpftool 4.18.0-553.77.1.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel 4.18.0-553.77.1.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-abi-stablelists 4.18.0-553.77.1.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "msrc_CVE-2025-60019",
       "src": "csaf_microsoft",
@@ -113,6 +152,130 @@
         "cbl2 pytorch 0:2.0.0-9.cbl2",
         "azl3 pytorch 0:2.2.2-7.azl3",
         "azl4 python-torch 0:2.8.0-9.azl4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:16981",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: RHOAI 2.16.3 - Red Hat OpenShift AI",
+      "url": "https://access.redhat.com/errata/RHSA-2025:16981",
+      "released": "2025-09-29T17:16:06Z",
+      "updated": "2026-09-21T17:05:25Z",
+      "cves": [
+        "CVE-2025-10725",
+        "CVE-2025-57852"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "products": [
+        "Red Hat OpenShift AI",
+        "Red Hat OpenShift AI 2.16"
+      ],
+      "fix": [
+        {
+          "t": "For Red Hat OpenShift AI 2.16.3 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade y…",
+          "u": "https://access.redhat.com/errata/RHSA-2025:16981"
+        },
+        {
+          "t": "RHOAI versions 2.16.x The recommended fix is to upgrade to version 2.16.3. However, if Kueue features are not required, the Kueue component management state ca…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:16983",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: RHOAI 2.21.1 - Red Hat OpenShift AI",
+      "url": "https://access.redhat.com/errata/RHSA-2025:16983",
+      "released": "2025-09-29T17:16:12Z",
+      "updated": "2026-09-21T17:05:26Z",
+      "cves": [
+        "CVE-2025-10725",
+        "CVE-2025-57852"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "products": [
+        "Red Hat OpenShift AI",
+        "Red Hat OpenShift AI 2.21"
+      ],
+      "fix": [
+        {
+          "t": "For Red Hat OpenShift AI 2.21.1 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade y…",
+          "u": "https://access.redhat.com/errata/RHSA-2025:16983"
+        },
+        {
+          "t": "RHOAI versions 2.16.x The recommended fix is to upgrade to version 2.16.3. However, if Kueue features are not required, the Kueue component management state ca…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:16982",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: RHOAI 2.22.2 - Red Hat OpenShift AI",
+      "url": "https://access.redhat.com/errata/RHSA-2025:16982",
+      "released": "2025-09-29T17:16:15Z",
+      "updated": "2026-09-21T17:05:25Z",
+      "cves": [
+        "CVE-2025-10725",
+        "CVE-2025-57852"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "products": [
+        "Red Hat OpenShift AI",
+        "Red Hat OpenShift AI 2.22"
+      ],
+      "fix": [
+        {
+          "t": "For Red Hat OpenShift AI 2.22.2 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade y…",
+          "u": "https://access.redhat.com/errata/RHSA-2025:16982"
+        },
+        {
+          "t": "RHOAI versions 2.16.x The recommended fix is to upgrade to version 2.16.3. However, if Kueue features are not required, the Kueue component management state ca…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:16984",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: RHOAI 2.19.3 - Red Hat OpenShift AI",
+      "url": "https://access.redhat.com/errata/RHSA-2025:16984",
+      "released": "2025-09-29T17:16:20Z",
+      "updated": "2026-09-21T17:05:27Z",
+      "cves": [
+        "CVE-2025-10725",
+        "CVE-2025-57852"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "products": [
+        "Red Hat OpenShift AI",
+        "Red Hat OpenShift AI 2.19"
+      ],
+      "fix": [
+        {
+          "t": "For Red Hat OpenShift AI 2.19.3 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade y…",
+          "u": "https://access.redhat.com/errata/RHSA-2025:16984"
+        },
+        {
+          "t": "RHOAI versions 2.16.x The recommended fix is to upgrade to version 2.16.3. However, if Kueue features are not required, the Kueue component management state ca…",
+          "u": null
+        }
       ],
       "lang": "en",
       "seen": "2026-11-26"

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-06-18",
-  "count": 22,
+  "count": 29,
   "items": [
     {
       "id": "openSUSE-SU-2026:11052-1",
@@ -407,6 +407,127 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-dotnet-2026-45490",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": ".NET SDK Elevation of Privilege Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45490",
+      "released": "2026-06-18T09:47:22Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-45490"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: dotnet"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dotnet 8.0.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in dotnet 9.0.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in dotnet 10.0.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-dotnet-2026-45491",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": ".NET Tampering Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45491",
+      "released": "2026-06-18T09:47:23Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-45491"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: dotnet"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dotnet 8.0.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in dotnet 9.0.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in dotnet 10.0.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0217",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Integer overflow in tract-nnef NNEF tensor parser leads to out-of-bounds read on model load",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0217.html",
+      "released": "2026-06-18T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2026-55093"
+      ],
+      "products": [
+        "crates.io: tract-nnef"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tract-nnef 0.21.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in tract-nnef 0.22.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in tract-nnef 0.23.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSEC-2026-05",
+      "src": "osv_ocaml",
+      "vendor": "Ocaml",
+      "title": "Windows command execution via filename quotes.",
+      "released": "2026-06-18T13:45:00Z",
+      "updated": "2026-09-10T10:45:00Z",
+      "cves": [
+        "CVE-2026-41083"
+      ],
+      "products": [
+        "opam: ocaml"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ocaml 4.14.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in ocaml 5.5.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in ce6d0f7b67145debec57e296dcc49d8619259198",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21084-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -481,6 +602,61 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:27114",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat OpenShift Service Mesh 2.6.17",
+      "url": "https://access.redhat.com/errata/RHSA-2026:27114",
+      "released": "2026-06-18T14:45:35Z",
+      "updated": "2026-10-14T12:48:16Z",
+      "cves": [
+        "CVE-2026-47774",
+        "CVE-2026-49975"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat OpenShift Service Mesh",
+        "Red Hat OpenShift Service Mesh 2.6"
+      ],
+      "fix": [
+        {
+          "t": "See Red Hat OpenShift Service Mesh 2.6.17 documentation at https://docs.redhat.com/en/documentation/openshift_container_platform/4.19/html/service_mesh/service…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:27114"
+        },
+        {
+          "t": "See the security bulletin for a detailed mitigation procedure.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-fcw5-x6j4-ccmp",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Jupyter Server: Stored XSS in `NbconvertFileHandler` / `NbconvertPostHandler` via missing `sandbox` CSP",
+      "url": "https://github.com/advisories/GHSA-fcw5-x6j4-ccmp",
+      "released": "2026-06-18T15:04:07Z",
+      "updated": "2026-08-28T18:31:11Z",
+      "cves": [
+        "CVE-2026-44727"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "PyPI: jupyter-server"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jupyter-server 2.20.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
       "seen": "2026-11-26"
     },
     {
@@ -613,6 +789,35 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-5739-39v2-5754",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "PHP JWT Library: RSA1_5 (RSAES-PKCS1-v1_5) decryption lacks implicit rejection, exposing a Bleichenbacher/Marvin padding oracle",
+      "url": "https://github.com/advisories/GHSA-5739-39v2-5754",
+      "released": "2026-06-18T21:09:56Z",
+      "updated": "2026-08-31T14:52:45Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: web-token/jwt-library"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in web-token/jwt-library 3.4.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in web-token/jwt-library 4.0.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in web-token/jwt-library 4.1.7",
+          "u": null
+        }
+      ],
+      "reviewed": true,
       "seen": "2026-11-26"
     },
     {

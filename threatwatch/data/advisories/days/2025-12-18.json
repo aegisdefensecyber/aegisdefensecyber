@@ -1,8 +1,47 @@
 {
   "schemaVersion": 1,
   "date": "2025-12-18",
-  "count": 4,
+  "count": 7,
   "items": [
+    {
+      "id": "ALSA-2025:23663",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: webkit2gtk3 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:23663",
+      "released": "2025-12-18T00:00:00Z",
+      "updated": "2026-11-03T22:59:45Z",
+      "cves": [
+        "CVE-2025-14174",
+        "CVE-2025-43501",
+        "CVE-2025-43529",
+        "CVE-2025-43531",
+        "CVE-2025-43535",
+        "CVE-2025-43536",
+        "CVE-2025-43541"
+      ],
+      "products": [
+        "AlmaLinux: webkit2gtk3",
+        "AlmaLinux: webkit2gtk3-devel",
+        "AlmaLinux: webkit2gtk3-jsc",
+        "AlmaLinux: webkit2gtk3-jsc-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in webkit2gtk3 2.50.4-1.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in webkit2gtk3-devel 2.50.4-1.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in webkit2gtk3-jsc 2.50.4-1.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "msrc_CVE-2025-37959",
       "src": "csaf_microsoft",
@@ -65,6 +104,68 @@
         "kernel"
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elasticsearch-2025-37731",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Elasticsearch Improper Authentication",
+      "url": "https://discuss.elastic.co/t/elasticsearch-8-19-8-9-1-8-and-9-2-2-security-update-esa-2025-27/384063",
+      "released": "2025-12-18T11:37:43Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-37731"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: elasticsearch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elasticsearch 8.19.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in elasticsearch 9.1.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in elasticsearch 9.2.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elk-2025-37732",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Kibana Cross-site Scripting via the Integration Package Upload Functionality",
+      "url": "https://discuss.elastic.co/t/kibana-8-19-8-9-1-8-and-9-2-2-security-update-esa-2025-28/384064",
+      "released": "2025-12-18T11:37:43Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-37732"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 8.19.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.1.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.2.2",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {

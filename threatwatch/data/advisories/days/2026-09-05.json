@@ -1,8 +1,35 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-05",
-  "count": 12,
+  "count": 154,
   "items": [
+    {
+      "id": "RLSA-2026:63124",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: grafana-pcp security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:63124",
+      "released": "2026-09-05T00:01:37Z",
+      "updated": "2026-09-19T00:13:35Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-42504",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "Rocky Linux: grafana-pcp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana-pcp 0:5.1.1-18.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "msrc_CVE-2026-85062",
       "src": "csaf_microsoft",
@@ -329,6 +356,3546 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-86137",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "In libxml2 before 2.15.4, xmlFAParsePosCharGroup has an out-of-bounds read, aka an out-of-bounds read in the NXT macro in xmlregexp.",
+      "released": "2026-09-05T05:17:00Z",
+      "updated": "2026-10-08T23:12:05Z",
+      "cves": [
+        "CVE-2026-86137"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: libxml2"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-86141",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "xmlregexp in libxml2 before 2.15.4 has a NULL pointer dereference in xmlRegNewParserCtxt after a strdup failure, i.e., it does not calculate a string length after NULL checking.",
+      "released": "2026-09-05T05:17:00Z",
+      "updated": "2026-10-08T23:12:05Z",
+      "cves": [
+        "CVE-2026-86141"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: libxml2"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99714",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-86139 affecting package libxml2 2.11.5-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86139",
+      "released": "2026-09-05T05:17:12Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-86139"
+      ],
+      "products": [
+        "Azure Linux: libxml2"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99708",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-86141 affecting package libxml2 2.11.5-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86141",
+      "released": "2026-09-05T05:17:13Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-86141"
+      ],
+      "products": [
+        "Azure Linux: libxml2"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99726",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-86145 affecting package pcre2 for versions less than 10.48-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86145",
+      "released": "2026-09-05T06:17:10Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-86145"
+      ],
+      "products": [
+        "Azure Linux: pcre2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pcre2 10.48-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4009",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Path traversal and arbitrary directory deletion/overwrite via agent profile import in local-operator",
+      "url": "https://github.com/damianvtran/local-operator/security/advisories/GHSA-22mg-8gw7-636x",
+      "released": "2026-09-05T07:43:59Z",
+      "updated": "2026-09-30T16:15:55Z",
+      "products": [
+        "PyPI: local-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in local-operator 29fc4c68a3ed1d238b8abf6b6a6136a3361416a5",
+          "u": null
+        },
+        {
+          "t": "Fixed in local-operator 0.47.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4010",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Arbitrary file read via workspace confinement bypass in local-operator /v1/chat/agents/{id}/edit",
+      "url": "https://github.com/damianvtran/local-operator/security/advisories/GHSA-3xjw-9qpc-53mh",
+      "released": "2026-09-05T07:44:09Z",
+      "updated": "2026-09-30T16:15:55Z",
+      "products": [
+        "PyPI: local-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in local-operator 29fc4c68a3ed1d238b8abf6b6a6136a3361416a5",
+          "u": null
+        },
+        {
+          "t": "Fixed in local-operator 0.47.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0536",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Unbounded memory growth from GRAFT messages for unsubscribed topics",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0536.html",
+      "released": "2026-09-05T12:00:00Z",
+      "updated": "2026-11-13T12:33:03Z",
+      "cves": [
+        "CVE-2026-95859"
+      ],
+      "products": [
+        "crates.io: libp2p-gossipsub"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libp2p-gossipsub 0.49.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3588",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "perl-URI security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3588",
+      "released": "2026-09-05T15:02:53Z",
+      "updated": "2026-09-05T15:02:53Z",
+      "cves": [
+        "CVE-2026-19953"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: perl-URI"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl-URI 5.10-3.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3589",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "perl-URI security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3589",
+      "released": "2026-09-05T15:02:54Z",
+      "updated": "2026-09-05T15:02:54Z",
+      "cves": [
+        "CVE-2026-19953"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: perl-URI"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl-URI 1.76-4.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3590",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "perl-URI security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3590",
+      "released": "2026-09-05T15:02:54Z",
+      "updated": "2026-09-05T15:02:54Z",
+      "cves": [
+        "CVE-2026-19953"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: perl-URI"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl-URI 5.10-3.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3591",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "perl-URI security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3591",
+      "released": "2026-09-05T15:02:55Z",
+      "updated": "2026-09-05T15:02:55Z",
+      "cves": [
+        "CVE-2026-19953"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: perl-URI"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl-URI 5.10-3.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3592",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "tomcat security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3592",
+      "released": "2026-09-05T15:02:57Z",
+      "updated": "2026-09-05T15:02:57Z",
+      "cves": [
+        "CVE-2026-65182",
+        "CVE-2026-65183",
+        "CVE-2026-65637",
+        "CVE-2026-65905",
+        "CVE-2026-65927",
+        "CVE-2026-66422",
+        "CVE-2026-68525",
+        "CVE-2026-68569",
+        "CVE-2026-68763",
+        "CVE-2026-73180"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: tomcat"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tomcat 9.0.121-1.oe2403sp4",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat 9.0.121-1.oe2003sp4",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat 9.0.121-1.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3593",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "vim security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3593",
+      "released": "2026-09-05T15:02:58Z",
+      "updated": "2026-09-05T15:02:58Z",
+      "cves": [
+        "CVE-2026-73072",
+        "CVE-2026-73073",
+        "CVE-2026-73076"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: vim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim 9.0-58.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3594",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "vim security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3594",
+      "released": "2026-09-05T15:02:58Z",
+      "updated": "2026-09-05T15:02:58Z",
+      "cves": [
+        "CVE-2026-73072",
+        "CVE-2026-73073",
+        "CVE-2026-73076"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: vim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim 9.0.2092-45.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3595",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "vim security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3595",
+      "released": "2026-09-05T15:02:59Z",
+      "updated": "2026-09-05T15:02:59Z",
+      "cves": [
+        "CVE-2026-73072",
+        "CVE-2026-73073",
+        "CVE-2026-73076"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: vim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim 9.0.2092-45.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3596",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "vim security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3596",
+      "released": "2026-09-05T15:03:00Z",
+      "updated": "2026-09-05T15:03:00Z",
+      "cves": [
+        "CVE-2026-73072",
+        "CVE-2026-73073",
+        "CVE-2026-73076"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: vim"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim 9.0-59.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3597",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "tar security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3597",
+      "released": "2026-09-05T15:03:00Z",
+      "updated": "2026-09-05T15:03:00Z",
+      "cves": [
+        "CVE-2026-18477"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: tar"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tar 1.35-7.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3598",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "tar security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3598",
+      "released": "2026-09-05T15:03:01Z",
+      "updated": "2026-09-05T15:03:01Z",
+      "cves": [
+        "CVE-2026-18477"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: tar"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tar 1.35-7.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3599",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "tar security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3599",
+      "released": "2026-09-05T15:03:01Z",
+      "updated": "2026-09-05T15:03:01Z",
+      "cves": [
+        "CVE-2026-18477"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: tar"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tar 1.32-7.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3600",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "tar security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3600",
+      "released": "2026-09-05T15:03:02Z",
+      "updated": "2026-09-05T15:03:02Z",
+      "cves": [
+        "CVE-2026-18477"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: tar"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tar 1.34-9.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3601",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "aom security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3601",
+      "released": "2026-09-05T15:03:02Z",
+      "updated": "2026-09-05T15:03:02Z",
+      "cves": [
+        "CVE-2026-56209",
+        "CVE-2026-56210",
+        "CVE-2026-56211"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: aom"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in aom 3.8.0-5.oe2403sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3602",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libmodplug security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3602",
+      "released": "2026-09-05T15:03:03Z",
+      "updated": "2026-09-05T15:03:03Z",
+      "cves": [
+        "CVE-2026-75904"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: libmodplug"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libmodplug 0.8.9.0-11.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3603",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libmodplug security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3603",
+      "released": "2026-09-05T15:03:03Z",
+      "updated": "2026-09-05T15:03:03Z",
+      "cves": [
+        "CVE-2026-75904"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: libmodplug"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libmodplug 0.8.9.0-11.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3604",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libmodplug security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3604",
+      "released": "2026-09-05T15:03:04Z",
+      "updated": "2026-09-05T15:03:04Z",
+      "cves": [
+        "CVE-2026-75904"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: libmodplug"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libmodplug 0.8.9.0-11.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3605",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libmodplug security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3605",
+      "released": "2026-09-05T15:03:05Z",
+      "updated": "2026-09-05T15:03:05Z",
+      "cves": [
+        "CVE-2026-75904"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: libmodplug"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libmodplug 0.8.9.0-11.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3606",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-ujson security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3606",
+      "released": "2026-09-05T15:03:05Z",
+      "updated": "2026-09-05T15:03:05Z",
+      "cves": [
+        "CVE-2021-45958",
+        "CVE-2022-31116",
+        "CVE-2022-31117",
+        "CVE-2026-44660",
+        "CVE-2026-54911"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: python-ujson"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-ujson 4.0.2-3.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3607",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-ujson security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3607",
+      "released": "2026-09-05T15:03:06Z",
+      "updated": "2026-09-05T15:03:06Z",
+      "cves": [
+        "CVE-2021-45958",
+        "CVE-2026-32875",
+        "CVE-2026-44660",
+        "CVE-2026-54911"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: python-ujson"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-ujson 5.1.0-6.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3608",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-ujson security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3608",
+      "released": "2026-09-05T15:03:07Z",
+      "updated": "2026-09-05T15:03:07Z",
+      "cves": [
+        "CVE-2021-45958",
+        "CVE-2026-32875",
+        "CVE-2026-44660",
+        "CVE-2026-54911"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: python-ujson"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-ujson 5.1.0-7.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3609",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "gimp security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3609",
+      "released": "2026-09-05T15:03:07Z",
+      "updated": "2026-09-05T15:03:07Z",
+      "cves": [
+        "CVE-2026-18307",
+        "CVE-2026-42170",
+        "CVE-2026-78465",
+        "CVE-2026-78475",
+        "CVE-2026-80101"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: gimp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gimp 3.0.2-20.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3610",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "gimp security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3610",
+      "released": "2026-09-05T15:03:08Z",
+      "updated": "2026-09-05T15:03:08Z",
+      "cves": [
+        "CVE-2026-18307",
+        "CVE-2026-42170",
+        "CVE-2026-78465",
+        "CVE-2026-78475",
+        "CVE-2026-80101"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: gimp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gimp 3.0.2-20.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3611",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "popt security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3611",
+      "released": "2026-09-05T15:03:08Z",
+      "updated": "2026-09-05T15:03:08Z",
+      "cves": [
+        "CVE-2026-18739"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: popt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in popt 1.18-4.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3612",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "popt security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3612",
+      "released": "2026-09-05T15:03:09Z",
+      "updated": "2026-09-05T15:03:09Z",
+      "cves": [
+        "CVE-2026-18739"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: popt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in popt 1.18-4.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3613",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "popt security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3613",
+      "released": "2026-09-05T15:03:10Z",
+      "updated": "2026-09-05T15:03:10Z",
+      "cves": [
+        "CVE-2026-18739"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: popt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in popt 1.19-5.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3614",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "popt security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3614",
+      "released": "2026-09-05T15:03:10Z",
+      "updated": "2026-09-05T15:03:10Z",
+      "cves": [
+        "CVE-2026-18739"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: popt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in popt 1.19-5.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3615",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "glibc security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3615",
+      "released": "2026-09-05T15:03:10Z",
+      "updated": "2026-09-05T15:03:10Z",
+      "cves": [
+        "CVE-2026-19542",
+        "CVE-2026-77117",
+        "CVE-2026-80489"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: glibc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glibc 2.28-131.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3616",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "glibc security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3616",
+      "released": "2026-09-05T15:03:11Z",
+      "updated": "2026-09-05T15:03:11Z",
+      "cves": [
+        "CVE-2026-19542",
+        "CVE-2026-77117",
+        "CVE-2026-80489"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: glibc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glibc 2.34-183.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3617",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "glibc security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3617",
+      "released": "2026-09-05T15:03:12Z",
+      "updated": "2026-09-05T15:03:12Z",
+      "cves": [
+        "CVE-2026-19499",
+        "CVE-2026-77117",
+        "CVE-2026-80489"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: glibc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glibc 2.38-124.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3618",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "glibc security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3618",
+      "released": "2026-09-05T15:03:12Z",
+      "updated": "2026-09-05T15:03:12Z",
+      "cves": [
+        "CVE-2026-19499",
+        "CVE-2026-77117",
+        "CVE-2026-80489"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: glibc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glibc 2.38-124.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3619",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-soupsieve security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3619",
+      "released": "2026-09-05T15:03:13Z",
+      "updated": "2026-09-05T15:03:13Z",
+      "cves": [
+        "CVE-2026-49476",
+        "CVE-2026-49477"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: python-soupsieve"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-soupsieve 2.2-3.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3620",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-soupsieve security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3620",
+      "released": "2026-09-05T15:03:13Z",
+      "updated": "2026-09-05T15:03:13Z",
+      "cves": [
+        "CVE-2026-49476",
+        "CVE-2026-49477"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: python-soupsieve"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-soupsieve 2.4-2.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3621",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-soupsieve security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3621",
+      "released": "2026-09-05T15:03:14Z",
+      "updated": "2026-09-05T15:03:14Z",
+      "cves": [
+        "CVE-2026-49476",
+        "CVE-2026-49477"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: python-soupsieve"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-soupsieve 2.4-2.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3622",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "git security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3622",
+      "released": "2026-09-05T15:03:14Z",
+      "updated": "2026-09-05T15:03:14Z",
+      "cves": [
+        "CVE-2026-62960"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: git"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in git 2.43.0-13.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3623",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "git security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3623",
+      "released": "2026-09-05T15:03:15Z",
+      "updated": "2026-09-05T15:03:15Z",
+      "cves": [
+        "CVE-2026-62960"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: git"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in git 2.43.0-13.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3624",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "openssl security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3624",
+      "released": "2026-09-05T15:03:15Z",
+      "updated": "2026-09-05T15:03:15Z",
+      "cves": [
+        "CVE-2026-63074",
+        "CVE-2026-63076",
+        "CVE-2026-75803"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 3.0.12-53.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3625",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "openssl security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3625",
+      "released": "2026-09-05T15:03:16Z",
+      "updated": "2026-09-05T15:03:16Z",
+      "cves": [
+        "CVE-2026-63074",
+        "CVE-2026-63076",
+        "CVE-2026-75803"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 3.0.12-53.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3626",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "perl-Net-DNS security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3626",
+      "released": "2026-09-05T15:03:17Z",
+      "updated": "2026-09-05T15:03:17Z",
+      "cves": [
+        "CVE-2026-64193"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: perl-Net-DNS"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl-Net-DNS 1.40-2.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3627",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "perl-Net-DNS security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3627",
+      "released": "2026-09-05T15:03:17Z",
+      "updated": "2026-09-05T15:03:17Z",
+      "cves": [
+        "CVE-2026-64193"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: perl-Net-DNS"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl-Net-DNS 1.40-2.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3628",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "perl-DBI security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3628",
+      "released": "2026-09-05T15:03:18Z",
+      "updated": "2026-09-05T15:03:18Z",
+      "cves": [
+        "CVE-2026-14380",
+        "CVE-2026-14740",
+        "CVE-2026-19546"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: perl-DBI"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl-DBI 1.643-8.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3629",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "perl-DBI security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3629",
+      "released": "2026-09-05T15:03:18Z",
+      "updated": "2026-09-05T15:03:18Z",
+      "cves": [
+        "CVE-2026-14380",
+        "CVE-2026-14740",
+        "CVE-2026-19546"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: perl-DBI"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl-DBI 1.643-9.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3630",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "perl-DBI security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3630",
+      "released": "2026-09-05T15:03:19Z",
+      "updated": "2026-09-05T15:03:19Z",
+      "cves": [
+        "CVE-2026-14380",
+        "CVE-2026-14740",
+        "CVE-2026-19546"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: perl-DBI"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl-DBI 1.643-9.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3631",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "perl-DBI security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3631",
+      "released": "2026-09-05T15:03:19Z",
+      "updated": "2026-09-05T15:03:19Z",
+      "cves": [
+        "CVE-2026-14380",
+        "CVE-2026-14740",
+        "CVE-2026-19546"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: perl-DBI"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl-DBI 1.643-9.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3632",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libvirt security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3632",
+      "released": "2026-09-05T15:03:20Z",
+      "updated": "2026-09-05T15:03:20Z",
+      "cves": [
+        "CVE-2026-18917",
+        "CVE-2026-61477",
+        "CVE-2026-63622"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: libvirt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libvirt 6.2.0-28.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3633",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libvirt security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3633",
+      "released": "2026-09-05T15:03:20Z",
+      "updated": "2026-09-05T15:03:20Z",
+      "cves": [
+        "CVE-2026-18917",
+        "CVE-2026-61477",
+        "CVE-2026-63622"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: libvirt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libvirt 6.2.0-72.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3634",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libvirt security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3634",
+      "released": "2026-09-05T15:03:21Z",
+      "updated": "2026-09-05T15:03:21Z",
+      "cves": [
+        "CVE-2026-18917",
+        "CVE-2026-61477",
+        "CVE-2026-63622"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: libvirt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libvirt 9.10.0-36.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3635",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libvirt security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3635",
+      "released": "2026-09-05T15:03:21Z",
+      "updated": "2026-09-05T15:03:21Z",
+      "cves": [
+        "CVE-2026-18917",
+        "CVE-2026-61477",
+        "CVE-2026-63622"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: libvirt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libvirt 9.10.0-37.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3636",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-jwcrypto security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3636",
+      "released": "2026-09-05T15:03:22Z",
+      "updated": "2026-09-05T15:03:22Z",
+      "cves": [
+        "CVE-2026-39373"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: python-jwcrypto"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-jwcrypto 1.4.2-4.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3637",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "ffmpeg security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3637",
+      "released": "2026-09-05T15:03:23Z",
+      "updated": "2026-09-05T15:03:23Z",
+      "cves": [
+        "CVE-2026-65703",
+        "CVE-2026-65705",
+        "CVE-2026-70628",
+        "CVE-2026-70631"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: ffmpeg"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ffmpeg 4.2.4-54.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3638",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "ffmpeg security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3638",
+      "released": "2026-09-05T15:03:23Z",
+      "updated": "2026-09-05T15:03:23Z",
+      "cves": [
+        "CVE-2026-70628",
+        "CVE-2026-70631",
+        "CVE-2026-70632"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: ffmpeg"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ffmpeg 6.1.1-48.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3639",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "ffmpeg security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3639",
+      "released": "2026-09-05T15:03:24Z",
+      "updated": "2026-09-05T15:03:24Z",
+      "cves": [
+        "CVE-2026-70628",
+        "CVE-2026-70631",
+        "CVE-2026-70632"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: ffmpeg"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ffmpeg 6.1.1-48.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3640",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "ffmpeg security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3640",
+      "released": "2026-09-05T15:03:24Z",
+      "updated": "2026-09-05T15:03:24Z",
+      "cves": [
+        "CVE-2026-65703",
+        "CVE-2026-65705",
+        "CVE-2026-70628",
+        "CVE-2026-70631"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: ffmpeg"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ffmpeg 4.2.4-54.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3641",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "freerdp security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3641",
+      "released": "2026-09-05T15:03:25Z",
+      "updated": "2026-09-05T15:03:25Z",
+      "cves": [
+        "CVE-2026-67293"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: freerdp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in freerdp 2.11.8-7.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3642",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "freerdp security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3642",
+      "released": "2026-09-05T15:03:26Z",
+      "updated": "2026-09-05T15:03:26Z",
+      "cves": [
+        "CVE-2026-67293"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: freerdp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in freerdp 2.11.8-7.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3643",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "freerdp security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3643",
+      "released": "2026-09-05T15:03:26Z",
+      "updated": "2026-09-05T15:03:26Z",
+      "cves": [
+        "CVE-2026-67293"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: freerdp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in freerdp 2.11.8-7.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3644",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "freerdp security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3644",
+      "released": "2026-09-05T15:03:26Z",
+      "updated": "2026-09-05T15:03:26Z",
+      "cves": [
+        "CVE-2026-67293"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: freerdp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in freerdp 2.11.8-7.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3645",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "sssd security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3645",
+      "released": "2026-09-05T15:03:27Z",
+      "updated": "2026-09-05T15:03:27Z",
+      "cves": [
+        "CVE-2026-68742",
+        "CVE-2026-68744"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: sssd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in sssd 2.6.1-30.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3646",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "sssd security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3646",
+      "released": "2026-09-05T15:03:28Z",
+      "updated": "2026-09-05T15:03:28Z",
+      "cves": [
+        "CVE-2026-68742",
+        "CVE-2026-68744"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: sssd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in sssd 2.9.4-24.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3647",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "sssd security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3647",
+      "released": "2026-09-05T15:03:28Z",
+      "updated": "2026-09-05T15:03:28Z",
+      "cves": [
+        "CVE-2026-68742",
+        "CVE-2026-68744"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: sssd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in sssd 2.9.4-24.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3648",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "sssd security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3648",
+      "released": "2026-09-05T15:03:29Z",
+      "updated": "2026-09-05T15:03:29Z",
+      "cves": [
+        "CVE-2026-68744"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: sssd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in sssd 2.2.2-29.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3649",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "gstreamer1-plugins-good security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3649",
+      "released": "2026-09-05T15:03:30Z",
+      "updated": "2026-09-05T15:03:30Z",
+      "cves": [
+        "CVE-2026-73433",
+        "CVE-2026-73434"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: gstreamer1-plugins-good"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gstreamer1-plugins-good 1.20.3-9.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3650",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "gstreamer1-plugins-good security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3650",
+      "released": "2026-09-05T15:03:30Z",
+      "updated": "2026-09-05T15:03:30Z",
+      "cves": [
+        "CVE-2026-73433",
+        "CVE-2026-73434"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: gstreamer1-plugins-good"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gstreamer1-plugins-good 1.20.3-9.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3651",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "erlang security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3651",
+      "released": "2026-09-05T15:03:31Z",
+      "updated": "2026-09-05T15:03:31Z",
+      "cves": [
+        "CVE-2025-48041"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: erlang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in erlang 25.3.2.6-19.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3652",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "erlang security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3652",
+      "released": "2026-09-05T15:03:31Z",
+      "updated": "2026-09-05T15:03:31Z",
+      "cves": [
+        "CVE-2025-48041"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: erlang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in erlang 25.3.2.6-19.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3653",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "kata-containers-go security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3653",
+      "released": "2026-09-05T15:03:31Z",
+      "updated": "2026-09-05T15:03:31Z",
+      "cves": [
+        "CVE-2026-50540"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: kata-containers-go"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kata-containers-go 1.11.1-35.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3654",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libtiff security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3654",
+      "released": "2026-09-05T15:03:32Z",
+      "updated": "2026-09-05T15:03:32Z",
+      "cves": [
+        "CVE-2026-52490",
+        "CVE-2026-52491",
+        "CVE-2026-52492"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: libtiff"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libtiff 4.3.0-54.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3655",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libtiff security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3655",
+      "released": "2026-09-05T15:03:33Z",
+      "updated": "2026-09-05T15:03:33Z",
+      "cves": [
+        "CVE-2026-52490",
+        "CVE-2026-52491",
+        "CVE-2026-52492"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: libtiff"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libtiff 4.3.0-40.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3656",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "GraphicsMagick security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3656",
+      "released": "2026-09-05T15:03:35Z",
+      "updated": "2026-09-05T15:03:35Z",
+      "cves": [
+        "CVE-2026-77118"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: GraphicsMagick"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in GraphicsMagick 1.3.41-4.oe2003sp4",
+          "u": null
+        },
+        {
+          "t": "Fixed in GraphicsMagick 1.3.41-4.oe2203sp4",
+          "u": null
+        },
+        {
+          "t": "Fixed in GraphicsMagick 1.3.41-4.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3657",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-gunicorn security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3657",
+      "released": "2026-09-05T15:03:35Z",
+      "updated": "2026-09-05T15:03:35Z",
+      "cves": [
+        "CVE-2024-6827"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: python-gunicorn"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-gunicorn 21.2.0-2.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3658",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-gunicorn security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3658",
+      "released": "2026-09-05T15:03:35Z",
+      "updated": "2026-09-05T15:03:35Z",
+      "cves": [
+        "CVE-2024-1135"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: python-gunicorn"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-gunicorn 21.2.0-3.oe2403sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3659",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-gunicorn security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3659",
+      "released": "2026-09-05T15:03:36Z",
+      "updated": "2026-09-05T15:03:36Z",
+      "cves": [
+        "CVE-2024-1135",
+        "CVE-2024-6827"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: python-gunicorn"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-gunicorn 20.1.0-2.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3660",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-gunicorn security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3660",
+      "released": "2026-09-05T15:03:37Z",
+      "updated": "2026-09-05T15:03:37Z",
+      "cves": [
+        "CVE-2024-6827"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: python-gunicorn"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-gunicorn 21.2.0-2.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3661",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "NetworkManager security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3661",
+      "released": "2026-09-05T15:03:38Z",
+      "updated": "2026-09-05T15:03:38Z",
+      "cves": [
+        "CVE-2026-19685"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: NetworkManager"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in NetworkManager 1.32.12-26.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3662",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "NetworkManager security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3662",
+      "released": "2026-09-05T15:03:39Z",
+      "updated": "2026-09-05T15:03:39Z",
+      "cves": [
+        "CVE-2026-19685"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: NetworkManager"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in NetworkManager 1.44.2-9.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3663",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "NetworkManager security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3663",
+      "released": "2026-09-05T15:03:40Z",
+      "updated": "2026-09-05T15:03:40Z",
+      "cves": [
+        "CVE-2026-19685"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: NetworkManager"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in NetworkManager 1.44.2-9.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3664",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "NetworkManager security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3664",
+      "released": "2026-09-05T15:03:41Z",
+      "updated": "2026-09-05T15:03:41Z",
+      "cves": [
+        "CVE-2026-19685"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: NetworkManager"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in NetworkManager 1.26.2-19.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3665",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "ruby security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3665",
+      "released": "2026-09-05T15:03:42Z",
+      "updated": "2026-09-05T15:03:42Z",
+      "cves": [
+        "CVE-2026-47240",
+        "CVE-2026-47241",
+        "CVE-2026-47242",
+        "CVE-2026-80212"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: ruby"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ruby 3.2.2-159.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3666",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "ruby security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3666",
+      "released": "2026-09-05T15:03:43Z",
+      "updated": "2026-09-05T15:03:43Z",
+      "cves": [
+        "CVE-2026-80212"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: ruby"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ruby 2.5.8-143.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3667",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "ruby security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3667",
+      "released": "2026-09-05T15:03:43Z",
+      "updated": "2026-09-05T15:03:43Z",
+      "cves": [
+        "CVE-2026-80212"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: ruby"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ruby 3.0.3-150.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3668",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "ruby security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3668",
+      "released": "2026-09-05T15:03:44Z",
+      "updated": "2026-09-05T15:03:44Z",
+      "cves": [
+        "CVE-2026-47240",
+        "CVE-2026-47241",
+        "CVE-2026-47242",
+        "CVE-2026-80212"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: ruby"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ruby 3.2.2-159.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3669",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "expat security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3669",
+      "released": "2026-09-05T15:03:45Z",
+      "updated": "2026-09-05T15:03:45Z",
+      "cves": [
+        "CVE-2026-66046",
+        "CVE-2026-76641",
+        "CVE-2026-76957"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: expat"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in expat 2.2.9-33.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3670",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "expat security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3670",
+      "released": "2026-09-05T15:03:46Z",
+      "updated": "2026-09-05T15:03:46Z",
+      "cves": [
+        "CVE-2026-66046",
+        "CVE-2026-76641",
+        "CVE-2026-76957"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: expat"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in expat 2.4.1-31.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3671",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "expat security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3671",
+      "released": "2026-09-05T15:03:46Z",
+      "updated": "2026-09-05T15:03:46Z",
+      "cves": [
+        "CVE-2026-66046",
+        "CVE-2026-76641",
+        "CVE-2026-76957"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: expat"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in expat 2.5.0-27.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3672",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "expat security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3672",
+      "released": "2026-09-05T15:03:47Z",
+      "updated": "2026-09-05T15:03:47Z",
+      "cves": [
+        "CVE-2026-66046",
+        "CVE-2026-76641",
+        "CVE-2026-76957"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: expat"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in expat 2.5.0-27.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3673",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "openssh security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3673",
+      "released": "2026-09-05T15:03:48Z",
+      "updated": "2026-09-05T15:03:48Z",
+      "cves": [
+        "CVE-2026-73281"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: openssh"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssh 9.6p1-21.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3674",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "openssh security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3674",
+      "released": "2026-09-05T15:03:48Z",
+      "updated": "2026-09-05T15:03:48Z",
+      "cves": [
+        "CVE-2026-73281"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: openssh"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssh 9.6p1-21.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3675",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "curl security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3675",
+      "released": "2026-09-05T15:03:49Z",
+      "updated": "2026-09-05T15:03:49Z",
+      "cves": [
+        "CVE-2026-8932"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: curl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in curl 7.71.1-52.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3676",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "curl security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3676",
+      "released": "2026-09-05T15:03:49Z",
+      "updated": "2026-09-05T15:03:49Z",
+      "cves": [
+        "CVE-2026-8932"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: curl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in curl 7.79.1-53.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3677",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "curl security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3677",
+      "released": "2026-09-05T15:03:50Z",
+      "updated": "2026-09-05T15:03:50Z",
+      "cves": [
+        "CVE-2026-8932"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: curl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in curl 8.4.0-35.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3678",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "curl security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3678",
+      "released": "2026-09-05T15:03:50Z",
+      "updated": "2026-09-05T15:03:50Z",
+      "cves": [
+        "CVE-2026-8932"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: curl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in curl 8.4.0-35.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3679",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "nmap security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3679",
+      "released": "2026-09-05T15:03:51Z",
+      "updated": "2026-09-05T15:03:51Z",
+      "cves": [
+        "CVE-2026-72712"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: nmap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nmap 7.80-7.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3680",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "nmap security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3680",
+      "released": "2026-09-05T15:03:52Z",
+      "updated": "2026-09-05T15:03:52Z",
+      "cves": [
+        "CVE-2026-72712"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: nmap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nmap 7.92-11.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3681",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "nmap security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3681",
+      "released": "2026-09-05T15:03:52Z",
+      "updated": "2026-09-05T15:03:52Z",
+      "cves": [
+        "CVE-2026-72712"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: nmap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nmap 7.94-11.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3682",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "nmap security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3682",
+      "released": "2026-09-05T15:03:53Z",
+      "updated": "2026-09-05T15:03:53Z",
+      "cves": [
+        "CVE-2026-72712"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: nmap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nmap 7.94-11.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3683",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "busybox security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3683",
+      "released": "2026-09-05T15:03:53Z",
+      "updated": "2026-09-05T15:03:53Z",
+      "cves": [
+        "CVE-2026-76014"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: busybox"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in busybox 1.34.1-35.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3684",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "busybox security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3684",
+      "released": "2026-09-05T15:03:54Z",
+      "updated": "2026-09-05T15:03:54Z",
+      "cves": [
+        "CVE-2026-76014"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: busybox"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in busybox 1.36.1-22.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3685",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "busybox security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3685",
+      "released": "2026-09-05T15:03:55Z",
+      "updated": "2026-09-05T15:03:55Z",
+      "cves": [
+        "CVE-2026-76014"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: busybox"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in busybox 1.36.1-22.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3686",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "busybox security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3686",
+      "released": "2026-09-05T15:03:55Z",
+      "updated": "2026-09-05T15:03:55Z",
+      "cves": [
+        "CVE-2026-76014"
+      ],
+      "sev": "LOW",
+      "products": [
+        "openEuler: busybox"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in busybox 1.31.1-36.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3687",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "aws-sdk-cpp security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3687",
+      "released": "2026-09-05T15:03:56Z",
+      "updated": "2026-09-05T15:03:56Z",
+      "cves": [
+        "CVE-2025-14760",
+        "CVE-2026-19642",
+        "CVE-2026-19643"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: aws-sdk-cpp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in aws-sdk-cpp 1.11.327-4.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3688",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "aws-sdk-cpp security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3688",
+      "released": "2026-09-05T15:03:57Z",
+      "updated": "2026-09-05T15:03:57Z",
+      "cves": [
+        "CVE-2025-14760",
+        "CVE-2026-19642",
+        "CVE-2026-19643"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: aws-sdk-cpp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in aws-sdk-cpp 1.11.327-5.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3689",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "aws-sdk-cpp security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3689",
+      "released": "2026-09-05T15:03:57Z",
+      "updated": "2026-09-05T15:03:57Z",
+      "cves": [
+        "CVE-2025-14760",
+        "CVE-2026-19642",
+        "CVE-2026-19643"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: aws-sdk-cpp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in aws-sdk-cpp 1.11.327-5.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3690",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libsoup security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3690",
+      "released": "2026-09-05T15:03:58Z",
+      "updated": "2026-09-05T15:03:58Z",
+      "cves": [
+        "CVE-2026-12548",
+        "CVE-2026-12549",
+        "CVE-2026-66338",
+        "CVE-2026-77014",
+        "CVE-2026-77680"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: libsoup"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libsoup 2.74.2-22.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3691",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libsoup security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3691",
+      "released": "2026-09-05T15:03:59Z",
+      "updated": "2026-09-05T15:03:59Z",
+      "cves": [
+        "CVE-2026-12548",
+        "CVE-2026-12549",
+        "CVE-2026-66338",
+        "CVE-2026-77014",
+        "CVE-2026-77680"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: libsoup"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libsoup 2.74.3-25.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3692",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libsoup security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3692",
+      "released": "2026-09-05T15:03:59Z",
+      "updated": "2026-09-05T15:03:59Z",
+      "cves": [
+        "CVE-2026-12548",
+        "CVE-2026-12549",
+        "CVE-2026-15711",
+        "CVE-2026-66338",
+        "CVE-2026-77014",
+        "CVE-2026-77680"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: libsoup"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libsoup 2.74.3-25.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3693",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libsoup security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3693",
+      "released": "2026-09-05T15:04:00Z",
+      "updated": "2026-09-05T15:04:00Z",
+      "cves": [
+        "CVE-2026-12548",
+        "CVE-2026-12549",
+        "CVE-2026-66338",
+        "CVE-2026-77014",
+        "CVE-2026-77680"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "openEuler: libsoup"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libsoup 2.71.0-21.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3694",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libsoup3 security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3694",
+      "released": "2026-09-05T15:04:01Z",
+      "updated": "2026-09-05T15:04:01Z",
+      "cves": [
+        "CVE-2026-12548",
+        "CVE-2026-12549",
+        "CVE-2026-15711",
+        "CVE-2026-77014",
+        "CVE-2026-77680"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: libsoup3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libsoup3 3.4.5-24.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3695",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "libsoup3 security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3695",
+      "released": "2026-09-05T15:04:01Z",
+      "updated": "2026-09-05T15:04:01Z",
+      "cves": [
+        "CVE-2026-12548",
+        "CVE-2026-12549",
+        "CVE-2026-15711",
+        "CVE-2026-77014",
+        "CVE-2026-77680"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: libsoup3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libsoup3 3.4.5-24.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3696",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "qemu security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3696",
+      "released": "2026-09-05T15:04:02Z",
+      "updated": "2026-09-05T15:04:02Z",
+      "cves": [
+        "CVE-2026-16457",
+        "CVE-2026-50626",
+        "CVE-2026-66021"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: qemu"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in qemu 6.2.0-118.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3697",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "qemu security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3697",
+      "released": "2026-09-05T15:04:03Z",
+      "updated": "2026-09-05T15:04:03Z",
+      "cves": [
+        "CVE-2026-16457",
+        "CVE-2026-50626",
+        "CVE-2026-66021"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: qemu"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in qemu 8.2.0-60.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3698",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "qemu security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3698",
+      "released": "2026-09-05T15:04:03Z",
+      "updated": "2026-09-05T15:04:03Z",
+      "cves": [
+        "CVE-2026-16457",
+        "CVE-2026-50626",
+        "CVE-2026-66021"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "openEuler: qemu"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in qemu 8.2.0-89.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3699",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-GitPython security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3699",
+      "released": "2026-09-05T15:04:04Z",
+      "updated": "2026-09-05T15:04:04Z",
+      "cves": [
+        "CVE-2026-73619",
+        "CVE-2026-73620",
+        "CVE-2026-73621",
+        "CVE-2026-73622",
+        "CVE-2026-73623",
+        "CVE-2026-73624",
+        "CVE-2026-73625",
+        "CVE-2026-76217",
+        "CVE-2026-76218",
+        "CVE-2026-76219",
+        "CVE-2026-76220",
+        "CVE-2026-76221",
+        "CVE-2026-76222",
+        "CVE-2026-78675",
+        "CVE-2026-78676",
+        "CVE-2026-78677",
+        "CVE-2026-78679"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: python-GitPython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-GitPython 3.1.59-1.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3700",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "python-GitPython security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3700",
+      "released": "2026-09-05T15:04:05Z",
+      "updated": "2026-09-05T15:04:05Z",
+      "cves": [
+        "CVE-2026-73619",
+        "CVE-2026-73620",
+        "CVE-2026-73621",
+        "CVE-2026-73622",
+        "CVE-2026-73623",
+        "CVE-2026-73624",
+        "CVE-2026-73625",
+        "CVE-2026-76217",
+        "CVE-2026-76218",
+        "CVE-2026-76219",
+        "CVE-2026-76220",
+        "CVE-2026-76221",
+        "CVE-2026-76222",
+        "CVE-2026-78675",
+        "CVE-2026-78676",
+        "CVE-2026-78677",
+        "CVE-2026-78679"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: python-GitPython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-GitPython 3.1.59-1.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3701",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "kernel security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3701",
+      "released": "2026-09-05T15:04:06Z",
+      "updated": "2026-09-05T15:04:06Z",
+      "cves": [
+        "CVE-2021-47358",
+        "CVE-2026-23340",
+        "CVE-2026-31668",
+        "CVE-2026-52955",
+        "CVE-2026-52999",
+        "CVE-2026-53131",
+        "CVE-2026-53221",
+        "CVE-2026-53225",
+        "CVE-2026-53228",
+        "CVE-2026-64564",
+        "CVE-2026-68156",
+        "CVE-2026-68425",
+        "CVE-2026-74377"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 4.19.90-2608.6.0.0388.oe2003sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3702",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "kernel security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3702",
+      "released": "2026-09-05T15:04:06Z",
+      "updated": "2026-09-05T15:04:06Z",
+      "cves": [
+        "CVE-2025-40027",
+        "CVE-2025-40307",
+        "CVE-2026-46208",
+        "CVE-2026-52917",
+        "CVE-2026-52955",
+        "CVE-2026-53199",
+        "CVE-2026-53225",
+        "CVE-2026-63801",
+        "CVE-2026-63913",
+        "CVE-2026-63914",
+        "CVE-2026-63971",
+        "CVE-2026-64089",
+        "CVE-2026-64095",
+        "CVE-2026-64188",
+        "CVE-2026-64450",
+        "CVE-2026-64471",
+        "CVE-2026-64483",
+        "CVE-2026-68155",
+        "CVE-2026-68156",
+        "CVE-2026-68227",
+        "CVE-2026-68425",
+        "CVE-2026-72188",
+        "CVE-2026-74297",
+        "CVE-2026-74302",
+        "CVE-2026-74377",
+        "CVE-2026-74394",
+        "CVE-2026-74395",
+        "CVE-2026-74397",
+        "CVE-2026-74499",
+        "CVE-2026-74588",
+        "CVE-2026-80527",
+        "CVE-2026-80557"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 5.10.0-331.0.0.232.oe2203sp4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3703",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "kernel security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3703",
+      "released": "2026-09-05T15:04:07Z",
+      "updated": "2026-09-05T15:04:07Z",
+      "cves": [
+        "CVE-2025-37979",
+        "CVE-2025-38736",
+        "CVE-2026-43078",
+        "CVE-2026-46028",
+        "CVE-2026-63912",
+        "CVE-2026-68476",
+        "CVE-2026-68477",
+        "CVE-2026-72021",
+        "CVE-2026-72049",
+        "CVE-2026-72052",
+        "CVE-2026-72053",
+        "CVE-2026-72054",
+        "CVE-2026-72061",
+        "CVE-2026-72072",
+        "CVE-2026-72129",
+        "CVE-2026-72135",
+        "CVE-2026-72136",
+        "CVE-2026-72157",
+        "CVE-2026-72172",
+        "CVE-2026-72217",
+        "CVE-2026-72221",
+        "CVE-2026-72222",
+        "CVE-2026-72235",
+        "CVE-2026-72282",
+        "CVE-2026-72310",
+        "CVE-2026-72316",
+        "CVE-2026-72317",
+        "CVE-2026-72318",
+        "CVE-2026-72319",
+        "CVE-2026-72330",
+        "CVE-2026-72339",
+        "CVE-2026-72342",
+        "CVE-2026-72389",
+        "CVE-2026-72400",
+        "CVE-2026-72425",
+        "CVE-2026-72450",
+        "CVE-2026-72459",
+        "CVE-2026-72460",
+        "CVE-2026-72464",
+        "CVE-2026-72466",
+        "CVE-2026-72473",
+        "CVE-2026-74271",
+        "CVE-2026-74283",
+        "CVE-2026-74287",
+        "CVE-2026-74305",
+        "CVE-2026-74377",
+        "CVE-2026-74378",
+        "CVE-2026-74394",
+        "CVE-2026-74397",
+        "CVE-2026-74398",
+        "CVE-2026-74406"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.0-145.1.24.161.oe2403sp1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OESA-2026-3704",
+      "src": "osv_openeuler",
+      "vendor": "Openeuler",
+      "title": "kernel security update",
+      "url": "https://www.openeuler.org/zh/security/security-bulletins/detail/?id=openEuler-SA-2026-3704",
+      "released": "2026-09-05T15:04:08Z",
+      "updated": "2026-09-05T15:04:08Z",
+      "cves": [
+        "CVE-2025-71112",
+        "CVE-2025-71123",
+        "CVE-2026-23243",
+        "CVE-2026-23244",
+        "CVE-2026-23253",
+        "CVE-2026-23268",
+        "CVE-2026-23271",
+        "CVE-2026-23317",
+        "CVE-2026-23319",
+        "CVE-2026-23359",
+        "CVE-2026-23383",
+        "CVE-2026-23388",
+        "CVE-2026-43078",
+        "CVE-2026-46028",
+        "CVE-2026-52980",
+        "CVE-2026-53055",
+        "CVE-2026-53246",
+        "CVE-2026-53384",
+        "CVE-2026-63800",
+        "CVE-2026-63830",
+        "CVE-2026-63886",
+        "CVE-2026-63887",
+        "CVE-2026-63888",
+        "CVE-2026-63889",
+        "CVE-2026-63891",
+        "CVE-2026-63898",
+        "CVE-2026-63899",
+        "CVE-2026-63901",
+        "CVE-2026-63912",
+        "CVE-2026-63917",
+        "CVE-2026-63919",
+        "CVE-2026-63920",
+        "CVE-2026-63921",
+        "CVE-2026-63924",
+        "CVE-2026-63926",
+        "CVE-2026-63928",
+        "CVE-2026-63944",
+        "CVE-2026-63945",
+        "CVE-2026-63946",
+        "CVE-2026-63952",
+        "CVE-2026-63956",
+        "CVE-2026-63968",
+        "CVE-2026-63971",
+        "CVE-2026-63974",
+        "CVE-2026-63975",
+        "CVE-2026-63976",
+        "CVE-2026-63984",
+        "CVE-2026-63985",
+        "CVE-2026-63992",
+        "CVE-2026-63993",
+        "CVE-2026-63994",
+        "CVE-2026-64002",
+        "CVE-2026-64003",
+        "CVE-2026-64015",
+        "CVE-2026-64025",
+        "CVE-2026-64032",
+        "CVE-2026-64046",
+        "CVE-2026-64047",
+        "CVE-2026-64073",
+        "CVE-2026-64076"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "openEuler: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.0-145.3.29.160.oe2403sp3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:63129",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: kernel security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:63129",
+      "released": "2026-09-05T18:05:10Z",
+      "updated": "2026-09-19T18:13:17Z",
+      "cves": [
+        "CVE-2025-40064",
+        "CVE-2025-71147",
+        "CVE-2026-45970",
+        "CVE-2026-46185",
+        "CVE-2026-53073",
+        "CVE-2026-53391",
+        "CVE-2026-53392",
+        "CVE-2026-53397",
+        "CVE-2026-53399",
+        "CVE-2026-63800",
+        "CVE-2026-63808",
+        "CVE-2026-63824",
+        "CVE-2026-63886",
+        "CVE-2026-63887",
+        "CVE-2026-64002",
+        "CVE-2026-64018",
+        "CVE-2026-64268",
+        "CVE-2026-64298",
+        "CVE-2026-64304",
+        "CVE-2026-64387",
+        "CVE-2026-64438",
+        "CVE-2026-64490",
+        "CVE-2026-68145",
+        "CVE-2026-68166",
+        "CVE-2026-68480",
+        "CVE-2026-72069",
+        "CVE-2026-72130"
+      ],
+      "products": [
+        "Rocky Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 0:5.14.0-687.44.1.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:63128",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: kernel security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:63128",
+      "released": "2026-09-05T18:09:10Z",
+      "updated": "2026-09-19T18:13:22Z",
+      "cves": [
+        "CVE-2026-53073",
+        "CVE-2026-63808",
+        "CVE-2026-63824",
+        "CVE-2026-64387",
+        "CVE-2026-68145",
+        "CVE-2026-74581"
+      ],
+      "products": [
+        "Rocky Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 0:6.12.0-211.51.1.el10_2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99729",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-18238 affecting package libpcap for versions less than 1.10.7-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18238",
+      "released": "2026-09-05T19:16:55Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-18238"
+      ],
+      "products": [
+        "Azure Linux: libpcap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpcap 1.10.7-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99732",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-31911 affecting package libpcap for versions less than 1.10.7-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-31911",
+      "released": "2026-09-05T19:16:55Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-31911"
+      ],
+      "products": [
+        "Azure Linux: libpcap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpcap 1.10.7-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99735",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-18313 affecting package libpcap for versions less than 1.10.7-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18313",
+      "released": "2026-09-05T19:16:55Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-18313"
+      ],
+      "products": [
+        "Azure Linux: libpcap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpcap 1.10.7-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99738",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-6244 affecting package libpcap for versions less than 1.10.7-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6244",
+      "released": "2026-09-05T19:16:55Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-6244"
+      ],
+      "products": [
+        "Azure Linux: libpcap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpcap 1.10.7-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99741",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-31912 affecting package libpcap for versions less than 1.10.7-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-31912",
+      "released": "2026-09-05T19:16:55Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-31912"
+      ],
+      "products": [
+        "Azure Linux: libpcap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpcap 1.10.7-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99744",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-0799 affecting package libpcap for versions less than 1.10.7-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0799",
+      "released": "2026-09-05T19:16:55Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-0799"
+      ],
+      "products": [
+        "Azure Linux: libpcap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpcap 1.10.7-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99921",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-31912 affecting package nmap 7.95-5",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-31912",
+      "released": "2026-09-05T19:16:55Z",
+      "updated": "2026-09-14T05:26:59Z",
+      "cves": [
+        "CVE-2026-31912"
+      ],
+      "products": [
+        "Azure Linux: nmap"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99927",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-18238 affecting package nmap 7.95-5",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18238",
+      "released": "2026-09-05T19:16:55Z",
+      "updated": "2026-09-14T05:26:59Z",
+      "cves": [
+        "CVE-2026-18238"
+      ],
+      "products": [
+        "Azure Linux: nmap"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99930",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-31911 affecting package nmap 7.95-5",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-31911",
+      "released": "2026-09-05T19:16:55Z",
+      "updated": "2026-09-14T05:26:59Z",
+      "cves": [
+        "CVE-2026-31911"
+      ],
+      "products": [
+        "Azure Linux: nmap"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99933",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-0799 affecting package nmap 7.95-5",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0799",
+      "released": "2026-09-05T19:16:55Z",
+      "updated": "2026-09-14T05:26:59Z",
+      "cves": [
+        "CVE-2026-0799"
+      ],
+      "products": [
+        "Azure Linux: nmap"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99936",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-6244 affecting package nmap 7.95-5",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6244",
+      "released": "2026-09-05T19:16:55Z",
+      "updated": "2026-09-14T05:26:59Z",
+      "cves": [
+        "CVE-2026-6244"
+      ],
+      "products": [
+        "Azure Linux: nmap"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99747",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-6554 affecting package libpcap for versions less than 1.10.7-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6554",
+      "released": "2026-09-05T19:16:56Z",
+      "updated": "2026-09-09T06:55:05Z",
+      "cves": [
+        "CVE-2026-6554"
+      ],
+      "products": [
+        "Azure Linux: libpcap"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpcap 1.10.7-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99924",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-6554 affecting package nmap 7.95-5",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6554",
+      "released": "2026-09-05T19:16:56Z",
+      "updated": "2026-09-14T05:26:59Z",
+      "cves": [
+        "CVE-2026-6554"
+      ],
+      "products": [
+        "Azure Linux: nmap"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-80256",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-80256",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-80256",
+      "released": "2026-09-05T19:52:42Z",
+      "updated": "2026-09-06T06:00:40Z",
+      "cves": [
+        "CVE-2026-80256"
+      ],
+      "products": [
+        "Alpaquita: curl",
+        "BellSoft Hardened Containers: curl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in curl 8.22.0-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in curl 8.22.0-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in curl 8.22.0-r0",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

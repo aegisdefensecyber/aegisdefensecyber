@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-05-13",
-  "count": 5,
+  "count": 10,
   "items": [
     {
       "id": "ICSA-25-135-18",
@@ -41,6 +41,149 @@
         },
         {
           "t": "Disable the Profinet Discovery and Configuration Protocol (DCP) service",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-327438",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-327438: Multiple Vulnerabilities in SCALANCE LPE9403",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-327438.html",
+      "released": "2025-05-13T00:00:00Z",
+      "updated": "2026-09-08T00:00:00Z",
+      "cves": [
+        "CVE-2025-40572",
+        "CVE-2025-40573",
+        "CVE-2025-40574",
+        "CVE-2025-40575",
+        "CVE-2025-40576",
+        "CVE-2025-40577",
+        "CVE-2025-40578",
+        "CVE-2025-40579",
+        "CVE-2025-40580",
+        "CVE-2025-40581",
+        "CVE-2025-40582",
+        "CVE-2025-40583"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SCALANCE LPE9403 (6GK5998-3GS00-2AC2)"
+      ],
+      "fix": [
+        {
+          "t": "Restrict access to authorized and trusted personal only",
+          "u": null
+        },
+        {
+          "t": "Update to V4.0 HF0 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109989944/"
+        },
+        {
+          "t": "Disable the Profinet Discovery and Configuration Protocol (DCP) service",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-794185",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-794185: RADIUS Protocol Susceptible to Forgery Attacks (CVE-2024-3596) - Impact to SIPROTEC, SICAM and Related Products",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-794185.html",
+      "released": "2025-05-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2024-3596"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.0,
+      "products": [
+        "CPC80 Central Processing/Communication",
+        "CPCI85 Central Processing/Communication",
+        "POWER METER SICAM Q100 family",
+        "POWER METER SICAM Q200 family",
+        "Powerlink IP",
+        "SICAM AK 3"
+      ],
+      "fix": [
+        {
+          "t": "Conﬁgure the RADIUS server to require the presence of a Message-Authenticator attribute in all Access-Request packets from RADIUS client devices that support it",
+          "u": null
+        },
+        {
+          "t": "Restrict access to the networks where RADIUS messages are exchanged (e.g., send RADIUS traffic via management network or a dedicated VLAN)",
+          "u": null
+        },
+        {
+          "t": "Update to V10.0 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109796884/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-864900",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-864900: Multiple Vulnerabilities in Fortigate NGFW before V7.6.6 on RUGGEDCOM APE1808 Devices",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-864900.html",
+      "released": "2025-05-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "cves": [
+        "CVE-2024-32122",
+        "CVE-2024-50562",
+        "CVE-2024-52963",
+        "CVE-2024-55599",
+        "CVE-2025-22862",
+        "CVE-2025-24471",
+        "CVE-2025-25248",
+        "CVE-2025-25249",
+        "CVE-2025-25250",
+        "CVE-2025-25253",
+        "CVE-2025-31366",
+        "CVE-2025-31514",
+        "CVE-2025-43892",
+        "CVE-2025-47890",
+        "CVE-2025-53744",
+        "CVE-2025-53843",
+        "CVE-2025-53844",
+        "CVE-2025-54821",
+        "CVE-2025-57740",
+        "CVE-2025-58413",
+        "CVE-2025-58903",
+        "CVE-2025-59718",
+        "CVE-2025-59719",
+        "CVE-2025-62675",
+        "CVE-2025-62826",
+        "CVE-2025-67862",
+        "CVE-2026-59837",
+        "CVE-2026-59840",
+        "CVE-2026-84392"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "RUGGEDCOM APE1808"
+      ],
+      "fix": [
+        {
+          "t": "Update Fortigate NGFW to V7.4.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information",
+          "u": null
+        },
+        {
+          "t": "Under the config vpn ipsec phase1-interface configuration, either set authmethod to psk, or set digital-signature-auth to disable (see https://fortiguard.forti…",
+          "u": null
+        },
+        {
+          "t": "For each interface, remove \"fabric\" access (see https://fortiguard.fortinet.com/psirt/FG-IR-25-084)",
           "u": null
         }
       ],
@@ -188,6 +331,59 @@
           "u": null
         }
       ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHBA-2025:5321",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Bug Fix Advisory: mysql8.4 bug fix and enhancement update",
+      "url": "https://access.redhat.com/errata/RHBA-2025:5321",
+      "released": "2025-05-13T11:47:25Z",
+      "updated": "2026-10-29T09:02:11Z",
+      "cves": [
+        "CVE-2025-21521"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHBA-2025:5321"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:7427",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: xterm security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:7427",
+      "released": "2025-05-13T13:58:31Z",
+      "updated": "2026-10-30T00:32:39Z",
+      "cves": [
+        "CVE-2022-45063"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:7427"
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-26"
     },
     {

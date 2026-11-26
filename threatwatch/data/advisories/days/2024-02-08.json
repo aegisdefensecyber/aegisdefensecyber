@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "date": "2024-02-08",
+  "count": 1,
+  "items": [
+    {
+      "id": "RHSA-2024:0746",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "grafana: Use of Cache Containing Sensitive Information",
+      "url": "https://access.redhat.com/errata/RHSA-2024:0746",
+      "released": "2024-02-08T16:49:55Z",
+      "updated": "2026-11-26T17:21:03Z",
+      "cves": [
+        "CVE-2022-23498",
+        "CVE-2022-41717",
+        "CVE-2023-0056",
+        "CVE-2023-0507",
+        "CVE-2023-0594",
+        "CVE-2023-1387",
+        "CVE-2023-22462",
+        "CVE-2023-24538",
+        "CVE-2023-25725"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer to: https://access.redhat.com/articles/2789521 and https://access.redhat.com/do…",
+          "u": "https://access.redhat.com/errata/RHSA-2024:0746"
+        },
+        {
+          "t": "To mitigate the vulnerability, disable the data source query caching for all data sources.",
+          "u": null
+        },
+        {
+          "t": "Applying the Content-Security-Policy shipped with Grafana would block inline scripts from executing and would mitigate this.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    }
+  ]
+}

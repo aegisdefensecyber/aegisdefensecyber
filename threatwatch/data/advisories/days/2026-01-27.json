@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-01-27",
-  "count": 8,
+  "count": 16,
   "items": [
     {
       "id": "openSUSE-SU-2026:10101-1",
@@ -135,6 +135,79 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BELL-CVE-2026-0994",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-0994",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-0994",
+      "released": "2026-01-27T06:07:24Z",
+      "updated": "2026-09-05T10:49:20Z",
+      "cves": [
+        "CVE-2026-0994"
+      ],
+      "products": [
+        "Alpaquita: py3-protobuf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in py3-protobuf 6.33.5-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0300-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python-pyasn1",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260300-1/",
+      "released": "2026-01-27T06:46:27Z",
+      "updated": "2026-09-16T19:00:54Z",
+      "cves": [
+        "CVE-2026-23490"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-4364",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "Out-of-bounds Write, Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability in davisking dlib (dlib/external/zlib modules). This vulnerability is associated with program files inflate.C. Th…",
+      "released": "2026-01-27T09:15:49Z",
+      "updated": "2026-11-14T09:33:09Z",
+      "cves": [
+        "CVE-2026-24799"
+      ],
+      "products": [
+        "PyPI: dlib"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dlib 19.24.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "RHSA-2026:1000",
       "src": "direct_csaf",
       "vendor": "Red Hat",
@@ -157,6 +230,137 @@
           "u": null
         }
       ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0303-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for xen",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260303-1/",
+      "released": "2026-01-27T16:14:45Z",
+      "updated": "2026-09-16T19:00:56Z",
+      "cves": [
+        "CVE-2025-27466",
+        "CVE-2025-58142",
+        "CVE-2025-58143",
+        "CVE-2025-58149",
+        "CVE-2025-58150",
+        "CVE-2026-23553"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.2"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0304-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for xen",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260304-1/",
+      "released": "2026-01-27T16:14:51Z",
+      "updated": "2026-09-16T19:00:58Z",
+      "cves": [
+        "CVE-2025-58150",
+        "CVE-2026-23553"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0305-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Recommended update for kernel-firmware",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260305-1/",
+      "released": "2026-01-27T16:15:14Z",
+      "updated": "2026-09-16T19:00:59Z",
+      "sev": "HIGH",
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.5",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5-ESPOS",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5-LTSS",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5",
+        "SUSE Linux Enterprise Server 15 SP5-LTSS"
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0306-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for xen",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260306-1/",
+      "released": "2026-01-27T16:15:19Z",
+      "updated": "2026-09-16T19:01:00Z",
+      "cves": [
+        "CVE-2025-58150",
+        "CVE-2026-23553"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0307-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python-python-multipart",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260307-1/",
+      "released": "2026-01-27T16:36:58Z",
+      "updated": "2026-09-16T19:01:01Z",
+      "cves": [
+        "CVE-2026-24486"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "SUSE Linux Enterprise",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-26"
     },
     {

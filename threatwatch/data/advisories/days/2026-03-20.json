@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-20",
-  "count": 21,
+  "count": 33,
   "items": [
     {
       "id": "openSUSE-SU-2026:10396-1",
@@ -337,6 +337,234 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:0936-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libssh",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260936-1/",
+      "released": "2026-03-20T07:46:48Z",
+      "updated": "2026-09-16T19:09:56Z",
+      "cves": [
+        "CVE-2026-3731"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.2"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-ceph-2020-10736",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An authorization bypass vulnerability was found in Ceph versions 15.2.0 before 15.2.2, where the ceph-mon and ceph-mgr daemons do not properly restrict access, resulting in gaining access to unauthorized resources. This…",
+      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-10736",
+      "released": "2026-03-20T09:05:27Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-10736"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: ceph"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ceph 15.2.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-ceph-2020-10753",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw was found in the Red Hat Ceph Storage RadosGW (Ceph Object Gateway). The vulnerability is related to the injection of HTTP headers via a CORS ExposeHeader tag. The newline character in the ExposeHeader tag in the…",
+      "released": "2026-03-20T09:05:30Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-10753"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: ceph"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ceph 14.2.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-ceph-2020-12059",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Ceph through 13.2.9. A POST request with an invalid tagging XML can crash the RGW process by triggering a NULL pointer exception.",
+      "url": "https://bugzilla.suse.com/show_bug.cgi?id=1170170",
+      "released": "2026-03-20T09:05:32Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-12059"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: ceph"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-ceph-2020-1699",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A path traversal flaw was found in the Ceph dashboard implemented in upstream versions v14.2.5, v14.2.6, v15.0.0 of Ceph storage and has been fixed in versions 14.2.7 and 15.1.0. An unauthenticated attacker could use th…",
+      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1699",
+      "released": "2026-03-20T09:05:35Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-1699"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: ceph"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-ceph-2020-1759",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A vulnerability was found in Red Hat Ceph Storage 4 and Red Hat Openshift Container Storage 4.2 where, A nonce reuse vulnerability was discovered in the secure mode of the messenger v2 protocol, which can allow an attac…",
+      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1759",
+      "released": "2026-03-20T09:05:38Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-1759"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: ceph"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ceph 14.2.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-ceph-2020-1760",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw was found in the Ceph Object Gateway, where it supports request sent by an anonymous user in Amazon S3. This flaw could lead to potential XSS attacks due to the lack of proper neutralization of untrusted input.",
+      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-1760",
+      "released": "2026-03-20T09:05:40Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-1760"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: ceph"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ceph 14.2.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-ceph-2021-20288",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An authentication flaw was found in ceph in versions before 14.2.20. When the monitor handles CEPHX_GET_AUTH_SESSION_KEY requests, it doesn't sanitize other_keys, allowing key reuse. An attacker who can request a global…",
+      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1938031",
+      "released": "2026-03-20T09:05:43Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-20288"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: ceph"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ceph 14.2.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-ceph-2022-0670",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw was found in Openstack manilla owning a Ceph File system \"share\", which enables the owner to read/write any manilla share or entire file system. The vulnerability is due to a bug in the \"volumes\" plugin in Ceph M…",
+      "url": "https://ceph.io/en/news/blog/2022/v17-2-2-quincy-released/",
+      "released": "2026-03-20T09:05:45Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-0670"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: ceph"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ceph 15.2.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in ceph 16.2.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in ceph 17.2.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-ceph-2024-47866",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "RGW DoS attack with empty HTTP header in S3 object copy",
+      "url": "https://github.com/ceph/ceph/security/advisories/GHSA-mgrm-g92q-f8h8",
+      "released": "2026-03-20T09:05:48Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-47866"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: ceph"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ceph 20.2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20405-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -435,6 +663,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RUSTSEC-2026-0049",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "CRLs not considered authoritative by Distribution Point due to faulty matching logic",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0049.html",
+      "released": "2026-03-20T12:00:00Z",
+      "updated": "2026-09-19T08:42:27Z",
+      "cves": [
+        "CVE-2026-93602"
+      ],
+      "products": [
+        "crates.io: rustls-webpki"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rustls-webpki 0.103.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20407-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -450,6 +700,34 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0938-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for GraphicsMagick",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260938-1/",
+      "released": "2026-03-20T13:41:10Z",
+      "updated": "2026-09-16T19:09:57Z",
+      "cves": [
+        "CVE-2026-28691",
+        "CVE-2026-30883"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7",
+        "openSUSE Leap 15.6"
       ],
       "fix": [
         {

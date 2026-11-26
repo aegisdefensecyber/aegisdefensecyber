@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-05-16",
-  "count": 28,
+  "count": 32,
   "items": [
     {
       "id": "openSUSE-SU-2026:10784-1",
@@ -840,6 +840,30 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-j4fx-xxwh-2485",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "jsondiffpatch patch APIs are vulnerable to prototype pollution",
+      "url": "https://github.com/advisories/GHSA-j4fx-xxwh-2485",
+      "released": "2026-05-16T06:30:29Z",
+      "updated": "2026-08-31T22:10:51Z",
+      "cves": [
+        "CVE-2026-8657"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: jsondiffpatch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jsondiffpatch 0.7.6",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20759-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -863,6 +887,72 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0147",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Read-only volume remount bypass via guest CAP_SYS_ADMIN",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0147.html",
+      "released": "2026-05-16T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2026-46695"
+      ],
+      "products": [
+        "crates.io: boxlite"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in boxlite 0.9.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0148",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "OCI layer symlink escape → arbitrary host write",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0148.html",
+      "released": "2026-05-16T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2026-46703"
+      ],
+      "products": [
+        "crates.io: boxlite"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in boxlite 0.9.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0477",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Buffer overflow with AES key wrap with padding in `cipher_update_inplace`",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0477.html",
+      "released": "2026-05-16T12:00:00Z",
+      "updated": "2026-11-10T13:45:03Z",
+      "cves": [
+        "CVE-2026-45784"
+      ],
+      "products": [
+        "crates.io: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 0.10.80",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

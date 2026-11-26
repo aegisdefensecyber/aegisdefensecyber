@@ -1,8 +1,78 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-06",
-  "count": 78,
+  "count": 125,
   "items": [
+    {
+      "id": "ELA-1818-1",
+      "src": "osv_debian_elts",
+      "vendor": "Debian Elts",
+      "title": "ELA-1818-1",
+      "url": "https://deb.freexian.com/extended-lts/tracker/ELA-1818-1",
+      "updated": "2026-09-06T00:00:00Z",
+      "products": [
+        "Debian: libssh2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libssh2 1.9.0-2+deb11u2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ELA-1819-1",
+      "src": "osv_debian_elts",
+      "vendor": "Debian Elts",
+      "title": "ELA-1819-1",
+      "url": "https://deb.freexian.com/extended-lts/tracker/ELA-1819-1",
+      "updated": "2026-09-06T00:00:00Z",
+      "products": [
+        "Debian: libssh2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libssh2 1.7.0-1+deb9u4",
+          "u": null
+        },
+        {
+          "t": "Fixed in libssh2 1.8.0-2.1+deb10u2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1235",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "UNKNOWN READ in renumber_by_map",
+      "released": "2026-09-06T00:05:19Z",
+      "updated": "2026-09-06T00:05:19Z",
+      "products": [
+        "OSS-Fuzz: fluent-bit"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fluent-bit 98f3bdeb9ad4af5bcb03a7ae1872e694b207f274",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1239",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Security exception in org.apache.lucene.util.ArrayUtil.copyOfSubArray",
+      "released": "2026-09-06T00:22:11Z",
+      "updated": "2026-10-30T15:29:46Z",
+      "products": [
+        "OSS-Fuzz: lucene"
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "msrc_CVE-2026-80803",
       "src": "csaf_microsoft",
@@ -1358,6 +1428,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-86283",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP UiBeta Collection View Bypasses Event ACL, Exposing Unauthorized Event Data",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-86283",
+      "released": "2026-09-06T14:11:00Z",
+      "updated": "2026-09-07T09:03:32Z",
+      "cves": [
+        "CVE-2026-86283"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-83607",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -1690,6 +1778,678 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "UBUNTU-CVE-2026-19931",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "A flaw in libcurl makes it wrongly reuse an HTTP connection setup for a given hostname using Negotiate authentication, when the initial request is done using empty credentials. This can make user B's request get sent ov…",
+      "released": "2026-09-06T18:17:00Z",
+      "updated": "2026-09-24T15:55:22Z",
+      "cves": [
+        "CVE-2026-19931"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Ubuntu: curl"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99786",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-13608 affecting package cmake 3.30.3-15",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13608",
+      "released": "2026-09-06T18:17:19Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-13608"
+      ],
+      "products": [
+        "Azure Linux: cmake"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99813",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-13608 affecting package mysql 8.0.46-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13608",
+      "released": "2026-09-06T18:17:19Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-13608"
+      ],
+      "products": [
+        "Azure Linux: mysql"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99822",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-13608 affecting package rust 1.75.0-30",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13608",
+      "released": "2026-09-06T18:17:19Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-13608"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99861",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-13608 affecting package rust 1.90.0-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13608",
+      "released": "2026-09-06T18:17:19Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-13608"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99884",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-13608 affecting package tensorflow 2.16.1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13608",
+      "released": "2026-09-06T18:17:19Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-13608"
+      ],
+      "products": [
+        "Azure Linux: tensorflow"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99777",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-19931 affecting package cmake 3.30.3-15",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19931",
+      "released": "2026-09-06T18:17:20Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-19931"
+      ],
+      "products": [
+        "Azure Linux: cmake"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99780",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-18924 affecting package cmake 3.30.3-15",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18924",
+      "released": "2026-09-06T18:17:20Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-18924"
+      ],
+      "products": [
+        "Azure Linux: cmake"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99792",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-19931 affecting package mysql 8.0.46-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19931",
+      "released": "2026-09-06T18:17:20Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-19931"
+      ],
+      "products": [
+        "Azure Linux: mysql"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99801",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-18924 affecting package mysql 8.0.46-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18924",
+      "released": "2026-09-06T18:17:20Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-18924"
+      ],
+      "products": [
+        "Azure Linux: mysql"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99819",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-19931 affecting package rust 1.75.0-30",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19931",
+      "released": "2026-09-06T18:17:20Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-19931"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99834",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-18924 affecting package rust 1.75.0-30",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18924",
+      "released": "2026-09-06T18:17:20Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-18924"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99843",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-19931 affecting package rust 1.90.0-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19931",
+      "released": "2026-09-06T18:17:20Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-19931"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99858",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-18924 affecting package rust 1.90.0-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18924",
+      "released": "2026-09-06T18:17:20Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-18924"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99870",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-19931 affecting package tensorflow 2.16.1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19931",
+      "released": "2026-09-06T18:17:20Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-19931"
+      ],
+      "products": [
+        "Azure Linux: tensorflow"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99879",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-18924 affecting package tensorflow 2.16.1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18924",
+      "released": "2026-09-06T18:17:20Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-18924"
+      ],
+      "products": [
+        "Azure Linux: tensorflow"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99756",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82208 affecting package curl 8.11.1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82208",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-82208"
+      ],
+      "products": [
+        "Azure Linux: curl"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99758",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80231 affecting package curl 8.11.1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80231",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-14T05:26:59Z",
+      "cves": [
+        "CVE-2026-80231"
+      ],
+      "products": [
+        "Azure Linux: curl"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99767",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82209 affecting package curl 8.11.1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82209",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-14T05:26:59Z",
+      "cves": [
+        "CVE-2026-82209"
+      ],
+      "products": [
+        "Azure Linux: curl"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99774",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80231 affecting package cmake 3.30.3-15",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80231",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-14T05:26:59Z",
+      "cves": [
+        "CVE-2026-80231"
+      ],
+      "products": [
+        "Azure Linux: cmake"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99783",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82209 affecting package cmake 3.30.3-15",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82209",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-14T05:26:59Z",
+      "cves": [
+        "CVE-2026-82209"
+      ],
+      "products": [
+        "Azure Linux: cmake"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99789",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80230 affecting package mysql 8.0.46-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80230",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-80230"
+      ],
+      "products": [
+        "Azure Linux: mysql"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99795",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80229 affecting package mysql 8.0.46-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80229",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-80229"
+      ],
+      "products": [
+        "Azure Linux: mysql"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99798",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82208 affecting package mysql 8.0.46-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82208",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-82208"
+      ],
+      "products": [
+        "Azure Linux: mysql"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99804",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82209 affecting package mysql 8.0.46-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82209",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-82209"
+      ],
+      "products": [
+        "Azure Linux: mysql"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99807",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80231 affecting package mysql 8.0.46-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80231",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-80231"
+      ],
+      "products": [
+        "Azure Linux: mysql"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99810",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80255 affecting package mysql 8.0.46-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80255",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-80255"
+      ],
+      "products": [
+        "Azure Linux: mysql"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99816",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80230 affecting package rust 1.75.0-30",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80230",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-80230"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99825",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82209 affecting package rust 1.75.0-30",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82209",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-82209"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99828",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80255 affecting package rust 1.75.0-31",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80255",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-14T05:26:59Z",
+      "cves": [
+        "CVE-2026-80255"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99831",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80231 affecting package rust 1.75.0-30",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80231",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-80231"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99837",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80229 affecting package rust 1.75.0-31",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80229",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-14T05:26:59Z",
+      "cves": [
+        "CVE-2026-80229"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99840",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82208 affecting package rust 1.75.0-30",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82208",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-82208"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99846",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80230 affecting package rust 1.90.0-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80230",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-80230"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99849",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82208 affecting package rust 1.90.0-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82208",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-82208"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99852",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82209 affecting package rust 1.90.0-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82209",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-82209"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99855",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80231 affecting package rust 1.90.0-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80231",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-80231"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99864",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80255 affecting package rust 1.90.0-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80255",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-80255"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99867",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80229 affecting package rust 1.90.0-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80229",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-80229"
+      ],
+      "products": [
+        "Azure Linux: rust"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99873",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80230 affecting package tensorflow 2.16.1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80230",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-80230"
+      ],
+      "products": [
+        "Azure Linux: tensorflow"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99876",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80231 affecting package tensorflow 2.16.1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80231",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-80231"
+      ],
+      "products": [
+        "Azure Linux: tensorflow"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99882",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82209 affecting package tensorflow 2.16.1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82209",
+      "released": "2026-09-06T18:17:22Z",
+      "updated": "2026-09-08T05:27:28Z",
+      "cves": [
+        "CVE-2026-82209"
+      ],
+      "products": [
+        "Azure Linux: tensorflow"
+      ],
       "seen": "2026-11-26"
     },
     {

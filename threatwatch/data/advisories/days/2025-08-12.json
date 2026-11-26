@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-08-12",
-  "count": 15,
+  "count": 20,
   "items": [
     {
       "id": "ICSA-25-226-03",
@@ -148,6 +148,156 @@
         {
           "t": "Update to V1.5.5.0 or later version",
           "u": "https://support.industry.siemens.com/cs/ww/en/view/109773881/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-282044",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-282044: DLL Hijacking Vulnerability in Siemens Web Installer used by the Online Software Delivery",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-282044.html",
+      "released": "2025-08-12T00:00:00Z",
+      "updated": "2026-11-10T00:00:00Z",
+      "cves": [
+        "CVE-2025-30033"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Automation License Manager V6.0",
+        "Automation License Manager V6.2",
+        "CEMAT V10.0",
+        "CP PtP Param configuring interface",
+        "Create MyConfig (CMC)",
+        "Energy Support Library (EnSL)"
+      ],
+      "fix": [
+        {
+          "t": "Harden the application host to prevent local access by untrusted personnel",
+          "u": null
+        },
+        {
+          "t": "Install applications only from an empty directory, thereby minimizing the likelihood of malicious DLLs being present",
+          "u": null
+        },
+        {
+          "t": "Update to V1.5.5.0 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109773881/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-331739",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-331739: Privilege Escalation Vulnerability in WIBU CodeMeter Runtime Affecting Siemens Products",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-331739.html",
+      "released": "2025-08-12T00:00:00Z",
+      "updated": "2026-09-08T00:00:00Z",
+      "cves": [
+        "CVE-2025-47809"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "SIMATIC PDM Maintenance Station V5.0",
+        "SIMATIC WinCC OA V3.18",
+        "SIMATIC WinCC OA V3.19",
+        "SIMATIC WinCC OA V3.20"
+      ],
+      "fix": [
+        {
+          "t": "Update to V3.18 P032 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109994004/"
+        },
+        {
+          "t": "Update to V3.19 P020 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109989640/"
+        },
+        {
+          "t": "Update to V3.20 P008 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109990967/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-493396",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-493396: Deserialization Vulnerability in Siemens Engineering Platforms",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-493396.html",
+      "released": "2025-08-12T00:00:00Z",
+      "updated": "2026-11-10T00:00:00Z",
+      "cves": [
+        "CVE-2025-40759"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SIMATIC S7-PLCSIM V17",
+        "SIMATIC STEP 7 V17",
+        "SIMATIC STEP 7 V18",
+        "SIMATIC STEP 7 V19",
+        "SIMATIC STEP 7 V20",
+        "SIMATIC WinCC V17"
+      ],
+      "fix": [
+        {
+          "t": "Only open projects from trusted sources.",
+          "u": null
+        },
+        {
+          "t": "Update to V17 Update 9 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109784441/"
+        },
+        {
+          "t": "Update to V18 Update 6 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109817218/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-693808",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-693808: Deserialization Vulnerability in Siemens Engineering Platforms",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-693808.html",
+      "released": "2025-08-12T00:00:00Z",
+      "updated": "2026-11-10T00:00:00Z",
+      "cves": [
+        "CVE-2024-54678"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "SIMATIC PCS neo V4.1",
+        "SIMATIC PCS neo V5.0",
+        "SIMATIC PCS neo V6.0",
+        "SIMATIC S7-PLCSIM V17",
+        "SIMATIC STEP 7 V17",
+        "SIMATIC STEP 7 V18"
+      ],
+      "fix": [
+        {
+          "t": "On Desktop systems: Execute affected software on Windows hosts where only a single user is configured",
+          "u": null
+        },
+        {
+          "t": "On Server systems: Reduce the access on operating system level to administrators only",
+          "u": null
+        },
+        {
+          "t": "Update to V17 Update 9 or later version",
+          "u": "https://support.industry.siemens.com/cs/ww/en/view/109784441/"
         }
       ],
       "lang": "en",
@@ -510,6 +660,28 @@
         },
         {
           "t": "Endress+Hauser has released updated firmware versions that address this vulnerability. Customers are strongly advised to upgrade to the latest fixed version. For assistance, please contact your local Endress+Hauser service center.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2025-0047",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Out-of-bounds access in `get_disjoint_mut` due to incorrect bounds check",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2025-0047.html",
+      "released": "2025-08-12T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2025-55159"
+      ],
+      "products": [
+        "crates.io: slab"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in slab 0.4.11",
           "u": null
         }
       ],

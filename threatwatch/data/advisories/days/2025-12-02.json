@@ -1,8 +1,124 @@
 {
   "schemaVersion": 1,
   "date": "2025-12-02",
-  "count": 2,
+  "count": 7,
   "items": [
+    {
+      "id": "BIT-cilium-2025-64715",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Cilium with misconfigured toGroups in policies can lead to unrestricted egress traffic",
+      "url": "https://github.com/cilium/cilium/security/advisories/GHSA-38pp-6gcp-rqvm",
+      "released": "2025-12-02T11:35:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-64715"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: cilium"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cilium 1.16.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in cilium 1.17.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in cilium 1.18.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-flux-2022-24817",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper kubeconfig validation allows arbitrary code execution",
+      "url": "https://github.com/fluxcd/flux2/security/advisories/GHSA-vvmq-fwmg-2gjc",
+      "released": "2025-12-02T17:36:53Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-24817"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: flux"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in flux 0.29.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-flux-2022-36035",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Flux CLI Workload Injection",
+      "url": "https://github.com/fluxcd/flux2/releases/tag/v0.32.0",
+      "released": "2025-12-02T17:36:58Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-36035"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: flux"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in flux 0.32.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-flux-2022-36049",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Flux2 Helm Controller denial of service",
+      "url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=44996",
+      "released": "2025-12-02T17:36:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-36049"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: flux"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in flux 0.32.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98586",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-61729 affecting package golang 1.27.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61729",
+      "released": "2025-12-02T19:15:51Z",
+      "updated": "2026-09-16T06:39:01Z",
+      "cves": [
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "Azure Linux: golang"
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "WID-SEC-W-2025-2724",
       "src": "csaf_certbund",

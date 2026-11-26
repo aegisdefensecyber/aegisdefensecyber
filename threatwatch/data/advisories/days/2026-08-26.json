@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-26",
-  "count": 30,
+  "count": 77,
   "items": [
     {
       "id": "openSUSE-SU-2026:11601-1",
@@ -442,6 +442,615 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:59723",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: kernel security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:59723",
+      "released": "2026-08-26T00:00:00Z",
+      "updated": "2026-08-28T08:49:54Z",
+      "cves": [
+        "CVE-2025-68211",
+        "CVE-2026-23003",
+        "CVE-2026-43114",
+        "CVE-2026-52920",
+        "CVE-2026-52924",
+        "CVE-2026-53131",
+        "CVE-2026-53185",
+        "CVE-2026-53268",
+        "CVE-2026-64189",
+        "CVE-2026-64191",
+        "CVE-2026-64276",
+        "CVE-2026-64277",
+        "CVE-2026-74581"
+      ],
+      "products": [
+        "AlmaLinux: kernel",
+        "AlmaLinux: kernel-64k",
+        "AlmaLinux: kernel-64k-core",
+        "AlmaLinux: kernel-64k-debug",
+        "AlmaLinux: kernel-64k-debug-core",
+        "AlmaLinux: kernel-64k-debug-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 5.14.0-687.42.1.el9_8",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-64k 5.14.0-687.42.1.el9_8",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-64k-core 5.14.0-687.42.1.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:60394",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: libxml2 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60394",
+      "released": "2026-08-26T00:00:00Z",
+      "updated": "2026-08-28T08:44:21Z",
+      "cves": [
+        "CVE-2026-11979"
+      ],
+      "products": [
+        "AlmaLinux: libxml2",
+        "AlmaLinux: libxml2-devel",
+        "AlmaLinux: libxml2-static",
+        "AlmaLinux: python3-libxml2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libxml2 2.12.5-10.el10_2.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in libxml2-devel 2.12.5-10.el10_2.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in libxml2-static 2.12.5-10.el10_2.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:22112",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: go-toolset:rhel8 security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:22112",
+      "released": "2026-08-26T00:04:19Z",
+      "updated": "2026-09-09T06:12:18Z",
+      "cves": [
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "Rocky Linux: delve",
+        "Rocky Linux: golang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in delve 0:1.25.2-1.module+el8.10.0+40035+ee0a7047",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang 0:1.25.10-1.module+el8.10.0+40200+0fd0f175",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:22121",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: golang security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:22121",
+      "released": "2026-08-26T00:04:43Z",
+      "updated": "2026-09-09T00:12:41Z",
+      "cves": [
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "Rocky Linux: golang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang 0:1.26.3-1.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:59496",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: nginx:1.26 security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:59496",
+      "released": "2026-08-26T00:04:43Z",
+      "updated": "2026-09-09T00:12:42Z",
+      "cves": [
+        "CVE-2026-56434",
+        "CVE-2026-60005"
+      ],
+      "products": [
+        "Rocky Linux: nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 2:1.26.3-9.module+el9.8.0+40235+8be1317a.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 2:1.26.3-9.module+el9.8.0+40222+e48d13b6.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 2:1.26.3-9.module+el9.8.0+40194+40adfc1b",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:22120",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: golang security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:22120",
+      "released": "2026-08-26T00:08:24Z",
+      "updated": "2026-09-09T00:12:44Z",
+      "cves": [
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "Rocky Linux: golang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang 0:1.26.3-4.el10_2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:59487",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: gstreamer1-plugins-base security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:59487",
+      "released": "2026-08-26T06:01:11Z",
+      "updated": "2026-09-09T06:12:19Z",
+      "cves": [
+        "CVE-2026-18297"
+      ],
+      "products": [
+        "Rocky Linux: gstreamer1-plugins-base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gstreamer1-plugins-base 0:1.16.1-6.el8_10.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:59999",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: isns-utils security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:59999",
+      "released": "2026-08-26T08:16:18Z",
+      "updated": "2026-08-31T08:07:13Z",
+      "cves": [
+        "CVE-2026-55995"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS E4S (v.9.2)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:59999"
+        },
+        {
+          "t": "If the iSNS service is not actively used, disable it to prevent exploitation. To disable the `isnsd` service, execute `systemctl disable --now isnsd`. If the i…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:60005",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: isns-utils security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60005",
+      "released": "2026-08-26T08:34:43Z",
+      "updated": "2026-08-31T08:07:14Z",
+      "cves": [
+        "CVE-2026-55995"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS EUS (v. 10.0)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60005"
+        },
+        {
+          "t": "If the iSNS service is not actively used, disable it to prevent exploitation. To disable the `isnsd` service, execute `systemctl disable --now isnsd`. If the i…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:59996",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: isns-utils security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:59996",
+      "released": "2026-08-26T08:35:03Z",
+      "updated": "2026-08-31T08:07:16Z",
+      "cves": [
+        "CVE-2026-55995"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS E4S (v.9.4)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:59996"
+        },
+        {
+          "t": "If the iSNS service is not actively used, disable it to prevent exploitation. To disable the `isnsd` service, execute `systemctl disable --now isnsd`. If the i…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:60006",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: isns-utils security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60006",
+      "released": "2026-08-26T08:56:03Z",
+      "updated": "2026-08-31T08:07:15Z",
+      "cves": [
+        "CVE-2026-55995"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS EUS (v.9.6)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60006"
+        },
+        {
+          "t": "If the iSNS service is not actively used, disable it to prevent exploitation. To disable the `isnsd` service, execute `systemctl disable --now isnsd`. If the i…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-3750",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "NLTK versions before 3.10.0 contain a regular expression denial of service vulnerability in Text.findall() and TokenSearcher.findall() methods that accept user-supplied regular expressions without validation or timeout.…",
+      "url": "https://www.vulncheck.com/advisories/nltk-before-3.10.0-redos-via-text-findall-unvalidated-regex",
+      "released": "2026-08-26T11:16:39Z",
+      "updated": "2026-09-02T08:34:35Z",
+      "cves": [
+        "CVE-2026-80205"
+      ],
+      "products": [
+        "PyPI: nltk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nltk 3.10.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-3751",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "NLTK before 3.10.3 contains a regular expression denial of service (ReDoS) vulnerability in the tgrep module. The _tgrep_node_action function compiles user-supplied regular expressions embedded in /regex/ pattern nodes …",
+      "url": "https://www.vulncheck.com/advisories/nltk-3.10.2-regular-expression-denial-of-service-via-tgrep",
+      "released": "2026-08-26T11:16:40Z",
+      "updated": "2026-09-02T08:34:35Z",
+      "cves": [
+        "CVE-2026-80206"
+      ],
+      "products": [
+        "PyPI: nltk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nltk 3.10.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0276",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Path traversal in apimock's file-serving fallback",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0276.html",
+      "released": "2026-08-26T12:00:00Z",
+      "updated": "2026-09-02T08:56:54Z",
+      "products": [
+        "crates.io: apimock"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apimock 4.8.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in apimock 5.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0277",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Path traversal in apimock-server's file-serving fallback",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0277.html",
+      "released": "2026-08-26T12:00:00Z",
+      "updated": "2026-09-02T08:56:54Z",
+      "products": [
+        "crates.io: apimock-server"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apimock-server 5.19.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0284",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Double free in `Map::into_iter` and an uninitialized `Arc` in `SharedIncin::clear`",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0284.html",
+      "released": "2026-08-26T12:00:00Z",
+      "updated": "2026-09-14T09:48:33Z",
+      "products": [
+        "crates.io: lockfree"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:59347",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Low: httpd security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:59347",
+      "released": "2026-08-26T12:04:51Z",
+      "updated": "2026-09-09T12:12:54Z",
+      "cves": [
+        "CVE-2026-29167"
+      ],
+      "products": [
+        "Rocky Linux: httpd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in httpd 0:2.4.62-13.el9_8.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:59362",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: nginx security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:59362",
+      "released": "2026-08-26T12:04:51Z",
+      "updated": "2026-09-09T12:12:54Z",
+      "cves": [
+        "CVE-2026-56434",
+        "CVE-2026-60005"
+      ],
+      "products": [
+        "Rocky Linux: nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 2:1.20.1-28.el9_8.5.rocky.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:59387",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: mod_http2 security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:59387",
+      "released": "2026-08-26T12:04:51Z",
+      "updated": "2026-09-09T12:12:54Z",
+      "cves": [
+        "CVE-2026-43951",
+        "CVE-2026-48913"
+      ],
+      "products": [
+        "Rocky Linux: mod_http2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mod_http2 0:2.0.26-6.el9_8.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:59372",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: assertj-core security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:59372",
+      "released": "2026-08-26T12:08:23Z",
+      "updated": "2026-09-09T12:12:58Z",
+      "cves": [
+        "CVE-2026-24400"
+      ],
+      "products": [
+        "Rocky Linux: assertj-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in assertj-core 0:3.24.2-9.el10_2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:59379",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: pam security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:59379",
+      "released": "2026-08-26T12:08:23Z",
+      "updated": "2026-09-09T12:12:58Z",
+      "cves": [
+        "CVE-2026-54411"
+      ],
+      "products": [
+        "Rocky Linux: pam"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pam 0:1.6.1-9.el10_2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:59380",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: attr security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:59380",
+      "released": "2026-08-26T12:08:23Z",
+      "updated": "2026-09-09T12:12:58Z",
+      "cves": [
+        "CVE-2026-54371"
+      ],
+      "products": [
+        "Rocky Linux: attr"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in attr 0:2.6.0-1.el10_2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:60004",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Low: httpd security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:60004",
+      "released": "2026-08-26T12:08:23Z",
+      "updated": "2026-09-09T12:12:58Z",
+      "cves": [
+        "CVE-2026-29167"
+      ],
+      "products": [
+        "Rocky Linux: httpd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in httpd 0:2.4.63-13.el10_2.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21650-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -508,6 +1117,133 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:60335",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: RHEL AI 3.5 RPM runtime CVE fix - ffmpeg",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60335",
+      "released": "2026-08-26T14:04:54Z",
+      "updated": "2026-10-29T22:24:17Z",
+      "cves": [
+        "CVE-2026-64834",
+        "CVE-2026-66036",
+        "CVE-2026-66039"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux AI",
+        "Red Hat Enterprise Linux AI 3.5 for RHEL 9"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60335"
+        },
+        {
+          "t": "To mitigate this issue, restrict network access to applications utilizing FFmpeg for RTP/ASF stream demuxing, ensuring only trusted sources can provide such st…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:60334",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: RHEL AI 3.4 RPM runtime CVE fix - ffmpeg",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60334",
+      "released": "2026-08-26T14:05:05Z",
+      "updated": "2026-10-29T22:24:17Z",
+      "cves": [
+        "CVE-2026-64834",
+        "CVE-2026-66036",
+        "CVE-2026-66039"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux AI",
+        "Red Hat Enterprise Linux AI 3.4 for RHEL 9"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60334"
+        },
+        {
+          "t": "To mitigate this issue, restrict network access to applications utilizing FFmpeg for RTP/ASF stream demuxing, ensuring only trusted sources can provide such st…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:60336",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: RHEL AI 3.3 RPM runtime CVE fix - ffmpeg",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60336",
+      "released": "2026-08-26T14:07:00Z",
+      "updated": "2026-10-29T22:24:18Z",
+      "cves": [
+        "CVE-2026-64834",
+        "CVE-2026-66036",
+        "CVE-2026-66039"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux AI",
+        "Red Hat Enterprise Linux AI 3.3 for RHEL 9"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60336"
+        },
+        {
+          "t": "To mitigate this issue, restrict network access to applications utilizing FFmpeg for RTP/ASF stream demuxing, ensuring only trusted sources can provide such st…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:60333",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: isns-utils security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60333",
+      "released": "2026-08-26T14:18:47Z",
+      "updated": "2026-08-31T08:07:15Z",
+      "cves": [
+        "CVE-2026-55995"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS E4S (v.8.8)",
+        "Red Hat Enterprise Linux BaseOS TUS (v.8.8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60333"
+        },
+        {
+          "t": "If the iSNS service is not actively used, disable it to prevent exploitation. To disable the `isnsd` service, execute `systemctl disable --now isnsd`. If the i…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21664-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -531,6 +1267,254 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-14457",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-14457",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-14457",
+      "released": "2026-08-26T15:49:49Z",
+      "updated": "2026-08-28T06:00:34Z",
+      "cves": [
+        "CVE-2026-14457"
+      ],
+      "products": [
+        "Alpaquita: openssl",
+        "BellSoft Hardened Containers: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-18798",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-18798",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-18798",
+      "released": "2026-08-26T15:49:50Z",
+      "updated": "2026-08-28T06:00:34Z",
+      "cves": [
+        "CVE-2026-18798"
+      ],
+      "products": [
+        "Alpaquita: openssl",
+        "BellSoft Hardened Containers: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-54874",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-54874",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-54874",
+      "released": "2026-08-26T15:49:50Z",
+      "updated": "2026-08-29T06:00:32Z",
+      "cves": [
+        "CVE-2026-54874"
+      ],
+      "products": [
+        "Alpaquita: openssl",
+        "BellSoft Hardened Containers: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 3.0.22-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-63072",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-63072",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-63072",
+      "released": "2026-08-26T15:49:50Z",
+      "updated": "2026-08-29T06:00:32Z",
+      "cves": [
+        "CVE-2026-63072"
+      ],
+      "products": [
+        "Alpaquita: openssl",
+        "BellSoft Hardened Containers: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 3.0.22-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-63073",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-63073",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-63073",
+      "released": "2026-08-26T15:49:51Z",
+      "updated": "2026-08-28T06:00:36Z",
+      "cves": [
+        "CVE-2026-63073"
+      ],
+      "products": [
+        "Alpaquita: openssl",
+        "BellSoft Hardened Containers: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-63074",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-63074",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-63074",
+      "released": "2026-08-26T15:49:51Z",
+      "updated": "2026-08-29T06:00:32Z",
+      "cves": [
+        "CVE-2026-63074"
+      ],
+      "products": [
+        "Alpaquita: openssl",
+        "BellSoft Hardened Containers: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 3.0.22-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-63075",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-63075",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-63075",
+      "released": "2026-08-26T15:49:51Z",
+      "updated": "2026-08-28T06:00:34Z",
+      "cves": [
+        "CVE-2026-63075"
+      ],
+      "products": [
+        "Alpaquita: openssl",
+        "BellSoft Hardened Containers: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-63076",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-63076",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-63076",
+      "released": "2026-08-26T15:49:51Z",
+      "updated": "2026-08-29T06:00:32Z",
+      "cves": [
+        "CVE-2026-63076"
+      ],
+      "products": [
+        "Alpaquita: openssl",
+        "BellSoft Hardened Containers: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 3.0.22-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openssl 3.5.8-r0",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -622,6 +1606,337 @@
       "fix": [
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DRUPAL-CONTRIB-2026-111",
+      "src": "drupal",
+      "vendor": "Drupal",
+      "title": "This module enables you to disable access to the `/user/login` form unless a secret key is provided. The module does not invalidate the relevant caches when login page access restrictions are enabled. As a result, previ…",
+      "url": "https://www.drupal.org/sa-contrib-2026-111",
+      "released": "2026-08-26T17:39:32Z",
+      "updated": "2026-09-02T12:54:37Z",
+      "cves": [
+        "CVE-2026-16647"
+      ],
+      "products": [
+        "Packagist: drupal/disable_login"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in drupal/disable_login 1.1.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "DRUPAL-CONTRIB-2026-113",
+      "src": "drupal",
+      "vendor": "Drupal",
+      "title": "The Entity API module extends the Drupal core entity API to provide a unified way to deal with entities and their properties. The module doesn't correctly apply access controls for JSON:API entity collection endpoints. …",
+      "url": "https://www.drupal.org/sa-contrib-2026-113",
+      "released": "2026-08-26T17:41:31Z",
+      "updated": "2026-08-28T12:32:58Z",
+      "cves": [
+        "CVE-2026-81158"
+      ],
+      "products": [
+        "Packagist: drupal/entity"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in drupal/entity 1.8.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:60305",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: go-toolset:rhel8 security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:60305",
+      "released": "2026-08-26T18:01:13Z",
+      "updated": "2026-09-09T18:12:04Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "Rocky Linux: delve",
+        "Rocky Linux: golang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in delve 0:1.26.1-1.module+el8.10.0+40244+e7cb3ff8",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang 0:1.26.7-1.module+el8.10.0+40302+6a0a9852",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:59972",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: gstreamer1-plugins-good security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:59972",
+      "released": "2026-08-26T18:06:44Z",
+      "updated": "2026-09-09T18:12:19Z",
+      "cves": [
+        "CVE-2026-18299"
+      ],
+      "products": [
+        "Rocky Linux: gstreamer1-plugins-good"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gstreamer1-plugins-good 0:1.26.7-2.el10_2.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:59997",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: polkit security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:59997",
+      "released": "2026-08-26T18:06:44Z",
+      "updated": "2026-09-09T18:12:19Z",
+      "cves": [
+        "CVE-2026-4897"
+      ],
+      "products": [
+        "Rocky Linux: polkit"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in polkit 0:125-4.el10_2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:60385",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: isns-utils security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60385",
+      "released": "2026-08-26T20:01:35Z",
+      "updated": "2026-08-31T08:07:16Z",
+      "cves": [
+        "CVE-2026-55995"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS AUS (v.8.6)",
+        "Red Hat Enterprise Linux BaseOS EUS EXTENSION (v.8.6)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60385"
+        },
+        {
+          "t": "If the iSNS service is not actively used, disable it to prevent exploitation. To disable the `isnsd` service, execute `systemctl disable --now isnsd`. If the i…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:60399",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Advanced Cluster Management for Kubernetes v2.17.1 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60399",
+      "released": "2026-08-26T20:24:19Z",
+      "updated": "2026-10-16T15:36:28Z",
+      "cves": [
+        "CVE-2026-76139"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.0,
+      "products": [
+        "Red Hat Advanced Cluster Management for Kubernetes",
+        "Red Hat Advanced Cluster Management for Kubernetes 2.17"
+      ],
+      "fix": [
+        {
+          "t": "Before you apply this update, make sure all previously released errata that are relevant to your system are applied. For details on how to apply this update, r…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60399"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:60400",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Advanced Cluster Management for Kubernetes v2.16.4 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60400",
+      "released": "2026-08-26T20:25:11Z",
+      "updated": "2026-10-16T15:36:30Z",
+      "cves": [
+        "CVE-2026-76139"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.0,
+      "products": [
+        "Red Hat Advanced Cluster Management for Kubernetes",
+        "Red Hat Advanced Cluster Management for Kubernetes 2.16"
+      ],
+      "fix": [
+        {
+          "t": "Before you apply this update, make sure all previously released errata that are relevant to your system are applied. For details on how to apply this update, r…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60400"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:60401",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Advanced Cluster Management for Kubernetes v2.14.4 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60401",
+      "released": "2026-08-26T20:27:02Z",
+      "updated": "2026-10-16T15:36:29Z",
+      "cves": [
+        "CVE-2026-76139"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.0,
+      "products": [
+        "Red Hat Advanced Cluster Management for Kubernetes",
+        "Red Hat Advanced Cluster Management for Kubernetes 2.14"
+      ],
+      "fix": [
+        {
+          "t": "Before you apply this update, make sure all previously released errata that are relevant to your system are applied. For details on how to apply this update, r…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60401"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:60402",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Advanced Cluster Management for Kubernetes v2.15.6 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60402",
+      "released": "2026-08-26T20:27:05Z",
+      "updated": "2026-10-16T15:36:29Z",
+      "cves": [
+        "CVE-2026-76139"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.0,
+      "products": [
+        "Red Hat Advanced Cluster Management for Kubernetes",
+        "Red Hat Advanced Cluster Management for Kubernetes 2.15"
+      ],
+      "fix": [
+        {
+          "t": "Before you apply this update, make sure all previously released errata that are relevant to your system are applied. For details on how to apply this update, r…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60402"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:60403",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Advanced Cluster Management for Kubernetes v2.13.11 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60403",
+      "released": "2026-08-26T20:27:25Z",
+      "updated": "2026-10-16T15:36:30Z",
+      "cves": [
+        "CVE-2026-76139"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.0,
+      "products": [
+        "Red Hat Advanced Cluster Management for Kubernetes",
+        "Red Hat Advanced Cluster Management for Kubernetes 2.13"
+      ],
+      "fix": [
+        {
+          "t": "Before you apply this update, make sure all previously released errata that are relevant to your system are applied. For details on how to apply this update, r…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60403"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:60404",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Advanced Cluster Management for Kubernetes v2.11.11 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:60404",
+      "released": "2026-08-26T20:29:45Z",
+      "updated": "2026-10-16T15:36:30Z",
+      "cves": [
+        "CVE-2026-76139"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.0,
+      "products": [
+        "Red Hat Advanced Cluster Management for Kubernetes",
+        "Red Hat Advanced Cluster Management for Kubernetes 2.11"
+      ],
+      "fix": [
+        {
+          "t": "Before you apply this update, make sure all previously released errata that are relevant to your system are applied. For details on how to apply this update, r…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:60404"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
           "u": null
         }
       ],

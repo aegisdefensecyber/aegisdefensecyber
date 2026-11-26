@@ -1,8 +1,41 @@
 {
   "schemaVersion": 1,
   "date": "2025-09-25",
-  "count": 4,
+  "count": 7,
   "items": [
+    {
+      "id": "RHSA-2025:16667",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "undertow: information leakage via HTTP/2 request header reuse",
+      "url": "https://access.redhat.com/errata/RHSA-2025:16667",
+      "released": "2025-09-25T00:09:21Z",
+      "updated": "2026-11-26T17:23:01Z",
+      "cves": [
+        "CVE-2024-4109",
+        "CVE-2024-7885",
+        "CVE-2024-27316",
+        "CVE-2024-51127",
+        "CVE-2025-48734"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "fix": [
+        {
+          "t": "Before applying this update, ensure all previously released errata relevant to your system have been applied. Also, back up your existing installation, including all applications, configuration files, databases and database settings. For d…",
+          "u": "https://access.redhat.com/errata/RHSA-2025:16667"
+        },
+        {
+          "t": "Red Hat has investigated whether a possible mitigation exists for this issue, and has not been able to identify a practical example. Please update the affected package as soon as possible.",
+          "u": null
+        },
+        {
+          "t": "There is currently no known mitigation for this vulnerability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "msrc_CVE-2021-47658",
       "src": "csaf_microsoft",
@@ -81,6 +114,50 @@
         "kernel"
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2025-27556",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Django 5.1 before 5.1.8 and 5.0 before 5.0.14. The NFKC normalization is slow on Windows. As a consequence, django.contrib.auth.views.LoginView, django.contrib.auth.views.LogoutView, and djang…",
+      "released": "2025-09-25T08:40:31Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-27556"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 5.0.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.1.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "cve-2025-60249",
+      "src": "gna-1",
+      "vendor": "CIRCL",
+      "title": "XSS in Comments, Bundles, and Sightings component of vulnerability-lookup",
+      "url": "https://www.cve.org/CVERecord?id=cve-2025-60249",
+      "released": "2025-09-25T14:10:00Z",
+      "updated": "2026-09-21T07:41:13Z",
+      "cves": [
+        "cve-2025-60249"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 10,
+      "products": [
+        "CIRCL vulnerability-lookup"
+      ],
       "seen": "2026-11-26"
     }
   ]

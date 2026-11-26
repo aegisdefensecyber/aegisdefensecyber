@@ -1,8 +1,69 @@
 {
   "schemaVersion": 1,
   "date": "2025-01-21",
-  "count": 2,
+  "count": 6,
   "items": [
+    {
+      "id": "BELL-CVE-2024-45336",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2024-45336",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2024-45336",
+      "released": "2025-01-21T05:58:54Z",
+      "updated": "2026-08-31T07:48:05Z",
+      "cves": [
+        "CVE-2024-45336"
+      ],
+      "products": [
+        "Alpaquita: go",
+        "BellSoft Hardened Containers: go"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in go 1.21.12-r3",
+          "u": null
+        },
+        {
+          "t": "Fixed in go 1.23.5-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in go 1.21.12-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:0542",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: JBoss EAP XP 5.0 Update 1.0 release. See references for release notes.",
+      "url": "https://access.redhat.com/errata/RHSA-2025:0542",
+      "released": "2025-01-21T17:55:49Z",
+      "updated": "2026-09-07T14:22:37Z",
+      "cves": [
+        "CVE-2024-8391"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat JBoss Enterprise Application Platform",
+        "Red Hat JBoss EAP XP 5.0 Update 1.0"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, refer to the Using JBoss EAP XP 5 document: https://docs.redhat.com/en/documentation/red_hat_jboss_enterprise_applicat…",
+          "u": "https://access.redhat.com/errata/RHSA-2025:0542"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
     {
       "id": "WID-SEC-W-2025-0135",
       "src": "csaf_certbund",
@@ -10,7 +71,7 @@
       "title": "Oracle Communications Applications: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-0135",
       "released": "2025-01-21T23:00:00Z",
-      "updated": "2026-11-03T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2023-29408",
         "CVE-2024-0232",
@@ -39,7 +100,8 @@
       "sev": "HIGH",
       "products": [
         "IBM QRadar SIEM",
-        "Communications Applications"
+        "Communications Applications",
+        "Oracle Linux"
       ],
       "lang": "de",
       "seen": "2026-11-26"
@@ -88,6 +150,82 @@
         "Dell NetWorker",
         "PowerProtect Data Domain",
         "Secure Connect Gateway"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2025-0166",
+      "src": "csaf_certbund",
+      "vendor": "Oracle",
+      "title": "Oracle PeopleSoft: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-0166",
+      "released": "2025-01-21T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
+      "cves": [
+        "CVE-2020-22218",
+        "CVE-2024-22020",
+        "CVE-2024-27280",
+        "CVE-2024-28849",
+        "CVE-2024-29025",
+        "CVE-2024-35195",
+        "CVE-2024-37891",
+        "CVE-2024-5535",
+        "CVE-2024-7592",
+        "CVE-2025-21530",
+        "CVE-2025-21537",
+        "CVE-2025-21539",
+        "CVE-2025-21545",
+        "CVE-2025-21561",
+        "CVE-2025-21562",
+        "CVE-2025-21563"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Oracle Linux",
+        "PeopleSoft",
+        "SUSE Linux"
+      ],
+      "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2025-0168",
+      "src": "csaf_certbund",
+      "vendor": "Oracle",
+      "title": "Oracle JD Edwards: Mehrere Schwachstellen",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-0168",
+      "released": "2025-01-21T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
+      "cves": [
+        "CVE-2023-2976",
+        "CVE-2023-3961",
+        "CVE-2023-4782",
+        "CVE-2023-48795",
+        "CVE-2023-6129",
+        "CVE-2024-21245",
+        "CVE-2024-27280",
+        "CVE-2024-27983",
+        "CVE-2024-29041",
+        "CVE-2025-21507",
+        "CVE-2025-21508",
+        "CVE-2025-21509",
+        "CVE-2025-21510",
+        "CVE-2025-21511",
+        "CVE-2025-21512",
+        "CVE-2025-21513",
+        "CVE-2025-21514",
+        "CVE-2025-21515",
+        "CVE-2025-21517",
+        "CVE-2025-21524",
+        "CVE-2025-21527",
+        "CVE-2025-21538",
+        "CVE-2025-21552"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "JD Edwards",
+        "Oracle Linux"
       ],
       "lang": "de",
       "seen": "2026-11-26"

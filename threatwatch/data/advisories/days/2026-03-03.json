@@ -1,8 +1,165 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-03",
-  "count": 6,
+  "count": 36,
   "items": [
+    {
+      "id": "OSV-2026-343",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Heap-buffer-overflow in pcre2_compile_32",
+      "released": "2026-03-03T00:19:45Z",
+      "updated": "2026-09-02T14:36:09Z",
+      "products": [
+        "OSS-Fuzz: pcre2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pcre2 e19e76ad8e5bbdf8a22b69e0f408692329e1e516",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elk-2026-26934",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper Validation of Specified Quantity in Input in Kibana Leading to Denial of Service",
+      "url": "https://discuss.elastic.co/t/kibana-8-19-12-9-2-6-9-3-1-security-update-esa-2026-12/385248",
+      "released": "2026-03-03T08:40:08Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-26934"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 8.19.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.2.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.3.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elk-2026-26935",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper Input Validation in Kibana Leading to Denial of Service",
+      "url": "https://discuss.elastic.co/t/kibana-8-19-12-9-2-6-9-3-1-security-update-esa-2026-13/385249",
+      "released": "2026-03-03T08:40:09Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-26935"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 8.19.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.2.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.3.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elk-2026-26936",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Inefficient Regular Expression Complexity in Kibana Leading to Denial of Service",
+      "url": "https://discuss.elastic.co/t/kibana-8-19-11-9-2-5-security-update-esa-2026-14/385250",
+      "released": "2026-03-03T08:40:11Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-26936"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 8.19.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.2.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elk-2026-26937",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Uncontrolled Resource Consumption in Kibana Leading to Denial of Service",
+      "url": "https://discuss.elastic.co/t/kibana-8-19-11-9-2-5-security-update-esa-2026-15/385251",
+      "released": "2026-03-03T08:40:12Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-26937"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 8.19.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.2.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elk-2026-26938",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper Neutralization of Special Elements Used in a Template Engine in Kibana Workflows Leading to Server-Side Request Forgery (SSRF)",
+      "url": "https://discuss.elastic.co/t/kibana-9-3-1-security-update-esa-2026-17/385253",
+      "released": "2026-03-03T08:40:14Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-26938"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 9.3.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "openSUSE-SU-2026:20301-1",
       "src": "csaf_opensuse",
@@ -36,6 +193,694 @@
       "products": [
         "SUSE Linux Enterprise",
         "openSUSE Leap 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:3402",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Container Platform 4.21.4 bug fix and security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:3402",
+      "released": "2026-03-03T09:24:45Z",
+      "updated": "2026-10-16T11:25:00Z",
+      "cves": [
+        "CVE-2026-22797"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "products": [
+        "Red Hat OpenShift Container Platform",
+        "Red Hat OpenShift Container Platform 4.21"
+      ],
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.21 see the following documentation, which will be updated shortly for this release, for important instructions on how to upg…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:3402"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0758-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for busybox",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260758-1/",
+      "released": "2026-03-03T12:16:05Z",
+      "updated": "2026-09-16T19:07:20Z",
+      "cves": [
+        "CVE-2026-26157",
+        "CVE-2026-26158"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5-ESPOS",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5-LTSS",
+        "SUSE Linux Enterprise High Performance Computing 15 SP5",
+        "SUSE Linux Enterprise Server 15 SP5-LTSS",
+        "SUSE Linux Enterprise Server 15 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0761-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for freerdp",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260761-1/",
+      "released": "2026-03-03T12:40:21Z",
+      "updated": "2026-09-16T19:07:23Z",
+      "cves": [
+        "CVE-2026-22855",
+        "CVE-2026-22857",
+        "CVE-2026-23533",
+        "CVE-2026-23732",
+        "CVE-2026-23883",
+        "CVE-2026-23884"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0762-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for freerdp",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260762-1/",
+      "released": "2026-03-03T12:41:19Z",
+      "updated": "2026-09-16T19:07:25Z",
+      "cves": [
+        "CVE-2026-22855",
+        "CVE-2026-22857",
+        "CVE-2026-23533",
+        "CVE-2026-23732",
+        "CVE-2026-23884",
+        "CVE-2026-24491",
+        "CVE-2026-24675",
+        "CVE-2026-24676",
+        "CVE-2026-24679",
+        "CVE-2026-24682",
+        "CVE-2026-24684"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0766-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for gnome-remote-desktop",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260766-1/",
+      "released": "2026-03-03T13:02:47Z",
+      "updated": "2026-09-16T19:07:28Z",
+      "cves": [
+        "CVE-2025-5024"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0772-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for docker",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260772-1/",
+      "released": "2026-03-03T13:14:59Z",
+      "updated": "2026-09-16T19:07:35Z",
+      "cves": [
+        "CVE-2025-58181"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0774-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260774-1/",
+      "released": "2026-03-03T13:18:14Z",
+      "updated": "2026-09-16T19:07:36Z",
+      "cves": [
+        "CVE-2024-7592"
+      ],
+      "sev": "LOW",
+      "cvss": 2.6,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0778-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libssh",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260778-1/",
+      "released": "2026-03-03T13:24:29Z",
+      "updated": "2026-09-16T19:07:41Z",
+      "cves": [
+        "CVE-2026-0964",
+        "CVE-2026-0965",
+        "CVE-2026-0966",
+        "CVE-2026-0967",
+        "CVE-2026-0968"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-26077",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse doesn't ensure webhooks require a token",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-j67c-53j2-4hfw",
+      "released": "2026-03-03T13:29:03Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-26077"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-26078",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse has authentication bypass vulnerability in the Patreon plugin webhook endpoint",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-frx4-wg35-4r68",
+      "released": "2026-03-03T13:29:04Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-26078"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-26207",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "DIscourse's discourse-policy plugin lacks post access check",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-jr4h-w6p5-w55r",
+      "released": "2026-03-03T13:29:06Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-26207"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-26265",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse has IDOR vulnerability in the directory items endpoint",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-crxf-p6jm-vpgw",
+      "released": "2026-03-03T13:29:08Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-26265"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-26973",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse doesn't scope reviewable notes to user-visible reviewables",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-c587-qx78-vhmx",
+      "released": "2026-03-03T13:29:10Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-26973"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-27021",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse: Poll voters endpoint lacked post visibility checks",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-f5m5-9hpw-7c2g",
+      "released": "2026-03-03T13:29:14Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-27021"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-27149",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse has SQL injection in PM tag filtering",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-m6qf-h49w-h38w",
+      "released": "2026-03-03T13:29:16Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-27149"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-27150",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse doesn't ensure guardian check when creating QueryGroupBookmark",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-rw95-54qr-qrw8",
+      "released": "2026-03-03T13:29:17Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-27150"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-27151",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse doesn't validate destination topic when moving posts",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-m69h-9m2g-cfgw",
+      "released": "2026-03-03T13:29:19Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-27151"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-27152",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "DIscourse has DM communication-preference bypass when adding members",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-f8ff-pxg3-7967",
+      "released": "2026-03-03T13:29:21Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-27152"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-27153",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse doesn't prevent moderators from exporting user Chat DMs",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-5cp2-jq8m-33mf",
+      "released": "2026-03-03T13:29:23Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-27153"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-27162",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "DIscourse doesn't prevent whispers to leak in excerpts",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-gffm-43j4-372w",
+      "released": "2026-03-03T13:29:27Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-27162"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-28218",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse's Fail-Open Access Control in Data Explorer Plugin Allows Unauthorized SQL Query Execution",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-jxrc-72mr-mfh5",
+      "released": "2026-03-03T13:29:28Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-28218"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-28227",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse Vulnerable to Unauthorized Topic Creation in Staff-Only Categories via Topic Timer publish_to_category",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-m49w-78mh-87jp",
+      "released": "2026-03-03T13:29:32Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-28227"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2025.12.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0782-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libxml2",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260782-1/",
+      "released": "2026-03-03T13:35:15Z",
+      "updated": "2026-09-16T19:07:45Z",
+      "cves": [
+        "CVE-2025-10911",
+        "CVE-2026-0990",
+        "CVE-2026-0992",
+        "CVE-2026-1757"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0785-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for postgresql18",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260785-1/",
+      "released": "2026-03-03T14:01:35Z",
+      "updated": "2026-09-16T19:07:49Z",
+      "cves": [
+        "CVE-2026-2006"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
       ],
       "fix": [
         {

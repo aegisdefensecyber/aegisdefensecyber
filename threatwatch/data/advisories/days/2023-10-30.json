@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2023-10-30",
-  "count": 1,
+  "count": 2,
   "items": [
     {
       "id": "msrc_CVE-2023-5574",
@@ -28,6 +28,32 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2023:6156",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "kubernetes: Bypass of seccomp profile enforcement",
+      "url": "https://access.redhat.com/errata/RHSA-2023:6156",
+      "released": "2023-10-30T00:25:10Z",
+      "updated": "2026-11-26T17:21:02Z",
+      "cves": [
+        "CVE-2023-2431",
+        "CVE-2023-39325"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For Windows Machine Config Operator upgrades, see the following documentation: https://docs.openshift.com/container-platform/latest/windows_containers/windows-node-upgrades.html",
+          "u": "https://access.redhat.com/errata/RHSA-2023:6156"
+        },
+        {
+          "t": "The default stream concurrency limit in golang is 250 streams (requests) per HTTP/2 connection. This value may be adjusted in the golang.org/x/net/http2 package using the Server.MaxConcurrentStreams setting and the ConfigureServer function…",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

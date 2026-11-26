@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-05-04",
-  "count": 26,
+  "count": 34,
   "items": [
     {
       "id": "openSUSE-SU-2026:10668-1",
@@ -534,6 +534,186 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:13537",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: thunderbird security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:13537",
+      "released": "2026-05-04T00:00:00Z",
+      "updated": "2026-10-29T06:57:19Z",
+      "cves": [
+        "CVE-2026-111497",
+        "CVE-2026-6746",
+        "CVE-2026-6747",
+        "CVE-2026-6748",
+        "CVE-2026-6749",
+        "CVE-2026-6750",
+        "CVE-2026-6751",
+        "CVE-2026-6752",
+        "CVE-2026-6753",
+        "CVE-2026-6754",
+        "CVE-2026-6757",
+        "CVE-2026-6759",
+        "CVE-2026-6761",
+        "CVE-2026-6762",
+        "CVE-2026-6763",
+        "CVE-2026-6764",
+        "CVE-2026-6765",
+        "CVE-2026-6766",
+        "CVE-2026-6767",
+        "CVE-2026-6769",
+        "CVE-2026-6770",
+        "CVE-2026-6771",
+        "CVE-2026-6772",
+        "CVE-2026-6776",
+        "CVE-2026-6785",
+        "CVE-2026-6786"
+      ],
+      "products": [
+        "AlmaLinux: thunderbird"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thunderbird 140.10.0-1.el8_10.alma.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:13566",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: kernel security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:13566",
+      "released": "2026-05-04T00:00:00Z",
+      "updated": "2026-10-26T00:13:47Z",
+      "cves": [
+        "CVE-2026-23270",
+        "CVE-2026-31402",
+        "CVE-2026-31419",
+        "CVE-2026-31431",
+        "CVE-2026-43077"
+      ],
+      "products": [
+        "AlmaLinux: kernel-abi-stablelists",
+        "AlmaLinux: kernel-doc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel-abi-stablelists 6.12.0-124.55.1.el10_1",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-doc 6.12.0-124.55.1.el10_1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "VDE-2026-046",
+      "src": "csaf_vegagrieshaberkg",
+      "vendor": "VEGA",
+      "title": "VEGA: Missing Authentication for critical function in VEGAPULS two- and four-wire products",
+      "url": "https://certvde.com/en/advisories/VDE-2026-046",
+      "released": "2026-05-04T06:00:00Z",
+      "updated": "2026-10-02T12:00:01Z",
+      "cves": [
+        "CVE-2026-3323"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Hardware",
+        "VEGAPULS 6X Two-wire 4_20 mA/HART",
+        "VEGAPULS 6X Two-wire 4_20 mA/HART plus second current output 4_20 mA",
+        "VEGAPULS 6X Two-wire 4_20 mA/HART with overvoltage protection (Not for Ex Zone 0, 20; not for Div 1)",
+        "VEGAPULS 6X Four-wire 4_20 mA/HART; 90_253 V AC; 50/60 Hz",
+        "VEGAPULS 6X Four-wire 4_20 mA/HART; 9.6_48 V DC; 20_42 V AC"
+      ],
+      "fix": [
+        {
+          "t": "Implement access control to physical interfaces to prevent unauthorized access.",
+          "u": null
+        },
+        {
+          "t": "Update to fixed firmware versions listed in this advisory. Rotate any credentials that were used on the affected devices as they may have been compromised. Con…",
+          "u": "https://www.vega.com/en-us/downloads"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "VDE-2026-047",
+      "src": "csaf_vegagrieshaberkg",
+      "vendor": "VEGA",
+      "title": "VEGA: Missing Authentication for critical function in VEGAPULS Air products",
+      "url": "https://certvde.com/en/advisories/VDE-2026-047",
+      "released": "2026-05-04T06:00:00Z",
+      "updated": "2026-10-02T11:00:02Z",
+      "cves": [
+        "CVE-2026-3323"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Hardware",
+        "VEGAPULS Air 41 Cellular (NB-IoT/LTE-M) + LoRa",
+        "VEGAPULS Air 41 Cellular (NB-IoT/LTE-M)",
+        "VEGAPULS Air 41 LoRa",
+        "VEGAPULS Air 42 Cellular (NB-IoT/LTE-M) + LoRa",
+        "VEGAPULS Air 42 Cellular (NB-IoT/LTE-M)"
+      ],
+      "fix": [
+        {
+          "t": "Implement access control to interfaces to prevent unauthorized access.",
+          "u": null
+        },
+        {
+          "t": "Update to fixed firmware versions listed in this advisory. Rotate any credentials that were used on the affected devices as they may have been compromised. Con…",
+          "u": "https://www.vega.com/en-us/downloads"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "VDE-2026-048",
+      "src": "csaf_vegagrieshaberkg",
+      "vendor": "VEGA",
+      "title": "VEGA: Missing Authentication for critical function in VEGAPULS Bluetooth products",
+      "url": "https://certvde.com/en/advisories/VDE-2026-048",
+      "released": "2026-05-04T06:00:00Z",
+      "updated": "2026-10-02T11:00:02Z",
+      "cves": [
+        "CVE-2026-3323"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Hardware",
+        "VEGAPULS 11 with Bluetooth",
+        "VEGAPULS C 11 with Bluetooth",
+        "VEGAPULS C 21 Three-wire SDI12",
+        "VEGAPULS C 22 Three-wire SDI12",
+        "VEGAPULS C 23 Three-wire SDI12"
+      ],
+      "fix": [
+        {
+          "t": "Implement access control to physical interfaces to prevent unauthorized access.",
+          "u": null
+        },
+        {
+          "t": "Update to fixed firmware versions listed in this advisory. Rotate any credentials that were used on the affected devices as they may have been compromised. Con…",
+          "u": "https://www.vega.com/en-us/downloads"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "VDE-2026-046",
       "src": "direct_csaf",
       "vendor": "VEGA",
@@ -715,6 +895,50 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RUSTSEC-2026-0474",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`X509Ref::ocsp_responders` can produce a `&str` that is not valid UTF-8",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0474.html",
+      "released": "2026-05-04T12:00:00Z",
+      "updated": "2026-11-10T13:45:03Z",
+      "cves": [
+        "CVE-2026-42327"
+      ],
+      "products": [
+        "crates.io: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 0.10.79",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0476",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Buffer overflow with AES key wrap with padding in `cipher_update`",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0476.html",
+      "released": "2026-05-04T12:00:00Z",
+      "updated": "2026-11-10T13:45:03Z",
+      "cves": [
+        "CVE-2026-44662"
+      ],
+      "products": [
+        "crates.io: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 0.10.79",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20672-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -749,13 +973,37 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-w76p-3cgp-qfcm",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Polaris has an Improper Input Validation issue",
+      "url": "https://github.com/advisories/GHSA-w76p-3cgp-qfcm",
+      "released": "2026-05-04T18:30:31Z",
+      "updated": "2026-08-31T22:49:07Z",
+      "cves": [
+        "CVE-2026-42812"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Maven: org.apache.polaris:polaris-runtime-service"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.apache.polaris:polaris-runtime-service 1.4.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-26"
+    },
+    {
       "id": "WID-SEC-W-2026-1354",
       "src": "csaf_certbund",
       "vendor": "Amazon",
       "title": "Apache HTTP Server: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1354",
       "released": "2026-05-04T22:00:00Z",
-      "updated": "2026-11-22T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-28780",
         "CVE-2026-29168",

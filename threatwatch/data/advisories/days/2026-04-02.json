@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-02",
-  "count": 13,
+  "count": 20,
   "items": [
     {
       "id": "openSUSE-SU-2026:10482-1",
@@ -324,6 +324,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:1170-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for perl-Crypt-URandom",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261170-1/",
+      "released": "2026-04-02T08:42:05Z",
+      "updated": "2026-09-16T19:13:08Z",
+      "cves": [
+        "CVE-2026-2474"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:20461-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -348,6 +378,157 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0526",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Rendezvous server accepted unlimited registrations per peer",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0526.html",
+      "released": "2026-04-02T12:00:00Z",
+      "updated": "2026-11-13T12:33:03Z",
+      "cves": [
+        "CVE-2026-35405"
+      ],
+      "products": [
+        "crates.io: libp2p-rendezvous"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libp2p-rendezvous 0.17.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0527",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "Rendezvous server stored an unlimited number of DISCOVER cookies",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0527.html",
+      "released": "2026-04-02T12:00:00Z",
+      "updated": "2026-11-13T12:33:03Z",
+      "cves": [
+        "CVE-2026-35457"
+      ],
+      "products": [
+        "crates.io: libp2p-rendezvous"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libp2p-rendezvous 0.17.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1174-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for LibVNCServer",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261174-1/",
+      "released": "2026-04-02T12:43:24Z",
+      "updated": "2026-09-16T19:13:12Z",
+      "cves": [
+        "CVE-2026-32853",
+        "CVE-2026-32854"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:1179-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libsoup2",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261179-1/",
+      "released": "2026-04-02T15:08:33Z",
+      "updated": "2026-09-16T19:13:14Z",
+      "cves": [
+        "CVE-2026-0716"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.3",
+        "SUSE Linux Enterprise Micro 5.4",
+        "SUSE Linux Enterprise Micro 5.5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-4883",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Moby has an Off-by-one error in its plugin privilege validation in github.com/docker/docker",
+      "url": "https://github.com/moby/moby/security/advisories/GHSA-pxq6-2prw-chj9",
+      "released": "2026-04-02T18:42:30Z",
+      "updated": "2026-11-23T20:03:11Z",
+      "cves": [
+        "CVE-2026-33997"
+      ],
+      "products": [
+        "Go: github.com/docker/docker",
+        "Go: github.com/moby/moby",
+        "Go: github.com/moby/moby/v2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/moby/moby/v2 2.0.0-beta.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-4887",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "Moby has AuthZ plugin bypass when provided oversized request bodies in github.com/docker/docker",
+      "url": "https://github.com/moby/moby/security/advisories/GHSA-x744-4wpc-v9h2",
+      "released": "2026-04-02T18:42:30Z",
+      "updated": "2026-11-23T20:03:11Z",
+      "cves": [
+        "CVE-2026-34040"
+      ],
+      "products": [
+        "Go: github.com/docker/docker",
+        "Go: github.com/moby/moby",
+        "Go: github.com/moby/moby/v2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/moby/moby/v2 2.0.0-beta.8",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

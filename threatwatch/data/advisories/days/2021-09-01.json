@@ -1,0 +1,686 @@
+{
+  "schemaVersion": 1,
+  "date": "2021-09-01",
+  "count": 26,
+  "items": [
+    {
+      "id": "ASB-A-159624555",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In sendAccessibilityEvent of NotificationManagerService.java, there is a possible disclosure of notification data due to a missing permission check. This could lead to local information disclosure with User execution pr…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0682"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 8.1:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 9:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 10:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-161149543",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In lockNow of PhoneWindowManager.java, there is a possible lock screen bypass due to a race condition. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not need…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0688"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 8.1:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 9:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 10:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-173421434",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getSimSerialNumber of TelephonyManager.java, there is a possible way to read a trackable identifier due to a missing permission check. This could lead to local information disclosure with User execution privileges ne…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0428"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/frameworks/opt/telephony",
+        "Android: platform/packages/providers/ContactsProvider"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 10:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/opt/telephony 10:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/providers/ContactsProvider 10:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-177457096",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In lockAllProfileTasks of RootWindowContainer.java, there is a possible way to access the work profile without the profile PIN, after logging in. This could lead to local escalation of privilege with no additional execu…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0595"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 8.1:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 9:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 10:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-177927831",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getDefaultSmsPackage of RoleManagerService.java, there is a possible way to get information about the default sms app of a different device user due to a missing permission check. This could lead to local information…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0686"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 10:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-179289753",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In sendBroadcastToInstaller of FirstScreenBroadcast.java, there is a possible activity launch due to an unsafe PendingIntent. This could lead to local escalation of privilege with no additional execution privileges need…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0692"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Launcher3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Launcher3 9:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Launcher3 10:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Launcher3 11:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-179839665",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In TouchInputMapper::sync of TouchInputMapper.cpp, there is a possible out of bounds write due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User i…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0684"
+      ],
+      "products": [
+        "Android: platform/frameworks/native"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/native 8.1:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/native 9:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/native 10:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-180422108",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onCreate of ConfirmConnectActivity.java, there is a possible pairing of untrusted Bluetooth devices due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privileges …",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0598"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Nfc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Nfc 8.1:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Nfc 9:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Nfc 10:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-181053462",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In conditionallyRemoveIdentifiers of SubscriptionController.java, there is a possible way to retrieve a trackable identifier due to a missing permission check. This could lead to local information disclosure with User e…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0644"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/frameworks/opt/telephony"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 10:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/opt/telephony 10:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-182152757",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ih264d_mark_err_slice_skip of ih264d_parse_pslice.c, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote information disclosure with no additional execution privileges nee…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0690"
+      ],
+      "products": [
+        "Android: platform/external/libavc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/libavc 8.1:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/libavc 9:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/libavc 10:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-184018316",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In get_sock_stat of xt_qtaguid.c, there is a possible out of bounds read due to a use after free. This could lead to local information disclosure with User execution privileges needed. User interaction is not needed for…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0695"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: oc-mr1:2021-09-05",
+          "u": null
+        },
+        {
+          "t": "Fixed in :linux_kernel: pi:2021-09-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-184046948",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In openFile of HeapDumpProvider.java, there is a possible way to retrieve generated heap dumps from debuggable apps due to an unprotected provider. This could lead to local information disclosure with no additional exec…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0693"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-184561643",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-184561643",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-1948"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn SoCVersion:2021-09-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-184561795",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-184561795",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-1941"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn SoCVersion:2021-09-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-185398942",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In runTraceIpcStop of ActivityManagerShellCommand.java, there is a possible deletion of system files due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges nee…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0683"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 8.1:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 9:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 10:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-188554048",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In the SELinux policy configured in system_app.te, there is a possible way for system_app to gain code execution in other processes due to an overly-permissive SELinux policy. This could lead to local escalation of priv…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0691"
+      ],
+      "products": [
+        "Android: platform/system/sepolicy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/sepolicy 11:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-188913943",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ellipsize of Layout.java, there is a possible ANR due to improper input validation. This could lead to local denial of service with no additional execution privileges needed. User interaction is needed for exploitati…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0687"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 8.1:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 9:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 10:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-189392423",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "[#1188785][#1188787][#1188789][#1188792]",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0636"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2021-09-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-189402477",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "Hackerone bug id[#1187667][#1187670]",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0635"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2021-09-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-190188264",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In RGB_to_BGR1_portable of SkSwizzler_opts.h, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges needed. User in…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0689"
+      ],
+      "products": [
+        "Android: platform/external/skia"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/skia 8.1:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/skia 9:2021-09-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/skia 10:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-190403706",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-190403706",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-30290"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2021-09-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-190403734",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-190403734",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-1974"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn SoCVersion:2021-09-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-190404324",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-190404324",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-30294"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2021-09-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-191055353",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ParsedIntentInfo of ParsedIntentInfo.java, there is a possible parcel serialization/deserialization mismatch due to unsafe deserialization. This could lead to local escalation of privilege with no additional executio…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0685"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-09-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-192535337",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In system properties, there is a possible information disclosure due to a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0681"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2021-09-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-192535676",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In system properties, there is a possible information disclosure due to a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not…",
+      "url": "https://source.android.com/security/bulletin/2021-09-01",
+      "released": "2021-09-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0680"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2021-09-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    }
+  ]
+}

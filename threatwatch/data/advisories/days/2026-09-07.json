@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-07",
-  "count": 108,
+  "count": 144,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1122",
@@ -2315,6 +2315,176 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-elasticsearch-2026-56143",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Allocation of Resources Without Limits or Throttling in Elasticsearch Leading to Denial of Service",
+      "url": "https://discuss.elastic.co/t/elasticsearch-8-19-20-9-3-0-security-update-esa-2026-47/390084",
+      "released": "2026-09-07T05:39:42Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-56143"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: elasticsearch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elasticsearch 8.19.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in elasticsearch 9.3.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-elk-2026-72633",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Incorrect Authorization in Kibana Leading to Unauthorized Disabling of Privilege Monitoring",
+      "url": "https://discuss.elastic.co/t/kibana-9-4-6-9-5-2-security-update-esa-2026-130/390059",
+      "released": "2026-09-07T05:40:42Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-72633"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 9.4.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in elk 9.5.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-node-2026-48932",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw in Node.js HTTP client can cause a request desynchronization for Node.js-based forwarding proxies that rebuild outbound headers from the visible `IncomingMessage` headers while piping the original body to a reuse…",
+      "url": "https://hackerone.com/reports/3564941",
+      "released": "2026-09-07T05:52:54Z",
+      "updated": "2026-09-07T06:10:52Z",
+      "cves": [
+        "CVE-2026-48932"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: node"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in node 22.23.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 24.17.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 26.3.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-GOBINARY-CVE-2026-73499",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-73499 in go.etcd.io/etcd/server/v3 - Patched by Root",
+      "released": "2026-09-07T07:03:46Z",
+      "updated": "2026-09-07T07:03:46Z",
+      "cves": [
+        "CVE-2026-73499"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: go.etcd.io/etcd/server/v3",
+        "Root: rootio-go.etcd.io/etcd/server/v3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in go.etcd.io/etcd/server/v3 v3.6.8-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in rootio-go.etcd.io/etcd/server/v3 v3.6.8-root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99972",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78254 affecting package ant for versions less than 1.10.18-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78254",
+      "released": "2026-09-07T08:17:12Z",
+      "updated": "2026-09-22T19:07:04Z",
+      "cves": [
+        "CVE-2026-78254"
+      ],
+      "products": [
+        "Azure Linux: ant"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ant 1.10.18-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-86342",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Freetext Feed Preview Improper Authorization Exposes Restricted Event and Feed Information",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-86342",
+      "released": "2026-09-07T09:02:00Z",
+      "updated": "2026-09-07T09:06:12Z",
+      "cves": [
+        "CVE-2026-86342"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-86347",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Missing Authorization on Template File Upload Allows Authenticated Disk Exhaustion",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-86347",
+      "released": "2026-09-07T09:30:49Z",
+      "updated": "2026-09-07T09:30:56Z",
+      "cves": [
+        "CVE-2026-86347"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21800-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -2328,6 +2498,24 @@
         "openSUSE Leap 16.0"
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-86351",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP User Homepage Validation Allows Authenticated Open Redirect via Protocol-Relative URL",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-86351",
+      "released": "2026-09-07T09:59:27Z",
+      "updated": "2026-09-07T09:59:33Z",
+      "cves": [
+        "CVE-2026-86351"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.1,
+      "products": [
+        "MISP MISP"
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -2386,6 +2574,145 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-elasticsearch-2024-23444",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Elasticsearch elasticsearch-certutil csr fails to encrypt private key",
+      "url": "https://discuss.elastic.co/t/elasticsearch-8-13-0-7-17-23-security-update-esa-2024-12/364157",
+      "released": "2026-09-07T10:34:33Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-23444"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: elasticsearch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elasticsearch 7.17.23",
+          "u": null
+        },
+        {
+          "t": "Fixed in elasticsearch 8.13.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-13-CVE-2026-18298",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-18298 in gst-plugins-good1.0 - Patched by Root",
+      "released": "2026-09-07T10:37:10Z",
+      "updated": "2026-09-07T10:37:10Z",
+      "cves": [
+        "CVE-2026-18298"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: gst-plugins-good1.0",
+        "Root: rootio-gst-plugins-good1.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gst-plugins-good1.0 1.26.2-1+deb13u2.aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in rootio-gst-plugins-good1.0 1.26.2-1+deb13u2.aikido.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-13-CVE-2026-18299",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-18299 in gst-plugins-good1.0 - Patched by Root",
+      "released": "2026-09-07T10:37:10Z",
+      "updated": "2026-09-07T10:37:10Z",
+      "cves": [
+        "CVE-2026-18299"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: gst-plugins-good1.0",
+        "Root: rootio-gst-plugins-good1.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gst-plugins-good1.0 1.26.2-1+deb13u2.aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in rootio-gst-plugins-good1.0 1.26.2-1+deb13u2.aikido.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-13-CVE-2026-18649",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-18649 in gst-plugins-good1.0 - Patched by Root",
+      "released": "2026-09-07T10:37:10Z",
+      "updated": "2026-09-07T10:37:10Z",
+      "cves": [
+        "CVE-2026-18649"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: gst-plugins-good1.0",
+        "Root: rootio-gst-plugins-good1.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gst-plugins-good1.0 1.26.2-1+deb13u2.aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in rootio-gst-plugins-good1.0 1.26.2-1+deb13u2.aikido.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-13-CVE-2026-53705",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-53705 in gst-plugins-good1.0 - Patched by Root",
+      "released": "2026-09-07T10:37:10Z",
+      "updated": "2026-09-07T10:37:10Z",
+      "cves": [
+        "CVE-2026-53705"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: gst-plugins-good1.0",
+        "Root: rootio-gst-plugins-good1.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gst-plugins-good1.0 1.26.2-1+deb13u2.aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in gst-plugins-good1.0 1.26.2-1+deb13u2.root.io.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in gst-plugins-good1.0 1.26.2-1+deb13u2.aikido.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "NCSC-2026-0342",
       "src": "csaf_ncscnl",
       "vendor": "N-able",
@@ -2424,6 +2751,188 @@
         "core-geonetwork"
       ],
       "lang": "nl",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0280",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`greentic-setup-dev` 1.3.34027618345 was removed from crates.io due to containing malicious code",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0280.html",
+      "released": "2026-09-07T12:00:00Z",
+      "updated": "2026-09-07T18:19:30Z",
+      "products": [
+        "crates.io: greentic-setup-dev"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in greentic-setup-dev 1.3.34027618346-0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0281",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`greentic-setup` 1.3.1-dev.34027618345 was removed from crates.io due to containing malicious code",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0281.html",
+      "released": "2026-09-07T12:00:00Z",
+      "updated": "2026-09-07T18:19:30Z",
+      "products": [
+        "crates.io: greentic-setup"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in greentic-setup 1.3.1-dev.34027618345.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-86408",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Missing Authorization in Cryptographic Key View Exposes Signing Keys from Protected Events",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-86408",
+      "released": "2026-09-07T12:11:00Z",
+      "updated": "2026-09-07T12:11:12Z",
+      "cves": [
+        "CVE-2026-86408"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-86417",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Dashboard Template REST API Exposes Template Owner Email Addresses to Unauthorized Users",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-86417",
+      "released": "2026-09-07T12:17:32Z",
+      "updated": "2026-09-07T12:17:41Z",
+      "cves": [
+        "CVE-2026-86417"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-86418",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Dashboard Organisation Picker Exposes Hidden Organisation Metadata to Unauthorized Users",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-86418",
+      "released": "2026-09-07T12:22:00Z",
+      "updated": "2026-09-14T06:36:08Z",
+      "cves": [
+        "CVE-2026-86418"
+      ],
+      "sev": "LOW",
+      "cvss": 2.3,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-86419",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Insufficient Outbound URL Validation Allows SSRF and Credential Disclosure via Feed Redirects and TAXII Discovery",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-86419",
+      "released": "2026-09-07T12:31:23Z",
+      "updated": "2026-09-07T12:31:33Z",
+      "cves": [
+        "CVE-2026-86419"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-86440",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Dashboard Button Widget Allows Stored XSS via Unsafe javascript: and Backslash URLs",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-86440",
+      "released": "2026-09-07T12:34:59Z",
+      "updated": "2026-09-07T12:35:07Z",
+      "cves": [
+        "CVE-2026-86440"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.1,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-86441",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Dashboard Organisation Widgets Bypass Organisation-Index Restrictions and Expose Hidden Organisation Data",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-86441",
+      "released": "2026-09-07T12:39:11Z",
+      "updated": "2026-09-07T12:39:18Z",
+      "cves": [
+        "CVE-2026-86441"
+      ],
+      "sev": "LOW",
+      "cvss": 2.3,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-86451",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Event Graph Object Reference Lookup Exposes References from Unauthorized Objects",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-86451",
+      "released": "2026-09-07T12:59:35Z",
+      "updated": "2026-09-07T12:59:41Z",
+      "cves": [
+        "CVE-2026-86451"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "MISP MISP"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-86452",
+      "src": "gna-1",
+      "vendor": "MISP",
+      "title": "MISP Unauthenticated Mail Endpoints Allow Unbounded Storage Consumption and Request Flooding",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-86452",
+      "released": "2026-09-07T13:03:00Z",
+      "updated": "2026-09-14T06:43:20Z",
+      "cves": [
+        "CVE-2026-86452"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "MISP MISP"
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -2475,6 +2984,385 @@
         "openSUSE Leap 16.0"
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2026-15588",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-15588 in glib2.0 - Patched by Root",
+      "released": "2026-09-07T17:05:30Z",
+      "updated": "2026-09-07T17:05:30Z",
+      "cves": [
+        "CVE-2026-15588"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: glib2.0",
+        "Root: rootio-glib2.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in rootio-glib2.0 2.74.6-2+deb12u9.aikido.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2026-16118",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-16118 in glib2.0 - Patched by Root",
+      "released": "2026-09-07T17:05:30Z",
+      "updated": "2026-09-07T17:05:30Z",
+      "cves": [
+        "CVE-2026-16118"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: glib2.0",
+        "Root: rootio-glib2.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in rootio-glib2.0 2.74.6-2+deb12u9.aikido.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2026-58010",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-58010 in glib2.0 - Patched by Root",
+      "released": "2026-09-07T17:05:30Z",
+      "updated": "2026-09-07T17:05:30Z",
+      "cves": [
+        "CVE-2026-58010"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: glib2.0",
+        "Root: rootio-glib2.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2026-58011",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-58011 in glib2.0 - Patched by Root",
+      "released": "2026-09-07T17:05:30Z",
+      "updated": "2026-09-07T17:05:30Z",
+      "cves": [
+        "CVE-2026-58011"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: glib2.0",
+        "Root: rootio-glib2.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2026-58012",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-58012 in glib2.0 - Patched by Root",
+      "released": "2026-09-07T17:05:30Z",
+      "updated": "2026-09-07T17:05:30Z",
+      "cves": [
+        "CVE-2026-58012"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: glib2.0",
+        "Root: rootio-glib2.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2026-58013",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-58013 in glib2.0 - Patched by Root",
+      "released": "2026-09-07T17:05:30Z",
+      "updated": "2026-09-07T17:05:30Z",
+      "cves": [
+        "CVE-2026-58013"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: glib2.0",
+        "Root: rootio-glib2.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2026-58014",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-58014 in glib2.0 - Patched by Root",
+      "released": "2026-09-07T17:05:30Z",
+      "updated": "2026-09-07T17:05:30Z",
+      "cves": [
+        "CVE-2026-58014"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: glib2.0",
+        "Root: rootio-glib2.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2026-58015",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-58015 in glib2.0 - Patched by Root",
+      "released": "2026-09-07T17:05:30Z",
+      "updated": "2026-09-07T17:05:30Z",
+      "cves": [
+        "CVE-2026-58015"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: glib2.0",
+        "Root: rootio-glib2.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2026-58016",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-58016 in glib2.0 - Patched by Root",
+      "released": "2026-09-07T17:05:30Z",
+      "updated": "2026-09-07T17:05:30Z",
+      "cves": [
+        "CVE-2026-58016"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: glib2.0",
+        "Root: rootio-glib2.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.root.io.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in glib2.0 2.74.6-2+deb12u9.aikido.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2023-30798",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2023-30798 in starlette - Patched by Root",
+      "released": "2026-09-07T17:47:27Z",
+      "updated": "2026-09-07T17:47:27Z",
+      "cves": [
+        "CVE-2023-30798"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: rootio-starlette",
+        "Root: starlette"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in starlette 0.22.0+aikido.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in starlette 0.22.0+aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in starlette 0.22.0+aikido.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2025-54121",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2025-54121 in starlette - Patched by Root",
+      "released": "2026-09-07T17:47:27Z",
+      "updated": "2026-09-07T17:47:27Z",
+      "cves": [
+        "CVE-2025-54121"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: rootio-starlette",
+        "Root: starlette"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in starlette 0.22.0+aikido.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in starlette 0.45.3+aikido.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in starlette 0.45.3+aikido.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-PYPI-GHSA-3qj8-93xh-pwh2",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-3qj8-93xh-pwh2 in starlette - Patched by Root",
+      "released": "2026-09-07T17:47:27Z",
+      "updated": "2026-09-07T17:47:27Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: starlette"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in starlette 0.22.0+aikido.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in starlette 0.22.0+aikido.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-PYPI-GHSA-qj8w-rv5x-2v9h",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-qj8w-rv5x-2v9h in starlette - Patched by Root",
+      "released": "2026-09-07T17:47:27Z",
+      "updated": "2026-09-07T17:47:27Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: starlette"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in starlette 0.22.0+aikido.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in starlette 0.22.0+aikido.6",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -2666,7 +3554,7 @@
       "title": "Red Hat Enterprise Linux: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3229",
       "released": "2026-09-07T22:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-25T23:00:00Z",
       "cves": [
         "CVE-2026-16118",
         "CVE-2026-60122"

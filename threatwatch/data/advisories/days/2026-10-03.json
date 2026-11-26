@@ -1,8 +1,85 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-03",
-  "count": 87,
+  "count": 94,
   "items": [
+    {
+      "id": "ELA-1842-1",
+      "src": "osv_debian_elts",
+      "vendor": "Debian Elts",
+      "title": "ELA-1842-1",
+      "url": "https://deb.freexian.com/extended-lts/tracker/ELA-1842-1",
+      "updated": "2026-10-03T00:00:00Z",
+      "products": [
+        "Debian: imagemagick",
+        "Debian: xz-utils"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in xz-utils 5.2.5-2.1~deb11u3",
+          "u": null
+        },
+        {
+          "t": "Fixed in imagemagick 8:6.9.7.4+dfsg-11+deb9u32",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1355",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "UNKNOWN READ in std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<Imf_4_0::Name, I",
+      "released": "2026-10-03T00:18:48Z",
+      "updated": "2026-10-03T00:18:48Z",
+      "products": [
+        "OSS-Fuzz: openexr"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openexr f1a5974953edf7e42e077c98c5ad8e6b87b3e9e6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1356",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Use-of-uninitialized-value in jxl::RenderPipeline::InputReady",
+      "released": "2026-10-03T00:21:03Z",
+      "updated": "2026-10-03T00:21:03Z",
+      "products": [
+        "OSS-Fuzz: libjxl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libjxl ddfd9a18fa2156b064d08a319d741d00189dc250",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1361",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Bad parameters to --sanitizer-annotate-contiguous-container in jsoncons::cbor::basic_cbor_parser<jsoncons::stream_source<unsigned char, std::__",
+      "released": "2026-10-03T00:28:31Z",
+      "updated": "2026-10-03T00:28:31Z",
+      "products": [
+        "OSS-Fuzz: jsoncons"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jsoncons 2788b2285a309647d8833de25c182f543529c4d8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "msrc_CVE-2026-85086",
       "src": "csaf_microsoft",
@@ -2267,6 +2344,75 @@
         "openSUSE Leap 16.0"
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:74424",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: libvirt security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:74424",
+      "released": "2026-10-03T12:04:21Z",
+      "updated": "2026-10-17T12:12:38Z",
+      "cves": [
+        "CVE-2026-18917",
+        "CVE-2026-63622"
+      ],
+      "products": [
+        "Rocky Linux: libvirt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libvirt 0:11.10.0-12.7.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:74438",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: kernel security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:74438",
+      "released": "2026-10-03T12:04:21Z",
+      "updated": "2026-10-17T12:12:38Z",
+      "cves": [
+        "CVE-2026-45856",
+        "CVE-2026-63794",
+        "CVE-2026-80775"
+      ],
+      "products": [
+        "Rocky Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 0:5.14.0-687.54.1.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:74457",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: ghostscript security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:74457",
+      "released": "2026-10-03T12:04:21Z",
+      "updated": "2026-10-17T12:12:38Z",
+      "cves": [
+        "CVE-2026-39919"
+      ],
+      "products": [
+        "Rocky Linux: ghostscript"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ghostscript 0:9.54.0-19.el9_8.1",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

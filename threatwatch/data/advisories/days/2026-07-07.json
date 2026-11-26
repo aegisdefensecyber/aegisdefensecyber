@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-07",
-  "count": 27,
+  "count": 30,
   "items": [
     {
       "id": "openSUSE-SU-2026:11197-1",
@@ -335,6 +335,18 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "OSV-2026-1041",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Heap-buffer-overflow in Assimp::ObjExporter::indexMap<Assimp::ObjExporter::vertexData, Assimp::ObjExport",
+      "released": "2026-07-07T00:14:26Z",
+      "updated": "2026-11-10T14:33:15Z",
+      "products": [
+        "OSS-Fuzz: assimp"
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "msrc_CVE-2026-55952",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -550,6 +562,32 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "PYSEC-2026-1260",
+      "src": "pysec",
+      "vendor": "PyPI",
+      "title": "ComfyUI-Manager is Vulnerable to CRLF Injection in Configuration Handler",
+      "url": "https://github.com/advisories/GHSA-562r-8445-54r2",
+      "released": "2026-07-07T16:03:18Z",
+      "updated": "2026-11-13T17:08:08Z",
+      "cves": [
+        "CVE-2026-22777"
+      ],
+      "products": [
+        "PyPI: comfyui-manager"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in comfyui-manager 3.39.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in comfyui-manager 4.0.5",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -788,6 +826,26 @@
         "RESF Rocky Linux"
       ],
       "lang": "de",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-5932",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "The golang.org/x/crypto/openpgp package is unmaintained, unsafe by design, and has known security issues",
+      "url": "https://go.dev/issue/81227",
+      "released": "2026-07-07T22:15:29Z",
+      "updated": "2026-11-02T22:01:43Z",
+      "products": [
+        "Go: golang.org/x/crypto",
+        "Go: golang.org/x/crypto/openpgp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang.org/x/crypto 0.58.1-0.20261009181718-2f1f834330b2",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

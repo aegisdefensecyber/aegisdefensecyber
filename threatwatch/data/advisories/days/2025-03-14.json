@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-03-14",
-  "count": 11,
+  "count": 14,
   "items": [
     {
       "id": "msrc_CVE-2015-8126",
@@ -303,6 +303,35 @@
     },
     {
       "id": "SCA-2025-0004",
+      "src": "csaf_sick",
+      "vendor": "SICK AG",
+      "title": "Critical vulnerabilities in SICK DL100-2xxxxxxx",
+      "url": "https://www.sick.com/.well-known/csaf/white/2024/sca-2025-0004.json",
+      "released": "2025-03-14T00:00:00Z",
+      "updated": "2026-11-13T15:18:31Z",
+      "cves": [
+        "CVE-2025-27593",
+        "CVE-2025-27594",
+        "CVE-2025-27595"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Dx100",
+        "DL100-2xxxxxxx",
+        "DL100-2xxxxxxx Firmware"
+      ],
+      "fix": [
+        {
+          "t": "Please make sure that you apply general security practices when operating the products. The following General Security Practices and Operating Guidelines could…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SCA-2025-0004",
       "src": "direct_csaf",
       "vendor": "SICK AG",
       "title": "RCE due to SICK Device Driver (SDD)",
@@ -322,6 +351,72 @@
       "fix": [
         {
           "t": "Please make sure that you apply general security practices when operating the products. The following General Security Practices and Operating Guidelines could mitigate the associated security risk.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2024-55549",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2024-55549",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2024-55549",
+      "released": "2025-03-14T17:42:03Z",
+      "updated": "2026-09-05T10:49:11Z",
+      "cves": [
+        "CVE-2024-55549"
+      ],
+      "products": [
+        "Alpaquita: libxslt",
+        "BellSoft Hardened Containers: libxslt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libxslt 1.1.37-r2",
+          "u": null
+        },
+        {
+          "t": "Fixed in libxslt 1.1.43-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in libxslt 1.1.37-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2025-24855",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2025-24855",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2025-24855",
+      "released": "2025-03-14T17:42:18Z",
+      "updated": "2026-09-05T10:49:10Z",
+      "cves": [
+        "CVE-2025-24855"
+      ],
+      "products": [
+        "Alpaquita: libxslt",
+        "Alpaquita: openjdk11",
+        "Alpaquita: openjdk11-container-jre",
+        "Alpaquita: openjdk11-lite",
+        "Alpaquita: openjdk11-perf",
+        "Alpaquita: openjdk17"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libxslt 1.1.37-r2",
+          "u": null
+        },
+        {
+          "t": "Fixed in openjdk11 11.0.28_p12-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in openjdk11-container-jre 11.0.28_p12-r0",
           "u": null
         }
       ],

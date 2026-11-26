@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-06-12",
-  "count": 2,
+  "count": 3,
   "items": [
     {
       "id": "ICSA-25-168-01",
@@ -11,6 +11,43 @@
       "url": "https://cert-portal.siemens.com/productcert/html/ssa-627195.html",
       "released": "2025-06-12T00:00:00Z",
       "updated": "2026-09-29T06:00:00Z",
+      "cves": [
+        "CVE-2025-40592"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.1,
+      "products": [
+        "Mendix Studio Pro 10",
+        "Mendix Studio Pro 11",
+        "Mendix Studio Pro 11.12",
+        "Mendix Studio Pro 11.6",
+        "Mendix Studio Pro 9"
+      ],
+      "fix": [
+        {
+          "t": "Do not install untrusted/unverified modules in your Studio Pro projects",
+          "u": null
+        },
+        {
+          "t": "Update to V10.24.24 or later version",
+          "u": "https://docs.mendix.com/releasenotes/studio-pro/10/"
+        },
+        {
+          "t": "Update to V11.12.2 or later version",
+          "u": "https://docs.mendix.com/releasenotes/studio-pro/11.12/"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SSA-627195",
+      "src": "csaf_siemens",
+      "vendor": "Siemens",
+      "title": "SSA-627195: Zip Path Traversal Vulnerability in Mendix Studio Pro's Module Installation Process",
+      "url": "https://cert-portal.siemens.com/productcert/html/ssa-627195.html",
+      "released": "2025-06-12T00:00:00Z",
+      "updated": "2026-09-28T00:00:00Z",
       "cves": [
         "CVE-2025-40592"
       ],

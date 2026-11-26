@@ -1,8 +1,71 @@
 {
   "schemaVersion": 1,
   "date": "2024-09-24",
-  "count": 4,
+  "count": 6,
   "items": [
+    {
+      "id": "RHSA-2024:7003",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "kernel: fs: sysfs: Fix reference leak in sysfs_break_active_protection()",
+      "url": "https://access.redhat.com/errata/RHSA-2024:7003",
+      "released": "2024-09-24T00:40:57Z",
+      "updated": "2026-11-26T17:23:00Z",
+      "cves": [
+        "CVE-2024-26993",
+        "CVE-2024-36886",
+        "CVE-2024-41071"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258 The system must be rebooted for this update to take effect.",
+          "u": "https://access.redhat.com/errata/RHSA-2024:7003"
+        },
+        {
+          "t": "The TIPC module is not automatically loaded in default configurations. When required, administrative privileges are required to explicitly load this module. To determine if the TIPC module is loaded, use the following command: # grep tipc …",
+          "u": null
+        },
+        {
+          "t": "There are no mitigations for the flaw. Please update your system for fixes.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2024:7002",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "kernel: x86/xen: Add some null pointer checking to smp.c",
+      "url": "https://access.redhat.com/errata/RHSA-2024:7002",
+      "released": "2024-09-24T01:11:01Z",
+      "updated": "2026-11-26T17:22:59Z",
+      "cves": [
+        "CVE-2024-26908",
+        "CVE-2024-26993",
+        "CVE-2024-36886",
+        "CVE-2024-41071"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258 The system must be rebooted for this update to take effect.",
+          "u": "https://access.redhat.com/errata/RHSA-2024:7002"
+        },
+        {
+          "t": "The TIPC module is not automatically loaded in default configurations. When required, administrative privileges are required to explicitly load this module. To determine if the TIPC module is loaded, use the following command: # grep tipc …",
+          "u": null
+        },
+        {
+          "t": "There are no mitigations for the flaw. Please update your system for fixes.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "openSUSE-SU-2024:0311-1",
       "src": "csaf_opensuse",

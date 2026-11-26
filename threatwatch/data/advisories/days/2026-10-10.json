@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-10",
-  "count": 39,
+  "count": 46,
   "items": [
     {
       "id": "openSUSE-SU-2026:12097-1",
@@ -395,6 +395,42 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-1381",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Use-of-uninitialized-value in processHandshakeTLSBlock",
+      "released": "2026-10-10T00:07:38Z",
+      "updated": "2026-10-10T00:07:38Z",
+      "products": [
+        "OSS-Fuzz: ndpi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ndpi 2b8c2989f8c36f94a639057aeebd4fc71d841928",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2025-1097",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Security exception in org.htmlunit.cyberneko.HTMLTagBalancer.reopenFormattingElements",
+      "released": "2026-10-10T00:18:42Z",
+      "updated": "2026-10-10T00:18:42Z",
+      "products": [
+        "OSS-Fuzz: htmlunit"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in htmlunit 4610a7a39a9f9fd8a4c892fd311be60032496428",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -1122,6 +1158,125 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2026-0369",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "ZipStreamReader::extract() and ZipArchive::extract() apply Unix permissions through symlinks without confining the target",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2026-0369.html",
+      "released": "2026-10-10T12:00:00Z",
+      "updated": "2026-10-16T23:27:42Z",
+      "products": [
+        "crates.io: zip"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in zip 9.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLBA-2022:3917",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate:new packages: glibc",
+      "url": "https://errata.rockylinux.org/RLBA-2022:3917",
+      "released": "2026-10-10T12:04:26Z",
+      "updated": "2026-10-24T12:12:17Z",
+      "cves": [
+        "CVE-2022-23218"
+      ],
+      "products": [
+        "Rocky Linux: glibc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glibc 0:2.34-283.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:79281",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: glibc security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:79281",
+      "released": "2026-10-10T12:04:26Z",
+      "updated": "2026-10-24T12:12:17Z",
+      "cves": [
+        "CVE-2026-18374",
+        "CVE-2026-19542",
+        "CVE-2026-6368",
+        "CVE-2026-6791",
+        "CVE-2026-77117",
+        "CVE-2026-80489"
+      ],
+      "products": [
+        "Rocky Linux: glibc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glibc 0:2.34-283.el9_8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:79122",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: cjose security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:79122",
+      "released": "2026-10-10T12:08:29Z",
+      "updated": "2026-10-24T12:12:23Z",
+      "cves": [
+        "CVE-2026-53938"
+      ],
+      "products": [
+        "Rocky Linux: cjose"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cjose 0:0.6.2.2-7.el10_2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RLSA-2026:79371",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: dovecot security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:79371",
+      "released": "2026-10-10T12:08:29Z",
+      "updated": "2026-10-24T12:12:23Z",
+      "cves": [
+        "CVE-2026-27852",
+        "CVE-2026-33263",
+        "CVE-2026-33605",
+        "CVE-2026-40018",
+        "CVE-2026-40019",
+        "CVE-2026-42007",
+        "CVE-2026-42391",
+        "CVE-2026-73208"
+      ],
+      "products": [
+        "Rocky Linux: dovecot"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dovecot 1:2.3.21-19.el10_2.8",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

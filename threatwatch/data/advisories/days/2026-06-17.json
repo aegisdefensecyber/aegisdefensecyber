@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-06-17",
-  "count": 25,
+  "count": 32,
   "items": [
     {
       "id": "openSUSE-SU-2026:11046-1",
@@ -165,6 +165,18 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "OSV-2026-928",
+      "src": "osv_ossfuzz",
+      "vendor": "Ossfuzz",
+      "title": "Stack-use-after-scope in StreamReader_CApi::wait_for_file_size",
+      "released": "2026-06-17T00:06:18Z",
+      "updated": "2026-11-14T14:38:31Z",
+      "products": [
+        "OSS-Fuzz: kimageformats"
+      ],
       "seen": "2026-11-26"
     },
     {
@@ -658,6 +670,50 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-91419",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-42055 affecting package nginx for versions less than 1.28.3-8",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42055",
+      "released": "2026-06-17T15:16:50Z",
+      "updated": "2026-09-22T05:34:53Z",
+      "cves": [
+        "CVE-2026-42055"
+      ],
+      "products": [
+        "Azure Linux: nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.28.3-8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-91176",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-48142 affecting package nginx for versions less than 1.28.3-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48142",
+      "released": "2026-06-17T15:16:59Z",
+      "updated": "2026-09-22T05:34:53Z",
+      "cves": [
+        "CVE-2026-48142"
+      ],
+      "products": [
+        "Azure Linux: nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.28.3-6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
       "id": "openSUSE-SU-2026:21079-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -697,6 +753,102 @@
       "fix": [
         {
           "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-91191",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-12151 affecting package nodejs for versions less than 24.18.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12151",
+      "released": "2026-06-17T17:16:42Z",
+      "updated": "2026-09-08T17:33:11Z",
+      "cves": [
+        "CVE-2026-12151"
+      ],
+      "products": [
+        "Azure Linux: nodejs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nodejs 24.18.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-91194",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-11525 affecting package nodejs for versions less than 24.18.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-11525",
+      "released": "2026-06-17T18:17:35Z",
+      "updated": "2026-09-08T17:33:11Z",
+      "cves": [
+        "CVE-2026-11525"
+      ],
+      "products": [
+        "Azure Linux: nodejs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nodejs 24.18.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-91188",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-9679 affecting package nodejs for versions less than 24.18.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9679",
+      "released": "2026-06-17T18:18:06Z",
+      "updated": "2026-09-08T17:33:11Z",
+      "cves": [
+        "CVE-2026-9679"
+      ],
+      "products": [
+        "Azure Linux: nodejs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nodejs 24.18.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:26194",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat build of Quarkus 3.20.6.SP2 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:26194",
+      "released": "2026-06-17T21:02:34Z",
+      "updated": "2026-10-22T05:56:27Z",
+      "cves": [
+        "CVE-2026-50559"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat build of Quarkus",
+        "Red Hat build of Quarkus 3.20.6.SP2"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:26194"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
           "u": null
         }
       ],

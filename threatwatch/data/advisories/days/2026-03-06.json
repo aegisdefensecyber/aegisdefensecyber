@@ -1,8 +1,100 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-06",
-  "count": 1,
+  "count": 7,
   "items": [
+    {
+      "id": "BIT-activemq-2025-66168",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache ActiveMQ, Apache ActiveMQ All Module, Apache ActiveMQ MQTT Module: MQTT control packet remaining length field is not properly validated",
+      "released": "2026-03-06T08:36:37Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-66168"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: activemq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq 5.19.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in activemq 6.1.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in activemq 6.2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2026-25673",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Potential denial-of-service vulnerability in URLField via Unicode normalization on Windows",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2026-03-06T08:38:49Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-25673"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 4.2.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.2.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 6.0.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2026-25674",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Potential incorrect permissions on newly created file system objects",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2026-03-06T08:38:51Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-25674"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 4.2.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.2.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 6.0.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
     {
       "id": "openSUSE-SU-2026:20330-1",
       "src": "csaf_opensuse",
@@ -27,6 +119,74 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:0846-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python-Markdown",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20260846-1/",
+      "released": "2026-03-06T17:04:39Z",
+      "updated": "2026-09-16T19:08:34Z",
+      "cves": [
+        "CVE-2025-69534"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "openSUSE Leap 15.6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "GO-2026-4602",
+      "src": "osv_go",
+      "vendor": "Go",
+      "title": "FileInfo can escape from a Root in os",
+      "url": "https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk",
+      "released": "2026-03-06T21:03:42Z",
+      "updated": "2026-11-23T20:03:16Z",
+      "cves": [
+        "CVE-2026-27139"
+      ],
+      "products": [
+        "Go: stdlib"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in stdlib 1.25.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in stdlib 1.26.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-98571",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-27142 affecting package golang 1.27.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27142",
+      "released": "2026-03-06T22:16:01Z",
+      "updated": "2026-09-16T06:39:01Z",
+      "cves": [
+        "CVE-2026-27142"
+      ],
+      "products": [
+        "Azure Linux: golang"
+      ],
       "seen": "2026-11-26"
     }
   ]

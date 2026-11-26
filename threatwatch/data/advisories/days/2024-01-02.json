@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-01-02",
-  "count": 1,
+  "count": 2,
   "items": [
     {
       "id": "msrc_CVE-2023-52284",
@@ -28,6 +28,28 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-26"
+    },
+    {
+      "id": "RUSTSEC-2024-0002",
+      "src": "osv_rustsec",
+      "vendor": "Rustsec",
+      "title": "`serde` deserialization for `FamStructWrapper` lacks bound checks that could potentially lead to out-of-bounds memory access",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2024-0002.html",
+      "released": "2024-01-02T12:00:00Z",
+      "updated": "2026-10-12T17:47:59Z",
+      "cves": [
+        "CVE-2023-50711"
+      ],
+      "products": [
+        "crates.io: vmm-sys-util"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vmm-sys-util 0.12.0",
+          "u": null
+        }
+      ],
       "seen": "2026-11-26"
     }
   ]

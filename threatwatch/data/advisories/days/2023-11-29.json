@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "date": "2023-11-29",
+  "count": 1,
+  "items": [
+    {
+      "id": "RHSA-2023:7473",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "python-werkzeug: high resource usage when parsing multipart form data with many fields",
+      "url": "https://access.redhat.com/errata/RHSA-2023:7473",
+      "released": "2023-11-29T12:12:14Z",
+      "updated": "2026-11-26T17:21:03Z",
+      "cves": [
+        "CVE-2023-25577",
+        "CVE-2023-40225",
+        "CVE-2023-46136"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.14 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade your cluster and fully apply this asynchronous errata update: https://docs.…",
+          "u": "https://access.redhat.com/errata/RHSA-2023:7473"
+        },
+        {
+          "t": "This flaw can be mitigated by applying a rule to explicitly reject any requests with an empty Content-Lenght header. The following line can be added to any frontend configurations at the /etc/haproxy/haproxy.cfg file. ~~~ http-request deny…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-26"
+    }
+  ]
+}
