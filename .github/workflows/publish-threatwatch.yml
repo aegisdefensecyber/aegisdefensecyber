@@ -102,6 +102,7 @@ jobs:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
           VULNCHECK_API_KEY: ${{ secrets.VULNCHECK_API_KEY }}
           THREATFOX_AUTH_KEY: ${{ secrets.THREATFOX_AUTH_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # GitHub Security Advisories API (read-only)
         run: |
           set +e
           if [ "${{ inputs.refresh_report }}" = "true" ]; then python scripts/build_brief.py --refresh-report

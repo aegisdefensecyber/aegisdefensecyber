@@ -56,10 +56,17 @@
     if (!idx) return [];
     var q = $("vv-q").value.trim().toLowerCase(), sev = $("vf-sev").value, minE = parseFloat($("vf-epss").value) || 0,
         kev = $("vf-kev").checked, det = $("vf-det").checked, exp = $("vf-exp").checked,
-        zd = $("vf-zd").checked, itw = $("vf-itw").checked, att = $("vf-att").checked;
+        zd = $("vf-zd").checked, itw = $("vf-itw").checked, att = $("vf-att").checked,
+        adv = $("vf-adv").checked, vonly = $("vf-vonly").checked;
+    var toks = q.replace(/[_:]+/g, " ").split(/\s+/).filter(Boolean);   // every word must match (order-free)
     return idx.items.filter(function (r) {
       var o = row(r);
-      if (q && (o.cve + " " + o.vendor + " " + o.product).toLowerCase().indexOf(q) < 0) return false;
+      if (toks.length) {
+        var hay = (o.cve + " " + o.vendor + " " + o.product).toLowerCase().replace(/[_:]+/g, " ");
+        for (var i = 0; i < toks.length; i++) if (hay.indexOf(toks[i]) < 0) return false;
+      }
+      if (adv && !o.vendorAdv) return false;
+      if (vonly && o.vendorAdv !== 2) return false;
       if (sev === "NONE" ? o.severity : sev && o.severity !== sev) return false;
       if (kev && !o.kev) return false;
       if (det && !o.detection) return false;
@@ -78,6 +85,11 @@
     page = Math.min(page, pages - 1);
     $("vv-count").textContent = total + " CVE" + (total === 1 ? "" : "s") + " match" + (total === 1 ? "es" : "") +
       (total ? "." : ". Try a CVE ID, vendor or product, or clear the filters.");
+    var qtext = $("vv-q").value.trim();
+    if (qtext.length > 2 && !/^CVE-/i.test(qtext)) {
+      $("vv-count").appendChild(el("span", null, [" The catalog covers recent, exploited and vendor-advisory CVEs; for every CVE ever filed against “" + qtext.slice(0, 60) + "”, ",
+        link("https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&search_type=all&query=" + encodeURIComponent(qtext.replace(/_/g, " ")), "search NVD"), "."]));
+    }
     var qid = $("vv-q").value.trim().toUpperCase();
     if (CVE_RE.test(qid) && !last.some(function (r) { return r[0] === qid; })) {
       var la = el("a", { href: "?cve=" + qid, text: "Look up " + qid + " in the official CVE List" });
@@ -103,7 +115,8 @@
           (o.poc || o.exploitRef) ? el("span", { cls: "chip exp", text: o.poc ? "PoC ×" + o.poc : "Exploit ref" }) : null,
           o.attack ? el("span", { cls: "chip att", text: "ATT&CK" }) : null,
           o.detection ? el("span", { cls: "chip det", text: "Detection" }) : null,
-          o.fixRef ? el("span", { cls: "chip fix", text: "Fix ref" }) : null])]),
+          o.fixRef || o.vendorAdv ? el("span", { cls: "chip fix", text: o.vendorAdv ? "Vendor fix" : "Fix ref" }) : null,
+          o.vendorAdv === 2 ? el("span", { cls: "chip zd", text: "Awaiting CVE record" }) : null])]),
         el("td", { text: o.published || "Unknown" })
       ]));
     });
@@ -215,6 +228,28 @@
       " or ", link("https://www.cve.org/CVERecord?id=" + cve, "CVE.org"), ". No EPSS, KEV or detection data is shown because none is held here — that is not the same as zero risk."]));
   }
 
+  var FIXLABEL = { vendor_fix: "Fix", mitigation: "Mitigation", workaround: "Workaround", none_available: "No fix yet", no_fix_planned: "No fix planned" };
+  function advFixes(advs) { return advs.reduce(function (n, a) { return n + (a.fixes || []).filter(function (f) { return f.type === "vendor_fix" || f.type === "mitigation" || f.type === "workaround"; }).length; }, 0); }
+  function renderAdvisories(d, advs) {
+    d.appendChild(el("h3", { text: "Vendor advisories (" + advs.length + ")" }));
+    advs.forEach(function (a) {
+      var box = el("div", { cls: "vv-adv" });
+      box.appendChild(el("p", null, [el("strong", { text: (a.vendor || a.publisher || "Vendor") + " · " }), a.url ? link(a.url, (a.id ? a.id + ": " : "") + (a.title || "advisory")) : (a.title || a.id || "advisory")]));
+      var meta = [a.source === "CSAF" ? "CSAF advisory" : a.source === "GitHub" ? "GitHub Security Advisory" : "Vendor advisory feed",
+        a.released ? "released " + a.released.slice(0, 10) : null, a.updated && a.updated !== a.released ? "updated " + a.updated.slice(0, 10) : null,
+        a.cvss != null ? "vendor CVSS " + a.cvss + (a.severity ? " " + a.severity : "") : a.severity ? "severity " + a.severity : null];
+      box.appendChild(el("p", { cls: "muted", text: meta.filter(Boolean).join(" · ") }));
+      if (a.exploited === true) box.appendChild(el("p", { cls: "notice", text: "The vendor reports this vulnerability as exploited." + (a.exploitNote ? " (" + a.exploitNote + ")" : "") }));
+      else if (a.exploitNote) box.appendChild(el("p", { cls: "muted", text: "Vendor exploitation statement: " + a.exploitNote }));
+      if (a.products && a.products.length) box.appendChild(el("p", null, ["Affected: " + a.products.join("; ") + (a.productsMore ? " and " + a.productsMore + " more" : "")]));
+      if (a.fixes && a.fixes.length) box.appendChild(el("ul", null, a.fixes.map(function (f) {
+        return el("li", null, [el("strong", { text: (FIXLABEL[f.type] || f.type) + ": " }), f.text || "", f.url ? " " : null, f.url ? link(f.url, "details") : null]);
+      })));
+      if (a.csaf) box.appendChild(el("p", { cls: "muted" }, ["Machine-readable: ", link(a.csaf, "CSAF document")]));
+      d.appendChild(box);
+    });
+  }
+
   function renderRecord(d, r) {
     var e = ep(r.cve), cv = r.cvss;
     d.appendChild(el("div", { cls: "vv-head" }, [el("h2", { text: r.cve }),
@@ -226,7 +261,10 @@
     d.appendChild(el("p", null, [pb, " ", el("a", { href: "#plan", text: "View plan" })]));
     if (r.title) d.appendChild(el("p", { cls: "lead", text: r.title }));
     if (r.description) d.appendChild(el("p", { text: r.description }));
-    if (r.nvdPending) d.appendChild(el("p", { cls: "notice", text: "NVD details for this CVE haven’t been collected yet. CVSS and affected versions show as Unknown until the next catalog runs fill them in." }));
+    var advs = r.vendorAdvisories || [];
+    if (r.vendorPublishedOnly) d.appendChild(el("p", { cls: "notice", text: "Vendor-published, awaiting CVE record: " + (advs[0] && advs[0].vendor ? advs[0].vendor : "the vendor") +
+      " has released an advisory for this CVE, but NVD and the official CVE List don’t have a record yet. Details below come from the vendor advisory and will be replaced by NVD data once it is published." }));
+    else if (r.nvdPending) d.appendChild(el("p", { cls: "notice", text: "NVD details for this CVE haven’t been collected yet. CVSS and affected versions show as Unknown until the next catalog runs fill them in." }));
 
     // risk badges
     var exploit = r.exploitStatus || {}, xp = r.exploitation || {}, pocs = r.pocs || {}, intel = r.intel || {};
@@ -235,16 +273,19 @@
       ["zd", !!xp.zeroDay, "Zero-day (in the wild)", xp.zeroDay ? "Tracked by Google Project Zero" + (r.zeroDay && r.zeroDay.discovered ? " · discovered " + r.zeroDay.discovered : "") : "Not in Project Zero’s tracker"],
       ["kev", !!r.kev, "KEV-listed", r.kev ? "Added " + r.kev.dateAdded + (r.kev.ransomware === "known" ? " · ransomware use known" : "") : "Not in CISA KEV"],
       ["epss", !!(e && e.percentile >= 0.95), "High EPSS", e ? (e.score * 100).toFixed(1) + "% · " + pct(e.percentile) + " pct · " + (epss.date || "date unknown") : "EPSS unknown"],
-      ["crit", !!(cv && cv.score >= 9), "Critical CVSS", cv ? "CVSS " + cv.version + " " + cv.score + " " + (cv.severity || "") : "Not scored"],
+      ["crit", !!(cv && cv.score >= 9), "Critical CVSS", cv ? (cv.version ? "CVSS " + cv.version : "CVSS") + " " + cv.score + " " + (cv.severity || "") + (cv.source && /advisory/.test(cv.source) ? " · from " + cv.source : "") : "Not scored"],
       ["itw", others.length > 0, "Other exploitation reports", others.length ? others.map(function (s) { return s.source; }).join(", ") : "None beyond KEV"],
       ["exp", !!exploit.publicExploitReference, "Public exploit / PoC", exploit.publicExploitReference ? pocSummary(pocs) : "None found in Metasploit, Exploit-DB, GitHub or NVD"],
-      ["fix", r.fixRefs.length > 0, "Vendor fix / mitigation", r.fixRefs.length ? r.fixRefs.length + " patch or mitigation reference(s)" : "None referenced in NVD"]
+      ["fix", r.fixRefs.length > 0 || advFixes(advs) > 0, "Vendor fix / mitigation",
+        r.fixRefs.length || advFixes(advs) ? [r.fixRefs.length ? r.fixRefs.length + " NVD patch/mitigation reference(s)" : null,
+          advFixes(advs) ? advFixes(advs) + " fix(es) in vendor advisories" : null].filter(Boolean).join(" · ") : "None referenced in NVD or vendor advisories"]
     ];
     d.appendChild(el("div", { cls: "badges", role: "list", "aria-label": "Risk indicators" }, badges.map(function (b) {
       return el("div", { cls: "rbadge " + b[0] + (b[1] ? " on" : " off"), role: "listitem" },
         [el("b", { text: b[2] + (b[1] ? "" : ": no") }), el("span", { text: b[3] })]);
     })));
     d.appendChild(el("p", { cls: "muted", text: "High EPSS = 95th percentile or above. These indicators are separate kinds of evidence — none on its own means a specific system is vulnerable or compromised." }));
+    if (advs.length) renderAdvisories(d, advs);
 
     // evidence ribbon
     var usable = r.detections.filter(function (x) { return x.reviewStatus !== "rejected"; });
@@ -253,9 +294,12 @@
       el("h3", { id: "rib-h", text: "Evidence path" }),
       el("ol", { cls: "ribbon" }, [
         el("li", { cls: "met" }, [el("span", { cls: "st", text: "Advisory" }), el("strong", { text: "Published" }),
-          el("p", { text: r.published ? "NVD published " + r.published.slice(0, 10) + "." : (r.kev ? "Listed by CISA KEV." : "Advisory date unknown.") })]),
+          el("p", { text: r.vendorPublishedOnly ? "Vendor advisory released " + (r.published || "").slice(0, 10) + "; no NVD record yet." :
+            r.published ? "NVD published " + r.published.slice(0, 10) + "." : (r.kev ? "Listed by CISA KEV." : "Advisory date unknown.") })]),
         el("li", null, [el("span", { cls: "st", text: "Possible exposure" }), el("strong", { text: "Check your inventory" }),
-          el("p", { text: r.affected.length ? "Exposed only if you run an affected product and version (see Affected)." : "Affected versions not yet published by NVD; use the vendor advisory." })]),
+          el("p", { text: r.affected.length ? "Exposed only if you run an affected product and version (see Affected)." :
+            (r.vendorAdvisories || []).some(function (a) { return a.products && a.products.length; }) ? "Check the affected products listed in the vendor advisory above." :
+            "Affected versions not yet published by NVD; use the vendor advisory." })]),
         el("li", { cls: usable.length ? "" : "na" }, [el("span", { cls: "st", text: "Detection signal" }),
           el("strong", { text: usable.length ? usable.length + " public check" + (usable.length > 1 ? "s" : "") : "No public check indexed" }),
           el("p", { text: usable.length ? (reviewed.length ? reviewed.length + " reviewed by Aegis. " : "Not yet reviewed by Aegis. ") + "A positive result is a signal for analyst review, not a confirmed finding." : "Rely on version and configuration checks." })]),
@@ -722,8 +766,34 @@
     if (status && status.ok === false) s.appendChild(el("span", { cls: "notice", text: " The latest refresh failed checks; the last verified catalog is shown." }));
   }
 
-  ["vf-sev", "vf-epss", "vf-kev", "vf-det", "vf-exp", "vf-zd", "vf-itw", "vf-att"].forEach(function (id) { $(id).addEventListener("change", function () { page = 0; renderResults(); }); });
-  $("vv-q").addEventListener("input", function () { page = 0; if (!current()) renderResults(); });
+  ["vf-sev", "vf-epss", "vf-kev", "vf-det", "vf-exp", "vf-zd", "vf-itw", "vf-att", "vf-adv", "vf-vonly"].forEach(function (id) { $(id).addEventListener("change", function () { page = 0; renderResults(); }); });
+  $("vv-q").addEventListener("input", function () { page = 0; if (!current()) renderResults(); suggest(); });
+  // vendor / product suggestions from the NVD CPE dictionary (data/cpe/<first letter>.json, loaded on demand)
+  var cpeCache = {}, sugT = null;
+  function suggest() {
+    clearTimeout(sugT);
+    sugT = setTimeout(function () {
+      var q = $("vv-q").value.trim().toLowerCase().replace(/\s+/g, "_"), dl = $("vv-suggest");
+      if (q.length < 2 || /^cve-/.test(q)) { dl.textContent = ""; return; }
+      var b = /[a-z0-9]/.test(q[0]) ? q[0] : "_";
+      (cpeCache[b] = cpeCache[b] || getJSON("data/cpe/" + b + ".json").catch(function () { return { vendors: {} }; })).then(function (d) {
+        if ($("vv-q").value.trim().toLowerCase().replace(/\s+/g, "_") !== q) return;
+        var parts = q.split("_"), out = [], vendors = d.vendors || {};
+        Object.keys(vendors).some(function (v) {
+          if (v.indexOf(parts[0]) !== 0 && v.indexOf(q) !== 0) return false;
+          if (v.indexOf(q) === 0 && out.indexOf(v) < 0) out.push(v.replace(/_/g, " "));
+          vendors[v].some(function (pp) {
+            var prod = pp.slice(2), full = v + "_" + prod;
+            if (full.indexOf(q) === 0 || (v === parts[0] && prod.indexOf(parts.slice(1).join("_")) === 0)) out.push((v + " " + prod).replace(/_/g, " "));
+            return out.length >= 40;
+          });
+          return out.length >= 40;
+        });
+        dl.textContent = "";
+        out.slice(0, 40).forEach(function (s) { dl.appendChild(el("option", { value: s })); });
+      });
+    }, 180);
+  }
   $("vv-filters").addEventListener("submit", function (e) { e.preventDefault(); });
   $("vf-reset").addEventListener("click", function () { $("vv-filters").reset(); $("vv-q").value = ""; page = 0; renderResults(); });
   $("vv-search").addEventListener("submit", function (ev) {

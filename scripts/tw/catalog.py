@@ -173,11 +173,12 @@ def index_row(r: dict) -> list:
             1 if (r.get("exploitation") or {}).get("zeroDay") else 0,
             1 if (r.get("exploitation") or {}).get("inTheWild") else 0,
             (r.get("pocs") or {}).get("count", 0),
-            1 if (r.get("attack") or {}).get("techniques") or (r.get("intel") or {}).get("groups") else 0]
+            1 if (r.get("attack") or {}).get("techniques") or (r.get("intel") or {}).get("groups") else 0,
+            (2 if r.get("vendorPublishedOnly") else 1) if r.get("vendorAdvisories") else 0]
 
 
 INDEX_FIELDS = ["cve", "vendor", "product", "cvss", "severity", "kev", "detection",
-                "exploitRef", "published", "fixRef", "zeroDay", "itw", "poc", "attack"]
+                "exploitRef", "published", "fixRef", "zeroDay", "itw", "poc", "attack", "vendorAdv"]
 
 
 def keep_non_kev(nvd: dict, now: datetime, retain_days: int) -> bool:
@@ -216,7 +217,8 @@ def validate_record(r: Any) -> list[str]:
             errs.append(f"{c}: unsafe detection url")
         if d.get("reviewStatus") not in ("reviewed", "unreviewed", "rejected"):
             errs.append(f"{c}: bad detection reviewStatus")
-    if r.get("nvdPending") and not r.get("kev") and not (r.get("exploitation") or {}).get("sources"):
+    if r.get("nvdPending") and not r.get("kev") and not (r.get("exploitation") or {}).get("sources") \
+            and not r.get("vendorAdvisories"):
         errs.append(f"{c}: record has neither NVD data nor an exploitation source")
     for s in (r.get("exploitation") or {}).get("sources", []):
         if not safe_url(s.get("url")):
@@ -225,6 +227,12 @@ def validate_record(r: Any) -> list[str]:
     for k in ("advisoryUrl", "analysisUrl", "rcaUrl"):
         if zd.get(k) is not None and not safe_url(zd[k]):
             errs.append(f"{c}: unsafe zeroDay.{k}")
+    for a in r.get("vendorAdvisories") or []:
+        if a.get("url") is not None and not safe_url(a["url"]):
+            errs.append(f"{c}: unsafe vendor advisory url")
+        for f in a.get("fixes") or []:
+            if f.get("url") is not None and not safe_url(f["url"]):
+                errs.append(f"{c}: unsafe vendor fix url")
     pocs = r.get("pocs") or {}
     for k in ("metasploit", "exploitdb", "github", "vulncheckXdb"):
         for x in pocs.get(k, []):

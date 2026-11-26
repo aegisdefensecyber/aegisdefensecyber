@@ -10,12 +10,12 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/tw.css?v=20261122c">
+<link rel="stylesheet" href="assets/tw.css?v=20261126a">
 <script src="assets/tw-subscribe.js?v=20261124a" defer></script>
 <link rel="stylesheet" href="assets/tw-validate.css">
 <script src="assets/tw-playbook.js" defer></script>
 <script src="assets/tw-cvelist.js?v=1" defer></script>
-<script src="assets/tw-validate.js?v=20261126b" defer></script>
+<script src="assets/tw-validate.js?v=20261126d" defer></script>
 </head>
 <body class="wide">
 <a class="skip" href="#main">Skip to CVE search</a>
@@ -49,7 +49,8 @@
     <p class="lead">Look up a CVE to see cited CVSS, EPSS and exploitation evidence (CISA KEV, Google Project Zero zero-days, ENISA EUVD), public exploits and PoCs, threat actors and MITRE ATT&amp;CK techniques, which versions are affected, and how to confirm exposure safely.</p>
     <form id="vv-search" class="vv-search" role="search" aria-label="Search CVEs">
       <label class="sr-only" for="vv-q">CVE ID, vendor or product</label>
-      <input type="search" id="vv-q" placeholder="CVE-2024-3400, Ivanti, Fortinet…" autocomplete="off" spellcheck="false">
+      <input type="search" id="vv-q" list="vv-suggest" placeholder="CVE-2024-3400, Ivanti, Fortinet, exchange server…" autocomplete="off" spellcheck="false">
+      <datalist id="vv-suggest"></datalist>
       <button class="btn" type="submit">Search</button>
     </form>
     <p class="notice info vv-disclaimer"><strong>Only test systems you own or are explicitly authorized to assess.</strong> This page is public intelligence and guidance. It does not scan anything, and a severity score, a KEV listing or a detection template alone never proves a specific system is exploitable. <a href="#disclaimer">Read the full disclaimer</a>.</p>
@@ -71,6 +72,8 @@
       <label class="chk"><input type="checkbox" id="vf-itw"> Exploited in the wild</label>
       <label class="chk"><input type="checkbox" id="vf-exp"> Public exploit / PoC</label>
       <label class="chk"><input type="checkbox" id="vf-att"> ATT&amp;CK / actor linked</label>
+      <label class="chk"><input type="checkbox" id="vf-adv"> Vendor advisory</label>
+      <label class="chk"><input type="checkbox" id="vf-vonly"> Vendor-published, awaiting CVE record</label>
       <button type="button" class="btn secondary" id="vf-reset">Reset</button>
     </form>
     <p class="muted" id="vv-count" aria-live="polite"></p>

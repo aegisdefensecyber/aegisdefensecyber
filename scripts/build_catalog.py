@@ -155,6 +155,35 @@ def build(now, warnings: list[str]) -> dict:
     universe = set(kev_by) | set(brief_cves) | exploited
     universe |= {c for c, n in nvd_cache.items() if C.keep_non_kev(n, now, RETAIN_DAYS)}
 
+    # ---- vendor security advisories (CSAF providers, GitHub, vendor feeds): CVEs vendors published,
+    # often before NVD / the CVE List. Recent ones join the catalog even without an NVD record.
+    adv_path = DATA_DIR / "advisories" / "index.json"
+    adv = read_json(adv_path, {}) or {}
+    if intel_on and not os.environ.get("TW_FIXTURES") and os.environ.get("TW_ADV_FETCH", "1") == "1":
+        try:
+            from tw.advisories import collect as collect_advisories
+            adv, adv_state = collect_advisories(adv, read_json(DATA_DIR / "advisories" / "state.json", {}) or {}, now)
+            write_json(adv_path, adv)
+            write_json(DATA_DIR / "advisories" / "state.json", adv_state)
+            print(f"Vendor advisories: {adv['count']} CVEs · " + "; ".join(
+                f"{k} {'ok' if v.get('ok') else 'FAILED'}" for k, v in adv.get("sources", {}).items()))
+        except Exception as exc:  # noqa: BLE001 — keep the previous advisory index
+            warnings.append(f"Vendor advisory refresh failed; previous advisories kept ({exc})"[:300])
+    # ---- NVD CPE dictionary -> vendor/product lists for the search box (resumable, a share per run)
+    if intel_on and not os.environ.get("TW_FIXTURES") and os.environ.get("TW_CPE_FETCH", "1") == "1":
+        try:
+            from tw.cpe import refresh as refresh_cpe
+            cst = refresh_cpe(DATA_DIR / "cpe", now, warnings)
+            print(f"CPE dictionary: {cst.get('vendors')} vendors · "
+                  + ("complete" if cst.get("complete") else f"{cst.get('startIndex')}/{cst.get('totalResults')} names read"))
+        except Exception as exc:  # noqa: BLE001
+            warnings.append(f"CPE dictionary refresh failed ({exc})"[:300])
+    adv_by = adv.get("cves") or {}
+    recent_year = now.year - 1
+    adv_new = {c for c, lst in adv_by.items()
+               if int(c.split("-")[1]) >= recent_year or any(a.get("exploited") for a in lst)}
+    universe |= adv_new
+
     # ---- per-CVE NVD lookups for KEV / zero-day / brief CVEs still missing NVD data (zero-days first)
     missing = sorted((c for c in universe if c not in nvd_cache), key=lambda c: (c not in (src.get("p0") or {}), c not in kev_by,
                                              [-int(x) for x in c.split("-")[1:]]))
@@ -172,7 +201,7 @@ def build(now, warnings: list[str]) -> dict:
         except SourceError:
             pass
         time.sleep(pause)
-    universe = {c for c in universe if c in nvd_cache or c in kev_by or c in exploited}  # brief CVE with neither: skip
+    universe = {c for c in universe if c in nvd_cache or c in kev_by or c in exploited or c in adv_new}  # brief CVE with neither: skip
 
     # ---- public exploits / PoCs and ATT&CK (links and metadata only; nothing is executed)
     if intel_on:
@@ -260,6 +289,13 @@ def build(now, warnings: list[str]) -> dict:
             "detections": {"source": "nuclei-templates / nmap", "commitInStatus": True} if cid in detections else None,
         }
         fb = (src.get("p0") or {}).get(cid) or (src.get("vulncheck") or {}).get(cid)
+        advs = adv_by.get(cid) or []
+        if not fb and advs:
+            a0 = advs[0]
+            prod0 = (a0.get("products") or [None])[0]
+            if prod0 and a0.get("vendor") and prod0.lower().startswith(a0["vendor"].lower() + " "):
+                prod0 = prod0[len(a0["vendor"]) + 1:]
+            fb = {"vendor": a0.get("vendor"), "product": prod0, "description": a0.get("description") or a0.get("title")}
         r = C.build_record(cid, nvd, kev_by.get(cid), detections.get(cid, []), appears.get(cid, {}), prov, fb)
         r.update(I.assemble(cid, kev_by.get(cid), src, r["exploitRefs"]))
         ex = r["exploitStatus"]
@@ -268,6 +304,22 @@ def build(now, warnings: list[str]) -> dict:
         ex["note"] = ("Exploitation reports, public exploit / PoC code and scanner signals are separate evidence; "
                       "none proves a specific asset is vulnerable or compromised. PoC repositories are unvetted.")
         r["curatedPlaybook"] = cid in playbooks
+        r["vendorAdvisories"] = advs
+        r["vendorPublishedOnly"] = bool(advs) and not nvd
+        if advs and not r.get("cvss"):
+            best = max((a for a in advs if a.get("cvss") is not None), key=lambda a: a["cvss"], default=None)
+            if best:
+                r["cvss"] = {"version": None, "score": best["cvss"], "severity": best.get("severity"), "vector": None,
+                             "source": (best.get("vendor") or "vendor") + " advisory"}
+        for a in advs:
+            if a.get("exploited") and a.get("url"):
+                r["exploitation"]["sources"].append({"source": (a.get("vendor") or "Vendor") + " advisory (exploited)",
+                                                     "date": (a.get("released") or "")[:10] or None, "url": a["url"]})
+                r["exploitation"]["inTheWild"] = True
+                break
+        if advs and not r.get("published"):
+            r["published"] = min((a.get("released") or "9999")[:10] for a in advs).replace("9999", "") or None
+        ex["reportedExploitation"] = ", ".join(x["source"] for x in r["exploitation"]["sources"]) or None
         errs += C.validate_record(r)
         records[cid] = r
     if errs:
