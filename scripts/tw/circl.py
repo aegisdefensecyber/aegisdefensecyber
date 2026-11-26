@@ -29,8 +29,11 @@ UA = "AegisThreatWatch/1.0 (+https://aegisdefensecyber.com/threatwatch/; advisor
 CVE_RE = re.compile(r"CVE-\d{4}-\d{4,7}")
 MIN_INTERVAL = 3.2                     # 20 requests/minute anonymous limit, with headroom
 EXCLUDE = {"ossf_malicious_packages", "cnvd", "fstec", "gsd", "nvd", "fkie_nvd", "alpine", "cisa_known_exploited"}
+HEAVY = {"csaf_opensuse", "csaf_suse", "csaf_redhat", "csaf_microsoft", "osv_ubuntu", "osv_azurelinux", "osv_openeuler",
+         "osv_bellsoft", "osv_homebrew", "osv_root", "cleanstart", "osv_almalinux", "osv_rocky", "osv_debian_elts", "osv_dhi"}
 PRIORITY = ["certfr_alerte", "certfr_avis", "jvndb", "csaf_", "drupal", "tailscale", "gna-", "avid", "variot",
-            "github", "osv_", "pysec", "bitnami_vulndb", "debian_tracker", "cleanstart", "moksha", "cvelistv5"]
+            "cvelistv5", "github", "debian_tracker", "osv_", "pysec", "bitnami_vulndb", "cleanstart", "moksha"]
+MAX_PAGES = int(os.environ.get("TW_CIRCL_MAX_PAGES") or 12)   # per source per run: every source progresses each run
 GROUPS = [("csaf_", "Vendor & CERT CSAF"), ("certfr", "National CERT"), ("jvndb", "National CERT"),
           ("github", "Open source"), ("osv_", "Distro & package"), ("pysec", "Distro & package"),
           ("bitnami", "Distro & package"), ("debian", "Distro & package"), ("cleanstart", "Distro & package"),
@@ -340,7 +343,7 @@ def sources(client: Client) -> list[str]:
     names = [s.get("source") for s in (d.get("sources") or []) if s.get("source")]
     keep = [s for s in names if s not in EXCLUDE]
     rank = lambda s: next((i for i, p in enumerate(PRIORITY) if s == p or (p.endswith(("_", "-")) and s.startswith(p))), len(PRIORITY))  # noqa: E731
-    return sorted(keep, key=lambda s: (rank(s), s))
+    return sorted(keep, key=lambda s: (s in HEAVY, rank(s), s))
 
 
 def collect(state: dict, now: datetime, budget_s: float, backfill_days: int = 90,
@@ -362,8 +365,13 @@ def collect(state: dict, now: datetime, budget_s: float, backfill_days: int = 90
             days = 14 if src == "cvelistv5" else backfill_days
             st.update({"since": (now - timedelta(days=days)).strftime("%Y-%m-%d"), "page": 1, "passStart": today})
         per = 50 if src.startswith("csaf_") else 100
+        pages_now = 0
         try:
             while True:
+                if pages_now >= MAX_PAGES:
+                    h.update({"complete": False, "note": f"backfill in progress (page {st['page']}); continues next run"})
+                    break
+                pages_now += 1
                 q = urllib.parse.urlencode({"source": src, "since": st["since"], "page": st["page"], "per_page": per,
                                             "date_sort": "updated", "sort_order": "asc"})
                 items = client.get(f"/vulnerability/?{q}")
