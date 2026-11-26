@@ -715,8 +715,10 @@
     if (!idx) { s.textContent = "The CVE catalog hasn’t been published yet. It appears after the first scheduled run."; return; }
     var age = status && status.lastSuccessAt ? (Date.now() - Date.parse(status.lastSuccessAt)) / 36e5 : null;
     s.appendChild(el("span", { cls: "badge " + (age != null && age > STALE_HOURS ? "b-urgent" : "b-ok"), text: age != null && age > STALE_HOURS ? "Stale" : "Current" }));
-    s.appendChild(document.createTextNode(" " + idx.count.toLocaleString() + " CVEs · updated " + fmtTime((status && status.lastSuccessAt) || idx.generatedAt) +
-      " · EPSS model date " + (epss.date || "unknown") + ". " + ((status && status.coverage) || "")));
+    s.appendChild(document.createTextNode(" " + idx.count.toLocaleString() + " CVEs in the catalog · updated " + fmtTime((status && status.lastSuccessAt) || idx.generatedAt) +
+      " · EPSS model date " + (epss.date || "unknown") + ". " + ((status && status.coverage) || "") +
+      " The total stays near the same number because new CVEs are added each update while ones older than 90 days (and not exploited) roll off." +
+      " Any CVE outside the catalog can still be searched: it is fetched live from the official CVE List."));
     if (status && status.ok === false) s.appendChild(el("span", { cls: "notice", text: " The latest refresh failed checks; the last verified catalog is shown." }));
   }
 
