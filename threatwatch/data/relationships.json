@@ -3,7 +3,7 @@
   "dataset": {
     "status": "verified",
     "label": "Relationships from MITRE ATT&CK Enterprise 20.1: groups, their campaigns, the CVEs and exploitation techniques used, targeted industries, and indicators of compromise from CISA advisories and abuse.ch ThreatFox. Every link cites its source.",
-    "updatedAt": "2026-11-26T02:54:21Z",
+    "updatedAt": "2026-11-26T03:01:29Z",
     "source": "https://attack.mitre.org/campaigns/"
   },
   "nodes": [
@@ -736,6 +736,126 @@
       "id": "i-legal",
       "type": "industry",
       "label": "Legal"
+    },
+    {
+      "id": "o-609056f01b89",
+      "type": "ioc",
+      "label": "e[.]hoki5[.]org",
+      "iocType": "domain",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #2052794",
+      "firstSeen": "2026-11-25",
+      "malware": "Vidar"
+    },
+    {
+      "id": "o-4581a42a8f5a",
+      "type": "ioc",
+      "label": "n6[.]ayowd49[.]org",
+      "iocType": "domain",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #2052793",
+      "firstSeen": "2026-11-25",
+      "malware": "Vidar"
+    },
+    {
+      "id": "o-c8833ad54b9a",
+      "type": "ioc",
+      "label": "po[.]asgar88[.]org",
+      "iocType": "domain",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #2052792",
+      "firstSeen": "2026-11-25",
+      "malware": "Vidar"
+    },
+    {
+      "id": "o-1f45c30c4b30",
+      "type": "ioc",
+      "label": "vn[.]ayowd49[.]org",
+      "iocType": "domain",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #2052419",
+      "firstSeen": "2026-11-25",
+      "malware": "Vidar"
+    },
+    {
+      "id": "o-f130b007757a",
+      "type": "ioc",
+      "label": "446843cb5e2616cf8c3d91cba5e6afce",
+      "iocType": "md5",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #1887719",
+      "firstSeen": "2026-08-25",
+      "malware": "X-Agent"
+    },
+    {
+      "id": "o-7cfdaa260063",
+      "type": "ioc",
+      "label": "90ac7bf6e0b76245296e194bc1bd8a6388d013b7e11be906ae0352ff22c3f472",
+      "iocType": "sha256",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #1887717",
+      "firstSeen": "2026-08-25",
+      "malware": "X-Agent"
+    },
+    {
+      "id": "o-a0fd31c744bc",
+      "type": "ioc",
+      "label": "154[.]205[.]154[.]82:443",
+      "iocType": "ipv4",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #1833894",
+      "firstSeen": "2026-06-19",
+      "malware": "Coreshell"
+    },
+    {
+      "id": "o-76d922572a59",
+      "type": "ioc",
+      "label": "207[.]148[.]120[.]52:443",
+      "iocType": "ipv4",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #1833896",
+      "firstSeen": "2026-06-19",
+      "malware": "Coreshell"
+    },
+    {
+      "id": "o-2b3cf1eaebaf",
+      "type": "ioc",
+      "label": "047ac6aebe0fe80f9f09c5c548233407",
+      "iocType": "md5",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #1893074",
+      "firstSeen": "2026-09-02",
+      "malware": "Medusa"
+    },
+    {
+      "id": "o-ed1b83e5741f",
+      "type": "ioc",
+      "label": "1079d416e093ba40aa9e95a4c2a5b61f",
+      "iocType": "md5",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #1893078",
+      "firstSeen": "2026-09-02",
+      "malware": "Medusa"
+    },
+    {
+      "id": "o-a0a608b84270",
+      "type": "ioc",
+      "label": "0f76936e237bd87dfa2378106099a673",
+      "iocType": "md5",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #1893077",
+      "firstSeen": "2026-09-02",
+      "malware": "Medusa"
+    },
+    {
+      "id": "o-f900ebc70d51",
+      "type": "ioc",
+      "label": "0e43a0f747a60855209b311d727a20bf",
+      "iocType": "md5",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #1893076",
+      "firstSeen": "2026-09-02",
+      "malware": "Medusa"
     }
   ],
   "edges": [
@@ -2673,6 +2793,210 @@
         "firstObserved": "2023-08-01",
         "lastObserved": "2025-08-01",
         "provenance": "MITRE ATT&CK Enterprise 20.1"
+      }
+    },
+    {
+      "id": "e122",
+      "source": "a-G1015",
+      "target": "o-609056f01b89",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for Vidar, malware MITRE ATT&CK attributes to Scattered Spider; reporter confidence 100%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/2052794/",
+        "reportDate": "2026-11-25",
+        "firstObserved": "2026-11-25",
+        "lastObserved": "2026-11-25",
+        "provenance": "ThreatFox #2052794",
+        "report": null
+      }
+    },
+    {
+      "id": "e123",
+      "source": "a-G1015",
+      "target": "o-4581a42a8f5a",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for Vidar, malware MITRE ATT&CK attributes to Scattered Spider; reporter confidence 100%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/2052793/",
+        "reportDate": "2026-11-25",
+        "firstObserved": "2026-11-25",
+        "lastObserved": "2026-11-25",
+        "provenance": "ThreatFox #2052793",
+        "report": null
+      }
+    },
+    {
+      "id": "e124",
+      "source": "a-G1015",
+      "target": "o-c8833ad54b9a",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for Vidar, malware MITRE ATT&CK attributes to Scattered Spider; reporter confidence 100%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/2052792/",
+        "reportDate": "2026-11-25",
+        "firstObserved": "2026-11-25",
+        "lastObserved": "2026-11-25",
+        "provenance": "ThreatFox #2052792",
+        "report": null
+      }
+    },
+    {
+      "id": "e125",
+      "source": "a-G1015",
+      "target": "o-1f45c30c4b30",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for Vidar, malware MITRE ATT&CK attributes to Scattered Spider; reporter confidence 100%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/2052419/",
+        "reportDate": "2026-11-25",
+        "firstObserved": "2026-11-25",
+        "lastObserved": "2026-11-25",
+        "provenance": "ThreatFox #2052419",
+        "report": null
+      }
+    },
+    {
+      "id": "e126",
+      "source": "a-G0007",
+      "target": "o-f130b007757a",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for CHOPSTICK, malware MITRE ATT&CK attributes to APT28; reporter confidence 95%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/1887719/",
+        "reportDate": "2026-08-25",
+        "firstObserved": "2026-08-25",
+        "lastObserved": "2026-08-25",
+        "provenance": "ThreatFox #1887719",
+        "report": null
+      }
+    },
+    {
+      "id": "e127",
+      "source": "a-G0007",
+      "target": "o-7cfdaa260063",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for CHOPSTICK, malware MITRE ATT&CK attributes to APT28; reporter confidence 95%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/1887717/",
+        "reportDate": "2026-08-25",
+        "firstObserved": "2026-08-25",
+        "lastObserved": "2026-08-25",
+        "provenance": "ThreatFox #1887717",
+        "report": null
+      }
+    },
+    {
+      "id": "e128",
+      "source": "a-G0007",
+      "target": "o-a0fd31c744bc",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for CORESHELL, malware MITRE ATT&CK attributes to APT28; reporter confidence 75%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/1833894/",
+        "reportDate": "2026-06-19",
+        "firstObserved": "2026-06-19",
+        "lastObserved": "2026-06-19",
+        "provenance": "ThreatFox #1833894",
+        "report": "https://github.com/yankywilson/terndoor-uat9244"
+      }
+    },
+    {
+      "id": "e129",
+      "source": "a-G0007",
+      "target": "o-76d922572a59",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for CORESHELL, malware MITRE ATT&CK attributes to APT28; reporter confidence 75%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/1833896/",
+        "reportDate": "2026-06-19",
+        "firstObserved": "2026-06-19",
+        "lastObserved": "2026-06-19",
+        "provenance": "ThreatFox #1833896",
+        "report": "https://github.com/yankywilson/terndoor-uat9244"
+      }
+    },
+    {
+      "id": "e130",
+      "source": "a-G1048",
+      "target": "o-2b3cf1eaebaf",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for MEDUSA, malware MITRE ATT&CK attributes to UNC3886; reporter confidence 50%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/1893074/",
+        "reportDate": "2026-09-02",
+        "firstObserved": "2026-09-02",
+        "lastObserved": "2026-09-02",
+        "provenance": "ThreatFox #1893074",
+        "report": "https://threatcluster.io/cluster/china-nexus-threat-actor-fire-ant-targets-critical-infrastru-98a55c29"
+      }
+    },
+    {
+      "id": "e131",
+      "source": "a-G1048",
+      "target": "o-ed1b83e5741f",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for MEDUSA, malware MITRE ATT&CK attributes to UNC3886; reporter confidence 50%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/1893078/",
+        "reportDate": "2026-09-02",
+        "firstObserved": "2026-09-02",
+        "lastObserved": "2026-09-02",
+        "provenance": "ThreatFox #1893078",
+        "report": "https://threatcluster.io/cluster/china-nexus-threat-actor-fire-ant-targets-critical-infrastru-98a55c29"
+      }
+    },
+    {
+      "id": "e132",
+      "source": "a-G1048",
+      "target": "o-a0a608b84270",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for MEDUSA, malware MITRE ATT&CK attributes to UNC3886; reporter confidence 50%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/1893077/",
+        "reportDate": "2026-09-02",
+        "firstObserved": "2026-09-02",
+        "lastObserved": "2026-09-02",
+        "provenance": "ThreatFox #1893077",
+        "report": "https://threatcluster.io/cluster/china-nexus-threat-actor-fire-ant-targets-critical-infrastru-98a55c29"
+      }
+    },
+    {
+      "id": "e133",
+      "source": "a-G1048",
+      "target": "o-f900ebc70d51",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for MEDUSA, malware MITRE ATT&CK attributes to UNC3886; reporter confidence 50%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/1893076/",
+        "reportDate": "2026-09-02",
+        "firstObserved": "2026-09-02",
+        "lastObserved": "2026-09-02",
+        "provenance": "ThreatFox #1893076",
+        "report": "https://threatcluster.io/cluster/china-nexus-threat-actor-fire-ant-targets-critical-infrastru-98a55c29"
       }
     }
   ]
