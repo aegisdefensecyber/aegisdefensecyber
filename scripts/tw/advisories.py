@@ -57,8 +57,7 @@ DISCOVER_DOMAINS = [
 # Vendor, CERT and threat-intelligence feeds named in the AEGIS consolidated watchlist (RSS or Atom).
 # (source id, label, url, vendor/publisher). A feed that stops answering shows as failing in source status.
 FEEDS = [
-    ("oracle", "Oracle Security Alerts", "https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/rss-otn-sec.xml", "Oracle"),
-    ("cisa_advisories", "CISA cybersecurity advisories", "https://www.cisa.gov/cybersecurity-advisories/all.xml", "CISA"),
+        ("cisa_advisories", "CISA cybersecurity advisories", "https://www.cisa.gov/cybersecurity-advisories/all.xml", "CISA"),
     ("cisa_ics", "CISA ICS advisories", "https://www.cisa.gov/cybersecurity-advisories/ics-advisories.xml", "CISA"),
     ("certcc", "CERT/CC Vulnerability Notes", "https://www.kb.cert.org/vuls/atomfeed/", "CERT/CC"),
     ("canada_cyber", "Canadian Centre for Cyber Security", "https://www.cyber.gc.ca/api/cccs/rss/v1/get?feed=alerts_advisories&lang=en", "Canadian Centre for Cyber Security"),
@@ -67,9 +66,9 @@ FEEDS = [
     ("msft_security_blog", "Microsoft Security Blog", "https://www.microsoft.com/en-us/security/blog/feed/", "Microsoft"),
     ("zdi", "Zero Day Initiative advisories", "https://www.zerodayinitiative.com/rss/published/", "Trend Micro ZDI"),
     ("aws_bulletins", "AWS Security Bulletins", "https://aws.amazon.com/security/security-bulletins/rss/feed/", "Amazon Web Services"),
-    ("gcp_bulletins", "Google Cloud security bulletins", "https://cloud.google.com/feeds/gcp-security-bulletins.xml", "Google Cloud"),
+    ("gcp_bulletins", "Google Cloud security bulletins", "https://docs.cloud.google.com/feeds/google-cloud-security-bulletins.xml", "Google Cloud"),
     ("chrome_releases", "Chrome Releases", "https://chromereleases.googleblog.com/feeds/posts/default", "Google"),
-    ("kubernetes", "Kubernetes official CVE feed", "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.xml", "Kubernetes"),
+    ("kubernetes", "Kubernetes official CVE feed", "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/feed.xml", "Kubernetes"),
     ("gitlab", "GitLab security releases", "https://about.gitlab.com/security-releases.xml", "GitLab"),
     ("jenkins", "Jenkins security advisories", "https://www.jenkins.io/security/advisories/rss.xml", "Jenkins"),
 ]
@@ -100,6 +99,16 @@ def _ts(s: Any) -> datetime | None:
             return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
         except ValueError:
             continue
+    try:  # RFC 822 with named zones (EST, EDT, PST...) as CISA's feeds use
+        from email.utils import parsedate_to_datetime
+        d = parsedate_to_datetime(s)
+        if d:
+            return d if d.tzinfo else d.replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError, IndexError):
+        pass
+    m = re.match(r"^\w{3},\s*(\d{1,2})/(\d{1,2})/(\d{4})", s)  # Drupal "Tue, 11/25/2026 - 12:00"
+    if m:
+        return datetime(int(m.group(3)), int(m.group(1)), int(m.group(2)), tzinfo=timezone.utc)
     return None
 
 
