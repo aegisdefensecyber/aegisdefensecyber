@@ -4,7 +4,7 @@
   "publishedAt": "2026-11-26T11:53:55Z",
   "window": {
     "start": "2026-11-26T04:55:50Z",
-    "end": "2026-11-27T02:54:24Z",
+    "end": "2026-11-27T04:45:24Z",
     "note": "KEV additions not present in the previous edition’s catalog snapshot."
   },
   "executive": {
@@ -132,20 +132,20 @@
       "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "version": "2026.11.25",
       "released": "2026-11-25T19:48:12.4344Z",
-      "fetchedAt": "2026-11-27T02:54:24Z",
+      "fetchedAt": "2026-11-27T04:45:25Z",
       "status": "ok"
     },
     {
       "name": "FIRST EPSS",
       "url": "https://www.first.org/epss/",
-      "fetchedAt": "2026-11-27T02:54:24Z",
+      "fetchedAt": "2026-11-27T04:45:25Z",
       "status": "ok",
       "note": "Probability estimate; not evidence of exploitation."
     },
     {
       "name": "NVD CVE API 2.0",
       "url": "https://nvd.nist.gov/",
-      "fetchedAt": "2026-11-27T02:54:24Z",
+      "fetchedAt": "2026-11-27T04:45:25Z",
       "status": "no data",
       "note": "Enrichment can lag publication by days."
     }
@@ -168,7 +168,7 @@
       "reviewedAt": null
     }
   },
-  "updatedAt": "2026-11-27T02:54:24Z",
+  "updatedAt": "2026-11-27T04:45:24Z",
   "updateSlot": "22:00",
   "report": {
     "version": 1,
@@ -223,6 +223,85 @@
           {
             "type": "p",
             "text": "**Top five actions:** (1) Apply the vendor fix for Open Source Camunda (CVE-2026-77230); (2) apply the vendor fix for In Eclipse Ditto (CVE-2026-135150); (3) apply the vendor fix for WP Media WP Rocket (CVE-2026-125812); (4) close previously reported Project MONAI MONAI Label, Vates Xen Orchestra, N-able MailAssure and Idunno AntiCsrf KEV exposure; (5) examine Open Source Camunda hosts for unexpected child processes and outbound connections."
+          },
+          {
+            "type": "p",
+            "text": "**Your technology watchlist (last 24 hours).** AEGIS monitors 35 technology areas, from firewalls, identity and cloud platforms to industrial and medical devices, against vendor advisories, national CERTs, CISA KEV and exploitation reports. **0** need action now, **1** should be reviewed today, **8** had routine vendor security updates and **26** had no significant change. “Act now” means confirmed exploitation or a CISA KEV addition; “Review today” means public exploit code, a sharp rise in exploitation likelihood or an exploited vendor advisory."
+          },
+          {
+            "type": "table",
+            "columns": [
+              "Technology area",
+              "Status",
+              "What happened",
+              "What it means for you"
+            ],
+            "rows": [
+              [
+                "Self-hosted websites, email & collaboration",
+                "Review today",
+                "1 new critical CVE in Self-hosted websites, email & collaboration",
+                "Newly published critical flaws in technology in this category. Check whether you run the named products and plan updates."
+              ],
+              [
+                "Cloud platforms",
+                "Routine vendor updates",
+                "New advisory: Microsoft Office Visio Remote Code Execution Vulnerability",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+              ],
+              [
+                "Databases, middleware & analytics",
+                "Routine vendor updates",
+                "Advisory revised: OpenJDK: OpenJDK: remote code execution via memory corruption on x86-64 systems with AVX-512 VBMI",
+                "The vendor changed an advisory (affected versions, fixes or exploitation status may have changed). Re-check exposure."
+              ],
+              [
+                "Linux distributions",
+                "Routine vendor updates",
+                "New advisory: CVE-2025-13462 (+7 more)",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+              ],
+              [
+                "Virtualization & private cloud",
+                "Routine vendor updates",
+                "4 new critical CVEs in Virtualization & private cloud",
+                "Newly published critical flaws in technology in this category. Check whether you run the named products and plan updates."
+              ],
+              [
+                "Windows & Microsoft enterprise software",
+                "Routine vendor updates",
+                "New advisory: Microsoft Office Visio Remote Code Execution Vulnerability",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+              ],
+              [
+                "Industrial automation & engineering",
+                "Routine vendor updates",
+                "New advisory: AutomationDirect C-More EA9 Programming Software (+7 more)",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+              ],
+              [
+                "International & coordinated disclosures",
+                "Routine vendor updates",
+                "New advisory: Vulnerability in Cosminexus (+51 more)",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+              ],
+              [
+                "Power, utilities & building systems",
+                "Routine vendor updates",
+                "New advisory: ACF5000 LCS/CCUS Linux kernel IPv4 TCP use-after-free vulnerability (+3 more)",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+              ],
+              [
+                "Other monitored areas (26)",
+                "No significant change",
+                "Campaigns & urgent alerts; Confirmed exploitation (CISA KEV); DevOps, containers & artifact repositories; Enterprise firewalls, VPNs & application delivery; Identity & federation; Managed file transfer; Mobile, desktop & browsers; Privileged access & secrets; Remote monitoring & support; Storage, NAS & backup; Web servers, proxies, libraries & runtimes; Business applications & SaaS; Cameras, video & access control; DNS, CDN & web security; Embedded & real-time operating systems; Endpoint & email security; IT operations & observability; Industrial networks & edge devices; Medical devices & clinical systems; Other firewalls, routers & wireless; PCs & motherboards; Printers, scanners & office devices; Processors, GPUs & chipsets; Servers, workstations & management firmware; Telecom & service-provider equipment; UNIX & BSD",
+                "No action needed today. Monitoring continues four times a day."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Full details, links and RSS feeds per technology area: [Alerts & briefings](https://aegisdefensecyber.com/threatwatch/alerts.html)."
           }
         ]
       },
@@ -519,7 +598,7 @@
     ],
     "footer": "Enterprise Cyber Threat Intelligence | 26 Nov 2026",
     "reviewedBy": null,
-    "generatedAt": "2026-11-27T03:05:19Z",
+    "generatedAt": "2026-11-27T04:57:49Z",
     "prioritized": [
       "CVE-2026-77230",
       "CVE-2026-135150",

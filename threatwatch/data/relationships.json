@@ -3,7 +3,7 @@
   "dataset": {
     "status": "verified",
     "label": "Relationships from MITRE ATT&CK Enterprise 20.1: groups, their campaigns, the CVEs and exploitation techniques used, targeted industries, and indicators of compromise from CISA advisories and abuse.ch ThreatFox. Every link cites its source.",
-    "updatedAt": "2026-11-27T02:54:26Z",
+    "updatedAt": "2026-11-27T04:45:26Z",
     "source": "https://attack.mitre.org/campaigns/"
   },
   "nodes": [
@@ -788,22 +788,22 @@
       "malware": "Vidar"
     },
     {
-      "id": "o-9829a3c75066",
-      "type": "ioc",
-      "label": "g3[.]babahhoki[.]com",
-      "iocType": "domain",
-      "source": "abuse.ch ThreatFox",
-      "ref": "ThreatFox #2054658",
-      "firstSeen": "2026-11-26",
-      "malware": "Vidar"
-    },
-    {
       "id": "o-f46556700064",
       "type": "ioc",
       "label": "xr[.]ayuselot[.]org",
       "iocType": "domain",
       "source": "abuse.ch ThreatFox",
       "ref": "ThreatFox #2054657",
+      "firstSeen": "2026-11-26",
+      "malware": "Vidar"
+    },
+    {
+      "id": "o-9829a3c75066",
+      "type": "ioc",
+      "label": "g3[.]babahhoki[.]com",
+      "iocType": "domain",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #2054658",
       "firstSeen": "2026-11-26",
       "malware": "Vidar"
     },
@@ -2883,23 +2883,6 @@
     {
       "id": "e127",
       "source": "a-G1015",
-      "target": "o-9829a3c75066",
-      "relation": "indicator",
-      "confidence": "low",
-      "why": "abuse.ch ThreatFox lists this indicator for Vidar, malware MITRE ATT&CK attributes to Scattered Spider; reporter confidence 100%.",
-      "evidence": {
-        "type": "abuse.ch ThreatFox",
-        "url": "https://threatfox.abuse.ch/ioc/2054658/",
-        "reportDate": "2026-11-26",
-        "firstObserved": "2026-11-26",
-        "lastObserved": "2026-11-26",
-        "provenance": "ThreatFox #2054658",
-        "report": null
-      }
-    },
-    {
-      "id": "e128",
-      "source": "a-G1015",
       "target": "o-f46556700064",
       "relation": "indicator",
       "confidence": "low",
@@ -2911,6 +2894,23 @@
         "firstObserved": "2026-11-26",
         "lastObserved": "2026-11-26",
         "provenance": "ThreatFox #2054657",
+        "report": null
+      }
+    },
+    {
+      "id": "e128",
+      "source": "a-G1015",
+      "target": "o-9829a3c75066",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for Vidar, malware MITRE ATT&CK attributes to Scattered Spider; reporter confidence 100%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/2054658/",
+        "reportDate": "2026-11-26",
+        "firstObserved": "2026-11-26",
+        "lastObserved": "2026-11-26",
+        "provenance": "ThreatFox #2054658",
         "report": null
       }
     },
