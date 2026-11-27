@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "edition": "2026-11-26",
-  "publishedAt": "2026-11-26T11:53:55Z",
+  "edition": "2026-11-27",
+  "publishedAt": "2026-11-27T11:54:32Z",
   "window": {
-    "start": "2026-11-26T04:55:50Z",
-    "end": "2026-11-27T04:45:24Z",
+    "start": "2026-11-27T04:45:24Z",
+    "end": "2026-11-27T11:54:32Z",
     "note": "KEV additions not present in the previous edition’s catalog snapshot."
   },
   "executive": {
@@ -16,13 +16,10 @@
       "emergency": 0,
       "urgent": 0,
       "criticalHigh": 0,
-      "materialChanges": 2,
+      "materialChanges": 0,
       "kevTotal": 1805
     },
-    "developments": [
-      "CVE-2026-133469: EPSS rose from 0.01 to 0.32 (score date 2026-11-26).",
-      "CVE-2026-97229: EPSS rose from 0.12 to 0.74 (score date 2026-11-26)."
-    ]
+    "developments": []
   },
   "kevLatest": {
     "date": "2026-11-25",
@@ -114,38 +111,27 @@
       "monitor": "Track for exploitation or scope changes."
     }
   },
-  "changes": [
-    {
-      "cve": "CVE-2026-133469",
-      "type": "epss_change",
-      "detail": "EPSS rose from 0.01 to 0.32 (score date 2026-11-26)."
-    },
-    {
-      "cve": "CVE-2026-97229",
-      "type": "epss_change",
-      "detail": "EPSS rose from 0.12 to 0.74 (score date 2026-11-26)."
-    }
-  ],
+  "changes": [],
   "sources": [
     {
       "name": "CISA Known Exploited Vulnerabilities",
       "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "version": "2026.11.25",
       "released": "2026-11-25T19:48:12.4344Z",
-      "fetchedAt": "2026-11-27T04:45:25Z",
+      "fetchedAt": "2026-11-27T11:54:32Z",
       "status": "ok"
     },
     {
       "name": "FIRST EPSS",
       "url": "https://www.first.org/epss/",
-      "fetchedAt": "2026-11-27T04:45:25Z",
+      "fetchedAt": "2026-11-27T11:54:32Z",
       "status": "ok",
       "note": "Probability estimate; not evidence of exploitation."
     },
     {
       "name": "NVD CVE API 2.0",
       "url": "https://nvd.nist.gov/",
-      "fetchedAt": "2026-11-27T04:45:25Z",
+      "fetchedAt": "2026-11-27T11:54:32Z",
       "status": "no data",
       "note": "Enrichment can lag publication by days."
     }
@@ -168,16 +154,16 @@
       "reviewedAt": null
     }
   },
-  "updatedAt": "2026-11-27T04:45:24Z",
-  "updateSlot": "22:00",
+  "updatedAt": "2026-11-27T11:54:32Z",
+  "updateSlot": "07:00",
   "report": {
     "version": 1,
     "title": [
       "DAILY ENTERPRISE CYBERSECURITY",
       "THREAT INTELLIGENCE BRIEF"
     ],
-    "dateLabel": "Thursday, November 26, 2026",
-    "window": "Reporting window: November 25-26, 2026",
+    "dateLabel": "Friday, November 27, 2026",
+    "window": "Reporting window: November 26-27, 2026",
     "prepared": "Automated edition, issued 7:00 AM ET and updated at 12:00, 5:00 and 10:00 PM ET",
     "sourceNote": "This brief is compiled automatically from public sources (CISA KEV, NVD, FIRST EPSS, Google Project Zero, ENISA EUVD, Metasploit, Exploit-DB, PoC-in-GitHub, MITRE ATT&CK). Exploitation statuses reflect what those sources report; anything they do not establish is stated as not established or not verified.",
     "sections": [
@@ -189,7 +175,7 @@
         "blocks": [
           {
             "type": "p",
-            "text": "The leading newly prioritized issue is **CVE-2026-77230 (Open Source Camunda)**, a critical unsafe deserialization flaw. Malicious exploitation was not confirmed by tracked sources. No fixed release is mapped in NVD data yet. **CVE-2026-135150 (In Eclipse Ditto)** is another important newly highlighted issue; malicious exploitation was not confirmed."
+            "text": "The leading newly prioritized issue is **CVE-2026-137043 (TOTOLINK N350RT)**, a critical authorization bypass flaw. Malicious exploitation was not confirmed by tracked sources. No fixed release is mapped in NVD data yet. **CVE-2026-123903 (VMware Cloud Foundation)** is another important newly highlighted issue; malicious exploitation was not confirmed."
           },
           {
             "type": "table",
@@ -200,7 +186,7 @@
             "rows": [
               [
                 "Newly prioritized CVEs",
-                "3: Open Source Camunda, In Eclipse Ditto and WP Media WP Rocket"
+                "3: TOTOLINK N350RT, VMware Cloud Foundation and CVE-2026-133336"
               ],
               [
                 "Latest KEV baseline",
@@ -216,17 +202,17 @@
               ],
               [
                 "Complete worldwide High/Critical count",
-                "Not established; 497 High/Critical CVEs published to NVD in the window (NVD-scored only)"
+                "Not established; 286 High/Critical CVEs published to NVD in the window (NVD-scored only)"
               ]
             ]
           },
           {
             "type": "p",
-            "text": "**Top five actions:** (1) Apply the vendor fix for Open Source Camunda (CVE-2026-77230); (2) apply the vendor fix for In Eclipse Ditto (CVE-2026-135150); (3) apply the vendor fix for WP Media WP Rocket (CVE-2026-125812); (4) close previously reported Project MONAI MONAI Label, Vates Xen Orchestra, N-able MailAssure and Idunno AntiCsrf KEV exposure; (5) examine Open Source Camunda hosts for unexpected child processes and outbound connections."
+            "text": "**Top five actions:** (1) Apply the vendor fix for TOTOLINK N350RT (CVE-2026-137043); (2) apply the vendor fix for VMware Cloud Foundation (CVE-2026-123903); (3) apply the vendor fix for CVE-2026-133336 (CVE-2026-133336); (4) close previously reported Project MONAI MONAI Label, Vates Xen Orchestra, N-able MailAssure and Idunno AntiCsrf KEV exposure; (5) examine TOTOLINK N350RT hosts for unauthorized administrative access and configuration changes."
           },
           {
             "type": "p",
-            "text": "**Your technology watchlist (last 24 hours).** AEGIS monitors 35 technology areas, from firewalls, identity and cloud platforms to industrial and medical devices, against vendor advisories, national CERTs, CISA KEV and exploitation reports. **0** need action now, **1** should be reviewed today, **8** had routine vendor security updates and **26** had no significant change. “Act now” means confirmed exploitation or a CISA KEV addition; “Review today” means public exploit code, a sharp rise in exploitation likelihood or an exploited vendor advisory."
+            "text": "**Your technology watchlist (last 24 hours).** AEGIS monitors 35 technology areas, from firewalls, identity and cloud platforms to industrial and medical devices, against vendor advisories, national CERTs, CISA KEV and exploitation reports. **0** need action now, **3** should be reviewed today, **8** had routine vendor security updates and **24** had no significant change. “Act now” means confirmed exploitation or a CISA KEV addition; “Review today” means public exploit code, a sharp rise in exploitation likelihood or an exploited vendor advisory."
           },
           {
             "type": "table",
@@ -237,6 +223,18 @@
               "What it means for you"
             ],
             "rows": [
+              [
+                "Linux distributions",
+                "Review today",
+                "Public exploit code now available for CVE-2026-74586 (Rocky Linux: kernel) (+8 more)",
+                "Public attack code lowers the bar for attackers. Expect exploitation attempts to rise; patch ahead of them."
+              ],
+              [
+                "Mobile, desktop & browsers",
+                "Review today",
+                "New advisory: Stable Channel Update for ChromeOS / ChromeOS Flex (+1 more)",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+              ],
               [
                 "Self-hosted websites, email & collaboration",
                 "Review today",
@@ -256,16 +254,16 @@
                 "The vendor changed an advisory (affected versions, fixes or exploitation status may have changed). Re-check exposure."
               ],
               [
-                "Linux distributions",
-                "Routine vendor updates",
-                "New advisory: CVE-2025-13462 (+7 more)",
-                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
-              ],
-              [
                 "Virtualization & private cloud",
                 "Routine vendor updates",
                 "4 new critical CVEs in Virtualization & private cloud",
                 "Newly published critical flaws in technology in this category. Check whether you run the named products and plan updates."
+              ],
+              [
+                "Web servers, proxies, libraries & runtimes",
+                "Routine vendor updates",
+                "New advisory: openssl: OpenSSL: Denial of Service via NULL pointer dereference during DANE TLSA record processing",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
               ],
               [
                 "Windows & Microsoft enterprise software",
@@ -292,9 +290,9 @@
                 "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
               ],
               [
-                "Other monitored areas (26)",
+                "Other monitored areas (24)",
                 "No significant change",
-                "Campaigns & urgent alerts; Confirmed exploitation (CISA KEV); DevOps, containers & artifact repositories; Enterprise firewalls, VPNs & application delivery; Identity & federation; Managed file transfer; Mobile, desktop & browsers; Privileged access & secrets; Remote monitoring & support; Storage, NAS & backup; Web servers, proxies, libraries & runtimes; Business applications & SaaS; Cameras, video & access control; DNS, CDN & web security; Embedded & real-time operating systems; Endpoint & email security; IT operations & observability; Industrial networks & edge devices; Medical devices & clinical systems; Other firewalls, routers & wireless; PCs & motherboards; Printers, scanners & office devices; Processors, GPUs & chipsets; Servers, workstations & management firmware; Telecom & service-provider equipment; UNIX & BSD",
+                "Campaigns & urgent alerts; Confirmed exploitation (CISA KEV); DevOps, containers & artifact repositories; Enterprise firewalls, VPNs & application delivery; Identity & federation; Managed file transfer; Privileged access & secrets; Remote monitoring & support; Storage, NAS & backup; Business applications & SaaS; Cameras, video & access control; DNS, CDN & web security; Embedded & real-time operating systems; Endpoint & email security; IT operations & observability; Industrial networks & edge devices; Medical devices & clinical systems; Other firewalls, routers & wireless; PCs & motherboards; Printers, scanners & office devices; Processors, GPUs & chipsets; Servers, workstations & management firmware; Telecom & service-provider equipment; UNIX & BSD",
                 "No action needed today. Monitoring continues four times a day."
               ]
             ]
@@ -313,7 +311,7 @@
         "blocks": [
           {
             "type": "p",
-            "text": "**CVE-2026-77230 - Open Source Camunda unsafe deserialization (CVSS 9.2).** Camunda 8.8.0 before 8.8.47, 8.9.0 before 8.9.29, 8.10.0 before 8.10.10, and 8.11.0-alpha1 contain an insecure deserialization vulnerability in the persistent web session feature, which stores session attributes as Java-serialized data in secondary storage and deserializes them via an ObjectInputStream without an ObjectInputFilter. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+            "text": "**CVE-2026-137043 - TOTOLINK N350RT authorization bypass (CVSS 9.3).** A security vulnerability has been detected in TOTOLINK N350RT 9.3.5u.6468_B20250827/9.3.5u.6466_B20250825. The affected element is the function setLanguageCfg of the file /cgi-bin/cstecgi.cgi. Such manipulation of the argument lang leads to authorization bypass. The attack can be executed remotely. The exploit has been disclosed publicly and may be used. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
           },
           {
             "type": "table",
@@ -324,7 +322,7 @@
             "rows": [
               [
                 "EPSS / percentile",
-                "1.6% probability / 76th percentile (FIRST EPSS)"
+                "0.8% probability / 53rd percentile (FIRST EPSS)"
               ],
               [
                 "CISA KEV",
@@ -346,19 +344,19 @@
           },
           {
             "type": "p",
-            "text": "**CVE-2026-135150 - In Eclipse Ditto authentication bypass (CVSS 9.1).** In Eclipse Ditto versions 1.1.0 to 3.9.9, the nginx reverse proxy configurations shipped with Ditto (Helm chart, Docker Compose, Kubernetes and OpenShift deployment files) forward a client-supplied `x-ditto-pre-authenticated` header to the Ditto gateway on locations that do not apply nginx authentication, such as `/api/2/connections`. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+            "text": "**CVE-2026-123903 - VMware Cloud Foundation authentication bypass (CVSS 9.8).** VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service. Broadcom has evaluated the severity of this issue to be in the Critical severity range with a maximum CVSSv3 base score of 9.8. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
           },
           {
             "type": "p",
-            "text": "EPSS: 1.3% probability / 70th percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
+            "text": "EPSS: 0.6% probability / 43rd percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 2 unvetted GitHub repositories; weaponized exploit not verified. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
           },
           {
             "type": "p",
-            "text": "**CVE-2026-125812 - WP Media WP Rocket path traversal (CVSS 9.8).** Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in WP Media WP Rocket wp-rocket allows Path Traversal.This issue affects WP Rocket: from n/a before 3.24.2. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+            "text": "**CVE-2026-133336 - CVE-2026-133336 unrestricted file upload (CVSS 9.5).** Joomla Extension - chronoengine.com - Unauthenticated arbitrary file upload in ChronoForms extension 8.0.0-8.0.53 - When the Filename Provider option of a file field is used, the file extension check is performed against the original client filename instead of the final stored filename, allowing unauthenticated users to upload files with dangerous extensions. Fixed in 8.0.54. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
           },
           {
             "type": "p",
-            "text": "EPSS: 1.0% probability / 62nd percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
+            "text": "EPSS: 0.6% probability / 43rd percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. Public exploit code referenced: 1 unvetted GitHub repository; weaponized exploit not verified. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
           }
         ]
       },
@@ -378,7 +376,7 @@
           },
           {
             "type": "p",
-            "text": "**Defensive hunting:** for Open Source Camunda (CVE-2026-77230), inspect unexpected child processes of the service, new scheduled jobs or services, and unusual outbound connections from the host; for In Eclipse Ditto (CVE-2026-135150), review administrative logins, newly created accounts or API tokens, and configuration changes made without a matching change record; for WP Media WP Rocket (CVE-2026-125812), inspect unexpected file writes outside the application's data directories, new web-accessible files, modified application code, altered SSH authorized_keys files and suspicious scheduled jobs."
+            "text": "**Defensive hunting:** for TOTOLINK N350RT (CVE-2026-137043), review administrative logins, newly created accounts or API tokens, and configuration changes made without a matching change record; for VMware Cloud Foundation (CVE-2026-123903), review administrative logins, newly created accounts or API tokens, and configuration changes made without a matching change record; for CVE-2026-133336 (CVE-2026-133336), inspect unexpected file writes outside the application's data directories, new web-accessible files, modified application code, altered SSH authorized_keys files and suspicious scheduled jobs."
           }
         ]
       },
@@ -397,31 +395,31 @@
             "rows": [
               [
                 "Healthcare / medical imaging",
-                "Possible In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket exposure; targeting unknown"
+                "Possible CVE-2026-133336, TOTOLINK N350RT and VMware Cloud Foundation exposure; targeting unknown"
               ],
               [
                 "Education / research",
-                "Possible In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket exposure; targeting unknown"
+                "Possible CVE-2026-133336, TOTOLINK N350RT and VMware Cloud Foundation exposure; targeting unknown"
               ],
               [
                 "Technology / software",
-                "Potential In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket dependency exposure"
+                "Potential CVE-2026-133336, TOTOLINK N350RT and VMware Cloud Foundation dependency exposure"
               ],
               [
                 "Government / defense",
-                "Possible In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket exposure; no new sector-specific targeting confirmed"
+                "Possible CVE-2026-133336, TOTOLINK N350RT and VMware Cloud Foundation exposure; no new sector-specific targeting confirmed"
               ],
               [
                 "Financial services",
-                "Possible In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket exposure; targeting unknown"
+                "Possible CVE-2026-133336, TOTOLINK N350RT and VMware Cloud Foundation exposure; targeting unknown"
               ],
               [
                 "Manufacturing / energy / utilities",
-                "Possible In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket exposure; targeting unknown"
+                "Possible CVE-2026-133336, TOTOLINK N350RT and VMware Cloud Foundation exposure; targeting unknown"
               ],
               [
                 "Retail / transportation",
-                "Possible In Eclipse Ditto, Open Source Camunda and WP Media WP Rocket exposure; targeting unknown"
+                "Possible CVE-2026-133336, TOTOLINK N350RT and VMware Cloud Foundation exposure; targeting unknown"
               ]
             ]
           },
@@ -445,22 +443,22 @@
             ],
             "rows": [
               [
-                "Open Source Camunda operators",
+                "TOTOLINK N350RT operators",
                 "No confirmed malicious exploitation or attribution."
               ],
               [
-                "In Eclipse Ditto operators",
+                "VMware Cloud Foundation operators",
                 "No confirmed malicious exploitation or attribution."
               ],
               [
-                "WP Media WP Rocket operators",
+                "CVE-2026-133336 operators",
                 "No confirmed malicious exploitation or attribution."
               ]
             ]
           },
           {
             "type": "p",
-            "text": "**MITRE ATT&CK defensive mapping:** T1190 (Exploit Public-Facing Application) may be relevant to exposed Open Source Camunda, In Eclipse Ditto and WP Media WP Rocket services. These mappings support defensive detection and do not establish actor attribution."
+            "text": "**MITRE ATT&CK defensive mapping:** T1190 (Exploit Public-Facing Application) may be relevant to exposed TOTOLINK N350RT, VMware Cloud Foundation and CVE-2026-133336 services. These mappings support defensive detection and do not establish actor attribution."
           }
         ]
       },
@@ -485,17 +483,17 @@
               ],
               [
                 "Urgent",
-                "Vulnerable Open Source Camunda (CVE-2026-77230)",
+                "Vulnerable TOTOLINK N350RT (CVE-2026-137043)",
                 "Apply applicable vendor fix in 24-72 hours"
               ],
               [
                 "Urgent",
-                "Vulnerable In Eclipse Ditto (CVE-2026-135150)",
+                "Vulnerable VMware Cloud Foundation (CVE-2026-123903)",
                 "Apply applicable vendor fix in 24-72 hours"
               ],
               [
                 "Urgent",
-                "Vulnerable WP Media WP Rocket (CVE-2026-125812)",
+                "Vulnerable CVE-2026-133336 (CVE-2026-133336)",
                 "Apply applicable vendor fix in 24-72 hours"
               ],
               [
@@ -530,6 +528,18 @@
             ],
             "rows": [
               [
+                "Open Source Camunda CVE-2026-77230",
+                "No significant new development established since November 26"
+              ],
+              [
+                "In Eclipse Ditto CVE-2026-135150",
+                "No significant new development established since November 26"
+              ],
+              [
+                "WP Media WP Rocket CVE-2026-125812",
+                "No significant new development established since November 26"
+              ],
+              [
                 "Engeniustech Esr600 Firmware CVE-2025-34035",
                 "No significant new development established since November 25"
               ],
@@ -556,18 +566,6 @@
               [
                 "Crocoblock JetSearch CVE-2025-49931",
                 "No significant new development established since November 25"
-              ],
-              [
-                "JetBooking WordPress plugin CVE-2026-3496",
-                "No significant new development established since November 25"
-              ],
-              [
-                "Mitel MiCollab CVE-2026-133303",
-                "No significant new development established since November 25"
-              ],
-              [
-                "Mitel MiCollab CVE-2026-133324",
-                "No significant new development established since November 25"
               ]
             ]
           }
@@ -576,16 +574,16 @@
     ],
     "references": [
       {
-        "label": "CVE-2026-77230 NVD record",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77230"
+        "label": "CVE-2026-137043 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137043"
       },
       {
-        "label": "CVE-2026-135150 NVD record",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-135150"
+        "label": "CVE-2026-123903 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123903"
       },
       {
-        "label": "CVE-2026-125812 NVD record",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125812"
+        "label": "CVE-2026-133336 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133336"
       },
       {
         "label": "CISA KEV catalog",
@@ -596,13 +594,13 @@
         "url": "https://www.first.org/epss/"
       }
     ],
-    "footer": "Enterprise Cyber Threat Intelligence | 26 Nov 2026",
+    "footer": "Enterprise Cyber Threat Intelligence | 27 Nov 2026",
     "reviewedBy": null,
-    "generatedAt": "2026-11-27T04:57:49Z",
+    "generatedAt": "2026-11-27T12:06:27Z",
     "prioritized": [
-      "CVE-2026-77230",
-      "CVE-2026-135150",
-      "CVE-2026-125812"
+      "CVE-2026-137043",
+      "CVE-2026-123903",
+      "CVE-2026-133336"
     ]
   }
 }
