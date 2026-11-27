@@ -84,9 +84,9 @@ def _request(url: str, data: dict | None = None, headers: dict | None = None, ti
         return r.read().decode("utf-8", "replace")
 
 
-def wait_until_live(url: str, edition: str, attempts: int = 45, delay: int = 20) -> None:
+def wait_until_live(url: str, edition: str, attempts: int = 45, delay: int = 20, marker: str | None = None) -> None:
     """GitHub Pages deploys a minute or two after the commit; Zoho must fetch the new page."""
-    marker = f"tw-edition:{edition}"
+    marker = marker or f"tw-edition:{edition}"
     for i in range(attempts):
         try:
             if marker in _request(f"{url}?v={int(time.time())}"):

@@ -11,9 +11,9 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="threatwatch/assets/tw.css?v=20261123b">
+<link rel="stylesheet" href="threatwatch/assets/tw.css?v=20261127a">
 <link rel="stylesheet" href="global-intelligence/css/gi.css?v=20261123b">
-<script src="threatwatch/assets/tw-subscribe.js?v=20261124a" defer></script>
+<script src="threatwatch/assets/tw-subscribe.js?v=20261127a" defer></script>
 <script src="global-intelligence/js/gi.js?v=20261125a" defer></script>
 </head>
 <body data-gi-base="global-intelligence/">
@@ -138,6 +138,11 @@
     <form id="subscribe-form" class="sub-form" method="post" target="_blank" novalidate data-config="threatwatch/subscription-config.json">
       <label for="sub-email" class="sr-only">Email address</label>
       <input id="sub-email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="254" placeholder="you@company.com">
+      <fieldset class="sub-choice">
+        <legend class="sr-only">What would you like to receive?</legend>
+        <label><input type="radio" name="tw_choice" value="daily" checked> Daily brief</label>
+        <label><input type="radio" name="tw_choice" value="alerts"> Daily brief + significant alerts</label>
+      </fieldset>
 
       <button type="submit">Subscribe</button>
       <p id="sub-msg" class="sub-msg" role="status" aria-live="polite"></p>

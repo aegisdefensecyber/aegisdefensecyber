@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate committed ThreatWatch public data (CI gate)."""
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -59,13 +60,17 @@ def main() -> int:
         except (ValueError, FileNotFoundError) as exc:
             errs.append(f"{name}: {exc}")
     cfg = json.loads((REPO_ROOT / "threatwatch" / "subscription-config.json").read_text())
-    if set(cfg) - {"enabled", "signupUrl", "provider", "note", "emailField", "hiddenFields", "fromEmail", "fromName"}:
+    if set(cfg) - {"enabled", "signupUrl", "provider", "note", "emailField", "hiddenFields", "fromEmail", "fromName", "alertsOptIn"}:
         errs.append("subscription-config.json contains unexpected keys (no secrets allowed)")
     import re as _re
     if cfg.get("emailField") is not None and not _re.fullmatch(r"[A-Za-z0-9_]{1,40}", str(cfg["emailField"])):
         errs.append("subscription-config.json: emailField must be a plain field name")
     if cfg.get("fromEmail") is not None and not _re.fullmatch(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", str(cfg["fromEmail"])):
         errs.append("subscription-config.json: fromEmail is not a valid address")
+    ao = cfg.get("alertsOptIn") or {}
+    if set(ao) - {"field", "value", "note"} or not re.fullmatch(r"[A-Za-z0-9_]{0,40}", str(ao.get("field") or "")) \
+            or not re.fullmatch(r"[A-Za-z0-9 _.-]{0,40}", str(ao.get("value") or "")):
+        errs.append("subscription-config.json alertsOptIn must be {field, value, note} with safe names")
     for k, v in (cfg.get("hiddenFields") or {}).items():
         if not _re.fullmatch(r"[A-Za-z0-9_]{1,40}", k) or not isinstance(v, str) \
                 or not _re.fullmatch(r"[A-Za-z0-9_.:\-]{0,200}", v):

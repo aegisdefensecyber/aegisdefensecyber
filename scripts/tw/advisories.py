@@ -54,6 +54,25 @@ DISCOVER_DOMAINS = [
     "rockwellautomation.com", "honeywell.com", "phoenixcontact.com", "bosch.com", "mitsubishielectric.com",
     "lenovo.com", "hp.com", "apple.com", "google.com", "mozilla.org", "canonical.com", "debian.org",
 ]
+# Vendor, CERT and threat-intelligence feeds named in the AEGIS consolidated watchlist (RSS or Atom).
+# (source id, label, url, vendor/publisher). A feed that stops answering shows as failing in source status.
+FEEDS = [
+    ("oracle", "Oracle Security Alerts", "https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/rss-otn-sec.xml", "Oracle"),
+    ("cisa_advisories", "CISA cybersecurity advisories", "https://www.cisa.gov/cybersecurity-advisories/all.xml", "CISA"),
+    ("cisa_ics", "CISA ICS advisories", "https://www.cisa.gov/cybersecurity-advisories/ics-advisories.xml", "CISA"),
+    ("certcc", "CERT/CC Vulnerability Notes", "https://www.kb.cert.org/vuls/atomfeed/", "CERT/CC"),
+    ("canada_cyber", "Canadian Centre for Cyber Security", "https://www.cyber.gc.ca/api/cccs/rss/v1/get?feed=alerts_advisories&lang=en", "Canadian Centre for Cyber Security"),
+    ("talos", "Cisco Talos", "https://blog.talosintelligence.com/rss/", "Cisco Talos"),
+    ("unit42", "Palo Alto Networks Unit 42", "https://unit42.paloaltonetworks.com/feed/", "Unit 42"),
+    ("msft_security_blog", "Microsoft Security Blog", "https://www.microsoft.com/en-us/security/blog/feed/", "Microsoft"),
+    ("zdi", "Zero Day Initiative advisories", "https://www.zerodayinitiative.com/rss/published/", "Trend Micro ZDI"),
+    ("aws_bulletins", "AWS Security Bulletins", "https://aws.amazon.com/security/security-bulletins/rss/feed/", "Amazon Web Services"),
+    ("gcp_bulletins", "Google Cloud security bulletins", "https://cloud.google.com/feeds/gcp-security-bulletins.xml", "Google Cloud"),
+    ("chrome_releases", "Chrome Releases", "https://chromereleases.googleblog.com/feeds/posts/default", "Google"),
+    ("kubernetes", "Kubernetes official CVE feed", "https://kubernetes.io/docs/reference/issues-security/official-cve-feed/index.xml", "Kubernetes"),
+    ("gitlab", "GitLab security releases", "https://about.gitlab.com/security-releases.xml", "GitLab"),
+    ("jenkins", "Jenkins security advisories", "https://www.jenkins.io/security/advisories/rss.xml", "Jenkins"),
+]
 ORACLE_RSS = "https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/rss-otn-sec.xml"
 FORTINET_RSS = "https://filestore.fortinet.com/fortiguard/rss/ir.xml"
 PANW_JSON = "https://security.paloaltonetworks.com/json/?limit=100&sort=-date"
@@ -419,16 +438,25 @@ def parse_fortinet_rss(xml: str) -> list[dict]:
     return out
 
 
-def parse_vendor_rss(xml: str, vendor: str) -> list[dict]:
-    """Generic vendor bulletin RSS (e.g. Oracle CPU / Security Alerts). Items without CVEs are kept (cve=None)."""
+def parse_vendor_rss(xml: str, vendor: str, max_age_days: int = 120) -> list[dict]:
+    """Generic RSS 2.0 / Atom bulletin feed. Items without CVEs are kept (cve=None)."""
     out = []
-    for item in re.findall(r"<item>(.*?)</item>", xml or "", re.S):
-        g = lambda tag: (re.search(rf"<{tag}[^>]*>(.*?)</{tag}>", item, re.S) or [None, ""])[1]  # noqa: E731
-        clean = lambda t: re.sub(r"<!\[CDATA\[|\]\]>", "", t).replace("&lt;", "<").replace("&gt;", ">").replace("&amp;", "&")  # noqa: E731
-        desc = re.sub(r"<[^>]+>", " ", clean(g("description")))
-        link = safe_url(clean(g("link")).strip())
+    items = re.findall(r"<item[\s>](.*?)</item>", xml or "", re.S) or re.findall(r"<entry[\s>](.*?)</entry>", xml or "", re.S)
+    cutoff = datetime.now(timezone.utc) - timedelta(days=max_age_days)
+    for item in items[:200]:
+        g = lambda tag: (re.search(rf"<{tag}(?:\s[^>]*)?>(.*?)</{tag}>", item, re.S) or [None, ""])[1]  # noqa: E731
+        clean = lambda t: re.sub(r"<!\[CDATA\[|\]\]>", "", t).replace("&lt;", "<").replace("&gt;", ">").replace("&quot;", '"').replace("&#39;", "'").replace("&amp;", "&")  # noqa: E731
+        desc = re.sub(r"<[^>]+>", " ", clean(g("description") or g("summary") or g("content")))
+        href = clean(g("link")).strip()
+        if not href:
+            m = re.search(r'<link[^>]*rel="alternate"[^>]*href="([^"]+)"', item) or re.search(r'<link[^>]*href="([^"]+)"', item)
+            href = m.group(1).replace("&amp;", "&") if m else ""
+        link = safe_url(href)
         title = _clip(clean(g("title")), 200)
-        when = _iso(_ts(clean(g("pubDate")).strip()))
+        when_d = _ts(clean(g("pubDate") or g("published") or g("updated") or g("dc:date")).strip())
+        if when_d and when_d < cutoff:
+            continue
+        when = _iso(when_d)
         base = {"source": "Vendor feed", "vendor": vendor, "publisher": vendor, "id": (link or title or "")[-120:], "title": title,
                 "url": link, "csaf": None, "released": when, "updated": when, "cvss": None, "severity": None, "products": [],
                 "productsMore": 0, "fixes": [{"type": "vendor_fix", "text": "See the vendor advisory for patches.", "url": link}] if link else [],

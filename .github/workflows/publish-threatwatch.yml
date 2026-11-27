@@ -96,6 +96,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Watchlist alerts (before the brief, so the brief includes them)
+        continue-on-error: true
+        run: python scripts/build_watch.py
       - name: Build brief and CVE catalog
         id: build
         env:
@@ -110,7 +113,9 @@ jobs:
           echo "exit=$?" >> "$GITHUB_OUTPUT"
       - name: Build watchlist alerts
         continue-on-error: true   # alert problems never block the brief
-        run: python scripts/build_watch.py
+        run: |
+          python scripts/build_watch.py
+          python scripts/send_alerts.py --render
       - name: Commit generated data
         run: |
           git config user.name "aegis-threatwatch-bot"
@@ -134,6 +139,23 @@ jobs:
           ZOHO_ACCOUNTS_URL: ${{ vars.ZOHO_ACCOUNTS_URL }}
           ZOHO_CAMPAIGNS_URL: ${{ vars.ZOHO_CAMPAIGNS_URL }}
         run: python scripts/send_digest.py
+      - name: Email significant alerts to alert subscribers (Zoho Campaigns)
+        continue-on-error: true   # never blocks publication; alerts stay on the website and RSS
+        env:
+          ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
+          ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
+          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
+          ZOHO_ALERTS_LIST_KEY: ${{ vars.ZOHO_ALERTS_LIST_KEY }}
+          ZOHO_ALERTS_SEGMENT_ID: ${{ vars.ZOHO_ALERTS_SEGMENT_ID }}
+          ZOHO_FROM_EMAIL: ${{ vars.ZOHO_FROM_EMAIL }}
+          ZOHO_FROM_NAME: ${{ vars.ZOHO_FROM_NAME }}
+          ZOHO_TOPIC_ID: ${{ vars.ZOHO_TOPIC_ID }}
+          ZOHO_ACCOUNTS_URL: ${{ vars.ZOHO_ACCOUNTS_URL }}
+          ZOHO_CAMPAIGNS_URL: ${{ vars.ZOHO_CAMPAIGNS_URL }}
+        run: |
+          python scripts/send_alerts.py --send
+          git add threatwatch/data/watch/email-state.json threatwatch/email/alerts-pending.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then git commit -m "Alerts: email state" && git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push; fi
       - name: Fail if a quality gate blocked publication
         if: steps.build.outputs.exit != '0'
         run: |

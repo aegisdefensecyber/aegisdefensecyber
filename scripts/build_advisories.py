@@ -33,10 +33,11 @@ def direct_records(state: dict, deadline: float, health: dict) -> list[dict]:
     """Direct CSAF providers + Fortinet + Palo Alto, grouped back into whole advisories."""
     from tw import advisories as A
     rows, notes = [], []
-    for name, fn in (("direct_csaf", lambda: A.collect_csaf(state, deadline, notes)[0]),
+    for name, fn in [("direct_csaf", lambda: A.collect_csaf(state, deadline, notes)[0]),
                      ("fortinet", lambda: A.parse_fortinet_rss(A._get(A.FORTINET_RSS, accept="application/rss+xml")[0].decode("utf-8", "replace"))),
-                     ("paloalto", lambda: A.parse_panw(A._json(A.PANW_JSON))),
-                     ("oracle", lambda: A.parse_vendor_rss(A._get(A.ORACLE_RSS, accept="application/rss+xml")[0].decode("utf-8", "replace"), "Oracle"))):
+                     ("paloalto", lambda: A.parse_panw(A._json(A.PANW_JSON)))] + [
+                     (fid, (lambda u=url, v=vendor: A.parse_vendor_rss(A._get(u, accept="application/rss+xml, application/atom+xml, application/xml")[0].decode("utf-8", "replace"), v)))
+                     for fid, _label, url, vendor in A.FEEDS]:
         t0 = time.time()
         try:
             got = fn()
@@ -78,10 +79,13 @@ def main() -> int:
     from tw import circl
     ch = circl.collect(state, now, budget, on_records=lambda src, recs: repo.upsert(recs, iso(now)))
     health.update(ch)
+    from tw.advisories import FEEDS
     labels = {"direct_csaf": "Direct CSAF provider feeds", "fortinet": "Fortinet PSIRT", "paloalto": "Palo Alto Networks",
-              "oracle": "Oracle Security Alerts"}
+              **{fid: label for fid, label, _u, _v in FEEDS}}
+    groups = {"cisa_advisories": "National CERT", "cisa_ics": "National CERT", "certcc": "National CERT", "canada_cyber": "National CERT",
+              "talos": "Threat intelligence", "unit42": "Threat intelligence", "msft_security_blog": "Threat intelligence", "zdi": "Threat intelligence"}
     for k, v in _direct(state, {}, repo, now).items():
-        health[k] = dict(v, label=labels[k], group="Vendor", complete=v.get("ok"))
+        health[k] = dict(v, label=labels.get(k, k), group=groups.get(k, "Vendor"), complete=v.get("ok"))
 
     changed_days = repo.flush(iso(now))
     # older advisories updated in the last 14 days (their day file is outside a short date range)

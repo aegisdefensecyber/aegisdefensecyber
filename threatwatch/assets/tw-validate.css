@@ -101,3 +101,16 @@
 .pn b { color: var(--text); }
 .dl-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 @media (max-width: 600px) { .cmdrow { flex-direction: column; } }
+.assess-card { border-left: 4px solid #7ab4ff; }
+.assess-dec { padding: 10px 14px; border-radius: 6px; background: rgba(224,90,90,.12); border-left: 5px solid #e05a5a; }
+.assess-dec.urgent { background: rgba(224,145,78,.12); border-left-color: #e0914e; }
+.assess-dec.high, .assess-dec.elevated { background: rgba(217,180,78,.12); border-left-color: #d9b44e; }
+.assess-dec.standard { background: rgba(111,143,176,.12); border-left-color: #6f8fb0; }
+.assess-sec { margin-top: 18px; } .assess-sec h4 { margin: 0 0 6px; font-size: 16px; } .assess-sec h5 { margin: 12px 0 4px; font-size: 14px; }
+.assess-tbl { overflow-x: auto; } .assess-tbl table { border-collapse: collapse; width: 100%; font-size: 13px; }
+.assess-tbl th, .assess-tbl td { border: 1px solid var(--border, #2b3a4d); padding: 5px 8px; text-align: left; vertical-align: top; word-break: break-word; }
+.assess pre { white-space: pre-wrap; word-break: break-all; font-size: 12px; }
+@media print {
+  body > header, body > footer, nav, .subscribe, #vv-search, .badges, #playbook, #plan, .btn { display: none !important; }
+  .assess-card { border: 0; } body { background: #fff; color: #000; }
+}

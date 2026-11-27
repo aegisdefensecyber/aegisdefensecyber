@@ -48,10 +48,15 @@
     String(text).split("**").forEach(function (part, i) {
       if (!part) return;
       var kids = [];
-      part.split(CVE_RE).forEach(function (bit, j) {
-        if (!bit) return;
-        if (j % 2 === 1 && linkCves) kids.push(el("a", { cls: "cve-link", href: "validate.html?cve=" + encodeURIComponent(bit), text: bit }));
-        else kids.push(document.createTextNode(bit));
+      // [label](https://…) links (https only), then CVE ids
+      part.split(/(\[[^\]]{1,120}\]\(https:\/\/[^\s)"'<>]+\))/).forEach(function (seg) {
+        var m = /^\[([^\]]+)\]\((https:\/\/[^\s)"'<>]+)\)$/.exec(seg);
+        if (m) { kids.push(el("a", { href: m[2], text: m[1] })); return; }
+        seg.split(CVE_RE).forEach(function (bit, j) {
+          if (!bit) return;
+          if (j % 2 === 1 && linkCves) kids.push(el("a", { cls: "cve-link", href: "validate.html?cve=" + encodeURIComponent(bit), text: bit }));
+          else kids.push(document.createTextNode(bit));
+        });
       });
       out.push(i % 2 === 1 ? el("strong", null, kids) : el("span", null, kids));
     });

@@ -37,7 +37,10 @@ FONT = "Helvetica, Arial, sans-serif"
 def _inline(text: str) -> str:
     """Escape, then turn **bold** into <strong>."""
     out = html.escape(text or "", quote=True)
-    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", out)
+    out = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", out)
+    # [label](https://…) → link (the URL was already HTML-escaped above, so no markup can be injected)
+    return re.sub(r"\[([^\]]{1,120})\]\((https://[^\s)&;]+)\)",
+                  lambda m: f'<a href="{m.group(2)}" style="color:{BLUE}">{m.group(1)}</a>', out)
 
 
 def _block(b: dict) -> str:

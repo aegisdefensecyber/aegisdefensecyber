@@ -10,12 +10,13 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/tw.css?v=20261126a">
-<script src="assets/tw-subscribe.js?v=20261124a" defer></script>
-<link rel="stylesheet" href="assets/tw-validate.css">
+<link rel="stylesheet" href="assets/tw.css?v=20261127a">
+<script src="assets/tw-subscribe.js?v=20261127a" defer></script>
+<link rel="stylesheet" href="assets/tw-validate.css?v=20261127a">
 <script src="assets/tw-playbook.js" defer></script>
 <script src="assets/tw-cvelist.js?v=1" defer></script>
-<script src="assets/tw-validate.js?v=20261126f" defer></script>
+<script src="assets/tw-assess.js?v=1" defer></script>
+<script src="assets/tw-validate.js?v=20261127a" defer></script>
 </head>
 <body class="wide">
 <a class="skip" href="#main">Skip to CVE search</a>
@@ -134,12 +135,17 @@
 <section id="subscribe" class="sub-band" aria-labelledby="subscribe-title">
   <div class="sub-in">
     <div class="sub-copy">
-      <h2 id="subscribe-title">Get the daily brief by email</h2>
-      <p>Free ThreatWatch updates in your inbox. Email address only; you’ll confirm by email, and you can unsubscribe anytime.</p>
+      <h2 id="subscribe-title">Get the daily brief and alerts by email</h2>
+      <p>Free ThreatWatch updates in your inbox: the daily executive brief, and optionally alerts whenever something significant happens to technology on the AEGIS watchlist. Email address only; you’ll confirm by email, and you can unsubscribe anytime.</p>
     </div>
     <form id="subscribe-form" class="sub-form" method="post" target="_blank" novalidate>
       <label for="sub-email" class="sr-only">Email address</label>
       <input id="sub-email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="254" placeholder="you@company.com">
+      <fieldset class="sub-choice">
+        <legend class="sr-only">What would you like to receive?</legend>
+        <label><input type="radio" name="tw_choice" value="daily" checked> Daily brief</label>
+        <label><input type="radio" name="tw_choice" value="alerts"> Daily brief + significant alerts</label>
+      </fieldset>
 
       <button type="submit">Subscribe</button>
       <p id="sub-msg" class="sub-msg" role="status" aria-live="polite"></p>

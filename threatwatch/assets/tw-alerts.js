@@ -4,7 +4,16 @@
 (function () {
   "use strict";
   var $ = function (id) { return document.getElementById(id); };
-  var ALL = [], RANK = { critical: 0, high: 1, medium: 2, info: 3 };
+  var ALL = [], WATCHES = [], RANK = { critical: 0, high: 1, medium: 2, info: 3 };
+  // ---- personal watchlist (this browser only; storage may be unavailable, so every access is guarded)
+  var KEY = "aegis-my-watchlist-v1", MY = { areas: [], terms: [] };
+  try { var raw = JSON.parse(localStorage.getItem(KEY) || "null"); if (raw && Array.isArray(raw.areas)) MY = { areas: raw.areas.slice(0, 60), terms: (raw.terms || []).slice(0, 40) }; } catch (e) { /* private mode */ }
+  function saveMy() { try { localStorage.setItem(KEY, JSON.stringify(MY)); } catch (e) { /* ignore */ } }
+  function mine(e) {
+    if (MY.areas.indexOf(e.watch) >= 0) return true;
+    var hay = (e.title + " " + e.detail + " " + (e.cves || []).join(" ")).toLowerCase();
+    return MY.terms.some(function (t) { return hay.indexOf(t.toLowerCase()) >= 0; });
+  }
 
   function el(tag, attrs, kids) {
     var n = document.createElement(tag);
@@ -28,17 +37,18 @@
 
   // ------------------------------------------------------------------ Layer 1: events
   function renderEvents() {
-    var w = $("al-watch").value, lv = $("al-level").value, days = parseInt($("al-days").value, 10) || 7,
+    var w = $("al-watch").value, lv = $("al-level").value, days = parseInt($("al-days").value, 10) || 7, onlyMine = $("al-mine").checked,
         since = new Date(Date.now() - days * 864e5).toISOString();
     var list = ALL.filter(function (e) {
-      return e.ts >= since && (!w || e.watch === w) && (!lv || RANK[e.level] <= RANK[lv]);
+      return e.ts >= since && (!w || e.watch === w) && (!lv || RANK[e.level] <= RANK[lv]) && (!onlyMine || mine(e));
     });
     var ol = $("al-events"); ol.textContent = "";
     $("al-count").textContent = list.length + " alert" + (list.length === 1 ? "" : "s") + " in this period.";
     list.forEach(function (e) {
-      ol.appendChild(el("li", { cls: "al-ev " + e.level }, [
+      ol.appendChild(el("li", { cls: "al-ev " + e.level + (mine(e) ? " mine" : "") }, [
         el("div", { cls: "al-meta" }, [el("span", { cls: "al-lv " + e.level, text: e.level.toUpperCase() }), " " + e.watchName + " · " + fmt(e.ts)]),
         el("p", { cls: "al-title", text: e.title }),
+        e.plain ? el("p", { cls: "al-plain", text: e.plain }) : null,
         el("p", { cls: "muted", text: e.detail }),
         (e.cves || []).length ? el("p", { cls: "al-cves" }, cveLinks(e.cves)) : null,
         (e.links || []).length ? el("p", { cls: "al-links" }, e.links.map(function (l, i) { return el("span", null, [i ? " · " : "", link(l.u, l.t)]); })) : null
@@ -46,6 +56,55 @@
     });
     if (!list.length) ol.appendChild(el("li", { cls: "muted", text: "No alerts match. Quiet is good news: nothing changed for the watched items in this period." }));
   }
+
+  // ---- overview of every technology area (data/watch/summary.json)
+  var STATUS = { red: ["Act now", "critical"], amber: ["Review today", "high"], watch: ["Routine", "medium"], green: ["No significant change", "info"] };
+  function renderOverview(sum) {
+    var g = $("ov-grid"); g.textContent = "";
+    var order = { red: 0, amber: 1, watch: 2, green: 3 };
+    (sum.summary || []).slice().sort(function (a, b) { return (order[a.status] - order[b.status]) || a.name.localeCompare(b.name); }).forEach(function (x) {
+      var st = STATUS[x.status] || STATUS.green, isMine = MY.areas.indexOf(x.id) >= 0;
+      var card = el("div", { cls: "ov-card " + st[1] + (isMine ? " mine" : "") }, [
+        el("div", { cls: "ov-top" }, [el("span", { cls: "al-lv " + st[1], text: st[0] }), isMine ? el("span", { cls: "ov-mine", text: "★ My watchlist" }) : null]),
+        el("p", { cls: "ov-name", text: x.name }),
+        el("p", { cls: "muted", text: x.headline || ((x.cves || 0).toLocaleString() + " known CVEs tracked; nothing significant in the last 24 hours.") }),
+        el("p", { cls: "ov-links" }, [el("a", { href: "data/watch/feeds/" + x.id + ".xml", text: "RSS" }), " · ",
+          (function () { var b = el("button", { type: "button", cls: "linkish", text: "Show alerts" });
+            b.addEventListener("click", function () { $("al-watch").value = x.id; $("al-days").value = "7"; renderEvents(); $("ev-title").scrollIntoView({ behavior: "smooth" }); }); return b; })()])
+      ]);
+      g.appendChild(card);
+    });
+  }
+  function renderMy() {
+    var box = $("my-areas"); box.textContent = "";
+    var bySec = {};
+    WATCHES.forEach(function (w) { (bySec[w.section || "Other"] = bySec[w.section || "Other"] || []).push(w); });
+    Object.keys(bySec).forEach(function (sec) {
+      box.appendChild(el("fieldset", null, [el("legend", { text: sec })].concat(bySec[sec].map(function (w) {
+        var cb = el("input", { type: "checkbox", value: w.id });
+        cb.checked = MY.areas.indexOf(w.id) >= 0;
+        cb.addEventListener("change", function () {
+          MY.areas = MY.areas.filter(function (a) { return a !== w.id; });
+          if (cb.checked) MY.areas.push(w.id);
+          saveMy(); $("my-count").textContent = MY.areas.length; renderEvents(); if (window.__twSum) renderOverview(window.__twSum);
+        });
+        return el("label", null, [cb, " " + w.name + (w.tier === "daily" ? " · daily focus" : ""), " ", el("a", { href: "data/watch/feeds/" + w.id + ".xml", text: "RSS", "aria-label": "RSS feed for " + w.name })]);
+      }))));
+    });
+    $("my-count").textContent = MY.areas.length;
+    var ul = $("my-terms"); ul.textContent = "";
+    MY.terms.forEach(function (t) {
+      var x = el("button", { type: "button", cls: "linkish", text: "remove", "aria-label": "Remove " + t });
+      x.addEventListener("click", function () { MY.terms = MY.terms.filter(function (y) { return y !== t; }); saveMy(); renderMy(); renderEvents(); });
+      ul.appendChild(el("li", null, [el("b", { text: t }), " ", x]));
+    });
+  }
+  $("my-add").addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var t = $("my-term").value.trim().replace(/\s+/g, " ").slice(0, 60);
+    if (t.length < 2 || MY.terms.indexOf(t) >= 0 || MY.terms.length >= 40) return;
+    MY.terms.push(t); saveMy(); $("my-term").value = ""; renderMy(); renderEvents();
+  });
 
   // ------------------------------------------------------------------ Layer 2: briefings
   var PRI = { EMERGENCY: "critical", HIGH: "high", ELEVATED: "medium", ROUTINE: "info" };
@@ -95,15 +154,19 @@
   }
 
   // ------------------------------------------------------------------ boot
-  ["al-watch", "al-level", "al-days"].forEach(function (id) { $(id).addEventListener("change", renderEvents); });
+  ["al-watch", "al-level", "al-days", "al-mine"].forEach(function (id) { $(id).addEventListener("change", renderEvents); });
   $("al-filters").addEventListener("submit", function (e) { e.preventDefault(); });
   getJSON("data/watch/alerts.json").then(function (d) {
     ALL = d.events || [];
-    $("al-watches").textContent = "Watching: " + (d.watches || []).map(function (w) {
-      return w.name + " (" + (w.cves || 0).toLocaleString() + " CVEs, " + (w.advisories || 0) + " recent advisories)";
-    }).join(" · ") + ". Checked with every update, four times a day.";
-    (d.watches || []).forEach(function (w) { $("al-watch").appendChild(el("option", { value: w.id, text: w.name })); });
+    var tot = (d.watches || []).length;
+    $("al-watches").textContent = "Watching " + tot + " technology areas from the AEGIS consolidated vendor watchlist. Checked with every update, four times a day; significant changes are alerted as they are found.";
+    WATCHES = d.watches || [];
+    WATCHES.forEach(function (w) { $("al-watch").appendChild(el("option", { value: w.id, text: w.name })); });
+    var hw = /watch=([a-z0-9-]+)/.exec(location.hash);
+    if (hw) $("al-watch").value = hw[1];
+    renderMy();
     renderEvents();
   }).catch(function () { $("al-watches").textContent = "Watchlist alerts start after the next update."; });
+  getJSON("data/watch/summary.json").then(function (sm) { window.__twSum = sm; renderOverview(sm); }).catch(function () { $("ov-grid").textContent = "Area status appears after the next update."; });
   getJSON("data/briefings/index.json").then(renderBriefings).catch(function () { renderBriefings({}); });
 })();

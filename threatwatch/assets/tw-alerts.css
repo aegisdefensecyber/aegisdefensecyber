@@ -18,3 +18,20 @@
 .br-headline { font-weight: 600; }
 .br-table { margin: 4px 0 8px; } .br-table td { vertical-align: top; }
 .br-judgment { font-weight: 600; border-left: 3px solid var(--accent); padding-left: 10px; }
+.ov-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; margin-bottom: 22px; }
+.ov-card { border: 1px solid var(--border); border-top: 4px solid #6f8fb0; border-radius: 8px; padding: 10px 12px; background: var(--content); }
+.ov-card.critical { border-top-color: #e05a5a; } .ov-card.high { border-top-color: #e0914e; } .ov-card.medium { border-top-color: #d9b44e; }
+.ov-card.mine, .al-ev.mine { box-shadow: 0 0 0 2px rgba(122,180,255,.45); }
+.ov-card p { margin: 4px 0; font-size: 13px; } .ov-name { font-weight: 700; font-size: 14px !important; }
+.ov-top { display: flex; justify-content: space-between; gap: 6px; align-items: center; }
+.ov-mine { font-size: 11px; color: #9cc6ff; font-weight: 700; }
+.ov-links { font-size: 12px !important; }
+.al-plain { font-size: 14px; }
+.my-watch { border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px 6px; margin: 0 0 22px; }
+.my-areas { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; margin: 10px 0; }
+.my-areas fieldset { border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; }
+.my-areas legend { font-weight: 700; font-size: 13px; padding: 0 4px; }
+.my-areas label { display: block; font-size: 13px; margin: 3px 0; }
+.my-add { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0; }
+.my-add input { flex: 1 1 260px; min-width: 0; }
+.my-terms { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 16px; }

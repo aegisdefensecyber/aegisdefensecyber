@@ -40,6 +40,7 @@
     .then(function (c) { cfg = c; var u = endpoint(c); if (u) { form.action = u; applyFields(c); } })
     .catch(function () { cfg = null; });
 
+  form.querySelectorAll('input[name="tw_choice"]').forEach(function (r) { r.setAttribute("form", "tw-none"); });
   form.addEventListener("submit", function (ev) {
     var email = (input.value || "").trim();
     input.value = email;
@@ -58,8 +59,17 @@
       return;
     }
     form.action = url;
+    var wantsAlerts = !!form.querySelector('input[name="tw_choice"][value="alerts"]:checked');
+    var ao = (cfg && cfg.alertsOptIn) || {}, oldFlag = form.querySelector("input[data-alerts]");
+    if (oldFlag) oldFlag.remove();
+    if (wantsAlerts && SAFE_NAME.test(ao.field || "") && SAFE_VAL.test(ao.value || "Yes")) {
+      var f = document.createElement("input");
+      f.type = "hidden"; f.name = ao.field; f.value = ao.value || "Yes"; f.setAttribute("data-alerts", "1");
+      form.appendChild(f);
+    }
     // The provider's confirmation page opens in a new tab (target=_blank); this page stays put.
-    say("Almost done: check your inbox and click the confirmation link to start receiving the brief.", "ok");
+    say("Almost done: check your inbox and click the confirmation link to start receiving the brief" +
+        (wantsAlerts ? (ao.field ? " and alerts." : ". Alert emails are launching shortly; until then, follow alerts on the Alerts page or by RSS.") : "."), "ok");
     btn.disabled = true;
     setTimeout(function () { form.reset(); btn.disabled = false; }, 1500);
   });

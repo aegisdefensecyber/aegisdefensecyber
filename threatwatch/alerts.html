@@ -10,12 +10,12 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/tw.css?v=20261126a">
-<script src="assets/tw-subscribe.js?v=20261124a" defer></script>
+<link rel="stylesheet" href="assets/tw.css?v=20261127a">
+<script src="assets/tw-subscribe.js?v=20261127a" defer></script>
 <link rel="stylesheet" href="assets/tw-advisories.css?v=1">
-<link rel="stylesheet" href="assets/tw-alerts.css?v=1">
+<link rel="stylesheet" href="assets/tw-alerts.css?v=2">
 <link rel="alternate" type="application/rss+xml" title="AEGIS watchlist alerts" href="data/watch/alerts.xml">
-<script src="assets/tw-alerts.js?v=1" defer></script>
+<script src="assets/tw-alerts.js?v=2" defer></script>
 </head>
 <body class="wide">
 <a class="skip" href="#main">Skip to alerts</a>
@@ -53,6 +53,24 @@
     <p class="meta"><a href="data/watch/alerts.xml">Subscribe via RSS</a></p>
   </section>
 
+  <section aria-labelledby="ov-title">
+    <h2 id="ov-title">Technology areas: last 24 hours</h2>
+    <p class="muted">Every area on the AEGIS watchlist, so nothing is skipped. <b>Act now</b> = CISA KEV addition or confirmed exploitation. <b>Review today</b> = public exploit code, a jump in exploitation likelihood, or an exploited vendor advisory. <b>Routine</b> = new high or critical vendor advisories.</p>
+    <div id="ov-grid" class="ov-grid"><p class="muted">Loading…</p></div>
+  </section>
+
+  <section aria-labelledby="my-title" class="my-watch">
+    <h2 id="my-title">My watchlist</h2>
+    <p class="muted">Pick the technology your organization runs, and add your own vendors, products or CVEs. Your choices are saved in this browser only (nothing is sent to AEGIS). Then filter alerts to your list, subscribe to the RSS feed for each area, or choose “daily brief + alerts” when you subscribe by email.</p>
+    <details id="my-pick"><summary>Choose technology areas (<span id="my-count">0</span> selected)</summary><div id="my-areas" class="my-areas"></div></details>
+    <form id="my-add" class="my-add" aria-label="Add your own watch item">
+      <label for="my-term">Add a vendor, product or CVE</label>
+      <input id="my-term" type="text" maxlength="60" placeholder="e.g. MOVEit, Fortinet, CVE-2026-114938" autocomplete="off">
+      <button type="submit" class="btn secondary">Add</button>
+    </form>
+    <ul id="my-terms" class="my-terms"></ul>
+  </section>
+
   <section aria-labelledby="br-title">
     <h2 id="br-title">Threat intelligence briefings</h2>
     <div id="br-list"><p class="muted">Loading…</p></div>
@@ -64,6 +82,7 @@
     <form id="al-filters" class="ax-filters" aria-label="Filter alerts">
       <label>Watch<select id="al-watch"><option value="">All watches</option></select></label>
       <label>Level<select id="al-level"><option value="">All levels</option><option value="critical">Critical</option><option value="high">High and above</option><option value="medium">Medium and above</option></select></label>
+      <label class="chk"><input type="checkbox" id="al-mine"> Only my watchlist</label>
       <label>Period<select id="al-days"><option value="1">Last 24 hours</option><option value="7" selected>Last 7 days</option><option value="30">Last 30 days</option><option value="60">Last 60 days</option></select></label>
     </form>
     <p class="muted" id="al-count" aria-live="polite"></p>
@@ -75,12 +94,17 @@
 <section id="subscribe" class="sub-band" aria-labelledby="subscribe-title">
   <div class="sub-in">
     <div class="sub-copy">
-      <h2 id="subscribe-title">Get the daily brief by email</h2>
-      <p>Free ThreatWatch updates in your inbox. Email address only; you’ll confirm by email, and you can unsubscribe anytime.</p>
+      <h2 id="subscribe-title">Get the daily brief and alerts by email</h2>
+      <p>Free ThreatWatch updates in your inbox: the daily executive brief, and optionally alerts whenever something significant happens to technology on the AEGIS watchlist. Email address only; you’ll confirm by email, and you can unsubscribe anytime.</p>
     </div>
     <form id="subscribe-form" class="sub-form" method="post" target="_blank" novalidate>
       <label for="sub-email" class="sr-only">Email address</label>
       <input id="sub-email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="254" placeholder="you@company.com">
+      <fieldset class="sub-choice">
+        <legend class="sr-only">What would you like to receive?</legend>
+        <label><input type="radio" name="tw_choice" value="daily" checked> Daily brief</label>
+        <label><input type="radio" name="tw_choice" value="alerts"> Daily brief + significant alerts</label>
+      </fieldset>
 
       <button type="submit">Subscribe</button>
       <p id="sub-msg" class="sub-msg" role="status" aria-live="polite"></p>

@@ -258,7 +258,10 @@
     function pbText() { pb.textContent = inPlan(r.cve) ? "✓ In test plan — remove" : "Add to controlled test plan"; pb.disabled = !inPlan(r.cve) && plan.length >= PLAN_MAX; }
     pb.addEventListener("click", function () { togglePlan(r.cve); pbText(); });
     pbText();
-    d.appendChild(el("p", null, [pb, " ", el("a", { href: "#plan", text: "View plan" })]));
+    var asb = el("button", { type: "button", cls: "btn", id: "assess-btn", text: "Assess: generate vulnerability assessment" });
+    asb.addEventListener("click", function () { renderAssessment(r, asb); });
+    d.appendChild(el("p", null, [asb, " ", pb, " ", el("a", { href: "#plan", text: "View plan" })]));
+    d.appendChild(el("div", { id: "assess-out" }));
     if (r.title) d.appendChild(el("p", { cls: "lead", text: r.title }));
     if (r.description) d.appendChild(el("p", { text: r.description }));
     var advs = r.vendorAdvisories || [];
@@ -309,6 +312,7 @@
       ])
     ]));
 
+    var vgSec = renderVendorGuidance(r); if (vgSec) d.appendChild(vgSec);
     d.appendChild(renderPlaybook(r));
     var left = el("div"), right = el("div");
     d.appendChild(el("div", { cls: "vv-grid" }, [left, right]));
@@ -493,6 +497,88 @@
   }
   function validTarget() { var t = (opts.target || "").trim(); return t && TARGET_RE.test(t) ? t : ""; }
   function chip(text, cls) { return el("span", { cls: "chip" + (cls ? " " + cls : ""), text: text }); }
+
+  // ---- vendor-guided validation (from vendor advisories / references for this CVE)
+  function renderVendorGuidance(r) {
+    if (!window.TWAssess) return null;
+    var g = window.TWAssess.vendorGuidance(r);
+    if (!g.advisories.length && !g.vendorLinks.length && !g.packages.length && !g.searches.length) return null;
+    var sec = el("section", { cls: "card", "aria-labelledby": "vg-h" }, [el("h3", { id: "vg-h", text: "Vendor guidance: how the vendor says to validate and fix" }),
+      el("p", { cls: "muted", text: "The vendor's advisory is the authority on which versions and configurations are affected. Use it to confirm a scanner finding before raising a ticket: a host is a true positive only if it runs an affected version AND the vulnerable component or configuration is present." })]);
+    if (g.packages.length) {
+      sec.appendChild(el("h4", { text: "Check the installed version (from vendor and distribution advisories)" }));
+      var txt = g.packages.map(function (x) { return "# " + x.platform + " — " + x.source + (x.fixed ? "\n# fixed: " + x.fixed : "") + "\n" + x.command; }).join("\n\n");
+      var cp = el("button", { type: "button", cls: "btn secondary copy", text: "Copy" });
+      cp.addEventListener("click", function () { copy(txt, cp); });
+      sec.appendChild(el("pre", { text: txt })); sec.appendChild(cp);
+      sec.appendChild(el("p", { cls: "muted", text: "Compare the version printed with the fixed version. Distribution packages often backport fixes, so trust the distribution's fixed release, not the upstream version number alone." }));
+    }
+    if (g.affected.length) {
+      sec.appendChild(el("h4", { text: "Affected versions (NVD configuration)" }));
+      sec.appendChild(el("ul", null, g.affected.map(function (t) { return el("li", { text: t }); })));
+    }
+    var links = g.vendorLinks.map(function (u) { return el("li", null, [link(u)]); });
+    g.searches.forEach(function (x) { links.push(el("li", null, [link(x.url, "Search " + x.host + " for " + r.cve + " (detection / workaround notes)")])); });
+    if (links.length) { sec.appendChild(el("h4", { text: "Vendor advisories and knowledge-base articles" })); sec.appendChild(el("ul", null, links)); }
+    sec.appendChild(el("h4", { text: "Removing false positives" }));
+    sec.appendChild(el("ul", null, [
+      "Confirm the product is really installed (authenticated scan or package query), not inferred from a banner or port.",
+      "Confirm the version against the vendor's fixed version; backported patches make banner versions misleading.",
+      "Confirm the vulnerable feature, module or configuration is enabled, as described in the vendor advisory.",
+      "Confirm the attack vector is reachable (internet-facing, internal-only, local); record compensating controls.",
+      "Record the evidence (command output, screenshot, scanner QID/plugin ID) on the ticket so the decision can be audited."].map(function (t) { return el("li", { text: t }); })));
+    return sec;
+  }
+
+  // ---- Assess: decision-ready vulnerability assessment
+  var relCache = null;
+  function assessContext(r) {
+    var c = { epss: ep(r.cve), attackers: [], iocs: [] };
+    return Promise.all([
+      (relCache ? Promise.resolve(relCache) : getJSON("data/relationships.json").then(function (x) { relCache = x; return x; })).catch(function () { return null; }),
+      getJSON("data/cve-index.json").catch(function () { return null; })
+    ]).then(function (res) {
+      var rel = res[0], idx = res[1];
+      ((idx && idx.cves && idx.cves[r.cve]) || []).forEach(function (a) { c.attackers.push({ name: a.name, via: a.technique ? a.technique.id : null }); });
+      if (rel) {
+        var nodes = {}; rel.nodes.forEach(function (n) { nodes[n.id] = n; });
+        var cid = "c-" + r.cve, users = {};
+        rel.edges.forEach(function (e) { if (e.target === cid) users[e.source] = 1; });
+        rel.edges.forEach(function (e) { if (users[e.target] && e.relation === "attributed") users[e.source] = 1; });
+        var names = {}; c.attackers.forEach(function (a) { names[a.name] = 1; });
+        rel.nodes.forEach(function (n) { if (n.type === "actor" && names[n.label]) users[n.id] = 1; });
+        rel.edges.forEach(function (e) {
+          var o = nodes[e.target];
+          if (users[e.source] && e.relation === "indicator" && o && o.type === "ioc")
+            c.iocs.push({ type: o.iocType || "indicator", value: String(o.label).replace(/\./g, "[.]").replace(/^http/i, "hxxp"), source: (o.source || "") + (o.ref ? " " + o.ref : "") + " · " + ((nodes[e.source] || {}).label || "") });
+        });
+      }
+      return c;
+    });
+  }
+  function renderAssessment(r, btn) {
+    var out = $("assess-out"); if (!out || !window.TWAssess) return;
+    btn.disabled = true; btn.textContent = "Generating assessment…";
+    assessContext(r).then(function (ctx2) {
+      var m = window.TWAssess.build(r, ctx2);
+      out.textContent = "";
+      var dl = el("button", { type: "button", cls: "btn", text: "Download assessment (.html, printable to PDF)" });
+      dl.addEventListener("click", function () { download(r.cve + "-vulnerability-assessment.html", window.TWAssess.toHTML(m), "text/html"); });
+      var pr = el("button", { type: "button", cls: "btn secondary", text: "Print" });
+      pr.addEventListener("click", function () { window.print(); });
+      var hide = el("button", { type: "button", cls: "btn secondary", text: "Close" });
+      hide.addEventListener("click", function () { out.textContent = ""; });
+      out.appendChild(el("section", { cls: "card assess-card", "aria-labelledby": "as-h" }, [
+        el("h3", { id: "as-h", text: m.title }),
+        el("p", { cls: "muted", text: "Generated in your browser from the AEGIS record and public sources. Validate against your own inventory and the vendor advisory before acting." }),
+        el("p", null, [dl, " ", pr, " ", hide]),
+        window.TWAssess.toDOM(m, el),
+        el("h4", { text: "References" }),
+        el("ol", null, m.references.map(function (u) { return el("li", null, [link(u)]); }))]));
+      btn.disabled = false; btn.textContent = "Regenerate assessment";
+      out.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
 
   function renderPlaybook(r) {
     var P = window.TWPlaybook, m = P.build(r, ctx);

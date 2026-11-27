@@ -726,7 +726,53 @@ def _summary(brief, items, top, tracked, catalog, w_start, w_end) -> list[dict]:
         rows.insert(3, ["New zero-day / in-the-wild reports", _join([f"{i.cve} ({i.label})" for i in zero[:4]])])
     out.append(_table(["Metric", "Assessment"], rows))
     out.append(_p("**Top five actions:** " + _top_actions(top, tracked)))
+    out.extend(watchlist_blocks(catalog))
     return out
+
+
+STATUS_WORDS = {"red": "Act now", "amber": "Review today", "watch": "Routine vendor updates", "green": "No significant change"}
+
+
+def watchlist_blocks(catalog) -> list[dict]:
+    """Plain-language status of every watched technology area (from data/watch/summary.json).
+
+    Written for executives and non-IT readers: every category is listed, so nothing is silently skipped."""
+    try:
+        path = Path(catalog.dir).parent / "watch" / "summary.json"
+        doc = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    rows_in = doc.get("summary") or []
+    if not rows_in:
+        return []
+    order = {"red": 0, "amber": 1, "watch": 2, "green": 3}
+    rows_in = sorted(rows_in, key=lambda x: (order.get(x.get("status"), 4), x.get("tier") != "daily", x.get("name") or ""))
+    n = {k: sum(1 for x in rows_in if x.get("status") == k) for k in order}
+    intro = (f"**Your technology watchlist (last 24 hours).** AEGIS monitors {len(rows_in)} technology areas, from firewalls, "
+             "identity and cloud platforms to industrial and medical devices, against vendor advisories, national CERTs, "
+             f"CISA KEV and exploitation reports. **{n['red']}** need action now, **{n['amber']}** should be reviewed today, "
+             f"**{n['watch']}** had routine vendor security updates and **{n['green']}** had no significant change. "
+             "“Act now” means confirmed exploitation or a CISA KEV addition; “Review today” means public exploit code, "
+             "a sharp rise in exploitation likelihood or an exploited vendor advisory.")
+    rows = []
+    quiet = []
+    for x in rows_in:
+        st = x.get("status")
+        if st == "green":
+            quiet.append(x.get("name") or x.get("id"))
+            continue
+        c = x.get("counts") or {}
+        what = x.get("headline") or "Vendor security updates"
+        extra = sum(c.get(k, 0) for k in ("critical", "high", "medium")) - 1
+        if extra > 0:
+            what += f" (+{extra} more)"
+        rows.append([x.get("name") or x.get("id"), STATUS_WORDS.get(st, st), what[:300],
+                     (x.get("plain") or "Check whether you use the affected products and follow the vendor guidance.")[:300]])
+    if quiet:
+        rows.append([f"Other monitored areas ({len(quiet)})", STATUS_WORDS["green"], "; ".join(quiet)[:900],
+                     "No action needed today. Monitoring continues four times a day."])
+    return [_p(intro), _table(["Technology area", "Status", "What happened", "What it means for you"], rows),
+            _p("Full details, links and RSS feeds per technology area: [Alerts & briefings](https://aegisdefensecyber.com/threatwatch/alerts.html).")]
 
 
 def _top_actions(top: list[Item], tracked: dict) -> str:
