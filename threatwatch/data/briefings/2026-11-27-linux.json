@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-27",
+  "watch": "linux",
+  "watchName": "Linux distributions",
+  "priority": "ELEVATED",
+  "title": "Linux Distributions — Threat Intelligence Update",
+  "headline": "Public PoC code is now listed for two critical-rated Linux kernel flaws: CVE-2026-99362 (nfsd out-of-bounds write) and CVE-2026-74586 (SCTP use-after-free). Separately, EPSS for Go net/http flaw CVE-2026-42508 has risen into the top 6%. None is known to be exploited or KEV-listed.",
+  "summary": "AEGIS lists first public GitHub PoCs for CVE-2026-99362, an nfsd SEQUENCE reply slab out-of-bounds write (CVSS 3.1 9.8; Red Hat Bugzilla priority urgent), and CVE-2026-74586, an SCTP ASCONF use-after-free (CVSS 9.8 per AEGIS; the kernel description says the trigger requires an authenticated SCTP peer). Distribution fixes exist: AlmaLinux and Red Hat kernel errata ALSA/RHSA-2026:103817 and 103838 for the nfsd flaw (2026-11-26, RHEL 8 per Red Hat Bugzilla), and Rocky and AlmaLinux kernel errata including RLSA-2026:99133 for the SCTP flaw. EPSS for CVE-2026-42508 (Go net/http forwards sensitive headers after a cross-domain redirect) is 6.5%, at the 94.6th percentile. Red Hat shipped RHSA-2026:102902 for it (updated 2026-11-27). No source reports exploitation of any of the three.",
+  "changes": [
+    "2026-11-26: AlmaLinux and Red Hat critical kernel errata ALSA/RHSA-2026:103817 and 103838 address CVE-2026-99362 (AEGIS; Red Hat Bugzilla 2576719).",
+    "2026-11-27: Rocky RLSA-2026:99133 and 99135 kernel errata were updated; they cover CVE-2026-74586 (AEGIS).",
+    "2026-11-27: public PoC repositories were listed for CVE-2026-99362 and CVE-2026-74586 (AEGIS alerts f91b48086864 and a1dc1c682fe3).",
+    "2026-11-27: EPSS for CVE-2026-42508 rose to 0.06531 (94.6th percentile), and Red Hat RHSA-2026:102902 was updated (AEGIS alert 65f8c07b1f41)."
+  ],
+  "assessment": [
+    [
+      "CVE / CVSS",
+      "CVE-2026-99362: CVSS 3.1 9.8. CVE-2026-74586: CVSS 3.1 9.8. CVE-2026-42508: 9.1 (SUSE); Red Hat rates its advisory 8.7 High (AEGIS)."
+    ],
+    [
+      "Attack vector / authentication",
+      "99362: network, via an NFSv4.1 client against a kernel NFS server, with no authentication claimed by a CVE aggregator. 74586: network, but it needs an authenticated SCTP peer (kernel description). 42508: leaks headers when a Go HTTP client follows a cross-domain redirect."
+    ],
+    [
+      "Potential impact",
+      "99362: kernel memory corruption, with panic possible and code execution not demonstrated. 74586: use-after-free in the SCTP stack. 42508: disclosure of credentials or headers to a third-party host."
+    ],
+    [
+      "Exploitation attempts",
+      "None reported for any of the three (AEGIS; Red Hat Bugzilla)."
+    ],
+    [
+      "Successful compromise",
+      "Not confirmed."
+    ],
+    [
+      "Public PoC / exploit",
+      "99362 and 74586: 1 GitHub repository each, unvetted (AEGIS). 42508: none (AEGIS)."
+    ],
+    [
+      "CISA KEV / VulnCheck KEV",
+      "None listed (AEGIS)."
+    ],
+    [
+      "EPSS",
+      "AEGIS EPSS (2026-11-26): 99362 0.00755 (51.4th percentile); 74586 0.00734 (50.4th percentile); 42508 0.06531 (94.6th percentile)."
+    ],
+    [
+      "Patch availability / priority",
+      "Distribution kernel and Go errata are available (AlmaLinux, Rocky, Red Hat). Priority: prioritize NFS servers first."
+    ]
+  ],
+  "affected": [
+    [
+      "Linux kernel NFS servers (nfsd), e.g. RHEL 8 family kernels",
+      "Remote kernel memory corruption and denial of service on file servers"
+    ],
+    [
+      "Linux hosts with SCTP enabled (telecom and signalling workloads)",
+      "Kernel use-after-free reachable by an authenticated SCTP peer"
+    ],
+    [
+      "Go-based applications and components shipped by Red Hat and SUSE",
+      "Leak of authorization headers on cross-domain redirects"
+    ]
+  ],
+  "actions": [
+    [
+      "P1",
+      "Patch kernels on hosts that run nfsd and are reachable from untrusted networks, or restrict NFS to trusted clients.",
+      "Within 7 days"
+    ],
+    [
+      "P2",
+      "Apply kernel errata fleet-wide. Where SCTP is unused, blacklist the sctp module.",
+      "Within 14 days"
+    ],
+    [
+      "P2",
+      "Apply Go and dependent package updates per RHSA-2026:102902 and distribution advisories.",
+      "Within 14 days"
+    ],
+    [
+      "Note",
+      "Response targets are AEGIS recommendations, not mandatory CISA deadlines.",
+      "—"
+    ]
+  ],
+  "monitoring": [
+    [
+      "Vendor advisory revision",
+      "Rocky errata updated 2026-11-27; RHSA-2026:102902 updated 2026-11-27"
+    ],
+    [
+      "Release date",
+      "2026-11-26 (nfsd errata)"
+    ],
+    [
+      "New CVEs",
+      "CVE-2026-99366 (related nfsd slot replay flaw, Red Hat Bugzilla 2576711)"
+    ],
+    [
+      "Affected-version changes",
+      "None seen"
+    ],
+    [
+      "CVSS changes",
+      "None"
+    ],
+    [
+      "Exploitation intelligence",
+      "None reported"
+    ],
+    [
+      "KEV additions",
+      "None"
+    ],
+    [
+      "Next scheduled vendor release",
+      "Ongoing distribution errata. No fixed schedule."
+    ]
+  ],
+  "limitations": "The Red Hat and Rocky errata pages could not be fetched, so fixed package versions and the full list of affected releases are taken from the AEGIS advisory feed. The unauthenticated attack precondition for CVE-2026-99362 comes from a CVE aggregator, not a vendor. No independent source was found describing CVE-2026-42508. The PoCs have not been validated.",
+  "judgment": "Confirmed: patches are available, public PoC code is listed for two kernel flaws, and EPSS has risen for the Go flaw. Not confirmed: any exploitation, and whether the PoCs work. This is an elevated, prioritized patching item, most urgent for NFS servers exposed beyond trusted networks. It is not an emergency.",
+  "sources": [
+    {
+      "title": "Red Hat Bugzilla 2576719 (CVE-2026-99362)",
+      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2576719"
+    },
+    {
+      "title": "RHSA-2026:103817 kernel update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:103817"
+    },
+    {
+      "title": "Rocky Linux RLSA-2026:99133",
+      "url": "https://errata.rockylinux.org/RLSA-2026:99133"
+    },
+    {
+      "title": "RHSA-2026:102902 golang update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:102902"
+    },
+    {
+      "title": "CVE-2026-99362 record (threatint)",
+      "url": "https://cve.threatint.com/CVE/CVE-2026-99362"
+    },
+    {
+      "title": "Microsoft MSRC VEX CVE-2026-99362",
+      "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99362.json"
+    },
+    {
+      "title": "GitHub PoC CVE-2026-99362 (unvetted)",
+      "url": "https://github.com/ashrafzaryouh/CVE-2026-99362"
+    },
+    {
+      "title": "GitHub PoC CVE-2026-74586 (unvetted)",
+      "url": "https://github.com/TarPeg007/CVE-2026-74586"
+    }
+  ],
+  "alertIds": [
+    "f91b48086864",
+    "a1dc1c682fe3",
+    "65f8c07b1f41"
+  ]
+}

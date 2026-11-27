@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-27",
+  "watch": "endpoint-email-security",
+  "watchName": "Endpoint & email security",
+  "priority": "HIGH",
+  "title": "ASUS Control Center Express — Threat Intelligence Update",
+  "headline": "Public proof-of-concept code is now listed for CVE-2026-114202, a CVSS 10.0 hard-coded key flaw in ASUS Control Center Express that lets an unauthenticated remote attacker forge an admin token. No exploitation has been reported. Update to v1.7.29 and redeploy agents.",
+  "summary": "AEGIS now tracks a public GitHub PoC (cveForge/CVE-2026-114202, updated 2026-11-23) for CVE-2026-114202, a CWE-321 hard-coded cryptographic key flaw in ASUS Control Center Express, the ASUS IT management console and agent. The flaw lets a remote user forge an authentication token and gain administrative privileges (CVSS 4.0 10.0, AV:N/PR:N/UI:N). ASUS published its advisory on 2026-11-18. Reporting from BleepingComputer and SecurityOnline says v1.7.29 fixes it, and that agents must also be updated. The flaw is not in CISA KEV, and no exploitation has been reported. The PoC is unvetted.",
+  "changes": [
+    "2026-11-18: ASUS security advisory covering Control Center Express and related products (SecurityOnline; BleepingComputer, 2026-11-19).",
+    "2026-11-23: a public GitHub PoC repository (cveForge/CVE-2026-114202) was last updated (AEGIS PoC tracking). Earlier reporting from 2026-11-19 said no public exploit existed.",
+    "2026-11-24: Trend Micro ZDI published ZDI-26-1155 for the flaw (AEGIS vendor advisory feed).",
+    "2026-11-27: AEGIS raised a high alert for the first public exploit code (alert 8128d9d2738c)."
+  ],
+  "assessment": [
+    [
+      "CVE / CVSS",
+      "CVE-2026-114202. CVSS 4.0 10.0 Critical (AEGIS/NVD). CWE-321."
+    ],
+    [
+      "Attack vector / authentication",
+      "Network, low complexity, no privileges, no user interaction (AEGIS CVSS vector)."
+    ],
+    [
+      "Potential impact",
+      "Administrative control of the management console, and through it potentially the managed endpoints and servers. The downstream impact is an inference from the console's role, not a vendor statement."
+    ],
+    [
+      "Exploitation attempts",
+      "None reported (AEGIS; SecurityOnline; BleepingComputer)."
+    ],
+    [
+      "Successful compromise",
+      "Not confirmed."
+    ],
+    [
+      "Public PoC / exploit",
+      "Yes. AEGIS lists 1 GitHub repository describing a 3-stage token-forging PoC. It is unvetted, and AEGIS has no Metasploit or Exploit-DB entries."
+    ],
+    [
+      "CISA KEV / VulnCheck KEV",
+      "Not listed (AEGIS)."
+    ],
+    [
+      "EPSS",
+      "AEGIS EPSS (2026-11-26): 0.00662, 46.5th percentile."
+    ],
+    [
+      "Patch availability / priority",
+      "Fixed in v1.7.29, then update the agents (BleepingComputer). The CVE record lists versions through 1.7.27, so the status of 1.7.28 is unclear. Priority: high."
+    ]
+  ],
+  "affected": [
+    [
+      "ASUS Control Center Express (before v1.7.29) and its agents",
+      "Unauthenticated admin takeover of the IT management plane"
+    ]
+  ],
+  "actions": [
+    [
+      "P1",
+      "Identify any ASUS Control Center Express servers. Restrict their management interfaces to admin networks only and block internet exposure.",
+      "Within 24 hours"
+    ],
+    [
+      "P1",
+      "Upgrade to v1.7.29 and update agents via Client Agent Updater.",
+      "Within 72 hours"
+    ],
+    [
+      "P2",
+      "Review console logs for unexpected admin sessions or token use since 2026-11-18.",
+      "Within 7 days"
+    ],
+    [
+      "Note",
+      "Response targets are AEGIS recommendations, not mandatory CISA deadlines.",
+      "—"
+    ]
+  ],
+  "monitoring": [
+    [
+      "Vendor advisory revision",
+      "None seen since 2026-11-18"
+    ],
+    [
+      "Release date",
+      "2026-11-18 (ASUS); 2026-11-24 (ZDI-26-1155)"
+    ],
+    [
+      "New CVEs",
+      "Related ASUS CVEs in the same batch: CVE-2026-114204, CVE-2026-114205, CVE-2026-126574 (SecurityOnline)"
+    ],
+    [
+      "Affected-version changes",
+      "Unresolved: the CVE record says through 1.7.27, the ASUS bulletin reportedly says before 1.7.29"
+    ],
+    [
+      "CVSS changes",
+      "None"
+    ],
+    [
+      "Exploitation intelligence",
+      "None reported. Monitor because the PoC is public."
+    ],
+    [
+      "KEV additions",
+      "None"
+    ],
+    [
+      "Next scheduled vendor release",
+      "Not published by ASUS"
+    ]
+  ],
+  "limitations": "The ASUS security advisory page could not be fetched, so the fixed version comes from news reporting. One CVE aggregator still says no patched version is published. The PoC has not been tested, and its effectiveness is unverified. The ZDI advisory text was not read.",
+  "judgment": "Confirmed: this is a critical, unauthenticated, network-reachable flaw in an IT management product, and public PoC code is now listed. No exploitation has been reported, and the flaw is not in KEV. Deployment is narrower than mainstream edge products. Organizations that run the console should treat it as high priority because management planes are attractive targets.",
+  "sources": [
+    {
+      "title": "ASUS Product Security Advisory",
+      "url": "https://www.asus.com/security-advisory"
+    },
+    {
+      "title": "BleepingComputer: ASUS warns of critical hard-coded key flaw in Control Center Express",
+      "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/"
+    },
+    {
+      "title": "SecurityOnline: ASUS fixes 12 flaws (CVE-2026-114202)",
+      "url": "https://securityonline.info/asus-fixes-12-flaws-cve-2026-114202/"
+    },
+    {
+      "title": "NVD CVE-2026-114202",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114202"
+    },
+    {
+      "title": "GitHub PoC repository (unvetted)",
+      "url": "https://github.com/cveForge/CVE-2026-114202"
+    },
+    {
+      "title": "AEGIS validate: CVE-2026-114202",
+      "url": "https://aegisdefensecyber.com/threatwatch/validate.html?cve=CVE-2026-114202"
+    }
+  ],
+  "alertIds": [
+    "8128d9d2738c"
+  ]
+}

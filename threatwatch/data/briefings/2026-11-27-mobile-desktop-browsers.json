@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-27",
+  "watch": "mobile-desktop-browsers",
+  "watchName": "Mobile, desktop & browsers",
+  "priority": "ELEVATED",
+  "title": "Browsers & ChromeOS — Threat Intelligence Update",
+  "headline": "Public PoC code is now listed for CVE-2026-74936, a WebAssembly use-after-free in Firefox and Thunderbird that Mozilla fixed in August. Google also shipped a ChromeOS / ChromeOS Flex stable update covering about 404 CVEs. Neither source marks any flaw as exploited.",
+  "summary": "AEGIS lists a first public GitHub PoC (SneakyNachos/CVE-2026-74936-gc-potato) for CVE-2026-74936. The flaw was fixed on 2026-08-18 in Firefox 154, ESR 140.14 and ESR 153.1, and in Thunderbird 154, 140.14 and 153.1 (Mozilla MFSA 2026-74, impact high). NVD scores it 9.8, while Red Hat scores it 7.5 because exploitation requires user interaction. Hosts still on older builds are at risk. Google also published a Stable Channel Update for ChromeOS / ChromeOS Flex on 2026-11-23 (16868.29.0, Chrome 158.0.8127.98). AEGIS links about 404 CVEs to it. In a sample of the linked CVEs, none is KEV-listed or marked exploited.",
+  "changes": [
+    "2026-08-18: Mozilla fixed CVE-2026-74936 in Firefox 154 and the ESR and Thunderbird releases (MFSA 2026-74).",
+    "2026-11-23: Google published the ChromeOS / ChromeOS Flex stable update 16868.29.0 (Chrome Releases). AEGIS ingested it on 2026-11-27 (alert 3e912eb75903).",
+    "2026-11-27: a public PoC was listed for CVE-2026-74936 (AEGIS alert c90fc7b48c40)."
+  ],
+  "assessment": [
+    [
+      "CVE / CVSS",
+      "CVE-2026-74936: NVD 9.8; Red Hat 7.5 (AV:N/AC:H/UI:R). Mozilla impact: high. ChromeOS update: about 404 CVEs of mixed severity."
+    ],
+    [
+      "Attack vector / authentication",
+      "Network. The victim must load malicious web or mail content, and no authentication is needed."
+    ],
+    [
+      "Potential impact",
+      "Memory corruption in the JavaScript/WebAssembly engine, a potential code execution path inside the content process."
+    ],
+    [
+      "Exploitation attempts",
+      "None reported (Mozilla, Red Hat, Tenable; AEGIS)."
+    ],
+    [
+      "Successful compromise",
+      "Not confirmed."
+    ],
+    [
+      "Public PoC / exploit",
+      "CVE-2026-74936: 1 GitHub repository, unvetted (AEGIS). ChromeOS: none flagged."
+    ],
+    [
+      "CISA KEV / VulnCheck KEV",
+      "Not listed (AEGIS)."
+    ],
+    [
+      "EPSS",
+      "AEGIS EPSS (2026-11-26): CVE-2026-74936 0.00592, 42.3rd percentile."
+    ],
+    [
+      "Patch availability / priority",
+      "Patches have been available since August 2026 for Firefox and Thunderbird, and since 2026-11-23 for ChromeOS. Priority: verify version compliance."
+    ]
+  ],
+  "affected": [
+    [
+      "Firefox before 154, Firefox ESR before 140.14 / 153.1",
+      "Drive-by memory corruption on user endpoints"
+    ],
+    [
+      "Thunderbird before 154 / 140.14 / 153.1",
+      "Malicious content rendered in the mail client"
+    ],
+    [
+      "ChromeOS / ChromeOS Flex before 16868.29.0",
+      "Multiple browser and OS flaws on managed Chromebooks"
+    ]
+  ],
+  "actions": [
+    [
+      "P2",
+      "Confirm Firefox and Thunderbird fleets, including ESR and Linux distribution packages, are at or above the fixed versions. Remediate stragglers.",
+      "Within 7 days"
+    ],
+    [
+      "P2",
+      "Confirm managed ChromeOS devices have received 16868.29.0 or later through the admin console.",
+      "Within 14 days"
+    ],
+    [
+      "Note",
+      "Response targets are AEGIS recommendations, not mandatory CISA deadlines.",
+      "—"
+    ]
+  ],
+  "monitoring": [
+    [
+      "Vendor advisory revision",
+      "None for MFSA 2026-74"
+    ],
+    [
+      "Release date",
+      "2026-08-18 (Mozilla); 2026-11-23 (ChromeOS)"
+    ],
+    [
+      "New CVEs",
+      "None tied to these events"
+    ],
+    [
+      "Affected-version changes",
+      "None"
+    ],
+    [
+      "CVSS changes",
+      "None"
+    ],
+    [
+      "Exploitation intelligence",
+      "None reported"
+    ],
+    [
+      "KEV additions",
+      "None"
+    ],
+    [
+      "Next scheduled vendor release",
+      "Mozilla and Chrome follow regular release trains; the next Chrome stable desktop release, 159, is in early stable."
+    ]
+  ],
+  "limitations": "The PoC has not been validated. The ChromeOS post's full CVE list and severities were not reviewed individually, and only a sample of the linked CVEs was checked against AEGIS exploitation data. Google's text did not confirm the seven ChromeOS-specific fixes reported by Chrome Unboxed.",
+  "judgment": "Confirmed: public PoC code is listed for an older Firefox and Thunderbird flaw that was patched in August, and a large routine ChromeOS update has shipped. Neither involves reported exploitation. The practical risk falls on unmanaged or lagging installations. This is a version-compliance check, not an emergency.",
+  "sources": [
+    {
+      "title": "Mozilla Foundation Security Advisory 2026-74",
+      "url": "https://www.mozilla.org/security/advisories/mfsa2026-74/"
+    },
+    {
+      "title": "Red Hat CVE-2026-74936",
+      "url": "https://access.redhat.com/security/cve/CVE-2026-74936"
+    },
+    {
+      "title": "Tenable CVE-2026-74936",
+      "url": "https://www.tenable.com/cve/CVE-2026-74936"
+    },
+    {
+      "title": "Chrome Releases 2026",
+      "url": "https://chromereleases.googleblog.com/2026"
+    },
+    {
+      "title": "GitHub PoC CVE-2026-74936 (unvetted)",
+      "url": "https://github.com/SneakyNachos/CVE-2026-74936-gc-potato"
+    },
+    {
+      "title": "AEGIS validate: CVE-2026-74936",
+      "url": "https://aegisdefensecyber.com/threatwatch/validate.html?cve=CVE-2026-74936"
+    }
+  ],
+  "alertIds": [
+    "c90fc7b48c40",
+    "3e912eb75903"
+  ]
+}
