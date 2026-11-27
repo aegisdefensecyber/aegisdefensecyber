@@ -3,7 +3,7 @@
   "dataset": {
     "status": "verified",
     "label": "Relationships from MITRE ATT&CK Enterprise 20.1: groups, their campaigns, the CVEs and exploitation techniques used, targeted industries, and indicators of compromise from CISA advisories and abuse.ch ThreatFox. Every link cites its source.",
-    "updatedAt": "2026-11-27T16:54:56Z",
+    "updatedAt": "2026-11-27T21:55:36Z",
     "source": "https://attack.mitre.org/campaigns/"
   },
   "nodes": [
@@ -778,12 +778,32 @@
       "malware": null
     },
     {
-      "id": "o-c5e37d2037a1",
+      "id": "o-b66c59363192",
       "type": "ioc",
-      "label": "x[.]hri88[.]org",
+      "label": "indpp[.]net",
       "iocType": "domain",
       "source": "abuse.ch ThreatFox",
-      "ref": "ThreatFox #2055893",
+      "ref": "ThreatFox #2056303",
+      "firstSeen": "2026-11-27",
+      "malware": "Vidar"
+    },
+    {
+      "id": "o-78bc1c846583",
+      "type": "ioc",
+      "label": "u[.]babeh181[.]org",
+      "iocType": "domain",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #2056304",
+      "firstSeen": "2026-11-27",
+      "malware": "Vidar"
+    },
+    {
+      "id": "o-b06efd301df1",
+      "type": "ioc",
+      "label": "n[.]indpp[.]net",
+      "iocType": "domain",
+      "source": "abuse.ch ThreatFox",
+      "ref": "ThreatFox #2056302",
       "firstSeen": "2026-11-27",
       "malware": "Vidar"
     },
@@ -794,26 +814,6 @@
       "iocType": "domain",
       "source": "abuse.ch ThreatFox",
       "ref": "ThreatFox #2055894",
-      "firstSeen": "2026-11-27",
-      "malware": "Vidar"
-    },
-    {
-      "id": "o-d8ead7ec5027",
-      "type": "ioc",
-      "label": "g1[.]baber168[.]org",
-      "iocType": "domain",
-      "source": "abuse.ch ThreatFox",
-      "ref": "ThreatFox #2055839",
-      "firstSeen": "2026-11-27",
-      "malware": "Vidar"
-    },
-    {
-      "id": "o-2bfa3fb2a0c2",
-      "type": "ioc",
-      "label": "wt[.]baber168[.]org",
-      "iocType": "domain",
-      "source": "abuse.ch ThreatFox",
-      "ref": "ThreatFox #2055718",
       "firstSeen": "2026-11-27",
       "malware": "Vidar"
     },
@@ -2866,22 +2866,56 @@
     {
       "id": "e126",
       "source": "a-G1015",
-      "target": "o-c5e37d2037a1",
+      "target": "o-b66c59363192",
       "relation": "indicator",
       "confidence": "low",
       "why": "abuse.ch ThreatFox lists this indicator for Vidar, malware MITRE ATT&CK attributes to Scattered Spider; reporter confidence 100%.",
       "evidence": {
         "type": "abuse.ch ThreatFox",
-        "url": "https://threatfox.abuse.ch/ioc/2055893/",
+        "url": "https://threatfox.abuse.ch/ioc/2056303/",
         "reportDate": "2026-11-27",
         "firstObserved": "2026-11-27",
         "lastObserved": "2026-11-27",
-        "provenance": "ThreatFox #2055893",
+        "provenance": "ThreatFox #2056303",
         "report": null
       }
     },
     {
       "id": "e127",
+      "source": "a-G1015",
+      "target": "o-78bc1c846583",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for Vidar, malware MITRE ATT&CK attributes to Scattered Spider; reporter confidence 100%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/2056304/",
+        "reportDate": "2026-11-27",
+        "firstObserved": "2026-11-27",
+        "lastObserved": "2026-11-27",
+        "provenance": "ThreatFox #2056304",
+        "report": null
+      }
+    },
+    {
+      "id": "e128",
+      "source": "a-G1015",
+      "target": "o-b06efd301df1",
+      "relation": "indicator",
+      "confidence": "low",
+      "why": "abuse.ch ThreatFox lists this indicator for Vidar, malware MITRE ATT&CK attributes to Scattered Spider; reporter confidence 100%.",
+      "evidence": {
+        "type": "abuse.ch ThreatFox",
+        "url": "https://threatfox.abuse.ch/ioc/2056302/",
+        "reportDate": "2026-11-27",
+        "firstObserved": "2026-11-27",
+        "lastObserved": "2026-11-27",
+        "provenance": "ThreatFox #2056302",
+        "report": null
+      }
+    },
+    {
+      "id": "e129",
       "source": "a-G1015",
       "target": "o-7b7bffc93588",
       "relation": "indicator",
@@ -2894,40 +2928,6 @@
         "firstObserved": "2026-11-27",
         "lastObserved": "2026-11-27",
         "provenance": "ThreatFox #2055894",
-        "report": null
-      }
-    },
-    {
-      "id": "e128",
-      "source": "a-G1015",
-      "target": "o-d8ead7ec5027",
-      "relation": "indicator",
-      "confidence": "low",
-      "why": "abuse.ch ThreatFox lists this indicator for Vidar, malware MITRE ATT&CK attributes to Scattered Spider; reporter confidence 100%.",
-      "evidence": {
-        "type": "abuse.ch ThreatFox",
-        "url": "https://threatfox.abuse.ch/ioc/2055839/",
-        "reportDate": "2026-11-27",
-        "firstObserved": "2026-11-27",
-        "lastObserved": "2026-11-27",
-        "provenance": "ThreatFox #2055839",
-        "report": null
-      }
-    },
-    {
-      "id": "e129",
-      "source": "a-G1015",
-      "target": "o-2bfa3fb2a0c2",
-      "relation": "indicator",
-      "confidence": "low",
-      "why": "abuse.ch ThreatFox lists this indicator for Vidar, malware MITRE ATT&CK attributes to Scattered Spider; reporter confidence 100%.",
-      "evidence": {
-        "type": "abuse.ch ThreatFox",
-        "url": "https://threatfox.abuse.ch/ioc/2055718/",
-        "reportDate": "2026-11-27",
-        "firstObserved": "2026-11-27",
-        "lastObserved": "2026-11-27",
-        "provenance": "ThreatFox #2055718",
         "report": null
       }
     },
