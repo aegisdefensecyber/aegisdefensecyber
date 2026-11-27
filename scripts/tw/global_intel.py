@@ -364,6 +364,79 @@ def executive_summary(events: list[dict], signals: list[dict], now: datetime) ->
     }
 
 
+SOURCE_ROLES = ["reporting", "perspective"]
+
+
+def _norm_url(u: str) -> str:
+    u = u.lower().split("://", 1)[-1]
+    return u[4:] if u.startswith("www.") else u
+
+
+def load_source_registry(root: Path) -> tuple[list[dict], list[str]]:
+    """Validate global-intelligence/editorial/sources.json (optional). Returns (entries, errors)."""
+    p = root / "global-intelligence" / "editorial" / "sources.json"
+    if not p.exists():
+        return [], []
+    try:
+        raw = json.loads(p.read_text(encoding="utf-8"))
+    except ValueError as exc:
+        return [], [f"sources.json: {exc}"]
+    errs, out, seen = [], [], set()
+    entries = raw.get("sources") if isinstance(raw, dict) else None
+    if not isinstance(entries, list):
+        return [], ["sources.json: must be an object with a 'sources' list"]
+    for i, s in enumerate(entries):
+        sid = s.get("id") if isinstance(s, dict) else None
+        tag = f"sources.json[{i}] {sid or ''}".strip()
+        if not isinstance(sid, str) or not re.fullmatch(r"[a-z0-9-]{2,60}", sid):
+            errs.append(f"{tag}: id must be lowercase letters, digits and dashes")
+            continue
+        if sid in seen:
+            errs.append(f"{tag}: duplicate id")
+        seen.add(sid)
+        if not s.get("name") or not s.get("publisher"):
+            errs.append(f"{tag}: name and publisher are required")
+        if s.get("role") not in SOURCE_ROLES:
+            errs.append(f"{tag}: role must be one of {SOURCE_ROLES}")
+        if s.get("type") not in SOURCE_TYPES:
+            errs.append(f"{tag}: type must be one of {SOURCE_TYPES}")
+        if s.get("region") not in REGIONS:
+            errs.append(f"{tag}: region must be one of {REGIONS}")
+        if not _https(s.get("url")):
+            errs.append(f"{tag}: url must be https")
+        if s.get("feed") is not None and not _https(s.get("feed")):
+            errs.append(f"{tag}: feed must be https or null")
+        match = s.get("match")
+        if not isinstance(match, list) or not match or not all(_https(m) for m in match):
+            errs.append(f"{tag}: match must list https URL prefixes")
+            match = []
+        out.append({"id": sid, "role": s.get("role"), "match": [_norm_url(m) for m in match]})
+    if not out and not errs:
+        errs.append("sources.json: no sources listed")
+    return out, errs
+
+
+def perspective_violations(rec: dict, registry: list[dict]) -> list[str]:
+    """Commentary ('perspective') sources may only be cited in international_perspectives."""
+    prefixes = [(m, s["id"]) for s in registry if s["role"] == "perspective" for m in s["match"]]
+    if not prefixes:
+        return []
+    bad = {}
+    for i, src in enumerate(rec["sources"]):
+        u = _norm_url(src["url"])
+        for m, sid in prefixes:
+            if u.startswith(m):
+                bad[i] = sid
+    errs = []
+    for field in ("confirmed_facts", "reported_claims"):
+        for c in rec.get(field) or []:
+            for i in c["sources"]:
+                if i in bad:
+                    errs.append(f"{rec['id']}: {field} cites source {i} ({bad[i]}), a commentary source; "
+                                f"cite it only in international_perspectives")
+    return errs
+
+
 def build(root: Path, now: datetime | None = None, write: bool = True) -> tuple[dict, list[str]]:
     """Validate all records and (optionally) write the public data files. Returns (outputs, errors)."""
     now = now or datetime.now(timezone.utc)
@@ -372,6 +445,8 @@ def build(root: Path, now: datetime | None = None, write: bool = True) -> tuple[
     errs: list[str] = []
     records: list[dict] = []
     seen = set()
+    registry, reg_errs = load_source_registry(root)
+    errs += reg_errs
     for p in sorted(rec_dir.glob("*.json")):
         try:
             rec = validate_record(json.loads(p.read_text(encoding="utf-8")))
@@ -383,6 +458,7 @@ def build(root: Path, now: datetime | None = None, write: bool = True) -> tuple[
         if p.stem != rec["id"]:
             errs.append(f"{p.name}: file name must be {rec['id']}.json")
         seen.add(rec["id"])
+        errs += perspective_violations(rec, registry)
         records.append(rec)
     public = [r for r in records if r["publication_status"] in PUBLIC_STATUSES]
     demo = {r["demo"] for r in public}

@@ -140,6 +140,36 @@ class BuildRules(unittest.TestCase):
         self.assertEqual(len(out["historical-threats.json"]["records"]), 1)
         self.assertEqual(out["active-threats.json"]["records"], [])
 
+    def put_registry(self, sources):
+        (self.recs.parent / "sources.json").write_text(json.dumps({"schemaVersion": 1, "sources": sources}))
+
+    def reg(self, **k):
+        s = {"id": "comment-site", "name": "Comment", "publisher": "Comment", "role": "perspective", "type": "news",
+             "region": "Global", "url": "https://comment.example/", "feed": None,
+             "match": ["https://www.comment.example/opinion/"]}
+        s.update(k)
+        return s
+
+    def test_perspective_source_only_in_perspectives(self):
+        self.put_registry([self.reg()])
+        src = {"publisher": "Comment", "title": "Op-ed", "published": "2026-11-20", "type": "news",
+               "url": "https://comment.example/opinion/1", "accessed": "2026-11-21"}
+        self.put(base(sources=[src]))
+        _, errs = G.build(self.root, NOW, write=False)
+        self.assertTrue(any("commentary source" in e for e in errs), errs)
+        ok = base(sources=[base()["sources"][0], src],
+                  international_perspectives=[{"text": "A view.", "sources": [1], "perspective": "Columnist"}])
+        self.put(ok)
+        _, errs = G.build(self.root, NOW, write=False)
+        self.assertFalse(any("commentary source" in e for e in errs), errs)
+
+    def test_registry_is_validated(self):
+        self.put_registry([self.reg(role="opinion", url="http://x.example/")])
+        self.put(base())
+        _, errs = G.build(self.root, NOW, write=False)
+        self.assertTrue(any("role must be" in e for e in errs))
+        self.assertTrue(any("url must be https" in e for e in errs))
+
     def test_repository_records_build(self):
         _, errs = G.build(ROOT, NOW, write=False)
         self.assertEqual(errs, [])

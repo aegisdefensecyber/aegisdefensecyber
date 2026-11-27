@@ -28,6 +28,20 @@ Only `published`, `updated` and `archived` appear publicly. Drafts never do.
 - Links must be https. All text is rendered as plain text (no HTML).
 - Demonstration records (`GI-DEMO-…`, `demo: true`) can never be published alongside live records.
 
+## Source registry (monitoring list)
+`global-intelligence/editorial/sources.json` lists the outlets analysts monitor when collecting and drafting
+records: BBC World, Al Jazeera News and Opinion, Double Down News, Eagle News (Philippines), Africanews, CMC and
+Caribbean360, CoinDesk and The Block, Reuters, AP, France 24 and DW. Feed collection (Phase 3) is not built, so
+this list guides drafting. Nothing ingests it automatically yet.
+- `role: "reporting"` sources may support confirmed facts and reported claims (subject to the usual rules).
+- `role: "perspective"` sources (Al Jazeera Opinion, Double Down News) are commentary. The build rejects any
+  record that cites them, by `match` URL prefix, in `confirmed_facts` or `reported_claims`. Cite them only in
+  `international_perspectives`, attributed to the author or speaker.
+- `state_affiliated: true` in the registry is a reminder to set `state_affiliated` on the record's source entry.
+- Wire copy republished by a listed outlet still needs `syndicated_from`. Being listed does not make a source
+  independent.
+- `feed_verified: false` means the feed address has not been confirmed by fetching it.
+
 ## Going live
 1. Write the first real records as `GI-2026-0001.json` etc. (copy a demo file for the structure).
 2. Set every demo record's `publication_status` to `archived`, or delete the demo files *before* the first live
