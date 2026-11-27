@@ -5,7 +5,8 @@ Two steps around the commit in the publish workflow:
   --render  writes threatwatch/email/alert-<stamp>.html for significant alerts not yet emailed
             (and threatwatch/email/alerts-pending.json). Runs before the commit so the page goes live.
   --send    waits for that page to be live, then sends it through Zoho Campaigns to the alert
-            audience: ZOHO_ALERTS_LIST_KEY, optionally narrowed by ZOHO_ALERTS_SEGMENT_ID (the segment
+            audience: ZOHO_ALERTS_LIST_KEY; or, with ZOHO_ALERTS_SEGMENT_ID set, the daily-brief list; or the
+            Zoho list named ZOHO_ALERTS_LIST_NAME (default "ThreatWatch Alerts"); optionally narrowed by ZOHO_ALERTS_SEGMENT_ID (the segment
             of the daily-brief list whose "ThreatWatch alerts" field is Yes). Not configured = no email.
 Alert emails are batched per update (four times a day) and never resend an alert.
 """
@@ -27,6 +28,29 @@ W = DATA_DIR / "watch"
 EMAIL_DIR = BD.EMAIL_DIR
 SIGNIFICANT = ("critical", "high")
 MAX_AGE_H = 24          # never email an alert older than this (e.g. right after email is first enabled)
+
+
+DEFAULT_ALERTS_LIST = "ThreatWatch Alerts"
+
+
+def alerts_list_key(campaigns: str, token: str) -> str:
+    """Which Zoho list receives alert emails, in order of preference:
+    1. ZOHO_ALERTS_LIST_KEY;
+    2. with ZOHO_ALERTS_SEGMENT_ID set, the daily-brief list (the segment narrows it to subscribers who
+       ticked "ThreatWatch alerts" on the signup form);
+    3. the list named ZOHO_ALERTS_LIST_NAME (default "ThreatWatch Alerts").
+    Empty string when none applies, so alerts are never sent to the whole daily-brief list by accident."""
+    if SD._env("ZOHO_ALERTS_LIST_KEY"):
+        return SD._env("ZOHO_ALERTS_LIST_KEY")
+    if SD._env("ZOHO_ALERTS_SEGMENT_ID"):
+        return SD.list_key(campaigns, token)
+    name = SD._env("ZOHO_ALERTS_LIST_NAME", DEFAULT_ALERTS_LIST).strip().lower()
+    raw = SD._request(f"{campaigns}/api/v1.1/getmailinglists?resfmt=JSON&range=200",
+                      headers={"Authorization": f"Zoho-oauthtoken {token}"})
+    for lst in SD._zoho_ok(raw, "getmailinglists").get("list_of_details") or []:
+        if str(lst.get("listname", "")).strip().lower() == name:
+            return str(lst["listkey"])
+    return ""
 
 
 def esc(s) -> str:
@@ -102,18 +126,21 @@ def main() -> int:
         if not p.get("pending"):
             print("No alert email pending.")
             return 0
-        list_key = SD._env("ZOHO_ALERTS_LIST_KEY")
-        missing = [n for n in SD.REQUIRED if not SD._env(n)] + ([] if list_key else ["ZOHO_ALERTS_LIST_KEY"]) + \
-                  ([] if SD.sender()[0] else ["ZOHO_FROM_EMAIL"])
+        missing = [n for n in SD.REQUIRED if not SD._env(n)] + ([] if SD.sender()[0] else ["ZOHO_FROM_EMAIL"])
         if missing:
             print(f"Alert email not configured (missing {', '.join(missing)}); alerts remain on the website and RSS.")
             return 0
         try:
             accounts = SD._https(SD._env("ZOHO_ACCOUNTS_URL", "https://accounts.zoho.com"), "ZOHO_ACCOUNTS_URL")
             campaigns = SD._https(SD._env("ZOHO_CAMPAIGNS_URL", "https://campaigns.zoho.com"), "ZOHO_CAMPAIGNS_URL")
+            token = SD.access_token(accounts)
+            list_key = alerts_list_key(campaigns, token)
+            if not list_key:
+                print(f"Alert email not configured: no ZOHO_ALERTS_LIST_KEY and no Zoho mailing list named "
+                      f"{SD._env('ZOHO_ALERTS_LIST_NAME', DEFAULT_ALERTS_LIST)!r}; alerts remain on the website and RSS.")
+                return 0
             url = f"{BD.SITE_URL}/{p['path']}"
             SD.wait_until_live(url, p["stamp"], marker=f"tw-alert:{p['stamp']}")
-            token = SD.access_token(accounts)
             seg = SD._env("ZOHO_ALERTS_SEGMENT_ID")
             auth = {"Authorization": f"Zoho-oauthtoken {token}"}
             params = {"resfmt": "JSON", "campaignname": f"ThreatWatch alert {p['stamp']}", "from_email": SD.sender()[0],
