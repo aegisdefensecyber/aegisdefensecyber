@@ -19,7 +19,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: threatwatch-publish          # shares the lock with the brief/catalog build: one writer at a time
+  group: threatwatch-advisories       # own lock: a queued collector must never replace a queued publish run (both rebase before pushing)
   cancel-in-progress: false
 
 jobs:
