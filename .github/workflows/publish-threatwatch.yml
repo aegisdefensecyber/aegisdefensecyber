@@ -108,6 +108,9 @@ jobs:
           if [ "${{ inputs.refresh_report }}" = "true" ]; then python scripts/build_brief.py --refresh-report
           elif [ "${{ inputs.force == true || (github.event_name == 'push' && contains(github.event.head_commit.message, '[force-update]')) }}" = "true" ]; then python scripts/build_brief.py --force; else python scripts/build_brief.py; fi
           echo "exit=$?" >> "$GITHUB_OUTPUT"
+      - name: Build watchlist alerts
+        continue-on-error: true   # alert problems never block the brief
+        run: python scripts/build_watch.py
       - name: Commit generated data
         run: |
           git config user.name "aegis-threatwatch-bot"

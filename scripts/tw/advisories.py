@@ -54,6 +54,7 @@ DISCOVER_DOMAINS = [
     "rockwellautomation.com", "honeywell.com", "phoenixcontact.com", "bosch.com", "mitsubishielectric.com",
     "lenovo.com", "hp.com", "apple.com", "google.com", "mozilla.org", "canonical.com", "debian.org",
 ]
+ORACLE_RSS = "https://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/rss-otn-sec.xml"
 FORTINET_RSS = "https://filestore.fortinet.com/fortiguard/rss/ir.xml"
 PANW_JSON = "https://security.paloaltonetworks.com/json/?limit=100&sort=-date"
 GHSA_API = "https://api.github.com/advisories?type=reviewed&sort=updated&direction=desc&per_page=100"
@@ -415,6 +416,25 @@ def parse_fortinet_rss(xml: str) -> list[dict]:
                         "fixes": [{"type": "vendor_fix", "text": "See the Solutions section of the Fortinet advisory for fixed versions.", "url": link}],
                         "exploited": True if re.search(r"exploited in the wild|observed .* exploited", desc, re.I) else None,
                         "exploitNote": None, "description": _clip(desc, 600) or None, "cwe": None})
+    return out
+
+
+def parse_vendor_rss(xml: str, vendor: str) -> list[dict]:
+    """Generic vendor bulletin RSS (e.g. Oracle CPU / Security Alerts). Items without CVEs are kept (cve=None)."""
+    out = []
+    for item in re.findall(r"<item>(.*?)</item>", xml or "", re.S):
+        g = lambda tag: (re.search(rf"<{tag}[^>]*>(.*?)</{tag}>", item, re.S) or [None, ""])[1]  # noqa: E731
+        clean = lambda t: re.sub(r"<!\[CDATA\[|\]\]>", "", t).replace("&lt;", "<").replace("&gt;", ">").replace("&amp;", "&")  # noqa: E731
+        desc = re.sub(r"<[^>]+>", " ", clean(g("description")))
+        link = safe_url(clean(g("link")).strip())
+        title = _clip(clean(g("title")), 200)
+        when = _iso(_ts(clean(g("pubDate")).strip()))
+        base = {"source": "Vendor feed", "vendor": vendor, "publisher": vendor, "id": (link or title or "")[-120:], "title": title,
+                "url": link, "csaf": None, "released": when, "updated": when, "cvss": None, "severity": None, "products": [],
+                "productsMore": 0, "fixes": [{"type": "vendor_fix", "text": "See the vendor advisory for patches.", "url": link}] if link else [],
+                "exploited": None, "exploitNote": None, "description": _clip(desc, 600) or None, "cwe": None}
+        cves = sorted(set(CVE_RE.findall(title + " " + desc)))
+        out += [dict(base, cve=c) for c in cves] or [dict(base, cve=None)]
     return out
 
 

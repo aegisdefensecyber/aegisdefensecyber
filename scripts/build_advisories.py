@@ -35,7 +35,8 @@ def direct_records(state: dict, deadline: float, health: dict) -> list[dict]:
     rows, notes = [], []
     for name, fn in (("direct_csaf", lambda: A.collect_csaf(state, deadline, notes)[0]),
                      ("fortinet", lambda: A.parse_fortinet_rss(A._get(A.FORTINET_RSS, accept="application/rss+xml")[0].decode("utf-8", "replace"))),
-                     ("paloalto", lambda: A.parse_panw(A._json(A.PANW_JSON)))):
+                     ("paloalto", lambda: A.parse_panw(A._json(A.PANW_JSON))),
+                     ("oracle", lambda: A.parse_vendor_rss(A._get(A.ORACLE_RSS, accept="application/rss+xml")[0].decode("utf-8", "replace"), "Oracle"))):
         t0 = time.time()
         try:
             got = fn()
@@ -45,11 +46,11 @@ def direct_records(state: dict, deadline: float, health: dict) -> list[dict]:
             health[name] = {"ok": False, "error": str(exc)[:200]}
     adv: dict[tuple, dict] = {}
     for r in rows:
-        key = (r["_src"], r.get("id") or r.get("url") or r["cve"])
+        key = (r["_src"], r.get("id") or r.get("url") or r.get("cve"))
         a = adv.setdefault(key, {"id": str(key[1])[:120], "src": r["_src"], "vendor": r.get("vendor"), "title": r.get("title"),
                                  "url": r.get("url"), "released": r.get("released"), "updated": r.get("updated"),
                                  "cves": [], "sev": None, "cvss": None, "products": [], "fix": [], "expl": None})
-        if r["cve"] not in a["cves"]:
+        if r.get("cve") and r["cve"] not in a["cves"]:
             a["cves"].append(r["cve"])
         if r.get("cvss") is not None and (a["cvss"] is None or r["cvss"] > a["cvss"]):
             a["cvss"], a["sev"] = r["cvss"], r.get("severity")
@@ -77,7 +78,8 @@ def main() -> int:
     from tw import circl
     ch = circl.collect(state, now, budget, on_records=lambda src, recs: repo.upsert(recs, iso(now)))
     health.update(ch)
-    labels = {"direct_csaf": "Direct CSAF provider feeds", "fortinet": "Fortinet PSIRT", "paloalto": "Palo Alto Networks"}
+    labels = {"direct_csaf": "Direct CSAF provider feeds", "fortinet": "Fortinet PSIRT", "paloalto": "Palo Alto Networks",
+              "oracle": "Oracle Security Alerts"}
     for k, v in _direct(state, {}, repo, now).items():
         health[k] = dict(v, label=labels[k], group="Vendor", complete=v.get("ok"))
 

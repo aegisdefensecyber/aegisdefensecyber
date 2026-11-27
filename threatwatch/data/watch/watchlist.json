@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "note": "Edit this list to change what AEGIS watches. vendors/products match CVE vendor and product names and advisory vendors/titles (case-insensitive substrings); cves are always watched in full detail; keywords match advisory titles. minCvss limits per-CVE alerts for new CVEs; escalations (KEV, exploitation, first PoC, EPSS jump) on watched CVEs at or above minCvss, and on the listed cves, always alert.",
+  "watches": [
+    {
+      "id": "oracle-java",
+      "name": "Oracle & Java",
+      "vendors": ["oracle"],
+      "products": ["java", "jdk", "jre", "openjdk", "weblogic", "graalvm"],
+      "cves": ["CVE-2026-114938"],
+      "keywords": ["Java4Shell", "Critical Patch Update", "Critical Security Patch Update", "Java SE", "OpenJDK", "WebLogic"],
+      "minCvss": 7.0
+    }
+  ]
+}
