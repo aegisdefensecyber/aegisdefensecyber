@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-12-12",
-  "count": 13,
+  "count": 19,
   "items": [
     {
       "id": "msrc_CVE-2023-53323",
@@ -242,6 +242,172 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-mongodb-2025-13644",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MongoDB may be susceptible to Invariant Failure due to batched delete",
+      "url": "https://jira.mongodb.org/browse/SERVER-101180",
+      "released": "2025-12-12T11:19:13Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-13644"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 7.0.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.0.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.1.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2025-67635",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.540 and earlier, LTS 2.528.2 and earlier does not properly close HTTP-based CLI connections when the connection stream becomes corrupted, allowing unauthenticated attackers to cause a denial of service.",
+      "url": "https://www.jenkins.io/security/advisory/2025-12-10/#SECURITY-3630",
+      "released": "2025-12-12T11:23:31Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-67635"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.528.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.541.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2025-67636",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A missing permission check in Jenkins 2.540 and earlier, LTS 2.528.2 and earlier allows attackers with View/Read permission to view encrypted password values in views.",
+      "url": "https://www.jenkins.io/security/advisory/2025-12-10/#SECURITY-1809",
+      "released": "2025-12-12T11:23:36Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-67636"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.528.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.541.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2025-67637",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.540 and earlier, LTS 2.528.2 and earlier stores build authorization tokens unencrypted in job config.xml files on the Jenkins controller where they can be viewed by users with Item/Extended Read permission or …",
+      "url": "https://www.jenkins.io/security/advisory/2025-12-10/#SECURITY-783",
+      "released": "2025-12-12T11:23:42Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-67637"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.528.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.541.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2025-67638",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.540 and earlier, LTS 2.528.2 and earlier does not mask build authorization tokens displayed on the job configuration form, increasing the potential for attackers to observe and capture them.",
+      "url": "https://www.jenkins.io/security/advisory/2025-12-10/#SECURITY-783",
+      "released": "2025-12-12T11:23:47Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-67638"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.528.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.541.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2025-67639",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A cross-site request forgery (CSRF) vulnerability in Jenkins 2.540 and earlier, LTS 2.528.2 and earlier allows attackers to trick users into logging in to the attacker's account.",
+      "url": "https://www.jenkins.io/security/advisory/2025-12-10/#SECURITY-1166",
+      "released": "2025-12-12T11:23:52Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-67639"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.528.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.541.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "RUSTSEC-2025-0144",

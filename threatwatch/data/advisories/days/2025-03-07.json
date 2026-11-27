@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-03-07",
-  "count": 1,
+  "count": 8,
   "items": [
     {
       "id": "BIT-elk-2025-25015",
@@ -25,6 +25,161 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-jenkins-2025-27625",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Jenkins 2.499 and earlier, LTS 2.492.1 and earlier, redirects starting with backslash (`\\`) characters are considered safe, allowing attackers to perform phishing attacks by having users go to a Jenkins URL that will…",
+      "url": "https://www.jenkins.io/security/advisory/2025-03-05/#SECURITY-3501",
+      "released": "2025-03-07T20:55:49Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-27625"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.504.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2025-27624",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A cross-site request forgery (CSRF) vulnerability in Jenkins 2.499 and earlier, LTS 2.492.1 and earlier allows attackers to have users toggle their collapsed/expanded status of sidepanel widgets (e.g., Build Queue and B…",
+      "url": "https://www.jenkins.io/security/advisory/2025-03-05/#SECURITY-3498",
+      "released": "2025-03-07T20:55:54Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-27624"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.504.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2025-27623",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.499 and earlier, LTS 2.492.1 and earlier does not redact encrypted values of secrets when accessing `config.xml` of views via REST API or CLI, allowing attackers with View/Read permission to view encrypted val…",
+      "url": "https://www.jenkins.io/security/advisory/2025-03-05/#SECURITY-3496",
+      "released": "2025-03-07T20:55:58Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-27623"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.504.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2025-27622",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.499 and earlier, LTS 2.492.1 and earlier does not redact encrypted values of secrets when accessing `config.xml` of agents via REST API or CLI, allowing attackers with Agent/Extended Read permission to view en…",
+      "url": "https://www.jenkins.io/security/advisory/2025-03-05/#SECURITY-3495",
+      "released": "2025-03-07T20:56:03Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-27622"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.504.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-kibana-2025-25015",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Kibana arbitrary code execution via prototype pollution",
+      "url": "https://discuss.elastic.co/t/kibana-8-17-3-8-16-6-security-update-esa-2025-06/375441",
+      "released": "2025-03-07T20:56:34Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-25015"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: kibana"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kibana 8.17.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-modsecurity-2025-27110",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Libmodsecurity3 has possible bypass of encoded HTML entities",
+      "url": "https://github.com/owasp-modsecurity/ModSecurity/security/advisories/GHSA-42w7-rmv5-4x2j",
+      "released": "2025-03-07T20:58:41Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-27110"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: modsecurity"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in modsecurity 3.0.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-modsecurity2-2025-27110",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Libmodsecurity3 has possible bypass of encoded HTML entities",
+      "url": "https://github.com/owasp-modsecurity/ModSecurity/security/advisories/GHSA-42w7-rmv5-4x2j",
+      "released": "2025-03-07T20:58:44Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-27110"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: modsecurity2"
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

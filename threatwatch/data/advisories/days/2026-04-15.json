@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-15",
-  "count": 41,
+  "count": 49,
   "items": [
     {
       "id": "openSUSE-SU-2026:10550-1",
@@ -241,6 +241,31 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-MP87020",
+      "src": "cleanstart",
+      "title": "If one side of the TLS connection sends multiple key update messages post-handshake in a single record, the connection can deadlock, causing uncontrolled consumption of resources",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MP87020.json",
+      "released": "2026-04-15T00:39:08Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-25679",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283"
+      ],
+      "products": [
+        "CleanStart: karpenter"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in karpenter 1.9.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-BZ28794",
       "src": "cleanstart",
       "title": "Validating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service",
@@ -287,6 +312,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-QI14017",
+      "src": "cleanstart",
+      "title": "Vert",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QI14017.json",
+      "released": "2026-04-15T00:42:39Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-1002",
+        "CVE-2026-33871"
+      ],
+      "products": [
+        "CleanStart: keycloak"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keycloak 26.4.11-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-FD98843",
       "src": "cleanstart",
       "title": "Security fixes for ghsa-72hv-8253-57qq applied in versions: 3.6.4-r4",
@@ -303,6 +350,39 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-QO20135",
+      "src": "cleanstart",
+      "title": "When verifying a certificate chain containing excluded DNS constraints, these constraints are not correctly applied to wildcard DNS SANs which use a different case than the constraint",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QO20135.json",
+      "released": "2026-04-15T00:44:38Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61726",
+        "CVE-2025-61728",
+        "CVE-2025-61730",
+        "CVE-2025-61732",
+        "CVE-2025-68119",
+        "CVE-2025-68121",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32283",
+        "CVE-2026-33810"
+      ],
+      "products": [
+        "CleanStart: minio-operator-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in minio-operator-fips 6.0.4-r9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-FZ27876",
@@ -428,6 +508,97 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-MW52599",
+      "src": "cleanstart",
+      "title": "OpenVPN version 2",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MW52599.json",
+      "released": "2026-04-15T00:50:39Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-13086",
+        "CVE-2025-2704"
+      ],
+      "products": [
+        "CleanStart: pritunl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pritunl 1.32.4528.97-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-PM81907",
+      "src": "cleanstart",
+      "title": "OpenTelemetry-Go is the Go implementation of OpenTelemetry",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PM81907.json",
+      "released": "2026-04-15T00:51:08Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-24051",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32285",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-39882",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: prometheus"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in prometheus 3.9.1-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KC83705",
+      "src": "cleanstart",
+      "title": "During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KC83705.json",
+      "released": "2026-04-15T00:53:10Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-11065",
+        "CVE-2025-22868",
+        "CVE-2025-61726",
+        "CVE-2025-61727",
+        "CVE-2025-61728",
+        "CVE-2025-61729",
+        "CVE-2025-61730",
+        "CVE-2025-68119",
+        "CVE-2026-24051",
+        "CVE-2026-28377",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32287",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-34986"
+      ],
+      "products": [
+        "CleanStart: tempo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tempo 2.9.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "msrc_CVE-2026-33555",
@@ -641,6 +812,36 @@
         },
         {
           "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-6192",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-6192",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-6192",
+      "released": "2026-04-15T06:08:51Z",
+      "updated": "2026-10-16T00:01:43Z",
+      "cves": [
+        "CVE-2026-6192"
+      ],
+      "products": [
+        "Alpaquita: openjpeg"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openjpeg 2.5.3-r2",
+          "u": null
+        },
+        {
+          "t": "Fixed in openjpeg 2.5.4-r1",
+          "u": null
+        },
+        {
+          "t": "Fixed in openjpeg 2.5.4-r2",
           "u": null
         }
       ],
@@ -908,6 +1109,36 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:8311",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: perl-YAML-Syck security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:8311",
+      "released": "2026-04-15T13:54:32Z",
+      "updated": "2026-11-05T21:27:07Z",
+      "cves": [
+        "CVE-2026-4177"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Server Optional (v. 7 ELS)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:8311"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "SUSE-SU-2026:1365-1",

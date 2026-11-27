@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-05-07",
-  "count": 84,
+  "count": 94,
   "items": [
     {
       "id": "openSUSE-SU-2026:10716-1",
@@ -1324,6 +1324,33 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "SUSE-SU-2026:21572-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for iproute2",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621572-1/",
+      "released": "2026-05-07T07:30:16Z",
+      "updated": "2026-09-16T19:47:43Z",
+      "cves": [
+        "CVE-2024-58251"
+      ],
+      "sev": "LOW",
+      "cvss": 2.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:20696-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1434,6 +1461,149 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-keydb-2026-23479",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "redis-server use-after-free in unblock client flow may allow remote code execution",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-93m2-935m-8rj3",
+      "released": "2026-05-07T08:42:52Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-23479"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 7.2.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.4.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 8.2.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2026-25588",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "RedisTimeSeries RESTORE invalid memory access may allow remote code execution",
+      "url": "https://github.com/RedisTimeSeries/RedisTimeSeries/security/advisories/GHSA-7jwr-g5qv-w3gw",
+      "released": "2026-05-07T08:42:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-25588"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 8.2.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 8.4.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 8.6.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2026-25589",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "RedisBloom RESTORE invalid memory access may allow remote code execution",
+      "url": "https://github.com/RedisBloom/RedisBloom/security/advisories/GHSA-7862-34pw-44wv",
+      "released": "2026-05-07T08:42:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-25589"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 8.2.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 8.4.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 8.6.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-modsecurity-2026-30923",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "libModSecurity3 denial of service via segfault when using t:hexDecode on single-character query strings",
+      "url": "https://github.com/owasp-modsecurity/ModSecurity/security/advisories/GHSA-qrjc-3jpc-3h2g",
+      "released": "2026-05-07T08:45:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-30923"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: modsecurity"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in modsecurity 3.0.15",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21573-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for cairo",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621573-1/",
+      "released": "2026-05-07T09:32:33Z",
+      "updated": "2026-09-16T19:47:44Z",
+      "cves": [
+        "CVE-2025-50422"
+      ],
+      "sev": "LOW",
+      "cvss": 3.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:20697-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1460,6 +1630,33 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:21574-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for c-ares",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621574-1/",
+      "released": "2026-05-07T09:36:51Z",
+      "updated": "2026-09-16T19:47:46Z",
+      "cves": [
+        "CVE-2025-62408"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:20698-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1484,6 +1681,33 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:21575-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openCryptoki",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621575-1/",
+      "released": "2026-05-07T09:52:51Z",
+      "updated": "2026-09-16T19:47:47Z",
+      "cves": [
+        "CVE-2026-40253"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:20699-1",
@@ -1538,6 +1762,37 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-keydb-2026-25243",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "redis-server RESTORE invalid memory access may allow remote code execution",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-c8h9-259x-jff4",
+      "released": "2026-05-07T11:43:05Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-25243"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 6.2.22",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.2.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.4.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RUSTSEC-2026-0144",
       "src": "osv_rustsec",
       "vendor": "Rustsec",
@@ -1579,6 +1834,33 @@
         "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
         "SUSE Linux Enterprise High Performance Computing 12 SP5",
         "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21596-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for perl-Text-CSV_XS",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621596-1/",
+      "released": "2026-05-07T16:13:34Z",
+      "updated": "2026-09-16T19:48:00Z",
+      "cves": [
+        "CVE-2026-7111"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
       ],
       "fix": [
         {

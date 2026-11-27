@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-06-16",
-  "count": 35,
+  "count": 53,
   "items": [
     {
       "id": "openSUSE-SU-2026:11041-1",
@@ -352,6 +352,44 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:26168",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gimp security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:26168",
+      "released": "2026-06-16T04:28:33Z",
+      "updated": "2026-11-05T21:21:26Z",
+      "cves": [
+        "CVE-2026-4150",
+        "CVE-2026-4153",
+        "CVE-2026-4154",
+        "CVE-2026-4887"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Server (v. 7 ELS)",
+        "Red Hat Enterprise Linux Server Optional (v. 7 ELS)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:26168"
+        },
+        {
+          "t": "To mitigate this vulnerability, users should avoid opening untrusted PSP (PaintShop Pro) files with GIMP. Restricting the sources of PSP files to only trusted …",
+          "u": null
+        },
+        {
+          "t": "To mitigate this issue, users should avoid opening XPM image files from untrusted sources. On systems where GIMP is not required, the `gimp` package can be rem…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:26180",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -456,6 +494,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:22138-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python-PyJWT",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202622138-1/",
+      "released": "2026-06-16T09:09:33Z",
+      "updated": "2026-09-16T19:56:41Z",
+      "cves": [
+        "CVE-2026-48522",
+        "CVE-2026-48523",
+        "CVE-2026-48524",
+        "CVE-2026-48525",
+        "CVE-2026-48526"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:26231",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -486,6 +554,33 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:22139-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for opensc",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202622139-1/",
+      "released": "2026-06-16T09:44:47Z",
+      "updated": "2026-09-16T19:56:43Z",
+      "cves": [
+        "CVE-2026-10275",
+        "CVE-2026-40528"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:26247",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -514,6 +609,269 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-mariadb-2026-44168",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MariaDB: wsrep SST unsafe parameter handling on the donor side",
+      "url": "https://github.com/MariaDB/server/security/advisories/GHSA-vwf7-w26c-9w5h",
+      "released": "2026-06-16T11:46:55Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-44168"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb 10.6.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 10.11.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 11.4.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mariadb-2026-44169",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MariaDB: Authorization bypass in role-based routine-level privilege check exposes stored routine definitions",
+      "url": "https://github.com/MariaDB/server/security/advisories/GHSA-22xq-vq3f-87x2",
+      "released": "2026-06-16T11:46:56Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-44169"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb 11.4.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 11.8.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 12.3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mariadb-2026-44171",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MariaDB: path traversal in mbstream",
+      "url": "https://github.com/MariaDB/server/security/advisories/GHSA-9pjh-5hhw-65v9",
+      "released": "2026-06-16T11:46:58Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-44171"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb 10.6.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 10.11.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 11.4.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mongodb-2026-9735",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Keyfile contents are in MongoDB Server logs",
+      "url": "https://jira.mongodb.org/browse/SERVER-126506",
+      "released": "2026-06-16T11:48:08Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-9735"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 8.3.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mongodb-2026-9740",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Unbounded recursion in BSONColumn interleaved-reference causes pre-auth stack overflow",
+      "url": "https://jira.mongodb.org/browse/SERVER-125063",
+      "released": "2026-06-16T11:48:09Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-9740"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 7.0.35",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.0.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.2.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mongodb-2026-9743",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Aggregation sub-pipeline null dereference may allow DoS via crafted getMore",
+      "url": "https://jira.mongodb.org/browse/SERVER-123688",
+      "released": "2026-06-16T11:48:11Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-9743"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 8.0.24",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mongodb-2026-9747",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Crafted cross-shard merge aggregation crashes MongoDB Server",
+      "url": "https://jira.mongodb.org/browse/SERVER-123918",
+      "released": "2026-06-16T11:48:12Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-9747"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 7.0.35",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.0.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.2.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mongodb-2026-9748",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "$_internalConvertBucketIndexStats may crash the mongod server when working on no timeseries input",
+      "url": "https://jira.mongodb.org/browse/SERVER-123951",
+      "released": "2026-06-16T11:48:13Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-9748"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 7.0.35",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.0.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.2.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mongodb-2026-9750",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Metadata name collision on $-prefixed fields causes post-auth server crash",
+      "url": "https://jira.mongodb.org/browse/SERVER-123633",
+      "released": "2026-06-16T11:48:15Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-9750"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 7.0.35",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.0.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.2.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "BIT-discourse-2026-44779",
@@ -885,6 +1243,64 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:26332",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: rsync security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:26332",
+      "released": "2026-06-16T14:45:30Z",
+      "updated": "2026-11-05T20:12:41Z",
+      "cves": [
+        "CVE-2026-29518",
+        "CVE-2026-43618"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)",
+        "Red Hat Enterprise Linux BaseOS (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:26332"
+        },
+        {
+          "t": "To prevent exploitation, ensure the rsync daemon is configured with `use chroot = yes`. This setting, which is the default, isolates the rsync process and prev…",
+          "u": null
+        },
+        {
+          "t": "Disable compression on the rsync daemon by adding `refuse options = compress` to the `rsyncd.conf` file. A restart of the rsync daemon service is required for …",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-90182",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-12003 affecting package python3 for versions less than 3.12.9-14",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12003",
+      "released": "2026-06-16T17:16:31Z",
+      "updated": "2026-10-31T15:02:25Z",
+      "cves": [
+        "CVE-2026-12003"
+      ],
+      "products": [
+        "Azure Linux: python3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python3 3.12.9-14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "GHSA-q8gq-377p-jq3r",
       "src": "github",
       "vendor": "Open source (GitHub)",
@@ -933,6 +1349,77 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "RHSA-2026:26408",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: rsync security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:26408",
+      "released": "2026-06-16T17:37:50Z",
+      "updated": "2026-11-05T20:12:44Z",
+      "cves": [
+        "CVE-2026-29518",
+        "CVE-2026-43618"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:26408"
+        },
+        {
+          "t": "To prevent exploitation, ensure the rsync daemon is configured with `use chroot = yes`. This setting, which is the default, isolates the rsync process and prev…",
+          "u": null
+        },
+        {
+          "t": "Disable compression on the rsync daemon by adding `refuse options = compress` to the `rsyncd.conf` file. A restart of the rsync daemon service is required for …",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:26410",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: rsync security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:26410",
+      "released": "2026-06-16T17:38:45Z",
+      "updated": "2026-11-05T20:12:43Z",
+      "cves": [
+        "CVE-2026-29518",
+        "CVE-2026-43618"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)",
+        "Red Hat Enterprise Linux BaseOS (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:26410"
+        },
+        {
+          "t": "To prevent exploitation, ensure the rsync daemon is configured with `use chroot = yes`. This setting, which is the default, isolates the rsync process and prev…",
+          "u": null
+        },
+        {
+          "t": "Disable compression on the rsync daemon by adding `refuse options = compress` to the `rsyncd.conf` file. A restart of the rsync daemon service is required for …",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "GHSA-5r4w-85f3-pw66",
       "src": "github",
       "vendor": "Open source (GitHub)",
@@ -959,6 +1446,38 @@
         }
       ],
       "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:26441",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Helm CLI v4.1.4 release",
+      "url": "https://access.redhat.com/errata/RHSA-2026:26441",
+      "released": "2026-06-16T20:29:05Z",
+      "updated": "2026-11-06T07:46:10Z",
+      "cves": [
+        "CVE-2026-35204",
+        "CVE-2026-35205",
+        "CVE-2026-35206"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "Helm CLI",
+        "Helm CLI 4.1"
+      ],
+      "fix": [
+        {
+          "t": "Download the Helm CLI v4.1.4 binaries for your platform from https://mirror.openshift.com/pub/cgw/helm/4.1.4/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:26441"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-27"
     },
     {
@@ -1039,6 +1558,42 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:22149-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for postgresql17",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202622149-1/",
+      "released": "2026-06-16T23:05:03Z",
+      "updated": "2026-09-16T19:56:50Z",
+      "cves": [
+        "CVE-2026-6472",
+        "CVE-2026-6473",
+        "CVE-2026-6474",
+        "CVE-2026-6475",
+        "CVE-2026-6476",
+        "CVE-2026-6477",
+        "CVE-2026-6478",
+        "CVE-2026-6479",
+        "CVE-2026-6637",
+        "CVE-2026-6638"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:20970-1",

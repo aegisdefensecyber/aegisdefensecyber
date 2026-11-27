@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-10-02",
-  "count": 16,
+  "count": 20,
   "items": [
     {
       "id": "msrc_CVE-2022-48744",
@@ -406,6 +406,102 @@
           "t": "Fixed in linux-lts 6.6.58-r0",
           "u": null
         }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mongoose-2024-53900",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Mongoose before 8.8.3 can improperly use $where in match, leading to search injection.",
+      "url": "https://github.com/advisories/GHSA-m7xq-9374-9rvx",
+      "released": "2025-10-02T14:44:18Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-53900"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: mongoose"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongoose 6.13.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongoose 8.8.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mongodb-2024-10921",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper neutralization of null bytes may lead to buffer over-reads in MongoDB Server",
+      "url": "https://jira.mongodb.org/browse/SERVER-96419",
+      "released": "2025-10-02T14:44:36Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-10921"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 5.0.30",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 6.0.19",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 7.0.15",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2025-34208",
+      "src": "cvelistv5",
+      "vendor": "Vasion",
+      "title": "Vasion Print (formerly PrinterLogic) Insecure Password Hashing",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2025-34208",
+      "released": "2025-10-02T16:13:06Z",
+      "updated": "2026-11-17T22:00:27Z",
+      "cves": [
+        "CVE-2025-34208"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "Vasion Print Virtual Appliance Host",
+        "Vasion Print Application"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2025-34210",
+      "src": "cvelistv5",
+      "vendor": "Vasion",
+      "title": "Vasion Print (formerly PrinterLogic) Readable Cleartext Passwords",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2025-34210",
+      "released": "2025-10-02T16:13:28Z",
+      "updated": "2026-11-17T22:00:28Z",
+      "cves": [
+        "CVE-2025-34210"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.4,
+      "products": [
+        "Vasion Print Virtual Appliance Host",
+        "Vasion Print Application"
       ],
       "seen": "2026-11-27"
     }

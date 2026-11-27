@@ -1,8 +1,43 @@
 {
   "schemaVersion": 1,
   "date": "2020-09-08",
-  "count": 6,
+  "count": 10,
   "items": [
+    {
+      "id": "USN-4489-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "linux, linux-aws, linux-aws-5.3, linux-aws-5.4, linux-aws-hwe, linux-azure, linux-azure-4.15, linux-azure-5.4, linux-gcp, linux-gcp-4.15, linux-gcp-5.4, linux-gke-4.15, linux-gke-5.0, linux-gke-5.3, linux-hwe, linux-hwe…",
+      "url": "https://ubuntu.com/security/notices/USN-4489-1",
+      "released": "2020-09-08T07:20:05Z",
+      "updated": "2026-11-24T09:37:11Z",
+      "cves": [
+        "CVE-2020-14386"
+      ],
+      "products": [
+        "Ubuntu: linux",
+        "Ubuntu: linux-aws",
+        "Ubuntu: linux-aws-5.3",
+        "Ubuntu: linux-aws-5.4",
+        "Ubuntu: linux-aws-hwe",
+        "Ubuntu: linux-azure"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-azure 4.15.0-1095.105~14.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-aws-hwe 4.15.0-1082.86~16.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-azure 4.15.0-1095.105~16.04.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
     {
       "id": "openSUSE-SU-2020:1382-1",
       "src": "csaf_opensuse",
@@ -87,6 +122,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2020:3658",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: librepo security update",
+      "url": "https://access.redhat.com/errata/RHSA-2020:3658",
+      "released": "2020-09-08T09:40:49Z",
+      "updated": "2026-11-06T20:32:19Z",
+      "cves": [
+        "CVE-2020-14352"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.0,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2020:3658"
+        },
+        {
+          "t": "Avoid downloading software from untrusted third-party mirrors. Note that under normal circumstances, this flaw does not pose any threat to Red Hat users, as re…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2020:1385-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -111,6 +176,61 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "USN-4490-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "xorg-server, xorg-server-hwe-16.04, xorg-server-hwe-18.04 vulnerability",
+      "url": "https://ubuntu.com/security/notices/USN-4490-1",
+      "released": "2020-09-08T11:29:14Z",
+      "updated": "2026-11-24T09:37:11Z",
+      "cves": [
+        "CVE-2020-14345"
+      ],
+      "products": [
+        "Ubuntu: xorg-server",
+        "Ubuntu: xorg-server-hwe-16.04",
+        "Ubuntu: xorg-server-hwe-18.04"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in xorg-server 2:1.18.4-0ubuntu0.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in xorg-server-hwe-16.04 2:1.19.6-1ubuntu4.1~16.04.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in xorg-server 2:1.19.6-1ubuntu4.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-4487-2",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "libx11 vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-4487-2",
+      "released": "2020-09-08T16:18:57Z",
+      "updated": "2026-11-24T09:37:11Z",
+      "cves": [
+        "CVE-2020-14344",
+        "CVE-2020-14363"
+      ],
+      "products": [
+        "Ubuntu: libx11"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libx11 2:1.6.2-1ubuntu2.1+esm1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2020:1391-1",

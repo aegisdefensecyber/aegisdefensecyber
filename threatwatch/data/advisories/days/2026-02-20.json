@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-02-20",
-  "count": 16,
+  "count": 18,
   "items": [
     {
       "id": "openSUSE-SU-2026:10231-1",
@@ -138,6 +138,60 @@
         },
         {
           "t": "Fixed in grafana 12.1.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2026-27099",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.483 through 2.550 (both inclusive), LTS 2.492.1 through 2.541.1 (both inclusive) does not escape the user-provided description of the \"Mark temporarily offline\" offline cause, resulting in a stored cross-site …",
+      "url": "https://www.jenkins.io/security/advisory/2026-02-18/#SECURITY-3669",
+      "released": "2026-02-20T08:43:33Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-27099"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.541.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.551.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2026-27100",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.550 and earlier, LTS 2.541.1 and earlier accepts Run Parameter values that refer to builds the user submitting the build does not have access to, allowing attackers with Item/Build and Item/Configure permissio…",
+      "url": "https://www.jenkins.io/security/advisory/2026-02-18/#SECURITY-3658",
+      "released": "2026-02-20T08:43:34Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-27100"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.541.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.551.0",
           "u": null
         }
       ],

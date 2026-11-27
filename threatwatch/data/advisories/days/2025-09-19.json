@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-09-19",
-  "count": 1,
+  "count": 11,
   "items": [
     {
       "id": "BELL-CVE-2023-53429",
@@ -26,6 +26,243 @@
           "t": "Fixed in linux-lts 6.6.58-r0",
           "u": null
         }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2025-59474",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.527 and earlier, LTS 2.516.2 and earlier does not perform a permission check in the sidepanel of a page intentionally accessible to users lacking Overall/Read permission, allowing attackers without Overall/Rea…",
+      "url": "https://www.jenkins.io/security/advisory/2025-09-17/#SECURITY-3594",
+      "released": "2025-09-19T09:57:07Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-59474"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.516.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.528.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2025-59475",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.527 and earlier, LTS 2.516.2 and earlier does not perform a permission check for the authenticated user profile dropdown menu, allowing attackers without Overall/Read permission to obtain limited information a…",
+      "url": "https://www.jenkins.io/security/advisory/2025-09-17/#SECURITY-3625",
+      "released": "2025-09-19T09:57:09Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-59475"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.516.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.528.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2025-59476",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.527 and earlier, LTS 2.516.2 and earlier does not restrict or transform the characters that can be inserted from user-specified content in log messages, allowing attackers able to control log message contents …",
+      "url": "https://www.jenkins.io/security/advisory/2025-09-17/#SECURITY-3424",
+      "released": "2025-09-19T09:57:11Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-59476"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.516.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.528.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mongodb-2025-10060",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MongoDB may be susceptible to Invariant Failure in Transactions due Upsert Operation",
+      "url": "https://jira.mongodb.org/browse/SERVER-95524",
+      "released": "2025-09-19T09:58:16Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-10060"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 6.0.25",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 7.0.22",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.0.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mongodb-2025-10061",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Malformed $group Query May Cause MongoDB Server to Crash",
+      "url": "https://jira.mongodb.org/browse/SERVER-99616",
+      "released": "2025-09-19T09:58:18Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-10061"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 6.0.25",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 7.0.22",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.0.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2025-34204",
+      "src": "cvelistv5",
+      "vendor": "Vasion",
+      "title": "Vasion Print (formerly PrinterLogic) Processes Running as Root Inside Docker Instances",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2025-34204",
+      "released": "2025-09-19T18:41:02Z",
+      "updated": "2026-11-17T22:00:26Z",
+      "cves": [
+        "CVE-2025-34204"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "Vasion Print Virtual Appliance Host",
+        "Vasion Print Application"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2025-34200",
+      "src": "cvelistv5",
+      "vendor": "Vasion",
+      "title": "Vasion Print (formerly PrinterLogic) Network Account Password Stored in Cleartext",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2025-34200",
+      "released": "2025-09-19T18:45:41Z",
+      "updated": "2026-11-17T22:00:24Z",
+      "cves": [
+        "CVE-2025-34200"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "Vasion Print Virtual Appliance Host",
+        "Vasion Print Application"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2025-34201",
+      "src": "cvelistv5",
+      "vendor": "Vasion",
+      "title": "Vasion Print (formerly PrinterLogic) Lack of Network Segmentation Between Docker Instances",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2025-34201",
+      "released": "2025-09-19T18:47:07Z",
+      "updated": "2026-11-17T22:00:25Z",
+      "cves": [
+        "CVE-2025-34201"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.5,
+      "products": [
+        "Vasion Print Virtual Appliance Host",
+        "Vasion Print Application"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2025-34206",
+      "src": "cvelistv5",
+      "vendor": "Vasion",
+      "title": "Vasion Print (formerly PrinterLogic) Insecure Shared Storage Permissions",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2025-34206",
+      "released": "2025-09-19T18:48:58Z",
+      "updated": "2026-11-17T22:00:26Z",
+      "cves": [
+        "CVE-2025-34206"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.3,
+      "products": [
+        "Vasion Print Virtual Appliance Host",
+        "Vasion Print Application (SaaS/VA)"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2024-13990",
+      "src": "cvelistv5",
+      "vendor": "MicroWorld Technologies",
+      "title": "MicroWorld eScan AV Insecure Update Mechanism Allows Man-in-the-Middle Replacement of Updates",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-13990",
+      "released": "2025-09-19T18:54:08Z",
+      "updated": "2026-11-17T22:00:16Z",
+      "cves": [
+        "CVE-2024-13990"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.3,
+      "products": [
+        "MicroWorld Technologies eScan AV"
       ],
       "seen": "2026-11-27"
     }

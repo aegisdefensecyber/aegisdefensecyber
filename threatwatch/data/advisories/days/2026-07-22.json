@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-22",
-  "count": 64,
+  "count": 66,
   "items": [
     {
       "id": "CERTFR-2026-ALE-008",
@@ -890,6 +890,44 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:42952",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: glibc security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:42952",
+      "released": "2026-07-22T04:33:33Z",
+      "updated": "2026-11-06T07:46:22Z",
+      "cves": [
+        "CVE-2026-5435",
+        "CVE-2026-5928",
+        "CVE-2026-6238"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 9)",
+        "Red Hat Enterprise Linux AppStream (v. 9)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:42952"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        },
+        {
+          "t": "The affected functions are deprecated, application-debugging-only interfaces that are not part of the DNS resolver code path. Applications that call ns_printrr…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BELL-CVE-2026-64058",
       "src": "osv_bellsoft",
       "vendor": "Bellsoft",
@@ -1335,6 +1373,37 @@
         }
       ],
       "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:43398",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: evince security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:43398",
+      "released": "2026-07-22T10:16:28Z",
+      "updated": "2026-11-05T21:17:02Z",
+      "cves": [
+        "CVE-2026-46529"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream AUS (v.8.4)",
+        "Red Hat Enterprise Linux AppStream EUS EXTENSION (v.8.4)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:43398"
+        },
+        {
+          "t": "To mitigate this vulnerability, do not click on links inside PDF documents from untrusted or unverified sources.",
+          "u": null
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-27"
     },
     {

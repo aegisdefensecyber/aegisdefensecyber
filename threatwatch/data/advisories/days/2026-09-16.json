@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-16",
-  "count": 371,
+  "count": 455,
   "items": [
     {
       "id": "ELA-1824-1",
@@ -1814,6 +1814,52 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-QB45720",
+      "src": "cleanstart",
+      "title": "Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QB45720.json",
+      "released": "2026-09-16T00:50:14Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61729",
+        "CVE-2026-25679",
+        "CVE-2026-25680",
+        "CVE-2026-25681",
+        "CVE-2026-27136",
+        "CVE-2026-27137",
+        "CVE-2026-27138",
+        "CVE-2026-27142",
+        "CVE-2026-27145",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-42502",
+        "CVE-2026-42504",
+        "CVE-2026-42505",
+        "CVE-2026-42506",
+        "CVE-2026-42507",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56855",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-78662"
+      ],
+      "products": [
+        "CleanStart: trust-manager"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in trust-manager 0.24.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-IK56508",
       "src": "cleanstart",
       "title": "Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection",
@@ -2070,6 +2116,67 @@
       "fix": [
         {
           "t": "Fixed in boring-registry 0.18.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-LJ97657",
+      "src": "cleanstart",
+      "title": "Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LJ97657.json",
+      "released": "2026-09-16T01:18:45Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-25680",
+        "CVE-2026-25681",
+        "CVE-2026-27136",
+        "CVE-2026-29181",
+        "CVE-2026-33186",
+        "CVE-2026-33814",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-39824",
+        "CVE-2026-39827",
+        "CVE-2026-39828",
+        "CVE-2026-39829",
+        "CVE-2026-39830",
+        "CVE-2026-39831",
+        "CVE-2026-39832",
+        "CVE-2026-39833",
+        "CVE-2026-39834",
+        "CVE-2026-39835",
+        "CVE-2026-41178",
+        "CVE-2026-41579",
+        "CVE-2026-42502",
+        "CVE-2026-42505",
+        "CVE-2026-42506",
+        "CVE-2026-42508",
+        "CVE-2026-46595",
+        "CVE-2026-46597",
+        "CVE-2026-46598",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56854",
+        "CVE-2026-56855",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-78662",
+        "CVE-2026-84303",
+        "CVE-2026-84304",
+        "CVE-2026-84445"
+      ],
+      "products": [
+        "CleanStart: cadvisor"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cadvisor 0.55.1-r7",
           "u": null
         }
       ],
@@ -2910,6 +3017,25 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-89788",
+      "src": "cvelistv5",
+      "vendor": "Linux",
+      "title": "ksmbd: fix tree connection use-after-free in smb2_tree_connect()",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-89788",
+      "released": "2026-09-16T08:48:25Z",
+      "updated": "2026-11-17T10:24:00Z",
+      "cves": [
+        "CVE-2026-89788"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Linux Linux",
+        "Linux Linux"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101703",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -3256,6 +3382,28 @@
       "fix": [
         {
           "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101159",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89788 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89788",
+      "released": "2026-09-16T09:17:09Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89788"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
           "u": null
         }
       ],
@@ -3688,6 +3836,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-101147",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89795 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89795",
+      "released": "2026-09-16T11:16:44Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89795"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101301",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -3700,6 +3870,50 @@
       ],
       "products": [
         "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101343",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89799 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89799",
+      "released": "2026-09-16T11:16:44Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89799"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101355",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89794 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89794",
+      "released": "2026-09-16T11:16:44Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89794"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -3742,6 +3956,94 @@
       "fix": [
         {
           "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101243",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89802 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89802",
+      "released": "2026-09-16T11:16:45Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89802"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101415",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89808 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89808",
+      "released": "2026-09-16T11:16:45Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89808"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101430",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89803 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89803",
+      "released": "2026-09-16T11:16:45Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89803"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101526",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89806 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89806",
+      "released": "2026-09-16T11:16:45Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89806"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
           "u": null
         }
       ],
@@ -3808,6 +4110,50 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-101316",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89813 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89813",
+      "released": "2026-09-16T11:16:46Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89813"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101484",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89810 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89810",
+      "released": "2026-09-16T11:16:46Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89810"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101589",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -3838,6 +4184,28 @@
         "Azure Linux: kernel"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-101690",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89811 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89811",
+      "released": "2026-09-16T11:16:46Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89811"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-101136",
@@ -3950,6 +4318,94 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-101258",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89832 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89832",
+      "released": "2026-09-16T11:16:49Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89832"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101303",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89827 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89827",
+      "released": "2026-09-16T11:16:49Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89827"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101139",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89838 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89838",
+      "released": "2026-09-16T11:16:50Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89838"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101168",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89837 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89837",
+      "released": "2026-09-16T11:16:50Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89837"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101223",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -3970,6 +4426,94 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-101235",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89840 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89840",
+      "released": "2026-09-16T11:16:50Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89840"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101379",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89835 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89835",
+      "released": "2026-09-16T11:16:50Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89835"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101385",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89833 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89833",
+      "released": "2026-09-16T11:16:50Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89833"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101523",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89834 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89834",
+      "released": "2026-09-16T11:16:50Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89834"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-101205",
@@ -4234,6 +4778,28 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-101171",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89859 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89859",
+      "released": "2026-09-16T11:16:53Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89859"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-101363",
@@ -4598,6 +5164,28 @@
       "fix": [
         {
           "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101184",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89884 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89884",
+      "released": "2026-09-16T11:16:56Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89884"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
           "u": null
         }
       ],
@@ -5016,6 +5604,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-101547",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89912 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89912",
+      "released": "2026-09-16T11:17:00Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89912"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101225",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -5104,6 +5714,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-101535",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89921 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89921",
+      "released": "2026-09-16T11:17:01Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89921"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101538",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -5148,6 +5780,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-101664",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89920 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89920",
+      "released": "2026-09-16T11:17:01Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89920"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101129",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -5168,6 +5822,28 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-101277",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89929 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89929",
+      "released": "2026-09-16T11:17:02Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89929"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-101532",
@@ -5212,6 +5888,28 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-101658",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89934 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89934",
+      "released": "2026-09-16T11:17:02Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89934"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-101132",
@@ -5322,6 +6020,28 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-101238",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89944 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89944",
+      "released": "2026-09-16T11:17:04Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89944"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-101454",
@@ -5478,6 +6198,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-101556",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89956 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89956",
+      "released": "2026-09-16T11:17:05Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89956"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101562",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -5564,6 +6306,28 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-101387",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89962 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89962",
+      "released": "2026-09-16T11:17:06Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89962"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-101433",
@@ -5720,6 +6484,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-101552",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89972 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89972",
+      "released": "2026-09-16T11:17:07Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89972"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101600",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -5808,6 +6594,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-101645",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89975 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89975",
+      "released": "2026-09-16T11:17:08Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89975"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101195",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -5850,6 +6658,28 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-101499",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89987 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89987",
+      "released": "2026-09-16T11:17:09Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89987"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-101520",
@@ -5984,6 +6814,50 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-101649",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89995 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89995",
+      "released": "2026-09-16T11:17:10Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89995"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101688",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89996 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89996",
+      "released": "2026-09-16T11:17:10Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-89996"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101123",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -6072,6 +6946,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-101693",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90002 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90002",
+      "released": "2026-09-16T11:17:12Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-90002"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101213",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -6114,6 +7010,28 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-101486",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90013 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90013",
+      "released": "2026-09-16T11:17:13Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-90013"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-101210",
@@ -6182,6 +7100,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-101616",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90016 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90016",
+      "released": "2026-09-16T11:17:14Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-90016"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101631",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -6220,6 +7160,28 @@
       "fix": [
         {
           "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101144",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90021 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90021",
+      "released": "2026-09-16T11:17:15Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-90021"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
           "u": null
         }
       ],
@@ -6268,6 +7230,50 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-101447",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90029 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90029",
+      "released": "2026-09-16T11:17:15Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-90029"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101490",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90023 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90023",
+      "released": "2026-09-16T11:17:15Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-90023"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-101592",
@@ -6396,6 +7402,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-101540",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90036 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90036",
+      "released": "2026-09-16T11:17:16Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-90036"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-101543",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -6438,6 +7466,116 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-101642",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90037 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90037",
+      "released": "2026-09-16T11:17:16Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-90037"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101166",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90045 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90045",
+      "released": "2026-09-16T11:17:17Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-90045"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101199",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90042 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90042",
+      "released": "2026-09-16T11:17:17Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-90042"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101273",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90044 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90044",
+      "released": "2026-09-16T11:17:17Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-90044"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101606",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90041 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90041",
+      "released": "2026-09-16T11:17:17Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-90041"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-101409",
@@ -6571,6 +7709,42 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:67908",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: libevent security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:67908",
+      "released": "2026-09-16T12:30:34Z",
+      "updated": "2026-11-06T07:47:15Z",
+      "cves": [
+        "CVE-2026-63382",
+        "CVE-2026-63383",
+        "CVE-2026-63384",
+        "CVE-2026-63385",
+        "CVE-2026-63387",
+        "CVE-2026-63388"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:67908"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "NCSC-2026-0372",
@@ -7054,6 +8228,50 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-103329",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-19667 affecting package bind for versions less than 9.20.30-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19667",
+      "released": "2026-09-16T14:17:05Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-19667"
+      ],
+      "products": [
+        "Azure Linux: bind"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in bind 9.20.30-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103332",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78301 affecting package bind for versions less than 9.20.30-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78301",
+      "released": "2026-09-16T14:17:10Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-78301"
+      ],
+      "products": [
+        "Azure Linux: bind"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in bind 9.20.30-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21856-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -7208,6 +8426,414 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-103119",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-19033 affecting package bind for versions less than 9.20.30-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19033",
+      "released": "2026-09-16T15:17:33Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-19033"
+      ],
+      "products": [
+        "Azure Linux: bind"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in bind 9.20.30-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103209",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77403 affecting package keda 2.14.1-19",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77403",
+      "released": "2026-09-16T15:17:46Z",
+      "updated": "2026-10-31T05:32:45Z",
+      "cves": [
+        "CVE-2026-77403"
+      ],
+      "products": [
+        "Azure Linux: keda"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103296",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77403 affecting package telegraf for versions less than 1.31.0-34",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77403",
+      "released": "2026-09-16T15:17:46Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-77403"
+      ],
+      "products": [
+        "Azure Linux: telegraf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in telegraf 1.31.0-34",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103341",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77119 affecting package bind for versions less than 9.20.29-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77119",
+      "released": "2026-09-16T15:17:46Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-77119"
+      ],
+      "products": [
+        "Azure Linux: bind"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in bind 9.20.29-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103182",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77405 affecting package keda 2.14.1-19",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77405",
+      "released": "2026-09-16T15:17:47Z",
+      "updated": "2026-10-31T05:32:45Z",
+      "cves": [
+        "CVE-2026-77405"
+      ],
+      "products": [
+        "Azure Linux: keda"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103284",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77405 affecting package telegraf for versions less than 1.31.0-34",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77405",
+      "released": "2026-09-16T15:17:47Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-77405"
+      ],
+      "products": [
+        "Azure Linux: telegraf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in telegraf 1.31.0-34",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103188",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77406 affecting package keda 2.14.1-19",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77406",
+      "released": "2026-09-16T15:17:49Z",
+      "updated": "2026-10-31T05:32:45Z",
+      "cves": [
+        "CVE-2026-77406"
+      ],
+      "products": [
+        "Azure Linux: keda"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103194",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77407 affecting package keda 2.14.1-19",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77407",
+      "released": "2026-09-16T15:17:49Z",
+      "updated": "2026-10-31T05:32:45Z",
+      "cves": [
+        "CVE-2026-77407"
+      ],
+      "products": [
+        "Azure Linux: keda"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103212",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77408 affecting package keda 2.14.1-19",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77408",
+      "released": "2026-09-16T15:17:49Z",
+      "updated": "2026-10-31T05:32:45Z",
+      "cves": [
+        "CVE-2026-77408"
+      ],
+      "products": [
+        "Azure Linux: keda"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103275",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77408 affecting package telegraf for versions less than 1.31.0-34",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77408",
+      "released": "2026-09-16T15:17:49Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-77408"
+      ],
+      "products": [
+        "Azure Linux: telegraf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in telegraf 1.31.0-34",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103278",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77407 affecting package telegraf for versions less than 1.31.0-34",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77407",
+      "released": "2026-09-16T15:17:49Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-77407"
+      ],
+      "products": [
+        "Azure Linux: telegraf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in telegraf 1.31.0-34",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103287",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77406 affecting package telegraf for versions less than 1.31.0-34",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77406",
+      "released": "2026-09-16T15:17:49Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-77406"
+      ],
+      "products": [
+        "Azure Linux: telegraf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in telegraf 1.31.0-34",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103185",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77410 affecting package keda 2.14.1-19",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77410",
+      "released": "2026-09-16T15:17:50Z",
+      "updated": "2026-10-31T05:32:45Z",
+      "cves": [
+        "CVE-2026-77410"
+      ],
+      "products": [
+        "Azure Linux: keda"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103197",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77409 affecting package keda 2.14.1-19",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77409",
+      "released": "2026-09-16T15:17:50Z",
+      "updated": "2026-10-31T05:32:45Z",
+      "cves": [
+        "CVE-2026-77409"
+      ],
+      "products": [
+        "Azure Linux: keda"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103203",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77412 affecting package keda 2.14.1-19",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77412",
+      "released": "2026-09-16T15:17:50Z",
+      "updated": "2026-10-31T05:32:45Z",
+      "cves": [
+        "CVE-2026-77412"
+      ],
+      "products": [
+        "Azure Linux: keda"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103206",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77411 affecting package keda 2.14.1-19",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77411",
+      "released": "2026-09-16T15:17:50Z",
+      "updated": "2026-10-31T05:32:45Z",
+      "cves": [
+        "CVE-2026-77411"
+      ],
+      "products": [
+        "Azure Linux: keda"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103281",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77409 affecting package telegraf for versions less than 1.31.0-34",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77409",
+      "released": "2026-09-16T15:17:50Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-77409"
+      ],
+      "products": [
+        "Azure Linux: telegraf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in telegraf 1.31.0-34",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103290",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77411 affecting package telegraf for versions less than 1.31.0-34",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77411",
+      "released": "2026-09-16T15:17:50Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-77411"
+      ],
+      "products": [
+        "Azure Linux: telegraf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in telegraf 1.31.0-34",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103293",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77412 affecting package telegraf for versions less than 1.31.0-34",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77412",
+      "released": "2026-09-16T15:17:50Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-77412"
+      ],
+      "products": [
+        "Azure Linux: telegraf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in telegraf 1.31.0-34",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103299",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-77410 affecting package telegraf for versions less than 1.31.0-34",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-77410",
+      "released": "2026-09-16T15:17:50Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-77410"
+      ],
+      "products": [
+        "Azure Linux: telegraf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in telegraf 1.31.0-34",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103335",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80274 affecting package bind for versions less than 9.20.30-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80274",
+      "released": "2026-09-16T15:17:52Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-80274"
+      ],
+      "products": [
+        "Azure Linux: bind"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in bind 9.20.30-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2026:68259",
@@ -9507,6 +11133,68 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:68291",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: unbound security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:68291",
+      "released": "2026-09-16T18:20:50Z",
+      "updated": "2026-11-06T22:22:39Z",
+      "cves": [
+        "CVE-2026-50252"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:68291"
+        },
+        {
+          "t": "Disable the so-reuseport option by explicitly setting so-reuseport: no in your unbound.conf file. This prevents the deterministic mapping of worker threads to …",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:68292",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: unbound security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:68292",
+      "released": "2026-09-16T19:24:05Z",
+      "updated": "2026-11-06T22:22:42Z",
+      "cves": [
+        "CVE-2026-50252"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:68292"
+        },
+        {
+          "t": "Disable the so-reuseport option by explicitly setting so-reuseport: no in your unbound.conf file. This prevents the deterministic mapping of worker threads to …",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21870-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -9533,6 +11221,66 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-103116",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-81870 affecting package azurelinux-image-tools for versions less than 1.7.0-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81870",
+      "released": "2026-09-16T20:17:32Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-81870"
+      ],
+      "products": [
+        "Azure Linux: azurelinux-image-tools"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in azurelinux-image-tools 1.7.0-2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103164",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-81870 affecting package etcd for versions less than 3.5.35-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81870",
+      "released": "2026-09-16T20:17:32Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-81870"
+      ],
+      "products": [
+        "Azure Linux: etcd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in etcd 3.5.35-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103200",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-81870 affecting package keda 2.14.1-19",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81870",
+      "released": "2026-09-16T20:17:32Z",
+      "updated": "2026-10-31T05:32:45Z",
+      "cves": [
+        "CVE-2026-81870"
+      ],
+      "products": [
+        "Azure Linux: keda"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-103251",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -9545,6 +11293,50 @@
       ],
       "products": [
         "Azure Linux: opa"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103110",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-81871 affecting package azurelinux-image-tools for versions less than 1.7.0-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81871",
+      "released": "2026-09-16T21:17:22Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-81871"
+      ],
+      "products": [
+        "Azure Linux: azurelinux-image-tools"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in azurelinux-image-tools 1.7.0-2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103113",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-81872 affecting package azurelinux-image-tools for versions less than 1.7.0-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81872",
+      "released": "2026-09-16T21:17:22Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-81872"
+      ],
+      "products": [
+        "Azure Linux: azurelinux-image-tools"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in azurelinux-image-tools 1.7.0-2",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -9587,6 +11379,50 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-103161",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-81869 affecting package docker-compose for versions less than 2.27.0-15",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81869",
+      "released": "2026-09-16T21:17:22Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-81869"
+      ],
+      "products": [
+        "Azure Linux: docker-compose"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in docker-compose 2.27.0-15",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103170",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-81869 affecting package flannel for versions less than 0.24.2-33",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81869",
+      "released": "2026-09-16T21:17:22Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-81869"
+      ],
+      "products": [
+        "Azure Linux: flannel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in flannel 0.24.2-33",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-103179",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -9599,6 +11435,22 @@
       ],
       "products": [
         "Azure Linux: kata-containers-cc"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103191",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-81869 affecting package keda 2.14.1-19",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81869",
+      "released": "2026-09-16T21:17:22Z",
+      "updated": "2026-10-31T05:32:45Z",
+      "cves": [
+        "CVE-2026-81869"
+      ],
+      "products": [
+        "Azure Linux: keda"
       ],
       "seen": "2026-11-27"
     },
@@ -9623,6 +11475,28 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-103245",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-81869 affecting package moby-engine for versions less than 25.0.18-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81869",
+      "released": "2026-09-16T21:17:22Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-81869"
+      ],
+      "products": [
+        "Azure Linux: moby-engine"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moby-engine 25.0.18-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "WID-SEC-W-2026-3413",

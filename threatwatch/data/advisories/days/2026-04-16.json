@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-16",
-  "count": 88,
+  "count": 96,
   "items": [
     {
       "id": "openSUSE-SU-2026:10558-1",
@@ -446,6 +446,29 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-OP90222",
+      "src": "cleanstart",
+      "title": "filippo",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OP90222.json",
+      "released": "2026-04-16T00:42:49Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61732",
+        "CVE-2025-68121",
+        "CVE-2026-26958"
+      ],
+      "products": [
+        "CleanStart: percona-xtradb-cluster-operator-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in percona-xtradb-cluster-operator-fips 1.19.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-CF62516",
       "src": "cleanstart",
       "title": "Hostname verification in Apache ZooKeeper ZKTrustManager falls back to reverse DNS (PTR) when IP SAN validation fails, allowing attackers who control or spoof PTR records to impersonate ZooKeeper s...",
@@ -497,6 +520,32 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-JZ43336",
+      "src": "cleanstart",
+      "title": "During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JZ43336.json",
+      "released": "2026-04-16T00:45:49Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810"
+      ],
+      "products": [
+        "CleanStart: percona-xtradb-cluster-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in percona-xtradb-cluster-operator 1.19.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-BH97849",
       "src": "cleanstart",
       "title": "gRPC-Go is the Go language implementation of gRPC",
@@ -536,6 +585,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-IY92636",
+      "src": "cleanstart",
+      "title": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succ...",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-IY92636.json",
+      "released": "2026-04-16T00:46:49Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61732",
+        "CVE-2025-68121"
+      ],
+      "products": [
+        "CleanStart: percona-xtradb-cluster-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in percona-xtradb-cluster-operator 1.19.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-DR81473",
       "src": "cleanstart",
       "title": "HashiCorp’s go-getter library up to v1",
@@ -561,6 +632,36 @@
       "fix": [
         {
           "t": "Fixed in harbor-scanner-trivy-fips 0.35.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KS09647",
+      "src": "cleanstart",
+      "title": "Axios is a promise based HTTP client for the browser and Node",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KS09647.json",
+      "released": "2026-04-16T00:55:51Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-25285",
+        "CVE-2025-62718",
+        "CVE-2026-21637",
+        "CVE-2026-2950",
+        "CVE-2026-33750",
+        "CVE-2026-33916",
+        "CVE-2026-33937",
+        "CVE-2026-4800",
+        "CVE-2026-4923",
+        "CVE-2026-4926"
+      ],
+      "products": [
+        "CleanStart: mongosh"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongosh 2.6.0-r3",
           "u": null
         }
       ],
@@ -1243,6 +1344,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-83450",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-27820 affecting package ruby for versions less than 3.3.5-8",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27820",
+      "released": "2026-04-16T18:16:44Z",
+      "updated": "2026-10-31T15:02:25Z",
+      "cves": [
+        "CVE-2026-27820"
+      ],
+      "products": [
+        "Azure Linux: ruby"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ruby 3.3.5-8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:8541",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -1502,6 +1625,28 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-85679",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-35469 affecting package keda for versions less than 2.14.1-13",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35469",
+      "released": "2026-04-16T22:16:37Z",
+      "updated": "2026-10-31T15:02:25Z",
+      "cves": [
+        "CVE-2026-35469"
+      ],
+      "products": [
+        "Azure Linux: keda"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keda 2.14.1-13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-85685",
@@ -2374,6 +2519,52 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-mlflow-2025-10279",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Privilege Escalation in mlflow/mlflow",
+      "url": "https://huntr.com/bounties/01d3b81e-13d1-43aa-b91a-443aec68bdc8",
+      "released": "2026-04-16T23:44:54Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-10279"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mlflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mlflow 3.4.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mlflow-2025-14279",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "DNS Rebinding Vulnerability in mlflow/mlflow",
+      "url": "https://huntr.com/bounties/ef478f72-2e4f-44dc-8055-fc06bef03108",
+      "released": "2026-04-16T23:44:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-14279"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mlflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mlflow 3.5.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

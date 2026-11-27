@@ -1,8 +1,38 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-06",
-  "count": 10,
+  "count": 11,
   "items": [
+    {
+      "id": "RHSA-2026:3957",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat AMQ Broker 7.13.4 release and security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:3957",
+      "released": "2026-03-06T06:15:07Z",
+      "updated": "2026-11-05T20:12:57Z",
+      "cves": [
+        "CVE-2026-27446"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Red Hat JBoss AMQ",
+        "Red Hat AMQ Broker 7.13.4"
+      ],
+      "fix": [
+        {
+          "t": "Before applying the update, back up your existing installation, including all applications, configuration files, databases and database settings. The Reference…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:3957"
+        },
+        {
+          "t": "To mitigate this issue, restrict Core protocol support on acceptors receiving connections from untrusted sources. The default \"artemis\" acceptor on port 61616 …",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
     {
       "id": "BIT-activemq-2025-66168",
       "src": "bitnami_vulndb",

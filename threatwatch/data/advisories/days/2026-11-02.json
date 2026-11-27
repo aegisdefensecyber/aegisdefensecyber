@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-02",
-  "count": 141,
+  "count": 148,
   "items": [
     {
       "id": "ELA-1878-1",
@@ -572,6 +572,20 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-106807",
+      "src": "cvelistv5",
+      "title": "A denial-of-service vulnerability exists in open5GS v2.8.0 in the PFCP transaction handling path. When the PFCP transaction or timer resource pool is exhausted, ogs_pfcp_xact_remote_create() returns NULL, but the failur…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-106807",
+      "released": "2026-11-02T00:00:00Z",
+      "updated": "2026-11-17T15:15:13Z",
+      "cves": [
+        "CVE-2026-106807"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-117067",
@@ -3157,6 +3171,60 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CVE-2026-105601",
+      "src": "cvelistv5",
+      "vendor": "php-web-design.com",
+      "title": "Joomla Extension - php-web-design.com - Reflected XSS in StageIt 1.0.0-2.2.0, 3.0.0-4.2.0, 5.0.0-5.7.5, 6.0.0-6.3.5",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-105601",
+      "released": "2026-11-02T13:20:51Z",
+      "updated": "2026-11-17T08:01:41Z",
+      "cves": [
+        "CVE-2026-105601"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "php-web-design.com StageIt extension for Joomla"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-105600",
+      "src": "cvelistv5",
+      "vendor": "php-web-design.com",
+      "title": "Joomla Extension - php-web-design.com - RCE via setting strings in StageIt 1.0.0-2.2.0, 3.0.0-4.2.0, 5.0.0-5.7.5, 6.0.0-6.3.5",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-105600",
+      "released": "2026-11-02T13:23:25Z",
+      "updated": "2026-11-17T08:04:35Z",
+      "cves": [
+        "CVE-2026-105600"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "php-web-design.com StageIt extension for Joomla"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-103420",
+      "src": "cvelistv5",
+      "vendor": "php-web-design.com",
+      "title": "Joomla Extension - php-web-design.com - CSRF for various actions in StageIt 1.0.0-2.2.0, 3.0.0-4.2.0, 5.0.0-5.7.5, 6.0.0-6.3.5",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-103420",
+      "released": "2026-11-02T13:24:37Z",
+      "updated": "2026-11-17T08:05:52Z",
+      "cves": [
+        "CVE-2026-103420"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.2,
+      "products": [
+        "php-web-design.com StageIt extension for Joomla"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "ROOT-APP-PYPI-CVE-2023-5752",
       "src": "osv_root",
       "vendor": "Root",
@@ -3466,6 +3534,67 @@
           "t": "See the vendor advisory for patches.",
           "u": "https://kb.cert.org/vuls/id/203719"
         }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:93977",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs Security Update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:93977",
+      "released": "2026-11-02T15:59:41Z",
+      "updated": "2026-11-06T06:58:17Z",
+      "cves": [
+        "CVE-2026-86983"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:93977"
+        },
+        {
+          "t": "Enforce strict payload length limits and input validation at the application boundary prior to passing untrusted data to the P-384 VOPRF interface. Where direc…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112529",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-99217 affecting package kernel 6.6.159.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99217",
+      "released": "2026-11-02T16:17:45Z",
+      "updated": "2026-11-03T05:33:06Z",
+      "cves": [
+        "CVE-2026-99217"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112577",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-99240 affecting package kernel 6.6.159.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99240",
+      "released": "2026-11-02T16:17:49Z",
+      "updated": "2026-11-03T05:33:06Z",
+      "cves": [
+        "CVE-2026-99240"
+      ],
+      "products": [
+        "Azure Linux: kernel"
       ],
       "seen": "2026-11-27"
     },

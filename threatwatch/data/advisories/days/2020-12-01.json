@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2020-12-01",
-  "count": 34,
+  "count": 39,
   "items": [
     {
       "id": "ASB-A-141745510",
@@ -778,6 +778,166 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHBA-2020:5280",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Bug Fix Advisory: httpd24 bug fix and enhancement update",
+      "url": "https://access.redhat.com/errata/RHBA-2020:5280",
+      "released": "2020-12-01T12:06:08Z",
+      "updated": "2026-11-07T05:02:50Z",
+      "cves": [
+        "CVE-2020-11984",
+        "CVE-2020-11993"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Red Hat Software Collections",
+        "Red Hat Software Collections for Red Hat Enterprise Linux Server (v. 7)",
+        "Red Hat Software Collections for Red Hat Enterprise Linux Workstation (v. 7)",
+        "Red Hat Software Collections for Red Hat Enterprise Linux Server EUS (v. 7.6)",
+        "Red Hat Software Collections for Red Hat Enterprise Linux Server EUS (v. 7.7)"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHBA-2020:5280"
+        },
+        {
+          "t": "This flaw only affects specific httpd configurations which use the uwsgi protocol. It does not manifest itself when uwsgi protocol is not used. Commenting out …",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-4654-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "php-pear vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-4654-1",
+      "released": "2020-12-01T12:38:57Z",
+      "updated": "2026-11-24T09:37:12Z",
+      "cves": [
+        "CVE-2020-28948",
+        "CVE-2020-28949"
+      ],
+      "products": [
+        "Ubuntu: php-pear"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php-pear 1:1.10.1+submodules+notgz-6ubuntu0.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in php-pear 1:1.10.5+submodules+notgz-1ubuntu1.18.04.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in php-pear 1:1.10.9+submodules+notgz-1ubuntu0.20.04.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-4655-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "python-werkzeug vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-4655-1",
+      "released": "2020-12-01T13:57:45Z",
+      "updated": "2026-11-24T09:37:12Z",
+      "cves": [
+        "CVE-2019-14806",
+        "CVE-2020-28724"
+      ],
+      "products": [
+        "Ubuntu: python-werkzeug"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-werkzeug 0.10.4+dfsg1-1ubuntu1.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in python-werkzeug 0.14.1+dfsg1-1ubuntu0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2020:5314",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: firefox security update",
+      "url": "https://access.redhat.com/errata/RHSA-2020:5314",
+      "released": "2020-12-01T15:26:17Z",
+      "updated": "2026-11-06T20:41:59Z",
+      "cves": [
+        "CVE-2020-16012",
+        "CVE-2020-26951",
+        "CVE-2020-26953",
+        "CVE-2020-26956",
+        "CVE-2020-26958",
+        "CVE-2020-26959",
+        "CVE-2020-26960",
+        "CVE-2020-26961",
+        "CVE-2020-26965",
+        "CVE-2020-26968"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream E4S (v. 8.0)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258 After instal…",
+          "u": "https://access.redhat.com/errata/RHSA-2020:5314"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-4656-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "xorg-server, xorg-server-hwe-16.04, xorg-server-hwe-18.04 vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-4656-1",
+      "released": "2020-12-01T16:08:56Z",
+      "updated": "2026-11-24T09:37:12Z",
+      "cves": [
+        "CVE-2020-14360",
+        "CVE-2020-25712"
+      ],
+      "products": [
+        "Ubuntu: xorg-server",
+        "Ubuntu: xorg-server-hwe-16.04",
+        "Ubuntu: xorg-server-hwe-18.04"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in xorg-server 2:1.18.4-0ubuntu0.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in xorg-server-hwe-16.04 2:1.19.6-1ubuntu4.1~16.04.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in xorg-server 2:1.19.6-1ubuntu4.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2020:2141-1",

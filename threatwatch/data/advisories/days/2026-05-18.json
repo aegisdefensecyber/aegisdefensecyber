@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-05-18",
-  "count": 197,
+  "count": 292,
   "items": [
     {
       "id": "openSUSE-SU-2026:10803-1",
@@ -300,6 +300,43 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "SUSE-SU-2026:21805-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for go1.25",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621805-1/",
+      "released": "2026-05-18T00:17:28Z",
+      "updated": "2026-09-16T19:51:28Z",
+      "cves": [
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:20763-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -334,6 +371,33 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:21806-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 3 for SUSE Linux Enterprise 16)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621806-1/",
+      "released": "2026-05-18T04:42:37Z",
+      "updated": "2026-09-16T19:51:29Z",
+      "cves": [
+        "CVE-2026-43284"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:20764-1",
@@ -393,6 +457,91 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:21808-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 5 for SUSE Linux Enterprise 16)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621808-1/",
+      "released": "2026-05-18T05:40:56Z",
+      "updated": "2026-09-16T19:51:31Z",
+      "cves": [
+        "CVE-2026-43284"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21809-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 4 for SUSE Linux Enterprise 16)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621809-1/",
+      "released": "2026-05-18T05:40:56Z",
+      "updated": "2026-09-16T19:51:33Z",
+      "cves": [
+        "CVE-2026-43284"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mongoose-2026-42334",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Mongoose: Improper Sanitization of $nor in sanitizeFilter May Allow NoSQL Injection",
+      "url": "https://github.com/Automattic/mongoose/security/advisories/GHSA-wpg9-53fq-2r8h",
+      "released": "2026-05-18T05:48:06Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-42334"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mongoose"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongoose 6.13.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongoose 7.8.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongoose 8.22.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "BIT-gitlab-2025-12669",
@@ -945,6 +1094,87 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "SUSE-SU-2026:21810-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 2 for SUSE Linux Enterprise 16)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621810-1/",
+      "released": "2026-05-18T06:11:35Z",
+      "updated": "2026-09-16T19:51:36Z",
+      "cves": [
+        "CVE-2026-43284"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21811-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 1 for SUSE Linux Enterprise 16)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621811-1/",
+      "released": "2026-05-18T06:11:35Z",
+      "updated": "2026-09-16T19:51:37Z",
+      "cves": [
+        "CVE-2026-43284"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21812-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 0 for SUSE Linux Enterprise 16)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621812-1/",
+      "released": "2026-05-18T06:42:18Z",
+      "updated": "2026-09-16T19:51:38Z",
+      "cves": [
+        "CVE-2026-43284"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "SUSE-SU-2026:1931-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -1211,6 +1441,58 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "SUSE-SU-2026:21731-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python-lxml",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621731-1/",
+      "released": "2026-05-18T08:52:51Z",
+      "updated": "2026-09-16T19:50:16Z",
+      "cves": [
+        "CVE-2026-41066"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21732-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for google-guest-agent",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621732-1/",
+      "released": "2026-05-18T08:52:51Z",
+      "updated": "2026-09-16T19:50:18Z",
+      "cves": [
+        "CVE-2026-33186"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "SUSE-SU-2026:1960-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -1228,6 +1510,36 @@
         "SUSE Linux Enterprise Live Patching 15 SP5",
         "SUSE Linux Enterprise Live Patching 15 SP6",
         "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21813-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python-GitPython",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621813-1/",
+      "released": "2026-05-18T09:43:07Z",
+      "updated": "2026-09-16T19:51:39Z",
+      "cves": [
+        "CVE-2026-42215",
+        "CVE-2026-42284",
+        "CVE-2026-44243",
+        "CVE-2026-44244"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
       ],
       "fix": [
         {
@@ -1268,6 +1580,37 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:21814-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for valkey",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621814-1/",
+      "released": "2026-05-18T09:59:25Z",
+      "updated": "2026-09-16T19:51:41Z",
+      "cves": [
+        "CVE-2025-67733",
+        "CVE-2026-21863",
+        "CVE-2026-23479",
+        "CVE-2026-23631",
+        "CVE-2026-25243"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:20776-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1296,6 +1639,33 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:21817-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 6 for SUSE Linux Enterprise 16)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621817-1/",
+      "released": "2026-05-18T10:14:25Z",
+      "updated": "2026-09-16T19:51:45Z",
+      "cves": [
+        "CVE-2026-43284"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "SUSE-RU-2026:21781-1",
@@ -1568,6 +1938,45 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-PB32291",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-24051, CVE-2026-32280, CVE-2026-32281, CVE-2026-32283, CVE-2026-33186, CVE-2026-33810, CVE-2026-33811, CVE-2026-33814, CVE-2026-34986, CVE-2026-39817, CVE-2026-39819, CVE-2026-39820, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PB32291.json",
+      "released": "2026-05-18T12:56:12Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-24051",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32283",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-34986",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-39883",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: restic-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in restic-fips 0.18.1-r5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-BS27946",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2025-61726, CVE-2025-61728, CVE-2025-61729, CVE-2025-61730, CVE-2025-68119, CVE-2025-68121, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-33186, CVE-2026-33810, CVE-2026-33811, CVE-2026…",
@@ -1684,6 +2093,97 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-PK73499",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-5588, CVE-2026-5598, ghsa-389x-839f-4rhx, ghsa-3p8m-j85q-pgmj, ghsa-4cx2-fc23-5wg6, ghsa-4g8c-wm8x-jfhw, ghsa-735f-pc8j-v9w8, ghsa-c3fc-8qff-9hwx, ghsa-fghv-69vj-qj49, ghsa-p93r-85wp-75v3, gh…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PK73499.json",
+      "released": "2026-05-18T12:57:05Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-5588",
+        "CVE-2026-5598"
+      ],
+      "products": [
+        "CleanStart: kserve-modelmesh"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kserve-modelmesh 0.9.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KV09488",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-23865, CVE-2026-23868, CVE-2026-24281, CVE-2026-24308, CVE-2026-34479, CVE-2026-42577, ghsa-355h-qmc2-wpwf, ghsa-3pxv-7cmr-fjr4, ghsa-445c-vh5m-36rj, ghsa-6hg6-v5c8-fphq, ghsa-72hv-8253-57qq,…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KV09488.json",
+      "released": "2026-05-18T12:57:06Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-23865",
+        "CVE-2026-23868",
+        "CVE-2026-24281",
+        "CVE-2026-24308",
+        "CVE-2026-34479",
+        "CVE-2026-42577"
+      ],
+      "products": [
+        "CleanStart: solr"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in solr 9.10.1-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-MI82983",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-47911, CVE-2025-58190, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-27143, CVE-2026-27144, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MI82983.json",
+      "released": "2026-05-18T12:57:19Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47911",
+        "CVE-2025-58190",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: karpenter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in karpenter-fips 1.9.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-HZ86045",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2026-44431, CVE-2026-44432, CVE-2026-6357, ghsa-jp4c-xjxw-mgf9, ghsa-mf9v-mfxr-j63j, ghsa-qccp-gfcp-xxvc applied in versions: 26.1.1.0-r0",
@@ -1701,6 +2201,29 @@
       "fix": [
         {
           "t": "Fixed in miniforge3 26.1.1.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-QK55639",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-44431, CVE-2026-44432, CVE-2026-6357, ghsa-gc5v-m9x4-r6x2, ghsa-jp4c-xjxw-mgf9, ghsa-mf9v-mfxr-j63j, ghsa-qccp-gfcp-xxvc applied in versions: 26.1.0.0-r1",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QK55639.json",
+      "released": "2026-05-18T12:58:15Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-44431",
+        "CVE-2026-44432",
+        "CVE-2026-6357"
+      ],
+      "products": [
+        "CleanStart: miniforge3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in miniforge3 26.1.0.0-r1",
           "u": null
         }
       ],
@@ -1757,6 +2280,57 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-QS87161",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-24051, CVE-2026-26958, CVE-2026-27143, CVE-2026-27144, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33186, CVE-2026-33810, CVE-2026-33811, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QS87161.json",
+      "released": "2026-05-18T12:58:46Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-24051",
+        "CVE-2026-26958",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-33815",
+        "CVE-2026-33816",
+        "CVE-2026-34986",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-39882",
+        "CVE-2026-40179",
+        "CVE-2026-41889",
+        "CVE-2026-42151",
+        "CVE-2026-42154",
+        "CVE-2026-42499",
+        "CVE-2026-42501",
+        "CVE-2026-44903"
+      ],
+      "products": [
+        "CleanStart: keda"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keda 2.19.0-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-HM31566",
@@ -1913,6 +2487,60 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-QP84300",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-47913, CVE-2025-47914, CVE-2025-58181, CVE-2025-61727, CVE-2025-61729, CVE-2026-1229, CVE-2026-24051, CVE-2026-25679, CVE-2026-26958, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026-…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QP84300.json",
+      "released": "2026-05-18T13:02:23Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-58181",
+        "CVE-2025-61727",
+        "CVE-2025-61729",
+        "CVE-2026-1229",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-26958",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-34986",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-39882",
+        "CVE-2026-42499",
+        "CVE-2026-42501",
+        "CVE-2026-44740",
+        "CVE-2026-45022",
+        "CVE-2026-4660"
+      ],
+      "products": [
+        "CleanStart: terragrunt-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in terragrunt-fips 0.97.2-r8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-DD05788",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2018-10237, CVE-2020-8908, CVE-2021-41973, CVE-2022-24823, CVE-2022-3171, CVE-2022-3509, CVE-2022-3510, CVE-2022-41881, CVE-2023-1370, CVE-2023-2976, CVE-2023-34453, CVE-2023-34454, CVE-2023-34455…",
@@ -1993,6 +2621,63 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-ML42911",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-58183, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-61723, CVE-2025-61724, CVE-2025-61725, CVE-2025-61726, CVE-2025-61727, CVE-2025-61728, CVE-2025-61729, CVE-2025…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-ML42911.json",
+      "released": "2026-05-18T13:02:49Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61726",
+        "CVE-2025-61727",
+        "CVE-2025-61728",
+        "CVE-2025-61729",
+        "CVE-2025-61730",
+        "CVE-2025-61732",
+        "CVE-2025-68119",
+        "CVE-2025-68121",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-35469",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: k8ssandra-client-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in k8ssandra-client-fips 0.7.0-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-DL78780",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2026-6664, CVE-2026-6665, CVE-2026-6666, CVE-2026-6667 applied in versions: 1.16.1-r0, 1.25.1-r0",
@@ -2011,6 +2696,32 @@
       "fix": [
         {
           "t": "Fixed in pgbouncer 1.25.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-PM88731",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-54410, CVE-2026-32952, CVE-2026-33186, CVE-2026-40179, CVE-2026-42151, CVE-2026-42154, ghsa-4vq8-7jfc-9cvp, ghsa-8rm2-7qqf-34qm, ghsa-fw8g-cg8f-9j28, ghsa-p77j-4mvh-x3m3, ghsa-pjcq-xvwq-hhpj,…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PM88731.json",
+      "released": "2026-05-18T13:03:17Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-54410",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-40179",
+        "CVE-2026-42151",
+        "CVE-2026-42154"
+      ],
+      "products": [
+        "CleanStart: elastic-beats"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elastic-beats 9.4.0-r1",
           "u": null
         }
       ],
@@ -2063,6 +2774,218 @@
       "fix": [
         {
           "t": "Fixed in vt-cli 1.2.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-QO30809",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-61726, CVE-2025-61727, CVE-2025-61728, CVE-2025-61729, CVE-2025-61730, CVE-2025-68121, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QO30809.json",
+      "released": "2026-05-18T13:04:16Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61726",
+        "CVE-2025-61727",
+        "CVE-2025-61728",
+        "CVE-2025-61729",
+        "CVE-2025-61730",
+        "CVE-2025-68121",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499"
+      ],
+      "products": [
+        "CleanStart: wave-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wave-fips 0.9.0-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-LA67881",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-58183, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-61723, CVE-2025-61724, CVE-2025-61725, CVE-2025-61729, CVE-2026-25679, CVE-2026-27137, CVE-2026-27138, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LA67881.json",
+      "released": "2026-05-18T13:04:27Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61729",
+        "CVE-2026-25679",
+        "CVE-2026-27137",
+        "CVE-2026-27138",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: wave"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wave 1.13.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-QO29688",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-46394, CVE-2025-58183, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-58251, CVE-2025-61723, CVE-2025-61724, CVE-2025-61725, CVE-2025-61727, CVE-2025-61729, CVE-2025…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QO29688.json",
+      "released": "2026-05-18T13:05:15Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-46394",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-58251",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61727",
+        "CVE-2025-61729",
+        "CVE-2025-61732",
+        "CVE-2025-68121",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-27137",
+        "CVE-2026-27138",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-29181",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-34986",
+        "CVE-2026-35469",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-39883",
+        "CVE-2026-42499"
+      ],
+      "products": [
+        "CleanStart: velero"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in velero 1.17.2-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KO66630",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-25679, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-33811, CVE-2026-33814, CVE-2026-39817, CVE-2026-39819, CVE-2026-39820, CVE-2026-39823, CVE-2026-39825, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KO66630.json",
+      "released": "2026-05-18T13:06:06Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-25679",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: karpenter"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in karpenter 1.9.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-LZ07533",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-44431, CVE-2026-44432, ghsa-gc5v-m9x4-r6x2, ghsa-mf9v-mfxr-j63j, ghsa-qccp-gfcp-xxvc applied in versions: 3.8.0-r3, 3.8.0-r7",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LZ07533.json",
+      "released": "2026-05-18T13:06:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-44431",
+        "CVE-2026-44432"
+      ],
+      "products": [
+        "CleanStart: cassandra-reaper-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cassandra-reaper-fips 3.8.0-r7",
           "u": null
         }
       ],
@@ -2163,6 +3086,54 @@
       "fix": [
         {
           "t": "Fixed in terragrunt-fips 0.98.0-r8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-OF37807",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-15558, CVE-2025-47907, CVE-2026-24051, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-32952, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OF37807.json",
+      "released": "2026-05-18T13:08:07Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-15558",
+        "CVE-2025-47907",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-34986",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-39883",
+        "CVE-2026-39984",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: kyverno-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kyverno-fips 1.17.2-r1",
           "u": null
         }
       ],
@@ -2431,6 +3402,41 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-OX06093",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-54410, CVE-2026-32952, CVE-2026-33186, CVE-2026-33811, CVE-2026-33814, CVE-2026-39817, CVE-2026-39819, CVE-2026-39820, CVE-2026-39823, CVE-2026-39825, CVE-2026-39826, CVE-2026-39836, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OX06093.json",
+      "released": "2026-05-18T13:09:45Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-54410",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-40179",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: elastic-beats"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elastic-beats 9.1.10-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-KB11938",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2022-23181, CVE-2022-29885, CVE-2022-34305, CVE-2022-42252, CVE-2022-45143, CVE-2023-24998, CVE-2023-28708, CVE-2026-24515, CVE-2026-25210 applied in versions: 11.0.18-r0, 9.0.58-r0, 9.0.63-r0, 9.…",
@@ -2458,6 +3464,65 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-JU62349",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2018-10237, CVE-2020-8908, CVE-2021-22569, CVE-2021-22570, CVE-2022-3171, CVE-2022-3509, CVE-2022-3510, CVE-2023-2976, CVE-2023-44981, CVE-2024-23454, CVE-2024-23944, CVE-2024-38827, CVE-2024-4755…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JU62349.json",
+      "released": "2026-05-18T13:11:22Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2018-10237",
+        "CVE-2020-8908",
+        "CVE-2021-22569",
+        "CVE-2021-22570",
+        "CVE-2022-3171",
+        "CVE-2022-3509",
+        "CVE-2022-3510",
+        "CVE-2023-2976",
+        "CVE-2023-44981",
+        "CVE-2024-23454",
+        "CVE-2024-23944",
+        "CVE-2024-38827",
+        "CVE-2024-47554",
+        "CVE-2024-6763",
+        "CVE-2024-7254",
+        "CVE-2025-11143",
+        "CVE-2025-24970",
+        "CVE-2025-25193",
+        "CVE-2025-27821",
+        "CVE-2025-41249",
+        "CVE-2025-48734",
+        "CVE-2025-48924",
+        "CVE-2025-49128",
+        "CVE-2025-52999",
+        "CVE-2025-53864",
+        "CVE-2025-55163",
+        "CVE-2025-58056",
+        "CVE-2025-58057",
+        "CVE-2025-59419",
+        "CVE-2025-67735",
+        "CVE-2025-68161",
+        "CVE-2025-8916",
+        "CVE-2026-24281",
+        "CVE-2026-24308",
+        "CVE-2026-33870",
+        "CVE-2026-33871",
+        "CVE-2026-40490",
+        "CVE-2026-41417",
+        "CVE-2026-5588"
+      ],
+      "products": [
+        "CleanStart: apache-hive"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-hive 4.2.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-EQ71754",
@@ -2565,6 +3630,46 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-MK07381",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33810, CVE-2026-33811, CVE-2026-33814, CVE-2026-39817, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MK07381.json",
+      "released": "2026-05-18T13:12:48Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: sealed-secrets"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in sealed-secrets 0.35.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-EP51501",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2024-6763, CVE-2025-11143, CVE-2026-1225, CVE-2026-22184, CVE-2026-27171, CVE-2026-34757, CVE-2026-44431, CVE-2026-44432, ghsa-25qh-j22f-pwp8, ghsa-72hv-8253-57qq, ghsa-gc5v-m9x4-r6x2, ghsa-mf9v-m…",
@@ -2587,6 +3692,49 @@
       "fix": [
         {
           "t": "Fixed in cassandra-reaper-fips 4.0.1-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-JI10303",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-33186, ghsa-p77j-4mvh-x3m3 applied in versions: 3.31.4-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JI10303.json",
+      "released": "2026-05-18T13:13:12Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33186"
+      ],
+      "products": [
+        "CleanStart: calico"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in calico 3.31.4-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-OS08278",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-61727, CVE-2025-61729, ghsa-cgrx-mc8f-2prm, ghsa-f6x5-jh6r-wrfv, ghsa-j5w8-q4qc-rx2x, ghsa-vvgc-356p-c3xw applied in versions: 1.10.2-r0, 1.10.2-r1, 1.5.0-r0, 1.9.1-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OS08278.json",
+      "released": "2026-05-18T13:13:16Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: prometheus-node-exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in prometheus-node-exporter-fips 1.9.1-r0",
           "u": null
         }
       ],
@@ -2630,6 +3778,71 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-PV53006",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-67030, CVE-2026-33811, CVE-2026-33814, CVE-2026-34479, CVE-2026-39817, CVE-2026-39819, CVE-2026-39820, CVE-2026-39823, CVE-2026-39825, CVE-2026-39826, CVE-2026-39836, CVE-2026-42499, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PV53006.json",
+      "released": "2026-05-18T13:14:53Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-67030",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-34479",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: confluent-kafka"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in confluent-kafka 8.2.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-LO22603",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2024-13009, CVE-2024-6763, CVE-2025-12383, CVE-2025-5115, CVE-2026-1225, CVE-2026-24281, CVE-2026-24308, CVE-2026-34479, CVE-2026-41409, CVE-2026-41635, CVE-2026-42778, CVE-2026-42779, ghsa-355h-q…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LO22603.json",
+      "released": "2026-05-18T13:14:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2024-13009",
+        "CVE-2024-6763",
+        "CVE-2025-12383",
+        "CVE-2025-5115",
+        "CVE-2026-1225",
+        "CVE-2026-24281",
+        "CVE-2026-24308",
+        "CVE-2026-34479",
+        "CVE-2026-41409",
+        "CVE-2026-41635",
+        "CVE-2026-42778",
+        "CVE-2026-42779"
+      ],
+      "products": [
+        "CleanStart: schema-registry"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in schema-registry 8.1.2-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-GH89210",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2015-0886, CVE-2020-8908, CVE-2022-1471, CVE-2022-24823, CVE-2022-38752, CVE-2022-41854, CVE-2023-2976, CVE-2023-34462, CVE-2024-12798, CVE-2024-12801, CVE-2024-13009, CVE-2024-47535, CVE-2024-676…",
@@ -2670,6 +3883,92 @@
       "fix": [
         {
           "t": "Fixed in cassandra-reaper-fips 3.6.1-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-PM36304",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-33870, CVE-2026-41417, CVE-2026-42580, CVE-2026-42581, CVE-2026-42584, CVE-2026-42585, ghsa-2c5c-chwr-9hqw, ghsa-38f8-5428-x5cv, ghsa-72hv-8253-57qq, ghsa-f6hv-jmp6-3vwv, ghsa-m4cv-j2px-7723,…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PM36304.json",
+      "released": "2026-05-18T13:15:42Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33870",
+        "CVE-2026-41417",
+        "CVE-2026-42580",
+        "CVE-2026-42581",
+        "CVE-2026-42584",
+        "CVE-2026-42585"
+      ],
+      "products": [
+        "CleanStart: opensearch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in opensearch 3.6.0-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-NB51079",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-64756, CVE-2025-69873, CVE-2026-1525, CVE-2026-1526, CVE-2026-1527, CVE-2026-1528, CVE-2026-2229, CVE-2026-2327, CVE-2026-23745, CVE-2026-2391, CVE-2026-24842, CVE-2026-25128, CVE-2026-25547,…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NB51079.json",
+      "released": "2026-05-18T13:17:47Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-64756",
+        "CVE-2025-69873",
+        "CVE-2026-1525",
+        "CVE-2026-1526",
+        "CVE-2026-1527",
+        "CVE-2026-1528",
+        "CVE-2026-2229",
+        "CVE-2026-2327",
+        "CVE-2026-23745",
+        "CVE-2026-2391",
+        "CVE-2026-24842",
+        "CVE-2026-25128",
+        "CVE-2026-25547",
+        "CVE-2026-2581",
+        "CVE-2026-25896",
+        "CVE-2026-26278",
+        "CVE-2026-26960",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-27601",
+        "CVE-2026-27903",
+        "CVE-2026-27904",
+        "CVE-2026-27942",
+        "CVE-2026-28292",
+        "CVE-2026-2950",
+        "CVE-2026-29786",
+        "CVE-2026-31802",
+        "CVE-2026-32141",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33036",
+        "CVE-2026-33750",
+        "CVE-2026-33810",
+        "CVE-2026-35209",
+        "CVE-2026-42338",
+        "CVE-2026-4800",
+        "CVE-2026-6951"
+      ],
+      "products": [
+        "CleanStart: renovate"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in renovate 43.4.4-r0",
           "u": null
         }
       ],
@@ -2736,6 +4035,59 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-LC05413",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-15599, CVE-2025-62718, CVE-2025-69873, CVE-2026-0540, CVE-2026-25639, CVE-2026-2739, CVE-2026-27903, CVE-2026-27904, CVE-2026-2950, CVE-2026-33750, CVE-2026-33916, CVE-2026-33937, CVE-2026-35…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LC05413.json",
+      "released": "2026-05-18T13:18:14Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-15599",
+        "CVE-2025-62718",
+        "CVE-2025-69873",
+        "CVE-2026-0540",
+        "CVE-2026-25639",
+        "CVE-2026-2739",
+        "CVE-2026-27903",
+        "CVE-2026-27904",
+        "CVE-2026-2950",
+        "CVE-2026-33750",
+        "CVE-2026-33916",
+        "CVE-2026-33937",
+        "CVE-2026-35213",
+        "CVE-2026-40175",
+        "CVE-2026-41238",
+        "CVE-2026-41239",
+        "CVE-2026-41240",
+        "CVE-2026-42033",
+        "CVE-2026-42034",
+        "CVE-2026-42035",
+        "CVE-2026-42036",
+        "CVE-2026-42037",
+        "CVE-2026-42038",
+        "CVE-2026-42039",
+        "CVE-2026-42040",
+        "CVE-2026-42041",
+        "CVE-2026-42042",
+        "CVE-2026-42043",
+        "CVE-2026-42044",
+        "CVE-2026-42264",
+        "CVE-2026-4800",
+        "CVE-2026-6321",
+        "CVE-2026-6322"
+      ],
+      "products": [
+        "CleanStart: opensearch-dashboards-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in opensearch-dashboards-fips 3.5.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-GX01236",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2017-12158, CVE-2017-12159, CVE-2026-41417, CVE-2026-42198, CVE-2026-42577, CVE-2026-42578, CVE-2026-42579, CVE-2026-42580, CVE-2026-42581, CVE-2026-42583, CVE-2026-42584, CVE-2026-42585, CVE-2026…",
@@ -2770,6 +4122,82 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-LE11246",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2015-3254, CVE-2018-10237, CVE-2018-11798, CVE-2018-1320, CVE-2018-20200, CVE-2019-0205, CVE-2020-8908, CVE-2021-0341, CVE-2021-41973, CVE-2022-1471, CVE-2022-24823, CVE-2022-3171, CVE-2022-3509, …",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LE11246.json",
+      "released": "2026-05-18T13:18:58Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2015-3254",
+        "CVE-2018-10237",
+        "CVE-2018-11798",
+        "CVE-2018-1320",
+        "CVE-2018-20200",
+        "CVE-2019-0205",
+        "CVE-2020-8908",
+        "CVE-2021-0341",
+        "CVE-2021-41973",
+        "CVE-2022-1471",
+        "CVE-2022-24823",
+        "CVE-2022-3171",
+        "CVE-2022-3509",
+        "CVE-2022-3510",
+        "CVE-2022-41881",
+        "CVE-2023-2976",
+        "CVE-2023-34462",
+        "CVE-2023-44487",
+        "CVE-2023-46120",
+        "CVE-2024-13009",
+        "CVE-2024-29025",
+        "CVE-2024-40094",
+        "CVE-2024-47535",
+        "CVE-2024-6763",
+        "CVE-2024-7254",
+        "CVE-2025-11143",
+        "CVE-2025-25193",
+        "CVE-2025-46392",
+        "CVE-2025-48734",
+        "CVE-2025-48924",
+        "CVE-2025-53864",
+        "CVE-2025-55163",
+        "CVE-2025-58056",
+        "CVE-2025-58057",
+        "CVE-2025-59419",
+        "CVE-2025-67735",
+        "CVE-2026-1225",
+        "CVE-2026-21452",
+        "CVE-2026-33870",
+        "CVE-2026-33871",
+        "CVE-2026-41409",
+        "CVE-2026-41417",
+        "CVE-2026-41635",
+        "CVE-2026-42577",
+        "CVE-2026-42578",
+        "CVE-2026-42579",
+        "CVE-2026-42580",
+        "CVE-2026-42581",
+        "CVE-2026-42583",
+        "CVE-2026-42584",
+        "CVE-2026-42585",
+        "CVE-2026-42586",
+        "CVE-2026-42587",
+        "CVE-2026-42778",
+        "CVE-2026-42779",
+        "CVE-2026-44248"
+      ],
+      "products": [
+        "CleanStart: stargate"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in stargate 2.0.48-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "SUSE-SU-2026:1619-2",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -2798,6 +4226,77 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-MR50866",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-27143, CVE-2026-27144, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33810, CVE-2026-33811, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MR50866.json",
+      "released": "2026-05-18T13:19:19Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-34743",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499"
+      ],
+      "products": [
+        "CleanStart: prometheus-redis-exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in prometheus-redis-exporter-fips 1.81.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-OX51942",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-29181, CVE-2026-33186, CVE-2026-33811, CVE-2026-33814, CVE-2026-35469, CVE-2026-39820, CVE-2026-39823, CVE-2026-39825, CVE-2026-39826, CVE-2026-39836, CVE-2026-42499, ghsa-hr2v-4r36-88hr, ghs…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OX51942.json",
+      "released": "2026-05-18T13:19:45Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-29181",
+        "CVE-2026-33186",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-35469",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499"
+      ],
+      "products": [
+        "CleanStart: linkerd2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linkerd2 26.1.4-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-CD91667",
@@ -2846,6 +4345,52 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-LN66182",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-61726, CVE-2025-61727, CVE-2025-61728, CVE-2025-61729, CVE-2025-61730, CVE-2025-61732, CVE-2025-68119, CVE-2025-68121, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LN66182.json",
+      "released": "2026-05-18T13:20:21Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61726",
+        "CVE-2025-61727",
+        "CVE-2025-61728",
+        "CVE-2025-61729",
+        "CVE-2025-61730",
+        "CVE-2025-61732",
+        "CVE-2025-68119",
+        "CVE-2025-68121",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-34743",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499"
+      ],
+      "products": [
+        "CleanStart: prometheus-redis-exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in prometheus-redis-exporter-fips 1.79.0-r5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-IS19112",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2025-15558, CVE-2026-27143, CVE-2026-27144, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33186, CVE-2026-33810, CVE-2026-34986, CVE-2026-39883, ghsa-78h…",
@@ -2872,6 +4417,44 @@
       "fix": [
         {
           "t": "Fixed in istio 1.29.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-LI56163",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-27143, CVE-2026-27144, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33811, CVE-2026-33814, CVE-2026-39817, CVE-2026-39819, CVE-2026-39820, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LI56163.json",
+      "released": "2026-05-18T13:21:00Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: confluent-cp-docker-utils"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in confluent-cp-docker-utils 1.0.8-r1",
           "u": null
         }
       ],
@@ -3035,6 +4618,162 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-KA21986",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2022-29526, CVE-2025-47907, CVE-2025-61726, CVE-2025-61728, CVE-2025-61730, CVE-2025-68121, CVE-2026-24515, CVE-2026-25210, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KA21986.json",
+      "released": "2026-05-18T13:23:27Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2022-29526",
+        "CVE-2025-47907",
+        "CVE-2025-61726",
+        "CVE-2025-61728",
+        "CVE-2025-61730",
+        "CVE-2025-68121",
+        "CVE-2026-24515",
+        "CVE-2026-25210",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: druid-exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in druid-exporter-fips 0.9-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-OH43332",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2022-29526, CVE-2025-47907, CVE-2025-61726, CVE-2025-61727, CVE-2025-61728, CVE-2025-61729, CVE-2025-61730, CVE-2025-68121, CVE-2026-24515, CVE-2026-25210, CVE-2026-25679, CVE-2026-27139, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OH43332.json",
+      "released": "2026-05-18T13:23:58Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2022-29526",
+        "CVE-2025-47907",
+        "CVE-2025-61726",
+        "CVE-2025-61727",
+        "CVE-2025-61728",
+        "CVE-2025-61729",
+        "CVE-2025-61730",
+        "CVE-2025-68121",
+        "CVE-2026-24515",
+        "CVE-2026-25210",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: druid-exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in druid-exporter-fips 0.11-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-PK19530",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2022-29526, CVE-2025-47907, CVE-2025-58183, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-61723, CVE-2025-61724, CVE-2025-61725, CVE-2025-61726, CVE-2025-61727, CVE-2025…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PK19530.json",
+      "released": "2026-05-18T13:24:09Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2022-29526",
+        "CVE-2025-47907",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61726",
+        "CVE-2025-61727",
+        "CVE-2025-61728",
+        "CVE-2025-61729",
+        "CVE-2025-61730",
+        "CVE-2025-68121",
+        "CVE-2026-24515",
+        "CVE-2026-25210",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: druid-exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in druid-exporter-fips 0.11-r6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-CK61704",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2026-33811, CVE-2026-33814, CVE-2026-39817, CVE-2026-39819, CVE-2026-39820, CVE-2026-39823, CVE-2026-39825, CVE-2026-39826, CVE-2026-39836, CVE-2026-42499, CVE-2026-42501, ghsa-xmrv-pmrh-hhx2 appl…",
@@ -3097,6 +4836,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-MV15822",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-44431, CVE-2026-44432 applied in versions: 5.4.4-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MV15822.json",
+      "released": "2026-05-18T13:25:00Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-44431",
+        "CVE-2026-44432"
+      ],
+      "products": [
+        "CleanStart: py3-jupyterhub"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in py3-jupyterhub 5.4.4-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-AY89602",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33810, CVE-2026-33811, CVE-2026-33814, CVE-2026-39817, CVE-2026-39819, CVE-2026-39820, CVE-2026-39823, CVE-2026…",
@@ -3128,6 +4889,34 @@
       "fix": [
         {
           "t": "Fixed in sealed-secrets 0.36.6-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-OB67529",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-33811, CVE-2026-33814, CVE-2026-39820, CVE-2026-39823, CVE-2026-39825, CVE-2026-39826, CVE-2026-39836, CVE-2026-42499 applied in versions: 1.15.1-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OB67529.json",
+      "released": "2026-05-18T13:25:27Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499"
+      ],
+      "products": [
+        "CleanStart: ingress-nginx-controller-1.15"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ingress-nginx-controller-1.15 1.15.1-r0",
           "u": null
         }
       ],
@@ -3200,6 +4989,99 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-NT10973",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-61726, CVE-2025-61728, CVE-2025-61730, CVE-2025-68121, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32289, CVE-2026-33811, CVE-2026-33814, CVE-2026-39817, CVE-2026-39819, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NT10973.json",
+      "released": "2026-05-18T13:26:52Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61726",
+        "CVE-2025-61728",
+        "CVE-2025-61730",
+        "CVE-2025-68121",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32289",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: spark-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in spark-operator 2.1.1-r7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-QU88766",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-11065, CVE-2025-47907, CVE-2025-47911, CVE-2025-58183, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-58190, CVE-2025-61723, CVE-2025-61724, CVE-2025-61725, CVE-2025…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QU88766.json",
+      "released": "2026-05-18T13:27:21Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-11065",
+        "CVE-2025-47907",
+        "CVE-2025-47911",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-58190",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61726",
+        "CVE-2025-61727",
+        "CVE-2025-61728",
+        "CVE-2025-61729",
+        "CVE-2025-61730",
+        "CVE-2025-61732",
+        "CVE-2025-68119",
+        "CVE-2025-68121",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32289",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: spark-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in spark-operator 2.2.1-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-AN32474",
@@ -3346,6 +5228,49 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-QR52625",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-61726, CVE-2025-61728, CVE-2025-61730, CVE-2025-68119, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-27143, CVE-2026-27144, CVE-2026-29181, CVE-2026-32280, CVE-2026-32281, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QR52625.json",
+      "released": "2026-05-18T13:29:20Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61726",
+        "CVE-2025-61728",
+        "CVE-2025-61730",
+        "CVE-2025-68119",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-29181",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499"
+      ],
+      "products": [
+        "CleanStart: cilium"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cilium 1.18.5-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-BR79647",
@@ -3516,6 +5441,31 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-PT56560",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-1229, CVE-2026-32952, CVE-2026-33186, CVE-2026-39882, CVE-2026-39883, ghsa-w8rr-5gcm-pp58, ghsa-xmrv-pmrh-hhx2 applied in versions: 1.14.8-r0, 1.14.8-r1, 1.15.1-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PT56560.json",
+      "released": "2026-05-18T13:30:27Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-1229",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-39882",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: terraform"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in terraform 1.15.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-GQ00159",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2025-58183, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-61723, CVE-2025-61724, CVE-2025-61725, CVE-2026-29181, CVE-2026-33186, CVE-2026-33811, CVE-2026-33814, CVE-2026…",
@@ -3579,6 +5529,73 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-KP10590",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2024-22257, CVE-2024-38821, CVE-2024-47561, CVE-2025-7962, CVE-2026-3505, CVE-2026-5588, ghsa-3677-xxcr-wjqv, ghsa-qqpg-mvqg-649v, ghsa-x44p-gvrj-pj2r applied in versions: 1.25.0-r0, 1.25.0-r1, 2.…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KP10590.json",
+      "released": "2026-05-18T13:30:42Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2024-22257",
+        "CVE-2024-38821",
+        "CVE-2024-47561",
+        "CVE-2025-7962",
+        "CVE-2026-3505",
+        "CVE-2026-5588"
+      ],
+      "products": [
+        "CleanStart: apache-nifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-nifi 2.7.2-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-MJ60235",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-58183, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-61723, CVE-2025-61724, CVE-2025-61725, CVE-2026-29181, CVE-2026-33186, CVE-2026-33811, CVE-2026-33814, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MJ60235.json",
+      "released": "2026-05-18T13:30:46Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2026-29181",
+        "CVE-2026-33186",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: modelmesh-runtime-adapter"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in modelmesh-runtime-adapter 0.9.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-HO21235",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2025-61726, CVE-2025-61728, CVE-2025-61730, CVE-2025-61732, CVE-2025-68119, CVE-2025-68121, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142 applied in versions: 0.87.1-r0, 0.89.0-r0",
@@ -3608,6 +5625,41 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-JO51351",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33810, CVE-2026-33811, CVE-2026-33814, CVE-2026-35469, CVE-2026-39820, CVE-2026-39823, CVE-2026-39825, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JO51351.json",
+      "released": "2026-05-18T13:31:50Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-35469",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499"
+      ],
+      "products": [
+        "CleanStart: percona-xtradb-cluster-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in percona-xtradb-cluster-operator 1.19.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-CF88804",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2026-33811, CVE-2026-33814, CVE-2026-39820, CVE-2026-39823, CVE-2026-39825, CVE-2026-39826, CVE-2026-39836, CVE-2026-42499 applied in versions: 1.29.7-r0",
@@ -3630,6 +5682,167 @@
       "fix": [
         {
           "t": "Fixed in mailpit 1.29.7-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-NT80635",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-55190, CVE-2025-55191, CVE-2025-58183, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-59537, CVE-2025-59538, CVE-2025-61723, CVE-2025-61724, CVE-2025-61725, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NT80635.json",
+      "released": "2026-05-18T13:32:10Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-55190",
+        "CVE-2025-55191",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-59537",
+        "CVE-2025-59538",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2026-1229",
+        "CVE-2026-24051",
+        "CVE-2026-25934",
+        "CVE-2026-29181",
+        "CVE-2026-33186",
+        "CVE-2026-33762",
+        "CVE-2026-34165",
+        "CVE-2026-35469",
+        "CVE-2026-39883",
+        "CVE-2026-41506"
+      ],
+      "products": [
+        "CleanStart: argo-cd-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in argo-cd-fips 3.3.7-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-LU21824",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-55190, CVE-2025-55191, CVE-2025-58183, CVE-2025-58185, CVE-2025-58187, CVE-2025-58188, CVE-2025-58189, CVE-2025-59537, CVE-2025-59538, CVE-2025-61723, CVE-2025-61724, CVE-2025-61725, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LU21824.json",
+      "released": "2026-05-18T13:32:11Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-55190",
+        "CVE-2025-55191",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-59537",
+        "CVE-2025-59538",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2026-1229",
+        "CVE-2026-24051",
+        "CVE-2026-25934",
+        "CVE-2026-33186",
+        "CVE-2026-33762",
+        "CVE-2026-34165",
+        "CVE-2026-34986",
+        "CVE-2026-35469",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: argo-cd-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in argo-cd-fips 3.2.9-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-LA07853",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-68121, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-29181, CVE-2026-33186, ghsa-mh2q-q3fh-2475 applied in versions: 4.13.0-r0, 4.13.0-r1, 4.13.2-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LA07853.json",
+      "released": "2026-05-18T13:32:16Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-68121",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-29181",
+        "CVE-2026-33186"
+      ],
+      "products": [
+        "CleanStart: kubernetes-csi-driver-nfs-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kubernetes-csi-driver-nfs-fips 4.13.2-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-JF61842",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-54410, CVE-2026-32952, CVE-2026-33186, CVE-2026-40179, ghsa-4vq8-7jfc-9cvp, ghsa-p77j-4mvh-x3m3, ghsa-pjcq-xvwq-hhpj, ghsa-vffh-x6r8-xx99 applied in versions: 8.18.1-r0, 9.1.10-r0, 9.3.4-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JF61842.json",
+      "released": "2026-05-18T13:32:35Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-54410",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-40179"
+      ],
+      "products": [
+        "CleanStart: elastic-beats"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elastic-beats 9.3.4-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-LO90739",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-27143, CVE-2026-27144, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33810 applied in versions: 1.82.0-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LO90739.json",
+      "released": "2026-05-18T13:32:46Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810"
+      ],
+      "products": [
+        "CleanStart: prometheus-redis-exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in prometheus-redis-exporter-fips 1.82.0-r0",
           "u": null
         }
       ],
@@ -3946,6 +6159,35 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-MR27796",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2022-23181, CVE-2022-29885, CVE-2022-34305, CVE-2022-42252, CVE-2022-45143, CVE-2023-24998, CVE-2023-28708, CVE-2025-31650, CVE-2025-31651 applied in versions: 10.1.53-r0, 9.0.58-r0, 9.0.63-r0, 9.…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MR27796.json",
+      "released": "2026-05-18T13:35:17Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2022-23181",
+        "CVE-2022-29885",
+        "CVE-2022-34305",
+        "CVE-2022-42252",
+        "CVE-2022-45143",
+        "CVE-2023-24998",
+        "CVE-2023-28708",
+        "CVE-2025-31650",
+        "CVE-2025-31651"
+      ],
+      "products": [
+        "CleanStart: tomcat10"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tomcat10 9.0.80-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-DV49899",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2024-45993, CVE-2025-31344, CVE-2025-48924, CVE-2026-26740, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33210, CVE-2026-33810, CVE-2026-33870, ghsa-33mh-2634-fwr2, ghsa-3m6g-2423-7cp3…",
@@ -3970,6 +6212,73 @@
       "fix": [
         {
           "t": "Fixed in logstash-fips 9.3.2-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-JW30455",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2024-47535, CVE-2024-47561, CVE-2024-7254, CVE-2025-24970, CVE-2025-25193, CVE-2025-33042, CVE-2025-48924, CVE-2025-55163, CVE-2025-58056, CVE-2025-58057, CVE-2025-67735, CVE-2025-68161, CVE-2026-…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JW30455.json",
+      "released": "2026-05-18T13:36:03Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2024-47535",
+        "CVE-2024-47561",
+        "CVE-2024-7254",
+        "CVE-2025-24970",
+        "CVE-2025-25193",
+        "CVE-2025-33042",
+        "CVE-2025-48924",
+        "CVE-2025-55163",
+        "CVE-2025-58056",
+        "CVE-2025-58057",
+        "CVE-2025-67735",
+        "CVE-2025-68161",
+        "CVE-2026-41417",
+        "CVE-2026-42577"
+      ],
+      "products": [
+        "CleanStart: wavefront-proxy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wavefront-proxy 13.9-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-MM00120",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2024-47535, CVE-2024-47561, CVE-2024-7254, CVE-2025-24970, CVE-2025-25193, CVE-2025-33042, CVE-2025-48924, CVE-2025-55163, CVE-2025-58056, CVE-2025-58057, CVE-2025-67735, CVE-2025-68161, CVE-2026-…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MM00120.json",
+      "released": "2026-05-18T13:36:03Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2024-47535",
+        "CVE-2024-47561",
+        "CVE-2024-7254",
+        "CVE-2025-24970",
+        "CVE-2025-25193",
+        "CVE-2025-33042",
+        "CVE-2025-48924",
+        "CVE-2025-55163",
+        "CVE-2025-58056",
+        "CVE-2025-58057",
+        "CVE-2025-67735",
+        "CVE-2025-68161",
+        "CVE-2026-41417"
+      ],
+      "products": [
+        "CleanStart: wavefront-proxy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wavefront-proxy 13.9-r0",
           "u": null
         }
       ],
@@ -4127,6 +6436,30 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-MP82813",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-33186, CVE-2026-39882, CVE-2026-39883, CVE-2026-40179, ghsa-mqqf-5wvp-8fh8 applied in versions: 1.21.0-r0, 1.21.0-r1",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MP82813.json",
+      "released": "2026-05-18T13:37:10Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33186",
+        "CVE-2026-39882",
+        "CVE-2026-39883",
+        "CVE-2026-40179"
+      ],
+      "products": [
+        "CleanStart: cortex"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cortex 1.21.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-CZ42417",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2026-25679, CVE-2026-27139, CVE-2026-27142 applied in versions: 1.35.0-r0",
@@ -4177,6 +6510,71 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-PO27799",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2017-12158, CVE-2017-12159, CVE-2025-59250, CVE-2026-41417, CVE-2026-42198, CVE-2026-42577, CVE-2026-42578, CVE-2026-42579, CVE-2026-42580, CVE-2026-42581, CVE-2026-42583, CVE-2026-42584, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PO27799.json",
+      "released": "2026-05-18T13:37:33Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2017-12158",
+        "CVE-2017-12159",
+        "CVE-2025-59250",
+        "CVE-2026-41417",
+        "CVE-2026-42198",
+        "CVE-2026-42577",
+        "CVE-2026-42578",
+        "CVE-2026-42579",
+        "CVE-2026-42580",
+        "CVE-2026-42581",
+        "CVE-2026-42583",
+        "CVE-2026-42584",
+        "CVE-2026-42585",
+        "CVE-2026-42587",
+        "CVE-2026-5588",
+        "CVE-2026-5598"
+      ],
+      "products": [
+        "CleanStart: keycloak"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keycloak 26.5.7-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-IY98831",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-14847, CVE-2025-58181, CVE-2025-61727, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33810 applied in versions: 8.0.20-r0, 8.2.1-r1",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-IY98831.json",
+      "released": "2026-05-18T13:38:00Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-14847",
+        "CVE-2025-58181",
+        "CVE-2025-61727",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810"
+      ],
+      "products": [
+        "CleanStart: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 8.2.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-MZ44265",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2025-14847, CVE-2025-58181, CVE-2025-61727, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33810 applied i…",
@@ -4207,6 +6605,24 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-QO72222",
+      "src": "cleanstart",
+      "title": "Security fixes for ghsa-xmrv-pmrh-hhx2 applied in versions: 1.35.17-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QO72222.json",
+      "released": "2026-05-18T13:38:10Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "products": [
+        "CleanStart: weaviate-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in weaviate-fips 1.35.17-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-FL19517",
@@ -4740,6 +7156,30 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-JC64695",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-61732, CVE-2025-68121, CVE-2026-26958, CVE-2026-35469, ghsa-f6x5-jh6r-wrfv, ghsa-fw7p-63qq-7hpr, ghsa-gx3x-vq4p-mhhv, ghsa-j5w8-q4qc-rx2x, ghsa-mh2q-q3fh-2475, ghsa-pc3f-x583-g7j2 applied in …",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JC64695.json",
+      "released": "2026-05-18T13:43:45Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61732",
+        "CVE-2025-68121",
+        "CVE-2026-26958",
+        "CVE-2026-35469"
+      ],
+      "products": [
+        "CleanStart: percona-xtradb-cluster-operator-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in percona-xtradb-cluster-operator-fips 1.19.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-DI23929",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2014-0138, CVE-2014-0139, CVE-2016-5419, CVE-2016-5420, CVE-2016-5421, CVE-2016-7141, CVE-2016-7167, CVE-2016-8615, CVE-2016-8616, CVE-2016-8617, CVE-2016-8618, CVE-2016-8619, CVE-2016-8620, CVE-2…",
@@ -4820,6 +7260,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-MZ61768",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-39882, CVE-2026-39883, ghsa-hfvc-g4fc-pqhx, ghsa-w8rr-5gcm-pp58 applied in versions: 3.1.0-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MZ61768.json",
+      "released": "2026-05-18T13:43:52Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-39882",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: distribution-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in distribution-fips 3.1.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-QA19540",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2025-47911, CVE-2025-58190, CVE-2025-61726, CVE-2025-61728, CVE-2025-61730, CVE-2025-64715, CVE-2025-68119, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-33186, CVE-2026-33726 applied i…",
@@ -4884,6 +7346,40 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-OI10284",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-47913, CVE-2025-47914, CVE-2025-58181, CVE-2025-61727, CVE-2025-61729, CVE-2026-1229, CVE-2026-24051, CVE-2026-25679, CVE-2026-26958, CVE-2026-27139, CVE-2026-27141, CVE-2026-27142, CVE-2026-…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OI10284.json",
+      "released": "2026-05-18T13:44:47Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-58181",
+        "CVE-2025-61727",
+        "CVE-2025-61729",
+        "CVE-2026-1229",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-26958",
+        "CVE-2026-27139",
+        "CVE-2026-27141",
+        "CVE-2026-27142",
+        "CVE-2026-33186",
+        "CVE-2026-39882"
+      ],
+      "products": [
+        "CleanStart: terragrunt-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in terragrunt-fips 1.0.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-GB46352",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2025-0913, CVE-2025-4673, CVE-2025-47907, CVE-2026-25679, CVE-2026-26958, CVE-2026-27139, CVE-2026-27141, CVE-2026-27142, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-3…",
@@ -4936,6 +7432,28 @@
       "fix": [
         {
           "t": "Fixed in opensearch 2.19.5-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-MI47415",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-61729, CVE-2026-32952, ghsa-mh2q-q3fh-2475, ghsa-pjcq-xvwq-hhpj applied in versions: 1.1.0-r0, 2.4.1-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MI47415.json",
+      "released": "2026-05-18T13:45:14Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61729",
+        "CVE-2026-32952"
+      ],
+      "products": [
+        "CleanStart: external-secrets"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in external-secrets 2.4.1-r0",
           "u": null
         }
       ],
@@ -5000,6 +7518,64 @@
       "fix": [
         {
           "t": "Fixed in vault-fips 2.0.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KU61465",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2015-3254, CVE-2018-10237, CVE-2018-11798, CVE-2018-1320, CVE-2018-20200, CVE-2019-0205, CVE-2020-8908, CVE-2021-0341, CVE-2021-41973, CVE-2022-1471, CVE-2022-24823, CVE-2022-3171, CVE-2022-3509, …",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KU61465.json",
+      "released": "2026-05-18T13:46:33Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2015-3254",
+        "CVE-2018-10237",
+        "CVE-2018-11798",
+        "CVE-2018-1320",
+        "CVE-2018-20200",
+        "CVE-2019-0205",
+        "CVE-2020-8908",
+        "CVE-2021-0341",
+        "CVE-2021-41973",
+        "CVE-2022-1471",
+        "CVE-2022-24823",
+        "CVE-2022-3171",
+        "CVE-2022-3509",
+        "CVE-2022-3510",
+        "CVE-2022-41881",
+        "CVE-2023-2976",
+        "CVE-2023-34462",
+        "CVE-2023-44487",
+        "CVE-2023-46120",
+        "CVE-2024-13009",
+        "CVE-2024-29025",
+        "CVE-2024-40094",
+        "CVE-2024-47535",
+        "CVE-2024-6763",
+        "CVE-2024-7254",
+        "CVE-2025-11143",
+        "CVE-2025-25193",
+        "CVE-2025-46392",
+        "CVE-2025-48734",
+        "CVE-2025-48924",
+        "CVE-2025-53864",
+        "CVE-2025-55163",
+        "CVE-2025-58056",
+        "CVE-2025-58057",
+        "CVE-2025-59419",
+        "CVE-2025-67735",
+        "CVE-2026-1225",
+        "CVE-2026-21452"
+      ],
+      "products": [
+        "CleanStart: stargate"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in stargate 2.0.44-r5",
           "u": null
         }
       ],
@@ -5080,6 +7656,38 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-NB83265",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-32952, CVE-2026-33186, CVE-2026-33810, CVE-2026-33816, CVE-2026-34040, CVE-2026-34986, CVE-2026-39883, ghsa-j88…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NB83265.json",
+      "released": "2026-05-18T13:46:48Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-33816",
+        "CVE-2026-34040",
+        "CVE-2026-34986",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: vault"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vault 2.0.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-UZ56639",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2022-23181, CVE-2022-29885, CVE-2022-34305, CVE-2022-42252, CVE-2022-45143, CVE-2023-24998, CVE-2023-28708 applied in versions: 9.0.58-r0, 9.0.63-r0, 9.0.64-r0, 9.0.68-r0, 9.0.70-r0, 9.0.71-r0, 9.…",
@@ -5136,6 +7744,70 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-KF86214",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-61730, CVE-2025-61732, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33810, CVE-2026-39883 applied in versions: 3.4.…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KF86214.json",
+      "released": "2026-05-18T13:47:24Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61730",
+        "CVE-2025-61732",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: fluent-operator-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fluent-operator-fips 3.4.0-r8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-OH47925",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-68121, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-27143, CVE-2026-27144, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33186, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OH47925.json",
+      "released": "2026-05-18T13:47:38Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-68121",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-33810"
+      ],
+      "products": [
+        "CleanStart: kubernetes-csi-driver-nfs-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kubernetes-csi-driver-nfs-fips 4.13.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-SP88135",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2025-68121, CVE-2026-25679, CVE-2026-27137, CVE-2026-27138, CVE-2026-27139, CVE-2026-27142 applied in versions: 2.4.4-r0, 2.4.4-r1",
@@ -5160,6 +7832,24 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-OZ77074",
+      "src": "cleanstart",
+      "title": "Security fixes for ghsa-r4q5-vmmm-2653 applied in versions: 5.1.0-r1",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OZ77074.json",
+      "released": "2026-05-18T13:48:08Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "products": [
+        "CleanStart: configurable-http-proxy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in configurable-http-proxy 5.1.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-GW28934",
@@ -5253,6 +7943,32 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-MJ36694",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-68121, CVE-2026-24051, CVE-2026-25679, CVE-2026-27141, CVE-2026-33186, CVE-2026-39882, ghsa-9h8m-3fm2-qjrq, ghsa-p77j-4mvh-x3m3, ghsa-w8rr-5gcm-pp58 applied in versions: 2.17.10-r0, 3.0.2-r0,…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MJ36694.json",
+      "released": "2026-05-18T13:48:41Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-68121",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-27141",
+        "CVE-2026-33186",
+        "CVE-2026-39882"
+      ],
+      "products": [
+        "CleanStart: grafana-mimir-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana-mimir-fips 3.0.2-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-CY26398",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2026-34986, ghsa-78h2-9frx-2jm8, ghsa-hfvc-g4fc-pqhx, ghsa-mh2q-q3fh-2475, ghsa-w8rr-5gcm-pp58, ghsa-xmrv-pmrh-hhx2 applied in versions: 3.0.5-r0, 3.0.6-r0",
@@ -5308,6 +8024,40 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-MW24969",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-61732, CVE-2025-68121, CVE-2026-24051, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026-33186, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MW24969.json",
+      "released": "2026-05-18T13:49:39Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61732",
+        "CVE-2025-68121",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: cass-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cass-operator 1.28.1-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-TE02851",
@@ -5428,6 +8178,126 @@
       "fix": [
         {
           "t": "Fixed in temporal-ui-server-fips 2.48.2-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-OH72236",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-33815, CVE-2026-33816, CVE-2026-34986, CVE-2026-39883, ghsa-hfvc-g4fc-pqhx, ghsa-j88v-2chj-qfwx applied in versions: 1.31.0.153.1-r0, 1.31.0.153.3-r0, 1.31.0.153.3-r1",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OH72236.json",
+      "released": "2026-05-18T13:50:09Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33815",
+        "CVE-2026-33816",
+        "CVE-2026-34986",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: temporal-server"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in temporal-server 1.31.0.153.3-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KJ58915",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-26958, CVE-2026-33186, CVE-2026-33815, CVE-2026-33816, CVE-2026-34986, CVE-2026-39883, ghsa-78h2-9frx-2jm8, ghsa-9jj7-4m8r-rfcm, ghsa-fw7p-63qq-7hpr, ghsa-hfvc-g4fc-pqhx, ghsa-j88v-2chj-qfwx,…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KJ58915.json",
+      "released": "2026-05-18T13:50:20Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-26958",
+        "CVE-2026-33186",
+        "CVE-2026-33815",
+        "CVE-2026-33816",
+        "CVE-2026-34986",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: temporal-server"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in temporal-server 1.30.4-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-LO63022",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-47911, CVE-2025-47913, CVE-2025-47914, CVE-2025-54410, CVE-2025-58181, CVE-2025-58190, CVE-2025-61727, CVE-2025-61729, CVE-2025-68121, CVE-2026-1229, CVE-2026-24051, CVE-2026-25679, CVE-2026-…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LO63022.json",
+      "released": "2026-05-18T13:50:36Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47911",
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-54410",
+        "CVE-2025-58181",
+        "CVE-2025-58190",
+        "CVE-2025-61727",
+        "CVE-2025-61729",
+        "CVE-2025-68121",
+        "CVE-2026-1229",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-26958",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-34986",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: openbao-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao-fips 2.5.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-PM06830",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-26958, CVE-2026-33186, CVE-2026-33815, CVE-2026-33816, CVE-2026-34986, CVE-2026-39883, ghsa-78h2-9frx-2jm8, ghsa-9jj7-4m8r-rfcm, ghsa-fw7p-63qq-7hpr, ghsa-hfvc-g4fc-pqhx, ghsa-j88v-2chj-qfwx,…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PM06830.json",
+      "released": "2026-05-18T13:50:42Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-26958",
+        "CVE-2026-33186",
+        "CVE-2026-33815",
+        "CVE-2026-33816",
+        "CVE-2026-34986",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: temporal-server"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in temporal-server 1.29.6-r0",
           "u": null
         }
       ],
@@ -5596,6 +8466,76 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-OU18540",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-47911, CVE-2025-47913, CVE-2025-47914, CVE-2025-54410, CVE-2025-58181, CVE-2025-58190, CVE-2025-61727, CVE-2025-61729, CVE-2025-68121, CVE-2026-1229, CVE-2026-24051, CVE-2026-25679, CVE-2026-…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OU18540.json",
+      "released": "2026-05-18T13:51:57Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47911",
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-54410",
+        "CVE-2025-58181",
+        "CVE-2025-58190",
+        "CVE-2025-61727",
+        "CVE-2025-61729",
+        "CVE-2025-68121",
+        "CVE-2026-1229",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-26958",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-34986",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: openbao-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao-fips 2.5.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-JK52519",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-26958, CVE-2026-33186, CVE-2026-33815, CVE-2026-33816, CVE-2026-34986, CVE-2026-39883, ghsa-78h2-9frx-2jm8, ghsa-9jj7-4m8r-rfcm, ghsa-fw7p-63qq-7hpr, ghsa-hfvc-g4fc-pqhx, ghsa-j88v-2chj-qfwx,…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JK52519.json",
+      "released": "2026-05-18T13:51:58Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-26958",
+        "CVE-2026-33186",
+        "CVE-2026-33815",
+        "CVE-2026-33816",
+        "CVE-2026-34986",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: temporal-server-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in temporal-server-fips 1.29.6-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-HC15345",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2026-24051, CVE-2026-25679, CVE-2026-26958, CVE-2026-27139, CVE-2026-27142, CVE-2026-33186, CVE-2026-33815, CVE-2026-33816, CVE-2026-34986, CVE-2026-39883, ghsa-78h2-9frx-2jm8, ghsa-9jj7-4m8r-rfcm…",
@@ -5684,6 +8624,46 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-LT10352",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-68121, CVE-2026-24051, CVE-2026-25679, CVE-2026-26958, CVE-2026-27139, CVE-2026-27142, CVE-2026-27143, CVE-2026-27144, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LT10352.json",
+      "released": "2026-05-18T13:53:14Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-68121",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-26958",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-33815",
+        "CVE-2026-33816",
+        "CVE-2026-34986",
+        "CVE-2026-35469",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: jitsucom-bulker"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jitsucom-bulker 2.9.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-GP85500",
       "src": "cleanstart",
       "title": "Security fixes for ghsa-mh2q-q3fh-2475 applied in versions: 1.22.7-r0",
@@ -5696,6 +8676,39 @@
       "fix": [
         {
           "t": "Fixed in consul-fips 1.22.7-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-NR54556",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-11579, CVE-2026-1229, CVE-2026-21726, CVE-2026-24051, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-33186, CVE-2026-33762, CVE-2026-34040, CVE-2026-34165, CVE-2026-34986, CVE-2026-…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NR54556.json",
+      "released": "2026-05-18T13:54:06Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-11579",
+        "CVE-2026-1229",
+        "CVE-2026-21726",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-33186",
+        "CVE-2026-33762",
+        "CVE-2026-34040",
+        "CVE-2026-34165",
+        "CVE-2026-34986",
+        "CVE-2026-39882"
+      ],
+      "products": [
+        "CleanStart: grafana-alloy-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana-alloy-fips 1.15.1-r0",
           "u": null
         }
       ],
@@ -5768,6 +8781,72 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-LZ60917",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-61726, CVE-2025-61728, CVE-2025-61730, CVE-2025-68121, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LZ60917.json",
+      "released": "2026-05-18T13:55:02Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61726",
+        "CVE-2025-61728",
+        "CVE-2025-61730",
+        "CVE-2025-68121",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810"
+      ],
+      "products": [
+        "CleanStart: kafka_exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kafka_exporter-fips 1.6.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-NB55984",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-61726, CVE-2025-61728, CVE-2025-61730, CVE-2025-68121, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NB55984.json",
+      "released": "2026-05-18T13:55:08Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61726",
+        "CVE-2025-61728",
+        "CVE-2025-61730",
+        "CVE-2025-68121",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810"
+      ],
+      "products": [
+        "CleanStart: kafka_exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kafka_exporter-fips 1.7.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-ID81656",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2025-15558, CVE-2026-33186, ghsa-p436-gjf2-799p, ghsa-p77j-4mvh-x3m3 applied in versions: 1.29.0-r0, 1.29.0-r1, 1.29.1-r0",
@@ -5829,6 +8908,27 @@
       "fix": [
         {
           "t": "Fixed in docker 29.3.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-LR89498",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2026-34986, ghsa-3xc5-wrhm-f963, ghsa-78h2-9frx-2jm8 applied in versions: 0.48.1-r0, 0.49.0-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LR89498.json",
+      "released": "2026-05-18T13:55:52Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-34986"
+      ],
+      "products": [
+        "CleanStart: melange"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in melange 0.49.0-r0",
           "u": null
         }
       ],
@@ -5944,6 +9044,37 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-QI02196",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-15558, CVE-2025-47913, CVE-2025-47914, CVE-2025-58181, CVE-2025-61732, CVE-2026-24051, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-33186, CVE-2026-40179, ghsa-9h8m-3fm2-qjrq, ghs…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QI02196.json",
+      "released": "2026-05-18T13:56:18Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-15558",
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-58181",
+        "CVE-2025-61732",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-33186",
+        "CVE-2026-40179"
+      ],
+      "products": [
+        "CleanStart: istio-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in istio-fips 1.29.2-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-FR69458",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2025-61727, CVE-2025-61729, CVE-2026-33186, CVE-2026-39883, ghsa-6v2p-p543-phr9, ghsa-f6x5-jh6r-wrfv, ghsa-hfvc-g4fc-pqhx, ghsa-j5w8-q4qc-rx2x, ghsa-mh2q-q3fh-2475, ghsa-p77j-4mvh-x3m3 applied in …",
@@ -6005,6 +9136,43 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-MW66533",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-15558, CVE-2025-47907, CVE-2026-24051, CVE-2026-25679, CVE-2026-26958, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026-32281, CVE-2026-32282, CVE-2026-32283, CVE-2026-32289, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MW66533.json",
+      "released": "2026-05-18T13:57:11Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-15558",
+        "CVE-2025-47907",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-26958",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-34986",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: kyverno-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kyverno-fips 1.15.3-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-BU39038",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2025-61727, CVE-2025-61729, CVE-2026-24051, CVE-2026-33186, CVE-2026-39883, ghsa-6v2p-p543-phr9, ghsa-f6x5-jh6r-wrfv, ghsa-hfvc-g4fc-pqhx, ghsa-j5w8-q4qc-rx2x, ghsa-mh2q-q3fh-2475, ghsa-p77j-4mvh-…",
@@ -6024,6 +9192,47 @@
       "fix": [
         {
           "t": "Fixed in kapp-controller 0.59.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-NS33477",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-15558, CVE-2025-47907, CVE-2025-66564, CVE-2026-22703, CVE-2026-22772, CVE-2026-23831, CVE-2026-23991, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-32280, CVE-2026-32281, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NS33477.json",
+      "released": "2026-05-18T13:57:24Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-15558",
+        "CVE-2025-47907",
+        "CVE-2025-66564",
+        "CVE-2026-22703",
+        "CVE-2026-22772",
+        "CVE-2026-23831",
+        "CVE-2026-23991",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-34986",
+        "CVE-2026-39883",
+        "CVE-2026-39984"
+      ],
+      "products": [
+        "CleanStart: kyverno-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kyverno-fips 1.16.3-r7",
           "u": null
         }
       ],
@@ -6308,6 +9517,67 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-JG72006",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-11579, CVE-2026-1229, CVE-2026-21726, CVE-2026-24051, CVE-2026-25679, CVE-2026-27139, CVE-2026-27142, CVE-2026-33186, CVE-2026-33762, CVE-2026-34040, CVE-2026-34165, CVE-2026-34986, CVE-2026-…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JG72006.json",
+      "released": "2026-05-18T13:59:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-11579",
+        "CVE-2026-1229",
+        "CVE-2026-21726",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-33186",
+        "CVE-2026-33762",
+        "CVE-2026-34040",
+        "CVE-2026-34165",
+        "CVE-2026-34986",
+        "CVE-2026-39882"
+      ],
+      "products": [
+        "CleanStart: grafana-alloy-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana-alloy-fips 1.15.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-LO26058",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-15558, CVE-2026-1229, CVE-2026-25934, CVE-2026-27896, CVE-2026-33252, CVE-2026-33762, CVE-2026-34165, CVE-2026-34742, ghsa-37cx-329c-33x3, ghsa-89xv-2j6f-qhc8, ghsa-f6x5-jh6r-wrfv, ghsa-gm2x-…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LO26058.json",
+      "released": "2026-05-18T14:00:03Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-15558",
+        "CVE-2026-1229",
+        "CVE-2026-25934",
+        "CVE-2026-27896",
+        "CVE-2026-33252",
+        "CVE-2026-33762",
+        "CVE-2026-34165",
+        "CVE-2026-34742"
+      ],
+      "products": [
+        "CleanStart: gptscript"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gptscript 0.9.8-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-AH59738",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2026-35469, ghsa-hr2v-4r36-88hr, ghsa-pc3f-x583-g7j2 applied in versions: 26.4.2",
@@ -6405,6 +9675,41 @@
       "fix": [
         {
           "t": "Fixed in thingsboard-tb-web-ui 4.3.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-OD47693",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-0913, CVE-2025-15558, CVE-2025-4673, CVE-2025-47907, CVE-2025-47914, CVE-2025-58181, CVE-2025-62156, CVE-2025-62157, CVE-2026-24051, CVE-2026-25934, CVE-2026-26958, CVE-2026-32280, CVE-2026-3…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OD47693.json",
+      "released": "2026-05-18T14:02:28Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-0913",
+        "CVE-2025-15558",
+        "CVE-2025-4673",
+        "CVE-2025-47907",
+        "CVE-2025-47914",
+        "CVE-2025-58181",
+        "CVE-2025-62156",
+        "CVE-2025-62157",
+        "CVE-2026-24051",
+        "CVE-2026-25934",
+        "CVE-2026-26958",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-35469"
+      ],
+      "products": [
+        "CleanStart: argo-workflows-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in argo-workflows-fips 4.0.4-r1",
           "u": null
         }
       ],

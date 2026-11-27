@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-12",
-  "count": 222,
+  "count": 243,
   "items": [
     {
       "id": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-2-2-released/",
@@ -2384,6 +2384,32 @@
         },
         {
           "t": "Fixed in linux-lts 6.18.43-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-71218",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-71218",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-71218",
+      "released": "2026-08-12T06:04:25Z",
+      "updated": "2026-10-16T00:01:44Z",
+      "cves": [
+        "CVE-2026-71218"
+      ],
+      "products": [
+        "Alpaquita: iperf3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in iperf3 3.22-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in iperf3 3.18-r0",
           "u": null
         }
       ],
@@ -6019,6 +6045,39 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:54272",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: abrt security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:54272",
+      "released": "2026-08-12T11:26:19Z",
+      "updated": "2026-11-05T21:48:06Z",
+      "cves": [
+        "CVE-2026-54228",
+        "CVE-2026-54229",
+        "CVE-2026-54230",
+        "CVE-2026-54231"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:54272"
+        },
+        {
+          "t": "The following practices would help for avoiding exposure and mitigate this flaw: - Disable or remove ABRT if it is not required. On RHEL 8 systems where ABRT i…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RUSTSEC-2026-0295",
       "src": "osv_rustsec",
       "vendor": "Rustsec",
@@ -6456,6 +6515,276 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "GHSA-2qqv-3jgq-vpm9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Non-administrator responses from /api/system/getConf omit three secrets that the configuration-export path explicitly strips, disclosing the session-cookie signing key and the OS username to anonymou…",
+      "url": "https://github.com/advisories/GHSA-2qqv-3jgq-vpm9",
+      "released": "2026-08-12T21:31:41Z",
+      "updated": "2026-09-04T21:16:30Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-cjwm-9h7g-pcr9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Embedded (transclusion) block content is returned without publish-access filtering, leaking private and password-protected document content to anonymous readers",
+      "url": "https://github.com/advisories/GHSA-cjwm-9h7g-pcr9",
+      "released": "2026-08-12T21:31:41Z",
+      "updated": "2026-09-04T21:13:07Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-cm9f-w4h4-7j85",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Static-file routes bypass the publish-access controls enforced on the REST API, exposing templates, snippets and export artifacts to anonymous readers",
+      "url": "https://github.com/advisories/GHSA-cm9f-w4h4-7j85",
+      "released": "2026-08-12T21:31:41Z",
+      "updated": "2026-09-04T21:02:10Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-f68g-4xv8-2g75",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Tag labels from password-protected documents are returned to readers who have not entered the password",
+      "url": "https://github.com/advisories/GHSA-f68g-4xv8-2g75",
+      "released": "2026-08-12T21:31:41Z",
+      "updated": "2026-09-04T21:24:07Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-fxmw-rv85-5hwh",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Missing publish-access filter on getAttributeViewKeysByID discloses database column schema, plus two unscoped block-ID enumeration oracles (publish mode)",
+      "url": "https://github.com/advisories/GHSA-fxmw-rv85-5hwh",
+      "released": "2026-08-12T21:31:41Z",
+      "updated": "2026-09-03T23:03:29Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-hg4j-w33m-p7g4",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: The session-cookie signing key (Conf.CookieKey) is returned to anonymous readers by /api/system/getConf",
+      "url": "https://github.com/advisories/GHSA-hg4j-w33m-p7g4",
+      "released": "2026-08-12T21:31:41Z",
+      "updated": "2026-09-04T21:07:52Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-hr3f-qfrh-h7w5",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Encrypted-notebook key-derivation material and wrapped notebook keys disclosed to anonymous readers, enabling offline master-password cracking",
+      "url": "https://github.com/advisories/GHSA-hr3f-qfrh-h7w5",
+      "released": "2026-08-12T21:31:41Z",
+      "updated": "2026-09-03T23:01:37Z",
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-mg8q-52j3-w5f8",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Publish-access filter on renderAttributeView leaves related-database content unfiltered and fails open on non-block first columns",
+      "url": "https://github.com/advisories/GHSA-mg8q-52j3-w5f8",
+      "released": "2026-08-12T21:31:41Z",
+      "updated": "2026-09-04T20:57:51Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-rchc-g58m-88jm",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: getEncryptedNotebookStatus discloses names and live unlock state of all encrypted notebooks to anonymous readers",
+      "url": "https://github.com/advisories/GHSA-rchc-g58m-88jm",
+      "released": "2026-08-12T21:31:41Z",
+      "updated": "2026-09-04T20:58:20Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-v3v5-7j3j-cc6f",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Missing publish-access filter on the HPath/path-resolution endpoints discloses the private document tree to anonymous readers",
+      "url": "https://github.com/advisories/GHSA-v3v5-7j3j-cc6f",
+      "released": "2026-08-12T21:31:41Z",
+      "updated": "2026-09-04T20:53:21Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-2jmx-q9jf-wp3w",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Second-order SSTI to arbitrary SQL via attribute-view template column (queryBlocks): malicious imported package executes SQL on victim kernel",
+      "url": "https://github.com/advisories/GHSA-2jmx-q9jf-wp3w",
+      "released": "2026-08-12T21:31:42Z",
+      "updated": "2026-09-03T22:49:12Z",
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-72xp-24p9-7vpf",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Absolute filesystem path and OS username disclosure via resolveAssetPath",
+      "url": "https://github.com/advisories/GHSA-72xp-24p9-7vpf",
+      "released": "2026-08-12T21:31:42Z",
+      "updated": "2026-09-03T23:00:03Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-89hf-xcx5-r9r6",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Missing publish-access check on getBlockBreadcrumb, getRefText, and getBlockTreeInfos discloses content and metadata of protected/forbidden documents",
+      "url": "https://github.com/advisories/GHSA-89hf-xcx5-r9r6",
+      "released": "2026-08-12T21:31:42Z",
+      "updated": "2026-09-03T22:51:56Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-8wx9-j7j5-h9vp",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Localhost-trust admin bypass on auth-code-gated endpoints, with potential remote reachability via the fixed-port prox",
+      "url": "https://github.com/advisories/GHSA-8wx9-j7j5-h9vp",
+      "released": "2026-08-12T21:31:42Z",
+      "updated": "2026-09-03T22:32:26Z",
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-h4w7-mgq4-wg6x",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Missing publish-access filter on getBlockAttrs and batchGetBlockAttrs discloses block attributes (name, alias, memo, custom fields) of protected documents",
+      "url": "https://github.com/advisories/GHSA-h4w7-mgq4-wg6x",
+      "released": "2026-08-12T21:31:42Z",
+      "updated": "2026-09-03T22:58:14Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-j26h-r8jx-887c",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Password (protected) tier omitted in the attribute-view/database publish filter: Reader receives rows of protected documents without the password (publish mode)",
+      "url": "https://github.com/advisories/GHSA-j26h-r8jx-887c",
+      "released": "2026-08-12T21:31:42Z",
+      "updated": "2026-09-03T22:50:38Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-mhcc-g592-267j",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Missing publish-access filter on getFileAnnotation discloses private PDF annotations of forbidden/protected documents (publish mode)",
+      "url": "https://github.com/advisories/GHSA-mhcc-g592-267j",
+      "released": "2026-08-12T21:31:42Z",
+      "updated": "2026-09-03T22:48:06Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-v598-7627-g9fx",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Graph endpoints omit the publish-password tier: anonymous readers receive block-level content of password-protected documents",
+      "url": "https://github.com/advisories/GHSA-v598-7627-g9fx",
+      "released": "2026-08-12T21:31:42Z",
+      "updated": "2026-09-03T22:52:45Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "WID-SEC-W-2026-2806",
       "src": "csaf_certbund",
       "vendor": "Amazon",
@@ -6591,6 +6920,28 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95931",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-73500 affecting package keda for versions less than 2.14.1-18",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-73500",
+      "released": "2026-08-12T22:17:17Z",
+      "updated": "2026-10-31T15:02:25Z",
+      "cves": [
+        "CVE-2026-73500"
+      ],
+      "products": [
+        "Azure Linux: keda"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keda 2.14.1-18",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "msrc_CVE-2025-43853",

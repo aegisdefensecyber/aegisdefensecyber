@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-23",
-  "count": 467,
+  "count": 483,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1599",
@@ -2611,6 +2611,23 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-bpjp-bmps-262q-me5n",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Who is affected",
+      "url": "https://scout.docker.com/v/DHI-bpjp-bmps-262q-me5n",
+      "released": "2026-11-23T09:56:39Z",
+      "updated": "2026-11-26T13:45:22Z",
+      "products": [
+        "Docker Hardened Images: meilisearch",
+        "Docker Hardened Images: mise",
+        "Docker Hardened Images: qdrant",
+        "Docker Hardened Images: vaultwarden-1",
+        "Docker Hardened Images: vector"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "VDE-2026-096",
       "src": "csaf_wagogmbhcokg",
       "vendor": "WAGO",
@@ -2874,6 +2891,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-yyc3-ehw3-r32l-kq52",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Vim 9.2.0405 before 9.2.1352 contains a security bypass vulnerability in expand_tag_fname() that allows attackers to…",
+      "url": "https://scout.docker.com/v/DHI-yyc3-ehw3-r32l-kq52",
+      "released": "2026-11-23T11:44:10Z",
+      "updated": "2026-11-25T19:18:38Z",
+      "cves": [
+        "CVE-2026-134832"
+      ],
+      "products": [
+        "Docker Hardened Images: vim"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RUSTSEC-2026-0594",
       "src": "osv_rustsec",
       "vendor": "Rustsec",
@@ -2960,7 +2993,7 @@
       "title": "Critical: php:8.3 security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:102226",
       "released": "2026-11-23T12:04:36Z",
-      "updated": "2026-11-26T12:18:42Z",
+      "updated": "2026-11-27T00:08:07Z",
       "cves": [
         "CVE-2026-115560",
         "CVE-2026-126714",
@@ -4309,6 +4342,19 @@
         "Docker Hardened Images: bao-dev",
         "Docker Hardened Images: bao-fips",
         "Docker Hardened Images: bao-fips-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-2wfl-fltv-lfgo-tyyh",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Summary",
+      "url": "https://scout.docker.com/v/DHI-2wfl-fltv-lfgo-tyyh",
+      "released": "2026-11-23T16:08:04Z",
+      "updated": "2026-11-26T13:27:56Z",
+      "products": [
+        "Docker Hardened Images: logto-1"
       ],
       "seen": "2026-11-27"
     },
@@ -9258,6 +9304,111 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-554x-5ycn-wpon-7svs",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "(*x509.Certificate).VerifyHostname previously called matchHostnames in a loop over all DNS Subject Alternative Name…",
+      "url": "https://scout.docker.com/v/DHI-554x-5ycn-wpon-7svs",
+      "released": "2026-11-23T20:40:10Z",
+      "updated": "2026-11-26T19:29:41Z",
+      "cves": [
+        "CVE-2026-27145"
+      ],
+      "products": [
+        "Docker Hardened Images: alertmanager",
+        "Docker Hardened Images: alertmanager-dev",
+        "Docker Hardened Images: alertmanager-fips",
+        "Docker Hardened Images: alertmanager-fips-dev",
+        "Docker Hardened Images: blackbox-exporter",
+        "Docker Hardened Images: blackbox-exporter-dev"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in alertmanager-dev 0.32.1-r3",
+          "u": null
+        },
+        {
+          "t": "Fixed in alertmanager-fips-dev 0.32.1-r3",
+          "u": null
+        },
+        {
+          "t": "Fixed in alertmanager-fips 0.32.1-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-laym-z65s-p7pq-lx7k",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "When returning errors, functions in the net/textproto package would include its input as part of the error. This might…",
+      "url": "https://scout.docker.com/v/DHI-laym-z65s-p7pq-lx7k",
+      "released": "2026-11-23T20:40:10Z",
+      "updated": "2026-11-26T19:41:02Z",
+      "cves": [
+        "CVE-2026-42507"
+      ],
+      "products": [
+        "Docker Hardened Images: alertmanager",
+        "Docker Hardened Images: alertmanager-dev",
+        "Docker Hardened Images: alertmanager-fips",
+        "Docker Hardened Images: alertmanager-fips-dev",
+        "Docker Hardened Images: blackbox-exporter",
+        "Docker Hardened Images: blackbox-exporter-dev"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in build-dev 2.17.3-r1",
+          "u": null
+        },
+        {
+          "t": "Fixed in build-fips-dev 2.17.3-r1",
+          "u": null
+        },
+        {
+          "t": "Fixed in build-fips 2.17.3-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-nlat-w2pc-22ps-ah64",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A norm.Iter can enter an infinite loop when handling input containing invalid UTF-8 bytes.",
+      "url": "https://scout.docker.com/v/DHI-nlat-w2pc-22ps-ah64",
+      "released": "2026-11-23T20:49:00Z",
+      "updated": "2026-11-26T14:22:12Z",
+      "cves": [
+        "CVE-2026-56852"
+      ],
+      "products": [
+        "Docker Hardened Images: actions-runner-controller",
+        "Docker Hardened Images: actions-runner-controller-dev",
+        "Docker Hardened Images: actions-runner-controller-fips",
+        "Docker Hardened Images: actions-runner-controller-fips-dev",
+        "Docker Hardened Images: actions-runner-controller-ghalistener",
+        "Docker Hardened Images: actions-runner-controller-ghalistener-dev"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in build-fips 2.20.0-r5",
+          "u": null
+        },
+        {
+          "t": "Fixed in build 2.20.0-r5",
+          "u": null
+        },
+        {
+          "t": "Fixed in external-dns-dev 0.21.0-r8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "Extended Stable Update for Desktop",
       "src": "chrome_releases",
       "vendor": "Google",
@@ -9561,6 +9712,41 @@
         "CVE-2026-131104",
         "CVE-2026-131105",
         "CVE-2026-131106"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-wpbf-qrfa-4qon-ihwm",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Decoding a maliciously-crafted MIME header containing many invalid encoded-words can consume excessive CPU.",
+      "url": "https://scout.docker.com/v/DHI-wpbf-qrfa-4qon-ihwm",
+      "released": "2026-11-23T20:54:11Z",
+      "updated": "2026-11-26T20:09:08Z",
+      "cves": [
+        "CVE-2026-42504"
+      ],
+      "products": [
+        "Docker Hardened Images: alertmanager",
+        "Docker Hardened Images: alertmanager-dev",
+        "Docker Hardened Images: alertmanager-fips",
+        "Docker Hardened Images: alertmanager-fips-dev",
+        "Docker Hardened Images: blackbox-exporter",
+        "Docker Hardened Images: blackbox-exporter-dev"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in external-dns-dev 0.21.0-r6",
+          "u": null
+        },
+        {
+          "t": "Fixed in external-dns-fips-dev 0.21.0-r6",
+          "u": null
+        },
+        {
+          "t": "Fixed in external-dns-fips 0.21.0-r6",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -9918,6 +10104,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-nun6-vp5j-n2rx-ara2",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "ws.ReadFrame, ws.MustReadFrame, and the wsutil message readers allocate a buffer of the payload length declared in the…",
+      "url": "https://scout.docker.com/v/DHI-nun6-vp5j-n2rx-ara2",
+      "released": "2026-11-23T21:01:35Z",
+      "updated": "2026-11-26T13:16:40Z",
+      "products": [
+        "Docker Hardened Images: cloudflared",
+        "Docker Hardened Images: cloudflared-dev",
+        "Docker Hardened Images: cloudflared-fips",
+        "Docker Hardened Images: cloudflared-fips-dev",
+        "Docker Hardened Images: grafana-image-renderer",
+        "Docker Hardened Images: grafana-image-renderer-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "JLSEC-2026-1528",
       "src": "osv_julia",
       "vendor": "Julia",
@@ -10019,6 +10223,22 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "DHI-3bxj-v2pv-zd2x-euhp",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A use-after-free flaw was found in GStreamer core buffer value deserialization. When serialized buffer text contains an…",
+      "url": "https://scout.docker.com/v/DHI-3bxj-v2pv-zd2x-euhp",
+      "released": "2026-11-23T22:07:07Z",
+      "updated": "2026-11-25T15:31:25Z",
+      "cves": [
+        "CVE-2026-125704"
+      ],
+      "products": [
+        "Docker Hardened Images: gstreamer1.0"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-4ada-po7r-sb7d-cgp5",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -10051,6 +10271,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-5mf3-6evj-xavx-q66t",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A flaw was found in gpgme. When processing crafted input, an early return following memory reallocation can leave…",
+      "url": "https://scout.docker.com/v/DHI-5mf3-6evj-xavx-q66t",
+      "released": "2026-11-23T22:07:18Z",
+      "updated": "2026-11-26T01:47:20Z",
+      "cves": [
+        "CVE-2026-129975"
+      ],
+      "products": [
+        "Docker Hardened Images: gpgme1.0"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-a46a-rogk-ynmg-52np",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -10063,6 +10299,48 @@
       ],
       "products": [
         "Docker Hardened Images: gst-plugins-bad1.0"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-acqi-v3y2-e6jg-refj",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "### Impact",
+      "url": "https://scout.docker.com/v/DHI-acqi-v3y2-e6jg-refj",
+      "released": "2026-11-23T22:07:18Z",
+      "updated": "2026-11-26T04:16:37Z",
+      "cves": [
+        "CVE-2026-130822"
+      ],
+      "products": [
+        "Docker Hardened Images: valkey",
+        "Docker Hardened Images: valkey-7.2",
+        "Docker Hardened Images: valkey-8.0",
+        "Docker Hardened Images: valkey-8.1",
+        "Docker Hardened Images: valkey-9.1"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in valkey-9.1 9.1.4-0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-al3c-e6qi-gqfb-eywi",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A flaw was found in GStreamer's adaptive streaming demuxers (HLS, DASH, MSS). When processing a media playlist or…",
+      "url": "https://scout.docker.com/v/DHI-al3c-e6qi-gqfb-eywi",
+      "released": "2026-11-23T22:07:18Z",
+      "updated": "2026-11-25T04:49:21Z",
+      "cves": [
+        "CVE-2026-121629"
+      ],
+      "products": [
+        "Docker Hardened Images: gst-plugins-good1.0"
       ],
       "seen": "2026-11-27"
     },
@@ -10119,6 +10397,22 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-hf2p-jzba-7bff-2ryz",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Impact",
+      "url": "https://scout.docker.com/v/DHI-hf2p-jzba-7bff-2ryz",
+      "released": "2026-11-23T22:07:18Z",
+      "updated": "2026-11-26T03:10:06Z",
+      "products": [
+        "Docker Hardened Images: valkey-7.2",
+        "Docker Hardened Images: valkey-8.0",
+        "Docker Hardened Images: valkey-8.1",
+        "Docker Hardened Images: valkey-9.1"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "DHI-jaed-5vae-du45-eaqp",
@@ -10189,6 +10483,22 @@
         "Docker Hardened Images: gst-plugins-good1.0"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-jxqi-q5c4-7snc-y4ga",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Impact",
+      "url": "https://scout.docker.com/v/DHI-jxqi-q5c4-7snc-y4ga",
+      "released": "2026-11-23T22:07:32Z",
+      "updated": "2026-11-26T01:47:20Z",
+      "products": [
+        "Docker Hardened Images: valkey-7.2",
+        "Docker Hardened Images: valkey-8.0",
+        "Docker Hardened Images: valkey-8.1",
+        "Docker Hardened Images: valkey-9.1"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "DHI-keo7-rnei-f64w-mlsv",
@@ -10285,6 +10595,38 @@
         "Docker Hardened Images: libmodplug"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-r4lj-rjad-l7xd-jpb6",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A flaw was found in GStreamer's MXF demuxer. When an application processes a crafted MXF file, an off-by-one bounds…",
+      "url": "https://scout.docker.com/v/DHI-r4lj-rjad-l7xd-jpb6",
+      "released": "2026-11-23T22:07:32Z",
+      "updated": "2026-11-25T04:49:21Z",
+      "cves": [
+        "CVE-2026-125707"
+      ],
+      "products": [
+        "Docker Hardened Images: gst-plugins-bad1.0"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-s67h-sbd6-aj67-qluk",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A flaw was found in GStreamer's gst-plugins-bad H.266/VVC parser. When processing a malformed H.266 media file or…",
+      "url": "https://scout.docker.com/v/DHI-s67h-sbd6-aj67-qluk",
+      "released": "2026-11-23T22:07:32Z",
+      "updated": "2026-11-25T04:49:21Z",
+      "cves": [
+        "CVE-2026-119777"
+      ],
+      "products": [
+        "Docker Hardened Images: gst-plugins-bad1.0"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "DHI-sx7r-ovgy-no3c-zwng",

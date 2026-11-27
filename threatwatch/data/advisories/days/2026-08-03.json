@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-03",
-  "count": 25,
+  "count": 35,
   "items": [
     {
       "id": "openSUSE-SU-2026:11438-1",
@@ -143,6 +143,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:49524",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: perl-Archive-Tar security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:49524",
+      "released": "2026-08-03T03:22:35Z",
+      "updated": "2026-11-06T02:18:48Z",
+      "cves": [
+        "CVE-2026-9538"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:49524"
+        },
+        {
+          "t": "To mitigate this issue, avoid processing untrusted tar archives with applications using Perl's Archive::Tar module. If untrusted tar processing is required, co…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:49514",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -171,6 +201,66 @@
         },
         {
           "t": "Applications utilizing `perl-DBI` should implement robust input validation and limit the number of parameters used in SQL query placeholders, particularly when…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:49525",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: perl-Archive-Tar security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:49525",
+      "released": "2026-08-03T04:07:05Z",
+      "updated": "2026-11-06T02:18:48Z",
+      "cves": [
+        "CVE-2026-9538"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:49525"
+        },
+        {
+          "t": "To mitigate this issue, avoid processing untrusted tar archives with applications using Perl's Archive::Tar module. If untrusted tar processing is required, co…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:49523",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: perl-Archive-Tar security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:49523",
+      "released": "2026-08-03T04:21:45Z",
+      "updated": "2026-11-06T02:18:47Z",
+      "cves": [
+        "CVE-2026-9538"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:49523"
+        },
+        {
+          "t": "To mitigate this issue, avoid processing untrusted tar archives with applications using Perl's Archive::Tar module. If untrusted tar processing is required, co…",
           "u": null
         }
       ],
@@ -455,6 +545,126 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-2mmh-4rf8-7xg6",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SiYuan: Cross-boundary content disclosure via getBacklinkDoc/getBackmentionDoc (publish mode): reader-reachable rendered DOM of publish-forbidden docs; sibling list endpoints are filtered",
+      "url": "https://github.com/advisories/GHSA-2mmh-4rf8-7xg6",
+      "released": "2026-08-03T15:32:47Z",
+      "updated": "2026-09-03T21:21:12Z",
+      "sev": "CRITICAL",
+      "products": [
+        "npm: siyuan"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-3rfw-7fxw-6jxm",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Cross-boundary metadata disclosure via getBlockInfo (publish mode): reader-reachable document title/root info for publish-forbidden docs; sibling getDocInfo is filtered",
+      "url": "https://github.com/advisories/GHSA-3rfw-7fxw-6jxm",
+      "released": "2026-08-03T15:32:47Z",
+      "updated": "2026-09-03T21:21:59Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-85xq-27m5-59m9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SiYuan: Full-content disclosure of publish-disabled documents via getHeading*Transaction endpoints (publish mode): reader-reachable rendered DOM with no publish-access check",
+      "url": "https://github.com/advisories/GHSA-85xq-27m5-59m9",
+      "released": "2026-08-03T15:32:47Z",
+      "updated": "2026-09-03T21:17:48Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-p2x7-4c4p-8wh6",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Unauthenticated arbitrary SQL execution via searchEmbedBlock (publish mode) : reader-reachable raw statement on read-write handle, cross-notebook read/write",
+      "url": "https://github.com/advisories/GHSA-p2x7-4c4p-8wh6",
+      "released": "2026-08-03T15:32:48Z",
+      "updated": "2026-09-03T20:19:13Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-pqpf-6vqv-6w92",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Unauthenticated SQL execution and REGEXP injection via fullTextSearchAssetContent (publish mode): reader-reachable raw SQL (method 2) and unescaped REGEXP (method 3) on read-write asset-content DB",
+      "url": "https://github.com/advisories/GHSA-pqpf-6vqv-6w92",
+      "released": "2026-08-03T15:32:48Z",
+      "updated": "2026-09-03T21:00:29Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-x7jr-gvvr-p9w7",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Path Traversal via unvalidated avID in RenderAttributeView/AV read endpoints : reader-reachable cross-scope attribute-view disclosure",
+      "url": "https://github.com/advisories/GHSA-x7jr-gvvr-p9w7",
+      "released": "2026-08-03T15:32:48Z",
+      "updated": "2026-09-03T20:33:58Z",
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:49715",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: RHEL AI 3.5 RPM runtime CVE fix - thrift",
+      "url": "https://access.redhat.com/errata/RHSA-2026:49715",
+      "released": "2026-08-03T17:02:07Z",
+      "updated": "2026-11-06T07:00:53Z",
+      "cves": [
+        "CVE-2026-55971"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.4,
+      "products": [
+        "Red Hat Enterprise Linux AI",
+        "Red Hat Enterprise Linux AI 3.5 for RHEL 9"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:49715"
+        },
+        {
+          "t": "No mitigation is available other than upgrading to Apache Thrift 0.24.0 or later, which contains the fix. AIPCC's PyArrow build pipeline is tracked separately …",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21519-1",

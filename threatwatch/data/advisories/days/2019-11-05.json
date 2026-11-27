@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2019-11-05",
-  "count": 20,
+  "count": 22,
   "items": [
     {
       "id": "ALSA-2019:3708",
@@ -607,6 +607,71 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHBA-2019:3384",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Bug Fix Advisory: ruby:2.5 bug fix and enhancement update",
+      "url": "https://access.redhat.com/errata/RHBA-2019:3384",
+      "released": "2019-11-05T21:13:52Z",
+      "updated": "2026-11-07T05:02:42Z",
+      "cves": [
+        "CVE-2019-8320",
+        "CVE-2019-8321",
+        "CVE-2019-8322",
+        "CVE-2019-8323",
+        "CVE-2019-8325"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHBA-2019:3384"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHBA-2019:3416",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Bug Fix Advisory: pki-core:10.6 and pki-deps:10:6 bug fix and enhancement update",
+      "url": "https://access.redhat.com/errata/RHBA-2019:3416",
+      "released": "2019-11-05T21:19:17Z",
+      "updated": "2026-11-07T05:02:42Z",
+      "cves": [
+        "CVE-2019-12086",
+        "CVE-2019-12814"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHBA-2019:3416"
+        },
+        {
+          "t": "The following conditions are needed for an exploit, we recommend avoiding all if possible * Deserialization from sources you do not control * `enableDefaultTyp…",
+          "u": null
+        },
+        {
+          "t": "This vulnerability relies on jdom (org.jdom) or jdom2 (org.jdom2) being present in the application's ClassPath. Applications using jackson-databind that do not…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "RHBA-2019:3621",

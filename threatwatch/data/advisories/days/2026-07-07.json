@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-07",
-  "count": 30,
+  "count": 37,
   "items": [
     {
       "id": "openSUSE-SU-2026:11197-1",
@@ -500,6 +500,126 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-2943-9672-r45w",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Airflow allows code execution through unsafe serialized DAG deserialization",
+      "url": "https://github.com/advisories/GHSA-2943-9672-r45w",
+      "released": "2026-07-07T12:31:35Z",
+      "updated": "2026-09-04T19:23:01Z",
+      "cves": [
+        "CVE-2026-33264"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "PyPI: apache-airflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-airflow 3.3.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-3322-mjxh-9mp5",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Airflow exposes unreadable DAG identifiers in the scheduling dependencies graph",
+      "url": "https://github.com/advisories/GHSA-3322-mjxh-9mp5",
+      "released": "2026-07-07T12:31:35Z",
+      "updated": "2026-09-04T19:24:07Z",
+      "cves": [
+        "CVE-2026-48891"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: apache-airflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-airflow 3.3.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-563f-2439-rmq4",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Airflow exposes sensitive JSON Variable values through the Bulk Variables API",
+      "url": "https://github.com/advisories/GHSA-563f-2439-rmq4",
+      "released": "2026-07-07T12:31:35Z",
+      "updated": "2026-09-04T19:25:31Z",
+      "cves": [
+        "CVE-2026-48828"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: apache-airflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-airflow 3.3.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-9933-5rrp-mfwx",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Airflow exposes secrets backend credentials through the Config API",
+      "url": "https://github.com/advisories/GHSA-9933-5rrp-mfwx",
+      "released": "2026-07-07T12:31:35Z",
+      "updated": "2026-09-04T19:24:54Z",
+      "cves": [
+        "CVE-2026-48892"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: apache-airflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-airflow 3.3.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-22hf-vx2v-gjff",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Airflow exposes deferred trigger kwargs in task-instance API responses",
+      "url": "https://github.com/advisories/GHSA-22hf-vx2v-gjff",
+      "released": "2026-07-07T12:31:36Z",
+      "updated": "2026-09-04T19:28:48Z",
+      "cves": [
+        "CVE-2026-49487"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: apache-airflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-airflow 3.3.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21248-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -616,6 +736,44 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:36320",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: unbound security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:36320",
+      "released": "2026-07-07T16:24:30Z",
+      "updated": "2026-11-05T20:45:48Z",
+      "cves": [
+        "CVE-2026-40622",
+        "CVE-2026-41292",
+        "CVE-2026-42534",
+        "CVE-2026-44390"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:36320"
+        },
+        {
+          "t": "Disclaimer: The following mitigation solutions are provided as a courtesy, pending the application of an official patch. This content was generated utilizing A…",
+          "u": null
+        },
+        {
+          "t": "To mitigate the risk of denial of resolution service, restrict Unbound's network exposure. Configure Unbound to only accept queries from trusted internal netwo…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21254-1",
@@ -803,6 +961,30 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-49f7-whx5-4256",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Cognee allows non-superusers to overwrite global LLM configuration",
+      "url": "https://github.com/advisories/GHSA-49f7-whx5-4256",
+      "released": "2026-07-07T21:31:36Z",
+      "updated": "2026-09-03T20:10:21Z",
+      "cves": [
+        "CVE-2026-58473"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "PyPI: cognee"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cognee 1.5.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
     },
     {
       "id": "WID-SEC-W-2026-2239",

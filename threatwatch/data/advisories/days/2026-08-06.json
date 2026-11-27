@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-06",
-  "count": 63,
+  "count": 67,
   "items": [
     {
       "id": "openSUSE-SU-2026:11461-1",
@@ -419,6 +419,24 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-18909",
+      "src": "cvelistv5",
+      "vendor": "ELAN Microelectronics Corp.",
+      "title": "A stack-based buffer overflow vulnerability exists in ELAN Microelectronics Corp. ELAN Smart-Pad on Windows (ETD.sys and ETDSMBus.sys). During Intel SMBus recovery, ETDSMBus.sys does not enforce an upper-bound check on …",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-18909",
+      "released": "2026-08-06T03:46:00Z",
+      "updated": "2026-11-17T02:32:33Z",
+      "cves": [
+        "CVE-2026-18909"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.6,
+      "products": [
+        "ELAN Microelectronics Corp. ELAN Smart-Pad"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2026:50978",
@@ -1136,6 +1154,32 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:51075",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gpsd security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:51075",
+      "released": "2026-08-06T13:54:26Z",
+      "updated": "2026-11-05T22:20:12Z",
+      "cves": [
+        "CVE-2026-58459"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:51075"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21543-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1223,6 +1267,62 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:51153",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gpsd-minimal security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:51153",
+      "released": "2026-08-06T20:11:28Z",
+      "updated": "2026-11-05T22:20:13Z",
+      "cves": [
+        "CVE-2026-58459"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:51153"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:51358",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: RHEL AI 3.6 RPM runtime CVE fix - thrift",
+      "url": "https://access.redhat.com/errata/RHSA-2026:51358",
+      "released": "2026-08-06T20:38:23Z",
+      "updated": "2026-11-06T07:00:54Z",
+      "cves": [
+        "CVE-2026-55971"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.4,
+      "products": [
+        "Red Hat Enterprise Linux AI",
+        "Red Hat Enterprise Linux AI 3.6 for RHEL 9"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:51358"
+        },
+        {
+          "t": "No mitigation is available other than upgrading to Apache Thrift 0.24.0 or later, which contains the fix. AIPCC's PyArrow build pipeline is tracked separately …",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "GHSA-265m-7826-wjqm",

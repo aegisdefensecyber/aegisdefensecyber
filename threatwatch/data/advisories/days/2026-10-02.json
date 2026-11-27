@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-02",
-  "count": 122,
+  "count": 159,
   "items": [
     {
       "id": "ELA-1841-1",
@@ -1648,6 +1648,19 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BELL-CVE-2026-63209",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-63209 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-63209",
+      "released": "2026-10-02T06:05:05Z",
+      "updated": "2026-10-20T15:32:31Z",
+      "cves": [
+        "CVE-2026-63209"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RLSA-2026:74441",
       "src": "osv_rocky",
       "vendor": "Rocky",
@@ -1668,6 +1681,72 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-97687",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-97687",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-97687",
+      "released": "2026-10-02T06:06:45Z",
+      "updated": "2026-10-07T02:37:08Z",
+      "cves": [
+        "CVE-2026-97687"
+      ],
+      "products": [
+        "Alpaquita: py3-urllib3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in py3-urllib3 2.8.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-97688",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-97688",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-97688",
+      "released": "2026-10-02T06:06:45Z",
+      "updated": "2026-10-07T02:37:08Z",
+      "cves": [
+        "CVE-2026-97688"
+      ],
+      "products": [
+        "Alpaquita: py3-urllib3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in py3-urllib3 2.8.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-97689",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-97689",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-97689",
+      "released": "2026-10-02T06:06:45Z",
+      "updated": "2026-10-07T02:37:09Z",
+      "cves": [
+        "CVE-2026-97689"
+      ],
+      "products": [
+        "Alpaquita: py3-urllib3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in py3-urllib3 2.8.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "RLSA-2026:74370",
@@ -1811,6 +1890,63 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "RHSA-2026:73511",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gawk security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:73511",
+      "released": "2026-10-02T10:16:46Z",
+      "updated": "2026-11-06T07:47:53Z",
+      "cves": [
+        "CVE-2026-40467",
+        "CVE-2026-40468"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:73511"
+        },
+        {
+          "t": "To mitigate this issue, users should avoid processing untrusted or maliciously crafted input with `gawk`. Exercise caution when executing `gawk` scripts or com…",
+          "u": null
+        },
+        {
+          "t": "Do not execute untrusted awk scripts or process untrusted inputs that could trigger oversized calculations in builtin.c.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105431",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-94634 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94634",
+      "released": "2026-10-02T10:17:09Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-94634"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-106554",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -1843,6 +1979,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-106623",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-85483 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85483",
+      "released": "2026-10-02T11:17:35Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-85483"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-106632",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -1855,6 +2013,94 @@
       ],
       "products": [
         "Azure Linux: thrift"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105404",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-85494 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85494",
+      "released": "2026-10-02T11:17:36Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-85494"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105392",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93925 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93925",
+      "released": "2026-10-02T11:17:37Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-93925"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105413",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93926 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93926",
+      "released": "2026-10-02T11:17:37Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-93926"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105425",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-91135 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-91135",
+      "released": "2026-10-02T11:17:37Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-91135"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -1951,6 +2197,28 @@
       ],
       "products": [
         "Azure Linux: thrift"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-106602",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-94650 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94650",
+      "released": "2026-10-02T11:17:38Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-94650"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -2350,6 +2618,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-105386",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-85087 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85087",
+      "released": "2026-10-02T12:17:21Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-85087"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-105389",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -2362,6 +2652,50 @@
       ],
       "products": [
         "Azure Linux: thrift"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105407",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82458 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82458",
+      "released": "2026-10-02T12:17:21Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-82458"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105428",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82459 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82459",
+      "released": "2026-10-02T12:17:21Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-82459"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -2398,6 +2732,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-106548",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-85088 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85088",
+      "released": "2026-10-02T12:17:21Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-85088"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-106644",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -2426,6 +2782,28 @@
       ],
       "products": [
         "Azure Linux: thrift"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105422",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92834 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92834",
+      "released": "2026-10-02T12:17:22Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-92834"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -2490,6 +2868,50 @@
       ],
       "products": [
         "Azure Linux: thrift"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105410",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-94636 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94636",
+      "released": "2026-10-02T12:17:23Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-94636"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105419",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-94652 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94652",
+      "released": "2026-10-02T12:17:23Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-94652"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -2647,6 +3069,50 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-105935",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-66055 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66055",
+      "released": "2026-10-02T13:17:52Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-66055"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105938",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-66054 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66054",
+      "released": "2026-10-02T13:17:52Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-66054"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-106500",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -2695,6 +3161,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-106542",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-63772 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63772",
+      "released": "2026-10-02T13:17:52Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-63772"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-106635",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -2723,6 +3211,160 @@
       ],
       "products": [
         "Azure Linux: vitess"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105950",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-66858 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66858",
+      "released": "2026-10-02T13:17:53Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-66858"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-106557",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-66081 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66081",
+      "released": "2026-10-02T13:17:53Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-66081"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-106578",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-66331 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66331",
+      "released": "2026-10-02T13:17:53Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-66331"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-106590",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-66859 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66859",
+      "released": "2026-10-02T13:17:53Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-66859"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-106638",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-66837 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66837",
+      "released": "2026-10-02T13:17:53Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-66837"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105947",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-83632 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83632",
+      "released": "2026-10-02T13:17:58Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-83632"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105953",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-83745 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83745",
+      "released": "2026-10-02T13:17:58Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-83745"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -2791,6 +3433,72 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-106545",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-85476 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85476",
+      "released": "2026-10-02T13:17:59Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-85476"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105941",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-94654 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94654",
+      "released": "2026-10-02T13:18:01Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-94654"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105932",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-94656 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94656",
+      "released": "2026-10-02T13:18:02Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-94656"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-106584",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -2835,6 +3543,72 @@
       ],
       "products": [
         "Azure Linux: thrift"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105926",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-96286 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96286",
+      "released": "2026-10-02T13:18:05Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-96286"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105929",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-96277 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96277",
+      "released": "2026-10-02T13:18:05Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-96277"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-105944",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-96287 affecting package thrift for versions less than 0.25.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96287",
+      "released": "2026-10-02T13:18:05Z",
+      "updated": "2026-11-01T07:13:08Z",
+      "cves": [
+        "CVE-2026-96287"
+      ],
+      "products": [
+        "Azure Linux: thrift"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thrift 0.25.0-1",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -3116,6 +3890,42 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2023-54405",
+      "src": "cvelistv5",
+      "vendor": "H3C",
+      "title": "H3C CVM Unauthenticated File Upload via fileUpload/upload Token",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2023-54405",
+      "released": "2026-10-02T18:36:03Z",
+      "updated": "2026-11-17T22:00:11Z",
+      "cves": [
+        "CVE-2023-54405"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "H3C CVM"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2020-37278",
+      "src": "cvelistv5",
+      "vendor": "Weaver",
+      "title": "Weaver e-Bridge Unauthenticated Arbitrary File Read via saveYZJFile",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2020-37278",
+      "released": "2026-10-02T18:38:24Z",
+      "updated": "2026-11-17T22:00:06Z",
+      "cves": [
+        "CVE-2020-37278"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "Weaver e-Bridge"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22016-1",

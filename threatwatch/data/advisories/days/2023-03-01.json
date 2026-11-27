@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2023-03-01",
-  "count": 36,
+  "count": 131,
   "items": [
     {
       "id": "ASB-A-186803518",
@@ -983,6 +983,2101 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "PUB-A-180680572",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In parse_printerAttributes of ipphelper.c, there is a possible out of bounds read due to a string without a null-terminator. This could lead to remote information disclosure with no additional execution privileges neede…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21028"
+      ],
+      "products": [
+        "Android: platform/packages/services/BuiltInPrintService"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/services/BuiltInPrintService 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-184847040",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of BackupHelper.java, there is a possible way for an app to get permissions previously granted to another app with the same package name due to a permissions bypass. This could lead to local escala…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21035"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Permission"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Permission 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-194783918",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In MediaCodec.cpp, there is a possible use after free due to improper locking. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploita…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21000"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-213905884",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In AccountTypePreference of AccountTypePreference.java, there is a possible way to mislead the user about accounts installed on the device due to improper input validation. This could lead to local denial of service wit…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21016"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-217934898",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In register of UidObserverController.java, there is a missing permission check. This could lead to local information disclosure of app usage with User execution privileges needed. User interaction is not needed for expl…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21029"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-224000736",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In cs40l2x_cp_trigger_queue_show of cs40l2x.c, there is a possible out of bounds write due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21038"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-226234140",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Confirmation of keystore_cli_v2.cpp, there is a possible way to corrupt memory due to a double free. This could lead to local escalation of privilege in an unprivileged process with no additional execution privileges…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21030"
+      ],
+      "products": [
+        "Android: platform/system/security"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/security 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-229255400",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "PUB-A-229255400",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21061"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-230358834",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of SensorService.cpp, there is a possible access of accurate sensor data due to a permissions bypass. This could lead to local escalation of privilege with User execution privileges needed. User in…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21034"
+      ],
+      "products": [
+        "Android: platform/frameworks/native"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/native 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-232242894",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In parseTrackFragmentRun() of MPEG4Extractor.cpp, there is a possible out of bounds read due to an integer overflow. This could lead to remote escalation of privilege with no additional execution privileges needed. User…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20532"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-233338564",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In UnwindingWorker of unwinding.cc, there is a possible out of bounds write due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not need…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21018"
+      ],
+      "products": [
+        "Android: platform/external/perfetto"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/perfetto 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-235113793",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "PUB-A-235113793",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-25712"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm",
+        "Android: platform/vendor/opensource/camera-kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2023-03-05",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/opensource/camera-kernel SoCVersion:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-236098131",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In BufferBlock of Suballocation.cpp, there is a possible out of bounds write due to memory corruption. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21022"
+      ],
+      "products": [
+        "Android: platform/external/angle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/angle 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-236687884",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In InstallStart of InstallStart.java, there is a possible way to change the installer package name due to an improper input validation. This could lead to local escalation of privilege with User execution privileges nee…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21017"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-236688120",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In append_camera_metadata of camera_metadata.c, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interac…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21049"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-237672190",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onContextItemSelected of NetworkProviderSettings.java, there is a possible way for users to change the Wi-Fi settings of other users due to a missing permission check. This could lead to local escalation of privilege…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21001"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-238083570",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In parseParamsBlob of types.cpp, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction i…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-20542"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-238420277",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In buildCommand of bluetooth_ccc.cc, there is a possible out of bounds write due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User intera…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21040"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-239630493",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In fdt_next_tag of fdt.c, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21065"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-239701389",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In OEM_OnRequest of sced.cpp, there is a possible shell command execution due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed. User interaction is n…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-42500"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-239872581",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In (TBD) of (TBD), there is a possible way to corrupt memory due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploita…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21043"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-239873326",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In lwis_allocator_init of lwis_allocator.c, there is a possible way to corrupt memory due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction i…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21042"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-240662453",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Pixel cellular firmware, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-42498"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-241910279",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In captureImage of CustomizedSensor.cpp, there is a possible way to bypass the fingerprint unlock due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privilege…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-20995"
+      ],
+      "products": [
+        "Android: platform/vendor/goodix/udfps"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/goodix/udfps 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-242001391",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In sms_SendMmCpErrMsg of sms_MmConManagement.c, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User intera…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-42499"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-242203672",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ffa_mrd_prot of shared_mem.c, there is a possible ID due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed fo…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-42528"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-242379731",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ih264e_init_proc_ctxt of ih264e_process.c, there is a possible out of bounds read due to a heap buffer overflow. This could lead to local information disclosure with no additional execution privileges needed. User in…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21019"
+      ],
+      "products": [
+        "Android: platform/external/libavc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/libavc 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-243129862",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ParseWithAuthType of simdata.cpp, there is a possible out of bounds read due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21063"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-243130078",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In DoSetPinControl of miscservice.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21064"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-243376770",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In DoSetTempEcc of imsservice.cpp, there is a possible out of bounds read due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is n…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21062"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-243433344",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In (TBD) of (TBD), there is a possible way to boot with a hidden debug policy due to a missing warning to the user. This could lead to local escalation of privilege after preparing the device, hiding the warning, and pa…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21068"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Bootloader:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-244301523",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In dit_hal_ioctl of dit.c, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploit…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21055"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-244423702",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In load_png_image of ExynosHWCHelper.cpp, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21050"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-244450646",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ProfSixDecomTcpSACKoption of RohcPacketCommon, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User inte…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21057"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-244556535",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In EUTRAN_LCS_ConvertLCS_MOLRReq of LPP_CommonUtil.c, there is a possible out of bounds write due to a logic error in the code. This could lead to remote code execution with System execution privileges needed. User inte…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21054"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-244569778",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getAvailabilityStatus of several Transcode Permission Controllers, there is a possible permission bypass due to a missing permission check. This could lead to local escalation of privilege with no additional executio…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21015"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-244713323",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In addNetwork of WifiManager.java, there is a possible way to trigger a persistent DoS due to resource exhaustion. This could lead to local denial of service with no additional execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21033"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Wifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Wifi 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-245300559",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In lwis_slc_buffer_free of lwis_device_slc.c, there is a possible memory corruption due to type confusion. This could lead to local escalation of privilege with System execution privileges needed. User interaction is no…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21056"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-245611633",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "PUB-A-245611633",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-33245"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom-opensource/wlan/qcacld-3.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom-opensource/wlan/qcacld-3.0 SoCVersion:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-246169606",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In lcsm_SendRrAcquiAssist of lcsm_bcm_assist.c, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User intera…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21058"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-246543238",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In maybeFinish of FallbackHome.java, there is a possible delay of lockdown screen due to logic error. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21024"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-246749702",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to trigger a persistent reboot loop due to improper input validation. This could lead to local denial of service with User execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-20997"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-246749764",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to trigger a persistent reboot loop due to improper input validation. This could lead to local denial of service with User execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-20996"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-246749936",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to trigger a persistent reboot loop due to improper input validation. This could lead to local denial of service with User execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-20998"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-246750467",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to trigger a persistent reboot loop due to improper input validation. This could lead to local denial of service with User execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-20999"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-247564044",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In EUTRAN_LCS_DecodeFacilityInformationElement of LPP_LcsManagement.c, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21059"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-248085351",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In _ufdt_output_node_to_fdt of ufdt_convert.c, there is a possible out of bounds read due to a heap buffer overflow. This could lead to local information disclosure with System execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21032"
+      ],
+      "products": [
+        "Android: platform/system/libufdt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/libufdt 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-250123688",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In append_to_params of param_util.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User intera…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21041"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-251805610",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In sms_ExtractCbLanguage of sms_CellBroadcast.c, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution privileges needed. Use…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21053"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-253424924",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ConvertToHalMetadata of aidl_utils.cc, there is a possible out of bounds read due to an incorrect bounds check. This could lead to local information disclosure with System execution privileges needed. User interactio…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21046"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-253425086",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In init of VendorGraphicBufferMeta, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21044"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-253770924",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In sms_GetTpPiIe of sms_PduCodec.c, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21060"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-254028518",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In dhd_prot_ioctcmplt_process of dhd_msgbuf.c, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege with System execution privileges needed. User int…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21071"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-254028776",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In add_roam_cache_list of wl_roam.c, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is n…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21070"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-254029309",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In wl_update_hidden_ap_ie of wl_cfgscan.c, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interactio…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21069"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-254114726",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "PUB-A-254114726",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21067"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-254681548",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In updateInputChannel of WindowManagerService.java, there is a possible way to set a touchable region beyond its own SurfaceControl due to a logic error in the code. This could lead to local denial of service with no ad…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21026"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-254839721",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In rtt_unpack_xtlv_cbfn of dhd_rtt.c, there is a possible out of bounds write due to a heap buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21079"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-254840211",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In rtt_unpack_xtlv_cbfn of dhd_rtt.c, there is a possible out of bounds write due to a buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not n…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21078"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-254929746",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ufdt_local_fixup_prop of ufdt_overlay.c, there is a possible out of bounds read due to an incorrect bounds check. This could lead to local information disclosure with System execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21025"
+      ],
+      "products": [
+        "Android: platform/system/libufdt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/libufdt 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-255537598",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In isTargetSdkLessThanQOrPrivileged of WifiServiceImpl.java, there is a possible way for the guest user to change admin user network settings due to a missing permission check. This could lead to local escalation of pri…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21021"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Wifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Wifi 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-256166866",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ConvertToHalMetadata of aidl_utils.cc, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction i…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21047"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-256591441",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In registerSignalHandlers of main.c, there is a possible local arbitrary code execution due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21020"
+      ],
+      "products": [
+        "Android: platform/packages/modules/StatsD"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/StatsD 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-256818945",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In forceStaDisconnection of hostapd.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21013"
+      ],
+      "products": [
+        "Android: platform/external/wpa_supplicant_8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/wpa_supplicant_8 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-257029326",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations of p2p_iface.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21014"
+      ],
+      "products": [
+        "Android: platform/external/wpa_supplicant_8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/wpa_supplicant_8 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-257029812",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations of p2p_iface.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21012"
+      ],
+      "products": [
+        "Android: platform/external/wpa_supplicant_8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/wpa_supplicant_8 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-257029912",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations of p2p_iface.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21011"
+      ],
+      "products": [
+        "Android: platform/external/wpa_supplicant_8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/wpa_supplicant_8 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-257029915",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations of p2p_iface.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21010"
+      ],
+      "products": [
+        "Android: platform/external/wpa_supplicant_8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/wpa_supplicant_8 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-257029925",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations of p2p_iface.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21009"
+      ],
+      "products": [
+        "Android: platform/external/wpa_supplicant_8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/wpa_supplicant_8 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-257029965",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations of p2p_iface.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21007"
+      ],
+      "products": [
+        "Android: platform/external/wpa_supplicant_8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/wpa_supplicant_8 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-257030027",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations of p2p_iface.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21006"
+      ],
+      "products": [
+        "Android: platform/external/wpa_supplicant_8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/wpa_supplicant_8 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-257030100",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations of p2p_iface.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21008"
+      ],
+      "products": [
+        "Android: platform/external/wpa_supplicant_8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/wpa_supplicant_8 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-257289560",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In rtt_unpack_xtlv_cbfn of dhd_rtt.c, there is a possible out of bounds write due to a buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not n…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21077"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-257290396",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In rtt_unpack_xtlv_cbfn of dhd_rtt.c, there is a possible out of bounds write due to a buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not n…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21073"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-257290781",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In rtt_unpack_xtlv_cbfn of dhd_rtt.c, there is a possible out of bounds write due to a buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not n…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21072"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-259062118",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In _ufdt_output_property_to_fdt of ufdt_convert.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-20994"
+      ],
+      "products": [
+        "Android: platform/system/libufdt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/libufdt 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-259063189",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In setToExternal of ril_external_client.cpp, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21052"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-259304053",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In handleEvent of nan.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed fo…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21048"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-259323322",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In dwc3_exynos_clk_get of dwc3-exynos.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege in the kernel with System execution privileges needed. …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21051"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-259323725",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "When cpif handles probe failures, there is a possible out of bounds read due to a use after free. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed f…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21045"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-260709824",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of parser.c, there is a possible out of bounds read due to an integer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2022-40303"
+      ],
+      "products": [
+        "Android: platform/external/libxml2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/libxml2 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-261193664",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getAvailabilityStatus of several Transcode Permission Controllers, there is a possible permission bypass due to a missing permission check. This could lead to local escalation of privilege with no additional executio…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21004"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-261193711",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getAvailabilityStatus of several Transcode Permission Controllers, there is a possible permission bypass due to a missing permission check. This could lead to local escalation of privilege with no additional executio…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21003"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-261193935",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getAvailabilityStatus of several Transcode Permission Controllers, there is a possible permission bypass due to a missing permission check. This could lead to local escalation of privilege with no additional executio…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21002"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-261193946",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getAvailabilityStatus of several Transcode Permission Controllers, there is a possible permission bypass due to a missing permission check. This could lead to local escalation of privilege with no additional executio…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21005"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-261857623",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In createTransmitFollowupRequest of nan.cpp, there is a possible out of bounds write due to a heap buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21076"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-261857862",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In get_svc_hash of nan.cpp, there is a possible out of bounds write due to a heap buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21075"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-262236005",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations of p2p_iface.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-20970"
+      ],
+      "products": [
+        "Android: platform/external/wpa_supplicant_8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/wpa_supplicant_8 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-262236313",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations of p2p_iface.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is …",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-20969"
+      ],
+      "products": [
+        "Android: platform/external/wpa_supplicant_8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/wpa_supplicant_8 13:2023-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-263783650",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In dumpstateBoard of Dumpstate.cpp, there is a possible out of bounds read due to an incorrect bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is n…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21039"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-264261868",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In BitmapExport.java, there is a possible failure to truncate images due to a logic error in the code.",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21036"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-265822830",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In TBD of TBD, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitat…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-24033"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-274463883",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In TBD of TBD, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitat…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-26498"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-274464337",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In TBD of TBD, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitat…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-26497"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-274465028",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In TBD of TBD, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitat…",
+      "url": "https://source.android.com/security/bulletin/2023-03-01",
+      "released": "2023-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-26496"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2023-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

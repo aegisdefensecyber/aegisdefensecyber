@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-08-22",
-  "count": 3,
+  "count": 29,
   "items": [
     {
       "id": "BSI-2024-0002",
@@ -52,6 +52,728 @@
         "crates.io: gitoxide-core"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-keydb-2023-45145",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Redis Unix-domain socket may have be exposed with the wrong permissions for a short time window.",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-ghmp-889m-7cvx",
+      "released": "2024-08-22T19:22:46Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-45145"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 6.2.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.0.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.2.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2023-41056",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Redis vulnerable to integer overflow in certain payloads",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-xr47-pcmx-fq2m",
+      "released": "2024-08-22T19:23:05Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-41056"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 7.0.15",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.2.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2023-41053",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Redis SORT_RO may bypass ACL configuration",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-q4jr-5p56-4xwc",
+      "released": "2024-08-22T19:23:23Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-41053"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 7.0.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2023-36824",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Heap overflow in COMMAND GETKEYS and ACL evaluation in Redis",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-4cfx-h9gq-xpx3",
+      "released": "2024-08-22T19:23:41Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-36824"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 7.0.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2023-31655",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "redis v7.0.10 was discovered to contain a segmentation violation. This vulnerability allows attackers to cause a Denial of Service (DoS) via unspecified vectors.",
+      "url": "https://github.com/RedisLabs/redisraft/issues/608",
+      "released": "2024-08-22T19:23:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-31655"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 7.0.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2023-28856",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "`HINCRBYFLOAT` can be used to crash a redis-server process",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-hjv8-vjf6-wcr6",
+      "released": "2024-08-22T19:24:15Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-28856"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 6.0.19",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.0.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2023-28425",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Specially crafted MSETNX command can lead to denial-of-service",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-mvmm-4vq6-vw8c",
+      "released": "2024-08-22T19:24:32Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-28425"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 7.0.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2023-25155",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Integer Overflow in several Redis commands can lead to denial of service.",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-x2r7-j9vw-3w83",
+      "released": "2024-08-22T19:24:48Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-25155"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 6.0.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.0.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2023-22458",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Integer overflow in multiple Redis commands can lead to denial-of-service",
+      "url": "https://github.com/redis/redis/commit/16f408b1a0121cacd44cbf8aee275d69dc627f02",
+      "released": "2024-08-22T19:25:05Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-22458"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 6.2.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.0.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2022-36021",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Redis string pattern matching can be abused to achieve Denial of Service",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-jr7j-rfj5-8xqv",
+      "released": "2024-08-22T19:25:41Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-36021"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 6.0.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.0.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2022-35977",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Integer overflow in certain command arguments can drive Redis to OOM panic",
+      "url": "https://github.com/redis/redis/commit/1ec82e6e97e1db06a72ca505f9fbf6b981f31ef7",
+      "released": "2024-08-22T19:25:58Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-35977"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 6.0.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.0.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2022-35951",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Redis subject to Integer Overflow leading to Remote Code Execution via Heap Overflow",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-5gc4-76rx-22c9",
+      "released": "2024-08-22T19:26:14Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-35951"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 7.0.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2022-33105",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Redis v7.0 was discovered to contain a memory leak via the component streamGetEdgeID.",
+      "url": "https://github.com/redis/redis/commit/4a7a4e42db8ff757cdf3f4a824f66426036034ef",
+      "released": "2024-08-22T19:26:31Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-33105"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 7.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2022-31144",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Potential heap overflow in Redis",
+      "url": "https://github.com/redis/redis/releases/tag/7.0.4",
+      "released": "2024-08-22T19:26:49Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-31144"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 7.0.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2022-24834",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Heap overflow issue with the Lua cjson library used by Redis",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-p8x2-9v9q-c838",
+      "released": "2024-08-22T19:27:04Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-24834"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 6.0.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 7.0.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2022-24736",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A Malformed Lua script can crash Redis",
+      "url": "https://github.com/redis/redis/pull/10651",
+      "released": "2024-08-22T19:27:22Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-24736"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 6.2.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2022-24735",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Lua scripts can be manipulated to overcome ACL rules in Redis",
+      "url": "https://github.com/redis/redis/pull/10651",
+      "released": "2024-08-22T19:27:40Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-24735"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 6.2.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2021-41099",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Integer overflow issue with strings in Redis",
+      "url": "https://github.com/redis/redis/commit/c6ad876774f3cc11e32681ea02a2eead00f2c521",
+      "released": "2024-08-22T19:28:22Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-41099"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 5.0.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.0.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2021-32762",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Integer overflow that can lead to heap overflow in redis-cli, redis-sentinel on some platforms",
+      "url": "https://github.com/redis/redis/commit/0215324a66af949be39b34be2d55143232c1cb71",
+      "released": "2024-08-22T19:28:35Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-32762"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 5.0.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.0.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2021-32687",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Integer overflow issue with intsets in Redis",
+      "url": "https://github.com/redis/redis/commit/a30d367a71b7017581cf1ca104242a3c644dec0f",
+      "released": "2024-08-22T19:28:52Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-32687"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 5.0.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.0.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2021-32675",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "DoS vulnerability in Redis",
+      "url": "https://github.com/redis/redis/commit/5674b0057ff2903d43eaff802017eddf37c360f8",
+      "released": "2024-08-22T19:29:09Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-32675"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 5.0.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.0.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2021-32672",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Vulnerability in Lua Debugger in Redis",
+      "url": "https://github.com/redis/redis/commit/6ac3c0b7abd35f37201ed2d6298ecef4ea1ae1dd",
+      "released": "2024-08-22T19:29:26Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-32672"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 5.0.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.0.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2021-32628",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Vulnerability in handling large ziplists",
+      "url": "https://github.com/redis/redis/commit/f6a40570fa63d5afdd596c78083d754081d80ae3",
+      "released": "2024-08-22T19:29:45Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-32628"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 5.0.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.0.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2021-32627",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Integer overflow issue with Streams in Redis",
+      "url": "https://github.com/redis/redis/commit/f6a40570fa63d5afdd596c78083d754081d80ae3",
+      "released": "2024-08-22T19:30:03Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-32627"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 5.0.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.0.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2021-32626",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Lua scripts can overflow the heap-based Lua stack in Redis",
+      "url": "https://github.com/redis/redis/commit/666ed7facf4524bf6d19b11b20faa2cf93fdf591",
+      "released": "2024-08-22T19:30:18Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-32626"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 5.0.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.0.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in keydb 6.2.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keydb-2021-31294",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Redis before 6cbea7d allows a replica to cause an assertion failure in a primary server by sending a non-administrative command (specifically, a SET command). NOTE: this was fixed for Redis 6.2.x and 7.x in 2021. Versio…",
+      "url": "https://github.com/redis/redis/issues/8712",
+      "released": "2024-08-22T19:30:36Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-31294"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: keydb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keydb 6.2.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "GO-2024-3077",

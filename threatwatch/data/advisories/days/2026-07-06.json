@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-06",
-  "count": 81,
+  "count": 84,
   "items": [
     {
       "id": "openSUSE-SU-2026:11185-1",
@@ -1802,6 +1802,30 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-v3mh-27qj-w836",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Airflow Google provider allows path traversal through GCS object names",
+      "url": "https://github.com/advisories/GHSA-v3mh-27qj-w836",
+      "released": "2026-07-06T12:31:30Z",
+      "updated": "2026-09-04T19:22:13Z",
+      "cves": [
+        "CVE-2026-49297"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: apache-airflow-providers-google"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-airflow-providers-google 22.2.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21242-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -2194,6 +2218,34 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:22302-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for glycin-loaders",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202622302-1/",
+      "released": "2026-07-06T20:10:18Z",
+      "updated": "2026-09-16T19:59:19Z",
+      "cves": [
+        "CVE-2025-55159",
+        "CVE-2025-58160"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21235-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -2389,6 +2441,29 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-mlflow-2026-8147",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Authorization Bypass in mlflow/mlflow",
+      "url": "https://huntr.com/bounties/b00c3ddd-373e-492f-9bf0-41a28bb21ed5",
+      "released": "2026-07-06T23:44:39Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-8147"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mlflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mlflow 3.14.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-28",
-  "count": 45,
+  "count": 51,
   "items": [
     {
       "id": "ICSA-26-125-01",
@@ -965,6 +965,29 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-kyverno-2026-41068",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Kyverno: Cross-Namespace Read Bypasses RBAC Isolation (CVE-2026-22039 Incomplete Fix)",
+      "url": "https://github.com/kyverno/kyverno/security/advisories/GHSA-cvq5-hhx3-f99p",
+      "released": "2026-04-28T08:42:41Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-41068"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: kyverno"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kyverno 1.17.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-85223",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -985,6 +1008,87 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:21419-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openCryptoki",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621419-1/",
+      "released": "2026-04-28T10:44:27Z",
+      "updated": "2026-09-16T19:44:56Z",
+      "cves": [
+        "CVE-2026-23893",
+        "CVE-2026-40253"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-kyverno-2026-41323",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Kyverno: ServiceAccount token leaked to external servers via apiCall service URL",
+      "url": "https://github.com/kyverno/kyverno/security/advisories/GHSA-f9g8-6ppc-pqq4",
+      "released": "2026-04-28T10:46:29Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-41323"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: kyverno"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kyverno 1.16.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in kyverno 1.17.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-kyverno-2026-41485",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Kyverno Controller Denial of Service via forEach Mutation Panic",
+      "url": "https://github.com/kyverno/kyverno/security/advisories/GHSA-fpjq-c37h-cqcv",
+      "released": "2026-04-28T10:46:31Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-41485"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: kyverno"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kyverno 1.16.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in kyverno 1.17.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "SUSE-SU-2026:1641-1",
@@ -1078,6 +1182,34 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:21422-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libsodium",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621422-1/",
+      "released": "2026-04-28T15:28:13Z",
+      "updated": "2026-09-16T19:44:58Z",
+      "cves": [
+        "CVE-2025-15444",
+        "CVE-2025-69277"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "SUSE-SU-2026:20608-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -1090,6 +1222,33 @@
       ],
       "sev": "HIGH",
       "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21424-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for glibc-livepatches",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621424-1/",
+      "released": "2026-04-28T16:23:13Z",
+      "updated": "2026-09-16T19:45:00Z",
+      "cves": [
+        "CVE-2026-4046"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
       "products": [
         "SUSE Linux Enterprise",
         "SUSE Linux Enterprise Server 16.0",

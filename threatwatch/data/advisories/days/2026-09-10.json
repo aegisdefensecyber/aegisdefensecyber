@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-10",
-  "count": 353,
+  "count": 368,
   "items": [
     {
       "id": "ELA-1821-1",
@@ -1576,6 +1576,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-KP10631",
+      "src": "cleanstart",
+      "title": "source-address critical option in the Permissions returned by an authentication callback was only enforced for the PublicKeyCallback and VerifiedPublicKeyCallback paths, extending the fix for CVE-2...",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KP10631.json",
+      "released": "2026-09-10T00:42:34Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-22868",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-46600",
+        "CVE-2026-56853",
+        "CVE-2026-56854",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "CleanStart: vault-k8s"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vault-k8s 1.5.0.r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-EI39418",
       "src": "cleanstart",
       "title": "Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection",
@@ -1601,6 +1631,37 @@
       "fix": [
         {
           "t": "Fixed in trust-manager 0.21.1-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-LE73008",
+      "src": "cleanstart",
+      "title": "Parsing an invalid SVCB or HTTPS RR can panic when the size of a parameter value overflows the message buffer",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LE73008.json",
+      "released": "2026-09-10T00:49:04Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61729",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-42505",
+        "CVE-2026-46600",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "CleanStart: prometheus-redis-exporter"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in prometheus-redis-exporter 1.86.0-r2",
           "u": null
         }
       ],
@@ -1675,6 +1736,150 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-LA96365",
+      "src": "cleanstart",
+      "title": "Previously, a channel registered in the mux's chanList is not usable until it is established",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LA96365.json",
+      "released": "2026-09-10T01:04:37Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-25680",
+        "CVE-2026-25681",
+        "CVE-2026-27136",
+        "CVE-2026-27145",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32288",
+        "CVE-2026-32289",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-33818",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39827",
+        "CVE-2026-39828",
+        "CVE-2026-39829",
+        "CVE-2026-39830",
+        "CVE-2026-39831",
+        "CVE-2026-39832",
+        "CVE-2026-39833",
+        "CVE-2026-39834",
+        "CVE-2026-39835",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501",
+        "CVE-2026-42502",
+        "CVE-2026-42504",
+        "CVE-2026-42505",
+        "CVE-2026-42506",
+        "CVE-2026-42507",
+        "CVE-2026-42508",
+        "CVE-2026-46595",
+        "CVE-2026-46597",
+        "CVE-2026-46598",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56855",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-78662"
+      ],
+      "products": [
+        "CleanStart: sealed-secrets"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in sealed-secrets 0.37.0.r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-QK89502",
+      "src": "cleanstart",
+      "title": "ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QK89502.json",
+      "released": "2026-09-10T01:06:07Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47912",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58186",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61729",
+        "CVE-2026-25680",
+        "CVE-2026-25681",
+        "CVE-2026-27136",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-33818",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-39823",
+        "CVE-2026-39824",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39827",
+        "CVE-2026-39828",
+        "CVE-2026-39829",
+        "CVE-2026-39830",
+        "CVE-2026-39831",
+        "CVE-2026-39832",
+        "CVE-2026-39833",
+        "CVE-2026-39834",
+        "CVE-2026-39835",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501",
+        "CVE-2026-42502",
+        "CVE-2026-42505",
+        "CVE-2026-42506",
+        "CVE-2026-42508",
+        "CVE-2026-46595",
+        "CVE-2026-46597",
+        "CVE-2026-46598",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "CleanStart: vault-k8s"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vault-k8s 1.7.4-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-AJ83096",
       "src": "cleanstart",
       "title": "Enforce a recursion limit in Unmarshal to prevent stack exhaustion when parsing deeply-nested, recursive structures",
@@ -1720,6 +1925,39 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-LI28091",
+      "src": "cleanstart",
+      "title": "HashiCorp memberlist before version 0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LI28091.json",
+      "released": "2026-09-10T01:16:08Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-22868",
+        "CVE-2026-14362",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-42505",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "CleanStart: metallb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in metallb 0.14.9-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-100911",
@@ -1948,6 +2186,92 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-KO31881",
+      "src": "cleanstart",
+      "title": "malicious GOSUMDB was capable of serving arbitrary module content not contained within the transparency log",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KO31881.json",
+      "released": "2026-09-10T01:50:10Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-46600",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-56864",
+        "CVE-2026-56865",
+        "CVE-2026-73500"
+      ],
+      "products": [
+        "CleanStart: dex"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dex 2.43.1-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KR69944",
+      "src": "cleanstart",
+      "title": "source-address critical option in the Permissions returned by an authentication callback was only enforced for the PublicKeyCallback and VerifiedPublicKeyCallback paths, extending the fix for CVE-2...",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KR69944.json",
+      "released": "2026-09-10T01:56:39Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61732",
+        "CVE-2025-68121",
+        "CVE-2026-25679",
+        "CVE-2026-25680",
+        "CVE-2026-25681",
+        "CVE-2026-27136",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-33814",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39824",
+        "CVE-2026-39827",
+        "CVE-2026-39828",
+        "CVE-2026-39829",
+        "CVE-2026-39830",
+        "CVE-2026-39831",
+        "CVE-2026-39832",
+        "CVE-2026-39833",
+        "CVE-2026-39834",
+        "CVE-2026-39835",
+        "CVE-2026-42502",
+        "CVE-2026-42506",
+        "CVE-2026-42508",
+        "CVE-2026-46595",
+        "CVE-2026-46597",
+        "CVE-2026-46598",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56854",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "CleanStart: haproxy-ingress"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in haproxy-ingress 0.15.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-HP09399",
       "src": "cleanstart",
       "title": "ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label",
@@ -2145,6 +2469,51 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-MQ51708",
+      "src": "cleanstart",
+      "title": "sqlparse is a non-validating SQL parser module for Python",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MQ51708.json",
+      "released": "2026-09-10T02:15:42Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-27205",
+        "CVE-2026-28684",
+        "CVE-2026-34180",
+        "CVE-2026-41205",
+        "CVE-2026-44307",
+        "CVE-2026-44405",
+        "CVE-2026-44431",
+        "CVE-2026-44432",
+        "CVE-2026-4539",
+        "CVE-2026-45409",
+        "CVE-2026-48522",
+        "CVE-2026-48524",
+        "CVE-2026-48525",
+        "CVE-2026-48526",
+        "CVE-2026-54284",
+        "CVE-2026-57585",
+        "CVE-2026-59884",
+        "CVE-2026-59885",
+        "CVE-2026-59886",
+        "CVE-2026-59890",
+        "CVE-2026-59893",
+        "CVE-2026-59894",
+        "CVE-2026-69247",
+        "CVE-2026-71491",
+        "CVE-2026-7246"
+      ],
+      "products": [
+        "CleanStart: apache-superset"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-superset 5.0.0-r9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-AM39668",
       "src": "cleanstart",
       "title": "yawkat LZ4 Java provides LZ4 compression for Java",
@@ -2225,6 +2594,86 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-QN07777",
+      "src": "cleanstart",
+      "title": "Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QN07777.json",
+      "released": "2026-09-10T02:44:41Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-2303",
+        "CVE-2026-25680",
+        "CVE-2026-25681",
+        "CVE-2026-27136",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32288",
+        "CVE-2026-32289",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-33816",
+        "CVE-2026-33818",
+        "CVE-2026-34040",
+        "CVE-2026-34986",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-39823",
+        "CVE-2026-39824",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39827",
+        "CVE-2026-39828",
+        "CVE-2026-39829",
+        "CVE-2026-39830",
+        "CVE-2026-39831",
+        "CVE-2026-39832",
+        "CVE-2026-39833",
+        "CVE-2026-39834",
+        "CVE-2026-39835",
+        "CVE-2026-39836",
+        "CVE-2026-39883",
+        "CVE-2026-41178",
+        "CVE-2026-41568",
+        "CVE-2026-41602",
+        "CVE-2026-42306",
+        "CVE-2026-42499",
+        "CVE-2026-42501",
+        "CVE-2026-42502",
+        "CVE-2026-42505",
+        "CVE-2026-42506",
+        "CVE-2026-42508",
+        "CVE-2026-44503",
+        "CVE-2026-46595",
+        "CVE-2026-46597",
+        "CVE-2026-46598",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56855",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860"
+      ],
+      "products": [
+        "CleanStart: vault"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vault 2.0.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-ED42524",
       "src": "cleanstart",
       "title": "Applications which accept user-supplied Spring Expression Language (SpEL) expressions may be vulnerable to a Denial of Service (DoS) attack if the evaluation of a SpEL expression triggers unbounded...",
@@ -2244,6 +2693,36 @@
       "fix": [
         {
           "t": "Fixed in spring-boot 3.4.13-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-OB24504",
+      "src": "cleanstart",
+      "title": "Previously, resolving relative paths containing parent directory ('",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OB24504.json",
+      "released": "2026-09-10T02:49:42Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-41178",
+        "CVE-2026-42504",
+        "CVE-2026-42505",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56858",
+        "CVE-2026-56860"
+      ],
+      "products": [
+        "CleanStart: kube-state-metrics"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kube-state-metrics 2.16.0-r9",
           "u": null
         }
       ],
@@ -2364,6 +2843,59 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-JY79008",
+      "src": "cleanstart",
+      "title": "Improper encoding of non-finite floating-point values during MapMessage JSON serialization in Apache Log4j API produces output that is not valid JSON",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JY79008.json",
+      "released": "2026-09-10T03:03:42Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-33042",
+        "CVE-2025-41242",
+        "CVE-2025-55163",
+        "CVE-2025-59250",
+        "CVE-2026-12185",
+        "CVE-2026-22745",
+        "CVE-2026-40563",
+        "CVE-2026-41603",
+        "CVE-2026-41720",
+        "CVE-2026-41848",
+        "CVE-2026-41850",
+        "CVE-2026-41851",
+        "CVE-2026-41852",
+        "CVE-2026-43869",
+        "CVE-2026-45292",
+        "CVE-2026-49844",
+        "CVE-2026-50193",
+        "CVE-2026-54512",
+        "CVE-2026-54513",
+        "CVE-2026-54514",
+        "CVE-2026-54515",
+        "CVE-2026-55851",
+        "CVE-2026-57914",
+        "CVE-2026-59639",
+        "CVE-2026-59642",
+        "CVE-2026-59645",
+        "CVE-2026-59647",
+        "CVE-2026-59650",
+        "CVE-2026-59651",
+        "CVE-2026-59889",
+        "CVE-2026-59901",
+        "CVE-2026-59919",
+        "CVE-2026-8763"
+      ],
+      "products": [
+        "CleanStart: apache-hive"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-hive 4.2.0-r12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-FD87409",
       "src": "cleanstart",
       "title": "Previously, resolving relative paths containing parent directory ('",
@@ -2386,6 +2918,60 @@
       "fix": [
         {
           "t": "Fixed in nats-streaming 0.24.6-r5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-QP89146",
+      "src": "cleanstart",
+      "title": "Improper Control of Generation of Code ('Code Injection') vulnerability in Apache Avro Java SDK when generating specific records from untrusted Avro schemas",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QP89146.json",
+      "released": "2026-09-10T03:06:13Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-33042",
+        "CVE-2025-41242",
+        "CVE-2025-55163",
+        "CVE-2025-59250",
+        "CVE-2025-62728",
+        "CVE-2026-12185",
+        "CVE-2026-22745",
+        "CVE-2026-40563",
+        "CVE-2026-41603",
+        "CVE-2026-41720",
+        "CVE-2026-41848",
+        "CVE-2026-41850",
+        "CVE-2026-41851",
+        "CVE-2026-41852",
+        "CVE-2026-43869",
+        "CVE-2026-45292",
+        "CVE-2026-49844",
+        "CVE-2026-50193",
+        "CVE-2026-54512",
+        "CVE-2026-54513",
+        "CVE-2026-54514",
+        "CVE-2026-54515",
+        "CVE-2026-55851",
+        "CVE-2026-57914",
+        "CVE-2026-59639",
+        "CVE-2026-59642",
+        "CVE-2026-59645",
+        "CVE-2026-59647",
+        "CVE-2026-59650",
+        "CVE-2026-59651",
+        "CVE-2026-59889",
+        "CVE-2026-59901",
+        "CVE-2026-59919",
+        "CVE-2026-8763"
+      ],
+      "products": [
+        "CleanStart: apache-hive"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-hive 4.1.0-r7",
           "u": null
         }
       ],
@@ -2774,6 +3360,28 @@
         },
         {
           "t": "Fixed in libxml2 2.13.9-r6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-78254",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-78254",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-78254",
+      "released": "2026-09-10T06:05:05Z",
+      "updated": "2026-10-08T12:49:11Z",
+      "cves": [
+        "CVE-2026-78254"
+      ],
+      "products": [
+        "Alpaquita: apache-ant"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-ant 1.10.18-r0",
           "u": null
         }
       ],
@@ -3389,6 +3997,47 @@
         },
         {
           "t": "Ensure that the Redis server used by the application is deployed in a trusted, network-segregated environment and is not accessible to untrusted parties. Where…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:66348",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: vim security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:66348",
+      "released": "2026-09-10T09:27:09Z",
+      "updated": "2026-11-05T20:13:11Z",
+      "cves": [
+        "CVE-2026-28420",
+        "CVE-2026-52859",
+        "CVE-2026-55892",
+        "CVE-2026-59857",
+        "CVE-2026-73072",
+        "CVE-2026-73076",
+        "CVE-2026-73078"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:66348"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        },
+        {
+          "t": "Users should exercise caution when opening untrusted files or executing untrusted programs within vim's `:terminal` window. Avoiding interaction with untrusted…",
           "u": null
         }
       ],
@@ -7375,6 +8024,36 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:66403",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: coreutils security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:66403",
+      "released": "2026-09-10T14:36:35Z",
+      "updated": "2026-11-06T07:47:04Z",
+      "cves": [
+        "CVE-2026-56392"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:66403"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "GO-2026-6343",

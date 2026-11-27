@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-01-30",
-  "count": 179,
+  "count": 250,
   "items": [
     {
       "id": "openSUSE-SU-2026:10119-1",
@@ -603,6 +603,50 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-MJ64494",
+      "src": "cleanstart",
+      "title": "Redis is an open source, in-memory database that persists on disk",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MJ64494",
+      "released": "2026-01-30T13:59:20Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2015-8080",
+        "CVE-2019-10192",
+        "CVE-2019-10193",
+        "CVE-2020-14147",
+        "CVE-2021-32625",
+        "CVE-2021-32626",
+        "CVE-2021-32627",
+        "CVE-2021-32628",
+        "CVE-2021-32672",
+        "CVE-2021-32675",
+        "CVE-2021-32687",
+        "CVE-2021-32762",
+        "CVE-2021-41099",
+        "CVE-2022-24736",
+        "CVE-2022-24834",
+        "CVE-2022-35977",
+        "CVE-2022-3647",
+        "CVE-2023-36824",
+        "CVE-2023-41053",
+        "CVE-2023-41056",
+        "CVE-2023-45145",
+        "CVE-2024-31227",
+        "CVE-2024-31228",
+        "CVE-2024-31449"
+      ],
+      "products": [
+        "CleanStart: redis"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in redis 7.2.5-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-BK59402",
       "src": "cleanstart",
       "title": "Moby is an open-source project created by Docker for software containerization",
@@ -685,6 +729,50 @@
       "fix": [
         {
           "t": "Fixed in kubernetes 1.32.10-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KG18353",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KG18353",
+      "released": "2026-01-30T14:02:50Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: kubernetes"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kubernetes 1.33.6-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-PD99018",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PD99018",
+      "released": "2026-01-30T14:02:50Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: kubernetes"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kubernetes 1.34.2-r0",
           "u": null
         }
       ],
@@ -811,6 +899,83 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-LA13761",
+      "src": "cleanstart",
+      "title": "vulnerability in the OLE2 file format parser of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LA13761",
+      "released": "2026-01-30T14:05:50Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2017-11423",
+        "CVE-2017-12374",
+        "CVE-2017-12375",
+        "CVE-2017-12376",
+        "CVE-2017-12377",
+        "CVE-2017-12378",
+        "CVE-2017-12379",
+        "CVE-2017-12380",
+        "CVE-2017-16932",
+        "CVE-2017-6419",
+        "CVE-2018-0202",
+        "CVE-2018-0360",
+        "CVE-2018-0361",
+        "CVE-2018-1000085",
+        "CVE-2018-14680",
+        "CVE-2018-14681",
+        "CVE-2018-14682",
+        "CVE-2019-12625",
+        "CVE-2019-15961",
+        "CVE-2019-1787",
+        "CVE-2019-1788",
+        "CVE-2019-1789",
+        "CVE-2020-3123",
+        "CVE-2020-3327",
+        "CVE-2020-3341",
+        "CVE-2020-3350",
+        "CVE-2020-3481",
+        "CVE-2021-1252",
+        "CVE-2021-1404",
+        "CVE-2021-1405",
+        "CVE-2022-20698",
+        "CVE-2022-48579",
+        "CVE-2023-20052",
+        "CVE-2023-20197",
+        "CVE-2024-20290",
+        "CVE-2024-20328"
+      ],
+      "products": [
+        "CleanStart: clamav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in clamav 1.2.2-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-PY85990",
+      "src": "cleanstart",
+      "title": "tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PY85990",
+      "released": "2026-01-30T14:07:50Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-22872"
+      ],
+      "products": [
+        "CleanStart: prometheus"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in prometheus 2.55.1-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-NJ87139",
@@ -1245,6 +1410,27 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-PK92575",
+      "src": "cleanstart",
+      "title": "ParseAddress function constructs domain-literal address components through repeated string concatenation",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PK92575",
+      "released": "2026-01-30T14:35:52Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: wazero"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wazero 1.11.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-DL37890",
       "src": "cleanstart",
       "title": "Redis is an open source, in-memory database that persists on disk",
@@ -1337,6 +1523,27 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-JM36781",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JM36781",
+      "released": "2026-01-30T14:37:22Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: velero-plugin-for-aws"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in velero-plugin-for-aws 1.13.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:20140-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1414,6 +1621,27 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-LA33013",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LA33013",
+      "released": "2026-01-30T14:40:22Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: velero-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in velero-fips 1.16.2-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-FZ95989",
       "src": "cleanstart",
       "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
@@ -1452,6 +1680,34 @@
       "fix": [
         {
           "t": "Fixed in velero-fips 1.14.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KZ63902",
+      "src": "cleanstart",
+      "title": "tar",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KZ63902",
+      "released": "2026-01-30T14:41:22Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: velero-plugin-for-aws"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in velero-plugin-for-aws 1.13.0-r0",
           "u": null
         }
       ],
@@ -1538,6 +1794,38 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-OL25917",
+      "src": "cleanstart",
+      "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OL25917",
+      "released": "2026-01-30T14:44:22Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-46394",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-58251",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: velero"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in velero 1.17.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-HY43775",
       "src": "cleanstart",
       "title": "Within HostnameError",
@@ -1567,6 +1855,63 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-OO14630",
+      "src": "cleanstart",
+      "title": "tar",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OO14630",
+      "released": "2026-01-30T14:47:23Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: vault-k8s"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vault-k8s 1.7.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KC01126",
+      "src": "cleanstart",
+      "title": "tar",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KC01126",
+      "released": "2026-01-30T14:48:22Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-62820"
+      ],
+      "products": [
+        "CleanStart: step-issuer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in step-issuer 0.9.9-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-GN47077",
       "src": "cleanstart",
       "title": "Within HostnameError",
@@ -1583,6 +1928,36 @@
       "fix": [
         {
           "t": "Fixed in rabbitmq-messaging-topology-operator 1.15.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-MI26039",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MI26039",
+      "released": "2026-01-30T14:49:22Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61729",
+        "CVE-2025-62820"
+      ],
+      "products": [
+        "CleanStart: step-issuer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in step-issuer 0.9.9-r1",
           "u": null
         }
       ],
@@ -1723,6 +2098,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-NZ19387",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NZ19387",
+      "released": "2026-01-30T14:52:23Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: openbao-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao-fips 2.3.2-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-OL60454",
       "src": "cleanstart",
       "title": "Within HostnameError",
@@ -1821,6 +2218,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-KF66928",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KF66928",
+      "released": "2026-01-30T14:53:23Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: openbao-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao-fips 2.2.2-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-EW68942",
       "src": "cleanstart",
       "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
@@ -1865,6 +2284,42 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-KV78041",
+      "src": "cleanstart",
+      "title": "processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KV78041",
+      "released": "2026-01-30T14:56:23Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-44005",
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-58181",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61727",
+        "CVE-2025-61729",
+        "CVE-2025-62820",
+        "CVE-2025-66406"
+      ],
+      "products": [
+        "CleanStart: step-issuer-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in step-issuer-fips 0.9.11-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-AJ76138",
       "src": "cleanstart",
       "title": "tar",
@@ -1891,6 +2346,27 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-ND19988",
+      "src": "cleanstart",
+      "title": "Cancelling a query (e",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-ND19988",
+      "released": "2026-01-30T14:59:22Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47907"
+      ],
+      "products": [
+        "CleanStart: kyverno-policy-reporter-kyverno-plugin-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kyverno-policy-reporter-kyverno-plugin-fips 1.5.2-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-BJ35875",
@@ -1950,6 +2426,48 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-PD17156",
+      "src": "cleanstart",
+      "title": "Cancelling a query (e",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PD17156",
+      "released": "2026-01-30T15:00:22Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47907"
+      ],
+      "products": [
+        "CleanStart: kyverno-policy-reporter-kyverno-plugin-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kyverno-policy-reporter-kyverno-plugin-fips 1.4.2-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-OO42606",
+      "src": "cleanstart",
+      "title": "Cancelling a query (e",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OO42606",
+      "released": "2026-01-30T15:00:52Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47907"
+      ],
+      "products": [
+        "CleanStart: kyverno-policy-reporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kyverno-policy-reporter-fips 3.0.7-r5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-RL45001",
       "src": "cleanstart",
       "title": "tar",
@@ -1976,6 +2494,29 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-KQ33111",
+      "src": "cleanstart",
+      "title": "Cancelling a query (e",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KQ33111",
+      "released": "2026-01-30T15:02:22Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-0913",
+        "CVE-2025-4673",
+        "CVE-2025-47907"
+      ],
+      "products": [
+        "CleanStart: kyverno-policy-reporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kyverno-policy-reporter-fips 3.1.3-r6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-DI91874",
@@ -2106,6 +2647,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-PI00621",
+      "src": "cleanstart",
+      "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PI00621",
+      "released": "2026-01-30T15:03:52Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: kube-state-metrics-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kube-state-metrics-fips 2.17.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-LP38773",
       "src": "cleanstart",
       "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
@@ -2169,6 +2732,81 @@
       "fix": [
         {
           "t": "Fixed in k8ssandra-operator-fips 1.26.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-JX43631",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JX43631",
+      "released": "2026-01-30T15:06:23Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-0913",
+        "CVE-2025-4673",
+        "CVE-2025-47907",
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: k8ssandra-operator-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in k8ssandra-operator-fips 1.28.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KK41938",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KK41938",
+      "released": "2026-01-30T15:06:23Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-0913",
+        "CVE-2025-4673",
+        "CVE-2025-47907",
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: k8ssandra-operator-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in k8ssandra-operator-fips 1.29.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-NI96678",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NI96678",
+      "released": "2026-01-30T15:06:52Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-0913",
+        "CVE-2025-4673",
+        "CVE-2025-47907",
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: k8ssandra-operator-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in k8ssandra-operator-fips 1.27.0-r0",
           "u": null
         }
       ],
@@ -2333,6 +2971,29 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-PW33232",
+      "src": "cleanstart",
+      "title": "SSH clients receiving SSH_AGENT_SUCCESS when expecting a typed response will panic and cause early termination of the client process",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PW33232",
+      "released": "2026-01-30T15:09:53Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-58181"
+      ],
+      "products": [
+        "CleanStart: istio-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in istio-fips 1.28.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-FN26367",
       "src": "cleanstart",
       "title": "SSH clients receiving SSH_AGENT_SUCCESS when expecting a typed response will panic and cause early termination of the client process",
@@ -2354,6 +3015,29 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-KC06686",
+      "src": "cleanstart",
+      "title": "SSH clients receiving SSH_AGENT_SUCCESS when expecting a typed response will panic and cause early termination of the client process",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KC06686",
+      "released": "2026-01-30T15:10:53Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-58181"
+      ],
+      "products": [
+        "CleanStart: istio-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in istio-fips 1.25.5-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-CR41732",
@@ -2378,6 +3062,34 @@
       "fix": [
         {
           "t": "Fixed in ingress-nginx-controller 1.24.2-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-MU17611",
+      "src": "cleanstart",
+      "title": "tar",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MU17611",
+      "released": "2026-01-30T15:13:23Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: helm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in helm 3.19.0-r0",
           "u": null
         }
       ],
@@ -2410,6 +3122,35 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-LY33846",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LY33846",
+      "released": "2026-01-30T15:16:23Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: helm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in helm 4.0.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-UU56048",
@@ -2496,6 +3237,35 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-NS41924",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NS41924",
+      "released": "2026-01-30T15:18:53Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: helm-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in helm-operator 1.41.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-GS02052",
@@ -2738,6 +3508,62 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-PG91940",
+      "src": "cleanstart",
+      "title": "net/http package improperly accepts a bare LF as a line terminator in chunked data chunk-size lines",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PG91940",
+      "released": "2026-01-30T15:31:24Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-22871",
+        "CVE-2025-4673",
+        "CVE-2025-47907",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: harbor-registry"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in harbor-registry 3.0.0.1-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-PO40318",
+      "src": "cleanstart",
+      "title": "go-redis is the official Redis client library for the Go programming language",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PO40318",
+      "released": "2026-01-30T15:31:53Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-29923",
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: harbor-registry-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in harbor-registry-fips 2.6.2-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-OI08379",
       "src": "cleanstart",
       "title": "Cancelling a query (e",
@@ -2758,6 +3584,29 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-QK01721",
+      "src": "cleanstart",
+      "title": "go-redis is the official Redis client library for the Go programming language",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QK01721",
+      "released": "2026-01-30T15:32:54Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-29923",
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: harbor-registry-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in harbor-registry-fips 2.7.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-AV38242",
@@ -2796,6 +3645,27 @@
       "fix": [
         {
           "t": "Fixed in external-secrets 1.1.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-NV07964",
+      "src": "cleanstart",
+      "title": "Cancelling a query (e",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NV07964",
+      "released": "2026-01-30T15:33:23Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47907"
+      ],
+      "products": [
+        "CleanStart: fluent-operator-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fluent-operator-fips 3.1.0-r4",
           "u": null
         }
       ],
@@ -2847,6 +3717,30 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-QJ89068",
+      "src": "cleanstart",
+      "title": "SSH clients receiving SSH_AGENT_SUCCESS when expecting a typed response will panic and cause early termination of the client process",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QJ89068",
+      "released": "2026-01-30T15:34:54Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2020-8912",
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-58181"
+      ],
+      "products": [
+        "CleanStart: external-secrets-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in external-secrets-fips 0.17.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-HG66170",
       "src": "cleanstart",
       "title": "Cancelling a query (e",
@@ -2883,6 +3777,71 @@
       "fix": [
         {
           "t": "Fixed in cortex-fips 1.17.2-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-PC16040",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PC16040",
+      "released": "2026-01-30T15:37:23Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-29923",
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-58181",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: harbor-registry-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in harbor-registry-fips 3.0.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-MJ51212",
+      "src": "cleanstart",
+      "title": "Cancelling a query (e",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MJ51212",
+      "released": "2026-01-30T15:40:23Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47907",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: dex-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dex-fips 2.41.1-r4",
           "u": null
         }
       ],
@@ -3189,6 +4148,27 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-OK45738",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OK45738",
+      "released": "2026-01-30T15:45:53Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: cert-manager"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cert-manager 1.19.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-GC16599",
       "src": "cleanstart",
       "title": "Cancelling a query (e",
@@ -3284,6 +4264,56 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-LL43287",
+      "src": "cleanstart",
+      "title": "SSH clients receiving SSH_AGENT_SUCCESS when expecting a typed response will panic and cause early termination of the client process",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LL43287",
+      "released": "2026-01-30T15:50:54Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2024-25621",
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-58181",
+        "CVE-2025-64329"
+      ],
+      "products": [
+        "CleanStart: cert-manager-cmctl-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cert-manager-cmctl-fips 2.3.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-OH86281",
+      "src": "cleanstart",
+      "title": "SSH clients receiving SSH_AGENT_SUCCESS when expecting a typed response will panic and cause early termination of the client process",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OH86281",
+      "released": "2026-01-30T15:52:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2024-25621",
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-58181",
+        "CVE-2025-64329"
+      ],
+      "products": [
+        "CleanStart: cert-manager-cmctl-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cert-manager-cmctl-fips 2.1.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-DP30290",
       "src": "cleanstart",
       "title": "processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input",
@@ -3373,6 +4403,70 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-OA33370",
+      "src": "cleanstart",
+      "title": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OA33370",
+      "released": "2026-01-30T15:57:24Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-55190",
+        "CVE-2025-55191",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-59537",
+        "CVE-2025-59538",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: argo-cd-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in argo-cd-fips 3.1.9-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-NP17404",
+      "src": "cleanstart",
+      "title": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NP17404",
+      "released": "2026-01-30T15:58:24Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-55190",
+        "CVE-2025-55191",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-59537",
+        "CVE-2025-59538",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: argo-cd-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in argo-cd-fips 3.1.8.-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-BD53293",
       "src": "cleanstart",
       "title": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate",
@@ -3431,6 +4525,27 @@
       "fix": [
         {
           "t": "Fixed in argo-cd-fips 3.1.9-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-MF93723",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MF93723",
+      "released": "2026-01-30T16:03:24Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: argo-workflows"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in argo-workflows 3.7.4-r0",
           "u": null
         }
       ],
@@ -3496,6 +4611,31 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-PS30901",
+      "src": "cleanstart",
+      "title": "Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PS30901",
+      "released": "2026-01-30T16:07:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-0913",
+        "CVE-2025-4673",
+        "CVE-2025-47907",
+        "CVE-2025-62156",
+        "CVE-2025-62157"
+      ],
+      "products": [
+        "CleanStart: argo-workflows-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in argo-workflows-fips 3.7.3-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-GL70025",
       "src": "cleanstart",
       "title": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate",
@@ -3528,6 +4668,32 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-PK69606",
+      "src": "cleanstart",
+      "title": "SSH servers parsing GSSAPI authentication requests do not validate the number of mechanisms specified in the request, allowing an attacker to cause unbounded memory consumption",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PK69606",
+      "released": "2026-01-30T16:08:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-0913",
+        "CVE-2025-4673",
+        "CVE-2025-47907",
+        "CVE-2025-58181",
+        "CVE-2025-62156",
+        "CVE-2025-62157"
+      ],
+      "products": [
+        "CleanStart: argo-workflows-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in argo-workflows-fips 3.7.3-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-CZ81512",
       "src": "cleanstart",
       "title": "Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes",
@@ -3546,6 +4712,99 @@
       "fix": [
         {
           "t": "Fixed in argo-cd 3.1.8.-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-JR48309",
+      "src": "cleanstart",
+      "title": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JR48309",
+      "released": "2026-01-30T16:11:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-55190",
+        "CVE-2025-55191",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-59537",
+        "CVE-2025-59538",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: argo-cd-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in argo-cd-fips 3.1.8.-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-QM19832",
+      "src": "cleanstart",
+      "title": "Moby is an open source container framework developed by Docker Inc",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QM19832",
+      "released": "2026-01-30T16:13:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-0913",
+        "CVE-2025-32445",
+        "CVE-2025-4673",
+        "CVE-2025-47907",
+        "CVE-2025-47914",
+        "CVE-2025-54410",
+        "CVE-2025-58181",
+        "CVE-2025-62156",
+        "CVE-2025-62157"
+      ],
+      "products": [
+        "CleanStart: argo-workflows-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in argo-workflows-fips 3.7.3-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KU65968",
+      "src": "cleanstart",
+      "title": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KU65968",
+      "released": "2026-01-30T16:15:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-55190",
+        "CVE-2025-55191",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-59537",
+        "CVE-2025-59538",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: argo-cd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in argo-cd 3.1.9-r4",
           "u": null
         }
       ],
@@ -3682,6 +4941,177 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-KZ60560",
+      "src": "cleanstart",
+      "title": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KZ60560",
+      "released": "2026-01-30T16:19:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-55190",
+        "CVE-2025-55191",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-59537",
+        "CVE-2025-59538",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: argo-cd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in argo-cd 3.1.9-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-ML51665",
+      "src": "cleanstart",
+      "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-ML51665",
+      "released": "2026-01-30T16:20:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: stakater-reloader-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in stakater-reloader-fips 1.2.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-ND18869",
+      "src": "cleanstart",
+      "title": "tar",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-ND18869",
+      "released": "2026-01-30T16:20:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: stakater-reloader"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in stakater-reloader 1.4.8-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-PK62208",
+      "src": "cleanstart",
+      "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PK62208",
+      "released": "2026-01-30T16:20:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: stakater-reloader-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in stakater-reloader-fips 1.3.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-NR68832",
+      "src": "cleanstart",
+      "title": "libexpat in Expat before 2",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NR68832",
+      "released": "2026-01-30T16:22:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2024-6345",
+        "CVE-2025-47273",
+        "CVE-2025-59375"
+      ],
+      "products": [
+        "CleanStart: python3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python3 3.11.14-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-PT11267",
+      "src": "cleanstart",
+      "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PT11267",
+      "released": "2026-01-30T16:22:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: stakater-reloader-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in stakater-reloader-fips 1.1.0-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-QE58701",
+      "src": "cleanstart",
+      "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QE58701",
+      "released": "2026-01-30T16:22:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: prometheus-node-exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in prometheus-node-exporter-fips 1.9.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-CQ38405",
       "src": "cleanstart",
       "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
@@ -3771,6 +5201,33 @@
       "fix": [
         {
           "t": "Fixed in openjdk8-jdk-azul 8.0.472-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-MB75553",
+      "src": "cleanstart",
+      "title": "vulnerability was found in Avahi, where a reachable assertion exists in avahi_dns_packet_append_record",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MB75553",
+      "released": "2026-01-30T16:26:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2023-38469",
+        "CVE-2023-38470",
+        "CVE-2023-38471",
+        "CVE-2023-38472",
+        "CVE-2023-38473",
+        "CVE-2024-52615",
+        "CVE-2024-52616"
+      ],
+      "products": [
+        "CleanStart: playwright-python"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in playwright-python 1.54.0-r1",
           "u": null
         }
       ],
@@ -3918,6 +5375,54 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-KD20596",
+      "src": "cleanstart",
+      "title": "Cancelling a query (e",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KD20596",
+      "released": "2026-01-30T16:28:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2022-41717",
+        "CVE-2025-0913",
+        "CVE-2025-4673",
+        "CVE-2025-47907"
+      ],
+      "products": [
+        "CleanStart: minio-client-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in minio-client-fips 0.20250521015954-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-MA27248",
+      "src": "cleanstart",
+      "title": "Cancelling a query (e",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-MA27248",
+      "released": "2026-01-30T16:28:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2022-41717",
+        "CVE-2025-0913",
+        "CVE-2025-4673",
+        "CVE-2025-47907"
+      ],
+      "products": [
+        "CleanStart: minio-client-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in minio-client-fips 0.20250416181326-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-AU31441",
       "src": "cleanstart",
       "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
@@ -3938,6 +5443,28 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-NV82543",
+      "src": "cleanstart",
+      "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NV82543",
+      "released": "2026-01-30T16:29:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: metrics-server-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in metrics-server-fips 0.6.4-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-IB84500",
@@ -4027,6 +5554,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-PW02676",
+      "src": "cleanstart",
+      "title": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PW02676",
+      "released": "2026-01-30T16:35:26Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: k8ssandra-client-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in k8ssandra-client-fips 0.7.0-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-AX77726",
       "src": "cleanstart",
       "title": "vulnerability was found in PAM",
@@ -4042,6 +5599,27 @@
       "fix": [
         {
           "t": "Fixed in gitlab-shell-fips 14.45.5-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-NA36743",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NA36743",
+      "released": "2026-01-30T16:35:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: gitlab-pages-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitlab-pages-fips 18.7.1-r0",
           "u": null
         }
       ],
@@ -4106,6 +5684,27 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-QD78411",
+      "src": "cleanstart",
+      "title": "SSH clients receiving SSH_AGENT_SUCCESS when expecting a typed response will panic and cause early termination of the client process",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QD78411",
+      "released": "2026-01-30T16:36:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47913"
+      ],
+      "products": [
+        "CleanStart: elastic-beats-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elastic-beats-fips 9.2.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-GL18398",
       "src": "cleanstart",
       "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
@@ -4152,6 +5751,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-ON38469",
+      "src": "cleanstart",
+      "title": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-ON38469",
+      "released": "2026-01-30T16:37:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: k8ssandra-client-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in k8ssandra-client-fips 0.7.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-IY17697",
       "src": "cleanstart",
       "title": "excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate",
@@ -4175,6 +5804,50 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-OJ15484",
+      "src": "cleanstart",
+      "title": "SSH clients receiving SSH_AGENT_SUCCESS when expecting a typed response will panic and cause early termination of the client process",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-OJ15484",
+      "released": "2026-01-30T16:37:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-25011",
+        "CVE-2025-47913"
+      ],
+      "products": [
+        "CleanStart: elastic-beats-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elastic-beats-fips 9.0.8-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-KZ30232",
+      "src": "cleanstart",
+      "title": "Go before 1",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KZ30232",
+      "released": "2026-01-30T16:39:25Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2022-29526",
+        "CVE-2025-47907"
+      ],
+      "products": [
+        "CleanStart: druid-exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in druid-exporter-fips 0.9-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-HJ34439",
       "src": "cleanstart",
       "title": "Go before 1",
@@ -4195,6 +5868,52 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-LZ10721",
+      "src": "cleanstart",
+      "title": "Within HostnameError",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-LZ10721",
+      "released": "2026-01-30T16:40:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2022-29526",
+        "CVE-2025-47907",
+        "CVE-2025-61727",
+        "CVE-2025-61729"
+      ],
+      "products": [
+        "CleanStart: druid-exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in druid-exporter-fips 0.11-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-PZ62650",
+      "src": "cleanstart",
+      "title": "Cancelling a query (e",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PZ62650",
+      "released": "2026-01-30T16:41:55Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2022-29526",
+        "CVE-2025-47907"
+      ],
+      "products": [
+        "CleanStart: druid-exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in druid-exporter-fips 0.11-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-HL71566",
@@ -4232,6 +5951,39 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-JD48541",
+      "src": "cleanstart",
+      "title": "Moby is an open-source project created by Docker for software containerization",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JD48541",
+      "released": "2026-01-30T16:52:56Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2019-13509",
+        "CVE-2019-14271",
+        "CVE-2020-13401",
+        "CVE-2021-21285",
+        "CVE-2021-41089",
+        "CVE-2022-29526",
+        "CVE-2023-26054",
+        "CVE-2024-23650",
+        "CVE-2024-23651",
+        "CVE-2024-23652",
+        "CVE-2024-23653",
+        "CVE-2024-24557",
+        "CVE-2024-41110"
+      ],
+      "products": [
+        "CleanStart: docker-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in docker-fips 26.1.5-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-BN11148",
       "src": "cleanstart",
       "title": "Moby is an open-source project created by Docker for software containerization",
@@ -4263,6 +6015,27 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-JM16286",
+      "src": "cleanstart",
+      "title": "attacker can pass a malicious malformed token which causes unexpected memory to be consumed during parsing",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-JM16286",
+      "released": "2026-01-30T16:56:26Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-22868"
+      ],
+      "products": [
+        "CleanStart: clickhouse-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in clickhouse-operator 0.25.5-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-DN29911",
@@ -4383,6 +6156,35 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-KA40024",
+      "src": "cleanstart",
+      "title": "PostgreSQL optimizer statistics allow a user to read sampled data within a view that the user cannot access",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-KA40024",
+      "released": "2026-01-30T17:03:56Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2023-5870",
+        "CVE-2024-10977",
+        "CVE-2024-10979",
+        "CVE-2024-7348",
+        "CVE-2025-1094",
+        "CVE-2025-4207",
+        "CVE-2025-8713",
+        "CVE-2025-8714",
+        "CVE-2025-8715"
+      ],
+      "products": [
+        "CleanStart: postgresql"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in postgresql 16.9-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-YB44027",
@@ -4530,6 +6332,27 @@
       "fix": [
         {
           "t": "Fixed in postgresql 9.6.4-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-NF19624",
+      "src": "cleanstart",
+      "title": "ParseAddress function constructs domain-literal address components through repeated string concatenation",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-NF19624",
+      "released": "2026-01-30T17:20:26Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: timoni"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in timoni 0.25.2-r0",
           "u": null
         }
       ],
@@ -4742,6 +6565,27 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-PB78859",
+      "src": "cleanstart",
+      "title": "ParseAddress function constructs domain-literal address components through repeated string concatenation",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-PB78859",
+      "released": "2026-01-30T17:25:56Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: kubevela"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kubevela 1.10.4-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-AZ32516",

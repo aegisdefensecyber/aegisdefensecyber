@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-08",
-  "count": 47,
+  "count": 50,
   "items": [
     {
       "id": "openSUSE-SU-2026:11210-1",
@@ -592,6 +592,37 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-libphp-2026-14355",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "ext/openssl: Memory corruption in openssl_encrypt with AES-WRAP-PAD",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-7jrw-539f-x6vr",
+      "released": "2026-07-08T11:32:07Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-14355"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.2.32",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.32",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.4.23",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21272-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -648,6 +679,37 @@
         {
           "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
           "u": "https://access.redhat.com/errata/RHSA-2026:36728"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:36733",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: cups security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:36733",
+      "released": "2026-07-08T14:37:58Z",
+      "updated": "2026-11-05T20:35:25Z",
+      "cves": [
+        "CVE-2026-34980"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.4,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:36733"
         },
         {
           "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
@@ -1081,6 +1143,44 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:36777",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: unbound security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:36777",
+      "released": "2026-07-08T16:36:29Z",
+      "updated": "2026-11-05T20:45:48Z",
+      "cves": [
+        "CVE-2026-40622",
+        "CVE-2026-41292",
+        "CVE-2026-42534",
+        "CVE-2026-44390"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)",
+        "Red Hat Enterprise Linux CodeReady Linux Builder (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:36777"
+        },
+        {
+          "t": "Disclaimer: The following mitigation solutions are provided as a courtesy, pending the application of an official patch. This content was generated utilizing A…",
+          "u": null
+        },
+        {
+          "t": "To mitigate the risk of denial of resolution service, restrict Unbound's network exposure. Configure Unbound to only accept queries from trusted internal netwo…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-92303",

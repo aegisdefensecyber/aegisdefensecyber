@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-07-11",
-  "count": 50,
+  "count": 53,
   "items": [
     {
       "id": "msrc_CVE-2023-24532",
@@ -1357,6 +1357,63 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-mariadb-2023-26785",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MariaDB v10.5 was discovered to contain a remote code execution (RCE) vulnerability via UDF Code in a Shared Object File, followed by a \"create function\" statement. NOTE: this is disputed by the MariaDB Foundation becau…",
+      "url": "https://github.com/Ant1sec-ops/CVE-2023-26785",
+      "released": "2025-07-11T05:52:22Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-26785"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: mariadb"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mariadb-2023-39593",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Insecure permissions in the sys_exec function of MariaDB v10.5 allows authenticated attackers to execute arbitrary commands with elevated privileges. NOTE: this is disputed by the MariaDB Foundation because no privilege…",
+      "url": "https://github.com/Ant1sec-ops/CVE-2023-39593",
+      "released": "2025-07-11T05:52:25Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-39593"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: mariadb"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mariadb-2024-27766",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue in MariaDB v.11.1 allows a remote attacker to execute arbitrary code via the lib_mysqludf_sys.so function. NOTE: this is disputed by the MariaDB Foundation because no privilege boundary is crossed.",
+      "url": "https://github.com/Ant1sec-ops/CVE-2024-27766",
+      "released": "2025-07-11T05:52:49Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-27766"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb 11.1.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "BELL-CVE-2025-7424",

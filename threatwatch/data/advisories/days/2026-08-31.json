@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-31",
-  "count": 125,
+  "count": 133,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1096",
@@ -1170,6 +1170,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:61257",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: iperf3 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:61257",
+      "released": "2026-08-31T03:46:22Z",
+      "updated": "2026-11-05T22:55:07Z",
+      "cves": [
+        "CVE-2026-71217"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:61257"
+        },
+        {
+          "t": "To mitigate this issue, restrict network access to the `iperf3` server to trusted clients or networks using firewall rules. If the `iperf3` server functionalit…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "ROOT-APP-NPM-CVE-2021-23424",
       "src": "osv_root",
       "vendor": "Root",
@@ -1244,6 +1274,33 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-kibana-2026-78581",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Authorization Bypass Through User-Controlled Key in Kibana Leading to Unauthorized Data Modification in Kibana",
+      "url": "https://discuss.elastic.co/t/kibana-8-16-3-8-17-2-security-update-esa-2026-51/387446",
+      "released": "2026-08-31T05:47:28Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-78581"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: kibana"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kibana 8.16.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in kibana 8.17.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21706-1",
@@ -3387,6 +3444,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:61389",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: iperf3 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:61389",
+      "released": "2026-08-31T12:57:02Z",
+      "updated": "2026-11-05T22:55:08Z",
+      "cves": [
+        "CVE-2026-71217"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:61389"
+        },
+        {
+          "t": "To mitigate this issue, restrict network access to the `iperf3` server to trusted clients or networks using firewall rules. If the `iperf3` server functionalit…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "msrc_CVE-2026-82474",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -3670,6 +3757,132 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:61737",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: Red Hat Hardened Images RPMs bug fix and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:61737",
+      "released": "2026-08-31T15:42:41Z",
+      "updated": "2026-11-06T07:46:44Z",
+      "cves": [
+        "CVE-2026-77117",
+        "CVE-2026-80489"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Red Hat Hardened Images"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:61737"
+        },
+        {
+          "t": "Do not convert untrusted input using the SHIFT_JISX0213 character set (for example via iconv). Where conversion cannot be avoided, apply process CPU time limit…",
+          "u": null
+        },
+        {
+          "t": "To mitigate this avoid converting untrusted data with that charset, or disable the conversion path if unused. Where conversion of untrusted input cannot be avo…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:61625",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gzip security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:61625",
+      "released": "2026-08-31T15:54:36Z",
+      "updated": "2026-11-05T21:27:05Z",
+      "cves": [
+        "CVE-2026-41991",
+        "CVE-2026-41992"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.0,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:61625"
+        },
+        {
+          "t": "Ensure that the mktemp utility (provided by the coreutils package) is available in PATH when using the gzexe utility. On Red Hat Enterprise Linux, mktemp is in…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:61680",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: iperf3 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:61680",
+      "released": "2026-08-31T16:00:41Z",
+      "updated": "2026-11-05T22:55:08Z",
+      "cves": [
+        "CVE-2026-71217"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:61680"
+        },
+        {
+          "t": "To mitigate this issue, restrict network access to the `iperf3` server to trusted clients or networks using firewall rules. If the `iperf3` server functionalit…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:61623",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gzip security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:61623",
+      "released": "2026-08-31T16:17:46Z",
+      "updated": "2026-11-05T21:27:01Z",
+      "cves": [
+        "CVE-2026-41991",
+        "CVE-2026-41992"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.0,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:61623"
+        },
+        {
+          "t": "Ensure that the mktemp utility (provided by the coreutils package) is available in PATH when using the gzexe utility. On Red Hat Enterprise Linux, mktemp is in…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21714-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -3697,6 +3910,44 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:61752",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: libssh2 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:61752",
+      "released": "2026-08-31T17:42:29Z",
+      "updated": "2026-11-05T22:15:41Z",
+      "cves": [
+        "CVE-2026-7598",
+        "CVE-2026-58050",
+        "CVE-2026-66032",
+        "CVE-2026-66034"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Server (v. 7 ELS)",
+        "Red Hat Enterprise Linux Server Optional (v. 7 ELS)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:61752"
+        },
+        {
+          "t": "To mitigate this flaw, applications linked to the libssh2 library should be configured or updated to exclusively use public key authentication. Explicitly disa…",
+          "u": null
+        },
+        {
+          "t": "To mitigate this issue,ensure your applications are running strictly on 64-bit architectures, which naturally prevents the integer overflow from occurring. Add…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "RLSA-2026:61383",

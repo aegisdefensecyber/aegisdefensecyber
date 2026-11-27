@@ -1,8 +1,35 @@
 {
   "schemaVersion": 1,
   "date": "2024-11-08",
-  "count": 3,
+  "count": 10,
   "items": [
+    {
+      "id": "BIT-mongodb-2024-8305",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MongoDB Server secondaries may crash due to forced index constraints",
+      "url": "https://jira.mongodb.org/browse/SERVER-92382",
+      "released": "2024-11-08T07:12:18Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-8305"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 6.0.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 7.0.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
     {
       "id": "openSUSE-SU-2024:0356-1",
       "src": "csaf_opensuse",
@@ -85,6 +112,144 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-memcached-2023-46853",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Memcached before 1.6.22, an off-by-one error exists when processing proxy requests in proxy mode, if \\n is used instead of \\r\\n.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-46853",
+      "released": "2024-11-08T19:13:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-46853"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: memcached"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in memcached 1.6.22",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-memcached-2023-46852",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Memcached before 1.6.22, a buffer overflow exists when processing multiget requests in proxy mode, if there are many spaces after the \"get\" substring.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-46852",
+      "released": "2024-11-08T19:14:04Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-46852"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: memcached"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in memcached 1.6.22",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-memcached-2022-48571",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "memcached 1.6.7 allows a Denial of Service via multi-packet uploads in UDP.",
+      "url": "https://lists.debian.org/debian-lts-announce/2023/09/msg00004.html",
+      "released": "2024-11-08T19:14:12Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-48571"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: memcached"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in memcached 1.6.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-memcached-2021-37519",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Buffer Overflow vulnerability in authfile.c memcached 1.6.9 allows attackers to cause a denial of service via crafted authenticattion file.",
+      "url": "https://github.com/memcached/memcached/issues/805",
+      "released": "2024-11-08T19:14:19Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-37519"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: memcached"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in memcached 1.6.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-memcached-2020-22570",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Memcached 1.6.0 before 1.6.3 allows remote attackers to cause a denial of service (daemon crash) via a crafted meta command.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-22570",
+      "released": "2024-11-08T19:14:27Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-22570"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: memcached"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in memcached 1.6.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-memcached-2020-10931",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Memcached 1.6.x before 1.6.2 allows remote attackers to cause a denial of service (daemon crash) via a crafted binary protocol header to try_read_command_binary in memcached.c.",
+      "url": "https://github.com/memcached/memcached/commit/02c6a2b62ddcb6fa4569a591d3461a156a636305",
+      "released": "2024-11-08T19:14:34Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-10931"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: memcached"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in memcached 1.6.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2021-06-01",
-  "count": 32,
+  "count": 79,
   "items": [
     {
       "id": "ASB-A-156090809",
@@ -781,6 +781,1081 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "PUB-A-110373476",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In addr_match of xfrm.h, there is a possible out-of-bounds read due to a missing bounds check. This could lead to local information disclosure in the kernel with System execution privileges needed. User interaction is n…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0605"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-06-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-137395936",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ActivityTaskManagerService.startActivity() and AppTaskImpl.startActivity() of ActivityTaskManagerService.java and AppTaskImpl.java, there is possible access to restricted activities due to a permissions bypass. This …",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0571"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-157650357",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In rw_i93_send_to_lower of rw_i93.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0548"
+      ],
+      "products": [
+        "Android: platform/system/nfc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/nfc 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-158482162",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In isBackupServiceActive of BackupManagerService.java, there is a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed …",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0554"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-168034487",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In drm_syncobj_handle_to_fd of drm_syncobj.c, there is a possible use after free due to incorrect refcounting. This could lead to local escalation of privilege with System execution privileges needed. User interaction i…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0606"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-06-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-168314741",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In wpas_ctrl_msg_queue_timeout of ctrl_iface_unix.c, there is a possible memory corruption due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0535"
+      ],
+      "products": [
+        "Android: platform/external/wpa_supplicant_8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/wpa_supplicant_8 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-168712890",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In updateNotification of BeamTransferManager.java, there is a missing permission check. This could lead to local information disclosure of paired Bluetooth addresses with no additional execution privileges needed. User …",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0542"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Nfc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Nfc 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-169257710",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In phNxpNciHal_print_res_status of phNxpNciHal.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User in…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0544"
+      ],
+      "products": [
+        "Android: platform/hardware/nxp/nfc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/hardware/nxp/nfc 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-169258455",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In phNxpNciHal_ext_process_nfc_init_rsp of phNxpNciHal_ext.cc, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure in the NFC server with System executio…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0541"
+      ],
+      "products": [
+        "Android: platform/hardware/nxp/nfc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/hardware/nxp/nfc 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-169258733",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In phNxpNciHal_print_res_status of phNxpNciHal.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User in…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0546"
+      ],
+      "products": [
+        "Android: platform/hardware/nxp/nfc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/hardware/nxp/nfc 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-169258743",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In phNxpNciHal_process_ext_rsp of phNxpNciHal_ext.cc, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with System execution privileges needed. User in…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0543"
+      ],
+      "products": [
+        "Android: platform/hardware/nxp/nfc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/hardware/nxp/nfc 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-169258884",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In phNxpNciHal_print_res_status of phNxpNciHal.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege in the NFC server with System execution privileg…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0545"
+      ],
+      "products": [
+        "Android: platform/hardware/nxp/nfc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/hardware/nxp/nfc 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-169328517",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In halWrapperDataCallback of hal_wrapper.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0540"
+      ],
+      "products": [
+        "Android: platform/hardware/st/nfc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/hardware/st/nfc 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-169936038",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onBindViewHolder of AppSwitchPreference.java, there is a possible bypass of device admin setttings due to unclear UI. This could lead to local escalation of privilege with User execution privileges needed. User inter…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0553"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-170121238",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onReceive of DevicePolicyManagerService.java, there is a possible enabling of disabled profiles due to a missing permission check. This could lead to local escalation of privilege with no additional execution privile…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0568"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-170639543",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In permission declarations of DeviceAdminReceiver.java, there is a possible lack of broadcast protection due to an insecure default value. This could lead to local escalation of privilege with no additional execution pr…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0534"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-172312730",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In Lag_max of p_ol_wgh.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is need…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0559"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-172716941",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getBlockSum of fastcodemb.cpp, there is a possible out of bounds read due to a heap buffer overflow. This could lead to local information disclosure with no additional execution privileges needed. User interaction is…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0556"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-172908358",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ih264e_fmt_conv_422i_to_420sp of ih264e_fmt_conv.c, there is a possible out of bounds read due to a heap buffer overflow. This could lead to local information disclosure with no additional execution privileges needed…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0563"
+      ],
+      "products": [
+        "Android: platform/external/libavc",
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/libavc 11:2021-06-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/av 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-173473906",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In fillMainDataBuf of pvmp3_framedecoder.cpp, there is a possible out of bounds read due to a heap buffer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User i…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0558"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-174045870",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onStart of ContactsDumpActivity.java, there is possible access to contacts due to a tapjacking/overlay attack. This could lead to local information disclosure with User execution privileges needed. User interaction i…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0569"
+      ],
+      "products": [
+        "Android: platform/packages/providers/ContactsProvider"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/providers/ContactsProvider 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-174151048",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onReceive of NetInitiatedActivity.java, there is a possible way to supply an attacker-controlled value to a GPS HAL handler due to a missing permission check. This could lead to local escalation of privilege that may…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0547"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-174302683",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In append_to_verify_fifo_interleaved_ of stream_encoder.c, there is a possible out of bounds write due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges n…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0561"
+      ],
+      "products": [
+        "Android: platform/external/flac"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/flac 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-174801970",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In wrapUserThread of AudioStream.cpp, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not …",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0565"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-174870704",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In handleAppLaunch of AppLaunchActivity.java, there is a possible arbitrary activity launch due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0608"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2021-06-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-175124820",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getEndItemSliceAction of MediaOutputSlice.java, there is a possible permission bypass due to an unsafe PendingIntent. This could lead to local information disclosure with User execution privileges needed. User intera…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0552"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-175147055",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In GENERAL_NAME_cmp of v3_genn.c , there is a possible denial of service due to a missing null check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not n…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-1971"
+      ],
+      "products": [
+        "Android: platform/external/boringssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/boringssl 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-175894436",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In accessAudioHalPidscpp of TimeCheck.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction …",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0566"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-176084648",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In RasterIntraUpdate of motion_est.cpp, there is a possible out of bounds read due to an incorrect bounds check. This could lead to local information disclosure with no additional execution privileges needed. User inter…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0562"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-176495665",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In decrypt of CryptoPlugin.cpp, there is a possible use-after-free due to a race condition. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for ex…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0564"
+      ],
+      "products": [
+        "Android: platform/frameworks/av",
+        "Android: platform/hardware/interfaces"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 11:2021-06-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/hardware/interfaces 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-176756141",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onCreate of WiFiInstaller.java, there is a possible way to install a malicious Hotspot 2.0 configuration due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privil…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0537"
+      ],
+      "products": [
+        "Android: platform/packages/apps/CertInstaller"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/CertInstaller 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-176756691",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In dropFile of WiFiInstaller, there is a way to delete files accessible to CertInstaller due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User in…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0536"
+      ],
+      "products": [
+        "Android: platform/packages/apps/CertInstaller"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/CertInstaller 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-177931355",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In doNotification of AccountManagerService.java, there is a possible permission bypass due to an unsafe PendingIntent. This could lead to local information disclosure with User execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0572"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-178803845",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In sendBugreportNotification of BugreportProgressService.java, there is a possible permission bypass due to an unsafe PendingIntent. This could lead to local escalation of privilege with User execution privileges needed…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0570"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-178821491",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onCreate of EmergencyCallbackModeExitDialog.java, there is a possible exit of emergency callback mode due to a tapjacking/overlay attack. This could lead to local escalation of privilege with User execution privilege…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0538"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/frameworks/opt/telephony",
+        "Android: platform/packages/services/Telephony"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-06-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/opt/telephony 11:2021-06-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Telephony 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-179046129",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In setRange of ABuffer.cpp, there is a possible out of bounds write due to an integer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is needed for exp…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0557"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-179161711",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In RenderStruct of protostream_objectsource.cc, there is a possible crash due to a missing null check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not …",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0555"
+      ],
+      "products": [
+        "Android: platform/external/protobuf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/protobuf 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-179461812",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In isRestricted of RemoteViews.java, there is a possible way to inject font files due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User intera…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0567"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-179688673",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onLoadFailed of AnnotateActivity.java, there is a possible way to gain WRITE_EXTERNAL_STORAGE permissions without user consent due to a confused deputy. This could lead to local escalation of privilege with no additi…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0550"
+      ],
+      "products": [
+        "Android: platform/vendor/unbundled_google/packages/MarkupGoogle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/unbundled_google/packages/MarkupGoogle 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-180419673",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In archiveStoredConversation of MmsService.java, there is a possible way to archive message conversation without user consent due to a missing permission check. This could lead to local escalation of privilege with no a…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0539"
+      ],
+      "products": [
+        "Android: platform/packages/services/Mms"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/services/Mms 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-180518039",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In bind of MediaControlPanel.java, there is a possible way to lock up the system UI using a malicious media file due to improper input validation. This could lead to remote denial of service with no additional execution…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0551"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-180950209",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In iaxxx_calc_i2s_div of iaxxx-codec.c, there is a possible hardware port write with user controlled data due to a missing bounds check. This could lead to local escalation of privilege with no additional execution priv…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0607"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2021-06-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-183961896",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In sspRequestCallback of BondStateMachine.java, there is a possible leak of Bluetooth MAC addresses due to log information disclosure. This could lead to local information disclosure with System execution privileges nee…",
+      "url": "https://source.android.com/security/bulletin/2021-06-01",
+      "released": "2021-06-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0549"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Bluetooth 11:2021-06-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-4970-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "gupnp vulnerability",
+      "url": "https://ubuntu.com/security/notices/USN-4970-1",
+      "released": "2021-06-01T11:20:45Z",
+      "updated": "2026-11-24T09:37:15Z",
+      "cves": [
+        "CVE-2021-33516"
+      ],
+      "products": [
+        "Ubuntu: gupnp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gupnp 1.2.3-0ubuntu0.20.04.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-4971-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "libwebp vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-4971-1",
+      "released": "2021-06-01T11:29:35Z",
+      "updated": "2026-11-24T09:37:15Z",
+      "cves": [
+        "CVE-2018-25009",
+        "CVE-2018-25010",
+        "CVE-2018-25011",
+        "CVE-2018-25012",
+        "CVE-2018-25013",
+        "CVE-2018-25014",
+        "CVE-2020-36328",
+        "CVE-2020-36329",
+        "CVE-2020-36330",
+        "CVE-2020-36331",
+        "CVE-2020-36332"
+      ],
+      "products": [
+        "Ubuntu: libwebp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libwebp 0.6.1-2ubuntu0.18.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in libwebp 0.6.1-2ubuntu0.20.04.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-4972-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "postgresql-10, postgresql-12, postgresql-13 vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-4972-1",
+      "released": "2021-06-01T11:48:38Z",
+      "updated": "2026-11-24T09:37:15Z",
+      "cves": [
+        "CVE-2021-32027",
+        "CVE-2021-32028",
+        "CVE-2021-32029"
+      ],
+      "products": [
+        "Ubuntu: postgresql-10",
+        "Ubuntu: postgresql-12"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in postgresql-10 10.17-0ubuntu0.18.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in postgresql-12 12.7-0ubuntu0.20.04.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-4973-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "python3.8 vulnerability",
+      "url": "https://ubuntu.com/security/notices/USN-4973-1",
+      "released": "2021-06-01T11:56:16Z",
+      "updated": "2026-11-24T09:37:15Z",
+      "cves": [
+        "CVE-2021-29921"
+      ],
+      "products": [
+        "Ubuntu: python3.8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python3.8 3.8.5-1~20.04.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2021:0821-1",

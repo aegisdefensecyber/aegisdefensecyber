@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2021-01-26",
-  "count": 3,
+  "count": 6,
   "items": [
     {
       "id": "JVNDB-2021-000008",
@@ -81,6 +81,73 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2021:0266",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gnome-settings-daemon security update",
+      "url": "https://access.redhat.com/errata/RHSA-2021:0266",
+      "released": "2021-01-26T11:15:51Z",
+      "updated": "2026-11-06T20:42:10Z",
+      "cves": [
+        "CVE-2020-14391"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.0,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream EUS (v. 8.2)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2021:0266"
+        },
+        {
+          "t": "Use `subscription-manager` directly from the terminal and do not use the `--password` flag.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-4704-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "libsndfile vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-4704-1",
+      "released": "2021-01-26T16:23:13Z",
+      "updated": "2026-11-24T09:37:13Z",
+      "cves": [
+        "CVE-2017-6892",
+        "CVE-2017-12562",
+        "CVE-2017-14245",
+        "CVE-2017-14246",
+        "CVE-2017-14634",
+        "CVE-2017-16942",
+        "CVE-2018-13139",
+        "CVE-2018-19432",
+        "CVE-2018-19661",
+        "CVE-2018-19662",
+        "CVE-2018-19758",
+        "CVE-2019-3832"
+      ],
+      "products": [
+        "Ubuntu: libsndfile"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libsndfile 1.0.25-7ubuntu2.2+esm1",
+          "u": null
+        },
+        {
+          "t": "Fixed in libsndfile 1.0.25-10ubuntu0.16.04.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-98820",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -95,6 +162,37 @@
         "Azure Linux: golang"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "USN-4705-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "sudo vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-4705-1",
+      "released": "2021-01-26T18:48:16Z",
+      "updated": "2026-11-24T09:37:13Z",
+      "cves": [
+        "CVE-2021-3156",
+        "CVE-2021-23239"
+      ],
+      "products": [
+        "Ubuntu: sudo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in sudo 1.8.16-0ubuntu1.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in sudo 1.8.21p2-3ubuntu1.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in sudo 1.8.31-1ubuntu1.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

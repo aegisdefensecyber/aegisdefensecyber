@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-08-11",
-  "count": 3,
+  "count": 91,
   "items": [
     {
       "id": "msrc_CVE-2025-4948",
@@ -73,6 +73,2648 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-libpython-2020-10735",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw was found in python. In algorithms with quadratic time complexity using non-binary bases, when using int(\"text\"), a system could take 50ms to parse an int string with 100,000 digits and 5s for 1,000,000 digits (f…",
+      "released": "2025-08-11T13:51:26Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-10735"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.7.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.9.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2020-14422",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Lib/ipaddress.py in Python through 3.8.3 improperly computes hash values in the IPv4Interface and IPv6Interface classes, which might allow a remote attacker to cause a denial of service if an application is affected by …",
+      "released": "2025-08-11T13:51:28Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-14422"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.5.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.6.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2020-15523",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Python 3.6 through 3.6.10, 3.7 through 3.7.8, 3.8 through 3.8.4, and 3.9 through 3.9.0 on Windows, a Trojan horse python3.dll might be used in cases where CPython is embedded in a native application. This occurs beca…",
+      "url": "https://bugs.python.org/issue29778",
+      "released": "2025-08-11T13:51:30Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-15523"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.5.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.6.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2020-15801",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Python 3.8.4, sys.path restrictions specified in a python38._pth file are ignored, allowing code to be loaded from arbitrary locations. The ._pth file (e.g., the python._pth file) is not affected.",
+      "url": "https://bugs.python.org/issue41304",
+      "released": "2025-08-11T13:51:32Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-15801"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.7.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2020-26116",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "http.client in Python 3.x before 3.5.10, 3.6.x before 3.6.12, 3.7.x before 3.7.9, and 3.8.x before 3.8.5 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF con…",
+      "released": "2025-08-11T13:51:33Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-26116"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.5.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.6.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2020-27619",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Python 3 through 3.9.0, the Lib/test/multibytecodec_support.py CJK codec tests call eval() on content retrieved via HTTP.",
+      "url": "https://bugs.python.org/issue41944",
+      "released": "2025-08-11T13:51:35Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-27619"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.6.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2020-8315",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Python (CPython) 3.6 through 3.6.10, 3.7 through 3.7.6, and 3.8 through 3.8.1, an insecure dependency load upon launch on Windows 7 may result in an attacker's copy of api-ms-win-core-path-l1-1-0.dll being loaded and…",
+      "url": "https://bugs.python.org/issue39401",
+      "released": "2025-08-11T13:51:37Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-8315"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.6.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2020-8492",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Python 2.7 through 2.7.17, 3.5 through 3.5.9, 3.6 through 3.6.10, 3.7 through 3.7.6, and 3.8 through 3.8.1 allows an HTTP server to conduct Regular Expression Denial of Service (ReDoS) attacks against a client because o…",
+      "released": "2025-08-11T13:51:39Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-8492"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 2.7.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.5.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.6.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2021-23336",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Web Cache Poisoning",
+      "released": "2025-08-11T13:51:41Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-23336"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.6.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2021-28861",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Python 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is dispute…",
+      "url": "https://bugs.python.org/issue43223",
+      "released": "2025-08-11T13:51:44Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-28861"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.7.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.9.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2021-29921",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Python before 3,9,5, the ipaddress library mishandles leading zero characters in the octets of an IP address string. This (in some situations) allows attackers to bypass access control that is based on IP addresses.",
+      "url": "https://bugs.python.org/issue36384",
+      "released": "2025-08-11T13:51:46Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-29921"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.8.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.9.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2021-3177",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Python 3.x through 3.9.1 has a buffer overflow in PyCArg_repr in _ctypes/callproc.c, which may lead to remote code execution in certain Python applications that accept floating-point numbers as untrusted input, as demon…",
+      "url": "https://bugs.python.org/issue42938",
+      "released": "2025-08-11T13:51:48Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-3177"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.6.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2021-3426",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "There's a flaw in Python 3's pydoc. A local or adjacent attacker who discovers or is able to convince another local or adjacent user to start a pydoc server could access the server and use it to disclose sensitive infor…",
+      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1935913",
+      "released": "2025-08-11T13:51:50Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-3426"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 2.7.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.6.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2021-3733",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "There's a flaw in urllib's AbstractBasicAuthHandler class. An attacker who controls a malicious HTTP server that an HTTP client (such as web browser) connects to, could trigger a Regular Expression Denial of Service (Re…",
+      "url": "https://bugs.python.org/issue43075",
+      "released": "2025-08-11T13:51:53Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-3733"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.6.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2021-3737",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw was found in python. An improperly handled HTTP response in the HTTP client code of python may allow a remote attacker, who controls the HTTP server, to make the client script enter an infinite loop, consuming CP…",
+      "url": "https://bugs.python.org/issue44022",
+      "released": "2025-08-11T13:51:55Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-3737"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.6.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2021-4189",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw was found in Python, specifically in the FTP (File Transfer Protocol) client library in PASV (passive) mode. The issue is how the FTP client trusts the host from the PASV response by default. This flaw allows an …",
+      "url": "https://access.redhat.com/security/cve/CVE-2021-4189",
+      "released": "2025-08-11T13:51:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-4189"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.6.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2022-0391",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw was found in Python, specifically within the urllib.parse module. This module helps break Uniform Resource Locator (URL) strings into components. The issue involves how the urlparse method does not sanitize input…",
+      "url": "https://bugs.python.org/issue43882",
+      "released": "2025-08-11T13:52:00Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-0391"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.6.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2022-26488",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Python before 3.10.3 on Windows, local users can gain privileges because the search path is inadequately secured. The installer may allow a local attacker to add user-writable directories to the system search path. T…",
+      "url": "https://security.netapp.com/advisory/ntap-20220419-0005/",
+      "released": "2025-08-11T13:52:02Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-26488"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.7.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.10.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2022-37454",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "The Keccak XKCP SHA-3 reference implementation before fdc6fef has an integer overflow and resultant buffer overflow that allows attackers to execute arbitrary code or eliminate expected cryptographic properties. This oc…",
+      "url": "https://csrc.nist.gov/projects/hash-functions/sha-3-project",
+      "released": "2025-08-11T13:52:04Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-37454"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.7.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.9.16",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2022-42919",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Python 3.9.x before 3.9.16 and 3.10.x before 3.10.9 on Linux allows local privilege escalation in a non-default configuration. The Python multiprocessing library, when used with the forkserver start method on Linux, all…",
+      "url": "https://github.com/python/cpython/issues/97514",
+      "released": "2025-08-11T13:52:06Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-42919"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.7.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.9.16",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2022-45061",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presen…",
+      "url": "https://github.com/python/cpython/issues/98433",
+      "released": "2025-08-11T13:52:09Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-45061"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.7.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.10.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.11.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2022-48560",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A use-after-free exists in Python through 3.9 via heappushpop in heapq.",
+      "url": "https://bugs.python.org/issue39421",
+      "released": "2025-08-11T13:52:10Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-48560"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.6.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2022-48564",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "read_ints in plistlib.py in Python through 3.9.1 is vulnerable to a potential DoS attack via CPU and RAM exhaustion when processing malformed Apple Property List files in binary format.",
+      "url": "https://bugs.python.org/issue42103",
+      "released": "2025-08-11T13:52:12Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-48564"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.6.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2022-48565",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An XML External Entity (XXE) issue was discovered in Python through 3.9.1. The plistlib module no longer accepts entity declarations in XML plist files to avoid XML vulnerabilities.",
+      "url": "https://bugs.python.org/issue42051",
+      "released": "2025-08-11T13:52:14Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-48565"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.6.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2022-48566",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in compare_digest in Lib/hmac.py in Python through 3.9.1. Constant-time-defeating optimisations were possible in the accumulator variable in hmac.compare_digest.",
+      "url": "https://bugs.python.org/issue40791",
+      "released": "2025-08-11T13:52:16Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-48566"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.6.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.7.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2023-24329",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue in the urllib.parse component of Python before 3.11.4 allows attackers to bypass blocklisting methods by supplying a URL that starts with blank characters.",
+      "url": "https://pointernull.com/security/python-url-parse-problem.html",
+      "released": "2025-08-11T13:52:18Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-24329"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.7.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.8.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.9.17",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2023-36632",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "The legacy email.utils.parseaddr function in Python through 3.11.4 allows attackers to trigger \"RecursionError: maximum recursion depth exceeded while calling a Python object\" via a crafted argument. This argument is pl…",
+      "url": "https://docs.python.org/3/library/email.html",
+      "released": "2025-08-11T13:52:24Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-36632"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.11.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2023-40217",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Python before 3.8.18, 3.9.x before 3.9.18, 3.10.x before 3.10.13, and 3.11.x before 3.11.5. It primarily affects servers (such as HTTP servers) that use TLS client authentication. If a TLS ser…",
+      "url": "https://www.python.org/dev/security/",
+      "released": "2025-08-11T13:52:27Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-40217"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.8.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.9.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.10.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2023-41105",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Python 3.11 through 3.11.4. If a path containing '\\0' bytes is passed to os.path.normpath(), the path will be truncated unexpectedly at the first '\\0' byte. There are plausible cases in which …",
+      "url": "https://security.netapp.com/advisory/ntap-20231006-0015/",
+      "released": "2025-08-11T13:52:29Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-41105"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.11.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2024-50602",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in libexpat before 2.6.4. There is a crash within the XML_ResumeParser function because XML_StopParser can stop/suspend an unstarted parser.",
+      "url": "https://lists.debian.org/debian-lts-announce/2025/04/msg00040.html",
+      "released": "2025-08-11T13:52:47Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-50602"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.9.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.10.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.11.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7059",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OOB read in php_strip_tags_ex",
+      "released": "2025-08-11T13:52:55Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-7059"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.2.27",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.3.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2024-7592",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Quadratic complexity parsing cookies with backslashes",
+      "url": "https://security.netapp.com/advisory/ntap-20241018-0006/",
+      "released": "2025-08-11T13:52:56Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-7592"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.8.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.9.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.10.15",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7060",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "global buffer-overflow in mbfl_filt_conv_big5_wchar",
+      "released": "2025-08-11T13:52:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-7060"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.2.27",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.3.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7061",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "heap-buffer-overflow in phar_extract_file",
+      "url": "https://bugs.php.net/bug.php?id=79171",
+      "released": "2025-08-11T13:52:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-7061"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.2.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.3.15",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7062",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Null Pointer Dereference in PHP Session Upload Progress",
+      "released": "2025-08-11T13:53:01Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-7062"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.2.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.3.15",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7063",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Files added to tar with Phar::buildFromIterator have all-access permissions",
+      "released": "2025-08-11T13:53:03Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-7063"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.2.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.3.15",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7064",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Use-of-uninitialized-value in exif",
+      "released": "2025-08-11T13:53:05Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-7064"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.2.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.3.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7065",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "mb_strtolower (UTF-32LE): stack-buffer-overflow at php_unicode_tolower_full",
+      "url": "https://bugs.php.net/bug.php?id=79371",
+      "released": "2025-08-11T13:53:07Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-7065"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.3.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7066",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "get_headers() silently truncates after a null byte",
+      "released": "2025-08-11T13:53:09Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-7066"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.2.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.3.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7067",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OOB Read in urldecode()",
+      "url": "https://bugs.php.net/bug.php?id=79465",
+      "released": "2025-08-11T13:53:11Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-7067"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.2.30",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.3.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7069",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Wrong ciphertext/tag in AES-CCM encryption for a 12 bytes IV",
+      "released": "2025-08-11T13:53:15Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-7069"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.2.34",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.3.23",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7070",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PHP parses encoded cookie names so malicious `__Host-` cookies can be sent",
+      "released": "2025-08-11T13:53:17Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-7070"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.2.34",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.3.23",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7071",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "FILTER_VALIDATE_URL accepts URLs with invalid userinfo",
+      "url": "https://bugs.php.net/bug.php?id=77423",
+      "released": "2025-08-11T13:53:19Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-7071"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.3.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2021-21702",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Null Dereference in SoapClient",
+      "url": "https://bugs.php.net/bug.php?id=80672",
+      "released": "2025-08-11T13:53:21Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21702"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.3.27",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.15",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2021-21703",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PHP-FPM memory access in root process leading to privilege escalation",
+      "released": "2025-08-11T13:53:23Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21703"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.3.32",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.25",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2021-21704",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Multiple vulnerabilities in Firebird client extension",
+      "url": "https://bugs.php.net/bug.php?id=76448",
+      "released": "2025-08-11T13:53:25Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21704"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.3.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2021-21705",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Incorrect URL validation in FILTER_VALIDATE_URL",
+      "url": "https://bugs.php.net/bug.php?id=81122",
+      "released": "2025-08-11T13:53:27Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21705"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.3.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2021-21706",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "ZipArchive::extractTo may extract outside of destination dir",
+      "url": "https://bugs.php.net/bug.php?id=81420",
+      "released": "2025-08-11T13:53:29Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21706"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2021-21707",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Special characters break path parsing in XML functions",
+      "url": "https://bugs.php.net/bug.php?id=79971",
+      "released": "2025-08-11T13:53:31Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21707"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.3.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2021-21708",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "UAF due to php_filter_float() failing",
+      "url": "https://bugs.php.net/bug.php?id=81708",
+      "released": "2025-08-11T13:53:33Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-21708"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.4.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2022-31625",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Freeing unallocated memory in php_pgsql_free_params()",
+      "url": "https://bugs.php.net/bug.php?id=81720",
+      "released": "2025-08-11T13:53:34Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-31625"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.4.30",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2022-31626",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "mysqlnd/pdo password buffer overflow",
+      "url": "https://bugs.php.net/bug.php?id=81719",
+      "released": "2025-08-11T13:53:36Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-31626"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.4.30",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2022-31627",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Heap buffer overflow in finfo_buffer",
+      "url": "https://bugs.php.net/bug.php?id=81723",
+      "released": "2025-08-11T13:53:38Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-31627"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2022-31628",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "phar wrapper can occur dos when using quine gzip file",
+      "url": "https://bugs.php.net/bug.php?id=81726",
+      "released": "2025-08-11T13:53:40Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-31628"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.4.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2022-31629",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "$_COOKIE names string replacement (. -> _): cookie integrity vulnerabilities",
+      "url": "https://bugs.php.net/bug.php?id=81727",
+      "released": "2025-08-11T13:53:41Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-31629"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.4.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2022-31630",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OOB read due to insufficient input validation in imageloadfont()",
+      "url": "https://bugs.php.net/bug.php?id=81739",
+      "released": "2025-08-11T13:53:43Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-31630"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.4.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.25",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2022-31631",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PDO::quote() may return unquoted string",
+      "url": "https://bugs.php.net/bug.php?id=81740",
+      "released": "2025-08-11T13:53:44Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-31631"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.0.27",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.15",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2022-37454",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "The Keccak XKCP SHA-3 reference implementation before fdc6fef has an integer overflow and resultant buffer overflow that allows attackers to execute arbitrary code or eliminate expected cryptographic properties. This oc…",
+      "url": "https://csrc.nist.gov/projects/hash-functions/sha-3-project",
+      "released": "2025-08-11T13:53:46Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-37454"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.4.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.0.25",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2022-4900",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Potential buffer overflow in php_cli_server_startup_workers",
+      "url": "https://access.redhat.com/security/cve/CVE-2022-4900",
+      "released": "2025-08-11T13:53:48Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-4900"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.0.22",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2023-0568",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Array overrun in common path resolve code",
+      "url": "https://bugs.php.net/bug.php?id=81746",
+      "released": "2025-08-11T13:53:52Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-0568"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.0.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2023-0662",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "DoS vulnerability when parsing multipart request body",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-54hq-v5wp-fqgv",
+      "released": "2025-08-11T13:53:54Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-0662"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.0.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2023-3247",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Missing error check and insufficient random bytes in HTTP Digest authentication for SOAP",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-76gg-c692-v2mw",
+      "released": "2025-08-11T13:53:55Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-3247"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.0.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2023-3823",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Security issue with external entity loading in XML without enabling it",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-3qrf-m4j2-pcrr",
+      "released": "2025-08-11T13:53:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-3823"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.0.30",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.22",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2023-3824",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Buffer overflow and overread in phar_dir_read()",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-jqcx-ccgc-xwhv",
+      "released": "2025-08-11T13:53:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-3824"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.0.30",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.22",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-11233",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Single byte overread with convert.quoted-printable-decode filter",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-r977-prxv-hc43",
+      "released": "2025-08-11T13:54:01Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-11233"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-11234",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Configuring a proxy in a stream context might allow for CRLF injection in URIs",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-c5f2-jwm7-mmq2",
+      "released": "2025-08-11T13:54:03Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-11234"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-11235",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Reference counting in php_request_shutdown causes Use-After-Free",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-rwp7-7vc6-8477",
+      "released": "2025-08-11T13:54:04Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-11235"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.3.19",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.4.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-11236",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Integer overflow in the firebird and dblib quoters causing OOB writes",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-11236",
+      "released": "2025-08-11T13:54:06Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-11236"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-1874",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Command injection via array-ish $command parameter of proc_open()",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-pc52-254m-w9w7",
+      "released": "2025-08-11T13:54:08Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-1874"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-2408",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PHP is vulnerable to the Marvin Attack",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-hh26-4ppw-5864",
+      "released": "2025-08-11T13:54:10Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-2408"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-2757",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PHP mb_encode_mimeheader runs endlessly for some inputs",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-fjp9-9hwx-59fq",
+      "released": "2025-08-11T13:54:14Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-2757"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.3.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-3096",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PHP function password_verify can erroneously return true when argument contains NUL",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-h746-cjrr-wfmr",
+      "released": "2025-08-11T13:54:16Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-3096"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-4577",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Argument Injection in PHP-CGI",
+      "released": "2025-08-11T13:54:18Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-4577"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-5458",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Filter bypass in filter_var (FILTER_VALIDATE_URL)",
+      "released": "2025-08-11T13:54:20Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-5458"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-5585",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Command injection via array-ish $command parameter of proc_open() (bypass CVE-2024-1874 fix)",
+      "released": "2025-08-11T13:54:23Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-5585"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-8925",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Erroneous parsing of multipart form data",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-9pqp-7h25-4f32",
+      "released": "2025-08-11T13:54:25Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-8925"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.30",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-8926",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PHP CGI Parameter Injection Vulnerability (CVE-2024-4577 bypass)",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-p99j-rfp4-xqvq",
+      "released": "2025-08-11T13:54:27Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-8926"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.30",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-8927",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "cgi.force_redirect configuration is bypassable due to the environment variable collision",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-94p6-54jq-9mwp",
+      "released": "2025-08-11T13:54:29Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-8927"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.30",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-8929",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Leak partial content of the heap through heap buffer over-read in mysqlnd",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-h35g-vwh6-m678",
+      "released": "2025-08-11T13:54:31Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-8929"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-8932",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OOB access in ldap_escape",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-g665-fm4p-vhff",
+      "released": "2025-08-11T13:54:33Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-8932"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.14",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2024-9026",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PHP-FPM logs from children may be altered",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-865w-9rf3-2wh5",
+      "released": "2025-08-11T13:54:35Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-9026"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.30",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2025-1217",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Header parser of http stream wrapper does not handle folded headers",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-v8xr-gpvj-cx9g",
+      "released": "2025-08-11T13:54:37Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-1217"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.32",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.19",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2025-1219",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "libxml streams use wrong content-type header when requesting a redirected resource",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-p3x9-6h7p-cgfc",
+      "released": "2025-08-11T13:54:40Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-1219"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.32",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.19",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2025-1220",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Null byte termination in hostnames",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-3cr5-j632-f35r",
+      "released": "2025-08-11T13:54:42Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-1220"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.23",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2025-1734",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Streams HTTP wrapper does not fail for headers with invalid name and no colon",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-pcmh-g36c-qc44",
+      "released": "2025-08-11T13:54:44Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-1734"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.32",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.19",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2025-1735",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "pgsql extension does not check for errors during escaping",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-hrwm-9436-5mv3",
+      "released": "2025-08-11T13:54:47Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-1735"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.23",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2025-6491",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "NULL Pointer Dereference in PHP SOAP Extension via Large XML Namespace Prefix",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-453j-q27h-5p8x",
+      "released": "2025-08-11T13:54:53Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-6491"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.23",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2012-10038",
+      "src": "cvelistv5",
+      "vendor": "Auxilium",
+      "title": "Auxilium RateMyPet Arbitrary File Upload RCE",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2012-10038",
+      "released": "2025-08-11T14:54:39Z",
+      "updated": "2026-11-17T21:59:38Z",
+      "cves": [
+        "CVE-2012-10038"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.3,
+      "products": [
+        "Auxilium RateMyPet"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-74897",

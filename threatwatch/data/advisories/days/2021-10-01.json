@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2021-10-01",
-  "count": 25,
+  "count": 46,
   "items": [
     {
       "id": "ASB-A-153358911",
@@ -666,6 +666,481 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-67013844",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In loadLabel of PackageItemInfo.java, there is a possible way to DoS a device by having a long label in an app due to incorrect input validation. This could lead to local denial of service with no additional execution p…",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0651"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 12-next:2021-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 9:2021-10-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 10:2021-10-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-154177719",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In bpf_skb_change_head of filter.c, there is a possible out of bounds read due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not neede…",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0941"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-168607263",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ip6_xmit of ip6_output.c, there is a possible out of bounds write due to a use after free. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for …",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0935"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-168881044",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In hugetlb_sysctl_handler_common and related functions of hugetlb.c, there is a possible out of bounds write due to a race condition. This could lead to local escalation of privilege with no additional execution privile…",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2020-25285"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-171315276",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In TBD of TBD, there is a possible out of bounds write due to improper locking. This could lead to local escalation of privilege in the kernel with System execution privileges needed. User interaction is not needed for …",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0940"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-171418586",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In memzero_explicit of compiler-clang.h, there is a possible bypass of defense in depth due to uninitialized data. This could lead to local information disclosure with no additional execution privileges needed. User int…",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0938"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-173789633",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In acc_read of f_accessory.c, there is a possible memory corruption due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not neede…",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0936"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-184564101",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "PUB-A-184564101",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-1966"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm",
+        "Android: platform/vendor/opensource/display-drivers"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2021-10-05",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/opensource/display-drivers SoCVersion:2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-184564237",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "PUB-A-184564237",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-1969"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-184564368",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "PUB-A-184564368",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-1967"
+      ],
+      "products": [
+        "Android: platform/hardware/qcom/wlan"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/hardware/qcom/wlan SoCVersion:2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-184564492",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "PUB-A-184564492",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-1968"
+      ],
+      "products": [
+        "Android: :linux_kernel:Qualcomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-184622243",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In tipc_nl_retrieve_key of node.c, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction is not n…",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-29646"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-184847809",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In xt_compat_target_from_user of x_tables.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User inter…",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-22555"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-186026549",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In set_default_passthru_cfg of passthru.c, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with System execution privileges needed. User interaction …",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-0939"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Bootloader:2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-186337918",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In several functions of verifier.c, there is a possible way to disclose kernel memory due to side channel information disclosure. This could lead to local information disclosure with System execution privileges needed. …",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-29155"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-187955767",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In list_devices of dm-ioctl.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not …",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-31916"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-189986136",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In tgm_dma_tt_init of tt.c, there is a possible kernel memory corruption due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not …",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-20292"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-190876666",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In scalar32_min_max_and and related functions of verifier.c, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with System execution privileges ne…",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-3490"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-190877279",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In __bpf_ringbuf_reserve of ringbuf.c, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is…",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-3489"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-191191823",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In xfrm_state_fini and related functions of xfrm_state.c and related files, there is a possible way to corrupt memory due to a use after free. This could lead to local escalation of privilege with System execution privi…",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2019-25045"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-197155069",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In __htab_map_lookup_and_delete_batch of hashtab.c, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with System execution privileges needed. User inte…",
+      "url": "https://source.android.com/security/bulletin/2021-10-01",
+      "released": "2021-10-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2021-38166"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2021-10-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

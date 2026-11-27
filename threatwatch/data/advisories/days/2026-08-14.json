@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-14",
-  "count": 69,
+  "count": 74,
   "items": [
     {
       "id": "openSUSE-SU-2026:11511-1",
@@ -1234,6 +1234,51 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-p8cp-78hp-wmq8",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SQL injection in backlink/mention search via unescaped stored and client input (publish mode): first-order (client keyword) and second-order (stored document title) breakout on read-write handle",
+      "url": "https://github.com/advisories/GHSA-p8cp-78hp-wmq8",
+      "released": "2026-08-14T12:31:24Z",
+      "updated": "2026-09-03T22:24:31Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-q6g5-m978-c6v9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Publish-boundary bypass via WebSocket broadcast: anonymous readers receive a live unfiltered feed of all edits including protected/forbidden documents (publish mode)",
+      "url": "https://github.com/advisories/GHSA-q6g5-m978-c6v9",
+      "released": "2026-08-14T12:31:24Z",
+      "updated": "2026-09-03T22:30:11Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-ww86-c2qf-w8fw",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Missing authorization on refreshBacklink allows anonymous readers to trigger persistent server-side writes and unauthenticated resource amplification (publish mode)",
+      "url": "https://github.com/advisories/GHSA-ww86-c2qf-w8fw",
+      "released": "2026-08-14T12:31:24Z",
+      "updated": "2026-09-03T22:22:57Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21584-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1259,6 +1304,22 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-96617",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-13002 affecting package dnsmasq 2.93-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-13002",
+      "released": "2026-08-14T16:16:49Z",
+      "updated": "2026-10-30T05:35:37Z",
+      "cves": [
+        "CVE-2026-13002"
+      ],
+      "products": [
+        "Azure Linux: dnsmasq"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2026:54874",
@@ -1783,6 +1844,30 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-8rw6-p7m8-63jp",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "SurrealDB: Array element-level (field.*) SELECT permissions leak denied elements to record users",
+      "url": "https://github.com/advisories/GHSA-8rw6-p7m8-63jp",
+      "released": "2026-08-14T19:40:48Z",
+      "updated": "2026-09-04T19:48:51Z",
+      "cves": [
+        "CVE-2026-63740"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in surrealdb 3.1.4",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
     }
   ]
 }

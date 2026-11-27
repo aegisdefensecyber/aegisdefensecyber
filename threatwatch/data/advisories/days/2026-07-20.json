@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-20",
-  "count": 48,
+  "count": 61,
   "items": [
     {
       "id": "openSUSE-SU-2026:11311-1",
@@ -565,6 +565,37 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:41904",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: evince security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:41904",
+      "released": "2026-07-20T02:45:54Z",
+      "updated": "2026-11-05T21:16:55Z",
+      "cves": [
+        "CVE-2026-46529"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Server (v. 7 ELS)",
+        "Red Hat Enterprise Linux Server Optional (v. 7 ELS)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:41904"
+        },
+        {
+          "t": "To mitigate this vulnerability, do not click on links inside PDF documents from untrusted or unverified sources.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21385-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -763,6 +794,186 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-3f6w-45q9-v69m",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Custom API route lets authenticated callers override namespace/database scope via URL path",
+      "url": "https://github.com/advisories/GHSA-3f6w-45q9-v69m",
+      "released": "2026-07-20T12:33:08Z",
+      "updated": "2026-09-04T20:01:52Z",
+      "sev": "HIGH",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-6g69-7xmf-h2x7",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Writes in a PERMISSIONS clause bypass table permissions",
+      "url": "https://github.com/advisories/GHSA-6g69-7xmf-h2x7",
+      "released": "2026-07-20T12:33:08Z",
+      "updated": "2026-09-04T20:49:44Z",
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-9c3h-q3pp-fw5x",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SurrealDB: Field-level SELECT permissions bypassed via graph and reference traversals",
+      "url": "https://github.com/advisories/GHSA-9c3h-q3pp-fw5x",
+      "released": "2026-07-20T12:33:08Z",
+      "updated": "2026-09-04T19:56:34Z",
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-j6mj-v752-pp4x",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SurrealDB: Array element-level (field.*) SELECT permissions leak denied elements to record users",
+      "url": "https://github.com/advisories/GHSA-j6mj-v752-pp4x",
+      "released": "2026-07-20T12:33:08Z",
+      "updated": "2026-09-04T19:48:29Z",
+      "sev": "HIGH",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-4q5r-gwcx-24m9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SurrealDB: Graph traversal bypasses table SELECT permissions",
+      "url": "https://github.com/advisories/GHSA-4q5r-gwcx-24m9",
+      "released": "2026-07-20T12:33:09Z",
+      "updated": "2026-09-04T20:12:37Z",
+      "sev": "HIGH",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-8pr5-wpg9-2h74",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SurrealDB has bypass of field-level SELECT permissions through JSON Patch `copy` and `move` with empty `from`",
+      "url": "https://github.com/advisories/GHSA-8pr5-wpg9-2h74",
+      "released": "2026-07-20T12:33:09Z",
+      "updated": "2026-09-04T20:08:34Z",
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-p7hp-79jj-q923",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SurrealDB: Authenticated callers can read fields hidden by field-level SELECT permissions via error messages",
+      "url": "https://github.com/advisories/GHSA-p7hp-79jj-q923",
+      "released": "2026-07-20T12:33:09Z",
+      "updated": "2026-09-04T20:07:31Z",
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-vq7c-3hc9-m5hr",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SurrealDB: Port-specific --deny-net rules silently bypassed on HTTP redirect",
+      "url": "https://github.com/advisories/GHSA-vq7c-3hc9-m5hr",
+      "released": "2026-07-20T12:33:09Z",
+      "updated": "2026-09-04T20:14:00Z",
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-4f9v-jpx9-mjvw",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SurrealDB: Scraping a TABLE with no available PERMISSIONS to current auth level",
+      "url": "https://github.com/advisories/GHSA-4f9v-jpx9-mjvw",
+      "released": "2026-07-20T12:33:10Z",
+      "updated": "2026-09-04T20:21:48Z",
+      "sev": "HIGH",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-mf42-3c8q-x7x8",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SurrealDB: Authorization Bypass in KILL Statement Allows Termination of Other Users' Live Queries",
+      "url": "https://github.com/advisories/GHSA-mf42-3c8q-x7x8",
+      "released": "2026-07-20T12:33:10Z",
+      "updated": "2026-09-04T20:18:26Z",
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-gw59-x2xr-wwvr",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SurrealDB: ES512 silently downgraded to ES384 due to jsonwebtoken crate limitation",
+      "url": "https://github.com/advisories/GHSA-gw59-x2xr-wwvr",
+      "released": "2026-07-20T12:33:11Z",
+      "updated": "2026-09-04T20:28:32Z",
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-m464-hj36-96vx",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: SurrealDB has Denial of Service in JSON parser due to nested objects",
+      "url": "https://github.com/advisories/GHSA-m464-hj36-96vx",
+      "released": "2026-07-20T12:33:11Z",
+      "updated": "2026-09-04T20:47:44Z",
+      "sev": "HIGH",
+      "products": [
+        "crates.io: surrealdb"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2026:42045",
