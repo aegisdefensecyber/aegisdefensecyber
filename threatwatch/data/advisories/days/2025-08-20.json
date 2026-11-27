@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-08-20",
-  "count": 2,
+  "count": 3,
   "items": [
     {
       "id": "BELL-CVE-2025-9165",
@@ -33,6 +33,41 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:13933",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: OpenShift Container Platform 4.19.9 bug fix and security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:13933",
+      "released": "2025-08-20T07:12:19Z",
+      "updated": "2026-11-05T15:50:49Z",
+      "cves": [
+        "CVE-2025-48384",
+        "CVE-2025-48385"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.3,
+      "products": [
+        "Red Hat OpenShift Enterprise",
+        "Red Hat OpenShift Container Platform 4.19"
+      ],
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.19 see the following documentation, which will be updated shortly for this release, for important instructions on how to upg…",
+          "u": "https://access.redhat.com/errata/RHSA-2025:13933"
+        },
+        {
+          "t": "To mitigate this issue, avoid using --recurse-submodules when cloning repositories from untrusted sources; instead, clone normally and only initialize or updat…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "WID-SEC-W-2025-1883",

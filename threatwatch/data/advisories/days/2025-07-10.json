@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-07-10",
-  "count": 4,
+  "count": 8,
   "items": [
     {
       "id": "msrc_CVE-2025-4574",
@@ -70,6 +70,113 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-git-2025-48384",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Git allows arbitrary code execution through broken config quoting",
+      "url": "https://github.com/git/git/security/advisories/GHSA-vwqx-4fm8-6qc9",
+      "released": "2025-07-10T05:40:36Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-48384"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: git"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in git 2.50.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-helm-2025-53547",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Helm Chart Dependency Updating With Malicious Chart.yaml Content And Symlink Can Lead To Code Execution",
+      "url": "https://github.com/helm/helm/security/advisories/GHSA-557j-xg8c-q2mm",
+      "released": "2025-07-10T05:43:09Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-53547"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: helm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in helm 3.18.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2025-38203",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2025-38203",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2025-38203",
+      "released": "2025-07-10T06:01:48Z",
+      "updated": "2026-10-06T20:01:59Z",
+      "cves": [
+        "CVE-2025-38203"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.189-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2025:10779",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: sudo security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10779",
+      "released": "2025-07-10T08:45:45Z",
+      "updated": "2026-11-05T14:35:28Z",
+      "cves": [
+        "CVE-2025-32462"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.0,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream E4S (v.9.2)",
+        "Red Hat Enterprise Linux BaseOS E4S (v.9.2)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10779"
+        },
+        {
+          "t": "For environments using sudoers files: Remove rules defined in sudoers files that are for any system other than the local system. For environments using LDAP: U…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2025:10823",

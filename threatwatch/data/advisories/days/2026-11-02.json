@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-02",
-  "count": 75,
+  "count": 141,
   "items": [
     {
       "id": "ELA-1878-1",
@@ -574,6 +574,34 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-117067",
+      "src": "cvelistv5",
+      "title": "An out-of-bounds memory access vulnerability in the N2 SCTP interface of OpenAirInterface (OAI) CN5G AMF v2.2.1 allows an unauthenticated remote attacker to cause a denial of service (DoS) by repeatedly establishing SCT…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-117067",
+      "released": "2026-11-02T00:00:00Z",
+      "updated": "2026-11-16T17:39:34Z",
+      "cves": [
+        "CVE-2026-117067"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-117082",
+      "src": "cvelistv5",
+      "title": "An authentication bypass vulnerability in the Universal Plug and Play (UPnP) framework of the Sercomm AOT-4221SR 4.6 Dual Band GPON ONU device allows an attackers to execute arbitrary SOAP requests via port 5555. This f…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-117082",
+      "released": "2026-11-02T00:00:00Z",
+      "updated": "2026-11-16T17:40:59Z",
+      "cves": [
+        "CVE-2026-117082"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-117127",
       "src": "cvelistv5",
       "title": "Directory Traversal vulnerability in Gleez GleezCMS v.1.2.0 allows a remote attacker to obtain sensitive information via the action_serve function in media.php",
@@ -933,6 +961,29 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:93464",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: podman security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:93464",
+      "released": "2026-11-02T00:00:00Z",
+      "updated": "2026-11-25T02:59:08Z",
+      "cves": [
+        "CVE-2025-11395",
+        "CVE-2026-78660"
+      ],
+      "products": [
+        "AlmaLinux: podman-docker"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in podman-docker 7:5.8.2-12.el10_2.alma.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ALSA-2026:93469",
@@ -1545,6 +1596,60 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ROOT-APP-PYPI-GHSA-hq85-5cpj-mr62",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-hq85-5cpj-mr62 in uv - Patched by Root",
+      "released": "2026-11-02T07:23:05Z",
+      "updated": "2026-11-02T07:23:05Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Root: uv"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in uv 0.12.15+aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in uv 0.12.23+aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in uv 0.12.21+aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-GHSA-6q48-6c7w-9gw2",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-6q48-6c7w-9gw2 in certifi - Patched by Root",
+      "released": "2026-11-02T07:41:15Z",
+      "updated": "2026-11-02T07:41:15Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Root: certifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in certifi 2019.11.28+aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in certifi 2026.5.20+aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in certifi 2026.10.18+aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:22234-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1569,6 +1674,174 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-COMPOSER-CVE-2026-24425",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-24425 in twig/twig - Patched by Root",
+      "released": "2026-11-02T09:08:15Z",
+      "updated": "2026-11-02T09:08:15Z",
+      "cves": [
+        "CVE-2026-24425"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: twig/twig"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007002+root.io",
+          "u": null
+        },
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007003+root.io",
+          "u": null
+        },
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007004+root.io",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-COMPOSER-CVE-2026-46633",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-46633 in twig/twig - Patched by Root",
+      "released": "2026-11-02T09:08:15Z",
+      "updated": "2026-11-02T09:08:15Z",
+      "cves": [
+        "CVE-2026-46633"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: twig/twig"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007001+root.io",
+          "u": null
+        },
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007002+root.io",
+          "u": null
+        },
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007003+root.io",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-COMPOSER-CVE-2026-46638",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-46638 in twig/twig - Patched by Root",
+      "released": "2026-11-02T09:08:15Z",
+      "updated": "2026-11-02T09:08:15Z",
+      "cves": [
+        "CVE-2026-46638"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: twig/twig"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007003+root.io",
+          "u": null
+        },
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007004+root.io",
+          "u": null
+        },
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007005+root.io",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-COMPOSER-CVE-2026-47732",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-47732 in twig/twig - Patched by Root",
+      "released": "2026-11-02T09:08:15Z",
+      "updated": "2026-11-02T09:08:15Z",
+      "cves": [
+        "CVE-2026-47732"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: twig/twig"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007001+root.io",
+          "u": null
+        },
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007002+root.io",
+          "u": null
+        },
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007003+root.io",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-COMPOSER-CVE-2026-48805",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-48805 in twig/twig - Patched by Root",
+      "released": "2026-11-02T09:08:15Z",
+      "updated": "2026-11-02T09:08:15Z",
+      "cves": [
+        "CVE-2026-48805"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Root: twig/twig"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007005+root.io",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-COMPOSER-CVE-2026-49981",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-49981 in twig/twig - Patched by Root",
+      "released": "2026-11-02T09:08:15Z",
+      "updated": "2026-11-02T09:08:15Z",
+      "cves": [
+        "CVE-2026-49981"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: twig/twig"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007004+root.io",
+          "u": null
+        },
+        {
+          "t": "Fixed in twig/twig v3.11.3-p12007005+root.io",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "NCSC-2026-0464",
@@ -1613,6 +1886,840 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-MAVEN-CVE-2026-19032",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-19032 in tools.jackson.core:jackson-databind - Patched by Root",
+      "released": "2026-11-02T09:52:24Z",
+      "updated": "2026-11-02T09:52:24Z",
+      "cves": [
+        "CVE-2026-19032"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: com.fasterxml.jackson.core:jackson-databind",
+        "Root: io.root.com.fasterxml.jackson.core:jackson-databind",
+        "Root: io.root.tools.jackson.core:jackson-databind",
+        "Root: tools.jackson.core:jackson-databind"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tools.jackson.core:jackson-databind 3.1.6-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in tools.jackson.core:jackson-databind 3.2.2-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-databind 2.18.10-aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-MAVEN-CVE-2026-83557",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-83557 in tools.jackson.core:jackson-databind - Patched by Root",
+      "released": "2026-11-02T09:52:24Z",
+      "updated": "2026-11-02T09:52:24Z",
+      "cves": [
+        "CVE-2026-83557"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: com.fasterxml.jackson.core:jackson-databind",
+        "Root: io.root.com.fasterxml.jackson.core:jackson-databind",
+        "Root: io.root.tools.jackson.core:jackson-databind",
+        "Root: tools.jackson.core:jackson-databind"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tools.jackson.core:jackson-databind 3.1.6-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in tools.jackson.core:jackson-databind 3.2.2-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-databind 2.18.10-aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-GHSA-cg2g-xh64-v4q7",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-cg2g-xh64-v4q7 in dompurify - Patched by Root",
+      "released": "2026-11-02T09:55:56Z",
+      "updated": "2026-11-02T09:55:56Z",
+      "sev": "LOW",
+      "products": [
+        "Root: @rootio/dompurify",
+        "Root: dompurify"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dompurify 3.4.11-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in dompurify 3.4.13-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in dompurify 3.4.14-aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2026-119286",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-119286 in graphql-core - Patched by Root",
+      "released": "2026-11-02T10:07:42Z",
+      "updated": "2026-11-02T10:07:42Z",
+      "cves": [
+        "CVE-2026-119286"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: graphql-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in graphql-core 3.3.0+aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-ALPINE-315-CVE-2026-15176",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-15176 in nginx - Patched by Root",
+      "released": "2026-11-02T10:27:11Z",
+      "updated": "2026-11-02T10:27:11Z",
+      "cves": [
+        "CVE-2026-15176"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: nginx",
+        "Root: rootio-nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.20.2-r20075",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20076",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20077",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-ALPINE-315-CVE-2026-1642",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-1642 in nginx - Patched by Root",
+      "released": "2026-11-02T10:27:11Z",
+      "updated": "2026-11-02T10:27:11Z",
+      "cves": [
+        "CVE-2026-1642"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: nginx",
+        "Root: rootio-nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.20.2-r20074",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20071",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20072",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-ALPINE-315-CVE-2026-27651",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-27651 in nginx - Patched by Root",
+      "released": "2026-11-02T10:27:11Z",
+      "updated": "2026-11-02T10:27:11Z",
+      "cves": [
+        "CVE-2026-27651"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: nginx",
+        "Root: rootio-nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.20.2-r20074",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20071",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20072",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-ALPINE-315-CVE-2026-27654",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-27654 in nginx - Patched by Root",
+      "released": "2026-11-02T10:27:11Z",
+      "updated": "2026-11-02T10:27:11Z",
+      "cves": [
+        "CVE-2026-27654"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: nginx",
+        "Root: rootio-nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.20.2-r20074",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20071",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20072",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-ALPINE-315-CVE-2026-32647",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-32647 in nginx - Patched by Root",
+      "released": "2026-11-02T10:27:11Z",
+      "updated": "2026-11-02T10:27:11Z",
+      "cves": [
+        "CVE-2026-32647"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: nginx",
+        "Root: rootio-nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.20.2-r20074",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20071",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20072",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-ALPINE-315-CVE-2026-42533",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-42533 in nginx - Patched by Root",
+      "released": "2026-11-02T10:27:11Z",
+      "updated": "2026-11-02T10:27:11Z",
+      "cves": [
+        "CVE-2026-42533"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: nginx",
+        "Root: rootio-nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.20.2-r20074",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20071",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20072",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-ALPINE-315-CVE-2026-42945",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-42945 in nginx - Patched by Root",
+      "released": "2026-11-02T10:27:11Z",
+      "updated": "2026-11-02T10:27:11Z",
+      "cves": [
+        "CVE-2026-42945"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: nginx",
+        "Root: rootio-nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.20.2-r20074",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20071",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20072",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-ALPINE-315-CVE-2026-42946",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-42946 in nginx - Patched by Root",
+      "released": "2026-11-02T10:27:11Z",
+      "updated": "2026-11-02T10:27:11Z",
+      "cves": [
+        "CVE-2026-42946"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: nginx",
+        "Root: rootio-nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.20.2-r20074",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20071",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20072",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-ALPINE-315-CVE-2026-56434",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-56434 in nginx - Patched by Root",
+      "released": "2026-11-02T10:27:11Z",
+      "updated": "2026-11-02T10:27:11Z",
+      "cves": [
+        "CVE-2026-56434"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: nginx",
+        "Root: rootio-nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.20.2-r20074",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20071",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20072",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-ALPINE-315-CVE-2026-60005",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-60005 in nginx - Patched by Root",
+      "released": "2026-11-02T10:27:11Z",
+      "updated": "2026-11-02T10:27:11Z",
+      "cves": [
+        "CVE-2026-60005"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: nginx",
+        "Root: rootio-nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.20.2-r20074",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20071",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20072",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-ALPINE-315-CVE-2026-97629",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-97629 in nginx - Patched by Root",
+      "released": "2026-11-02T10:27:11Z",
+      "updated": "2026-11-02T10:27:11Z",
+      "cves": [
+        "CVE-2026-97629"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: nginx",
+        "Root: rootio-nginx"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx 1.20.2-r20076",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx 1.20.2-r20077",
+          "u": null
+        },
+        {
+          "t": "Fixed in rootio-nginx 1.20.2-r20076",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-AIKIDO-2026-553733",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "AIKIDO-2026-553733 in next - Patched by Root",
+      "released": "2026-11-02T10:42:42Z",
+      "updated": "2026-11-02T10:42:42Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.5-aikido.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 12.1.6-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 12.1.0-aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-44573",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-44573 in next - Patched by Root",
+      "released": "2026-11-02T10:42:42Z",
+      "updated": "2026-11-02T10:42:42Z",
+      "cves": [
+        "CVE-2026-44573"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.5-aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.5-aikido.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.33-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-44578",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-44578 in next - Patched by Root",
+      "released": "2026-11-02T10:42:42Z",
+      "updated": "2026-11-02T10:42:42Z",
+      "cves": [
+        "CVE-2026-44578"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.5-aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.5-aikido.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.33-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-64641",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-64641 in next - Patched by Root",
+      "released": "2026-11-02T10:42:42Z",
+      "updated": "2026-11-02T10:42:42Z",
+      "cves": [
+        "CVE-2026-64641"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.5-aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.5-aikido.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.33-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-64645",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-64645 in next - Patched by Root",
+      "released": "2026-11-02T10:42:42Z",
+      "updated": "2026-11-02T10:42:42Z",
+      "cves": [
+        "CVE-2026-64645"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.5-aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.5-aikido.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 12.1.6-aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-64649",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-64649 in next - Patched by Root",
+      "released": "2026-11-02T10:42:42Z",
+      "updated": "2026-11-02T10:42:42Z",
+      "cves": [
+        "CVE-2026-64649"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.5-aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.5-aikido.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.33-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-75604",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-75604 in next - Patched by Root",
+      "released": "2026-11-02T10:42:42Z",
+      "updated": "2026-11-02T10:42:42Z",
+      "cves": [
+        "CVE-2026-75604"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.5-aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.5-aikido.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.33-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-GHSA-2xp9-vwfh-vxw4",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-2xp9-vwfh-vxw4 in next - Patched by Root",
+      "released": "2026-11-02T10:42:42Z",
+      "updated": "2026-11-02T10:42:42Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.35-aikido.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.26-aikido.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.30-aikido.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-GHSA-5j59-xgg2-r9c4",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-5j59-xgg2-r9c4 in next - Patched by Root",
+      "released": "2026-11-02T10:42:42Z",
+      "updated": "2026-11-02T10:42:42Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.5-aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.5-aikido.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.33-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-GHSA-8h8q-6873-q5fj",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-8h8q-6873-q5fj in next - Patched by Root",
+      "released": "2026-11-02T10:42:42Z",
+      "updated": "2026-11-02T10:42:42Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.5-aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.5-aikido.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.35-aikido.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-GHSA-h25m-26qc-wcjf",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-h25m-26qc-wcjf in next - Patched by Root",
+      "released": "2026-11-02T10:42:42Z",
+      "updated": "2026-11-02T10:42:42Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.5-aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.5-aikido.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.33-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-GHSA-q4gf-8mx6-v5v3",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-q4gf-8mx6-v5v3 in next - Patched by Root",
+      "released": "2026-11-02T10:42:42Z",
+      "updated": "2026-11-02T10:42:42Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 14.2.5-aikido.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.33-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.32-aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-RUBY-AIKIDO-2026-932465",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "AIKIDO-2026-932465 in httpclient - Patched by Root",
+      "released": "2026-11-02T10:47:26Z",
+      "updated": "2026-11-02T10:47:26Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: httpclient"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in httpclient 2.9.0.41610.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in httpclient 2.8.3.41610.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "VDE-2026-132",
@@ -1682,6 +2789,155 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-AIKIDO-2026-104277",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "AIKIDO-2026-104277 in next - Patched by Root",
+      "released": "2026-11-02T11:22:46Z",
+      "updated": "2026-11-02T11:22:46Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 15.5.27-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.35-aikido.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 14.2.35-aikido.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-94482",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-94482 in next - Patched by Root",
+      "released": "2026-11-02T11:22:46Z",
+      "updated": "2026-11-02T11:22:46Z",
+      "cves": [
+        "CVE-2026-94482"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 16.3.3-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 15.5.21-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 16.3.3-aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-94484",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-94484 in next - Patched by Root",
+      "released": "2026-11-02T11:22:46Z",
+      "updated": "2026-11-02T11:22:46Z",
+      "cves": [
+        "CVE-2026-94484"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 15.5.27-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 16.3.8-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 15.5.27-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-94543",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-94543 in next - Patched by Root",
+      "released": "2026-11-02T11:22:46Z",
+      "updated": "2026-11-02T11:22:46Z",
+      "cves": [
+        "CVE-2026-94543"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 15.5.27-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 16.3.8-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 15.5.27-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-GHSA-2464-fhr4-w9xw",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-2464-fhr4-w9xw in next - Patched by Root",
+      "released": "2026-11-02T11:22:46Z",
+      "updated": "2026-11-02T11:22:46Z",
+      "sev": "CRITICAL",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 16.3.3-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 15.5.21-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 16.3.3-aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "FSA-202603",
@@ -1798,6 +3054,139 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ROOT-APP-MAVEN-CVE-2026-54399",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-54399 in org.apache.httpcomponents.core5:httpcore5 - Patched by Root",
+      "released": "2026-11-02T12:23:30Z",
+      "updated": "2026-11-02T12:23:30Z",
+      "cves": [
+        "CVE-2026-54399"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: io.root.org.apache.httpcomponents.core5:httpcore5",
+        "Root: org.apache.httpcomponents.core5:httpcore5"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in org.apache.httpcomponents.core5:httpcore5 5.3.5-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.httpcomponents.core5:httpcore5 5.1.3-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in org.apache.httpcomponents.core5:httpcore5 5.3.4-aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-AIKIDO-2026-674766",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "AIKIDO-2026-674766 in virtualenv - Patched by Root",
+      "released": "2026-11-02T12:49:05Z",
+      "updated": "2026-11-02T12:49:05Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: virtualenv"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in virtualenv 20.39.1+aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in virtualenv 20.34.0+aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in virtualenv 20.35.4+aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-AIKIDO-2026-785880",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "AIKIDO-2026-785880 in virtualenv - Patched by Root",
+      "released": "2026-11-02T12:49:05Z",
+      "updated": "2026-11-02T12:49:05Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: virtualenv"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in virtualenv 20.34.0+aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in virtualenv 20.31.2+aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in virtualenv 20.39.1+aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-116606",
+      "src": "cvelistv5",
+      "vendor": "Barracuda Networks",
+      "title": "Authentication Bypass Allows Global Configuration Restore in Barracuda Email Security Gateway",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-116606",
+      "released": "2026-11-02T12:59:11Z",
+      "updated": "2026-11-16T17:19:56Z",
+      "cves": [
+        "CVE-2026-116606"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.3,
+      "products": [
+        "Barracuda Networks Barracuda Email Security Gateway (ESG)"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2023-5752",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2023-5752 in pip - Patched by Root",
+      "released": "2026-11-02T13:51:13Z",
+      "updated": "2026-11-02T13:51:13Z",
+      "cves": [
+        "CVE-2023-5752"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: pip"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pip 21.2.4+aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 22.2.1+aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 23.2.1+aikido.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:22218-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1823,6 +3212,213 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2025-8869",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2025-8869 in pip - Patched by Root",
+      "released": "2026-11-02T14:17:01Z",
+      "updated": "2026-11-02T14:17:01Z",
+      "cves": [
+        "CVE-2025-8869"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: pip"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pip 25.0.1+aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 25.2+aikido.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 24.2+aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2021-3572",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2021-3572 in pip - Patched by Root",
+      "released": "2026-11-02T14:17:55Z",
+      "updated": "2026-11-02T14:17:55Z",
+      "cves": [
+        "CVE-2021-3572"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: pip"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pip 9.0.3+aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 20.0.2+aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 20.3.4+aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2026-3219",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-3219 in pip - Patched by Root",
+      "released": "2026-11-02T14:18:52Z",
+      "updated": "2026-11-02T14:18:52Z",
+      "cves": [
+        "CVE-2026-3219"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: pip"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pip 26.0.1+aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 25.0.1+aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 25.2+aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2026-8643",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-8643 in pip - Patched by Root",
+      "released": "2026-11-02T14:18:58Z",
+      "updated": "2026-11-02T14:18:58Z",
+      "cves": [
+        "CVE-2026-8643"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: pip"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pip 23.2.1+aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 26.1+aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 23.1.2+aikido.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-AIKIDO-2026-949486",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "AIKIDO-2026-949486 in pip - Patched by Root",
+      "released": "2026-11-02T14:22:27Z",
+      "updated": "2026-11-02T14:22:27Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: pip"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pip 20.0.2+aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 24.0+aikido.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 21.2.4+aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2026-6357",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-6357 in pip - Patched by Root",
+      "released": "2026-11-02T14:22:27Z",
+      "updated": "2026-11-02T14:22:27Z",
+      "cves": [
+        "CVE-2026-6357"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: pip"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pip 26.0.1+aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 25.2+aikido.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in pip 22.3.1+aikido.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2026-27459",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-27459 in pyOpenSSL - Patched by Root",
+      "released": "2026-11-02T14:35:47Z",
+      "updated": "2026-11-02T14:35:47Z",
+      "cves": [
+        "CVE-2026-27459"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: pyOpenSSL"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pyOpenSSL 22.0.0+aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in pyOpenSSL 24.3.0+aikido.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in pyOpenSSL 24.3.0+aikido.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22293-1",
@@ -1852,6 +3448,26 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "https://kb.cert.org/vuls/id/203719",
+      "src": "certcc",
+      "vendor": "CERT/CC",
+      "title": "VU#203719: INFINITT PACS System Manager contains multiple code execution vulnerabilities",
+      "url": "https://kb.cert.org/vuls/id/203719",
+      "released": "2026-11-02T15:38:19Z",
+      "updated": "2026-11-02T15:38:19Z",
+      "cves": [
+        "CVE-2026-16305",
+        "CVE-2026-16306"
+      ],
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://kb.cert.org/vuls/id/203719"
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22220-1",
@@ -1914,6 +3530,130 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ROOT-APP-NPM-CVE-2026-25896",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-25896 in fast-xml-parser - Patched by Root",
+      "released": "2026-11-02T16:57:32Z",
+      "updated": "2026-11-02T16:57:32Z",
+      "cves": [
+        "CVE-2026-25896"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: @rootio/fast-xml-parser",
+        "Root: fast-xml-parser"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fast-xml-parser 4.4.1-aikido.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-xml-parser 5.2.5-aikido.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-xml-parser 5.3.4-aikido.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-26278",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-26278 in fast-xml-parser - Patched by Root",
+      "released": "2026-11-02T16:57:32Z",
+      "updated": "2026-11-02T16:57:32Z",
+      "cves": [
+        "CVE-2026-26278"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/fast-xml-parser",
+        "Root: fast-xml-parser"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fast-xml-parser 4.4.1-aikido.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-xml-parser 5.2.5-aikido.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-xml-parser 5.3.4-aikido.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-33036",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-33036 in fast-xml-parser - Patched by Root",
+      "released": "2026-11-02T16:57:32Z",
+      "updated": "2026-11-02T16:57:32Z",
+      "cves": [
+        "CVE-2026-33036"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/fast-xml-parser",
+        "Root: fast-xml-parser"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fast-xml-parser 4.0.11-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-xml-parser 4.4.1-aikido.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-xml-parser 5.2.5-aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-41650",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-41650 in fast-xml-parser - Patched by Root",
+      "released": "2026-11-02T16:57:32Z",
+      "updated": "2026-11-02T16:57:32Z",
+      "cves": [
+        "CVE-2026-41650"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: @rootio/fast-xml-parser",
+        "Root: fast-xml-parser"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fast-xml-parser 4.4.1-aikido.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-xml-parser 5.2.5-aikido.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-xml-parser 5.3.4-aikido.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-120627",
       "src": "cvelistv5",
       "vendor": "Private Internet Access",
@@ -1930,6 +3670,126 @@
         "Private Internet Access Firefox extension"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-59006",
+      "src": "cvelistv5",
+      "vendor": "Google",
+      "title": "In getTouchOcclusionMode of WindowState.java, there is a possible tapjacking issue due to a tapjacking/overlay attack. This could lead to local information disclosure with no additional execution privileges needed. User…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-59006",
+      "released": "2026-11-02T19:54:54Z",
+      "updated": "2026-11-16T15:58:29Z",
+      "cves": [
+        "CVE-2026-59006"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5,
+      "products": [
+        "Google Android"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:94070",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang: net/http: net/http: sensitive headers incorrectly sent after cross-domain redirect",
+      "url": "https://access.redhat.com/errata/RHSA-2026:94070",
+      "released": "2026-11-02T20:43:45Z",
+      "updated": "2026-11-27T04:29:04Z",
+      "cves": [
+        "CVE-2024-45336",
+        "CVE-2025-22866",
+        "CVE-2025-47907",
+        "CVE-2026-44740",
+        "CVE-2026-56852",
+        "CVE-2026-71556"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "To start using the Web Terminal Operator, install the Web Terminal Operator from OpenShift OperatorHub on OpenShift Container Platform 4.18 or higher.",
+          "u": "https://access.redhat.com/errata/RHSA-2026:94070"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "To mitigate the issue, we suggest upgrading to versions 5.9.0+ or 6.0.0-alpha.1+",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:94072",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang: net/http: net/http: sensitive headers incorrectly sent after cross-domain redirect",
+      "url": "https://access.redhat.com/errata/RHSA-2026:94072",
+      "released": "2026-11-02T20:44:06Z",
+      "updated": "2026-11-27T04:29:04Z",
+      "cves": [
+        "CVE-2024-45336",
+        "CVE-2025-22866",
+        "CVE-2025-47907",
+        "CVE-2026-44740",
+        "CVE-2026-56852",
+        "CVE-2026-71556"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "To start using the Web Terminal Operator, install the Web Terminal Operator from OpenShift OperatorHub on OpenShift Container Platform 4.16 or higher.",
+          "u": "https://access.redhat.com/errata/RHSA-2026:94072"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "To mitigate the issue, we suggest upgrading to versions 5.9.0+ or 6.0.0-alpha.1+",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:94074",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang: net/http: net/http: sensitive headers incorrectly sent after cross-domain redirect",
+      "url": "https://access.redhat.com/errata/RHSA-2026:94074",
+      "released": "2026-11-02T20:48:44Z",
+      "updated": "2026-11-27T04:29:04Z",
+      "cves": [
+        "CVE-2024-45336",
+        "CVE-2025-22866",
+        "CVE-2025-47907",
+        "CVE-2026-44740",
+        "CVE-2026-56852",
+        "CVE-2026-71556"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "To start using the Web Terminal Operator, install the Web Terminal Operator from OpenShift OperatorHub on OpenShift Container Platform 4.19 or higher.",
+          "u": "https://access.redhat.com/errata/RHSA-2026:94074"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "To mitigate the issue, we suggest upgrading to versions 5.9.0+ or 6.0.0-alpha.1+",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "WID-SEC-W-2026-4288",
@@ -2264,6 +4124,22 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/",
+      "src": "unit42",
+      "vendor": "Unit 42",
+      "title": "Unit 42 Threat Intelligence Highlights - Nov. 2, 2026",
+      "url": "https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/",
+      "released": "2026-11-02T23:00:45Z",
+      "updated": "2026-11-02T23:00:45Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/"
+        }
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

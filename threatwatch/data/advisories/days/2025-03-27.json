@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-03-27",
-  "count": 3,
+  "count": 4,
   "items": [
     {
       "id": "msrc_CVE-2024-34397",
@@ -71,6 +71,38 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:3335",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang: net/http: net/http: sensitive headers incorrectly sent after cross-domain redirect",
+      "url": "https://access.redhat.com/errata/RHSA-2025:3335",
+      "released": "2025-03-27T15:00:22Z",
+      "updated": "2026-11-27T04:28:46Z",
+      "cves": [
+        "CVE-2024-45336",
+        "CVE-2025-22868",
+        "CVE-2025-27144",
+        "CVE-2025-29786"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:3335"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "To mitigate this vulnerability, it is recommended to pre-validate any payloads passed to `go-jose` to check that they do not contain an excessive amount of `.` characters.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "WID-SEC-W-2025-0649",

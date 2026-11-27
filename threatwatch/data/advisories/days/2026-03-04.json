@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-04",
-  "count": 36,
+  "count": 45,
   "items": [
     {
       "id": "openSUSE-SU-2026:10278-1",
@@ -374,6 +374,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-EW93264",
+      "src": "cleanstart",
+      "title": "Security fixes for GHSA-4CX2-FC23-5WG6, GHSA-6XW4-3V39-52MM, GHSA-72QJ-48G4-5XGX, GHSA-MR3Q-G2MV-MR4Q, GHSA-P543-XPFM-54CP, GHSA-VC5P-V9HR-52MJ, GHSA-VQG5-3255-V292 applied in versions: 9.0.8-r2, 9.0.8-r3, 9.0.8-r4, 9.3…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-EW93264",
+      "released": "2026-03-04T00:39:32Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "products": [
+        "CleanStart: logstash-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in logstash-fips 9.3.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-WY43835",
       "src": "cleanstart",
       "title": "PostgreSQL optimizer statistics allow a user to read sampled data within a view that the user cannot access",
@@ -397,6 +415,29 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-BZ70876",
+      "src": "cleanstart",
+      "title": "Redis is an open source, in-memory database that persists on disk",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-BZ70876",
+      "released": "2026-03-04T00:42:00Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2024-31227",
+        "CVE-2024-31228",
+        "CVE-2024-31449"
+      ],
+      "products": [
+        "CleanStart: valkey"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in valkey 7.2.7-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-YP32652",
@@ -564,6 +605,32 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:20651-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for docker",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620651-1/",
+      "released": "2026-03-04T06:50:07Z",
+      "updated": "2026-09-16T19:33:48Z",
+      "cves": [
+        "CVE-2025-58181"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:3417",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -592,6 +659,33 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:20634-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 2 for SUSE Linux Enterprise 16)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620634-1/",
+      "released": "2026-03-04T09:20:51Z",
+      "updated": "2026-09-16T19:33:33Z",
+      "cves": [
+        "CVE-2025-40130"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "SUSE-SU-2026:0796-1",
@@ -624,6 +718,112 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:20652-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for ca-certificates-mozilla",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620652-1/",
+      "released": "2026-03-04T09:36:46Z",
+      "updated": "2026-09-16T19:33:49Z",
+      "sev": "MEDIUM",
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:20635-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 0 for SUSE Linux Enterprise 16)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620635-1/",
+      "released": "2026-03-04T09:41:19Z",
+      "updated": "2026-09-16T19:33:34Z",
+      "cves": [
+        "CVE-2025-38352",
+        "CVE-2025-39698",
+        "CVE-2025-39742",
+        "CVE-2025-40129",
+        "CVE-2025-40130",
+        "CVE-2025-40186"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:20636-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 1 for SUSE Linux Enterprise 16)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620636-1/",
+      "released": "2026-03-04T10:44:08Z",
+      "updated": "2026-09-16T19:33:35Z",
+      "cves": [
+        "CVE-2025-40130"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:20631-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libxml2, libxslt",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620631-1/",
+      "released": "2026-03-04T10:51:03Z",
+      "updated": "2026-09-16T19:33:32Z",
+      "cves": [
+        "CVE-2025-10911",
+        "CVE-2025-8732",
+        "CVE-2026-0990",
+        "CVE-2026-0992",
+        "CVE-2026-1757"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:20312-1",
@@ -948,6 +1148,33 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:20637-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 3 for SUSE Linux Enterprise 16)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620637-1/",
+      "released": "2026-03-04T20:07:36Z",
+      "updated": "2026-09-16T19:33:36Z",
+      "cves": [
+        "CVE-2025-40130"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "NCSC-2026-0076",

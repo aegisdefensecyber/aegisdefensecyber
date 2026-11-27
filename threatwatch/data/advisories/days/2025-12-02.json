@@ -1,8 +1,39 @@
 {
   "schemaVersion": 1,
   "date": "2025-12-02",
-  "count": 7,
+  "count": 9,
   "items": [
+    {
+      "id": "RHSA-2025:22496",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gimp security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:22496",
+      "released": "2025-12-02T00:20:01Z",
+      "updated": "2026-11-05T14:51:11Z",
+      "cves": [
+        "CVE-2025-10922",
+        "CVE-2025-10934"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream EUS (v.9.4)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:22496"
+        },
+        {
+          "t": "No mitigation is currently available that meets Red Hat Product Security’s standards for usability, deployment, applicability, or stability.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
     {
       "id": "BIT-cilium-2025-64715",
       "src": "bitnami_vulndb",
@@ -102,6 +133,29 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-flux-2022-39272",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Flux2 vulnerable to Denial of Service due to Improper use of metav1.Duration",
+      "url": "https://github.com/fluxcd/flux2/security/advisories/GHSA-f4p5-x4vc-mh4v",
+      "released": "2025-12-02T17:37:01Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-39272"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: flux"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in flux 0.35.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-98586",

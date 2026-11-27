@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-12",
-  "count": 62,
+  "count": 104,
   "items": [
     {
       "id": "CERTFR-2026-ALE-012",
@@ -371,6 +371,48 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-2-released/",
+      "src": "gitlab",
+      "vendor": "GitLab",
+      "title": "GitLab Critical Patch Release: 19.4.2, 19.3.5, 19.2.8",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-2-released/",
+      "released": "2026-10-12T00:00:00Z",
+      "updated": "2026-10-12T00:00:00Z",
+      "cves": [
+        "CVE-2026-100104",
+        "CVE-2026-100755",
+        "CVE-2026-101168",
+        "CVE-2026-103549",
+        "CVE-2026-104661",
+        "CVE-2026-105458",
+        "CVE-2026-14210",
+        "CVE-2026-14552",
+        "CVE-2026-14814",
+        "CVE-2026-16275",
+        "CVE-2026-16301",
+        "CVE-2026-5954",
+        "CVE-2026-6567",
+        "CVE-2026-7767",
+        "CVE-2026-78335",
+        "CVE-2026-81839",
+        "CVE-2026-82632",
+        "CVE-2026-84284",
+        "CVE-2026-85529",
+        "CVE-2026-92528",
+        "CVE-2026-9268",
+        "CVE-2026-92883",
+        "CVE-2026-96893",
+        "CVE-2026-97229"
+      ],
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-2-released/"
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ALSA-2026:80495",
@@ -1374,6 +1416,61 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ROOT-APP-PYPI-CVE-2023-39631",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2023-39631 in numexpr - Patched by Root",
+      "released": "2026-10-12T05:58:11Z",
+      "updated": "2026-10-12T05:58:11Z",
+      "cves": [
+        "CVE-2023-39631"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: numexpr"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in numexpr 2.8.4+aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in numexpr 2.8.4+aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in numexpr 2.8.4+aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:80634",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80634",
+      "released": "2026-10-12T08:00:31Z",
+      "updated": "2026-11-27T03:14:56Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80634"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:80643",
       "src": "direct_csaf",
       "vendor": "Red Hat",
@@ -1399,13 +1496,38 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:80649",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80649",
+      "released": "2026-10-12T08:13:39Z",
+      "updated": "2026-11-27T03:14:52Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80649"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:80651",
       "src": "direct_csaf",
       "vendor": "Red Hat",
       "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
       "url": "https://access.redhat.com/errata/RHSA-2026:80651",
       "released": "2026-10-12T08:17:08Z",
-      "updated": "2026-11-26T05:21:46Z",
+      "updated": "2026-11-27T03:14:53Z",
       "cves": [
         "CVE-2024-24786"
       ],
@@ -1422,6 +1544,31 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:80652",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80652",
+      "released": "2026-10-12T08:18:09Z",
+      "updated": "2026-11-27T03:14:53Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80652"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22085-1",
@@ -1461,13 +1608,88 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:80653",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80653",
+      "released": "2026-10-12T08:19:36Z",
+      "updated": "2026-11-27T03:14:53Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80653"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:80654",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80654",
+      "released": "2026-10-12T08:21:07Z",
+      "updated": "2026-11-27T03:14:53Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80654"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:80656",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80656",
+      "released": "2026-10-12T08:27:02Z",
+      "updated": "2026-11-27T03:14:54Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80656"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:80657",
       "src": "direct_csaf",
       "vendor": "Red Hat",
       "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
       "url": "https://access.redhat.com/errata/RHSA-2026:80657",
       "released": "2026-10-12T08:28:28Z",
-      "updated": "2026-11-26T05:21:46Z",
+      "updated": "2026-11-27T03:14:54Z",
       "cves": [
         "CVE-2024-24786"
       ],
@@ -1484,6 +1706,181 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:80658",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80658",
+      "released": "2026-10-12T08:29:49Z",
+      "updated": "2026-11-27T03:14:54Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80658"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:80659",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80659",
+      "released": "2026-10-12T08:31:16Z",
+      "updated": "2026-11-27T03:14:54Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80659"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:80660",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80660",
+      "released": "2026-10-12T08:32:45Z",
+      "updated": "2026-11-27T03:14:58Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80660"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:80661",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80661",
+      "released": "2026-10-12T08:34:07Z",
+      "updated": "2026-11-27T03:14:54Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80661"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:80666",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80666",
+      "released": "2026-10-12T08:40:04Z",
+      "updated": "2026-11-27T03:14:55Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80666"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:80668",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80668",
+      "released": "2026-10-12T08:41:21Z",
+      "updated": "2026-11-27T03:14:55Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80668"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:80670",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80670",
+      "released": "2026-10-12T08:42:43Z",
+      "updated": "2026-11-27T03:14:56Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80670"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22088-1",
@@ -1546,7 +1943,7 @@
       "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
       "url": "https://access.redhat.com/errata/RHSA-2026:80672",
       "released": "2026-10-12T08:46:20Z",
-      "updated": "2026-11-26T05:21:51Z",
+      "updated": "2026-11-27T03:14:56Z",
       "cves": [
         "CVE-2024-24786"
       ],
@@ -1565,13 +1962,38 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:80671",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80671",
+      "released": "2026-10-12T08:46:22Z",
+      "updated": "2026-11-27T03:14:56Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80671"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:80673",
       "src": "direct_csaf",
       "vendor": "Red Hat",
       "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
       "url": "https://access.redhat.com/errata/RHSA-2026:80673",
       "released": "2026-10-12T08:47:26Z",
-      "updated": "2026-11-26T05:21:56Z",
+      "updated": "2026-11-27T03:14:56Z",
       "cves": [
         "CVE-2024-24786"
       ],
@@ -1590,13 +2012,38 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:80676",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80676",
+      "released": "2026-10-12T08:48:50Z",
+      "updated": "2026-11-27T03:14:56Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80676"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:80677",
       "src": "direct_csaf",
       "vendor": "Red Hat",
       "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
       "url": "https://access.redhat.com/errata/RHSA-2026:80677",
       "released": "2026-10-12T08:50:13Z",
-      "updated": "2026-11-26T05:22:00Z",
+      "updated": "2026-11-27T03:14:57Z",
       "cves": [
         "CVE-2024-24786",
         "CVE-2026-109574",
@@ -1621,6 +2068,498 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:80682",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80682",
+      "released": "2026-10-12T09:19:24Z",
+      "updated": "2026-11-27T03:14:57Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80682"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:80683",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80683",
+      "released": "2026-10-12T09:20:26Z",
+      "updated": "2026-11-27T03:14:57Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80683"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:80686",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80686",
+      "released": "2026-10-12T09:22:16Z",
+      "updated": "2026-11-27T03:14:57Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80686"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-AIKIDO-2026-961622",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "AIKIDO-2026-961622 in @fastify/busboy - Patched by Root",
+      "released": "2026-10-12T09:43:55Z",
+      "updated": "2026-10-12T09:43:55Z",
+      "sev": "MEDIUM",
+      "products": [
+        "Root: @fastify/busboy",
+        "Root: @rootio/fastify__busboy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in @fastify/busboy 3.2.0-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in @fastify/busboy 2.1.1-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in @fastify/busboy 2.1.1-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-19484",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-19484 in @fastify/busboy - Patched by Root",
+      "released": "2026-10-12T09:43:55Z",
+      "updated": "2026-10-12T09:43:55Z",
+      "cves": [
+        "CVE-2026-19484"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @fastify/busboy",
+        "Root: @rootio/fastify__busboy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in @fastify/busboy 3.2.0-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in @rootio/fastify__busboy 3.2.0-root.io.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2011-4116",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2011-4116 in perl - Patched by Root",
+      "released": "2026-10-12T09:51:35Z",
+      "updated": "2026-10-12T09:51:35Z",
+      "cves": [
+        "CVE-2011-4116"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Root: perl",
+        "Root: rootio-perl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl 5.36.0-7+deb12u4.aikido.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in perl 5.36.0-7+deb12u4.aikido.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in rootio-perl 5.36.0-7+deb12u4.aikido.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2023-31486",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2023-31486 in perl - Patched by Root",
+      "released": "2026-10-12T09:51:35Z",
+      "updated": "2026-10-12T09:51:35Z",
+      "cves": [
+        "CVE-2023-31486"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: libhttp-tiny-perl",
+        "Root: perl",
+        "Root: rootio-libhttp-tiny-perl",
+        "Root: rootio-perl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl 5.36.0-7+deb12u4.aikido.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in perl 5.36.0-7+deb12u4.aikido.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in libhttp-tiny-perl 0.082-2.root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2026-82560",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-82560 in perl - Patched by Root",
+      "released": "2026-10-12T09:51:35Z",
+      "updated": "2026-10-12T09:51:35Z",
+      "cves": [
+        "CVE-2026-82560"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: perl",
+        "Root: rootio-perl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl 5.36.0-7+deb12u4.aikido.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in perl 5.36.0-7+deb12u4.aikido.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in rootio-perl 5.36.0-7+deb12u4.aikido.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-OS-DEBIAN-12-CVE-2026-9538",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-9538 in perl - Patched by Root",
+      "released": "2026-10-12T09:51:35Z",
+      "updated": "2026-10-12T09:51:35Z",
+      "cves": [
+        "CVE-2026-9538"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: perl",
+        "Root: rootio-perl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in perl 5.36.0-7+deb12u4.aikido.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in perl 5.36.0-7+deb12u4.aikido.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in rootio-perl 5.36.0-7+deb12u4.aikido.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:80693",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/protobuf: golang-protobuf: Denial of Service via infinite loop when unmarshaling invalid JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80693",
+      "released": "2026-10-12T10:00:03Z",
+      "updated": "2026-11-27T03:14:57Z",
+      "cves": [
+        "CVE-2024-24786"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80693"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-101894",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-101894 in decompress - Patched by Root",
+      "released": "2026-10-12T10:05:08Z",
+      "updated": "2026-10-12T10:05:08Z",
+      "cves": [
+        "CVE-2026-101894"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: @rootio/decompress",
+        "Root: @rootio/xhmikosr__decompress",
+        "Root: @xhmikosr/decompress",
+        "Root: decompress"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in decompress 4.2.1-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in @xhmikosr/decompress 9.0.1-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in @xhmikosr/decompress 11.1.3-aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-53486",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-53486 in @xhmikosr/decompress - Patched by Root",
+      "released": "2026-10-12T10:05:08Z",
+      "updated": "2026-10-12T10:05:08Z",
+      "cves": [
+        "CVE-2026-53486"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: @rootio/decompress",
+        "Root: @rootio/xhmikosr__decompress",
+        "Root: @xhmikosr/decompress",
+        "Root: decompress"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in @xhmikosr/decompress 10.2.0-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in @xhmikosr/decompress 9.0.1-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in @xhmikosr/decompress 9.0.1-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2024-4068",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2024-4068 in braces - Patched by Root",
+      "released": "2026-10-12T10:25:46Z",
+      "updated": "2026-10-12T10:25:46Z",
+      "cves": [
+        "CVE-2024-4068"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/braces",
+        "Root: braces"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in braces 3.0.2-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in braces 2.3.2-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in braces 3.0.2-aikido.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-93687",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-93687 in braces - Patched by Root",
+      "released": "2026-10-12T10:25:46Z",
+      "updated": "2026-10-12T10:25:46Z",
+      "cves": [
+        "CVE-2026-93687"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/braces",
+        "Root: braces"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in braces 3.0.3-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in braces 3.0.2-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in braces 2.3.2-aikido.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2024-27454",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2024-27454 in orjson - Patched by Root",
+      "released": "2026-10-12T10:40:19Z",
+      "updated": "2026-10-12T10:40:19Z",
+      "cves": [
+        "CVE-2024-27454"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: orjson"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in orjson 3.9.5+aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in orjson 3.9.5+aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2025-67221",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2025-67221 in orjson - Patched by Root",
+      "released": "2026-10-12T10:41:06Z",
+      "updated": "2026-10-12T10:41:06Z",
+      "cves": [
+        "CVE-2025-67221"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: orjson"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in orjson 3.9.5+aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in orjson 3.10.18+aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in orjson 3.10.7+aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2021-23334",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2021-23334 in static-eval - Patched by Root",
+      "released": "2026-10-12T11:23:05Z",
+      "updated": "2026-10-12T11:23:05Z",
+      "cves": [
+        "CVE-2021-23334"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Root: @rootio/static-eval",
+        "Root: static-eval"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in static-eval 2.0.2-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in @rootio/static-eval 2.0.2-root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "NCSC-2026-0413",
@@ -1648,6 +2587,98 @@
       ],
       "lang": "nl",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:80858",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "python: cpython: CPython: tarfile extraction filter bypass allows escaping the destination directory",
+      "url": "https://access.redhat.com/errata/RHSA-2026:80858",
+      "released": "2026-10-12T12:03:52Z",
+      "updated": "2026-11-27T03:36:26Z",
+      "cves": [
+        "CVE-2026-11940",
+        "CVE-2026-15308"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For more information visit https://access.redhat.com/errata/RHSA-2026:80858",
+          "u": "https://access.redhat.com/errata/RHSA-2026:80858"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-MAVEN-CVE-2025-49128",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2025-49128 in com.fasterxml.jackson.core:jackson-core - Patched by Root",
+      "released": "2026-10-12T12:06:32Z",
+      "updated": "2026-10-12T12:06:32Z",
+      "cves": [
+        "CVE-2025-49128"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: com.fasterxml.jackson.core:jackson-core",
+        "Root: io.root.com.fasterxml.jackson.core:jackson-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-core 2.12.4-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-core 2.12.5-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-core 2.10.1-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-64642",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-64642 in next - Patched by Root",
+      "released": "2026-10-12T12:08:55Z",
+      "updated": "2026-10-12T12:08:55Z",
+      "cves": [
+        "CVE-2026-64642"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/next",
+        "Root: next"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in next 16.2.11-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in next 16.2.11-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in @rootio/next 16.2.11-root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22090-1",
@@ -1705,6 +2736,132 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ROOT-APP-MAVEN-CVE-2022-42003",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2022-42003 in com.fasterxml.jackson.core:jackson-databind - Patched by Root",
+      "released": "2026-10-12T12:25:11Z",
+      "updated": "2026-10-12T12:25:11Z",
+      "cves": [
+        "CVE-2022-42003"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: com.fasterxml.jackson.core:jackson-databind",
+        "Root: io.root.com.fasterxml.jackson.core:jackson-databind"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-databind 2.12.7-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-databind 2.13.2.2-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-databind 2.12.5-aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-MAVEN-CVE-2022-42004",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2022-42004 in com.fasterxml.jackson.core:jackson-databind - Patched by Root",
+      "released": "2026-10-12T12:25:11Z",
+      "updated": "2026-10-12T12:25:11Z",
+      "cves": [
+        "CVE-2022-42004"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: com.fasterxml.jackson.core:jackson-databind",
+        "Root: io.root.com.fasterxml.jackson.core:jackson-databind"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-databind 2.12.7-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-databind 2.13.3-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-databind 2.13.2.2-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NUGET-CVE-2025-26646",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2025-26646 in Microsoft.Build.Tasks.Core - Patched by Root",
+      "released": "2026-10-12T12:28:36Z",
+      "updated": "2026-10-12T12:28:36Z",
+      "cves": [
+        "CVE-2025-26646"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: Microsoft.Build.Tasks.Core",
+        "Root: Rootio.Microsoft.Build.Tasks.Core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in Microsoft.Build.Tasks.Core 17.11.31.416104",
+          "u": null
+        },
+        {
+          "t": "Fixed in Microsoft.Build.Tasks.Core 17.11.31.416105",
+          "u": null
+        },
+        {
+          "t": "Fixed in Rootio.Microsoft.Build.Tasks.Core 17.11.31.120071",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NUGET-CVE-2025-55247",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2025-55247 in Microsoft.Build.Utilities.Core - Patched by Root",
+      "released": "2026-10-12T12:28:36Z",
+      "updated": "2026-10-12T12:28:36Z",
+      "cves": [
+        "CVE-2025-55247"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: Microsoft.Build.Tasks.Core",
+        "Root: Microsoft.Build.Utilities.Core",
+        "Root: Rootio.Microsoft.Build.Tasks.Core",
+        "Root: Rootio.Microsoft.Build.Utilities.Core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in Microsoft.Build.Utilities.Core 17.11.31.416104",
+          "u": null
+        },
+        {
+          "t": "Fixed in Microsoft.Build.Utilities.Core 17.11.31.416105",
+          "u": null
+        },
+        {
+          "t": "Fixed in Microsoft.Build.Tasks.Core 17.11.31.416104",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:80941",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -1733,6 +2890,36 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-PYPI-CVE-2022-36359",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2022-36359 in django - Patched by Root",
+      "released": "2026-10-12T12:56:00Z",
+      "updated": "2026-10-12T12:56:00Z",
+      "cves": [
+        "CVE-2022-36359"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 2.2.28+aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 2.2.28+aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 2.2.28+aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22091-1",

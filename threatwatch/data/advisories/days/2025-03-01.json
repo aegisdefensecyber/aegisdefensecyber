@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-03-01",
-  "count": 2,
+  "count": 39,
   "items": [
     {
       "id": "ASB-A-228837201",
@@ -28,6 +28,991 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ASB-A-283962634",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to request access to directories that should be hidden due to improper input validation. This could lead to local escalation of privilege with User execution privileges nee…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-0032"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/packages/providers/DownloadProvider"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/providers/DownloadProvider 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-289375038",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In handleBondStateChanged of AdapterService.java, there is a possible permission bypass due to misleading or insufficient UI. This could lead to remote (proximal/adjacent) information disclosure with no additional execu…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0092"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Bluetooth",
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Bluetooth 12:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Bluetooth 12L:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-289811388",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In handleBondStateChanged of AdapterService.java, there is a possible unapproved data access due to a missing permission check. This could lead to remote information disclosure with no additional execution privileges ne…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0093"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Bluetooth",
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Bluetooth 12:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Bluetooth 12L:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-291281168",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible out of bounds write due to a use after free. This could lead to remote code execution over Bluetooth, if HFP support is enabled, with no additional execution privileges needed.…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0084"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 13:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-304497167",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In checkWhetherCallingAppHasAccess of DownloadProvider.java, there is a possible bypass of user consent when opening files in shared storage due to a confused deputy. This could lead to local information disclosure with…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-26417"
+      ],
+      "products": [
+        "Android: platform/packages/providers/DownloadProvider"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/providers/DownloadProvider 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/providers/DownloadProvider 12:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/providers/DownloadProvider 12L:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-308932906",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible crash loop due to resource exhaustion. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitatio…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-49740"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/packages/services/Telephony"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Telephony 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-331180422",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible cross-user image read due to a missing permission check. This could lead to local information disclosure with User execution privileges needed. User interaction is needed for e…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-43090"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12L:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-341680936",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In shouldHideDocument of ExternalStorageProvider.java, there is a possible bypass of a file path filter designed to prevent access to sensitive directories due to incorrect unicode normalization. This could lead to loca…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-43093"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12L:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-345258562",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way that avdtp and avctp channels could be unencrypted due to a logic error in the code. This could lead to local escalation of privilege with User execution privileges needed.…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0079"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth",
+        "Android: platform/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/bt 12:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 12L:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-347735428",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In dng_lossless_decoder::HuffDecode of dng_lossless_jpeg.cpp, there is a possible way to cause a crash due to uninitialized data. This could lead to remote denial of service with no additional execution privileges neede…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0081"
+      ],
+      "products": [
+        "Android: platform/external/dng_sdk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/dng_sdk 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/dng_sdk 12:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/dng_sdk 12L:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-363259128",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In cma_heap_vm_fault of cma_heap.c, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege in the kernel with no additional execution privileges needed…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-46852"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2025-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-364269936",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onResult of AccountManagerService.java, there is a possible way to overwrite auth token due to a missing permission check. This could lead to local information disclosure with no additional execution privileges neede…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0086"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12L:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-370958259",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to overlay the installation confirmation dialog due to a tapjacking/overlay attack. This could lead to local escalation of privilege with no additional execution privileges…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0080"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-373638114",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of hyp-main.c, there is a possible privilege escalation due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges needed. User intera…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22413"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2025-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-375159480",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In avct_lcb_msg_ind of avct_lcb_act.cc, there is a possible way to execute arbitrary code due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User in…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22404"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-375159652",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to execute arbitrary code due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not …",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22405"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-375160214",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In bnepu_check_send_packet of bnep_utils.cc, there is a possible way to achieve code execution due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. Us…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22406"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-375396810",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In hidd_check_config_done of hidd_conn.cc, there is a possible way to execute arbitrary code due to a use after free. This could lead to local information disclosure with no additional execution privileges needed. User …",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22407"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-375397164",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In rfc_check_send_cmd of rfc_utils.cc, there is a possible way to execute arbitrary code due to a use after free. This could lead to remote code execution with no additional execution privileges needed. User interaction…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22408"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-375397370",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In rfc_send_buf_uih of rfc_ts_frames.cc, there is a possible way to execute arbitrary code due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User i…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22409"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-375397720",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to execute arbitrary code due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not …",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22410"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-375398779",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In process_service_attr_rsp of sdp_discovery.cc, there is a possible use after free due to a logic error in the code. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges …",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22411"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-375404242",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of sdp_server.cc, there is a possible use after free due to a logic error in the code. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. U…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22412"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-375407167",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In process_service_search_attr_req of sdp_server.cc, there is a possible way to execute arbitrary code due to a use after free. This could lead to remote code execution with no additional execution privileges needed. Us…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0075"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-375408314",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In process_service_attr_rsp of sdp_discovery.cc, there is a possible way to execute arbitrary code due to a use after free. This could lead to remote code execution with no additional execution privileges needed. User i…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0074"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-375409435",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In sdp_snd_service_search_req of sdp_discovery.cc, there is a possible way to execute arbitrary code due to a use after free. This could lead to remote code execution with no additional execution privileges needed. User…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22403"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-376259166",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to access content across user profiles due to URI double encoding. This could lead to local information disclosure with no additional execution privileges needed. User inte…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0083"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/packages/services/Telecomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Telecomm 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-376461551",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of StatusHint.java and TelecomServiceImpl.java, there is a possible way to reveal images across users due to a confused deputy. This could lead to local information disclosure with no additional ex…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0082"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/packages/services/Telecomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Telecomm 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-377312708",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-377312708",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-49836"
+      ],
+      "products": [
+        "Android: platform/vendor/opensource/camera-kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/opensource/camera-kernel SoCVersion:2025-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-377312892",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-377312892",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-49838"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom-opensource/wlan/qcacld-3.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom-opensource/wlan/qcacld-3.0 SoCVersion:2025-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-380395346",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In hid_alloc_report_buf of hid-core.c, there is a possible leak of kernel memory contents to a USB HID due to uninitialized data. This could lead to physical information disclosure with no additional execution privilege…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-50302"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2025-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-381898850",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-381898850",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-53014"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom/opensource/audio-kernel-ar"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom/opensource/audio-kernel-ar SoCVersion:2025-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-381899455",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-381899455",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-53024"
+      ],
+      "products": [
+        "Android: platform/vendor/opensource/display-drivers"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/opensource/display-drivers SoCVersion:2025-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-381901669",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-381901669",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-53027"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom-opensource/wlan/qcacld-3.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom-opensource/wlan/qcacld-3.0 SoCVersion:2025-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-382775095",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In main of main.cpp, there is a possible way to bypass SELinux due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not n…",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0078"
+      ],
+      "products": [
+        "Android: platform/frameworks/native"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/native 15-next:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/native 12:2025-03-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/native 12L:2025-03-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-386727712",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-386727712",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20644"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-386732172",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-386732172",
+      "url": "https://source.android.com/security/bulletin/2025-03-01",
+      "released": "2025-03-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20645"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-03-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "BELL-CVE-2025-21817",

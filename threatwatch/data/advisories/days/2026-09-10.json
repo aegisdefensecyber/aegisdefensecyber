@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-10",
-  "count": 325,
+  "count": 353,
   "items": [
     {
       "id": "ELA-1821-1",
@@ -694,6 +694,42 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/",
+      "src": "gitlab",
+      "vendor": "GitLab",
+      "title": "GitLab Critical Patch Release: 19.3.2, 19.2.6, 19.1.8",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/",
+      "released": "2026-09-10T00:00:00Z",
+      "updated": "2026-09-10T00:00:00Z",
+      "cves": [
+        "CVE-2024-11222",
+        "CVE-2025-14871",
+        "CVE-2026-1168",
+        "CVE-2026-12910",
+        "CVE-2026-13210",
+        "CVE-2026-16794",
+        "CVE-2026-19619",
+        "CVE-2026-3855",
+        "CVE-2026-7514",
+        "CVE-2026-78252",
+        "CVE-2026-79708",
+        "CVE-2026-8030",
+        "CVE-2026-82837",
+        "CVE-2026-85706",
+        "CVE-2026-86340",
+        "CVE-2026-86341",
+        "CVE-2026-87719",
+        "CVE-2026-88765"
+      ],
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/"
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ALSA-2026:66324",
@@ -1540,6 +1576,105 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-EI39418",
+      "src": "cleanstart",
+      "title": "Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-EI39418.json",
+      "released": "2026-09-10T00:43:34Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61729",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-46600",
+        "CVE-2026-56853",
+        "CVE-2026-56855",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-78662"
+      ],
+      "products": [
+        "CleanStart: trust-manager"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in trust-manager 0.21.1-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-CT24188",
+      "src": "cleanstart",
+      "title": "ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-CT24188.json",
+      "released": "2026-09-10T00:50:35Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-41178",
+        "CVE-2026-42504",
+        "CVE-2026-42505",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "CleanStart: rabbitmq-cluster-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rabbitmq-cluster-operator 2.20.1-r6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-DB46993",
+      "src": "cleanstart",
+      "title": "Prometheus is an open-source monitoring system and time series database",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-DB46993.json",
+      "released": "2026-09-10T00:52:34Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-27145",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-42151",
+        "CVE-2026-42504",
+        "CVE-2026-42505",
+        "CVE-2026-42507",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "CleanStart: prometheus-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in prometheus-operator 0.90.1-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-AJ83096",
       "src": "cleanstart",
       "title": "Enforce a recursion limit in Unmarshal to prevent stack exhaustion when parsing deeply-nested, recursive structures",
@@ -1601,6 +1736,413 @@
         "Azure Linux: ceph"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-GB90768",
+      "src": "cleanstart",
+      "title": "Enforce a recursion limit in Unmarshal to prevent stack exhaustion when parsing deeply-nested, recursive structures",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-GB90768.json",
+      "released": "2026-09-10T01:16:38Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47912",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58186",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61729",
+        "CVE-2025-68121",
+        "CVE-2026-32283",
+        "CVE-2026-33818",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-39824",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42505",
+        "CVE-2026-46600",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "CleanStart: logstash-exporter"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in logstash-exporter 1.9.1-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-HA46232",
+      "src": "cleanstart",
+      "title": "Parsing an invalid SVCB or HTTPS RR can panic when the size of a parameter value overflows the message buffer",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-HA46232.json",
+      "released": "2026-09-10T01:22:17Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2023-45288",
+        "CVE-2024-24786",
+        "CVE-2026-14362",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "CleanStart: metallb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in metallb 0.13.12-r5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-GK68352",
+      "src": "cleanstart",
+      "title": "ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-GK68352.json",
+      "released": "2026-09-10T01:24:08Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-42504",
+        "CVE-2026-42505",
+        "CVE-2026-46600",
+        "CVE-2026-50274",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-56864",
+        "CVE-2026-56865"
+      ],
+      "products": [
+        "CleanStart: kubernetes-dns-node-cache"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kubernetes-dns-node-cache 1.26.8-r7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-HL20029",
+      "src": "cleanstart",
+      "title": "JLine is a Java library for handling console input",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-HL20029.json",
+      "released": "2026-09-10T01:34:39Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2024-45993",
+        "CVE-2025-11143",
+        "CVE-2025-31344",
+        "CVE-2026-10050",
+        "CVE-2026-10051",
+        "CVE-2026-1605",
+        "CVE-2026-25679",
+        "CVE-2026-27137",
+        "CVE-2026-27138",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-49844",
+        "CVE-2026-54512",
+        "CVE-2026-54513",
+        "CVE-2026-54514",
+        "CVE-2026-54515",
+        "CVE-2026-54516",
+        "CVE-2026-54517",
+        "CVE-2026-54518",
+        "CVE-2026-56740",
+        "CVE-2026-56741",
+        "CVE-2026-59949",
+        "CVE-2026-8384"
+      ],
+      "products": [
+        "CleanStart: kafka"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kafka 4.3.1-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-BM73754",
+      "src": "cleanstart",
+      "title": "source-address critical option in the Permissions returned by an authentication callback was only enforced for the PublicKeyCallback and VerifiedPublicKeyCallback paths, extending the fix for CVE-2...",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-BM73754.json",
+      "released": "2026-09-10T01:45:09Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-42504",
+        "CVE-2026-42505",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56854",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "products": [
+        "CleanStart: haproxy-ingress"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in haproxy-ingress 0.15.4-r6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-BA26255",
+      "src": "cleanstart",
+      "title": "filippo",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-BA26255.json",
+      "released": "2026-09-10T01:49:39Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-26958"
+      ],
+      "products": [
+        "CleanStart: dex"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dex 2.42.1-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-HP09399",
+      "src": "cleanstart",
+      "title": "ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-HP09399.json",
+      "released": "2026-09-10T01:57:40Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-41178",
+        "CVE-2026-42504",
+        "CVE-2026-42505",
+        "CVE-2026-46600",
+        "CVE-2026-54332",
+        "CVE-2026-54345",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-73500"
+      ],
+      "products": [
+        "CleanStart: calico"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in calico 3.32.1-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-IL11339",
+      "src": "cleanstart",
+      "title": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-IL11339.json",
+      "released": "2026-09-10T02:02:40Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-27448",
+        "CVE-2026-27459",
+        "CVE-2026-39892",
+        "CVE-2026-44431",
+        "CVE-2026-44432",
+        "CVE-2026-4539",
+        "CVE-2026-45409",
+        "CVE-2026-48522",
+        "CVE-2026-48524",
+        "CVE-2026-48525",
+        "CVE-2026-48526",
+        "CVE-2026-69247",
+        "CVE-2026-69248",
+        "CVE-2026-69249"
+      ],
+      "products": [
+        "CleanStart: az"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in az 2.86.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-GY20219",
+      "src": "cleanstart",
+      "title": "ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-GY20219.json",
+      "released": "2026-09-10T02:03:40Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-41178",
+        "CVE-2026-42504",
+        "CVE-2026-42505",
+        "CVE-2026-46600",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-73500"
+      ],
+      "products": [
+        "CleanStart: calico"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in calico 3.31.6-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-HR50080",
+      "src": "cleanstart",
+      "title": "ToASCII and ToUnicode functions incorrectly accept Punycode-encoded labels that decode to an ASCII-only label",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-HR50080.json",
+      "released": "2026-09-10T02:09:11Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-24051",
+        "CVE-2026-25680",
+        "CVE-2026-25681",
+        "CVE-2026-27136",
+        "CVE-2026-27145",
+        "CVE-2026-32952",
+        "CVE-2026-33186",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-33818",
+        "CVE-2026-34986",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-39823",
+        "CVE-2026-39824",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39827",
+        "CVE-2026-39828",
+        "CVE-2026-39829",
+        "CVE-2026-39830",
+        "CVE-2026-39831",
+        "CVE-2026-39832",
+        "CVE-2026-39833",
+        "CVE-2026-39834",
+        "CVE-2026-39835",
+        "CVE-2026-39836",
+        "CVE-2026-39883",
+        "CVE-2026-41178",
+        "CVE-2026-42499",
+        "CVE-2026-42502",
+        "CVE-2026-42504",
+        "CVE-2026-42505",
+        "CVE-2026-42506",
+        "CVE-2026-42507",
+        "CVE-2026-42508",
+        "CVE-2026-46595",
+        "CVE-2026-46597",
+        "CVE-2026-46598",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-73500"
+      ],
+      "products": [
+        "CleanStart: cert-manager"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cert-manager 1.19.2-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-GZ54612",
+      "src": "cleanstart",
+      "title": "In Spring Security, versions 5",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-GZ54612.json",
+      "released": "2026-09-10T02:15:42Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2024-22257",
+        "CVE-2024-38821",
+        "CVE-2024-47561",
+        "CVE-2025-7962",
+        "CVE-2026-0636",
+        "CVE-2026-3505",
+        "CVE-2026-5588"
+      ],
+      "products": [
+        "CleanStart: apache-nifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-nifi 2.7.2-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-AM39668",
@@ -1681,6 +2223,219 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-ED42524",
+      "src": "cleanstart",
+      "title": "Applications which accept user-supplied Spring Expression Language (SpEL) expressions may be vulnerable to a Denial of Service (DoS) attack if the evaluation of a SpEL expression triggers unbounded...",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-ED42524.json",
+      "released": "2026-09-10T02:46:42Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-22745",
+        "CVE-2026-41848",
+        "CVE-2026-41851",
+        "CVE-2026-54399",
+        "CVE-2026-54428"
+      ],
+      "products": [
+        "CleanStart: spring-boot"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in spring-boot 3.4.13-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-BR58082",
+      "src": "cleanstart",
+      "title": "Echo is a Go web framework",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-BR58082.json",
+      "released": "2026-09-10T02:53:42Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2023-42821",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-40890",
+        "CVE-2026-40898",
+        "CVE-2026-41178",
+        "CVE-2026-46600",
+        "CVE-2026-55677",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-73500"
+      ],
+      "products": [
+        "CleanStart: kube-metrics-adapter"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kube-metrics-adapter 0.2.9-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-EC45528",
+      "src": "cleanstart",
+      "title": "Improper TLS hostname verification vulnerability in Apache HttpComponents Client 5",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-EC45528.json",
+      "released": "2026-09-10T02:58:12Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47911",
+        "CVE-2025-47912",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58186",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-58190",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61726",
+        "CVE-2025-61727",
+        "CVE-2025-61728",
+        "CVE-2025-61729",
+        "CVE-2025-61730",
+        "CVE-2025-68121",
+        "CVE-2025-8671",
+        "CVE-2026-0636",
+        "CVE-2026-10050",
+        "CVE-2026-10051",
+        "CVE-2026-10532",
+        "CVE-2026-13006",
+        "CVE-2026-1605",
+        "CVE-2026-22732",
+        "CVE-2026-2332",
+        "CVE-2026-24281",
+        "CVE-2026-25679",
+        "CVE-2026-25680",
+        "CVE-2026-25681",
+        "CVE-2026-27136",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-27145",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32288",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-33870",
+        "CVE-2026-33871",
+        "CVE-2026-3505",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-39823",
+        "CVE-2026-39824",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-40983",
+        "CVE-2026-40984",
+        "CVE-2026-41707",
+        "CVE-2026-42499",
+        "CVE-2026-42502"
+      ],
+      "products": [
+        "CleanStart: apache-nifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-nifi 2.9.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-FD87409",
+      "src": "cleanstart",
+      "title": "Previously, resolving relative paths containing parent directory ('",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-FD87409.json",
+      "released": "2026-09-10T03:04:43Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-39822",
+        "CVE-2026-42504",
+        "CVE-2026-42505",
+        "CVE-2026-46600",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56860"
+      ],
+      "products": [
+        "CleanStart: nats-streaming"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nats-streaming 0.24.6-r5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-CL03013",
+      "src": "cleanstart",
+      "title": "Netty is an asynchronous, event-driven network application framework",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-CL03013.json",
+      "released": "2026-09-10T03:06:42Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2023-1428",
+        "CVE-2024-7254",
+        "CVE-2025-33042",
+        "CVE-2025-48924",
+        "CVE-2025-55163",
+        "CVE-2025-59250",
+        "CVE-2025-62728",
+        "CVE-2026-10050",
+        "CVE-2026-12185",
+        "CVE-2026-2332",
+        "CVE-2026-45292",
+        "CVE-2026-49844",
+        "CVE-2026-55851",
+        "CVE-2026-56817",
+        "CVE-2026-59639",
+        "CVE-2026-59642",
+        "CVE-2026-59645",
+        "CVE-2026-59647",
+        "CVE-2026-59650",
+        "CVE-2026-59651",
+        "CVE-2026-59901",
+        "CVE-2026-59902",
+        "CVE-2026-59903",
+        "CVE-2026-59919",
+        "CVE-2026-6790",
+        "CVE-2026-8763"
+      ],
+      "products": [
+        "CleanStart: apache-hive"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-hive 4.0.1-r8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ROOT-APP-MAVEN-CVE-2026-33701",
@@ -1992,6 +2747,167 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-74860",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-74860",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-74860",
+      "released": "2026-09-10T06:05:04Z",
+      "updated": "2026-10-06T06:01:12Z",
+      "cves": [
+        "CVE-2026-74860"
+      ],
+      "products": [
+        "Alpaquita: libxml2",
+        "BellSoft Hardened Containers: libxml2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libxml2 2.10.4-r11",
+          "u": null
+        },
+        {
+          "t": "Fixed in libxml2 2.13.9-r5",
+          "u": null
+        },
+        {
+          "t": "Fixed in libxml2 2.13.9-r6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-58649",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-58649",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-58649",
+      "released": "2026-09-10T06:05:08Z",
+      "updated": "2026-09-30T11:05:01Z",
+      "cves": [
+        "CVE-2026-58649"
+      ],
+      "products": [
+        "Alpaquita: dotnet8-runtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dotnet8-runtime 8.0.31-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in dotnet8-runtime 8.0.31-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-69304",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-69304",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-69304",
+      "released": "2026-09-10T06:05:08Z",
+      "updated": "2026-09-30T11:05:00Z",
+      "cves": [
+        "CVE-2026-69304"
+      ],
+      "products": [
+        "Alpaquita: dotnet8-runtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dotnet8-runtime 8.0.31-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in dotnet8-runtime 8.0.31-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-69439",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-69439",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-69439",
+      "released": "2026-09-10T06:05:08Z",
+      "updated": "2026-09-30T11:05:00Z",
+      "cves": [
+        "CVE-2026-69439"
+      ],
+      "products": [
+        "Alpaquita: dotnet8-runtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dotnet8-runtime 8.0.31-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in dotnet8-runtime 8.0.31-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-69522",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-69522",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-69522",
+      "released": "2026-09-10T06:05:08Z",
+      "updated": "2026-09-30T11:05:00Z",
+      "cves": [
+        "CVE-2026-69522"
+      ],
+      "products": [
+        "Alpaquita: dotnet8-runtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dotnet8-runtime 8.0.31-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in dotnet8-runtime 8.0.31-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-71328",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-71328",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-71328",
+      "released": "2026-09-10T06:05:08Z",
+      "updated": "2026-09-30T11:05:00Z",
+      "cves": [
+        "CVE-2026-71328"
+      ],
+      "products": [
+        "Alpaquita: dotnet8-runtime"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dotnet8-runtime 8.0.31-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in dotnet8-runtime 8.0.31-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "BELL-CVE-2026-86227",
@@ -2441,6 +3357,43 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:66341",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: apr-util security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:66341",
+      "released": "2026-09-10T09:20:59Z",
+      "updated": "2026-11-05T15:42:28Z",
+      "cves": [
+        "CVE-2025-49506",
+        "CVE-2026-32327",
+        "CVE-2026-34501",
+        "CVE-2026-34502"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:66341"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        },
+        {
+          "t": "Ensure that the Redis server used by the application is deployed in a trusted, network-segregated environment and is not accessible to untrusted parties. Where…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21827-1",
@@ -6280,6 +7233,43 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:66392",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: apr-util security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:66392",
+      "released": "2026-09-10T13:16:29Z",
+      "updated": "2026-11-05T15:42:28Z",
+      "cves": [
+        "CVE-2025-49506",
+        "CVE-2026-32327",
+        "CVE-2026-34501",
+        "CVE-2026-34502"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:66392"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        },
+        {
+          "t": "Ensure that the Redis server used by the application is deployed in a trusted, network-segregated environment and is not accessible to untrusted parties. Where…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2026:66421",

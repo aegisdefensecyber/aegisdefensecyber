@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-17",
-  "count": 259,
+  "count": 536,
   "items": [
     {
       "id": "ELA-1825-1",
@@ -1251,6 +1251,103 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-FS45115",
+      "src": "cleanstart",
+      "title": "malicious GOSUMDB was capable of serving arbitrary module content not contained within the transparency log",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-FS45115.json",
+      "released": "2026-09-17T00:42:47Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-39822",
+        "CVE-2026-42505",
+        "CVE-2026-56855",
+        "CVE-2026-56864",
+        "CVE-2026-56865",
+        "CVE-2026-78662",
+        "CVE-2026-84445"
+      ],
+      "products": [
+        "CleanStart: atlantis"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in atlantis 0.47.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-DG14029",
+      "src": "cleanstart",
+      "title": "etcd is a distributed key-value store for the data of a distributed system",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-DG14029.json",
+      "released": "2026-09-17T00:47:17Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-47911",
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-52881",
+        "CVE-2025-58181",
+        "CVE-2025-58190",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27140",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32288",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-73500"
+      ],
+      "products": [
+        "CleanStart: eks-distro-kube-apiserver"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in eks-distro-kube-apiserver 1.34.2-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-GJ00206",
+      "src": "cleanstart",
+      "title": "Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-GJ00206.json",
+      "released": "2026-09-17T00:56:49Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-39822",
+        "CVE-2026-42505",
+        "CVE-2026-46603",
+        "CVE-2026-56855",
+        "CVE-2026-56864",
+        "CVE-2026-56865",
+        "CVE-2026-71556",
+        "CVE-2026-71557",
+        "CVE-2026-78662",
+        "CVE-2026-84303",
+        "CVE-2026-84304",
+        "CVE-2026-84445"
+      ],
+      "products": [
+        "CleanStart: gitea"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitea 1.27.2-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "msrc_CVE-2026-89900",
@@ -2875,6 +2972,86 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-GK72927",
+      "src": "cleanstart",
+      "title": "Issue summary: PBMAC1 parameters in PKCS#12 files are missing validation which can trigger a stack-based buffer overflow, invalid pointer or NULL pointer dereference during MAC verification",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-GK72927.json",
+      "released": "2026-09-17T01:07:20Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2018-0734",
+        "CVE-2018-0735",
+        "CVE-2019-1543",
+        "CVE-2019-1547",
+        "CVE-2019-1549",
+        "CVE-2019-1551",
+        "CVE-2019-1563",
+        "CVE-2020-1967",
+        "CVE-2020-1971",
+        "CVE-2021-23839",
+        "CVE-2021-23840",
+        "CVE-2021-23841",
+        "CVE-2021-3449",
+        "CVE-2021-3450",
+        "CVE-2021-3711",
+        "CVE-2021-3712",
+        "CVE-2021-4044",
+        "CVE-2022-0778",
+        "CVE-2022-1343",
+        "CVE-2022-1434",
+        "CVE-2022-1473",
+        "CVE-2022-2097",
+        "CVE-2022-3358",
+        "CVE-2022-3602",
+        "CVE-2022-3786",
+        "CVE-2022-3996",
+        "CVE-2022-4203",
+        "CVE-2022-4304",
+        "CVE-2022-4450",
+        "CVE-2023-0215",
+        "CVE-2023-0216",
+        "CVE-2023-0217",
+        "CVE-2023-0286",
+        "CVE-2023-0401",
+        "CVE-2023-0464",
+        "CVE-2023-0465",
+        "CVE-2023-1255",
+        "CVE-2023-2650",
+        "CVE-2023-2975",
+        "CVE-2023-3446",
+        "CVE-2023-3817",
+        "CVE-2023-5363",
+        "CVE-2023-5678",
+        "CVE-2023-6129",
+        "CVE-2023-6237",
+        "CVE-2024-0727",
+        "CVE-2024-2511",
+        "CVE-2024-4603",
+        "CVE-2024-4741",
+        "CVE-2024-5535",
+        "CVE-2024-6119",
+        "CVE-2024-9143",
+        "CVE-2025-11187",
+        "CVE-2025-15467",
+        "CVE-2025-15468",
+        "CVE-2025-15469",
+        "CVE-2025-66109",
+        "CVE-2025-68169",
+        "CVE-2025-69419",
+        "CVE-2025-69420"
+      ],
+      "products": [
+        "CleanStart: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 3.6.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "msrc_CVE-2026-89806",
@@ -5410,6 +5587,53 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:68504",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang-fips: Golang FIPS zeroed buffer",
+      "url": "https://access.redhat.com/errata/RHSA-2026:68504",
+      "released": "2026-09-17T05:05:32Z",
+      "updated": "2026-11-27T04:28:59Z",
+      "cves": [
+        "CVE-2024-9355",
+        "CVE-2024-45336",
+        "CVE-2025-22866",
+        "CVE-2025-68121",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-33810",
+        "CVE-2026-33818",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-42499",
+        "CVE-2026-42504",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:68504"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "ICSA-26-260-01",
       "src": "csaf_cisa",
       "vendor": "Bransys",
@@ -5935,6 +6159,24 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-92893",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Rubygem-foreman_ansible: ansible inventory api ignores view_hosts permission filters, exposes hidden parameters",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-92893",
+      "released": "2026-09-17T10:28:12Z",
+      "updated": "2026-11-13T17:17:20Z",
+      "cves": [
+        "CVE-2026-92893"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "Red Hat Red Hat Satellite 6"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "NCSC-2026-0383",
@@ -6518,6 +6760,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-92904",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Rubygem-foreman_remote_execution: job output readable without object-level view_job_invocations check",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-92904",
+      "released": "2026-09-17T12:42:57Z",
+      "updated": "2026-11-13T17:17:29Z",
+      "cves": [
+        "CVE-2026-92904"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "Red Hat Red Hat Satellite 6"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "ROOT-APP-NPM-CVE-2026-19693",
       "src": "osv_root",
       "vendor": "Root",
@@ -6621,6 +6881,22 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-103491",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-89418 affecting package python-tensorboard 2.16.2-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-89418",
+      "released": "2026-09-17T14:17:52Z",
+      "updated": "2026-09-28T05:39:54Z",
+      "cves": [
+        "CVE-2026-89418"
+      ],
+      "products": [
+        "Azure Linux: python-tensorboard"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21915-1",
@@ -6740,6 +7016,1122 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-102324",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90053 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90053",
+      "released": "2026-09-17T17:16:53Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90053"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102498",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90054 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90054",
+      "released": "2026-09-17T17:16:53Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90054"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102513",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90062 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90062",
+      "released": "2026-09-17T17:16:54Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90062"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102525",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90055 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90055",
+      "released": "2026-09-17T17:16:54Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90055"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102930",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90057 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90057",
+      "released": "2026-09-17T17:16:54Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90057"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102933",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90058 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90058",
+      "released": "2026-09-17T17:16:54Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90058"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102948",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90056 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90056",
+      "released": "2026-09-17T17:16:54Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90056"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101984",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90068 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90068",
+      "released": "2026-09-17T17:16:55Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90068"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102594",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90067 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90067",
+      "released": "2026-09-17T17:16:55Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90067"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102855",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90070 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90070",
+      "released": "2026-09-17T17:16:55Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90070"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102860",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90066 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90066",
+      "released": "2026-09-17T17:16:55Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90066"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102951",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90063 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90063",
+      "released": "2026-09-17T17:16:55Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90063"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101846",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90075 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90075",
+      "released": "2026-09-17T17:16:56Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90075"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101894",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90071 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90071",
+      "released": "2026-09-17T17:16:56Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90071"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102557",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90073 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90073",
+      "released": "2026-09-17T17:16:56Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90073"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102767",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90074 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90074",
+      "released": "2026-09-17T17:16:56Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90074"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102920",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90072 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90072",
+      "released": "2026-09-17T17:16:56Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90072"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102536",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90078 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90078",
+      "released": "2026-09-17T17:16:57Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90078"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102839",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90081 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90081",
+      "released": "2026-09-17T17:16:57Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90081"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102227",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90088 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90088",
+      "released": "2026-09-17T17:16:59Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90088"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102075",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90090 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90090",
+      "released": "2026-09-17T17:17:00Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90090"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102689",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90093 affecting package kernel 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90093",
+      "released": "2026-09-17T17:17:00Z",
+      "updated": "2026-10-22T05:35:55Z",
+      "cves": [
+        "CVE-2026-90093"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102777",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90091 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90091",
+      "released": "2026-09-17T17:17:00Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90091"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102993",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90092 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90092",
+      "released": "2026-09-17T17:17:00Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90092"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101861",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90102 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90102",
+      "released": "2026-09-17T17:17:01Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90102"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102644",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90103 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90103",
+      "released": "2026-09-17T17:17:02Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90103"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102797",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90107 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90107",
+      "released": "2026-09-17T17:17:02Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90107"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102848",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90108 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90108",
+      "released": "2026-09-17T17:17:02Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90108"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103026",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90110 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90110",
+      "released": "2026-09-17T17:17:02Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90110"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102068",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90115 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90115",
+      "released": "2026-09-17T17:17:03Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90115"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102212",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90114 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90114",
+      "released": "2026-09-17T17:17:03Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90114"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102000",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90119 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90119",
+      "released": "2026-09-17T17:17:04Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90119"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102216",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90124 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90124",
+      "released": "2026-09-17T17:17:04Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90124"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102230",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90125 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90125",
+      "released": "2026-09-17T17:17:04Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90125"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102447",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90122 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90122",
+      "released": "2026-09-17T17:17:04Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90122"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102510",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90126 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90126",
+      "released": "2026-09-17T17:17:04Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90126"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102032",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90130 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90130",
+      "released": "2026-09-17T17:17:05Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90130"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102287",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90128 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90128",
+      "released": "2026-09-17T17:17:05Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90128"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102327",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90141 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90141",
+      "released": "2026-09-17T17:17:06Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90141"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102387",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90139 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90139",
+      "released": "2026-09-17T17:17:06Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90139"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102567",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90140 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90140",
+      "released": "2026-09-17T17:17:06Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90140"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102794",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90137 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90137",
+      "released": "2026-09-17T17:17:06Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90137"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102017",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90143 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90143",
+      "released": "2026-09-17T17:17:07Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90143"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102012",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90158 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90158",
+      "released": "2026-09-17T17:17:08Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90158"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102458",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90153 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90153",
+      "released": "2026-09-17T17:17:08Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90153"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102590",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90157 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90157",
+      "released": "2026-09-17T17:17:08Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90157"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102821",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90151 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90151",
+      "released": "2026-09-17T17:17:08Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90151"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102138",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90165 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90165",
+      "released": "2026-09-17T17:17:09Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90165"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102935",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90160 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90160",
+      "released": "2026-09-17T17:17:09Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90160"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102066",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90170 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90170",
+      "released": "2026-09-17T17:17:10Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90170"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102542",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90169 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90169",
+      "released": "2026-09-17T17:17:10Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90169"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-102810",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -6754,6 +8146,4760 @@
         "Azure Linux: kernel"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-102453",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90175 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90175",
+      "released": "2026-09-17T17:17:11Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90175"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102714",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90176 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90176",
+      "released": "2026-09-17T17:17:11Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90176"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102846",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90179 affecting package kernel 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90179",
+      "released": "2026-09-17T17:17:11Z",
+      "updated": "2026-10-22T05:35:55Z",
+      "cves": [
+        "CVE-2026-90179"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102269",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90180 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90180",
+      "released": "2026-09-17T17:17:12Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90180"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102302",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90184 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90184",
+      "released": "2026-09-17T17:17:12Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90184"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102582",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90185 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90185",
+      "released": "2026-09-17T17:17:12Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90185"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102141",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90189 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90189",
+      "released": "2026-09-17T17:17:13Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90189"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102242",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90188 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90188",
+      "released": "2026-09-17T17:17:13Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90188"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102345",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90190 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90190",
+      "released": "2026-09-17T17:17:13Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90190"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103017",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90186 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90186",
+      "released": "2026-09-17T17:17:13Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90186"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102036",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90194 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90194",
+      "released": "2026-09-17T17:17:14Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90194"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102272",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90196 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90196",
+      "released": "2026-09-17T17:17:14Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90196"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102422",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90199 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90199",
+      "released": "2026-09-17T17:17:14Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90199"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102738",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90198 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90198",
+      "released": "2026-09-17T17:17:14Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90198"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102926",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90200 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90200",
+      "released": "2026-09-17T17:17:14Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90200"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102374",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90203 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90203",
+      "released": "2026-09-17T17:17:15Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90203"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102687",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90207 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90207",
+      "released": "2026-09-17T17:17:15Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90207"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102899",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90202 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90202",
+      "released": "2026-09-17T17:17:15Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90202"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102305",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90214 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90214",
+      "released": "2026-09-17T17:17:16Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90214"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102368",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90209 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90209",
+      "released": "2026-09-17T17:17:16Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90209"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102449",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90216 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90216",
+      "released": "2026-09-17T17:17:16Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90216"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102059",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90224 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90224",
+      "released": "2026-09-17T17:17:17Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90224"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102122",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90221 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90221",
+      "released": "2026-09-17T17:17:17Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90221"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102585",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90218 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90218",
+      "released": "2026-09-17T17:17:17Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90218"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102623",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90219 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90219",
+      "released": "2026-09-17T17:17:17Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90219"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102693",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90222 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90222",
+      "released": "2026-09-17T17:17:17Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90222"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102746",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90223 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90223",
+      "released": "2026-09-17T17:17:17Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90223"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101963",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90227 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90227",
+      "released": "2026-09-17T17:17:18Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90227"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102015",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90225 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90225",
+      "released": "2026-09-17T17:17:18Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90225"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102093",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90226 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90226",
+      "released": "2026-09-17T17:17:18Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90226"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102158",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90228 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90228",
+      "released": "2026-09-17T17:17:18Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90228"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102626",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90230 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90230",
+      "released": "2026-09-17T17:17:18Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90230"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102729",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90229 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90229",
+      "released": "2026-09-17T17:17:18Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90229"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101885",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90235 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90235",
+      "released": "2026-09-17T17:17:19Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90235"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102564",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90248 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90248",
+      "released": "2026-09-17T17:17:20Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90248"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102891",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90245 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90245",
+      "released": "2026-09-17T17:17:20Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90245"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101909",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90256 affecting package kernel 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90256",
+      "released": "2026-09-17T17:17:21Z",
+      "updated": "2026-10-22T05:35:55Z",
+      "cves": [
+        "CVE-2026-90256"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102335",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90253 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90253",
+      "released": "2026-09-17T17:17:21Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90253"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102443",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90251 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90251",
+      "released": "2026-09-17T17:17:21Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90251"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102702",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90249 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90249",
+      "released": "2026-09-17T17:17:21Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90249"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102869",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90255 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90255",
+      "released": "2026-09-17T17:17:21Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90255"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102884",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90254 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90254",
+      "released": "2026-09-17T17:17:21Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90254"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102251",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90257 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90257",
+      "released": "2026-09-17T17:17:22Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90257"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102291",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90264 affecting package kernel 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90264",
+      "released": "2026-09-17T17:17:22Z",
+      "updated": "2026-10-22T05:35:55Z",
+      "cves": [
+        "CVE-2026-90264"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102441",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90262 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90262",
+      "released": "2026-09-17T17:17:22Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90262"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102915",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90274 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90274",
+      "released": "2026-09-17T17:17:23Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90274"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101939",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90280 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90280",
+      "released": "2026-09-17T17:17:24Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90280"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102404",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90281 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90281",
+      "released": "2026-09-17T17:17:24Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90281"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102684",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90275 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90275",
+      "released": "2026-09-17T17:17:24Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90275"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102824",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90279 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90279",
+      "released": "2026-09-17T17:17:24Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90279"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102852",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90282 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90282",
+      "released": "2026-09-17T17:17:24Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90282"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101912",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90284 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90284",
+      "released": "2026-09-17T17:17:25Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90284"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102119",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90286 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90286",
+      "released": "2026-09-17T17:17:25Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90286"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102428",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90287 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90287",
+      "released": "2026-09-17T17:17:25Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90287"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102572",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90285 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90285",
+      "released": "2026-09-17T17:17:25Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90285"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102600",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90283 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90283",
+      "released": "2026-09-17T17:17:25Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90283"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101852",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90294 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90294",
+      "released": "2026-09-17T17:17:26Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90294"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101888",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90292 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90292",
+      "released": "2026-09-17T17:17:26Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90292"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101996",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90293 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90293",
+      "released": "2026-09-17T17:17:26Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90293"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102245",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90295 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90295",
+      "released": "2026-09-17T17:17:26Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90295"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102461",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90296 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90296",
+      "released": "2026-09-17T17:17:26Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90296"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103001",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90290 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90290",
+      "released": "2026-09-17T17:17:26Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90290"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101873",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90303 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90303",
+      "released": "2026-09-17T17:17:27Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90303"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102332",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90297 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90297",
+      "released": "2026-09-17T17:17:27Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90297"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102758",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90298 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90298",
+      "released": "2026-09-17T17:17:27Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90298"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102873",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90302 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90302",
+      "released": "2026-09-17T17:17:27Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90302"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101903",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90307 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90307",
+      "released": "2026-09-17T17:17:28Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90307"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102878",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90309 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90309",
+      "released": "2026-09-17T17:17:28Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90309"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101879",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90319 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90319",
+      "released": "2026-09-17T17:17:29Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90319"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102039",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90314 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90314",
+      "released": "2026-09-17T17:17:29Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90314"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102483",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90313 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90313",
+      "released": "2026-09-17T17:17:29Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90313"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102612",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90318 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90318",
+      "released": "2026-09-17T17:17:29Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90318"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102665",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90316 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90316",
+      "released": "2026-09-17T17:17:29Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90316"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102555",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90325 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90325",
+      "released": "2026-09-17T17:17:30Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90325"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102635",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90327 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90327",
+      "released": "2026-09-17T17:17:30Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90327"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101969",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90329 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90329",
+      "released": "2026-09-17T17:17:31Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90329"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102474",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90334 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90334",
+      "released": "2026-09-17T17:17:31Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90334"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101927",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90341 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90341",
+      "released": "2026-09-17T17:17:32Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90341"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102615",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90348 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90348",
+      "released": "2026-09-17T17:17:33Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90348"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101981",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90353 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90353",
+      "released": "2026-09-17T17:17:34Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90353"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102047",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90352 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90352",
+      "released": "2026-09-17T17:17:34Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90352"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102173",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90354 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90354",
+      "released": "2026-09-17T17:17:34Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90354"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102236",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90360 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90360",
+      "released": "2026-09-17T17:17:34Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90360"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103011",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90357 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90357",
+      "released": "2026-09-17T17:17:34Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90357"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102003",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90361 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90361",
+      "released": "2026-09-17T17:17:35Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90361"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102678",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90362 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90362",
+      "released": "2026-09-17T17:17:35Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90362"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102923",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90366 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90366",
+      "released": "2026-09-17T17:17:35Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90366"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102984",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90364 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90364",
+      "released": "2026-09-17T17:17:35Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90364"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102381",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90372 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90372",
+      "released": "2026-09-17T17:17:36Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90372"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102938",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90370 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90370",
+      "released": "2026-09-17T17:17:36Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90370"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102134",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90386 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90386",
+      "released": "2026-09-17T17:17:37Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90386"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102384",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90382 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90382",
+      "released": "2026-09-17T17:17:37Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90382"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102897",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90378 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90378",
+      "released": "2026-09-17T17:17:37Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90378"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101858",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90392 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90392",
+      "released": "2026-09-17T17:17:38Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90392"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101897",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90393 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90393",
+      "released": "2026-09-17T17:17:38Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90393"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102071",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90388 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90388",
+      "released": "2026-09-17T17:17:38Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90388"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102470",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90387 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90387",
+      "released": "2026-09-17T17:17:38Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90387"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102867",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90391 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90391",
+      "released": "2026-09-17T17:17:38Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90391"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102234",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90394 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90394",
+      "released": "2026-09-17T17:17:39Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90394"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102255",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90395 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90395",
+      "released": "2026-09-17T17:17:39Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90395"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102663",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90407 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90407",
+      "released": "2026-09-17T17:17:40Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90407"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102788",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90410 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90410",
+      "released": "2026-09-17T17:17:40Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90410"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102909",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90403 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90403",
+      "released": "2026-09-17T17:17:40Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90403"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102372",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90411 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90411",
+      "released": "2026-09-17T17:17:41Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90411"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101966",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90414 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90414",
+      "released": "2026-09-17T17:17:43Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90414"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101978",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90413 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90413",
+      "released": "2026-09-17T17:17:43Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90413"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102716",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90415 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90415",
+      "released": "2026-09-17T17:17:45Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90415"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103044",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90416 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90416",
+      "released": "2026-09-17T17:17:45Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90416"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102339",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90420 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90420",
+      "released": "2026-09-17T17:17:46Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90420"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102522",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90418 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90418",
+      "released": "2026-09-17T17:17:46Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90418"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102722",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90419 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90419",
+      "released": "2026-09-17T17:17:46Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90419"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102194",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90435 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90435",
+      "released": "2026-09-17T17:17:48Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90435"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102783",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90431 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90431",
+      "released": "2026-09-17T17:17:48Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90431"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102995",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-90434 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90434",
+      "released": "2026-09-17T17:17:48Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-90434"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101867",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92477 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92477",
+      "released": "2026-09-17T17:17:49Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92477"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102500",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92476 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92476",
+      "released": "2026-09-17T17:17:49Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92476"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102180",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92484 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92484",
+      "released": "2026-09-17T17:17:50Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92484"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102357",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92485 affecting package kernel 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92485",
+      "released": "2026-09-17T17:17:50Z",
+      "updated": "2026-10-22T05:35:55Z",
+      "cves": [
+        "CVE-2026-92485"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102143",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92489 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92489",
+      "released": "2026-09-17T17:17:51Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92489"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102312",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92496 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92496",
+      "released": "2026-09-17T17:17:51Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92496"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102434",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92495 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92495",
+      "released": "2026-09-17T17:17:51Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92495"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102540",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92494 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92494",
+      "released": "2026-09-17T17:17:51Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92494"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102597",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92490 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92490",
+      "released": "2026-09-17T17:17:51Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92490"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101942",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92502 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92502",
+      "released": "2026-09-17T17:17:52Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92502"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101945",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92504 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92504",
+      "released": "2026-09-17T17:17:52Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92504"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102053",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92501 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92501",
+      "released": "2026-09-17T17:17:52Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92501"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102104",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92503 affecting package kernel 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92503",
+      "released": "2026-09-17T17:17:52Z",
+      "updated": "2026-10-22T05:35:55Z",
+      "cves": [
+        "CVE-2026-92503"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102476",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92497 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92497",
+      "released": "2026-09-17T17:17:52Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92497"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102903",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92498 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92498",
+      "released": "2026-09-17T17:17:52Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92498"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101864",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92506 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92506",
+      "released": "2026-09-17T17:17:53Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92506"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102183",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92509 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92509",
+      "released": "2026-09-17T17:17:53Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92509"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102507",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92512 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92512",
+      "released": "2026-09-17T17:17:53Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92512"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102609",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92508 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92508",
+      "released": "2026-09-17T17:17:53Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92508"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102726",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92507 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92507",
+      "released": "2026-09-17T17:17:53Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92507"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102734",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92511 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92511",
+      "released": "2026-09-17T17:17:53Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92511"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102812",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92510 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92510",
+      "released": "2026-09-17T17:17:53Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92510"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102210",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92514 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92514",
+      "released": "2026-09-17T17:17:54Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92514"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101924",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92522 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92522",
+      "released": "2026-09-17T17:17:55Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92522"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102224",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92523 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92523",
+      "released": "2026-09-17T17:17:55Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92523"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102617",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92525 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92525",
+      "released": "2026-09-17T17:17:55Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92525"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102741",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92524 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92524",
+      "released": "2026-09-17T17:17:55Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92524"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102986",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-92521 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-92521",
+      "released": "2026-09-17T17:17:55Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-92521"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102126",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93039 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93039",
+      "released": "2026-09-17T17:17:56Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93039"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103023",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93037 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93037",
+      "released": "2026-09-17T17:17:56Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93037"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101988",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93042 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93042",
+      "released": "2026-09-17T17:17:57Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93042"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102114",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93046 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93046",
+      "released": "2026-09-17T17:17:57Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93046"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102329",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93040 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93040",
+      "released": "2026-09-17T17:17:57Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93040"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102653",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93041 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93041",
+      "released": "2026-09-17T17:17:57Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93041"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101948",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93051 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93051",
+      "released": "2026-09-17T17:17:58Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93051"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102063",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93048 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93048",
+      "released": "2026-09-17T17:17:58Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93048"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102318",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93050 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93050",
+      "released": "2026-09-17T17:17:58Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93050"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102587",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93054 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93054",
+      "released": "2026-09-17T17:17:58Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93054"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102629",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93049 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93049",
+      "released": "2026-09-17T17:17:58Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93049"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102750",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93052 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93052",
+      "released": "2026-09-17T17:17:58Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93052"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103004",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93053 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93053",
+      "released": "2026-09-17T17:17:58Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93053"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102320",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93061 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93061",
+      "released": "2026-09-17T17:17:59Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93061"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102602",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93055 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93055",
+      "released": "2026-09-17T17:17:59Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93055"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102638",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93056 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93056",
+      "released": "2026-09-17T17:17:59Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93056"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103031",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93062 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93062",
+      "released": "2026-09-17T17:17:59Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93062"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102128",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93064 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93064",
+      "released": "2026-09-17T17:18:00Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93064"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102167",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93065 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93065",
+      "released": "2026-09-17T17:18:00Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93065"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102705",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93063 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93063",
+      "released": "2026-09-17T17:18:00Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93063"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102731",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93067 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93067",
+      "released": "2026-09-17T17:18:00Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93067"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102342",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93072 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93072",
+      "released": "2026-09-17T17:18:01Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93072"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102710",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93073 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93073",
+      "released": "2026-09-17T17:18:01Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93073"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101957",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93085 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93085",
+      "released": "2026-09-17T17:18:02Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93085"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102044",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93084 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93084",
+      "released": "2026-09-17T17:18:02Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93084"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102410",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93086 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93086",
+      "released": "2026-09-17T17:18:02Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93086"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102548",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93089 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93089",
+      "released": "2026-09-17T17:18:02Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93089"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103038",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93081 affecting package kernel 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93081",
+      "released": "2026-09-17T17:18:02Z",
+      "updated": "2026-10-22T05:35:55Z",
+      "cves": [
+        "CVE-2026-93081"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101891",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93098 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93098",
+      "released": "2026-09-17T17:18:03Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93098"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102527",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93092 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93092",
+      "released": "2026-09-17T17:18:03Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93092"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102660",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93095 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93095",
+      "released": "2026-09-17T17:18:03Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93095"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102980",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93097 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93097",
+      "released": "2026-09-17T17:18:03Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93097"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102099",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93103 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93103",
+      "released": "2026-09-17T17:18:04Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93103"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102297",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93102 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93102",
+      "released": "2026-09-17T17:18:04Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93102"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102942",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93101 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93101",
+      "released": "2026-09-17T17:18:04Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93101"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101882",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93109 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93109",
+      "released": "2026-09-17T17:18:05Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93109"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101954",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93107 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93107",
+      "released": "2026-09-17T17:18:05Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93107"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102147",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93108 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93108",
+      "released": "2026-09-17T17:18:05Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93108"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102186",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93114 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93114",
+      "released": "2026-09-17T17:18:05Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93114"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102350",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93110 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93110",
+      "released": "2026-09-17T17:18:05Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93110"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102006",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93115 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93115",
+      "released": "2026-09-17T17:18:06Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93115"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102150",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93118 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93118",
+      "released": "2026-09-17T17:18:06Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93118"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102279",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93117 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93117",
+      "released": "2026-09-17T17:18:06Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93117"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102551",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93120 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93120",
+      "released": "2026-09-17T17:18:06Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93120"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102648",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93131 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93131",
+      "released": "2026-09-17T17:18:07Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93131"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102675",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93126 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93126",
+      "released": "2026-09-17T17:18:07Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93126"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102698",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93130 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93130",
+      "released": "2026-09-17T17:18:07Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93130"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102050",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93136 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93136",
+      "released": "2026-09-17T17:18:08Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93136"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102888",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93138 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93138",
+      "released": "2026-09-17T17:18:08Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93138"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102945",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93140 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93140",
+      "released": "2026-09-17T17:18:08Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93140"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102962",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93137 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93137",
+      "released": "2026-09-17T17:18:08Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93137"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-101960",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93145 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93145",
+      "released": "2026-09-17T17:18:09Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93145"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102078",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93141 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93141",
+      "released": "2026-09-17T17:18:09Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93141"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102708",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93142 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93142",
+      "released": "2026-09-17T17:18:09Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93142"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102116",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93151 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93151",
+      "released": "2026-09-17T17:18:10Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93151"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102222",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93152 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93152",
+      "released": "2026-09-17T17:18:10Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93152"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102314",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93155 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93155",
+      "released": "2026-09-17T17:18:10Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93155"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102957",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93149 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93149",
+      "released": "2026-09-17T17:18:10Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93149"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103007",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93156 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93156",
+      "released": "2026-09-17T17:18:10Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93156"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102084",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93161 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93161",
+      "released": "2026-09-17T17:18:11Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93161"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102162",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93158 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93158",
+      "released": "2026-09-17T17:18:11Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93158"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102192",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93160 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93160",
+      "released": "2026-09-17T17:18:11Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93160"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102479",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93159 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93159",
+      "released": "2026-09-17T17:18:11Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93159"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102876",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93167 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93167",
+      "released": "2026-09-17T17:18:12Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93167"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103028",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93170 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93170",
+      "released": "2026-09-17T17:18:12Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93170"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102029",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93178 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93178",
+      "released": "2026-09-17T17:18:13Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93178"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102294",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93177 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93177",
+      "released": "2026-09-17T17:18:13Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93177"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102455",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93174 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93174",
+      "released": "2026-09-17T17:18:13Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93174"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102152",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93185 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93185",
+      "released": "2026-09-17T17:18:14Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93185"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102719",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93183 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93183",
+      "released": "2026-09-17T17:18:14Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93183"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102744",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93182 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93182",
+      "released": "2026-09-17T17:18:14Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93182"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102762",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93188 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93188",
+      "released": "2026-09-17T17:18:14Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93188"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102807",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93191 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93191",
+      "released": "2026-09-17T17:18:15Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93191"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103013",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93189 affecting package kernel 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93189",
+      "released": "2026-09-17T17:18:15Z",
+      "updated": "2026-10-22T05:35:55Z",
+      "cves": [
+        "CVE-2026-93189"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-102131",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93203 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93203",
+      "released": "2026-09-17T17:18:16Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93203"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-103035",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-93204 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-93204",
+      "released": "2026-09-17T17:18:16Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-93204"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21873-1",

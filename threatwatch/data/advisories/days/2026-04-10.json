@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-10",
-  "count": 66,
+  "count": 83,
   "items": [
     {
       "id": "openSUSE-SU-2026:10523-1",
@@ -197,6 +197,27 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-AY21238",
+      "src": "cleanstart",
+      "title": "security issue was discovered in Kubernetes where a malicious or compromised pod could bypass network restrictions enforced by network policies during namespace deletion",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-AY21238.json",
+      "released": "2026-04-10T00:37:58Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2024-7598"
+      ],
+      "products": [
+        "CleanStart: kubernetes-dns-node-cache"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kubernetes-dns-node-cache 1.26.8-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-YB93719",
       "src": "cleanstart",
       "title": "url",
@@ -383,6 +404,56 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-BM53321",
+      "src": "cleanstart",
+      "title": "attacker can pass a malicious malformed token which causes unexpected memory to be consumed during parsing",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-BM53321.json",
+      "released": "2026-04-10T00:51:58Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-22868",
+        "CVE-2025-47911",
+        "CVE-2025-47913",
+        "CVE-2025-47914",
+        "CVE-2025-58181",
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-58190",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725",
+        "CVE-2025-61726",
+        "CVE-2025-61727",
+        "CVE-2025-61728",
+        "CVE-2025-61729",
+        "CVE-2025-61730",
+        "CVE-2025-68121",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33186"
+      ],
+      "products": [
+        "CleanStart: kube-state-metrics"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kube-state-metrics 2.16.0-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-IN87004",
@@ -821,6 +892,33 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-HM40094",
+      "src": "cleanstart",
+      "title": "filippo",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-HM40094.json",
+      "released": "2026-04-10T01:03:28Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-68121",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-26958",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-33186"
+      ],
+      "products": [
+        "CleanStart: jitsucom-bulker"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jitsucom-bulker 2.11.913-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-TW35447",
       "src": "cleanstart",
       "title": "Security fixes for ghsa-f6x5-jh6r-wrfv, ghsa-j5w8-q4qc-rx2x applied in versions: 25.10.0-r1",
@@ -891,6 +989,24 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-DP55969",
+      "src": "cleanstart",
+      "title": "Security fixes for ghsa-389x-839f-4rhx, ghsa-3p8m-j85q-pgmj, ghsa-4cx2-fc23-5wg6, ghsa-4g8c-wm8x-jfhw, ghsa-735f-pc8j-v9w8, ghsa-fghv-69vj-qj49, ghsa-prj3-ccx8-p6x4, ghsa-xq3w-v528-46rv applied in versions: 0.12.0-r16",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-DP55969.json",
+      "released": "2026-04-10T01:04:00Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "products": [
+        "CleanStart: kserve-modelmesh"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kserve-modelmesh 0.12.0-r16",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-OZ32100",
@@ -981,6 +1097,38 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-DM93480",
+      "src": "cleanstart",
+      "title": "During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-DM93480.json",
+      "released": "2026-04-10T01:06:00Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-22868",
+        "CVE-2025-47911",
+        "CVE-2025-58190",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-33540",
+        "CVE-2026-33810",
+        "CVE-2026-35172"
+      ],
+      "products": [
+        "CleanStart: lvm-driver"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in lvm-driver 1.7.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:20501-1",
@@ -1075,6 +1223,37 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:21216-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 4 for SUSE Linux Enterprise 16)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621216-1/",
+      "released": "2026-04-10T08:14:40Z",
+      "updated": "2026-09-16T19:41:38Z",
+      "cves": [
+        "CVE-2025-71120",
+        "CVE-2026-22999",
+        "CVE-2026-23074",
+        "CVE-2026-23111",
+        "CVE-2026-23209"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "SUSE-SU-2026:1248-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -1106,6 +1285,33 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:21224-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for corosync",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621224-1/",
+      "released": "2026-04-10T11:19:52Z",
+      "updated": "2026-09-16T19:41:46Z",
+      "cves": [
+        "CVE-2026-35091",
+        "CVE-2026-35092"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:20505-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1131,6 +1337,61 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:21285-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for corosync",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621285-1/",
+      "released": "2026-04-10T11:20:26Z",
+      "updated": "2026-09-16T19:42:38Z",
+      "cves": [
+        "CVE-2026-35091",
+        "CVE-2026-35092"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise High Availability Extension 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21165-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python-cryptography",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621165-1/",
+      "released": "2026-04-10T11:26:32Z",
+      "updated": "2026-09-16T19:41:00Z",
+      "cves": [
+        "CVE-2026-26007",
+        "CVE-2026-34073"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:20506-1",
@@ -1349,6 +1610,116 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:21166-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for cockpit",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621166-1/",
+      "released": "2026-04-10T11:42:11Z",
+      "updated": "2026-09-16T19:41:01Z",
+      "cves": [
+        "CVE-2026-25547",
+        "CVE-2026-26996"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21168-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for cockpit-machines",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621168-1/",
+      "released": "2026-04-10T11:53:13Z",
+      "updated": "2026-09-16T19:41:03Z",
+      "cves": [
+        "CVE-2026-25547",
+        "CVE-2026-26996"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21167-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for cockpit-podman",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621167-1/",
+      "released": "2026-04-10T11:54:16Z",
+      "updated": "2026-09-16T19:41:02Z",
+      "cves": [
+        "CVE-2026-25547",
+        "CVE-2026-26996"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21113-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for NetworkManager",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621113-1/",
+      "released": "2026-04-10T12:30:19Z",
+      "updated": "2026-09-16T19:40:17Z",
+      "cves": [
+        "CVE-2025-9615"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "SUSE-SU-2026:1254-1",
@@ -1600,6 +1971,59 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:21094-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for pcre2",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621094-1/",
+      "released": "2026-04-10T18:27:30Z",
+      "updated": "2026-09-16T19:39:59Z",
+      "cves": [
+        "CVE-2025-58050"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.2"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21172-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for pcre2",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621172-1/",
+      "released": "2026-04-10T18:27:30Z",
+      "updated": "2026-09-16T19:41:06Z",
+      "cves": [
+        "CVE-2025-58050"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:20512-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1624,6 +2048,61 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:21095-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for sqlite3",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621095-1/",
+      "released": "2026-04-10T18:50:16Z",
+      "updated": "2026-09-16T19:40:00Z",
+      "cves": [
+        "CVE-2025-70873",
+        "CVE-2025-7709"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.2"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21173-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for sqlite3",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621173-1/",
+      "released": "2026-04-10T18:50:16Z",
+      "updated": "2026-09-16T19:41:07Z",
+      "cves": [
+        "CVE-2025-70873",
+        "CVE-2025-7709"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:20513-1",

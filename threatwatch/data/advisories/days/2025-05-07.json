@@ -1,8 +1,35 @@
 {
   "schemaVersion": 1,
   "date": "2025-05-07",
-  "count": 2,
+  "count": 5,
   "items": [
+    {
+      "id": "RHSA-2025:4658",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: libtiff security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:4658",
+      "released": "2025-05-07T09:46:34Z",
+      "updated": "2026-11-05T06:36:40Z",
+      "cves": [
+        "CVE-2017-17095"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)",
+        "Red Hat Enterprise Linux CRB (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:4658"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
     {
       "id": "ESSA-2025:2931",
       "src": "csaf_opensuse",
@@ -28,6 +55,70 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:4667",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang: net/netip: Unexpected behavior from Is methods for IPv4-mapped IPv6 addresses",
+      "url": "https://access.redhat.com/errata/RHSA-2025:4667",
+      "released": "2025-05-07T12:55:17Z",
+      "updated": "2026-11-27T04:28:48Z",
+      "cves": [
+        "CVE-2024-24790",
+        "CVE-2024-45336",
+        "CVE-2025-22866"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.7,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer to: https://access.redhat.com/articles/2789521 For supported configurations, re…",
+          "u": "https://access.redhat.com/errata/RHSA-2025:4667"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2025:4666",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang: net/http: net/http: sensitive headers incorrectly sent after cross-domain redirect",
+      "url": "https://access.redhat.com/errata/RHSA-2025:4666",
+      "released": "2025-05-07T16:17:54Z",
+      "updated": "2026-11-27T04:28:48Z",
+      "cves": [
+        "CVE-2024-45336",
+        "CVE-2025-22866",
+        "CVE-2025-22868",
+        "CVE-2025-22869",
+        "CVE-2025-30204"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released erratas are relevant and have been applied to your system.",
+          "u": "https://access.redhat.com/errata/RHSA-2025:4666"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "To mitigate this vulnerability, it is recommended to pre-validate any payloads passed to `go-jose` to check that they do not contain an excessive amount of `.` characters.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "WID-SEC-W-2025-0975",

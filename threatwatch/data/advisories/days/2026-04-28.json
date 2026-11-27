@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-28",
-  "count": 43,
+  "count": 45,
   "items": [
     {
       "id": "ICSA-26-125-01",
@@ -843,6 +843,57 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:11329",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: webkit2gtk3 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:11329",
+      "released": "2026-04-28T07:40:56Z",
+      "updated": "2026-11-05T15:51:43Z",
+      "cves": [
+        "CVE-2025-43213",
+        "CVE-2025-43214",
+        "CVE-2025-43457",
+        "CVE-2025-43511",
+        "CVE-2025-46299",
+        "CVE-2026-20608",
+        "CVE-2026-20635",
+        "CVE-2026-20636",
+        "CVE-2026-20643",
+        "CVE-2026-20644",
+        "CVE-2026-20652",
+        "CVE-2026-20664",
+        "CVE-2026-20665",
+        "CVE-2026-20676",
+        "CVE-2026-20691",
+        "CVE-2026-28857",
+        "CVE-2026-28859",
+        "CVE-2026-28871"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream EUS (v.9.6)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:11329"
+        },
+        {
+          "t": "Do not process or load untrusted web content with WebKitGTK. In Red Hat Enterprise Linux 7, the following packages require WebKitGTK4: evolution-data-server, g…",
+          "u": null
+        },
+        {
+          "t": "Red Hat has investigated whether a possible mitigation exists for this issue, and has not been able to identify a practical example. Please update the affected…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BIT-activemq-2026-41043",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -1025,6 +1076,33 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:20608-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for glibc-livepatches",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620608-1/",
+      "released": "2026-04-28T16:18:32Z",
+      "updated": "2026-09-16T19:33:20Z",
+      "cves": [
+        "CVE-2026-0861"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "SUSE-SU-2026:1648-1",

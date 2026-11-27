@@ -1,8 +1,34 @@
 {
   "schemaVersion": 1,
   "date": "2025-07-07",
-  "count": 6,
+  "count": 11,
   "items": [
+    {
+      "id": "RHSA-2025:10353",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: socat security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10353",
+      "released": "2025-07-07T02:52:30Z",
+      "updated": "2026-11-05T13:35:49Z",
+      "cves": [
+        "CVE-2024-54661"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10353"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
     {
       "id": "BELL-CVE-2025-38205",
       "src": "osv_bellsoft",
@@ -28,6 +54,67 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2025-38206",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2025-38206",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2025-38206",
+      "released": "2025-07-07T06:00:03Z",
+      "updated": "2026-10-06T20:01:59Z",
+      "cves": [
+        "CVE-2025-38206"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.189-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2025:10383",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: sudo security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10383",
+      "released": "2025-07-07T09:01:16Z",
+      "updated": "2026-11-05T14:35:26Z",
+      "cves": [
+        "CVE-2025-32462"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.0,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS EUS EXTENSION (v.8.4)",
+        "Red Hat Enterprise Linux BaseOS AUS (v.8.4)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10383"
+        },
+        {
+          "t": "For environments using sudoers files: Remove rules defined in sudoers files that are for any system other than the local system. For environments using LDAP: U…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2025:10403",
@@ -88,6 +175,68 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10518",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: sudo security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10518",
+      "released": "2025-07-07T17:11:07Z",
+      "updated": "2026-11-05T14:35:26Z",
+      "cves": [
+        "CVE-2025-32462"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.0,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS AUS (v. 8.2)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10518"
+        },
+        {
+          "t": "For environments using sudoers files: Remove rules defined in sudoers files that are for any system other than the local system. For environments using LDAP: U…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2025:10520",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: sudo security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10520",
+      "released": "2025-07-07T18:20:02Z",
+      "updated": "2026-11-05T14:35:27Z",
+      "cves": [
+        "CVE-2025-32462"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.0,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS AUS (v.8.6)",
+        "Red Hat Enterprise Linux BaseOS E4S (v.8.6)",
+        "Red Hat Enterprise Linux BaseOS TUS (v.8.6)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10520"
+        },
+        {
+          "t": "For environments using sudoers files: Remove rules defined in sudoers files that are for any system other than the local system. For environments using LDAP: U…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "WID-SEC-W-2025-1468",

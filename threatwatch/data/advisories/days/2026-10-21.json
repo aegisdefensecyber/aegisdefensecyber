@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-21",
-  "count": 216,
+  "count": 221,
   "items": [
     {
       "id": "ELA-1853-1",
@@ -1231,6 +1231,36 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
+      "src": "gitlab",
+      "vendor": "GitLab",
+      "title": "GitLab Critical Patch Release: 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10, 18.11.13",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
+      "released": "2026-10-21T00:00:00Z",
+      "updated": "2026-10-21T00:00:00Z",
+      "cves": [
+        "CVE-2026-103515",
+        "CVE-2026-105711",
+        "CVE-2026-105777",
+        "CVE-2026-110264",
+        "CVE-2026-112212",
+        "CVE-2026-112326",
+        "CVE-2026-112378",
+        "CVE-2026-12664",
+        "CVE-2026-13319",
+        "CVE-2026-14288",
+        "CVE-2026-15723",
+        "CVE-2026-16255"
+      ],
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/"
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ALSA-2026:86594",
@@ -3220,6 +3250,38 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-109992",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-111943 affecting package gcc 13.2.0-7",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111943",
+      "released": "2026-10-21T01:17:20Z",
+      "updated": "2026-10-27T05:36:16Z",
+      "cves": [
+        "CVE-2026-111943"
+      ],
+      "products": [
+        "Azure Linux: gcc"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-110082",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-111943 affecting package python-tensorboard 2.16.2-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111943",
+      "released": "2026-10-21T01:17:20Z",
+      "updated": "2026-10-27T05:36:16Z",
+      "cves": [
+        "CVE-2026-111943"
+      ],
+      "products": [
+        "Azure Linux: python-tensorboard"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "PYSEC-2026-4361",
@@ -5278,6 +5340,75 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:87246",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang: net/http: net/http: sensitive headers incorrectly sent after cross-domain redirect",
+      "url": "https://access.redhat.com/errata/RHSA-2026:87246",
+      "released": "2026-10-21T18:36:18Z",
+      "updated": "2026-11-27T04:29:01Z",
+      "cves": [
+        "CVE-2024-45336",
+        "CVE-2025-4673",
+        "CVE-2025-22866",
+        "CVE-2025-22874",
+        "CVE-2025-68121",
+        "CVE-2026-27137",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-27145",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-33818",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-42499",
+        "CVE-2026-42504",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-56866",
+        "CVE-2026-78659",
+        "CVE-2026-78660",
+        "CVE-2026-78663",
+        "CVE-2026-78667",
+        "CVE-2026-78669",
+        "CVE-2026-94439",
+        "CVE-2026-94440",
+        "CVE-2026-94444",
+        "CVE-2026-94447",
+        "CVE-2026-94448",
+        "CVE-2026-97030",
+        "CVE-2026-97031",
+        "CVE-2026-97032",
+        "CVE-2026-111943"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:87246"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "cisco-sa-php-october26-Jj384Daq",
       "src": "csaf_cisco",
       "vendor": "Cisco",
@@ -5290,6 +5421,75 @@
         "CVE-2026-109619"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:87245",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang: net/http: net/http: sensitive headers incorrectly sent after cross-domain redirect",
+      "url": "https://access.redhat.com/errata/RHSA-2026:87245",
+      "released": "2026-10-21T19:37:47Z",
+      "updated": "2026-11-27T04:29:00Z",
+      "cves": [
+        "CVE-2024-45336",
+        "CVE-2025-4673",
+        "CVE-2025-22866",
+        "CVE-2025-22874",
+        "CVE-2025-68121",
+        "CVE-2026-27137",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-27145",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-33810",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-33818",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-42499",
+        "CVE-2026-42504",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-56866",
+        "CVE-2026-78659",
+        "CVE-2026-78660",
+        "CVE-2026-78663",
+        "CVE-2026-78667",
+        "CVE-2026-78669",
+        "CVE-2026-94439",
+        "CVE-2026-94440",
+        "CVE-2026-94444",
+        "CVE-2026-94447",
+        "CVE-2026-94448",
+        "CVE-2026-97030",
+        "CVE-2026-97031",
+        "CVE-2026-97032",
+        "CVE-2026-111943"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:87245"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2026:87026",

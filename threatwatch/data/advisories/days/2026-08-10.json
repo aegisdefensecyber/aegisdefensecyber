@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-10",
-  "count": 39,
+  "count": 50,
   "items": [
     {
       "id": "CERTFR-2026-AVI-0987",
@@ -418,6 +418,65 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-74m6-m3xx-3vmj",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Keras model loading is vulnerable to denial of service through HDF5 shape bombs",
+      "url": "https://github.com/advisories/GHSA-74m6-m3xx-3vmj",
+      "released": "2026-08-10T09:31:20Z",
+      "updated": "2026-09-01T20:22:06Z",
+      "cves": [
+        "CVE-2026-12570"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: keras"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keras 3.15.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:52772",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: perl-DBI:1.641 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:52772",
+      "released": "2026-08-10T10:48:57Z",
+      "updated": "2026-11-05T16:48:29Z",
+      "cves": [
+        "CVE-2026-14380",
+        "CVE-2026-14739"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:52772"
+        },
+        {
+          "t": "To reduce the risk of arbitrary code execution, avoid setting the `DBI_PROFILE` environment variable from untrusted sources. Ensure that DSN driver-attribute c…",
+          "u": null
+        },
+        {
+          "t": "Applications utilizing `perl-DBI` should implement robust input validation and limit the number of parameters used in SQL query placeholders, particularly when…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21557-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -441,6 +500,24 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-6qc3-v8fv-fv9j",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Apache Ranger has a Command Injection vulnerability",
+      "url": "https://github.com/advisories/GHSA-6qc3-v8fv-fv9j",
+      "released": "2026-08-10T12:31:50Z",
+      "updated": "2026-09-02T14:31:58Z",
+      "cves": [
+        "CVE-2026-28672"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Maven: org.apache.ranger:ranger"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21558-1",
@@ -473,6 +550,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-95003",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-68118 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68118",
+      "released": "2026-08-10T13:19:56Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-68118"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-95010",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -493,6 +592,94 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95139",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-68132 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68132",
+      "released": "2026-08-10T13:19:58Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-68132"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-94919",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-68136 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68136",
+      "released": "2026-08-10T13:19:59Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-68136"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-95012",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-68138 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68138",
+      "released": "2026-08-10T13:19:59Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-68138"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-94719",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-68145 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68145",
+      "released": "2026-08-10T13:20:00Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-68145"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-94950",
@@ -537,6 +724,50 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95301",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-68159 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68159",
+      "released": "2026-08-10T13:20:02Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-68159"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-94734",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-68166 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68166",
+      "released": "2026-08-10T13:20:03Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-68166"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-94859",
@@ -735,6 +966,22 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-95018",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-68408 affecting package kernel 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68408",
+      "released": "2026-08-10T13:20:34Z",
+      "updated": "2026-10-22T05:35:55Z",
+      "cves": [
+        "CVE-2026-68408"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21548-1",

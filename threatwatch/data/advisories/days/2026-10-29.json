@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-29",
-  "count": 337,
+  "count": 361,
   "items": [
     {
       "id": "ELA-1868-1",
@@ -390,6 +390,25 @@
       ],
       "lang": "fr",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-3-released/",
+      "src": "gitlab",
+      "vendor": "GitLab",
+      "title": "GitLab Patch Release and Security Update: 19.5.3, 19.4.5, 19.3.7, 19.2.10, 19.1.10, 19.0.11, 18.11.14",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-3-released/",
+      "released": "2026-10-29T00:00:00Z",
+      "updated": "2026-10-29T00:00:00Z",
+      "cves": [
+        "CVE-2026-111943"
+      ],
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-3-released/"
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ALSA-2026:88349",
@@ -4207,6 +4226,53 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:92217",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang-fips: Golang FIPS zeroed buffer",
+      "url": "https://access.redhat.com/errata/RHSA-2026:92217",
+      "released": "2026-10-29T04:29:11Z",
+      "updated": "2026-11-27T04:29:04Z",
+      "cves": [
+        "CVE-2024-9355",
+        "CVE-2024-45336",
+        "CVE-2025-68121",
+        "CVE-2026-27145",
+        "CVE-2026-32280",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-33811",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-42504",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-78667",
+        "CVE-2026-78669",
+        "CVE-2026-97031",
+        "CVE-2026-111943"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:92217"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "JVNDB-2026-040280",
       "src": "jvndb",
       "vendor": "Yamaha Corporation",
@@ -4314,6 +4380,162 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-RUBY-CVE-2026-41316",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-41316 in erb - Patched by Root",
+      "released": "2026-10-29T06:07:19Z",
+      "updated": "2026-10-29T06:07:19Z",
+      "cves": [
+        "CVE-2026-41316"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: erb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in erb 4.0.2.41610.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-COMPOSER-CVE-2026-45073",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-45073 in symfony/cache - Patched by Root",
+      "released": "2026-10-29T07:06:43Z",
+      "updated": "2026-10-29T07:06:43Z",
+      "cves": [
+        "CVE-2026-45073"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: symfony/cache"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in symfony/cache v5.4.46-p12007001+root.io",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-GOBINARY-CVE-2026-46384",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-46384 in github.com/hamba/avro/v2 - Patched by Root",
+      "released": "2026-10-29T07:30:17Z",
+      "updated": "2026-10-29T07:30:17Z",
+      "cves": [
+        "CVE-2026-46384"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: github.com/hamba/avro/v2",
+        "Root: rootio-github.com/hamba/avro/v2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/hamba/avro/v2 v2.31.0-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in rootio-github.com/hamba/avro/v2 v2.31.0-root.io.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-GOBINARY-CVE-2026-46385",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-46385 in github.com/hamba/avro/v2 - Patched by Root",
+      "released": "2026-10-29T07:30:17Z",
+      "updated": "2026-10-29T07:30:17Z",
+      "cves": [
+        "CVE-2026-46385"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: github.com/hamba/avro/v2",
+        "Root: rootio-github.com/hamba/avro/v2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/hamba/avro/v2 v2.31.0-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/hamba/avro/v2 v2.31.0-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in rootio-github.com/hamba/avro/v2 v2.31.0-root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-PYPI-GHSA-58pv-8j8x-9vj2",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "GHSA-58pv-8j8x-9vj2 in jaraco.context - Patched by Root",
+      "released": "2026-10-29T07:37:27Z",
+      "updated": "2026-10-29T07:37:27Z",
+      "sev": "HIGH",
+      "products": [
+        "Root: jaraco.context"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jaraco.context 5.3.0+aikido.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in jaraco.context 5.3.0+aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in jaraco.context 5.3.0+aikido.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-88932",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-88932 in multer - Patched by Root",
+      "released": "2026-10-29T08:32:21Z",
+      "updated": "2026-10-29T08:32:21Z",
+      "cves": [
+        "CVE-2026-88932"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: @rootio/multer",
+        "Root: multer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in multer 2.4.0-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in @rootio/multer 2.4.0-root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "OESA-2026-4531",
@@ -7440,6 +7662,37 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ROOT-APP-GOBINARY-CVE-2026-39883",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-39883 in go.opentelemetry.io/otel/sdk - Patched by Root",
+      "released": "2026-10-29T09:36:02Z",
+      "updated": "2026-10-29T09:36:02Z",
+      "cves": [
+        "CVE-2026-39883"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: go.opentelemetry.io/otel/sdk",
+        "Root: rootio-go.opentelemetry.io/otel/sdk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in go.opentelemetry.io/otel/sdk v1.39.0-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in go.opentelemetry.io/otel/sdk v1.38.0-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in go.opentelemetry.io/otel/sdk v1.35.0-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "VDE-2026-127",
       "src": "csaf_welotecgmbh",
       "vendor": "Welotec",
@@ -7502,6 +7755,22 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "https://blog.talosintelligence.com/nik-c2-new-ai-enabled-framework/",
+      "src": "talos",
+      "vendor": "Cisco Talos",
+      "title": "NIK C2: The new AI-enabled command-and-control framework",
+      "url": "https://blog.talosintelligence.com/nik-c2-new-ai-enabled-framework/",
+      "released": "2026-10-29T10:00:00Z",
+      "updated": "2026-10-29T10:00:00Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://blog.talosintelligence.com/nik-c2-new-ai-enabled-framework/"
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2026:92326",
@@ -7572,6 +7841,68 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-111758",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-111758 in markdown-it - Patched by Root",
+      "released": "2026-10-29T10:31:36Z",
+      "updated": "2026-10-29T10:31:36Z",
+      "cves": [
+        "CVE-2026-111758"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/markdown-it",
+        "Root: markdown-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in markdown-it 14.3.0-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in markdown-it 14.1.0-aikido.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in markdown-it 14.3.2-aikido.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-111759",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-111759 in markdown-it - Patched by Root",
+      "released": "2026-10-29T10:31:36Z",
+      "updated": "2026-10-29T10:31:36Z",
+      "cves": [
+        "CVE-2026-111759"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/markdown-it",
+        "Root: markdown-it"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in markdown-it 13.0.2-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in markdown-it 14.3.0-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in markdown-it 14.1.0-aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "NN-2026:21-01",
@@ -7688,6 +8019,33 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ROOT-APP-NUGET-CVE-2026-84008",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-84008 in System.Security.Cryptography.Pkcs - Patched by Root",
+      "released": "2026-10-29T11:20:43Z",
+      "updated": "2026-10-29T11:20:43Z",
+      "cves": [
+        "CVE-2026-84008"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: Rootio.System.Security.Cryptography.Pkcs",
+        "Root: System.Security.Cryptography.Pkcs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in System.Security.Cryptography.Pkcs 8.0.1.416101",
+          "u": null
+        },
+        {
+          "t": "Fixed in Rootio.System.Security.Cryptography.Pkcs 8.0.1.120071",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "RUSTSEC-2026-0419",
@@ -8754,6 +9112,53 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ROOT-APP-MAVEN-CVE-2025-52999",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2025-52999 in com.fasterxml.jackson.core:jackson-core - Patched by Root",
+      "released": "2026-10-29T12:50:24Z",
+      "updated": "2026-10-29T12:50:24Z",
+      "cves": [
+        "CVE-2025-52999"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: com.fasterxml.jackson.core:jackson-core",
+        "Root: io.root.com.fasterxml.jackson.core:jackson-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-core 2.12.7-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-core 2.12.7-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-core 2.13.2-aikido.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "https://blog.talosintelligence.com/ir-trends-q3-2026/",
+      "src": "talos",
+      "vendor": "Cisco Talos",
+      "title": "IR trends Q3 2026: Actors impersonate IT help desks in vishing attacks as ransomware activity increases",
+      "url": "https://blog.talosintelligence.com/ir-trends-q3-2026/",
+      "released": "2026-10-29T14:00:00Z",
+      "updated": "2026-10-29T14:00:00Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://blog.talosintelligence.com/ir-trends-q3-2026/"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:22311-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -9164,6 +9569,259 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "https://blog.talosintelligence.com/a-quiet-week-in-infosec/",
+      "src": "talos",
+      "vendor": "Cisco Talos",
+      "title": "A quiet week in infosec <.<",
+      "url": "https://blog.talosintelligence.com/a-quiet-week-in-infosec/",
+      "released": "2026-10-29T18:00:00Z",
+      "updated": "2026-10-29T18:00:00Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://blog.talosintelligence.com/a-quiet-week-in-infosec/"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+      "src": "unit42",
+      "vendor": "Unit 42",
+      "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated November 19)",
+      "url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+      "released": "2026-10-29T18:00:34Z",
+      "updated": "2026-10-29T18:00:34Z",
+      "cves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2025-7338",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2025-7338 in multer - Patched by Root",
+      "released": "2026-10-29T18:47:25Z",
+      "updated": "2026-10-29T18:47:25Z",
+      "cves": [
+        "CVE-2025-7338"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/multer",
+        "Root: multer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in multer 1.4.4-lts.1-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 1.4.5-lts.2-aikido.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 1.4.5-lts.2-aikido.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-2359",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-2359 in multer - Patched by Root",
+      "released": "2026-10-29T18:47:25Z",
+      "updated": "2026-10-29T18:47:25Z",
+      "cves": [
+        "CVE-2026-2359"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/multer",
+        "Root: multer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in multer 1.4.4-lts.1-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 1.4.5-lts.2-aikido.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 1.4.4-lts.1-aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-3304",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-3304 in multer - Patched by Root",
+      "released": "2026-10-29T18:47:25Z",
+      "updated": "2026-10-29T18:47:25Z",
+      "cves": [
+        "CVE-2026-3304"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/multer",
+        "Root: multer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in multer 1.4.4-lts.1-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 1.4.5-lts.2-aikido.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 1.4.4-lts.1-aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-3520",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-3520 in multer - Patched by Root",
+      "released": "2026-10-29T18:47:25Z",
+      "updated": "2026-10-29T18:47:25Z",
+      "cves": [
+        "CVE-2026-3520"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/multer",
+        "Root: multer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in multer 1.4.4-lts.1-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 1.4.5-lts.2-aikido.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 1.4.4-lts.1-aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-5038",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-5038 in multer - Patched by Root",
+      "released": "2026-10-29T18:47:25Z",
+      "updated": "2026-10-29T18:47:25Z",
+      "cves": [
+        "CVE-2026-5038"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Root: @rootio/multer",
+        "Root: multer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in multer 2.0.2-aikido.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 2.0.2-aikido.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 2.1.1-aikido.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-5079",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-5079 in multer - Patched by Root",
+      "released": "2026-10-29T18:47:25Z",
+      "updated": "2026-10-29T18:47:25Z",
+      "cves": [
+        "CVE-2026-5079"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/multer",
+        "Root: multer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in multer 1.4.4-lts.1-aikido.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 1.4.5-lts.2-aikido.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 1.4.4-lts.1-aikido.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ROOT-APP-NPM-CVE-2026-77037",
+      "src": "osv_root",
+      "vendor": "Root",
+      "title": "CVE-2026-77037 in multer - Patched by Root",
+      "released": "2026-10-29T18:47:25Z",
+      "updated": "2026-10-29T18:47:25Z",
+      "cves": [
+        "CVE-2026-77037"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Root: @rootio/multer",
+        "Root: multer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in multer 2.2.0-aikido.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in multer 2.2.0-aikido.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in @rootio/multer 2.2.0-root.io.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22203-1",

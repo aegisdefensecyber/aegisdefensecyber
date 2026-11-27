@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-01-07",
-  "count": 12,
+  "count": 16,
   "items": [
     {
       "id": "openSUSE-SU-2026:10012-1",
@@ -216,6 +216,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:20022-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update of valkey",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620022-1/",
+      "released": "2026-01-07T09:35:57Z",
+      "updated": "2026-09-16T19:25:20Z",
+      "cves": [
+        "CVE-2025-46817",
+        "CVE-2025-46818",
+        "CVE-2025-46819",
+        "CVE-2025-49844"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:20003-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -245,6 +275,91 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:20059-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620059-1/",
+      "released": "2026-01-07T10:55:44Z",
+      "updated": "2026-09-16T19:25:54Z",
+      "cves": [
+        "CVE-2022-50253",
+        "CVE-2023-53676",
+        "CVE-2025-21710",
+        "CVE-2025-37916",
+        "CVE-2025-38359",
+        "CVE-2025-38361",
+        "CVE-2025-39788",
+        "CVE-2025-39805",
+        "CVE-2025-39819",
+        "CVE-2025-39859",
+        "CVE-2025-39944",
+        "CVE-2025-39980",
+        "CVE-2025-40001",
+        "CVE-2025-40021",
+        "CVE-2025-40027",
+        "CVE-2025-40030",
+        "CVE-2025-40038",
+        "CVE-2025-40040",
+        "CVE-2025-40048",
+        "CVE-2025-40055",
+        "CVE-2025-40059",
+        "CVE-2025-40064",
+        "CVE-2025-40070",
+        "CVE-2025-40074",
+        "CVE-2025-40075",
+        "CVE-2025-40083",
+        "CVE-2025-40098",
+        "CVE-2025-40105",
+        "CVE-2025-40107",
+        "CVE-2025-40109",
+        "CVE-2025-40110",
+        "CVE-2025-40111",
+        "CVE-2025-40115",
+        "CVE-2025-40116",
+        "CVE-2025-40118",
+        "CVE-2025-40120",
+        "CVE-2025-40121",
+        "CVE-2025-40127",
+        "CVE-2025-40129",
+        "CVE-2025-40139",
+        "CVE-2025-40140",
+        "CVE-2025-40141",
+        "CVE-2025-40149",
+        "CVE-2025-40154",
+        "CVE-2025-40156",
+        "CVE-2025-40157",
+        "CVE-2025-40159",
+        "CVE-2025-40164",
+        "CVE-2025-40168",
+        "CVE-2025-40169",
+        "CVE-2025-40171",
+        "CVE-2025-40172",
+        "CVE-2025-40173",
+        "CVE-2025-40176",
+        "CVE-2025-40180",
+        "CVE-2025-40183",
+        "CVE-2025-40186",
+        "CVE-2025-40188",
+        "CVE-2025-40194",
+        "CVE-2025-40198"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "SUSE-SU-2026:0053-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -269,6 +384,60 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-gitea-2025-69413",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Gitea before 1.25.2, /api/v1/user has different responses for failed authentication depending on whether a username exists.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-69413",
+      "released": "2026-01-07T12:00:07Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-69413"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: gitea"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitea 1.25.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:0250",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gimp:2.8 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:0250",
+      "released": "2026-01-07T15:08:46Z",
+      "updated": "2026-11-05T14:51:34Z",
+      "cves": [
+        "CVE-2025-10922",
+        "CVE-2025-10934"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream AUS (v. 8.2)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:0250"
+        },
+        {
+          "t": "No mitigation is currently available that meets Red Hat Product Security’s standards for usability, deployment, applicability, or stability.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "SUSE-SU-2026:0059-1",

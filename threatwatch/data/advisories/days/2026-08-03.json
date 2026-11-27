@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-03",
-  "count": 21,
+  "count": 25,
   "items": [
     {
       "id": "openSUSE-SU-2026:11438-1",
@@ -143,6 +143,41 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:49514",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: perl-DBI security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:49514",
+      "released": "2026-08-03T03:33:40Z",
+      "updated": "2026-11-05T16:48:16Z",
+      "cves": [
+        "CVE-2026-14380",
+        "CVE-2026-14739"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:49514"
+        },
+        {
+          "t": "To reduce the risk of arbitrary code execution, avoid setting the `DBI_PROFILE` environment variable from untrusted sources. Ensure that DSN driver-attribute c…",
+          "u": null
+        },
+        {
+          "t": "Applications utilizing `perl-DBI` should implement robust input validation and limit the number of parameters used in SQL query placeholders, particularly when…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21516-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -215,6 +250,56 @@
         "PyPI: nltk"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-pv39-qrfq-g8gc",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: NLTK: Missing Post-Download Integrity Verification Allows Malicious Package Injection",
+      "url": "https://github.com/advisories/GHSA-pv39-qrfq-g8gc",
+      "released": "2026-08-03T09:32:37Z",
+      "updated": "2026-09-01T20:30:34Z",
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: nltk"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:49612",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: perl-DBI security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:49612",
+      "released": "2026-08-03T09:56:32Z",
+      "updated": "2026-11-05T16:48:16Z",
+      "cves": [
+        "CVE-2026-14380",
+        "CVE-2026-14739"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:49612"
+        },
+        {
+          "t": "To reduce the risk of arbitrary code execution, avoid setting the `DBI_PROFILE` environment variable from untrusted sources. Ensure that DSN driver-attribute c…",
+          "u": null
+        },
+        {
+          "t": "Applications utilizing `perl-DBI` should implement robust input validation and limit the number of parameters used in SQL query placeholders, particularly when…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21518-1",
@@ -455,6 +540,36 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:49758",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: perl-GD security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:49758",
+      "released": "2026-08-03T18:22:52Z",
+      "updated": "2026-11-05T16:25:56Z",
+      "cves": [
+        "CVE-2026-11526"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Server (v. 7 ELS)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:49758"
+        },
+        {
+          "t": "Exploitation of CGI scripts using perl-GD is made difficult with the use of `SecRuleEngine On` from the `mod_security` RPM. See https://access.redhat.com/solut…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21520-1",

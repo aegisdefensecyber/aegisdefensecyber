@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-12",
-  "count": 435,
+  "count": 680,
   "items": [
     {
       "id": "CVE-2026-117474",
@@ -1530,6 +1530,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-5-released/",
+      "src": "gitlab",
+      "vendor": "GitLab",
+      "title": "GitLab Patch Release: 19.5.5, 19.4.7",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-5-released/",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-12T00:00:00Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-5-released/"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "ALSA-2026:99572",
       "src": "osv_almalinux",
       "vendor": "Almalinux",
@@ -1721,6 +1737,42 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:99602",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: cockpit security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:99602",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-19T09:16:38Z",
+      "cves": [
+        "CVE-2026-91150",
+        "CVE-2026-91151"
+      ],
+      "products": [
+        "AlmaLinux: cockpit",
+        "AlmaLinux: cockpit-bridge",
+        "AlmaLinux: cockpit-doc",
+        "AlmaLinux: cockpit-packagekit",
+        "AlmaLinux: cockpit-storaged",
+        "AlmaLinux: cockpit-system"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cockpit 366.1.1-1.el9_9",
+          "u": null
+        },
+        {
+          "t": "Fixed in cockpit-bridge 366.1.1-1.el9_9",
+          "u": null
+        },
+        {
+          "t": "Fixed in cockpit-doc 366.1.1-1.el9_9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "ALSA-2026:99603",
       "src": "osv_almalinux",
       "vendor": "Almalinux",
@@ -1754,6 +1806,41 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:99611",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: xorg-x11-server security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:99611",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-19T09:51:18Z",
+      "cves": [
+        "CVE-2026-93520"
+      ],
+      "products": [
+        "AlmaLinux: xorg-x11-server-Xdmx",
+        "AlmaLinux: xorg-x11-server-Xephyr",
+        "AlmaLinux: xorg-x11-server-Xnest",
+        "AlmaLinux: xorg-x11-server-Xorg",
+        "AlmaLinux: xorg-x11-server-Xvfb",
+        "AlmaLinux: xorg-x11-server-common"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in xorg-x11-server-Xdmx 1.20.11-39.el9_9.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in xorg-x11-server-Xephyr 1.20.11-39.el9_9.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in xorg-x11-server-Xnest 1.20.11-39.el9_9.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ALSA-2026:99623",
@@ -1796,6 +1883,97 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:99624",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: krb5 security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:99624",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-19T11:19:55Z",
+      "cves": [
+        "CVE-2026-107364",
+        "CVE-2026-107708",
+        "CVE-2026-107778",
+        "CVE-2026-107884",
+        "CVE-2026-111423",
+        "CVE-2026-112314",
+        "CVE-2026-112315",
+        "CVE-2026-112316",
+        "CVE-2026-112317",
+        "CVE-2026-112318",
+        "CVE-2026-112319",
+        "CVE-2026-112320",
+        "CVE-2026-112321",
+        "CVE-2026-112322",
+        "CVE-2026-112323",
+        "CVE-2026-118380",
+        "CVE-2026-119079",
+        "CVE-2026-71199",
+        "CVE-2026-71200"
+      ],
+      "products": [
+        "AlmaLinux: krb5-devel",
+        "AlmaLinux: krb5-libs",
+        "AlmaLinux: krb5-pkinit",
+        "AlmaLinux: krb5-server",
+        "AlmaLinux: krb5-server-ldap",
+        "AlmaLinux: krb5-workstation"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in krb5-devel 1.21.3-11.el10_3.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in krb5-libs 1.21.3-11.el10_3.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in krb5-pkinit 1.21.3-11.el10_3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ALSA-2026:99632",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Moderate: gcc-toolset-15-gcc security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:99632",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-17T11:07:51Z",
+      "cves": [
+        "CVE-2026-114690",
+        "CVE-2026-114691",
+        "CVE-2026-115455",
+        "CVE-2026-115456"
+      ],
+      "products": [
+        "AlmaLinux: gcc-toolset-15-gcc",
+        "AlmaLinux: gcc-toolset-15-gcc-c++",
+        "AlmaLinux: gcc-toolset-15-gcc-gfortran",
+        "AlmaLinux: gcc-toolset-15-gcc-plugin-annobin",
+        "AlmaLinux: gcc-toolset-15-gcc-plugin-devel",
+        "AlmaLinux: gcc-toolset-15-libasan-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gcc-toolset-15-gcc 15.2.1-7.3.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in gcc-toolset-15-gcc-c++ 15.2.1-7.3.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in gcc-toolset-15-gcc-gfortran 15.2.1-7.3.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ALSA-2026:99660",
@@ -1862,6 +2040,33 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ALSA-2026:99690",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: libpcap security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:99690",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-19T11:19:31Z",
+      "cves": [
+        "CVE-2026-6554"
+      ],
+      "products": [
+        "AlmaLinux: libpcap",
+        "AlmaLinux: libpcap-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpcap 14:1.10.4-7.el10_3.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpcap-devel 14:1.10.4-7.el10_3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "ALSA-2026:99691",
       "src": "osv_almalinux",
       "vendor": "Almalinux",
@@ -1897,6 +2102,50 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:99695",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: glib-networking security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:99695",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-19T09:15:41Z",
+      "cves": [
+        "CVE-2026-103963"
+      ],
+      "products": [
+        "AlmaLinux: glib-networking"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib-networking 2.68.3-3.el9_9.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ALSA-2026:99696",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: glib-networking security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:99696",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-19T11:19:26Z",
+      "cves": [
+        "CVE-2026-103963"
+      ],
+      "products": [
+        "AlmaLinux: glib-networking"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib-networking 2.80.0-3.el10_3.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ALSA-2026:99702",
@@ -1939,6 +2188,301 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:99707",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: libpcap security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:99707",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-19T09:14:12Z",
+      "cves": [
+        "CVE-2026-6554"
+      ],
+      "products": [
+        "AlmaLinux: libpcap",
+        "AlmaLinux: libpcap-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpcap 14:1.10.0-4.el9_9.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpcap-devel 14:1.10.0-4.el9_9.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ALSA-2026:99715",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: krb5 security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:99715",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-19T09:14:44Z",
+      "cves": [
+        "CVE-2026-107364",
+        "CVE-2026-107708",
+        "CVE-2026-107778",
+        "CVE-2026-107884",
+        "CVE-2026-111423",
+        "CVE-2026-112314",
+        "CVE-2026-112315",
+        "CVE-2026-112316",
+        "CVE-2026-112317",
+        "CVE-2026-112318",
+        "CVE-2026-112319",
+        "CVE-2026-112320",
+        "CVE-2026-112321",
+        "CVE-2026-112322",
+        "CVE-2026-112323",
+        "CVE-2026-118380",
+        "CVE-2026-119079",
+        "CVE-2026-71199",
+        "CVE-2026-71200"
+      ],
+      "products": [
+        "AlmaLinux: krb5-devel",
+        "AlmaLinux: krb5-libs",
+        "AlmaLinux: krb5-pkinit",
+        "AlmaLinux: krb5-server",
+        "AlmaLinux: krb5-server-ldap",
+        "AlmaLinux: krb5-workstation"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in krb5-devel 1.21.1-10.el9_9.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in krb5-libs 1.21.1-10.el9_9.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in krb5-pkinit 1.21.1-10.el9_9.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ALSA-2026:99720",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: mysql8.4 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:99720",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-19T12:23:31Z",
+      "cves": [
+        "CVE-2026-101607",
+        "CVE-2026-101608",
+        "CVE-2026-101609",
+        "CVE-2026-101610",
+        "CVE-2026-101611",
+        "CVE-2026-101612",
+        "CVE-2026-101613",
+        "CVE-2026-101614",
+        "CVE-2026-101615",
+        "CVE-2026-101616",
+        "CVE-2026-101617",
+        "CVE-2026-101618",
+        "CVE-2026-101619",
+        "CVE-2026-101621",
+        "CVE-2026-101622",
+        "CVE-2026-101623",
+        "CVE-2026-101624",
+        "CVE-2026-101627",
+        "CVE-2026-101679",
+        "CVE-2026-101721",
+        "CVE-2026-101724",
+        "CVE-2026-101725",
+        "CVE-2026-101726",
+        "CVE-2026-101727",
+        "CVE-2026-101728",
+        "CVE-2026-101729",
+        "CVE-2026-101730",
+        "CVE-2026-101731",
+        "CVE-2026-101732",
+        "CVE-2026-101733",
+        "CVE-2026-101747",
+        "CVE-2026-101748",
+        "CVE-2026-101750",
+        "CVE-2026-101751",
+        "CVE-2026-101754",
+        "CVE-2026-101760",
+        "CVE-2026-101761",
+        "CVE-2026-101762",
+        "CVE-2026-101766",
+        "CVE-2026-101770",
+        "CVE-2026-101771",
+        "CVE-2026-101772",
+        "CVE-2026-101773",
+        "CVE-2026-101774",
+        "CVE-2026-101775",
+        "CVE-2026-101776",
+        "CVE-2026-101778",
+        "CVE-2026-101779",
+        "CVE-2026-101780",
+        "CVE-2026-101781",
+        "CVE-2026-101784",
+        "CVE-2026-101785",
+        "CVE-2026-101787",
+        "CVE-2026-101788",
+        "CVE-2026-101789",
+        "CVE-2026-101794",
+        "CVE-2026-101795",
+        "CVE-2026-101796",
+        "CVE-2026-101797",
+        "CVE-2026-101798"
+      ],
+      "products": [
+        "AlmaLinux: mysql8.4",
+        "AlmaLinux: mysql8.4-common",
+        "AlmaLinux: mysql8.4-devel",
+        "AlmaLinux: mysql8.4-errmsg",
+        "AlmaLinux: mysql8.4-libs",
+        "AlmaLinux: mysql8.4-server"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mysql8.4 8.4.13-1.el10_3.alma.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in mysql8.4-common 8.4.13-1.el10_3.alma.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in mysql8.4-devel 8.4.13-1.el10_3.alma.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ALSA-2026:99741",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: mysql:8.4 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:99741",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-20T08:52:28Z",
+      "cves": [
+        "CVE-2026-101607",
+        "CVE-2026-101608",
+        "CVE-2026-101609",
+        "CVE-2026-101610",
+        "CVE-2026-101611",
+        "CVE-2026-101612",
+        "CVE-2026-101613",
+        "CVE-2026-101614",
+        "CVE-2026-101615",
+        "CVE-2026-101616",
+        "CVE-2026-101617",
+        "CVE-2026-101618",
+        "CVE-2026-101619",
+        "CVE-2026-101621",
+        "CVE-2026-101622",
+        "CVE-2026-101623",
+        "CVE-2026-101624",
+        "CVE-2026-101627",
+        "CVE-2026-101679",
+        "CVE-2026-101721",
+        "CVE-2026-101724",
+        "CVE-2026-101725",
+        "CVE-2026-101726",
+        "CVE-2026-101727",
+        "CVE-2026-101728",
+        "CVE-2026-101729",
+        "CVE-2026-101730",
+        "CVE-2026-101731",
+        "CVE-2026-101732",
+        "CVE-2026-101733",
+        "CVE-2026-101747",
+        "CVE-2026-101748",
+        "CVE-2026-101750",
+        "CVE-2026-101751",
+        "CVE-2026-101754",
+        "CVE-2026-101760",
+        "CVE-2026-101761",
+        "CVE-2026-101762",
+        "CVE-2026-101766",
+        "CVE-2026-101770",
+        "CVE-2026-101771",
+        "CVE-2026-101772",
+        "CVE-2026-101773",
+        "CVE-2026-101774",
+        "CVE-2026-101775",
+        "CVE-2026-101776",
+        "CVE-2026-101778",
+        "CVE-2026-101779",
+        "CVE-2026-101780",
+        "CVE-2026-101781",
+        "CVE-2026-101784",
+        "CVE-2026-101785",
+        "CVE-2026-101787",
+        "CVE-2026-101788",
+        "CVE-2026-101789",
+        "CVE-2026-101794",
+        "CVE-2026-101795",
+        "CVE-2026-101796",
+        "CVE-2026-101797",
+        "CVE-2026-101798"
+      ],
+      "products": [
+        "AlmaLinux: mecab",
+        "AlmaLinux: mecab-devel",
+        "AlmaLinux: mecab-ipadic",
+        "AlmaLinux: mecab-ipadic-EUCJP",
+        "AlmaLinux: mysql",
+        "AlmaLinux: mysql-common"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mecab 0.996-3.module_el9.6.0+152+8cbce00c.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in mecab-devel 0.996-3.module_el9.6.0+152+8cbce00c.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in mecab-ipadic 2.7.0.20070801-24.module_el9.6.0+152+8cbce00c",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ALSA-2026:99817",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Important: xfsprogs security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:99817",
+      "released": "2026-11-12T00:00:00Z",
+      "updated": "2026-11-21T18:05:10Z",
+      "cves": [
+        "CVE-2026-108472"
+      ],
+      "products": [
+        "AlmaLinux: xfsprogs",
+        "AlmaLinux: xfsprogs-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in xfsprogs 5.0.0-13.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in xfsprogs-devel 5.0.0-13.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ALSA-2026:99849",
@@ -2738,6 +3282,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-125785",
+      "src": "cvelistv5",
+      "vendor": "Crocoblock",
+      "title": "WordPress JetEngine plugin <= 3.9.1 - Cross Site Scripting (XSS) vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-125785",
+      "released": "2026-11-12T00:12:02Z",
+      "updated": "2026-11-13T16:02:55Z",
+      "cves": [
+        "CVE-2026-125785"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Crocoblock JetEngine"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "3KXG141033R4801",
       "src": "csaf_abb",
       "vendor": "ABB",
@@ -2807,6 +3369,22 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-td7i-4bcz-broh-2r6y",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Uptime Kuma >== 1.23.0 has a ReDoS vulnerability, specifically when an administrator creates a notification through the…",
+      "url": "https://scout.docker.com/v/DHI-td7i-4bcz-broh-2r6y",
+      "released": "2026-11-12T00:30:19Z",
+      "updated": "2026-11-24T15:54:34Z",
+      "cves": [
+        "CVE-2025-26042"
+      ],
+      "products": [
+        "Docker Hardened Images: uptime-kuma-1"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-126785",
@@ -3149,6 +3727,25 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-asm6-q3ro-empn-elnl",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "sigstore framework is a common go library shared across sigstore services and clients. In versions 1.10.3 and below…",
+      "url": "https://scout.docker.com/v/DHI-asm6-q3ro-empn-elnl",
+      "released": "2026-11-12T02:06:28Z",
+      "updated": "2026-11-24T22:14:44Z",
+      "cves": [
+        "CVE-2026-24137"
+      ],
+      "products": [
+        "Docker Hardened Images: reports-server",
+        "Docker Hardened Images: reports-server-dev",
+        "Docker Hardened Images: reports-server-fips",
+        "Docker Hardened Images: reports-server-fips-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-wace-pnx6-5vmu-plks",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -3187,6 +3784,1275 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-126795",
+      "src": "cvelistv5",
+      "title": "ToolJet Onboarding Signup Endpoint util.service.ts activateUserWithPassword missing authentication",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126795",
+      "released": "2026-11-12T02:15:29Z",
+      "updated": "2026-11-16T18:53:35Z",
+      "cves": [
+        "CVE-2026-126795"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-hi55-xrym-3w5n-336v",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Sigstore Timestamp Authority is a service for issuing RFC 3161 timestamps. Prior to 2.0.3, Function…",
+      "url": "https://scout.docker.com/v/DHI-hi55-xrym-3w5n-336v",
+      "released": "2026-11-12T02:19:11Z",
+      "updated": "2026-11-24T22:14:44Z",
+      "cves": [
+        "CVE-2025-66564"
+      ],
+      "products": [
+        "Docker Hardened Images: reports-server",
+        "Docker Hardened Images: reports-server-dev",
+        "Docker Hardened Images: reports-server-fips",
+        "Docker Hardened Images: reports-server-fips-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-2qhl-2aoq-ewt3-gq5k",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Libevent is an event notification library. Prior to 2.1.13 and 2.2.2-alpha, libevent has a use-after-free in buffer.c…",
+      "url": "https://scout.docker.com/v/DHI-2qhl-2aoq-ewt3-gq5k",
+      "released": "2026-11-12T02:25:58Z",
+      "updated": "2026-11-24T12:35:01Z",
+      "cves": [
+        "CVE-2026-63381"
+      ],
+      "products": [
+        "Docker Hardened Images: libevent"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-6lt6-gisf-yxvb-uut6",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Libevent is an event notification library. Prior to 2.1.13 and 2.2.2-alpha, libevent has an incorrect integer…",
+      "url": "https://scout.docker.com/v/DHI-6lt6-gisf-yxvb-uut6",
+      "released": "2026-11-12T02:25:58Z",
+      "updated": "2026-11-24T12:35:01Z",
+      "cves": [
+        "CVE-2026-63384"
+      ],
+      "products": [
+        "Docker Hardened Images: libevent"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-7giw-xjdd-ylmn-lqjc",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Libevent is an event notification library. Prior to 2.1.13 and 2.2.2-alpha, libevent has two HTTP parsing weaknesses in…",
+      "url": "https://scout.docker.com/v/DHI-7giw-xjdd-ylmn-lqjc",
+      "released": "2026-11-12T02:25:58Z",
+      "updated": "2026-11-24T12:35:01Z",
+      "cves": [
+        "CVE-2026-63385"
+      ],
+      "products": [
+        "Docker Hardened Images: libevent"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-a2og-e3bh-i5gc-xanv",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Libevent is an event notification library. Prior to 2.1.13 and 2.2.2-alpha, libevent has an off-by-one stack buffer…",
+      "url": "https://scout.docker.com/v/DHI-a2og-e3bh-i5gc-xanv",
+      "released": "2026-11-12T02:25:58Z",
+      "updated": "2026-11-24T12:35:01Z",
+      "cves": [
+        "CVE-2026-63387"
+      ],
+      "products": [
+        "Docker Hardened Images: libevent"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-easq-yqj6-7udo-42d7",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Libevent is an event notification library. Prior to 2.1.13 and 2.2.2-alpha, the libevent evhttp parser in http.c…",
+      "url": "https://scout.docker.com/v/DHI-easq-yqj6-7udo-42d7",
+      "released": "2026-11-12T02:25:58Z",
+      "updated": "2026-11-24T12:35:01Z",
+      "cves": [
+        "CVE-2026-63382"
+      ],
+      "products": [
+        "Docker Hardened Images: libevent"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-hlaz-qjtl-rwci-yr5t",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Libevent is an event notification library. Prior to 2.1.13 and 2.2.2-alpha, libevent can read beyond a contiguous…",
+      "url": "https://scout.docker.com/v/DHI-hlaz-qjtl-rwci-yr5t",
+      "released": "2026-11-12T02:25:58Z",
+      "updated": "2026-11-24T12:35:01Z",
+      "cves": [
+        "CVE-2026-63383"
+      ],
+      "products": [
+        "Docker Hardened Images: libevent"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-rcwy-avmi-fmow-5v6y",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Libevent is an event notification library. Prior to 2.1.13 and 2.2.2-alpha, libevent processes chunked HTTP trailers in…",
+      "url": "https://scout.docker.com/v/DHI-rcwy-avmi-fmow-5v6y",
+      "released": "2026-11-12T02:25:58Z",
+      "updated": "2026-11-24T12:35:01Z",
+      "cves": [
+        "CVE-2026-63379"
+      ],
+      "products": [
+        "Docker Hardened Images: libevent"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-tvfm-b5al-rd77-mlww",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Libevent is an event notification library. Prior to 2.1.13 and 2.2.2-alpha, libevent has a heap out-of-bounds write in…",
+      "url": "https://scout.docker.com/v/DHI-tvfm-b5al-rd77-mlww",
+      "released": "2026-11-12T02:25:58Z",
+      "updated": "2026-11-24T12:35:01Z",
+      "cves": [
+        "CVE-2026-63388"
+      ],
+      "products": [
+        "Docker Hardened Images: libevent"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-23nz-y4cq-6vsi-5jh5",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.3+ds-1",
+      "url": "https://scout.docker.com/v/DHI-23nz-y4cq-6vsi-5jh5",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-61475"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-2bhk-cdd7-k3n3-5i5o",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.3+ds-1",
+      "url": "https://scout.docker.com/v/DHI-2bhk-cdd7-k3n3-5i5o",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-15578"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-3a5s-3esz-c5f3-bbei",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-3a5s-3esz-c5f3-bbei",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-63109"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-3eav-uv3o-lq3f-ul2r",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.3+ds-1",
+      "url": "https://scout.docker.com/v/DHI-3eav-uv3o-lq3f-ul2r",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-16043"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-3hy5-zita-ylsz-awdk",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-3hy5-zita-ylsz-awdk",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:31Z",
+      "cves": [
+        "CVE-2026-66022"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-4ztl-mqtm-bjd7-f64b",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-4ztl-mqtm-bjd7-f64b",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-58581"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-5e65-655d-kyfs-ongh",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A flaw was found in QEMU. When reading input audio in the virtio-snd device input callback, the `virtio_snd_pcm_in_cb`…",
+      "url": "https://scout.docker.com/v/DHI-5e65-655d-kyfs-ongh",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-3195"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-5ncl-zpxz-u5g4-kqlz",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.2+ds-1",
+      "url": "https://scout.docker.com/v/DHI-5ncl-zpxz-u5g4-kqlz",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-48004"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-6pi6-dejl-avnn-xdap",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-6pi6-dejl-avnn-xdap",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-61402"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-6ybi-opt5-a3ti-r6e6",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-6ybi-opt5-a3ti-r6e6",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-50624"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-aemg-aw4s-r2rx-j5gj",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.2+ds-1",
+      "url": "https://scout.docker.com/v/DHI-aemg-aw4s-r2rx-j5gj",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-48003"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-b6xo-nxlz-xvfp-pox5",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-b6xo-nxlz-xvfp-pox5",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:31Z",
+      "cves": [
+        "CVE-2026-66021"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-cbq5-3anr-x3ak-iuir",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A use-after-free vulnerability was found in the QEMU LSI53C895A SCSI Host Bus Adapter emulation. This issue can lead to…",
+      "url": "https://scout.docker.com/v/DHI-cbq5-3anr-x3ak-iuir",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:31:06Z",
+      "cves": [
+        "CVE-2024-6519"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-dcdb-b7hk-x6l2-iwco",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-dcdb-b7hk-x6l2-iwco",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:41Z",
+      "cves": [
+        "CVE-2026-65928"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-e7gw-bp4a-cv75-r5oo",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.3+ds-1",
+      "url": "https://scout.docker.com/v/DHI-e7gw-bp4a-cv75-r5oo",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-15705"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-einw-kmz3-sbvj-czzr",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-einw-kmz3-sbvj-czzr",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:31Z",
+      "cves": [
+        "CVE-2026-63323"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-f7wg-nbae-kjxx-bkzd",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-f7wg-nbae-kjxx-bkzd",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-61405"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-ff2i-lodl-sjkh-looa",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.3+ds-1",
+      "url": "https://scout.docker.com/v/DHI-ff2i-lodl-sjkh-looa",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:33:49Z",
+      "cves": [
+        "CVE-2026-8348"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-gegs-74rn-pyeo-pvss",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-gegs-74rn-pyeo-pvss",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-61404"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-gncc-ygbb-vo2n-ovdd",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.2+ds-1",
+      "url": "https://scout.docker.com/v/DHI-gncc-ygbb-vo2n-ovdd",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:31Z",
+      "cves": [
+        "CVE-2026-6425"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-jdco-4bbg-3j4h-ctxw",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-jdco-4bbg-3j4h-ctxw",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-16457"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-jg7p-i2cc-yri5-vfcx",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A flaw was found in QEMU's virtio-blk device. The issue arises because the device does not properly validate the size…",
+      "url": "https://scout.docker.com/v/DHI-jg7p-i2cc-yri5-vfcx",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-48914"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-jlmi-lkjt-c6an-t2gm",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-jlmi-lkjt-c6an-t2gm",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-50626"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-kl53-pjxd-h22l-eyop",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-kl53-pjxd-h22l-eyop",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-5763"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-lkpf-leau-cxns-34tp",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-lkpf-leau-cxns-34tp",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-58582"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-llwa-clbv-vng5-semg",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-llwa-clbv-vng5-semg",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-15264"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-ngbn-3olg-ksru-dwuq",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-ngbn-3olg-ksru-dwuq",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-3890"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-ntw4-dxm5-oz4y-75zy",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-ntw4-dxm5-oz4y-75zy",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-18054"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-o6jn-jgl7-xxod-kbo5",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.3+ds-1",
+      "url": "https://scout.docker.com/v/DHI-o6jn-jgl7-xxod-kbo5",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:31Z",
+      "cves": [
+        "CVE-2026-63319"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-og36-z5el-ofep-hpbb",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-og36-z5el-ofep-hpbb",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:31Z",
+      "cves": [
+        "CVE-2026-63321"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-rfog-4riq-lav7-3l5j",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-rfog-4riq-lav7-3l5j",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-17516"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-szy3-exnf-upbi-mjhy",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.3+ds-1",
+      "url": "https://scout.docker.com/v/DHI-szy3-exnf-upbi-mjhy",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-48002"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-u72e-rtfx-d4hx-ter4",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-u72e-rtfx-d4hx-ter4",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:41Z",
+      "cves": [
+        "CVE-2026-61476"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-uszh-arj6-4mug-pbns",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-uszh-arj6-4mug-pbns",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:31Z",
+      "cves": [
+        "CVE-2026-61406"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-yddm-32fc-op5o-p4yv",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-yddm-32fc-op5o-p4yv",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-16288"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-ynoc-vuiz-kaj2-2d6t",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A flaw was found in QEMU. This vulnerability allows a local attacker within a guest virtual machine to write data…",
+      "url": "https://scout.docker.com/v/DHI-ynoc-vuiz-kaj2-2d6t",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-3842"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-zrae-hui5-rero-kh2h",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A flaw was found in QEMU. A specially crafted VMDK image could trigger an out-of-bounds read vulnerability, potentially…",
+      "url": "https://scout.docker.com/v/DHI-zrae-hui5-rero-kh2h",
+      "released": "2026-11-12T02:28:09Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-2243"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-6n57-hvxx-rjia-ggud",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-6n57-hvxx-rjia-ggud",
+      "released": "2026-11-12T02:28:55Z",
+      "updated": "2026-11-24T15:32:31Z",
+      "cves": [
+        "CVE-2026-65929"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-alir-3zs2-gsr2-cxis",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-alir-3zs2-gsr2-cxis",
+      "released": "2026-11-12T02:28:55Z",
+      "updated": "2026-11-24T15:32:16Z",
+      "cves": [
+        "CVE-2026-63110"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-d4c3-3whx-d2bw-fvsu",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.2+ds-1",
+      "url": "https://scout.docker.com/v/DHI-d4c3-3whx-d2bw-fvsu",
+      "released": "2026-11-12T02:28:55Z",
+      "updated": "2026-11-24T15:32:41Z",
+      "cves": [
+        "CVE-2026-8343"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-hfel-6tqr-4lx3-vnv4",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.0.3+ds-1",
+      "url": "https://scout.docker.com/v/DHI-hfel-6tqr-4lx3-vnv4",
+      "released": "2026-11-12T02:28:55Z",
+      "updated": "2026-11-24T15:33:49Z",
+      "cves": [
+        "CVE-2026-9238"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-icoj-nlof-mtn3-ssgr",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-icoj-nlof-mtn3-ssgr",
+      "released": "2026-11-12T02:28:55Z",
+      "updated": "2026-11-24T15:32:31Z",
+      "cves": [
+        "CVE-2026-63320"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-jjku-3w7l-5et6-gf73",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-jjku-3w7l-5et6-gf73",
+      "released": "2026-11-12T02:28:55Z",
+      "updated": "2026-11-24T15:32:31Z",
+      "cves": [
+        "CVE-2026-63318"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-wn4j-s376-xh2b-ktxp",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "- qemu 1:11.1.0+ds-1",
+      "url": "https://scout.docker.com/v/DHI-wn4j-s376-xh2b-ktxp",
+      "released": "2026-11-12T02:28:55Z",
+      "updated": "2026-11-24T15:32:31Z",
+      "cves": [
+        "CVE-2026-63322"
+      ],
+      "products": [
+        "Docker Hardened Images: qemu"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-h372-pkb4-ef5i-6ox2",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "SSH clients receiving SSH_AGENT_SUCCESS when expecting a typed response will panic and cause early termination of the…",
+      "url": "https://scout.docker.com/v/DHI-h372-pkb4-ef5i-6ox2",
+      "released": "2026-11-12T02:39:33Z",
+      "updated": "2026-11-25T00:02:45Z",
+      "cves": [
+        "CVE-2025-47913"
+      ],
+      "products": [
+        "Docker Hardened Images: golang-1.24",
+        "Docker Hardened Images: golang-1.24-dev",
+        "Docker Hardened Images: golang-1.25",
+        "Docker Hardened Images: golang-1.25-dev",
+        "Docker Hardened Images: minio",
+        "Docker Hardened Images: minio-els"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-121741",
+      "src": "cvelistv5",
+      "vendor": "Trimble",
+      "title": "Trimble SketchUp SKP File Parsing Use-After-Free Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-121741",
+      "released": "2026-11-12T02:47:47Z",
+      "updated": "2026-11-16T14:25:41Z",
+      "cves": [
+        "CVE-2026-121741"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Trimble SketchUp"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-121742",
+      "src": "cvelistv5",
+      "vendor": "Ashlar-Vellum",
+      "title": "Ashlar-Vellum Cobalt XE File Parsing Use-After-Free Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-121742",
+      "released": "2026-11-12T02:51:00Z",
+      "updated": "2026-11-16T14:25:26Z",
+      "cves": [
+        "CVE-2026-121742"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Ashlar-Vellum Cobalt"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-121743",
+      "src": "cvelistv5",
+      "vendor": "Ashlar-Vellum",
+      "title": "Ashlar-Vellum Cobalt AR File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-121743",
+      "released": "2026-11-12T02:51:12Z",
+      "updated": "2026-11-16T14:25:09Z",
+      "cves": [
+        "CVE-2026-121743"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Ashlar-Vellum Cobalt"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-121744",
+      "src": "cvelistv5",
+      "vendor": "Ashlar-Vellum",
+      "title": "Ashlar-Vellum Cobalt XE File Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-121744",
+      "released": "2026-11-12T02:51:21Z",
+      "updated": "2026-11-16T14:24:53Z",
+      "cves": [
+        "CVE-2026-121744"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Ashlar-Vellum Cobalt"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-121752",
+      "src": "cvelistv5",
+      "vendor": "Ashlar-Vellum",
+      "title": "Ashlar-Vellum Cobalt LI File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-121752",
+      "released": "2026-11-12T02:51:29Z",
+      "updated": "2026-11-16T14:24:38Z",
+      "cves": [
+        "CVE-2026-121752"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Ashlar-Vellum Cobalt"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-121753",
+      "src": "cvelistv5",
+      "vendor": "Ashlar-Vellum",
+      "title": "Ashlar-Vellum Cobalt XE File Parsing Use-After-Free Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-121753",
+      "released": "2026-11-12T02:51:44Z",
+      "updated": "2026-11-16T14:24:24Z",
+      "cves": [
+        "CVE-2026-121753"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Ashlar-Vellum Cobalt"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-118631",
+      "src": "cvelistv5",
+      "vendor": "Philips",
+      "title": "Philips Hue Bridge Pro Argument Injection Restricted File Write Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-118631",
+      "released": "2026-11-12T02:52:04Z",
+      "updated": "2026-11-16T14:24:08Z",
+      "cves": [
+        "CVE-2026-118631"
+      ],
+      "sev": "LOW",
+      "cvss": 3.8,
+      "products": [
+        "Philips Hue Bridge Pro"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-118632",
+      "src": "cvelistv5",
+      "vendor": "Philips",
+      "title": "Philips Hue Bridge Pro SQL Injection Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-118632",
+      "released": "2026-11-12T02:52:15Z",
+      "updated": "2026-11-16T14:23:50Z",
+      "cves": [
+        "CVE-2026-118632"
+      ],
+      "sev": "HIGH",
+      "cvss": 8,
+      "products": [
+        "Philips Hue Bridge Pro"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-114569",
+      "src": "cvelistv5",
+      "vendor": "OriginLab",
+      "title": "OriginLab Origin Viewer OGWU File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114569",
+      "released": "2026-11-12T02:53:34Z",
+      "updated": "2026-11-16T14:23:35Z",
+      "cves": [
+        "CVE-2026-114569"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "OriginLab Origin Viewer"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-114559",
+      "src": "cvelistv5",
+      "vendor": "OriginLab",
+      "title": "OriginLab Origin Viewer OGG File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114559",
+      "released": "2026-11-12T02:53:38Z",
+      "updated": "2026-11-16T14:23:21Z",
+      "cves": [
+        "CVE-2026-114559"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "OriginLab Origin Viewer"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-114561",
+      "src": "cvelistv5",
+      "vendor": "OriginLab",
+      "title": "OriginLab Origin Viewer OPJU File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114561",
+      "released": "2026-11-12T02:53:48Z",
+      "updated": "2026-11-16T14:23:06Z",
+      "cves": [
+        "CVE-2026-114561"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "OriginLab Origin Viewer"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-114562",
+      "src": "cvelistv5",
+      "vendor": "OriginLab",
+      "title": "OriginLab Origin Viewer OGWU File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114562",
+      "released": "2026-11-12T02:53:54Z",
+      "updated": "2026-11-16T14:22:50Z",
+      "cves": [
+        "CVE-2026-114562"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "OriginLab Origin Viewer"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-114563",
+      "src": "cvelistv5",
+      "vendor": "OriginLab",
+      "title": "OriginLab Origin Viewer OGWU File Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114563",
+      "released": "2026-11-12T02:53:59Z",
+      "updated": "2026-11-16T14:22:36Z",
+      "cves": [
+        "CVE-2026-114563"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "OriginLab Origin Viewer"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-114564",
+      "src": "cvelistv5",
+      "vendor": "OriginLab",
+      "title": "OriginLab Origin Viewer OGG File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114564",
+      "released": "2026-11-12T02:54:03Z",
+      "updated": "2026-11-16T14:22:21Z",
+      "cves": [
+        "CVE-2026-114564"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "OriginLab Origin Viewer"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-114565",
+      "src": "cvelistv5",
+      "vendor": "OriginLab",
+      "title": "OriginLab Origin Viewer OGG File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114565",
+      "released": "2026-11-12T02:54:08Z",
+      "updated": "2026-11-16T14:22:07Z",
+      "cves": [
+        "CVE-2026-114565"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "OriginLab Origin Viewer"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-114566",
+      "src": "cvelistv5",
+      "vendor": "OriginLab",
+      "title": "OriginLab Origin Viewer OGM File Parsing Memory Corruption Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114566",
+      "released": "2026-11-12T02:54:12Z",
+      "updated": "2026-11-16T14:21:52Z",
+      "cves": [
+        "CVE-2026-114566"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "OriginLab Origin Viewer"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-114567",
+      "src": "cvelistv5",
+      "vendor": "OriginLab",
+      "title": "OriginLab Origin Viewer OGWU File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114567",
+      "released": "2026-11-12T02:54:17Z",
+      "updated": "2026-11-16T14:21:37Z",
+      "cves": [
+        "CVE-2026-114567"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "OriginLab Origin Viewer"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-114568",
+      "src": "cvelistv5",
+      "vendor": "OriginLab",
+      "title": "OriginLab Origin Viewer OPJ File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114568",
+      "released": "2026-11-12T02:54:21Z",
+      "updated": "2026-11-16T14:21:23Z",
+      "cves": [
+        "CVE-2026-114568"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "OriginLab Origin Viewer"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-114558",
+      "src": "cvelistv5",
+      "vendor": "OriginLab",
+      "title": "OriginLab Origin Viewer OPJU File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114558",
+      "released": "2026-11-12T02:54:26Z",
+      "updated": "2026-11-16T14:21:09Z",
+      "cves": [
+        "CVE-2026-114558"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "OriginLab Origin Viewer"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-114556",
+      "src": "cvelistv5",
+      "vendor": "MailEnable",
+      "title": "MailEnable Save Directory Traversal Arbitrary File Creation Vulnerability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114556",
+      "released": "2026-11-12T02:55:13Z",
+      "updated": "2026-11-16T14:20:53Z",
+      "cves": [
+        "CVE-2026-114556"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "MailEnable MailEnable"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-117687",
+      "src": "cvelistv5",
+      "vendor": "Six Apart Ltd.",
+      "title": "Movable Type provided by Six Apart Ltd. contains a code injection vulnerability in its Dynamic Publishing functionality. By sending a specially crafted request that is processed by the Dynamic Publishing, an attacker ma…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-117687",
+      "released": "2026-11-12T03:03:24Z",
+      "updated": "2026-11-16T14:20:39Z",
+      "cves": [
+        "CVE-2026-117687"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "Six Apart Ltd. Movable Type",
+        "Six Apart Ltd. Movable Type Advanced",
+        "Six Apart Ltd. Movable Type",
+        "Six Apart Ltd. Movable Type Advanced",
+        "Six Apart Ltd. Movable Type Premium",
+        "Six Apart Ltd. Movable Type Premium Advanced Edition"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "JVNDB-2026-043089",
       "src": "jvndb",
       "vendor": "Fenrir Inc.",
@@ -3205,6 +5071,369 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-35tr-dier-abjy-zxyz",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "CoreDNS is a DNS server that chains plugins. In versions prior to 1.14.3, the DNS-over-QUIC (DoQ) server can be driven…",
+      "url": "https://scout.docker.com/v/DHI-35tr-dier-abjy-zxyz",
+      "released": "2026-11-12T03:28:18Z",
+      "updated": "2026-11-24T21:14:58Z",
+      "cves": [
+        "CVE-2026-32934"
+      ],
+      "products": [
+        "Docker Hardened Images: coredns",
+        "Docker Hardened Images: coredns-dev",
+        "Docker Hardened Images: coredns-fips",
+        "Docker Hardened Images: coredns-fips-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-63ki-fj4b-clpi-nmgi",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "CoreDNS is a DNS server written in Go. In versions prior to 1.14.3, the gRPC, QUIC, DoH, and DoH3 transport…",
+      "url": "https://scout.docker.com/v/DHI-63ki-fj4b-clpi-nmgi",
+      "released": "2026-11-12T03:28:18Z",
+      "updated": "2026-11-24T21:14:58Z",
+      "cves": [
+        "CVE-2026-35579"
+      ],
+      "products": [
+        "Docker Hardened Images: coredns",
+        "Docker Hardened Images: coredns-dev",
+        "Docker Hardened Images: coredns-fips",
+        "Docker Hardened Images: coredns-fips-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-6qtf-xn5n-4nis-vfj7",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "CoreDNS is a DNS server that chains plugins. Prior to version 1.14.2, a denial of service vulnerability exists in…",
+      "url": "https://scout.docker.com/v/DHI-6qtf-xn5n-4nis-vfj7",
+      "released": "2026-11-12T03:28:18Z",
+      "updated": "2026-11-24T13:10:32Z",
+      "cves": [
+        "CVE-2026-26018"
+      ],
+      "products": [
+        "Docker Hardened Images: coredns",
+        "Docker Hardened Images: coredns-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-fb4x-o33a-z27j-wsv4",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "CoreDNS is a DNS server that chains plugins. In versions prior to 1.14.3, the DNS-over-HTTPS (DoH) GET path accepts…",
+      "url": "https://scout.docker.com/v/DHI-fb4x-o33a-z27j-wsv4",
+      "released": "2026-11-12T03:28:18Z",
+      "updated": "2026-11-24T21:14:58Z",
+      "cves": [
+        "CVE-2026-32936"
+      ],
+      "products": [
+        "Docker Hardened Images: coredns",
+        "Docker Hardened Images: coredns-dev",
+        "Docker Hardened Images: coredns-fips",
+        "Docker Hardened Images: coredns-fips-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-kwld-235b-nha5-jxt3",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "CoreDNS is a DNS server that chains plugins. Prior to version 1.14.2, a logical vulnerability in CoreDNS allows DNS…",
+      "url": "https://scout.docker.com/v/DHI-kwld-235b-nha5-jxt3",
+      "released": "2026-11-12T03:28:18Z",
+      "updated": "2026-11-24T13:10:32Z",
+      "cves": [
+        "CVE-2026-26017"
+      ],
+      "products": [
+        "Docker Hardened Images: coredns",
+        "Docker Hardened Images: coredns-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-ufzz-mywt-dahr-sxmr",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "CoreDNS is a DNS server that chains plugins. In versions prior to 1.14.3, the tsig plugin can be bypassed on…",
+      "url": "https://scout.docker.com/v/DHI-ufzz-mywt-dahr-sxmr",
+      "released": "2026-11-12T03:28:18Z",
+      "updated": "2026-11-24T21:14:58Z",
+      "cves": [
+        "CVE-2026-33190"
+      ],
+      "products": [
+        "Docker Hardened Images: coredns",
+        "Docker Hardened Images: coredns-dev",
+        "Docker Hardened Images: coredns-fips",
+        "Docker Hardened Images: coredns-fips-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-xu6c-usog-tkfx-ctn4",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "CoreDNS is a DNS server that chains plugins. In versions prior to 1.14.3, the transfer plugin can select the wrong ACL…",
+      "url": "https://scout.docker.com/v/DHI-xu6c-usog-tkfx-ctn4",
+      "released": "2026-11-12T03:28:18Z",
+      "updated": "2026-11-24T21:14:58Z",
+      "cves": [
+        "CVE-2026-33489"
+      ],
+      "products": [
+        "Docker Hardened Images: coredns",
+        "Docker Hardened Images: coredns-dev",
+        "Docker Hardened Images: coredns-fips",
+        "Docker Hardened Images: coredns-fips-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-87801",
+      "src": "cvelistv5",
+      "vendor": "Synology",
+      "title": "An insertion of sensitive information into sent data vulnerability in the API framework in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read arbitrary fi…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-87801",
+      "released": "2026-11-12T03:35:31Z",
+      "updated": "2026-11-16T19:50:02Z",
+      "cves": [
+        "CVE-2026-87801"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Synology DiskStation Manager (DSM)"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-19414",
+      "src": "cvelistv5",
+      "vendor": "Synology",
+      "title": "A missing authorization vulnerability in the Promotion API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to write specific files.",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-19414",
+      "released": "2026-11-12T03:37:43Z",
+      "updated": "2026-11-16T19:46:15Z",
+      "cves": [
+        "CVE-2026-19414"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "Synology DiskStation Manager (DSM)"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-74850",
+      "src": "cvelistv5",
+      "vendor": "Synology",
+      "title": "An improper limitation of a pathname to a restricted directory vulnerability in the contentextract in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read s…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-74850",
+      "released": "2026-11-12T03:38:00Z",
+      "updated": "2026-11-16T19:49:17Z",
+      "cves": [
+        "CVE-2026-74850"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "Synology DiskStation Manager (DSM)"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-77738",
+      "src": "cvelistv5",
+      "vendor": "Synology",
+      "title": "A server-side request forgery vulnerability in the Credential API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read specific files.",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-77738",
+      "released": "2026-11-12T03:38:15Z",
+      "updated": "2026-11-16T19:48:49Z",
+      "cves": [
+        "CVE-2026-77738"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "Synology DiskStation Manager (DSM)"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-81558",
+      "src": "cvelistv5",
+      "vendor": "Synology",
+      "title": "A missing authorization vulnerability in the SocketIo API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to write specific files.",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-81558",
+      "released": "2026-11-12T03:38:29Z",
+      "updated": "2026-11-16T19:48:12Z",
+      "cves": [
+        "CVE-2026-81558"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "Synology DiskStation Manager (DSM)"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-81559",
+      "src": "cvelistv5",
+      "vendor": "Synology",
+      "title": "A missing authorization vulnerability in the TaskScheduler API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to write specific files.",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-81559",
+      "released": "2026-11-12T03:38:44Z",
+      "updated": "2026-11-16T19:47:28Z",
+      "cves": [
+        "CVE-2026-81559"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "Synology DiskStation Manager (DSM)"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-88266",
+      "src": "cvelistv5",
+      "vendor": "Synology",
+      "title": "An external control of system or configuration setting vulnerability in the synomount in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to write specific file…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-88266",
+      "released": "2026-11-12T03:39:00Z",
+      "updated": "2026-11-16T19:46:58Z",
+      "cves": [
+        "CVE-2026-88266"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "Synology DiskStation Manager (DSM)"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-85101",
+      "src": "cvelistv5",
+      "vendor": "Synology",
+      "title": "An authentication bypass using an alternate path or channel vulnerability in the rsync in Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.1-90080-1 allows remote attacker…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-85101",
+      "released": "2026-11-12T03:40:28Z",
+      "updated": "2026-11-16T19:45:21Z",
+      "cves": [
+        "CVE-2026-85101"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "Synology DiskStation Manager (DSM)"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-76954",
+      "src": "cvelistv5",
+      "vendor": "Synology",
+      "title": "An improper neutralization of special elements used in an SQL command vulnerability in the Auth API in Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.1-90080-1 allows re…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-76954",
+      "released": "2026-11-12T03:41:52Z",
+      "updated": "2026-11-16T19:44:10Z",
+      "cves": [
+        "CVE-2026-76954"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Synology DiskStation Manager (DSM)"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-111433",
+      "src": "cvelistv5",
+      "vendor": "openEuler",
+      "title": "UNIX symbolic link (symlink) following vulnerability in openEuler iSulad on Linux. This vulnerability is associated with program file src/daemon/modules/spec/specs_mount.c. This issue affects iSulad: through 2.1.6. If a…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-111433",
+      "released": "2026-11-12T03:45:51Z",
+      "updated": "2026-11-16T19:43:04Z",
+      "cves": [
+        "CVE-2026-111433"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "openEuler iSulad"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-111434",
+      "src": "cvelistv5",
+      "vendor": "openEuler",
+      "title": "Use of Externally-Controlled format string vulnerability in openEuler iSulad on Linux. This vulnerability is associated with program file src/daemon/modules/image/oci/oci_load.c. This issue affects iSulad: through 2.1.6…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-111434",
+      "released": "2026-11-12T03:47:33Z",
+      "updated": "2026-11-16T19:41:59Z",
+      "cves": [
+        "CVE-2026-111434"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.6,
+      "products": [
+        "openEuler iSulad"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-111435",
+      "src": "cvelistv5",
+      "vendor": "openEuler",
+      "title": "Relative path traversal vulnerability in openEuler iSulad on Linux. This vulnerability is associated with program file src/daemon/modules/image/oci/oci_load.c. This issue affects iSulad: through 2.1.6. In oci_load.c, oc…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-111435",
+      "released": "2026-11-12T03:50:03Z",
+      "updated": "2026-11-16T19:41:16Z",
+      "cves": [
+        "CVE-2026-111435"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "openEuler iSulad"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-111436",
+      "src": "cvelistv5",
+      "vendor": "openEuler",
+      "title": "Missing release of memory after effective lifetime vulnerability in openEuler iSulad on Linux. This vulnerability is associated with program file src/daemon/modules/spec/specs_mount.c. This issue affects iSulad: through…",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-111436",
+      "released": "2026-11-12T03:54:18Z",
+      "updated": "2026-11-16T19:39:59Z",
+      "cves": [
+        "CVE-2026-111436"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.4,
+      "products": [
+        "openEuler iSulad"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-bytb-fumu-dckr-fuvn",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -3219,6 +5448,56 @@
         "Docker Hardened Images: jpeg-xl"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-4u5x-3e6e-ikw7-4gib",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Information disclosure in persistent watchers handling in Apache ZooKeeper due to missing ACL check. It allows an…",
+      "url": "https://scout.docker.com/v/DHI-4u5x-3e6e-ikw7-4gib",
+      "released": "2026-11-12T04:13:55Z",
+      "updated": "2026-11-24T21:35:53Z",
+      "cves": [
+        "CVE-2024-23944"
+      ],
+      "products": [
+        "Docker Hardened Images: janusgraph-1.0"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-r6zr-7di2-2g6j-borl",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "When using IPAuthenticationProvider in ZooKeeper Admin Server there is a possibility of Authentication Bypass by…",
+      "url": "https://scout.docker.com/v/DHI-r6zr-7di2-2g6j-borl",
+      "released": "2026-11-12T04:13:55Z",
+      "updated": "2026-11-24T21:35:33Z",
+      "cves": [
+        "CVE-2024-51504"
+      ],
+      "products": [
+        "Docker Hardened Images: janusgraph-1.0",
+        "Docker Hardened Images: janusgraph-1.1"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-wkih-thoa-fri5-typv",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Improper permission check in ZooKeeper AdminServer lets authorized clients to run snapshot and restore command with…",
+      "url": "https://scout.docker.com/v/DHI-wkih-thoa-fri5-typv",
+      "released": "2026-11-12T04:13:55Z",
+      "updated": "2026-11-24T22:29:40Z",
+      "cves": [
+        "CVE-2025-58457"
+      ],
+      "products": [
+        "Docker Hardened Images: janusgraph-1.0",
+        "Docker Hardened Images: janusgraph-1.1"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "JVNDB-2026-000172",
@@ -3237,6 +5516,59 @@
         "Air Terminal 6"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-q6i3-hvpr-yrdt-vidh",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Colord is a tiny yet powerful tool for high-performance color manipulations and conversions. Prior to 2.9.4…",
+      "url": "https://scout.docker.com/v/DHI-q6i3-hvpr-yrdt-vidh",
+      "released": "2026-11-12T04:53:24Z",
+      "updated": "2026-11-24T23:17:01Z",
+      "cves": [
+        "CVE-2026-85062"
+      ],
+      "products": [
+        "Docker Hardened Images: gitea",
+        "Docker Hardened Images: gitea-dev",
+        "Docker Hardened Images: gitea-fips",
+        "Docker Hardened Images: gitea-fips-dev",
+        "Docker Hardened Images: karma",
+        "Docker Hardened Images: karma-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-nhot-wveu-cylx-dwhz",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Faker generates massive amounts of fake data in the browser and Node.js. Prior to 10.5.0, the faker.helpers.fake method…",
+      "url": "https://scout.docker.com/v/DHI-nhot-wveu-cylx-dwhz",
+      "released": "2026-11-12T05:03:11Z",
+      "updated": "2026-11-24T21:54:05Z",
+      "cves": [
+        "CVE-2026-73231"
+      ],
+      "products": [
+        "Docker Hardened Images: postman-mcp"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-sq2g-ecm7-4mce-2jch",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A flaw was found in the gdk-pixbuf library. This heap-based buffer overflow vulnerability occurs in the JPEG image…",
+      "url": "https://scout.docker.com/v/DHI-sq2g-ecm7-4mce-2jch",
+      "released": "2026-11-12T05:45:37Z",
+      "updated": "2026-11-24T13:25:14Z",
+      "cves": [
+        "CVE-2026-5201"
+      ],
+      "products": [
+        "Docker Hardened Images: gdk-pixbuf"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-106027",
@@ -3633,6 +5965,23 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-45uy-a7qy-jvaq-qs2h",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Jetty is a Java based web server and servlet engine. An HTTP/2 SSL connection that is established and TCP congested…",
+      "url": "https://scout.docker.com/v/DHI-45uy-a7qy-jvaq-qs2h",
+      "released": "2026-11-12T06:10:31Z",
+      "updated": "2026-11-24T21:35:33Z",
+      "cves": [
+        "CVE-2024-22201"
+      ],
+      "products": [
+        "Docker Hardened Images: janusgraph-1.0",
+        "Docker Hardened Images: janusgraph-1.1"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-pcnz-lmn6-zf7d-dlof",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -3644,6 +5993,40 @@
         "Docker Hardened Images: rust"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-za7i-j5mp-npum-bizg",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Summary",
+      "url": "https://scout.docker.com/v/DHI-za7i-j5mp-npum-bizg",
+      "released": "2026-11-12T06:10:31Z",
+      "updated": "2026-11-24T23:13:27Z",
+      "products": [
+        "Docker Hardened Images: trivy",
+        "Docker Hardened Images: trivy-dev",
+        "Docker Hardened Images: trivy-fips",
+        "Docker Hardened Images: trivy-fips-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-8331",
+      "src": "cvelistv5",
+      "vendor": "Microchip",
+      "title": "TimePictra ermote code execution via file upload",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-8331",
+      "released": "2026-11-12T06:21:04Z",
+      "updated": "2026-11-16T14:20:24Z",
+      "cves": [
+        "CVE-2026-8331"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Microchip TimePictra"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "DHI-iorw-xa36-q2ze-knyt",
@@ -3660,6 +6043,45 @@
         "Docker Hardened Images: zfs-linux"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-12507",
+      "src": "cvelistv5",
+      "vendor": "Zohocorp",
+      "title": "Authenticated remote code execution",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-12507",
+      "released": "2026-11-12T06:48:54Z",
+      "updated": "2026-11-16T14:20:08Z",
+      "cves": [
+        "CVE-2026-12507"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Zohocorp AssetExplorer",
+        "Zohocorp ServiceDesk Plus",
+        "Zohocorp ServiceDesk Plus MSP",
+        "Zohocorp SupportCenter Plus"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-12591",
+      "src": "cvelistv5",
+      "vendor": "Zohocorp",
+      "title": "Privilege Escalation",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-12591",
+      "released": "2026-11-12T06:55:31Z",
+      "updated": "2026-11-16T14:19:53Z",
+      "cves": [
+        "CVE-2026-12591"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "products": [
+        "Zohocorp M365 Manager Plus"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22272-1",
@@ -3689,6 +6111,48 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-jacl-i52j-f6xo-vfmb",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Summary",
+      "url": "https://scout.docker.com/v/DHI-jacl-i52j-f6xo-vfmb",
+      "released": "2026-11-12T07:03:03Z",
+      "updated": "2026-11-24T23:30:04Z",
+      "cves": [
+        "CVE-2026-59879"
+      ],
+      "products": [
+        "Docker Hardened Images: karma",
+        "Docker Hardened Images: karma-dev",
+        "Docker Hardened Images: karma-fips",
+        "Docker Hardened Images: karma-fips-dev",
+        "Docker Hardened Images: openshift-console",
+        "Docker Hardened Images: openshift-console-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-mrde-7pcb-pono-x2b7",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "## Summary",
+      "url": "https://scout.docker.com/v/DHI-mrde-7pcb-pono-x2b7",
+      "released": "2026-11-12T07:03:03Z",
+      "updated": "2026-11-24T23:30:04Z",
+      "cves": [
+        "CVE-2026-59880"
+      ],
+      "products": [
+        "Docker Hardened Images: karma",
+        "Docker Hardened Images: karma-dev",
+        "Docker Hardened Images: karma-fips",
+        "Docker Hardened Images: karma-fips-dev",
+        "Docker Hardened Images: openshift-console",
+        "Docker Hardened Images: openshift-console-dev"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22273-1",
@@ -3764,6 +6228,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-n5rc-c5g3-d4po-ebba",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "pbkdf2 through 3.1.6 re-hashes passwords longer than the digest's block size on every iteration in its JavaScript…",
+      "url": "https://scout.docker.com/v/DHI-n5rc-c5g3-d4po-ebba",
+      "released": "2026-11-12T07:16:11Z",
+      "updated": "2026-11-24T21:43:41Z",
+      "cves": [
+        "CVE-2026-102414"
+      ],
+      "products": [
+        "Docker Hardened Images: headlamp",
+        "Docker Hardened Images: headlamp-fips",
+        "Docker Hardened Images: webflow-mcp"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-126991",
       "src": "gna-1",
       "vendor": "misp",
@@ -3782,6 +6264,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-126991",
+      "src": "cvelistv5",
+      "vendor": "misp",
+      "title": "SPARQL Injection in MISP Wikidata Lookup Module via Unescaped User Input",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126991",
+      "released": "2026-11-12T07:33:51Z",
+      "updated": "2026-11-16T15:03:12Z",
+      "cves": [
+        "CVE-2026-126991"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "misp misp-modules"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-125836",
       "src": "cvelistv5",
       "vendor": "Nicu Micle",
@@ -3798,6 +6298,46 @@
         "Nicu Micle Simple JWT Login"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-40820",
+      "src": "cvelistv5",
+      "vendor": "MB connect line",
+      "title": "Authenticated SQLi in getVpnData function",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-40820",
+      "released": "2026-11-12T07:41:47Z",
+      "updated": "2026-11-13T18:32:34Z",
+      "cves": [
+        "CVE-2026-40820"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "MB connect line mbCONNECT24",
+        "MB connect line mymbCONNECT24",
+        "MB connect line mbCONNECT24",
+        "MB connect line mymbCONNECT24",
+        "Helmholz myREX24V2",
+        "Helmholz myREX24V2.virtual"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-btdi-y2un-oinh-gmsn",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Versions of the package snyk before 1.1297.3 are vulnerable to Insertion of Sensitive Information into Log File through…",
+      "url": "https://scout.docker.com/v/DHI-btdi-y2un-oinh-gmsn",
+      "released": "2026-11-12T07:53:15Z",
+      "updated": "2026-11-24T21:41:10Z",
+      "cves": [
+        "CVE-2025-6624"
+      ],
+      "products": [
+        "Docker Hardened Images: snyk",
+        "Docker Hardened Images: snyk-fips"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "NCSC-2026-0484",
@@ -3930,6 +6470,25 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-90908",
+      "src": "cvelistv5",
+      "vendor": "Azul Payara",
+      "title": "Azul Payara JMX/RMI Remote Authentication Bypass Leading to Remote Code Execution via GenericAdminAuthenticator",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-90908",
+      "released": "2026-11-12T08:53:29Z",
+      "updated": "2026-11-16T14:19:39Z",
+      "cves": [
+        "CVE-2026-90908"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.3,
+      "products": [
+        "Azul Payara Payara Server",
+        "Azul Payara Payara Micro"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "NCSC-2026-0487",
       "src": "csaf_ncscnl",
       "vendor": "Fortinet",
@@ -3993,6 +6552,78 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-106140",
+      "src": "cvelistv5",
+      "vendor": "Progress Software",
+      "title": "Deserialization of Untrusted Data in Telerik Reporting Report Designers",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-106140",
+      "released": "2026-11-12T09:42:29Z",
+      "updated": "2026-11-16T14:19:24Z",
+      "cves": [
+        "CVE-2026-106140"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "Progress Software Telerik Reporting"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-127016",
+      "src": "cvelistv5",
+      "vendor": "misp",
+      "title": "MISP Modules Website: Missing Authorization on External Tool Management Endpoints",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127016",
+      "released": "2026-11-12T09:45:17Z",
+      "updated": "2026-11-16T15:01:30Z",
+      "cves": [
+        "CVE-2026-127016"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.2,
+      "products": [
+        "misp misp-modules"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-124699",
+      "src": "cvelistv5",
+      "vendor": "Progress Software",
+      "title": "Improper Control of Generation of Code in Progress Telerik UI for WinForms",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124699",
+      "released": "2026-11-12T09:56:54Z",
+      "updated": "2026-11-16T14:19:09Z",
+      "cves": [
+        "CVE-2026-124699"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Progress Software Telerik UI for WinForms"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-124701",
+      "src": "cvelistv5",
+      "vendor": "Progress Software",
+      "title": "Deserialization of Untrusted Data in Progress Telerik UI for WinForms",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124701",
+      "released": "2026-11-12T10:45:53Z",
+      "updated": "2026-11-16T14:18:55Z",
+      "cves": [
+        "CVE-2026-124701"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Progress Software Telerik UI for WinForms"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-126641",
       "src": "cvelistv5",
       "vendor": "Red Hat",
@@ -4016,6 +6647,63 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-126643",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Aap-gateway-operator: resource-server secret exposed in plaintext in the automationcontroller custom resource",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126643",
+      "released": "2026-11-12T10:47:33Z",
+      "updated": "2026-11-16T18:54:39Z",
+      "cves": [
+        "CVE-2026-126643"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Red Hat Red Hat Ansible Automation Platform 2",
+        "Red Hat Red Hat Ansible Automation Platform 2",
+        "Red Hat Red Hat Ansible Automation Platform 2",
+        "Red Hat Red Hat Ansible Automation Platform 2"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-124703",
+      "src": "cvelistv5",
+      "vendor": "Progress Software",
+      "title": "Improper Control of Generation of Code in Progress Telerik UI for WPF",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124703",
+      "released": "2026-11-12T10:53:41Z",
+      "updated": "2026-11-16T14:18:40Z",
+      "cves": [
+        "CVE-2026-124703"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Progress Software Telerik UI for WPF"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-124704",
+      "src": "cvelistv5",
+      "vendor": "Progress Software",
+      "title": "Deserialization of Untrusted Data in Progress Telerik UI for WPF",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124704",
+      "released": "2026-11-12T10:56:36Z",
+      "updated": "2026-11-16T14:18:25Z",
+      "cves": [
+        "CVE-2026-124704"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Progress Software Telerik UI for WPF"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-vs3l-mnhz-oays-zgyd",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -4030,6 +6718,42 @@
         "Docker Hardened Images: protobuf"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-15309",
+      "src": "cvelistv5",
+      "vendor": "WishList Member",
+      "title": "CourseCure Courses <= 1.5.1 - Authenticated (Subscriber+) Privilege Escalation to 'ajax_save_settings' Endpoint",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-15309",
+      "released": "2026-11-12T11:32:16Z",
+      "updated": "2026-11-13T18:34:49Z",
+      "cves": [
+        "CVE-2026-15309"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "WishList Member CourseCure Courses"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-2982",
+      "src": "cvelistv5",
+      "vendor": "wptb",
+      "title": "WP Table Builder – Drag & Drop Table Builder <= 2.1.7 - Authenticated (Contributor+) Stored Cross-Site Scripting via 'url'",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-2982",
+      "released": "2026-11-12T11:32:16Z",
+      "updated": "2026-11-16T18:55:35Z",
+      "cves": [
+        "CVE-2026-2982"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.4,
+      "products": [
+        "wptb WP Table Builder – Drag & Drop Table Builder"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-13764",
@@ -4066,6 +6790,28 @@
         "VibeThemes VibeBP"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-vwmg-olsi-ahpz-gv3f",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A denial-of-service and resource exhaustion vulnerability exists within the `GDBus` component of GLib. The `gdbusauth`…",
+      "url": "https://scout.docker.com/v/DHI-vwmg-olsi-ahpz-gv3f",
+      "released": "2026-11-12T11:51:17Z",
+      "updated": "2026-11-24T19:01:08Z",
+      "cves": [
+        "CVE-2026-15588"
+      ],
+      "products": [
+        "Docker Hardened Images: glib2.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in glib2.0 2.84.4-3~deb13u5+dhi0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "NCSC-2026-0488",
@@ -4130,6 +6876,24 @@
       ],
       "lang": "nl",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124705",
+      "src": "cvelistv5",
+      "vendor": "Progress Software",
+      "title": "URL Redirection to Untrusted Site in Progress Telerik UI for .NET MAUI",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124705",
+      "released": "2026-11-12T11:59:34Z",
+      "updated": "2026-11-16T14:18:11Z",
+      "cves": [
+        "CVE-2026-124705"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Progress Software Telerik UI for .NET MAUI"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "RUSTSEC-2026-0501",
@@ -4472,6 +7236,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-127046",
+      "src": "cvelistv5",
+      "vendor": "misp",
+      "title": "MISP Modules Website Exposes External Tool API Keys in /external_tools/list Response",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127046",
+      "released": "2026-11-12T12:05:04Z",
+      "updated": "2026-11-16T15:00:14Z",
+      "cves": [
+        "CVE-2026-127046"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.2,
+      "products": [
+        "misp misp-modules"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "NCSC-2026-0490",
       "src": "csaf_ncscnl",
       "vendor": "Fortinet",
@@ -4506,6 +7288,24 @@
       ],
       "lang": "nl",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-126993",
+      "src": "cvelistv5",
+      "vendor": "SiteServer",
+      "title": "SiteServer SSCMS captcha inadequate encryption",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126993",
+      "released": "2026-11-12T12:15:18Z",
+      "updated": "2026-11-13T18:37:12Z",
+      "cves": [
+        "CVE-2026-126993"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "SiteServer SSCMS"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-127050",
@@ -4556,6 +7356,42 @@
         "mholt PapaParse"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-125870",
+      "src": "cvelistv5",
+      "vendor": "bookstackapp",
+      "title": "BookStack before 26.09.3 Broken Access Control via ImageController",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-125870",
+      "released": "2026-11-12T12:48:05Z",
+      "updated": "2026-11-16T18:56:50Z",
+      "cves": [
+        "CVE-2026-125870"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.2,
+      "products": [
+        "bookstackapp bookstack"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-127058",
+      "src": "cvelistv5",
+      "vendor": "WonderCMS",
+      "title": "WonderCMS before 3.7.0 Unverified Password Change via saveAction",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127058",
+      "released": "2026-11-12T13:09:59Z",
+      "updated": "2026-11-13T18:49:23Z",
+      "cves": [
+        "CVE-2026-127058"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "WonderCMS wondercms"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-124018",
@@ -4697,6 +7533,25 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-123039",
+      "src": "cvelistv5",
+      "vendor": "checkpoint",
+      "title": "Local privilege escalation to root in the DynamicCLI daemon via local world-writable control socket",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-123039",
+      "released": "2026-11-12T14:02:13Z",
+      "updated": "2026-11-14T04:56:46Z",
+      "cves": [
+        "CVE-2026-123039"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "checkpoint Quantum Security Gateway",
+        "checkpoint Quantum Security Management"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-71367",
@@ -4994,6 +7849,76 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-116323",
+      "src": "cvelistv5",
+      "title": "PostgreSQL pltcl reentrant result conversion use-after-free executes arbitrary code",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-116323",
+      "released": "2026-11-12T14:15:13Z",
+      "updated": "2026-11-14T04:58:02Z",
+      "cves": [
+        "CVE-2026-116323"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-116326",
+      "src": "cvelistv5",
+      "title": "PostgreSQL plperl tied-object exceptions follow stale sigjmp_buf",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-116326",
+      "released": "2026-11-12T14:15:15Z",
+      "updated": "2026-11-14T04:58:00Z",
+      "cves": [
+        "CVE-2026-116326"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-116328",
+      "src": "cvelistv5",
+      "title": "PostgreSQL generation memory context integer wraparound executes arbitrary code",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-116328",
+      "released": "2026-11-12T14:15:16Z",
+      "updated": "2026-11-14T04:57:59Z",
+      "cves": [
+        "CVE-2026-116328"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-116329",
+      "src": "cvelistv5",
+      "title": "PostgreSQL statistics import type confusion executes arbitrary code",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-116329",
+      "released": "2026-11-12T14:15:16Z",
+      "updated": "2026-11-14T04:57:58Z",
+      "cves": [
+        "CVE-2026-116329"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-116330",
+      "src": "cvelistv5",
+      "title": "PostgreSQL pg_dump tar restore.sql fails to block psql command injection",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-116330",
+      "released": "2026-11-12T14:15:17Z",
+      "updated": "2026-11-14T04:57:55Z",
+      "cves": [
+        "CVE-2026-116330"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-116331",
       "src": "cvelistv5",
       "title": "PostgreSQL min/max aggregate type confusion executes arbitrary code",
@@ -5006,6 +7931,24 @@
       "sev": "HIGH",
       "cvss": 8.8,
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-126996",
+      "src": "cvelistv5",
+      "vendor": "SakanaAI",
+      "title": "SakanaAI text-to-LoRA Checkpoint Loading model_loading.py get_tokenizer path traversal",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126996",
+      "released": "2026-11-12T14:15:17Z",
+      "updated": "2026-11-16T18:57:48Z",
+      "cves": [
+        "CVE-2026-126996"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "SakanaAI text-to-LoRA"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-116332",
@@ -5132,6 +8075,76 @@
       "sev": "HIGH",
       "cvss": 8.8,
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-120145",
+      "src": "cvelistv5",
+      "title": "PostgreSQL logical replication can write to subscriber system catalogs, executing arbitrary code",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-120145",
+      "released": "2026-11-12T14:15:23Z",
+      "updated": "2026-11-14T04:57:46Z",
+      "cves": [
+        "CVE-2026-120145"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-120147",
+      "src": "cvelistv5",
+      "title": "PostgreSQL dblink reentrant disconnect use-after-free executes arbitrary code",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-120147",
+      "released": "2026-11-12T14:15:25Z",
+      "updated": "2026-11-14T04:57:41Z",
+      "cves": [
+        "CVE-2026-120147"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-120148",
+      "src": "cvelistv5",
+      "title": "PostgreSQL extended-statistics pseudo-type confusion executes arbitrary code",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-120148",
+      "released": "2026-11-12T14:15:25Z",
+      "updated": "2026-11-14T04:57:42Z",
+      "cves": [
+        "CVE-2026-120148"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-120149",
+      "src": "cvelistv5",
+      "title": "PostgreSQL FDW batch-insert mismatch executes arbitrary code",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-120149",
+      "released": "2026-11-12T14:15:26Z",
+      "updated": "2026-11-14T04:57:44Z",
+      "cves": [
+        "CVE-2026-120149"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-120150",
+      "src": "cvelistv5",
+      "title": "PostgreSQL expanded-record domain-check use-after-free executes arbitrary code",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-120150",
+      "released": "2026-11-12T14:15:27Z",
+      "updated": "2026-11-14T04:57:40Z",
+      "cves": [
+        "CVE-2026-120150"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-120151",
@@ -5308,6 +8321,20 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-126997",
+      "src": "cvelistv5",
+      "title": "JeecgBoot flow-run Endpoint a.class RestTemplate.exchange server-side request forgery",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126997",
+      "released": "2026-11-12T14:30:26Z",
+      "updated": "2026-11-13T18:38:26Z",
+      "cves": [
+        "CVE-2026-126997"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "NCSC-2026-0493",
       "src": "csaf_ncscnl",
       "vendor": "Ivanti",
@@ -5342,6 +8369,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "https://kb.cert.org/vuls/id/944667",
+      "src": "certcc",
+      "vendor": "CERT/CC",
+      "title": "VU#944667: ComfyUI-Easy-Use contains unauthenticated path traversal vulnerability",
+      "url": "https://kb.cert.org/vuls/id/944667",
+      "released": "2026-11-12T14:48:14Z",
+      "updated": "2026-11-12T14:48:14Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://kb.cert.org/vuls/id/944667"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-3kjz-3mau-ued5-k2aj",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -5353,6 +8396,56 @@
         "Docker Hardened Images: vector"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/",
+      "src": "unit42",
+      "vendor": "Unit 42",
+      "title": "Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Sectors",
+      "url": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/",
+      "released": "2026-11-12T15:00:31Z",
+      "updated": "2026-11-12T15:00:31Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-127109",
+      "src": "cvelistv5",
+      "vendor": "Promzard",
+      "title": "CVE-2026-127109",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127109",
+      "released": "2026-11-12T15:08:53Z",
+      "updated": "2026-11-16T16:18:32Z",
+      "cves": [
+        "CVE-2026-127109"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "Promzard Promzard"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "https://kb.cert.org/vuls/id/685399",
+      "src": "certcc",
+      "vendor": "CERT/CC",
+      "title": "VU#685399: PromZard context key code injection leads to remote code execution",
+      "url": "https://kb.cert.org/vuls/id/685399",
+      "released": "2026-11-12T15:09:39Z",
+      "updated": "2026-11-12T15:09:39Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://kb.cert.org/vuls/id/685399"
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22286-1",
@@ -5393,6 +8486,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-127111",
+      "src": "cvelistv5",
+      "vendor": "Alinto",
+      "title": "SOGo before 5.12.13 Unauthenticated Password Recovery Brute Force",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127111",
+      "released": "2026-11-12T15:53:16Z",
+      "updated": "2026-11-13T18:41:16Z",
+      "cves": [
+        "CVE-2026-127111"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Alinto sogo"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-127121",
       "src": "cvelistv5",
       "vendor": "Alinto",
@@ -5409,6 +8520,60 @@
         "Alinto sogo"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-127131",
+      "src": "cvelistv5",
+      "vendor": "Alinto",
+      "title": "SOGo before 5.12.13 Missing Rate Limiting on TOTP Verification",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127131",
+      "released": "2026-11-12T15:56:31Z",
+      "updated": "2026-11-16T18:59:24Z",
+      "cves": [
+        "CVE-2026-127131"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Alinto sogo"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-70642",
+      "src": "cvelistv5",
+      "vendor": "ToolJet",
+      "title": "ToolJet < 3.21.94 Authorization Bypass via app-environments/init",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-70642",
+      "released": "2026-11-12T15:57:39Z",
+      "updated": "2026-11-16T19:04:20Z",
+      "cves": [
+        "CVE-2026-70642"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "ToolJet ToolJet"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-127135",
+      "src": "cvelistv5",
+      "vendor": "Alinto",
+      "title": "SOGo before 5.12.13 Sieve Script Injection via Notification Address",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127135",
+      "released": "2026-11-12T15:58:44Z",
+      "updated": "2026-11-13T18:51:50Z",
+      "cves": [
+        "CVE-2026-127135"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Alinto sogo"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-127141",
@@ -5447,6 +8612,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2025-10698",
+      "src": "cvelistv5",
+      "vendor": "OpenText",
+      "title": "Improper File Permissions on Private Key Files in Docker Deployments",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2025-10698",
+      "released": "2026-11-12T16:29:44Z",
+      "updated": "2026-11-16T15:46:35Z",
+      "cves": [
+        "CVE-2025-10698"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6,
+      "products": [
+        "OpenText Identity Console"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-127202",
       "src": "cvelistv5",
       "vendor": "mlflow",
@@ -5465,6 +8648,130 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-127203",
+      "src": "cvelistv5",
+      "vendor": "AppFlowy-IO",
+      "title": "AppFlowy Cloud 0.9.64 Stored XSS via Blob Upload Content-Type",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127203",
+      "released": "2026-11-12T16:42:40Z",
+      "updated": "2026-11-16T19:08:52Z",
+      "cves": [
+        "CVE-2026-127203"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.4,
+      "products": [
+        "AppFlowy-IO AppFlowy-Cloud"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126189",
+      "src": "cvelistv5",
+      "vendor": "facelessuser",
+      "title": "Soup Sieve: Quadratic-time denial of service when matching `:has()`",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126189",
+      "released": "2026-11-12T16:53:00Z",
+      "updated": "2026-11-16T19:10:30Z",
+      "cves": [
+        "CVE-2026-126189"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "facelessuser soupsieve"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126190",
+      "src": "cvelistv5",
+      "vendor": "facelessuser",
+      "title": "Soup Sieve: Polynomial-time denial of service in the descendant combinator",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126190",
+      "released": "2026-11-12T16:54:14Z",
+      "updated": "2026-11-13T22:33:23Z",
+      "cves": [
+        "CVE-2026-126190"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "facelessuser soupsieve"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126191",
+      "src": "cvelistv5",
+      "vendor": "facelessuser",
+      "title": "Soup Sieve: Exponential ReDoS in selector compilation via \\9-run in CSS_ESCAPES/IDENTIFIER",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126191",
+      "released": "2026-11-12T16:57:01Z",
+      "updated": "2026-11-13T18:54:06Z",
+      "cves": [
+        "CVE-2026-126191"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "facelessuser soupsieve"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "rosoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
+      "src": "msft_security_blog",
+      "vendor": "Microsoft",
+      "title": "Trained to betray: How post-training supply chain attacks hijack coding agents",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
+      "released": "2026-11-12T17:00:00Z",
+      "updated": "2026-11-12T17:00:00Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126837",
+      "src": "cvelistv5",
+      "vendor": "MongoDB",
+      "title": "Attacker able to redirect a client's database traffic to a host they control via special characters in an SRV target, bypassing the SRV parent-domain guard",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126837",
+      "released": "2026-11-12T17:00:11Z",
+      "updated": "2026-11-13T18:56:09Z",
+      "cves": [
+        "CVE-2026-126837"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "MongoDB Node.js Driver"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126835",
+      "src": "cvelistv5",
+      "vendor": "MongoDB",
+      "title": "[Node.js Driver] OIDC ENVIRONMENT confusion bypasses ALLOWED_HOSTS and leaks human-callback bearer tokens",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126835",
+      "released": "2026-11-12T17:06:05Z",
+      "updated": "2026-11-13T16:50:44Z",
+      "cves": [
+        "CVE-2026-126835"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "MongoDB Node.js Driver"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-126192",
       "src": "cvelistv5",
       "vendor": "facelessuser",
@@ -5481,6 +8788,80 @@
         "facelessuser soupsieve"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-126193",
+      "src": "cvelistv5",
+      "vendor": "facelessuser",
+      "title": "Soup Sieve: Uncontrolled recursion in Soup Sieve CSS parser lets nested pseudo-class selectors exhaust the Python call stack",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126193",
+      "released": "2026-11-12T17:12:02Z",
+      "updated": "2026-11-16T19:14:32Z",
+      "cves": [
+        "CVE-2026-126193"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "facelessuser soupsieve"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-71363",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Awx: unauthenticated debug endpoints trigger scheduler operations",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-71363",
+      "released": "2026-11-12T17:19:27Z",
+      "updated": "2026-11-13T18:56:05Z",
+      "cves": [
+        "CVE-2026-71363"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "Red Hat Red Hat Ansible Automation Platform 2",
+        "Red Hat Red Hat Ansible Automation Platform 2",
+        "Red Hat Red Hat Ansible Automation Platform 2"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-124700",
+      "src": "cvelistv5",
+      "vendor": "Progress Software",
+      "title": "URL Redirection to Untrusted Site in Progress Telerik UI for WinForms",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124700",
+      "released": "2026-11-12T17:21:46Z",
+      "updated": "2026-11-16T14:17:56Z",
+      "cves": [
+        "CVE-2026-124700"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Progress Software Telerik UI for WinForms"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-124702",
+      "src": "cvelistv5",
+      "vendor": "Progress Software",
+      "title": "URL Redirection to Untrusted Site in Progress Telerik UI for WPF",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124702",
+      "released": "2026-11-12T17:23:11Z",
+      "updated": "2026-11-16T14:17:41Z",
+      "cves": [
+        "CVE-2026-124702"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Progress Software Telerik UI for WPF"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "msrc_CVE-2022-35890",
@@ -5595,6 +8976,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-126197",
+      "src": "cvelistv5",
+      "vendor": "pgEdge",
+      "title": "pgEdge Postgres MCP Server SQL injection through custom pl-do tool parameters",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126197",
+      "released": "2026-11-12T17:29:35Z",
+      "updated": "2026-11-13T18:57:22Z",
+      "cves": [
+        "CVE-2026-126197"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "pgEdge pgedge-postgres-mcp"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "msrc_CVE-2026-8963",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -5707,6 +9106,24 @@
         "pgEdge pgedge-postgres-mcp"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-126199",
+      "src": "cvelistv5",
+      "vendor": "pgEdge",
+      "title": "pgEdge Postgres MCP Server write confirmation skipped for writes that begin with a reading keyword",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126199",
+      "released": "2026-11-12T17:32:08Z",
+      "updated": "2026-11-16T19:16:16Z",
+      "cves": [
+        "CVE-2026-126199"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.8,
+      "products": [
+        "pgEdge pgedge-postgres-mcp"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "msrc_CVE-2026-73650",
@@ -8216,6 +11633,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-127204",
+      "src": "cvelistv5",
+      "vendor": "wp.insider",
+      "title": "WooCommerce PayPal Pro Payment Gateway < 4.1.1 Payment Bypass via pp_capture_order",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127204",
+      "released": "2026-11-12T17:46:44Z",
+      "updated": "2026-11-13T18:59:29Z",
+      "cves": [
+        "CVE-2026-127204"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "wp.insider Payment Gateway for PayPal Pro, PayPal Checkout & Subscriptions for WooCommerce"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "msrc_CVE-2026-74968",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -9610,6 +13045,79 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "https://kb.cert.org/vuls/id/580079",
+      "src": "certcc",
+      "vendor": "CERT/CC",
+      "title": "VU#580079: Arbitrary file read/write vulnerability in ImageMagick-based applications with default configuration",
+      "url": "https://kb.cert.org/vuls/id/580079",
+      "released": "2026-11-12T18:12:09Z",
+      "updated": "2026-11-12T18:12:09Z",
+      "cves": [
+        "CVE-2026-65640"
+      ],
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://kb.cert.org/vuls/id/580079"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126838",
+      "src": "cvelistv5",
+      "vendor": "MongoDB",
+      "title": "Rust Driver public Client Debug output exposes CSFLE KMS master-key material",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126838",
+      "released": "2026-11-12T18:46:40Z",
+      "updated": "2026-11-13T16:49:32Z",
+      "cves": [
+        "CVE-2026-126838"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.7,
+      "products": [
+        "MongoDB Rust Driver"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126204",
+      "src": "cvelistv5",
+      "vendor": "express-rate-limit",
+      "title": "express-rate-limit skipFailedRequests / skipSuccessfulRequests: with the default MemoryStore, a request from an earlier window is still un-counted from the current window",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126204",
+      "released": "2026-11-12T18:47:40Z",
+      "updated": "2026-11-13T19:03:41Z",
+      "cves": [
+        "CVE-2026-126204"
+      ],
+      "sev": "LOW",
+      "cvss": 3.7,
+      "products": [
+        "express-rate-limit express-rate-limit"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-18379",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Yggdrasil-worker-package-manager: yggdrasil-worker-package-manager: path traversal via unsanitized repo name in addrepo/removerepo",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-18379",
+      "released": "2026-11-12T18:49:34Z",
+      "updated": "2026-11-13T19:07:35Z",
+      "cves": [
+        "CVE-2026-18379"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Red Hat Enterprise Linux 10"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-0436",
       "src": "cvelistv5",
       "vendor": "AMD",
@@ -9628,6 +13136,22 @@
         "AMD AMD EPYC™ Embedded 9005 Series Processors"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "https://blog.talosintelligence.com/never-be-afraid-to-ask-questions/",
+      "src": "talos",
+      "vendor": "Cisco Talos",
+      "title": "Never be afraid to ask questions",
+      "url": "https://blog.talosintelligence.com/never-be-afraid-to-ask-questions/",
+      "released": "2026-11-12T19:00:00Z",
+      "updated": "2026-11-12T19:00:00Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://blog.talosintelligence.com/never-be-afraid-to-ask-questions/"
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2024-21954",
@@ -9649,6 +13173,25 @@
         "AMD AMD EPYC™ Embedded 9004 Series Processors (formerly codenamed \"Genoa\")"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/",
+      "src": "aws_bulletins",
+      "vendor": "Amazon Web Services",
+      "title": "CVE-2026-127119 - Unverified ownership of the default EMR cluster log location in AWS SDK for pandas",
+      "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/",
+      "released": "2026-11-12T19:07:08Z",
+      "updated": "2026-11-12T19:07:08Z",
+      "cves": [
+        "CVE-2026-127119"
+      ],
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/"
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2025-54501",
@@ -9792,6 +13335,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-124002",
+      "src": "cvelistv5",
+      "vendor": "Copeland",
+      "title": "Dixell/Copeland XWEB EVO Pre-Auth OS Command Injection via Username",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124002",
+      "released": "2026-11-12T19:34:26Z",
+      "updated": "2026-11-13T22:33:16Z",
+      "cves": [
+        "CVE-2026-124002"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Copeland XWEB EVO"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-0455",
       "src": "cvelistv5",
       "vendor": "AMD",
@@ -9848,6 +13409,60 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-124004",
+      "src": "cvelistv5",
+      "vendor": "Copeland",
+      "title": "Dixell/Copeland XWEB EVO Hardcoded Administrator Backdoor Password",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124004",
+      "released": "2026-11-12T19:41:02Z",
+      "updated": "2026-11-16T19:18:00Z",
+      "cves": [
+        "CVE-2026-124004"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Copeland XWEB EVO"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-124005",
+      "src": "cvelistv5",
+      "vendor": "Copeland",
+      "title": "Dixell/Copeland XWEB EVO Predictable Administrator Password Generation",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124005",
+      "released": "2026-11-12T19:42:31Z",
+      "updated": "2026-11-13T19:06:31Z",
+      "cves": [
+        "CVE-2026-124005"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.2,
+      "products": [
+        "Copeland XWEB EVO"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-124006",
+      "src": "cvelistv5",
+      "vendor": "Copeland",
+      "title": "Dixell/Copeland XWEB EVO Predictable Root Password Generation",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124006",
+      "released": "2026-11-12T19:44:23Z",
+      "updated": "2026-11-13T22:33:10Z",
+      "cves": [
+        "CVE-2026-124006"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.2,
+      "products": [
+        "Copeland XWEB EVO"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-124007",
       "src": "cvelistv5",
       "vendor": "Copeland",
@@ -9866,6 +13481,123 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-124008",
+      "src": "cvelistv5",
+      "vendor": "Copeland",
+      "title": "Dixell/Copeland XWEB EVO OS Command Injection via devices.lua",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124008",
+      "released": "2026-11-12T19:53:16Z",
+      "updated": "2026-11-16T19:19:12Z",
+      "cves": [
+        "CVE-2026-124008"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "Copeland XWEB EVO"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-124009",
+      "src": "cvelistv5",
+      "vendor": "Copeland",
+      "title": "Dixell/Copeland XWEB EVO OS Command Injection via backup.lua",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124009",
+      "released": "2026-11-12T19:54:31Z",
+      "updated": "2026-11-13T19:09:28Z",
+      "cves": [
+        "CVE-2026-124009"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "Copeland XWEB EVO"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-66f7-rpbr-te4i-kkex",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "APM server logs contain document body from a partially failed bulk index request. For example, in case of…",
+      "url": "https://scout.docker.com/v/DHI-66f7-rpbr-te4i-kkex",
+      "released": "2026-11-12T19:56:21Z",
+      "updated": "2026-11-24T23:28:58Z",
+      "cves": [
+        "CVE-2024-37286"
+      ],
+      "products": [
+        "Docker Hardened Images: apm-server-8",
+        "Docker Hardened Images: apm-server-8-dev",
+        "Docker Hardened Images: apm-server-8-fips",
+        "Docker Hardened Images: apm-server-8-fips-dev",
+        "Docker Hardened Images: apm-server-9.4",
+        "Docker Hardened Images: apm-server-9.4-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-hjmu-jaro-4noo-5pw5",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "An issue was discovered whereby APM Server could log at ERROR level, a response from Elasticsearch indicating that…",
+      "url": "https://scout.docker.com/v/DHI-hjmu-jaro-4noo-5pw5",
+      "released": "2026-11-12T19:56:21Z",
+      "updated": "2026-11-24T23:28:58Z",
+      "cves": [
+        "CVE-2024-23448"
+      ],
+      "products": [
+        "Docker Hardened Images: apm-server-8",
+        "Docker Hardened Images: apm-server-8-dev",
+        "Docker Hardened Images: apm-server-8-fips",
+        "Docker Hardened Images: apm-server-8-fips-dev",
+        "Docker Hardened Images: apm-server-9.4",
+        "Docker Hardened Images: apm-server-9.4-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-ljys-7xwx-ppod-qigb",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "An issue was discovered by Elastic whereby Beats and Elastic Agent would log a raw event in its own logs at the WARN or…",
+      "url": "https://scout.docker.com/v/DHI-ljys-7xwx-ppod-qigb",
+      "released": "2026-11-12T19:56:21Z",
+      "updated": "2026-11-24T23:28:58Z",
+      "cves": [
+        "CVE-2023-49922"
+      ],
+      "products": [
+        "Docker Hardened Images: apm-server-8",
+        "Docker Hardened Images: apm-server-8-dev",
+        "Docker Hardened Images: apm-server-8-fips",
+        "Docker Hardened Images: apm-server-8-fips-dev",
+        "Docker Hardened Images: apm-server-9.4",
+        "Docker Hardened Images: apm-server-9.4-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-124010",
+      "src": "cvelistv5",
+      "vendor": "Copeland",
+      "title": "Dixell/Copeland XWEB EVO Unauthenticated Command Injection via xwconsole.cgi",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124010",
+      "released": "2026-11-12T19:58:13Z",
+      "updated": "2026-11-13T22:33:01Z",
+      "cves": [
+        "CVE-2026-124010"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.8,
+      "products": [
+        "Copeland XWEB EVO"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-124011",
       "src": "cvelistv5",
       "vendor": "Copeland",
@@ -9882,6 +13614,60 @@
         "Copeland XWEB EVO"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-52786",
+      "src": "cvelistv5",
+      "vendor": "bacnet-stack",
+      "title": "BACnet Stack: malicious ReadPropertyMultiple-ACK with excessive properties causes global-buffer-overflow in ProcessRPMData()",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-52786",
+      "released": "2026-11-12T19:59:45Z",
+      "updated": "2026-11-16T19:20:13Z",
+      "cves": [
+        "CVE-2026-52786"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "bacnet-stack bacnet-stack"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-45265",
+      "src": "cvelistv5",
+      "vendor": "bacnet-stack",
+      "title": "Atomic-Read-File RecordCount Stack-Based Out-of-Bounds Write in bacnet-stack",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-45265",
+      "released": "2026-11-12T19:59:55Z",
+      "updated": "2026-11-13T22:32:54Z",
+      "cves": [
+        "CVE-2026-45265"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "bacnet-stack bacnet-stack"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-45341",
+      "src": "cvelistv5",
+      "vendor": "bacnet-stack",
+      "title": "BACnet Stack: NULL pointer dereference in bacnet_device_object_reference_decode() when WriteProperty updates Structured View subordinate-list",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-45341",
+      "released": "2026-11-12T20:00:08Z",
+      "updated": "2026-11-13T19:10:20Z",
+      "cves": [
+        "CVE-2026-45341"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "bacnet-stack bacnet-stack"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-127120",
@@ -9920,6 +13706,78 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-46676",
+      "src": "cvelistv5",
+      "vendor": "bacnet-stack",
+      "title": "BACnet Stack: Uninitialized Value Use in AtomicReadFile-ACK Record-Access Encoder Causes Response Corruption and Conditional Information Disclosure",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-46676",
+      "released": "2026-11-12T20:00:58Z",
+      "updated": "2026-11-16T19:22:10Z",
+      "cves": [
+        "CVE-2026-46676"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "bacnet-stack bacnet-stack"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-124012",
+      "src": "cvelistv5",
+      "vendor": "Copeland",
+      "title": "Dixell/Copeland XWEB EVO Hardcoded Administrator Daily Password Authentication Bypass",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124012",
+      "released": "2026-11-12T20:01:03Z",
+      "updated": "2026-11-16T19:23:17Z",
+      "cves": [
+        "CVE-2026-124012"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.2,
+      "products": [
+        "Copeland XWEB EVO"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-46677",
+      "src": "cvelistv5",
+      "vendor": "bacnet-stack",
+      "title": "BACnet Stack: Client-Side Out-of-Bounds Read in AtomicReadFile-ACK Record-Access Handling via RecordCount / fileData[] Mismatch",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-46677",
+      "released": "2026-11-12T20:01:13Z",
+      "updated": "2026-11-13T16:27:59Z",
+      "cves": [
+        "CVE-2026-46677"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "bacnet-stack bacnet-stack"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-47217",
+      "src": "cvelistv5",
+      "vendor": "bacnet-stack",
+      "title": "BACnet Stack: Channel member self-reference causes uncontrolled recursion and stack overflow in default BACnet/IP server",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-47217",
+      "released": "2026-11-12T20:01:27Z",
+      "updated": "2026-11-13T19:12:27Z",
+      "cves": [
+        "CVE-2026-47217"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "bacnet-stack bacnet-stack"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-47257",
       "src": "cvelistv5",
       "vendor": "bacnet-stack",
@@ -9938,6 +13796,145 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-47258",
+      "src": "cvelistv5",
+      "vendor": "bacnet-stack",
+      "title": "BACnet Stack: Stack-based buffer overflow in Notification Class AddListElement recipient-list decoding",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-47258",
+      "released": "2026-11-12T20:01:52Z",
+      "updated": "2026-11-16T19:24:32Z",
+      "cves": [
+        "CVE-2026-47258"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "bacnet-stack bacnet-stack"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-47259",
+      "src": "cvelistv5",
+      "vendor": "bacnet-stack",
+      "title": "BACnet Stack: Stack-based buffer overflow in Notification Class RemoveListElement recipient-list decoding",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-47259",
+      "released": "2026-11-12T20:02:04Z",
+      "updated": "2026-11-13T22:32:47Z",
+      "cves": [
+        "CVE-2026-47259"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "bacnet-stack bacnet-stack"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-47710",
+      "src": "cvelistv5",
+      "vendor": "bacnet-stack",
+      "title": "BACnet Stack: Loop reference to long Structured View description causes stack-buffer-overflow",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-47710",
+      "released": "2026-11-12T20:02:30Z",
+      "updated": "2026-11-13T19:21:39Z",
+      "cves": [
+        "CVE-2026-47710"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "bacnet-stack bacnet-stack"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-124013",
+      "src": "cvelistv5",
+      "vendor": "Copeland",
+      "title": "Dixell/Copeland XWEB EVO OS Command Injection via api.lua",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124013",
+      "released": "2026-11-12T20:02:57Z",
+      "updated": "2026-11-13T19:23:25Z",
+      "cves": [
+        "CVE-2026-124013"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Copeland XWEB EVO"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-107152",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Rubygem-smart_proxy_dynflow: dynflow console authorizes any client certificate the capsule ca signed",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-107152",
+      "released": "2026-11-12T20:04:09Z",
+      "updated": "2026-11-13T16:58:21Z",
+      "cves": [
+        "CVE-2026-107152"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "Red Hat Red Hat Satellite 6.16 for RHEL 8",
+        "Red Hat Red Hat Satellite 6.16 for RHEL 8",
+        "Red Hat Red Hat Satellite 6.16 for RHEL 9",
+        "Red Hat Red Hat Satellite 6.16 for RHEL 9",
+        "Red Hat Red Hat Satellite 6.17 for RHEL 9",
+        "Red Hat Red Hat Satellite 6.17 for RHEL 9"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-107360",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Rubygem-safemode: safemode: jail allow-list bypass via op-assign expressions",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-107360",
+      "released": "2026-11-12T20:04:13Z",
+      "updated": "2026-11-13T16:58:25Z",
+      "cves": [
+        "CVE-2026-107360"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.6,
+      "products": [
+        "Red Hat Red Hat Satellite 6.16 for RHEL 8",
+        "Red Hat Red Hat Satellite 6.16 for RHEL 9",
+        "Red Hat Red Hat Satellite 6.17 for RHEL 9",
+        "Red Hat Red Hat Satellite 6.18 for RHEL 9",
+        "Red Hat Red Hat Satellite 6.19 for RHEL 9"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-111456",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Candlepin: consumer certificate can register systems in another organization",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-111456",
+      "released": "2026-11-12T20:04:18Z",
+      "updated": "2026-11-16T19:25:21Z",
+      "cves": [
+        "CVE-2026-111456"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "Red Hat Red Hat Satellite 6.16 for RHEL 8",
+        "Red Hat Red Hat Satellite 6.16 for RHEL 9",
+        "Red Hat Red Hat Satellite 6.17 for RHEL 9",
+        "Red Hat Red Hat Satellite 6.18 for RHEL 9",
+        "Red Hat Red Hat Satellite 6.19 for RHEL 9"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-47711",
       "src": "cvelistv5",
       "vendor": "bacnet-stack",
@@ -9954,6 +13951,24 @@
         "bacnet-stack bacnet-stack"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-124014",
+      "src": "cvelistv5",
+      "vendor": "Copeland",
+      "title": "Dixell/Copeland XWEB EVO Unauthenticated Configuration Write via config.lua",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-124014",
+      "released": "2026-11-12T20:05:59Z",
+      "updated": "2026-11-13T22:32:40Z",
+      "cves": [
+        "CVE-2026-124014"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Copeland XWEB EVO"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-124015",
@@ -9990,6 +14005,132 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-126205",
+      "src": "cvelistv5",
+      "vendor": "flavorjones",
+      "title": "Loofah: Regular expression denial of service in the SVG local-reference check",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126205",
+      "released": "2026-11-12T20:41:25Z",
+      "updated": "2026-11-16T19:26:46Z",
+      "cves": [
+        "CVE-2026-126205"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "flavorjones loofah"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-127206",
+      "src": "cvelistv5",
+      "vendor": "hookandhook",
+      "title": "Image CAPTCHA for Contact Form 7 and WPForms 3.3.29 CAPTCHA Bypass",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127206",
+      "released": "2026-11-12T20:41:54Z",
+      "updated": "2026-11-16T19:29:21Z",
+      "cves": [
+        "CVE-2026-127206"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "hookandhook Image CAPTCHA for Contact Form 7 and WPForms by HookAndHook (DSGVO/GDPR)"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-127207",
+      "src": "cvelistv5",
+      "vendor": "Sendcloud",
+      "title": "Sendcloud for WooCommerce 1.0.41 Missing Authorization via AJAX Actions",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127207",
+      "released": "2026-11-12T20:48:13Z",
+      "updated": "2026-11-13T19:26:11Z",
+      "cves": [
+        "CVE-2026-127207"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.4,
+      "products": [
+        "Sendcloud Sendcloud for WooCommerce: Automated Shipping, Branded Tracking & Returns"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-106018",
+      "src": "cvelistv5",
+      "vendor": "Johnson Controls",
+      "title": "Authentication bypass using an alternate path or channel vulnerability in Johnson Controls EasyIO FW allows Authentication Bypass. This issue affects EasyIO FW: through 3.0b25.",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-106018",
+      "released": "2026-11-12T20:50:42Z",
+      "updated": "2026-11-13T21:32:54Z",
+      "cves": [
+        "CVE-2026-106018"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "Johnson Controls EasyIO FW"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126206",
+      "src": "cvelistv5",
+      "vendor": "flavorjones",
+      "title": "Loofah allowed_uri? treats data:text&sol;html as safe text/plain",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126206",
+      "released": "2026-11-12T20:51:36Z",
+      "updated": "2026-11-13T22:32:32Z",
+      "cves": [
+        "CVE-2026-126206"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "flavorjones loofah"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126207",
+      "src": "cvelistv5",
+      "vendor": "flavorjones",
+      "title": "Loofah: CSS url() sanitization bypass via escaped parentheses",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126207",
+      "released": "2026-11-12T20:53:55Z",
+      "updated": "2026-11-13T19:43:00Z",
+      "cves": [
+        "CVE-2026-126207"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.7,
+      "products": [
+        "flavorjones loofah"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-127208",
+      "src": "cvelistv5",
+      "vendor": "datamodel-code-generator",
+      "title": "datamodel-code-generator < 0.84.0 Code Injection via x-python-type Annotation",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127208",
+      "released": "2026-11-12T20:58:59Z",
+      "updated": "2026-11-13T16:04:00Z",
+      "cves": [
+        "CVE-2026-127208"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "datamodel-code-generator datamodel-code-generator"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-126208",
       "src": "cvelistv5",
       "vendor": "flavorjones",
@@ -10006,6 +14147,43 @@
         "flavorjones loofah"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-126209",
+      "src": "cvelistv5",
+      "vendor": "flavorjones",
+      "title": "Loofah allowed_uri? treats javascript&#x3a alert(1) as safe",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126209",
+      "released": "2026-11-12T21:01:58Z",
+      "updated": "2026-11-16T19:30:53Z",
+      "cves": [
+        "CVE-2026-126209"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "flavorjones loofah"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "https://aws.amazon.com/security/security-bulletins/rss/2026-182-aws/",
+      "src": "aws_bulletins",
+      "vendor": "Amazon Web Services",
+      "title": "CVE-2026-126793 - Privilege escalation in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper",
+      "url": "https://aws.amazon.com/security/security-bulletins/rss/2026-182-aws/",
+      "released": "2026-11-12T21:11:28Z",
+      "updated": "2026-11-12T21:11:28Z",
+      "cves": [
+        "CVE-2026-126793"
+      ],
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://aws.amazon.com/security/security-bulletins/rss/2026-182-aws/"
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2026:99885",
@@ -10048,6 +14226,42 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-126210",
+      "src": "cvelistv5",
+      "vendor": "honojs",
+      "title": "@hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126210",
+      "released": "2026-11-12T21:25:37Z",
+      "updated": "2026-11-13T22:32:26Z",
+      "cves": [
+        "CVE-2026-126210"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "honojs node-server"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126343",
+      "src": "cvelistv5",
+      "vendor": "honojs",
+      "title": "@hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126343",
+      "released": "2026-11-12T21:27:05Z",
+      "updated": "2026-11-13T19:44:35Z",
+      "cves": [
+        "CVE-2026-126343"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "honojs node-server"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-126344",
       "src": "cvelistv5",
       "vendor": "honojs",
@@ -10064,6 +14278,94 @@
         "honojs node-server"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-126345",
+      "src": "cvelistv5",
+      "vendor": "patrickjuchli",
+      "title": "basic-ftp: Uncaught TypeError in MLSD directory-listing parser via __proto__ fact name causes DoS in Client.list()",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126345",
+      "released": "2026-11-12T21:29:44Z",
+      "updated": "2026-11-16T19:32:20Z",
+      "cves": [
+        "CVE-2026-126345"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "patrickjuchli basic-ftp"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-pk55-evs5-gwc7-64jj",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Multiple packages on Sun Solaris, including (1) NSS; (2) Java JDK and JRE 5.0 Update 8 and earlier, SDK and JRE 1.4.x…",
+      "url": "https://scout.docker.com/v/DHI-pk55-evs5-gwc7-64jj",
+      "released": "2026-11-12T21:32:25Z",
+      "updated": "2026-11-24T15:49:57Z",
+      "cves": [
+        "CVE-2006-5201"
+      ],
+      "products": [
+        "Docker Hardened Images: nss"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126346",
+      "src": "cvelistv5",
+      "vendor": "patrickjuchli",
+      "title": "basic-ftp: Uncaught exception crashes the Node.js process when a password (or resumed-download path) contains CR/LF",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126346",
+      "released": "2026-11-12T21:42:09Z",
+      "updated": "2026-11-13T16:03:49Z",
+      "cves": [
+        "CVE-2026-126346"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "patrickjuchli basic-ftp"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-127211",
+      "src": "cvelistv5",
+      "vendor": "MultiVendorX",
+      "title": "MultiVendorX WordPress Plugin < 5.0.22 Broken Access Control via stores REST Route",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127211",
+      "released": "2026-11-12T21:47:55Z",
+      "updated": "2026-11-16T19:33:15Z",
+      "cves": [
+        "CVE-2026-127211"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "MultiVendorX MultiVendorX – WooCommerce Multivendor Marketplace AI Powered Solutions"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126347",
+      "src": "cvelistv5",
+      "vendor": "tornadoweb",
+      "title": "Tornado: Open redirect via triple-slash redirect paths",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126347",
+      "released": "2026-11-12T21:52:22Z",
+      "updated": "2026-11-13T19:45:25Z",
+      "cves": [
+        "CVE-2026-126347"
+      ],
+      "sev": "LOW",
+      "cvss": 3.1,
+      "products": [
+        "tornadoweb tornado"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-126348",
@@ -10084,6 +14386,60 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-126349",
+      "src": "cvelistv5",
+      "vendor": "sporkmonger",
+      "title": "Addressable display_uri can show misleading hosts containing bidi and invisible characters",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126349",
+      "released": "2026-11-12T22:00:22Z",
+      "updated": "2026-11-16T19:34:33Z",
+      "cves": [
+        "CVE-2026-126349"
+      ],
+      "sev": "LOW",
+      "cvss": 3.1,
+      "products": [
+        "sporkmonger addressable"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126350",
+      "src": "cvelistv5",
+      "vendor": "sporkmonger",
+      "title": "Addressable: Regular Expression Denial of Service in Addressable templates with certain exploded expressions",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126350",
+      "released": "2026-11-12T22:04:01Z",
+      "updated": "2026-11-13T16:03:39Z",
+      "cves": [
+        "CVE-2026-126350"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "sporkmonger addressable"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126351",
+      "src": "cvelistv5",
+      "vendor": "sporkmonger",
+      "title": "Addressable: Denial of service in URI path normalization",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126351",
+      "released": "2026-11-12T22:05:39Z",
+      "updated": "2026-11-13T19:46:17Z",
+      "cves": [
+        "CVE-2026-126351"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "sporkmonger addressable"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-126352",
       "src": "cvelistv5",
       "vendor": "sporkmonger",
@@ -10100,6 +14456,42 @@
         "sporkmonger addressable"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-126354",
+      "src": "cvelistv5",
+      "vendor": "sporkmonger",
+      "title": "Addressable URI normalization resolves some dotted path segments to the wrong path",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126354",
+      "released": "2026-11-12T22:11:07Z",
+      "updated": "2026-11-13T16:03:31Z",
+      "cves": [
+        "CVE-2026-126354"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.8,
+      "products": [
+        "sporkmonger addressable"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-126355",
+      "src": "cvelistv5",
+      "vendor": "honojs",
+      "title": "Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126355",
+      "released": "2026-11-12T22:14:05Z",
+      "updated": "2026-11-13T19:49:11Z",
+      "cves": [
+        "CVE-2026-126355"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "honojs hono"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-126356",
@@ -10120,6 +14512,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-126358",
+      "src": "cvelistv5",
+      "vendor": "honojs",
+      "title": "Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126358",
+      "released": "2026-11-12T22:21:08Z",
+      "updated": "2026-11-13T22:32:18Z",
+      "cves": [
+        "CVE-2026-126358"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "honojs hono"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-126360",
       "src": "cvelistv5",
       "vendor": "open-telemetry",
@@ -10136,6 +14546,81 @@
         "open-telemetry opentelemetry-python"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-126362",
+      "src": "cvelistv5",
+      "vendor": "withastro",
+      "title": "Astro: Reflected XSS via unescaped slot names in @astrojs/svelte",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126362",
+      "released": "2026-11-12T22:29:19Z",
+      "updated": "2026-11-13T16:03:23Z",
+      "cves": [
+        "CVE-2026-126362"
+      ],
+      "sev": "LOW",
+      "cvss": 2.3,
+      "products": [
+        "withastro astro"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-92735",
+      "src": "cvelistv5",
+      "vendor": "HashiCorp",
+      "title": "Vault integrated storage join may disclose server environment credentials",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-92735",
+      "released": "2026-11-12T22:31:44Z",
+      "updated": "2026-11-13T21:14:35Z",
+      "cves": [
+        "CVE-2026-92735"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "HashiCorp Vault",
+        "HashiCorp Vault Enterprise"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-93335",
+      "src": "cvelistv5",
+      "vendor": "HashiCorp",
+      "title": "Vault vulnerable to ACL deny bypass via trailing slash",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-93335",
+      "released": "2026-11-12T22:32:14Z",
+      "updated": "2026-11-13T21:13:26Z",
+      "cves": [
+        "CVE-2026-93335"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "HashiCorp Vault",
+        "HashiCorp Vault Enterprise"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-93333",
+      "src": "cvelistv5",
+      "vendor": "HashiCorp",
+      "title": "Vault audit device prefix vulnerable to log injection",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-93333",
+      "released": "2026-11-12T22:32:43Z",
+      "updated": "2026-11-13T21:12:09Z",
+      "cves": [
+        "CVE-2026-93333"
+      ],
+      "sev": "LOW",
+      "cvss": 2.7,
+      "products": [
+        "HashiCorp Vault",
+        "HashiCorp Vault Enterprise"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-126364",
@@ -10156,6 +14641,24 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-126366",
+      "src": "cvelistv5",
+      "vendor": "msgpack",
+      "title": "msgpack-java JRuby decoder allocates from declared header counts with no cap: 5-byte message forces multi-GiB OOM",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-126366",
+      "released": "2026-11-12T22:41:38Z",
+      "updated": "2026-11-13T22:32:11Z",
+      "cves": [
+        "CVE-2026-126366"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "msgpack msgpack-ruby"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-128065",
       "src": "cvelistv5",
       "vendor": "grpc",
@@ -10172,6 +14675,24 @@
         "grpc grpc-node"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-128067",
+      "src": "cvelistv5",
+      "vendor": "python-pillow",
+      "title": "Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-128067",
+      "released": "2026-11-12T22:49:58Z",
+      "updated": "2026-11-13T16:03:13Z",
+      "cves": [
+        "CVE-2026-128067"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.4,
+      "products": [
+        "python-pillow Pillow"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "WID-SEC-W-2026-4544",
@@ -10787,6 +15308,96 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-pkuz-a4y3-ezk7-qpan",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Seroval facilitates JS value stringification, including complex structures beyond JSON.stringify capabilities. Prior to…",
+      "url": "https://scout.docker.com/v/DHI-pkuz-a4y3-ezk7-qpan",
+      "released": "2026-11-12T23:05:10Z",
+      "updated": "2026-11-24T23:08:31Z",
+      "cves": [
+        "CVE-2026-59940"
+      ],
+      "products": [
+        "Docker Hardened Images: gitea",
+        "Docker Hardened Images: gitea-dev",
+        "Docker Hardened Images: gitea-fips",
+        "Docker Hardened Images: gitea-fips-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-yjrk-wypv-yztw-tt3d",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "**CVSSv3.1 Rating**: [Medium]",
+      "url": "https://scout.docker.com/v/DHI-yjrk-wypv-yztw-tt3d",
+      "released": "2026-11-12T23:05:10Z",
+      "updated": "2026-11-24T22:29:10Z",
+      "products": [
+        "Docker Hardened Images: grype",
+        "Docker Hardened Images: grype-dev",
+        "Docker Hardened Images: grype-fips",
+        "Docker Hardened Images: grype-fips-dev",
+        "Docker Hardened Images: syft",
+        "Docker Hardened Images: syft-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-xvjg-yzxy-luuw-ausl",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Gitea Runner passes workflow-controlled container options into Docker job container configuration while privileged mode…",
+      "url": "https://scout.docker.com/v/DHI-xvjg-yzxy-luuw-ausl",
+      "released": "2026-11-12T23:14:20Z",
+      "updated": "2026-11-24T21:11:24Z",
+      "cves": [
+        "CVE-2026-73802"
+      ],
+      "products": [
+        "Docker Hardened Images: gitea",
+        "Docker Hardened Images: gitea-dev",
+        "Docker Hardened Images: gitea-fips",
+        "Docker Hardened Images: gitea-fips-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-127275",
+      "src": "cvelistv5",
+      "vendor": "Linksys",
+      "title": "Linksys EA8100 JNAP API ui_server.lua SetUnsecuredWiFiWarning missing authentication",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-127275",
+      "released": "2026-11-12T23:45:21Z",
+      "updated": "2026-11-13T22:32:04Z",
+      "cves": [
+        "CVE-2026-127275"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 10,
+      "products": [
+        "Linksys EA8100"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-ilqc-c4tm-yyts-thrd",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "In github.com/google/go-eventlog/tcg, Event exposes UntrustedType, which returns the raw event type header from the TCG…",
+      "url": "https://scout.docker.com/v/DHI-ilqc-c4tm-yyts-thrd",
+      "released": "2026-11-12T23:58:39Z",
+      "updated": "2026-11-24T21:23:30Z",
+      "products": [
+        "Docker Hardened Images: spire-agent-1.15",
+        "Docker Hardened Images: spire-agent-1.15-dev",
+        "Docker Hardened Images: spire-agent-1.15-fips",
+        "Docker Hardened Images: spire-agent-1.15-fips-dev"
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

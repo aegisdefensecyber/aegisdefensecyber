@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-22",
-  "count": 31,
+  "count": 68,
   "items": [
     {
       "id": "openSUSE-SU-2026:10602-1",
@@ -84,6 +84,24 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-FO49462",
+      "src": "cleanstart",
+      "title": "Security fixes for ghsa-3xc5-wrhm-f963 applied in versions: 1.31.1-r0",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-FO49462.json",
+      "released": "2026-04-22T00:36:28Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "products": [
+        "CleanStart: pulumi-language-yaml"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pulumi-language-yaml 1.31.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-AL68245",
@@ -211,6 +229,43 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-BB70412",
+      "src": "cleanstart",
+      "title": "During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-BB70412.json",
+      "released": "2026-04-22T00:41:59Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61726",
+        "CVE-2025-61728",
+        "CVE-2025-61730",
+        "CVE-2025-61732",
+        "CVE-2025-68119",
+        "CVE-2025-68121",
+        "CVE-2026-25518",
+        "CVE-2026-25679",
+        "CVE-2026-26958",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810"
+      ],
+      "products": [
+        "CleanStart: percona-xtradb-cluster-operator-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in percona-xtradb-cluster-operator-fips 1.18.0-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "msrc_CVE-2026-5928",
@@ -713,6 +768,86 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:21283-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for opensc",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621283-1/",
+      "released": "2026-04-22T11:16:41Z",
+      "updated": "2026-09-16T19:42:36Z",
+      "cves": [
+        "CVE-2025-49010",
+        "CVE-2025-66037",
+        "CVE-2025-66038",
+        "CVE-2025-66215"
+      ],
+      "sev": "LOW",
+      "cvss": 3.9,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:9692",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: webkit2gtk3 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:9692",
+      "released": "2026-04-22T11:49:39Z",
+      "updated": "2026-11-05T15:51:52Z",
+      "cves": [
+        "CVE-2025-43213",
+        "CVE-2025-43214",
+        "CVE-2025-43457",
+        "CVE-2025-43511",
+        "CVE-2025-46299",
+        "CVE-2026-20608",
+        "CVE-2026-20635",
+        "CVE-2026-20636",
+        "CVE-2026-20643",
+        "CVE-2026-20644",
+        "CVE-2026-20652",
+        "CVE-2026-20664",
+        "CVE-2026-20665",
+        "CVE-2026-20676",
+        "CVE-2026-20691",
+        "CVE-2026-28857",
+        "CVE-2026-28859",
+        "CVE-2026-28871"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:9692"
+        },
+        {
+          "t": "Do not process or load untrusted web content with WebKitGTK. In Red Hat Enterprise Linux 7, the following packages require WebKitGTK4: evolution-data-server, g…",
+          "u": null
+        },
+        {
+          "t": "Red Hat has investigated whether a possible mitigation exists for this issue, and has not been able to identify a practical example. Please update the affected…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RUSTSEC-2026-0104",
       "src": "osv_rustsec",
       "vendor": "Rustsec",
@@ -737,6 +872,865 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:21305-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 5 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621305-1/",
+      "released": "2026-04-22T16:44:31Z",
+      "updated": "2026-09-16T19:42:54Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21322-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 5 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621322-1/",
+      "released": "2026-04-22T16:44:31Z",
+      "updated": "2026-09-16T19:43:15Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21306-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 6 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621306-1/",
+      "released": "2026-04-22T16:51:39Z",
+      "updated": "2026-09-16T19:42:55Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21307-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 7 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621307-1/",
+      "released": "2026-04-22T16:51:39Z",
+      "updated": "2026-09-16T19:42:56Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21323-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 6 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621323-1/",
+      "released": "2026-04-22T16:51:39Z",
+      "updated": "2026-09-16T19:43:16Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21324-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 7 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621324-1/",
+      "released": "2026-04-22T16:51:39Z",
+      "updated": "2026-09-16T19:43:17Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21308-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 10 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621308-1/",
+      "released": "2026-04-22T16:53:25Z",
+      "updated": "2026-09-16T19:42:57Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21325-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 10 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621325-1/",
+      "released": "2026-04-22T16:53:25Z",
+      "updated": "2026-09-16T19:43:18Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21309-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 8 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621309-1/",
+      "released": "2026-04-22T16:54:00Z",
+      "updated": "2026-09-16T19:42:58Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21310-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 9 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621310-1/",
+      "released": "2026-04-22T16:54:00Z",
+      "updated": "2026-09-16T19:43:00Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21311-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 11 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621311-1/",
+      "released": "2026-04-22T16:54:00Z",
+      "updated": "2026-09-16T19:43:01Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21312-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 12 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621312-1/",
+      "released": "2026-04-22T16:54:00Z",
+      "updated": "2026-09-16T19:43:02Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21313-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 13 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621313-1/",
+      "released": "2026-04-22T16:54:00Z",
+      "updated": "2026-09-16T19:43:04Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21326-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 8 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621326-1/",
+      "released": "2026-04-22T16:54:00Z",
+      "updated": "2026-09-16T19:43:19Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21327-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 9 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621327-1/",
+      "released": "2026-04-22T16:54:00Z",
+      "updated": "2026-09-16T19:43:20Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21328-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 11 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621328-1/",
+      "released": "2026-04-22T16:54:00Z",
+      "updated": "2026-09-16T19:43:21Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21329-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 12 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621329-1/",
+      "released": "2026-04-22T16:54:00Z",
+      "updated": "2026-09-16T19:43:22Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21314-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 18 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621314-1/",
+      "released": "2026-04-22T16:59:00Z",
+      "updated": "2026-09-16T19:43:06Z",
+      "cves": [
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21315-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 15 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621315-1/",
+      "released": "2026-04-22T16:59:48Z",
+      "updated": "2026-09-16T19:43:08Z",
+      "cves": [
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21293-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 5 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621293-1/",
+      "released": "2026-04-22T17:00:43Z",
+      "updated": "2026-09-16T19:42:43Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21294-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 6 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621294-1/",
+      "released": "2026-04-22T17:09:05Z",
+      "updated": "2026-09-16T19:42:44Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21295-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 8 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621295-1/",
+      "released": "2026-04-22T17:14:01Z",
+      "updated": "2026-09-16T19:42:45Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21296-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 9 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621296-1/",
+      "released": "2026-04-22T17:14:01Z",
+      "updated": "2026-09-16T19:42:46Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21316-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 14 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621316-1/",
+      "released": "2026-04-22T17:16:00Z",
+      "updated": "2026-09-16T19:43:09Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21297-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 10 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621297-1/",
+      "released": "2026-04-22T17:16:25Z",
+      "updated": "2026-09-16T19:42:47Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21298-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 11 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621298-1/",
+      "released": "2026-04-22T17:16:25Z",
+      "updated": "2026-09-16T19:42:48Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21299-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 12 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621299-1/",
+      "released": "2026-04-22T17:17:06Z",
+      "updated": "2026-09-16T19:42:49Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21300-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 13 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621300-1/",
+      "released": "2026-04-22T17:20:12Z",
+      "updated": "2026-09-16T19:42:50Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21301-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 16 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621301-1/",
+      "released": "2026-04-22T17:20:12Z",
+      "updated": "2026-09-16T19:42:51Z",
+      "cves": [
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21302-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 7 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621302-1/",
+      "released": "2026-04-22T17:23:09Z",
+      "updated": "2026-09-16T19:42:51Z",
+      "cves": [
+        "CVE-2025-40309",
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21303-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 14 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621303-1/",
+      "released": "2026-04-22T17:23:09Z",
+      "updated": "2026-09-16T19:42:52Z",
+      "cves": [
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21304-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 17 for SUSE Linux Enterprise Micro 6.0)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621304-1/",
+      "released": "2026-04-22T17:23:10Z",
+      "updated": "2026-09-16T19:42:53Z",
+      "cves": [
+        "CVE-2026-23268"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2026:9832",
@@ -773,6 +1767,22 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-109716",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-6019 affecting package python-py 1.11.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6019",
+      "released": "2026-04-22T20:16:42Z",
+      "updated": "2026-10-27T05:36:16Z",
+      "cves": [
+        "CVE-2026-6019"
+      ],
+      "products": [
+        "Azure Linux: python-py"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:20617-1",

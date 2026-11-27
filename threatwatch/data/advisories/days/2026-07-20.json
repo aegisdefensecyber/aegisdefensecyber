@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-20",
-  "count": 40,
+  "count": 48,
   "items": [
     {
       "id": "openSUSE-SU-2026:11311-1",
@@ -900,6 +900,34 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-42h9-826w-cgv3",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Axios: Excessive recursion in formDataToJSON can cause denial of service",
+      "url": "https://github.com/advisories/GHSA-42h9-826w-cgv3",
+      "released": "2026-07-20T17:58:59Z",
+      "updated": "2026-09-01T18:40:38Z",
+      "cves": [
+        "CVE-2026-67313"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: axios"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in axios 0.33.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in axios 1.18.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:42141",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -926,6 +954,59 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:42088",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: webkit2gtk3 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:42088",
+      "released": "2026-07-20T18:29:37Z",
+      "updated": "2026-11-05T12:47:29Z",
+      "cves": [
+        "CVE-2024-4367",
+        "CVE-2026-39872",
+        "CVE-2026-43663",
+        "CVE-2026-43676",
+        "CVE-2026-43699",
+        "CVE-2026-43701",
+        "CVE-2026-43705",
+        "CVE-2026-43707",
+        "CVE-2026-43712",
+        "CVE-2026-43713",
+        "CVE-2026-43715",
+        "CVE-2026-43716",
+        "CVE-2026-43720",
+        "CVE-2026-43721",
+        "CVE-2026-43725",
+        "CVE-2026-43726",
+        "CVE-2026-43727",
+        "CVE-2026-43731",
+        "CVE-2026-43732",
+        "CVE-2026-43734",
+        "CVE-2026-43740",
+        "CVE-2026-43742",
+        "CVE-2026-43745",
+        "CVE-2026-64787"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:42088"
+        },
+        {
+          "t": "Do not process or load untrusted web content with WebKitGTK. In Red Hat Enterprise Linux 7, the following packages require WebKitGTK4: evolution-data-server, g…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-61900",
       "src": "cvelistv5",
       "vendor": "jdownloads.com",
@@ -942,6 +1023,59 @@
         "jdownloads.com jDownloads extension for Joomla"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:42062",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: webkit2gtk3 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:42062",
+      "released": "2026-07-20T19:11:52Z",
+      "updated": "2026-11-05T12:47:29Z",
+      "cves": [
+        "CVE-2024-4367",
+        "CVE-2026-39872",
+        "CVE-2026-43663",
+        "CVE-2026-43676",
+        "CVE-2026-43699",
+        "CVE-2026-43701",
+        "CVE-2026-43705",
+        "CVE-2026-43707",
+        "CVE-2026-43712",
+        "CVE-2026-43713",
+        "CVE-2026-43715",
+        "CVE-2026-43716",
+        "CVE-2026-43720",
+        "CVE-2026-43721",
+        "CVE-2026-43725",
+        "CVE-2026-43726",
+        "CVE-2026-43727",
+        "CVE-2026-43731",
+        "CVE-2026-43732",
+        "CVE-2026-43734",
+        "CVE-2026-43740",
+        "CVE-2026-43742",
+        "CVE-2026-43745",
+        "CVE-2026-64787"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:42062"
+        },
+        {
+          "t": "Do not process or load untrusted web content with WebKitGTK. In Red Hat Enterprise Linux 7, the following packages require WebKitGTK4: evolution-data-server, g…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "WID-SEC-W-2026-2419",
@@ -1100,6 +1234,34 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-f4gw-2p7v-4548",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Axios: NO_PROXY bypass for 0.0.0.0 local addresses in axios",
+      "url": "https://github.com/advisories/GHSA-f4gw-2p7v-4548",
+      "released": "2026-07-20T22:20:18Z",
+      "updated": "2026-09-01T18:39:43Z",
+      "cves": [
+        "CVE-2026-67315"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: axios"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in axios 1.18.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in axios 0.33.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "GHSA-mmx7-hfxf-jppx",
       "src": "github",
       "vendor": "Open source (GitHub)",
@@ -1126,6 +1288,110 @@
       ],
       "reviewed": true,
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-jqh4-m9w3-8hp9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Axios: Fetch adapter `ReadableStream` uploads bypass `maxBodyLength`",
+      "url": "https://github.com/advisories/GHSA-jqh4-m9w3-8hp9",
+      "released": "2026-07-20T22:27:12Z",
+      "updated": "2026-09-01T18:38:59Z",
+      "cves": [
+        "CVE-2026-67317"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: axios"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in axios 1.18.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-mwf2-3pr3-8698",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Axios: HTTP/2 streamed uploads bypass `maxBodyLength`",
+      "url": "https://github.com/advisories/GHSA-mwf2-3pr3-8698",
+      "released": "2026-07-20T22:37:03Z",
+      "updated": "2026-09-01T18:36:47Z",
+      "cves": [
+        "CVE-2026-67318"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: axios"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in axios 1.18.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-7q8q-rj6j-mhjq",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Axios: Nested axios option objects can consume polluted prototype values",
+      "url": "https://github.com/advisories/GHSA-7q8q-rj6j-mhjq",
+      "released": "2026-07-20T22:37:31Z",
+      "updated": "2026-09-01T18:41:46Z",
+      "cves": [
+        "CVE-2026-67319"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: axios"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in axios 0.33.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in axios 1.18.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-gcfj-64vw-6mp9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Axios Node HTTP adapter can use an inherited proxy after interceptor config cloning",
+      "url": "https://github.com/advisories/GHSA-gcfj-64vw-6mp9",
+      "released": "2026-07-20T22:40:07Z",
+      "updated": "2026-09-01T18:42:31Z",
+      "cves": [
+        "CVE-2026-67320"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: axios"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in axios 0.33.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in axios 1.18.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
     }
   ]
 }

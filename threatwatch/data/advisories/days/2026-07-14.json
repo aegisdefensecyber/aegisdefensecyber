@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-14",
-  "count": 51,
+  "count": 58,
   "items": [
     {
       "id": "ICSA-26-202-02",
@@ -1218,6 +1218,54 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-44p5-3m5g-vfhj",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "SAP Approuter has an Open Redirect vulnerability",
+      "url": "https://github.com/advisories/GHSA-44p5-3m5g-vfhj",
+      "released": "2026-07-14T03:31:35Z",
+      "updated": "2026-09-01T21:20:47Z",
+      "cves": [
+        "CVE-2026-44745"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: @sap/approuter"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in @sap/approuter 21.2.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-8m85-wqg7-c529",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "SAP Approuter Vulnerable to HTTP Request Smuggling",
+      "url": "https://github.com/advisories/GHSA-8m85-wqg7-c529",
+      "released": "2026-07-14T03:31:35Z",
+      "updated": "2026-09-01T21:20:31Z",
+      "cves": [
+        "CVE-2026-27690"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "npm: @sap/approuter"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in @sap/approuter 20.10.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "msrc_CVE-2026-40400",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -1575,6 +1623,95 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-grafana-2026-33382",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Denial of service via unbounded request body size",
+      "url": "https://grafana.com/security/security-advisories/cve-2026-33382",
+      "released": "2026-07-14T08:45:29Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-33382"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: grafana"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana 11.6.15",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana 12.2.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana 12.3.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-grafana-2026-8595",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Stored XSS in the table panel (TableNG)",
+      "url": "https://grafana.com/security/security-advisories/cve-2026-8595",
+      "released": "2026-07-14T08:45:32Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-8595"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: grafana"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana 12.4.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana 13.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-grafana-2026-8609",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Pre-authentication denial of service via the OAuth login route",
+      "url": "https://grafana.com/security/security-advisories/cve-2026-8609",
+      "released": "2026-07-14T08:45:33Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-8609"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: grafana"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana 11.6.15",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana 12.2.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana 12.3.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BIT-discourse-2026-55420",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -1844,6 +1981,68 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-golang-2026-39822",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Root escape via symlink plus trailing slash in os",
+      "url": "https://groups.google.com/g/golang-announce/c/OrmQE_Yp5Sc",
+      "released": "2026-07-14T15:46:19Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-39822"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: golang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang 1.25.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang 1.26.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang 1.27.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-golang-2026-42505",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Invoking Encrypted Client Hello privacy leak in crypto/tls",
+      "url": "https://groups.google.com/g/golang-announce/c/OrmQE_Yp5Sc",
+      "released": "2026-07-14T15:46:28Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-42505"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: golang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang 1.25.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang 1.26.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang 1.27.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "PYSEC-2026-4390",

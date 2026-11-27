@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-02",
-  "count": 300,
+  "count": 364,
   "items": [
     {
       "id": "CERTFR-2026-ALE-009",
@@ -3189,6 +3189,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "https://www.jenkins.io/security/advisory/2026-09-02/",
+      "src": "jenkins",
+      "vendor": "Jenkins",
+      "title": "Jenkins Security Advisory 2026-09-02",
+      "url": "https://www.jenkins.io/security/advisory/2026-09-02/",
+      "released": "2026-09-02T12:00:00Z",
+      "updated": "2026-09-02T12:00:00Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://www.jenkins.io/security/advisory/2026-09-02/"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RUSTSEC-2026-0300",
       "src": "osv_rustsec",
       "vendor": "Rustsec",
@@ -5971,6 +5987,275 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-h89q-4j2h-7h88",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "SiYuan: SQL Query in Block Search Exposes Hidden Published Document Content",
+      "url": "https://github.com/advisories/GHSA-h89q-4j2h-7h88",
+      "released": "2026-09-02T14:16:08Z",
+      "updated": "2026-09-02T14:16:08Z",
+      "cves": [
+        "CVE-2026-59834"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/siyuan-note/siyuan/kernel 0.0.0-20260704035518-d0f0fe146fb0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-275h-v5h9-vr82",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Siyuan: Authenticated path traversal in /snippets/ static handler (serveSnippets) leaks conf/conf.json secrets and siyuan.db",
+      "url": "https://github.com/advisories/GHSA-275h-v5h9-vr82",
+      "released": "2026-09-02T14:17:44Z",
+      "updated": "2026-09-02T14:17:44Z",
+      "cves": [
+        "CVE-2026-59832"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/siyuan-note/siyuan/kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/siyuan-note/siyuan/kernel 0.0.0-20260704035520-68cc0f537dfa",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-qxc2-j82w-r537",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Faker: helpers.fake exploitable into arbritary code execution",
+      "url": "https://github.com/advisories/GHSA-qxc2-j82w-r537",
+      "released": "2026-09-02T14:20:14Z",
+      "updated": "2026-09-02T14:20:14Z",
+      "cves": [
+        "CVE-2026-73231"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: @faker-js/faker"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in @faker-js/faker 10.5.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-p498-v437-472g",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "humanfs: Recursive copy follows symlinked files and copies data from outside the source tree",
+      "url": "https://github.com/advisories/GHSA-p498-v437-472g",
+      "released": "2026-09-02T14:27:16Z",
+      "updated": "2026-09-02T14:27:16Z",
+      "sev": "MEDIUM",
+      "products": [
+        "npm: @humanfs/node"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in @humanfs/node 0.16.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-cw6x-m8jw-qmrh",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "NLTK: Uncontrolled recursion in nltk.featstruct.FeatStructReader causes unhandled RecursionError (DoS) via deeply nested feature-structure input",
+      "url": "https://github.com/advisories/GHSA-cw6x-m8jw-qmrh",
+      "released": "2026-09-02T14:33:22Z",
+      "updated": "2026-09-02T14:33:22Z",
+      "cves": [
+        "CVE-2026-81724"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: nltk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nltk 3.10.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-ff5c-cp5c-9wjf",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "NLTK: Uncontrolled resource consumption in RecursiveDescentParser via ambiguous or left-recursive grammars",
+      "url": "https://github.com/advisories/GHSA-ff5c-cp5c-9wjf",
+      "released": "2026-09-02T14:33:38Z",
+      "updated": "2026-09-02T14:33:39Z",
+      "cves": [
+        "CVE-2026-12876"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: nltk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nltk 3.10.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-vp2x-qp44-57v7",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "NLTK: Quadratic CPU Exhaustion in `XMLCorpusView._read_xml_fragment()`",
+      "url": "https://github.com/advisories/GHSA-vp2x-qp44-57v7",
+      "released": "2026-09-02T14:34:11Z",
+      "updated": "2026-09-02T14:34:11Z",
+      "cves": [
+        "CVE-2026-81723"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: nltk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nltk 3.10.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-f794-5jv7-7672",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "NLTK: Downloader.download follows hardlinks and overwrites outside-root files",
+      "url": "https://github.com/advisories/GHSA-f794-5jv7-7672",
+      "released": "2026-09-02T14:35:41Z",
+      "updated": "2026-09-02T14:35:41Z",
+      "cves": [
+        "CVE-2026-81727"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: nltk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nltk 3.10.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-ww6m-cw3f-q94g",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "NLTK: Quadratic-time DoS in PorterStemmer via long runs of 'y'",
+      "url": "https://github.com/advisories/GHSA-ww6m-cw3f-q94g",
+      "released": "2026-09-02T14:36:15Z",
+      "updated": "2026-09-02T14:36:15Z",
+      "cves": [
+        "CVE-2026-81722"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: nltk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nltk 3.10.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-vq4v-j7r6-jq4m",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "pnpm: A tarball dependency's manifest `name` escapes node_modules → arbitrary file write/overwrite on install",
+      "url": "https://github.com/advisories/GHSA-vq4v-j7r6-jq4m",
+      "released": "2026-09-02T14:36:59Z",
+      "updated": "2026-09-02T14:36:59Z",
+      "cves": [
+        "CVE-2026-82393"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: pnpm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pnpm 10.34.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in pnpm 11.11.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-c59q-g84q-2gj5",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "pnpm: Virtual store linker path traversal via unvalidated depPath name in lockfileToDepGraph",
+      "url": "https://github.com/advisories/GHSA-c59q-g84q-2gj5",
+      "released": "2026-09-02T14:37:13Z",
+      "updated": "2026-09-02T14:37:13Z",
+      "cves": [
+        "CVE-2026-82392"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: pnpm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pnpm 10.34.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in pnpm 11.11.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BIT-ceph-2025-30156",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -6079,6 +6364,182 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-9hjf-w35w-6vx2",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "elFinder: CSRF in netmount allows forced FTP mounts and server-side FTP connections",
+      "url": "https://github.com/advisories/GHSA-9hjf-w35w-6vx2",
+      "released": "2026-09-02T14:37:36Z",
+      "updated": "2026-09-02T14:37:36Z",
+      "cves": [
+        "CVE-2026-81890"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: studio-42/elfinder"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in studio-42/elfinder 2.1.70",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-gxmj-r5rf-ggwq",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "elFinder: ZIP extraction bypasses uploadDeny MIME filter allowing PHP file upload (RCE)",
+      "url": "https://github.com/advisories/GHSA-gxmj-r5rf-ggwq",
+      "released": "2026-09-02T14:37:54Z",
+      "updated": "2026-09-02T20:21:31Z",
+      "cves": [
+        "CVE-2026-81891"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: Studio-42/elFinder"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in Studio-42/elFinder 2.1.70",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-fc8x-2rww-xw9m",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "pypdf: Inefficient handling of non-whitespace inputs in read_until_whitespace",
+      "url": "https://github.com/advisories/GHSA-fc8x-2rww-xw9m",
+      "released": "2026-09-02T14:38:12Z",
+      "updated": "2026-09-02T14:38:12Z",
+      "cves": [
+        "CVE-2026-82398"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: pypdf"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pypdf 6.15.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-x8wg-4xgc-vr54",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Banks: Path traversal in `DirectoryPromptRegistry.set()` allows arbitrary file write outside the registry root",
+      "url": "https://github.com/advisories/GHSA-x8wg-4xgc-vr54",
+      "released": "2026-09-02T14:38:24Z",
+      "updated": "2026-09-02T14:38:24Z",
+      "cves": [
+        "CVE-2026-71492"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: banks"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in banks 2.4.5",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-mpf4-983q-p7j4",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Tornado: Urlencoded body parsing omits max_num_fields, so one request can stall the event loop",
+      "url": "https://github.com/advisories/GHSA-mpf4-983q-p7j4",
+      "released": "2026-09-02T14:38:43Z",
+      "updated": "2026-09-02T14:38:43Z",
+      "cves": [
+        "CVE-2026-82397"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: tornado"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tornado 6.5.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-g3hc-697w-wm82",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Livewire DOM-based cross-site scripting during client-side state handling",
+      "url": "https://github.com/advisories/GHSA-g3hc-697w-wm82",
+      "released": "2026-09-02T14:38:58Z",
+      "updated": "2026-09-02T14:38:58Z",
+      "cves": [
+        "CVE-2026-81887"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: livewire/livewire"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in livewire/livewire 3.8.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in livewire/livewire 4.3.4",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-g2fm-8hr4-j82h",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "EasyAdmin custom-action dispatcher bypasses access_control on other routes",
+      "url": "https://github.com/advisories/GHSA-g2fm-8hr4-j82h",
+      "released": "2026-09-02T14:39:11Z",
+      "updated": "2026-09-02T14:39:11Z",
+      "cves": [
+        "CVE-2026-81892"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: easycorp/easyadmin-bundle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in easycorp/easyadmin-bundle 4.29.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in easycorp/easyadmin-bundle 5.5.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BIT-grafana-2026-19197",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -6131,6 +6592,51 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-cp6q-959q-f8rh",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Tiptap: mergeAttributes() turns an own __proto__ key into inherited executable DOM attributes",
+      "url": "https://github.com/advisories/GHSA-cp6q-959q-f8rh",
+      "released": "2026-09-02T14:44:39Z",
+      "updated": "2026-09-02T14:44:39Z",
+      "sev": "MEDIUM",
+      "products": [
+        "npm: @tiptap/core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in @tiptap/core 3.30.4",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-4mjr-xmp4-gh2g",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "qs: Denial of Service via Attacker Controlled isBuffer",
+      "url": "https://github.com/advisories/GHSA-4mjr-xmp4-gh2g",
+      "released": "2026-09-02T14:45:13Z",
+      "updated": "2026-09-02T14:45:13Z",
+      "cves": [
+        "CVE-2026-82417"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: qs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in qs 6.16.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
     },
     {
       "id": "BIT-mariadb-2026-55215",
@@ -6218,6 +6724,30 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-x5fp-wj9c-mxmx",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "qs array-limit bypass via bracket-key comma parsing",
+      "url": "https://github.com/advisories/GHSA-x5fp-wj9c-mxmx",
+      "released": "2026-09-02T14:46:57Z",
+      "updated": "2026-09-02T14:46:57Z",
+      "cves": [
+        "CVE-2026-82562"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: qs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in qs 6.16.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:21789-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -6242,6 +6772,30 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-fj2p-qj2f-74v5",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Grav: Remote code execution via unrestricted callable in Blueprint::dynamicData()",
+      "url": "https://github.com/advisories/GHSA-fj2p-qj2f-74v5",
+      "released": "2026-09-02T14:51:18Z",
+      "updated": "2026-09-02T14:51:18Z",
+      "cves": [
+        "CVE-2026-64850"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: getgrav/grav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in getgrav/grav 2.0.7",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
     },
     {
       "id": "BIT-seaweedfs-2026-77298",
@@ -6336,6 +6890,182 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-2v6v-25fm-p4fg",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "SeaweedFS: Unauthenticated filer IAM gRPC service grants S3 administrative control",
+      "url": "https://github.com/advisories/GHSA-2v6v-25fm-p4fg",
+      "released": "2026-09-02T14:51:58Z",
+      "updated": "2026-09-02T14:51:59Z",
+      "cves": [
+        "CVE-2026-72920"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/seaweedfs/seaweedfs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/seaweedfs/seaweedfs 0.0.0-20260512171108-5e8f99f40a8a",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-83x6-42hr-jc76",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "CKAN MCP Server: MQA server allowlist bypass via unanchored regex (`isValidMqaServer`)",
+      "url": "https://github.com/advisories/GHSA-83x6-42hr-jc76",
+      "released": "2026-09-02T14:52:21Z",
+      "updated": "2026-09-02T14:52:21Z",
+      "cves": [
+        "CVE-2026-73845"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: @aborruso/ckan-mcp-server"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in @aborruso/ckan-mcp-server 0.4.112",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-6mr6-jvcr-2f25",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Orval: Import-time RCE via schema property name -> computed-property-key injection in the zod client",
+      "url": "https://github.com/advisories/GHSA-6mr6-jvcr-2f25",
+      "released": "2026-09-02T14:52:56Z",
+      "updated": "2026-09-02T14:52:56Z",
+      "cves": [
+        "CVE-2026-71866"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "npm: orval"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in orval 8.21.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-p4cg-3328-rvfg",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Orval: Import-time RCE via query-parameter default -> zod module-level template literal",
+      "url": "https://github.com/advisories/GHSA-p4cg-3328-rvfg",
+      "released": "2026-09-02T14:53:14Z",
+      "updated": "2026-09-02T14:53:15Z",
+      "cves": [
+        "CVE-2026-72716"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "npm: orval"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in orval 8.21.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-cxq5-97v7-87j8",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Orval: Generation-time SSRF + remote/local file inclusion via unrestricted $ref",
+      "url": "https://github.com/advisories/GHSA-cxq5-97v7-87j8",
+      "released": "2026-09-02T14:54:48Z",
+      "updated": "2026-09-02T14:54:49Z",
+      "cves": [
+        "CVE-2026-62680"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: orval"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in orval 8.22.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-6j4c-mgqr-qv76",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Kirby: Access to image files outside of the site root via path traversal in the media handling",
+      "url": "https://github.com/advisories/GHSA-6j4c-mgqr-qv76",
+      "released": "2026-09-02T14:55:22Z",
+      "updated": "2026-09-02T14:55:23Z",
+      "cves": [
+        "CVE-2026-75592"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: getkirby/cms"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in getkirby/cms 4.9.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in getkirby/cms 5.5.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-h6cx-gjxx-v25c",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Sulu: Media move/update authorization bypass (IDOR)",
+      "url": "https://github.com/advisories/GHSA-h6cx-gjxx-v25c",
+      "released": "2026-09-02T14:57:25Z",
+      "updated": "2026-09-02T14:57:25Z",
+      "cves": [
+        "CVE-2026-82395"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: sulu/sulu"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in sulu/sulu 2.6.25",
+          "u": null
+        },
+        {
+          "t": "Fixed in sulu/sulu 3.0.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "ROOT-APP-NPM-CVE-2020-13822",
       "src": "osv_root",
       "vendor": "Root",
@@ -6363,6 +7093,200 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-65cv-w493-7vhq",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Sulu: Fix authorization bypass when creating preview links",
+      "url": "https://github.com/advisories/GHSA-65cv-w493-7vhq",
+      "released": "2026-09-02T15:09:33Z",
+      "updated": "2026-09-02T15:09:33Z",
+      "cves": [
+        "CVE-2026-82394"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: sulu/sulu"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in sulu/sulu 2.6.25",
+          "u": null
+        },
+        {
+          "t": "Fixed in sulu/sulu 3.0.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:62667",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: perl-DBI security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:62667",
+      "released": "2026-09-02T15:09:54Z",
+      "updated": "2026-11-05T15:57:14Z",
+      "cves": [
+        "CVE-2026-9698",
+        "CVE-2026-10879",
+        "CVE-2026-14380",
+        "CVE-2026-14739"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:62667"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        },
+        {
+          "t": "To reduce the risk of arbitrary code execution, avoid setting the `DBI_PROFILE` environment variable from untrusted sources. Ensure that DSN driver-attribute c…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-pp4x-ccxq-6r33",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Sulu: Stored XSS via media download inline-disposition override",
+      "url": "https://github.com/advisories/GHSA-pp4x-ccxq-6r33",
+      "released": "2026-09-02T15:10:19Z",
+      "updated": "2026-09-02T15:10:19Z",
+      "cves": [
+        "CVE-2026-82396"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: sulu/sulu"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in sulu/sulu 2.6.25",
+          "u": null
+        },
+        {
+          "t": "Fixed in sulu/sulu 3.0.8",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-w2qp-rph6-63g4",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "fastify vulnerable to schema validation bypass via root primitive coercion mismatch",
+      "url": "https://github.com/advisories/GHSA-w2qp-rph6-63g4",
+      "released": "2026-09-02T15:13:23Z",
+      "updated": "2026-09-02T15:13:23Z",
+      "cves": [
+        "CVE-2026-18504"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: fastify"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fastify 5.12.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-3m5p-2c4r-xxw2",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "fastify vulnerable to X-Forwarded-* spoofing under trustProxy hop-count",
+      "url": "https://github.com/advisories/GHSA-3m5p-2c4r-xxw2",
+      "released": "2026-09-02T15:14:06Z",
+      "updated": "2026-09-02T15:14:06Z",
+      "cves": [
+        "CVE-2026-16732"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: fastify"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fastify 5.12.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-6m44-fpc8-c3rq",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Mistune: Denial of Service — RecursionError via Excessive Emphasis Markers in Markdown",
+      "url": "https://github.com/advisories/GHSA-6m44-fpc8-c3rq",
+      "released": "2026-09-02T15:14:55Z",
+      "updated": "2026-09-02T15:14:55Z",
+      "cves": [
+        "CVE-2026-76098"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: mistune"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mistune 3.3.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-6gmq-8vp8-gcm6",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "xmldom: XML fragment injection via invalid EntityReference.nodeName during requireWellFormed serialization",
+      "url": "https://github.com/advisories/GHSA-6gmq-8vp8-gcm6",
+      "released": "2026-09-02T15:18:20Z",
+      "updated": "2026-09-02T15:18:20Z",
+      "cves": [
+        "CVE-2026-83610"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: @xmldom/xmldom",
+        "npm: xmldom"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in @xmldom/xmldom 0.8.15",
+          "u": null
+        },
+        {
+          "t": "Fixed in @xmldom/xmldom 0.9.12",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "ROOT-APP-NPM-CVE-2020-28469",
       "src": "osv_root",
       "vendor": "Root",
@@ -6388,6 +7312,182 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-3gqm-fcw5-w839",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "NLTK: SSRF Fail-Open in validate_network_url() via DNS Resolution Failure",
+      "url": "https://github.com/advisories/GHSA-3gqm-fcw5-w839",
+      "released": "2026-09-02T15:39:39Z",
+      "updated": "2026-09-02T15:39:39Z",
+      "cves": [
+        "CVE-2026-63311"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: nltk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nltk 3.10.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-p3m8-78j2-g5p3",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "NLTK: Default ENFORCE=False Disables All pathsec Security Controls",
+      "url": "https://github.com/advisories/GHSA-p3m8-78j2-g5p3",
+      "released": "2026-09-02T15:40:33Z",
+      "updated": "2026-09-02T15:40:33Z",
+      "cves": [
+        "CVE-2026-62388"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: nltk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nltk 3.10.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-jqff-g426-hqxp",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "fast-uri vulnerable to host confusion via percent-encoded scheme normalization",
+      "url": "https://github.com/advisories/GHSA-jqff-g426-hqxp",
+      "released": "2026-09-02T15:41:53Z",
+      "updated": "2026-09-02T15:41:53Z",
+      "cves": [
+        "CVE-2026-76172"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: fast-uri"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fast-uri 2.4.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-uri 3.1.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-uri 4.1.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-fph4-wmhf-6fwf",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "fast-uri vulnerable to server-side request forgery via repeated hostname percent-decoding",
+      "url": "https://github.com/advisories/GHSA-fph4-wmhf-6fwf",
+      "released": "2026-09-02T15:42:39Z",
+      "updated": "2026-09-02T15:42:39Z",
+      "cves": [
+        "CVE-2026-75899"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: fast-uri"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fast-uri 2.4.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-uri 3.1.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-uri 4.1.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-f65p-4m7j-42xc",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "fast-uri vulnerable to server-side request forgery via malformed IPv6 normalization",
+      "url": "https://github.com/advisories/GHSA-f65p-4m7j-42xc",
+      "released": "2026-09-02T15:43:30Z",
+      "updated": "2026-09-02T15:43:30Z",
+      "cves": [
+        "CVE-2026-75975"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: fast-uri"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fast-uri 2.4.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-uri 3.1.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-uri 4.1.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-5jgf-p345-68v8",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "fast-uri vulnerable to host confusion via skipped IDN canonicalization on scheme-relative references",
+      "url": "https://github.com/advisories/GHSA-5jgf-p345-68v8",
+      "released": "2026-09-02T15:44:30Z",
+      "updated": "2026-09-02T15:44:30Z",
+      "cves": [
+        "CVE-2026-75931"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: fast-uri"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fast-uri 2.4.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-uri 3.1.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in fast-uri 4.1.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21744-1",
@@ -8178,6 +9278,126 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-cpjf-6666-r8fx",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "link-preview-js DNS Rebinding SSRF Bypass / Incomplete Fix for CVE-2026-43897",
+      "url": "https://github.com/advisories/GHSA-cpjf-6666-r8fx",
+      "released": "2026-09-02T21:29:57Z",
+      "updated": "2026-09-02T21:29:57Z",
+      "cves": [
+        "CVE-2026-61704"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: link-preview-js"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in link-preview-js 4.0.4",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-928x-9mpw-8h56",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Grav: Decompression Bomb via ZipArchiver - Missing Extraction Limits",
+      "url": "https://github.com/advisories/GHSA-928x-9mpw-8h56",
+      "released": "2026-09-02T21:35:43Z",
+      "updated": "2026-09-02T21:35:43Z",
+      "cves": [
+        "CVE-2026-61690"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: getgrav/grav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in getgrav/grav 2.0.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-mc5q-6hpj-rp7j",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Grav: Twig sandbox config exfiltration via grav.offsetGet + dump filter (CVE-2026-44738 bypass)",
+      "url": "https://github.com/advisories/GHSA-mc5q-6hpj-rp7j",
+      "released": "2026-09-02T21:41:12Z",
+      "updated": "2026-09-02T21:41:13Z",
+      "cves": [
+        "CVE-2026-61842"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Packagist: getgrav/grav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in getgrav/grav 2.0.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-756x-9hf6-q4h4",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Omnigent: Uploaded Agent Bundle Allows Authenticated Runner RCE via Python Callable Tools",
+      "url": "https://github.com/advisories/GHSA-756x-9hf6-q4h4",
+      "released": "2026-09-02T21:54:52Z",
+      "updated": "2026-09-02T21:54:52Z",
+      "cves": [
+        "CVE-2026-62675"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: omnigent"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in omnigent 0.3.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-jrrm-9hc7-2v3h",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Omnigent: Shared Agent Bundle Overwrite Leads to Authenticated Runner RCE",
+      "url": "https://github.com/advisories/GHSA-jrrm-9hc7-2v3h",
+      "released": "2026-09-02T21:55:11Z",
+      "updated": "2026-09-02T21:55:11Z",
+      "cves": [
+        "CVE-2026-62674"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "PyPI: omnigent"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in omnigent 0.3.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "WID-SEC-W-2026-3152",
       "src": "csaf_certbund",
       "vendor": "Amazon",
@@ -8332,6 +9552,413 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-p8rw-8qj3-hf33",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Omnigent: Unvalidated os_env.cwd in agent bundle yields arbitrary host filesystem access on runners without OMNIGENT_RUNNER_WORKSPACE",
+      "url": "https://github.com/advisories/GHSA-p8rw-8qj3-hf33",
+      "released": "2026-09-02T22:00:54Z",
+      "updated": "2026-09-02T22:00:54Z",
+      "cves": [
+        "CVE-2026-62677"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: omnigent"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in omnigent 0.3.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-7mgc-c7pq-3rr3",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Grav: 2FA Bypass via 'login.regenerate2FASecret' - Secret Rotation During Pending Challenge",
+      "url": "https://github.com/advisories/GHSA-7mgc-c7pq-3rr3",
+      "released": "2026-09-02T22:01:25Z",
+      "updated": "2026-09-02T22:01:25Z",
+      "cves": [
+        "CVE-2026-62669"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Packagist: getgrav/grav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in getgrav/grav 2.0.4",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-mvxr-6m87-mv2q",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Mail: Email address spoofing via malformed RFC 2047 encoded-words",
+      "url": "https://github.com/advisories/GHSA-mvxr-6m87-mv2q",
+      "released": "2026-09-02T22:02:32Z",
+      "updated": "2026-09-02T22:02:32Z",
+      "cves": [
+        "CVE-2026-63435"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "RubyGems: mail"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mail 2.9.1",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-7w2g-9mf9-324m",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Hurl: Cookies in Cookies section leak when redirecting to a different host",
+      "url": "https://github.com/advisories/GHSA-7w2g-9mf9-324m",
+      "released": "2026-09-02T22:11:11Z",
+      "updated": "2026-09-02T22:11:11Z",
+      "cves": [
+        "CVE-2026-63481"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "crates.io: hurl"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-g29j-rwfv-h99w",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Handlebars.java: Arbitrary file read in `SpringTemplateLoader` via URL-fragment suffix bypass",
+      "url": "https://github.com/advisories/GHSA-g29j-rwfv-h99w",
+      "released": "2026-09-02T22:12:03Z",
+      "updated": "2026-09-02T22:12:03Z",
+      "cves": [
+        "CVE-2026-63490"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Maven: com.github.jknack:handlebars-springmvc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in com.github.jknack:handlebars-springmvc 4.5.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-4q39-2jhr-7qx8",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Plate: SSRF with response disclosure in DOCX image embedding",
+      "url": "https://github.com/advisories/GHSA-4q39-2jhr-7qx8",
+      "released": "2026-09-02T22:14:54Z",
+      "updated": "2026-09-02T22:14:54Z",
+      "cves": [
+        "CVE-2026-65842"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: @platejs/docx-io"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in @platejs/docx-io 53.3.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-7mqg-cx4g-x2rf",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Omnigent Guardrail policy bypass: shell-command parser fails open in policies/builtins/_shell.py",
+      "url": "https://github.com/advisories/GHSA-7mqg-cx4g-x2rf",
+      "released": "2026-09-02T22:40:07Z",
+      "updated": "2026-09-02T22:40:08Z",
+      "cves": [
+        "CVE-2026-62676"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: omnigent"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in omnigent 0.3.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-gcr2-9v8m-gq45",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "DiceBear: SVG injection via the unescaped rotate option in @dicebear/core (and fontSize/fontWeight in @dicebear/initials)",
+      "url": "https://github.com/advisories/GHSA-gcr2-9v8m-gq45",
+      "released": "2026-09-02T22:44:25Z",
+      "updated": "2026-09-02T22:44:26Z",
+      "cves": [
+        "CVE-2026-68921"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: @dicebear/core",
+        "npm: @dicebear/initials"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in @dicebear/core 9.4.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in @dicebear/initials 9.4.3",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-76g3-c3x4-crvx",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Scrapy: S3DownloadHandler sends signed S3 requests over plaintext HTTP by default",
+      "url": "https://github.com/advisories/GHSA-76g3-c3x4-crvx",
+      "released": "2026-09-02T22:50:44Z",
+      "updated": "2026-09-02T22:50:44Z",
+      "cves": [
+        "CVE-2026-84366"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: scrapy"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in scrapy 2.17",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-75mr-qw9x-3r39",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Mailpit: Thumbnail generation decodes unbounded image dimensions before scaling",
+      "url": "https://github.com/advisories/GHSA-75mr-qw9x-3r39",
+      "released": "2026-09-02T23:39:08Z",
+      "updated": "2026-09-02T23:39:08Z",
+      "cves": [
+        "CVE-2026-67446"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/axllent/mailpit"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/axllent/mailpit 1.30.4",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-gv5w-hfx8-8cwq",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "SeaweedFS: Filer JWT allowed_prefixes literal prefix match allows cross-tenant access to sibling paths",
+      "url": "https://github.com/advisories/GHSA-gv5w-hfx8-8cwq",
+      "released": "2026-09-02T23:42:05Z",
+      "updated": "2026-09-02T23:42:05Z",
+      "cves": [
+        "CVE-2026-72921"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/seaweedfs/seaweedfs"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/seaweedfs/seaweedfs 0.0.0-20260512171048-05ed5c9ae8a2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-w878-pj84-3j5v",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Mailpit: SMTP command parser buffers unbounded command lines before syntax rejection",
+      "url": "https://github.com/advisories/GHSA-w878-pj84-3j5v",
+      "released": "2026-09-02T23:42:25Z",
+      "updated": "2026-09-02T23:42:25Z",
+      "cves": [
+        "CVE-2026-67445"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/axllent/mailpit"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/axllent/mailpit 1.30.4",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-qh9r-j7rp-4x2m",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "OpenChoreo: Unauthenticated access to data-plane operations via OpenChoreo cluster-gateway management APIs",
+      "url": "https://github.com/advisories/GHSA-qh9r-j7rp-4x2m",
+      "released": "2026-09-02T23:43:55Z",
+      "updated": "2026-09-02T23:43:55Z",
+      "cves": [
+        "CVE-2026-73843"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Go: github.com/openchoreo/openchoreo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/openchoreo/openchoreo 1.0.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/openchoreo/openchoreo 1.1.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-52gf-6rpq-fgmx",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "OpenChoreo: Cross-project command execution and wirelog view access via OpenChoreo openchoreo-api exec and wirelogs endpoints",
+      "url": "https://github.com/advisories/GHSA-52gf-6rpq-fgmx",
+      "released": "2026-09-02T23:44:51Z",
+      "updated": "2026-09-02T23:44:51Z",
+      "cves": [
+        "CVE-2026-73841"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/openchoreo/openchoreo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/openchoreo/openchoreo 1.2.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/openchoreo/openchoreo 1.1.6",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-c5f6-2rm9-2w8g",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "OpenChoreo: Unauthenticated build/workflow trigger via git-provider confusion (webhook signature bypass)",
+      "url": "https://github.com/advisories/GHSA-c5f6-2rm9-2w8g",
+      "released": "2026-09-02T23:45:14Z",
+      "updated": "2026-09-02T23:45:14Z",
+      "cves": [
+        "CVE-2026-73840"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Go: github.com/openchoreo/openchoreo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/openchoreo/openchoreo 1.0.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/openchoreo/openchoreo 1.1.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/openchoreo/openchoreo 1.2.0-rc.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-2mw5-23gm-pccq",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "OpenChoreo: Authenticated OS command injection via OpenChoreo Workflow Plane templates enables code execution in privileged pods",
+      "url": "https://github.com/advisories/GHSA-2mw5-23gm-pccq",
+      "released": "2026-09-02T23:45:26Z",
+      "updated": "2026-09-02T23:45:26Z",
+      "cves": [
+        "CVE-2026-73667"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Go: github.com/openchoreo/openchoreo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in github.com/openchoreo/openchoreo 1.0.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/openchoreo/openchoreo 1.1.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in github.com/openchoreo/openchoreo 1.2.0-rc.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
     }
   ]
 }

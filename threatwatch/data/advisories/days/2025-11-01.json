@@ -1,8 +1,38 @@
 {
   "schemaVersion": 1,
   "date": "2025-11-01",
-  "count": 5,
+  "count": 6,
   "items": [
+    {
+      "id": "ASB-A-374746961",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In bta_hf_client_cb_init of bta_hf_client_main.cc, there is a possible remote code execution due to a use after free. This could lead to remote code execution with no additional execution privileges needed. User interac…",
+      "url": "https://source.android.com/security/bulletin/2025-11-01",
+      "released": "2025-11-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48593"
+      ],
+      "products": [
+        "Android: platform/packages/modules/Bluetooth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 16-next:2025-11-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 15:2025-11-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/modules/Bluetooth 16:2025-11-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
     {
       "id": "msrc_CVE-2023-53009",
       "src": "csaf_microsoft",

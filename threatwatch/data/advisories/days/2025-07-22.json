@@ -1,8 +1,48 @@
 {
   "schemaVersion": 1,
   "date": "2025-07-22",
-  "count": 2,
+  "count": 4,
   "items": [
+    {
+      "id": "RHSA-2025:11533",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: git security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:11533",
+      "released": "2025-07-22T12:03:30Z",
+      "updated": "2026-11-05T13:56:28Z",
+      "cves": [
+        "CVE-2024-50349",
+        "CVE-2024-52006",
+        "CVE-2025-27613",
+        "CVE-2025-27614",
+        "CVE-2025-46835",
+        "CVE-2025-48384",
+        "CVE-2025-48385"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.3,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 10)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:11533"
+        },
+        {
+          "t": "As a workaround, ensure that the option \"Support per-file encoding\" in Gitk's Preferences is disabled, and do not use the \"Show origin of this line\" command, w…",
+          "u": null
+        },
+        {
+          "t": "There's no known mitigation for this issue besides avoid using gitk with untrusted repositories or unstrusted files.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
     {
       "id": "RHSA-2025:11363",
       "src": "csaf_redhat",
@@ -52,6 +92,36 @@
         "PyPI: dagster-ge"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:11545",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: perl security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:11545",
+      "released": "2025-07-22T18:22:26Z",
+      "updated": "2026-11-05T15:50:40Z",
+      "cves": [
+        "CVE-2025-40909"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream EUS (v.9.4)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:11545"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     }
   ]
 }

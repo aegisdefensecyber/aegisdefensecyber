@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-17",
-  "count": 31,
+  "count": 33,
   "items": [
     {
       "id": "openSUSE-SU-2026:10378-1",
@@ -429,6 +429,42 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:4693",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang: net/http: net/http: sensitive headers incorrectly sent after cross-domain redirect",
+      "url": "https://access.redhat.com/errata/RHSA-2026:4693",
+      "released": "2026-03-17T06:49:06Z",
+      "updated": "2026-11-27T04:28:53Z",
+      "cves": [
+        "CVE-2024-45336",
+        "CVE-2025-22866",
+        "CVE-2025-31133",
+        "CVE-2025-47913",
+        "CVE-2025-52565",
+        "CVE-2025-52881",
+        "CVE-2025-58183",
+        "CVE-2025-65637"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:4693"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "Potential mitigations for this issue include: * Using user namespaces, with the host root user not mapped into the container's namespace. procfs file permissions are managed using Unix DAC and thus user namespaces stop a container process …",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "SUSE-SU-2026:0902-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -706,6 +742,43 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:4772",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: glibc security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:4772",
+      "released": "2026-03-17T17:20:27Z",
+      "updated": "2026-11-05T14:22:47Z",
+      "cves": [
+        "CVE-2025-15281",
+        "CVE-2026-0915"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 8)",
+        "Red Hat Enterprise Linux AppStream (v. 8)",
+        "Red Hat Enterprise Linux CRB (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:4772"
+        },
+        {
+          "t": "To mitigate this issue, consider refactoring the use of the wordexp function to not use the WRDE_REUSE and WRDE_APPEND flags together.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2026:4830",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-21",
-  "count": 223,
+  "count": 271,
   "items": [
     {
       "id": "ELA-1898-1",
@@ -92,6 +92,52 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:100991",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Critical: php:7.4 security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:100991",
+      "released": "2026-11-21T00:00:00Z",
+      "updated": "2026-11-21T15:21:10Z",
+      "cves": [
+        "CVE-2026-115560",
+        "CVE-2026-126714",
+        "CVE-2026-127960",
+        "CVE-2026-128064",
+        "CVE-2026-128090",
+        "CVE-2026-129289",
+        "CVE-2026-129291",
+        "CVE-2026-129292",
+        "CVE-2026-129496",
+        "CVE-2026-129506",
+        "CVE-2026-129538",
+        "CVE-2026-15353"
+      ],
+      "products": [
+        "AlmaLinux: apcu-panel",
+        "AlmaLinux: libzip",
+        "AlmaLinux: libzip-devel",
+        "AlmaLinux: libzip-tools",
+        "AlmaLinux: php",
+        "AlmaLinux: php-bcmath"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apcu-panel 5.1.18-1.module_el8.6.0+2750+78feabcb",
+          "u": null
+        },
+        {
+          "t": "Fixed in libzip 1.6.1-1.module_el8.6.0+2750+78feabcb",
+          "u": null
+        },
+        {
+          "t": "Fixed in libzip 1.6.1-1.module_el8.6.0+3239+bedf0508",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-123633",
@@ -3560,6 +3606,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-7f3w-ulat-arfg-32ym",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "pip prior to v26.2.2 the certifi bundled with pip contains the compromised eMudhra certificates.",
+      "url": "https://scout.docker.com/v/DHI-7f3w-ulat-arfg-32ym",
+      "released": "2026-11-21T01:31:44Z",
+      "updated": "2026-11-24T18:45:02Z",
+      "cves": [
+        "CVE-2026-133949"
+      ],
+      "products": [
+        "Docker Hardened Images: py3-pip"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-engf-rug7-zai3-vdi5",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -3610,6 +3672,32 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-hwpx-mmia-gvwg-4nvx",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "In libexpat before 2.8.1, the computational complexity of attribute name collision checks allows a denial of service…",
+      "url": "https://scout.docker.com/v/DHI-hwpx-mmia-gvwg-4nvx",
+      "released": "2026-11-21T02:23:42Z",
+      "updated": "2026-11-24T19:50:13Z",
+      "cves": [
+        "CVE-2026-45186"
+      ],
+      "products": [
+        "Docker Hardened Images: expat"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in expat 2.8.1-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in expat 2.8.2-1~deb13u1+dhi0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "DHI-vaet-jalp-xhvn-ifcw",
@@ -4880,6 +4968,65 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-r446-x4mv-jxri-r5p7",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "KEDA is a Kubernetes-based Event Driven Autoscaling component. Prior to 2.20.0, pkg/scalers/postgresql_scaler.go…",
+      "url": "https://scout.docker.com/v/DHI-r446-x4mv-jxri-r5p7",
+      "released": "2026-11-21T06:29:45Z",
+      "updated": "2026-11-25T00:05:53Z",
+      "cves": [
+        "CVE-2026-53572"
+      ],
+      "products": [
+        "Docker Hardened Images: keda-2.19",
+        "Docker Hardened Images: keda-2.19-dev",
+        "Docker Hardened Images: keda-2.19-fips",
+        "Docker Hardened Images: keda-2.19-fips-dev",
+        "Docker Hardened Images: keda-metrics-apiserver-2.19",
+        "Docker Hardened Images: keda-metrics-apiserver-2.19-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-4qvo-qoig-w23q-vv2f",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability in OSGeo gdal…",
+      "url": "https://scout.docker.com/v/DHI-4qvo-qoig-w23q-vv2f",
+      "released": "2026-11-21T06:34:03Z",
+      "updated": "2026-11-24T23:51:26Z",
+      "cves": [
+        "CVE-2026-4738"
+      ],
+      "products": [
+        "Docker Hardened Images: zlib"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-u5sl-umhe-a63m-iuqo",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "zlib before 1.3.2 allows CPU consumption via crc32_combine64 and crc32_combine_gen64 because x2nmodp can do right…",
+      "url": "https://scout.docker.com/v/DHI-u5sl-umhe-a63m-iuqo",
+      "released": "2026-11-21T06:34:03Z",
+      "updated": "2026-11-24T20:54:20Z",
+      "cves": [
+        "CVE-2026-27171"
+      ],
+      "products": [
+        "Docker Hardened Images: zlib"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in zlib 1:1.3.dfsg+really1.3.1-1+deb13u0+dhi4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-36av-7lvc-lfzd-ybkq",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -4940,6 +5087,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-5new-jtqj-eyyq-byrj",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "libexpat before commit 13c5f63 contains a heap buffer over-read vulnerability in xmlparse.c. XML_ParseBuffer advances…",
+      "url": "https://scout.docker.com/v/DHI-5new-jtqj-eyyq-byrj",
+      "released": "2026-11-21T07:03:45Z",
+      "updated": "2026-11-24T19:48:50Z",
+      "cves": [
+        "CVE-2026-77214"
+      ],
+      "products": [
+        "Docker Hardened Images: expat"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-audm-wc4g-tp34-wisq",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -4964,6 +5127,22 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-cm4z-c6kb-xdkp-evue",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "In libexpat 2.8.2 and 2.8.3 before 2.8.4, misinterpretation of getentropy's return code leads to insufficient entropy…",
+      "url": "https://scout.docker.com/v/DHI-cm4z-c6kb-xdkp-evue",
+      "released": "2026-11-21T07:03:45Z",
+      "updated": "2026-11-24T19:48:50Z",
+      "cves": [
+        "CVE-2026-76956"
+      ],
+      "products": [
+        "Docker Hardened Images: expat"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "DHI-cp4m-v6dw-ow23-jhsq",
@@ -4996,6 +5175,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-dpbx-4tjf-gye4-7m5m",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Expat before 2.8.5 fails to validate that a high surrogate in UTF-16 input is followed by a low surrogate, allowing…",
+      "url": "https://scout.docker.com/v/DHI-dpbx-4tjf-gye4-7m5m",
+      "released": "2026-11-21T07:03:45Z",
+      "updated": "2026-11-24T19:48:50Z",
+      "cves": [
+        "CVE-2026-93990"
+      ],
+      "products": [
+        "Docker Hardened Images: expat"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-ofee-qabl-jgav-zyc4",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -5026,6 +5221,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-ovae-a7gu-2vyf-t5yy",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Expat through 2.8.3 contains a denial of service vulnerability caused by quadratic algorithmic complexity in the…",
+      "url": "https://scout.docker.com/v/DHI-ovae-a7gu-2vyf-t5yy",
+      "released": "2026-11-21T07:03:45Z",
+      "updated": "2026-11-24T19:50:13Z",
+      "cves": [
+        "CVE-2026-66046"
+      ],
+      "products": [
+        "Docker Hardened Images: expat"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-rb22-xqvy-jmcn-x4t6",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -5054,6 +5265,22 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-ujqm-4lwp-xgz4-vzre",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Expat through 2.8.3 contains an out-of-bounds read vulnerability that allows attackers to trigger memory corruption by…",
+      "url": "https://scout.docker.com/v/DHI-ujqm-4lwp-xgz4-vzre",
+      "released": "2026-11-21T07:03:45Z",
+      "updated": "2026-11-24T19:50:13Z",
+      "cves": [
+        "CVE-2026-76641"
+      ],
+      "products": [
+        "Docker Hardened Images: expat"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "DHI-vmde-zk2y-mde3-mzcz",
@@ -5144,6 +5371,22 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-yxom-xpxl-in2u-vso5",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "libexpat before 2.8.4 lacks handler call depth tracking with custom encoding callbacks. Thus, a use-after-free can…",
+      "url": "https://scout.docker.com/v/DHI-yxom-xpxl-in2u-vso5",
+      "released": "2026-11-21T07:03:45Z",
+      "updated": "2026-11-24T19:50:13Z",
+      "cves": [
+        "CVE-2026-76957"
+      ],
+      "products": [
+        "Docker Hardened Images: expat"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "DHI-zbjf-qt2y-phxg-ip54",
@@ -5344,6 +5587,55 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-oeed-dals-ht3a-pdwv",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "libexpat before 2.8.2 lacks handler call depth tracking for calls to XML_GetBuffer, XML_Parse, XML_ParseBuffer…",
+      "url": "https://scout.docker.com/v/DHI-oeed-dals-ht3a-pdwv",
+      "released": "2026-11-21T07:04:53Z",
+      "updated": "2026-11-24T19:50:13Z",
+      "cves": [
+        "CVE-2026-50219"
+      ],
+      "products": [
+        "Docker Hardened Images: expat"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-k7hv-cuax-6jqd-4cbb",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "When verifying a certificate chain which contains a certificate containing multiple email address constraints which…",
+      "url": "https://scout.docker.com/v/DHI-k7hv-cuax-6jqd-4cbb",
+      "released": "2026-11-21T07:23:11Z",
+      "updated": "2026-11-25T00:38:26Z",
+      "cves": [
+        "CVE-2026-27137"
+      ],
+      "products": [
+        "Docker Hardened Images: go"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-6upr-3dya-uwmn-fx3x",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "An issue was discovered in musl libc 0.7.10 through 1.2.6. Stack-based memory corruption can occur during qsort of very…",
+      "url": "https://scout.docker.com/v/DHI-6upr-3dya-uwmn-fx3x",
+      "released": "2026-11-21T07:39:11Z",
+      "updated": "2026-11-25T01:27:26Z",
+      "cves": [
+        "CVE-2026-40200"
+      ],
+      "products": [
+        "Docker Hardened Images: musl",
+        "Docker Hardened Images: openssl-provider-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "msrc_CVE-2026-120787",
       "src": "direct_csaf",
       "vendor": "Microsoft",
@@ -5379,6 +5671,278 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-3h7v-rx7e-5iic-t7zh",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions from 4.33 before 4.80 for Perl miss duplicate non-ASCII bare keys, allowing type confusion…",
+      "url": "https://scout.docker.com/v/DHI-3h7v-rx7e-5iic-t7zh",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:11:32Z",
+      "cves": [
+        "CVE-2026-110674"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-5guy-kn6k-b3is-2p4i",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions before 4.80 for Perl use the parent interpreter's scalars from a parser object cloned into a…",
+      "url": "https://scout.docker.com/v/DHI-5guy-kn6k-b3is-2p4i",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:11:32Z",
+      "cves": [
+        "CVE-2026-110681"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-a4p3-nvqw-obym-eeh6",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions before 4.80 for Perl allow stack exhaustion via nested tagged values under allow_tags in…",
+      "url": "https://scout.docker.com/v/DHI-a4p3-nvqw-obym-eeh6",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:11:32Z",
+      "cves": [
+        "CVE-2026-110673"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-cgd2-yj7d-h4uk-ionn",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions before 4.80 for Perl leak the decoded arguments of a tagged value when its THAW method dies…",
+      "url": "https://scout.docker.com/v/DHI-cgd2-yj7d-h4uk-ionn",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:11:59Z",
+      "cves": [
+        "CVE-2026-110685"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-htiq-qqac-lkbf-raqz",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions from 4.28 before 4.80 for Perl leak the array collecting duplicate key values under…",
+      "url": "https://scout.docker.com/v/DHI-htiq-qqac-lkbf-raqz",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:11:59Z",
+      "cves": [
+        "CVE-2026-110677"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-ln27-jnii-vu7a-g4th",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions from 3.0202 before 4.80 for Perl leak memory and retain overloaded objects when encoding…",
+      "url": "https://scout.docker.com/v/DHI-ln27-jnii-vu7a-g4th",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:11:59Z",
+      "cves": [
+        "CVE-2026-110684"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-lrzh-moye-slbv-qdqd",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions before 4.80 for Perl allow memory exhaustion by encoding exponent notation as full decimal…",
+      "url": "https://scout.docker.com/v/DHI-lrzh-moye-slbv-qdqd",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:11:59Z",
+      "cves": [
+        "CVE-2026-110676"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-morn-vvre-43yn-cvrx",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions before 4.80 for Perl allow memory exhaustion by buffering incremental input past max_size in…",
+      "url": "https://scout.docker.com/v/DHI-morn-vvre-43yn-cvrx",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:11:59Z",
+      "cves": [
+        "CVE-2026-110678"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-ou36-cxb6-y2z3-df7t",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions from 4.33 before 4.80 for Perl accept malformed UTF-8 in bare hash keys under allow_barekey…",
+      "url": "https://scout.docker.com/v/DHI-ou36-cxb6-y2z3-df7t",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:11:59Z",
+      "cves": [
+        "CVE-2026-110675"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-rfdg-bg72-a27d-wmem",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions before 4.80 for Perl use freed filter callbacks when a filter removes itself during decoding…",
+      "url": "https://scout.docker.com/v/DHI-rfdg-bg72-a27d-wmem",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:11:59Z",
+      "cves": [
+        "CVE-2026-110686"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-tcma-ql2g-6ef4-zmua",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions before 4.80 for Perl leak the decoded key of an object rejected for a duplicate key or a…",
+      "url": "https://scout.docker.com/v/DHI-tcma-ql2g-6ef4-zmua",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:12:28Z",
+      "cves": [
+        "CVE-2026-110672"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-wqad-4yf6-l3l7-2vpd",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions from 4.20 before 4.80 for Perl write out of bounds when a tied or shared hash grows during…",
+      "url": "https://scout.docker.com/v/DHI-wqad-4yf6-l3l7-2vpd",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:12:28Z",
+      "cves": [
+        "CVE-2026-110680"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-y6hk-j2d3-5ba5-2rg3",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions from 4.42 before 4.80 for Perl let input chunking change the decoded value of top-level…",
+      "url": "https://scout.docker.com/v/DHI-y6hk-j2d3-5ba5-2rg3",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:12:28Z",
+      "cves": [
+        "CVE-2026-110682"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-ypnb-tgjf-ezpq-c3dl",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions from 4.51 before 4.80 for Perl allow quadratic CPU use by revalidating the remaining buffer…",
+      "url": "https://scout.docker.com/v/DHI-ypnb-tgjf-ezpq-c3dl",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:12:28Z",
+      "cves": [
+        "CVE-2026-110688"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-zjrq-wkfg-t7w2-3bzn",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cpanel::JSON::XS versions from 4.43 before 4.80 for Perl misorder byte-string keys during canonical encoding in…",
+      "url": "https://scout.docker.com/v/DHI-zjrq-wkfg-t7w2-3bzn",
+      "released": "2026-11-21T08:05:52Z",
+      "updated": "2026-11-24T22:12:28Z",
+      "cves": [
+        "CVE-2026-110687"
+      ],
+      "products": [
+        "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-cejo-6xeg-zhri-ufsq",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "fzf is a command-line fuzzy finder. Prior to 0.74.5, bin/fzf-tmux validates separately supplied layout sizes but does…",
+      "url": "https://scout.docker.com/v/DHI-cejo-6xeg-zhri-ufsq",
+      "released": "2026-11-21T10:55:00Z",
+      "updated": "2026-11-25T01:26:19Z",
+      "cves": [
+        "CVE-2026-121716"
+      ],
+      "products": [
+        "Docker Hardened Images: docker-sbx"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-e7fu-nv7d-zu5n-32rn",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "fzf is a command-line fuzzy finder. Prior to 0.74.5, trigger-driven zsh completion in shell/completion.zsh uses…",
+      "url": "https://scout.docker.com/v/DHI-e7fu-nv7d-zu5n-32rn",
+      "released": "2026-11-21T10:55:00Z",
+      "updated": "2026-11-25T01:26:19Z",
+      "cves": [
+        "CVE-2026-121717"
+      ],
+      "products": [
+        "Docker Hardened Images: docker-sbx"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "DHI-dwxe-guhu-7ssa-fnze",
@@ -5447,6 +6011,28 @@
         "CVE-2026-89085"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-5ubq-gqrg-bobb-urlb",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A flaw was found in FreeType, specifically within its CID font loader. A remote attacker could exploit this…",
+      "url": "https://scout.docker.com/v/DHI-5ubq-gqrg-bobb-urlb",
+      "released": "2026-11-21T11:33:18Z",
+      "updated": "2026-11-24T19:14:19Z",
+      "cves": [
+        "CVE-2026-95512"
+      ],
+      "products": [
+        "Docker Hardened Images: freetype"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in freetype 2.13.3+dfsg-1+deb13u1+dhi1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22421-1",
@@ -5703,6 +6289,569 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RLSA-2026:100482",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Moderate: gstreamer1-plugins-bad-free security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100482",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:33Z",
+      "cves": [
+        "CVE-2026-125707"
+      ],
+      "products": [
+        "Rocky Linux: gstreamer1-plugins-bad-free",
+        "Rocky Linux: gstreamer1-plugins-bad-free-debuginfo",
+        "Rocky Linux: gstreamer1-plugins-bad-free-debugsource",
+        "Rocky Linux: gstreamer1-plugins-bad-free-devel",
+        "Rocky Linux: gstreamer1-plugins-bad-free-libs",
+        "Rocky Linux: gstreamer1-plugins-bad-free-libs-debuginfo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gstreamer1-plugins-bad-free-libs-debuginfo 0:1.26.7-9.el10_3.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in gstreamer1-plugins-bad-free 0:1.26.7-9.el10_3.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in gstreamer1-plugins-bad-free-libs 0:1.26.7-9.el10_3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:100486",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: vim security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100486",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:33Z",
+      "cves": [
+        "CVE-2026-43961"
+      ],
+      "products": [
+        "Rocky Linux: vim-X11",
+        "Rocky Linux: vim-X11-debuginfo",
+        "Rocky Linux: vim-common",
+        "Rocky Linux: vim-data",
+        "Rocky Linux: vim-debuginfo",
+        "Rocky Linux: vim-debugsource"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vim-common 2:9.1.083-26.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in vim-minimal-debuginfo 2:9.1.083-26.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in vim-debuginfo 2:9.1.083-26.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:100547",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: podman security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100547",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:33Z",
+      "cves": [
+        "CVE-2026-111943",
+        "CVE-2026-78667",
+        "CVE-2026-97031"
+      ],
+      "products": [
+        "Rocky Linux: podman",
+        "Rocky Linux: podman-debuginfo",
+        "Rocky Linux: podman-debugsource",
+        "Rocky Linux: podman-docker",
+        "Rocky Linux: podman-remote",
+        "Rocky Linux: podman-remote-debuginfo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in podman-tests-debuginfo 7:6.1.4-1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in podman-debugsource 7:6.1.4-1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in podman-debuginfo 7:6.1.4-1.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:100554",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: buildah security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100554",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:34Z",
+      "cves": [
+        "CVE-2026-111943",
+        "CVE-2026-78667",
+        "CVE-2026-78669",
+        "CVE-2026-97031"
+      ],
+      "products": [
+        "Rocky Linux: buildah",
+        "Rocky Linux: buildah-debuginfo",
+        "Rocky Linux: buildah-debugsource",
+        "Rocky Linux: buildah-tests",
+        "Rocky Linux: buildah-tests-debuginfo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in buildah-tests 2:1.45.2-1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in buildah-tests-debuginfo 2:1.45.2-1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in buildah-debuginfo 2:1.45.2-1.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:100639",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: skopeo security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100639",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:34Z",
+      "cves": [
+        "CVE-2026-111943",
+        "CVE-2026-78667",
+        "CVE-2026-78669",
+        "CVE-2026-97031"
+      ],
+      "products": [
+        "Rocky Linux: skopeo",
+        "Rocky Linux: skopeo-debuginfo",
+        "Rocky Linux: skopeo-debugsource",
+        "Rocky Linux: skopeo-tests"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in skopeo 3:1.24.1-1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in skopeo-debuginfo 3:1.24.1-1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in skopeo-tests 3:1.24.1-1.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:100661",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: kernel security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100661",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:34Z",
+      "cves": [
+        "CVE-2026-64541",
+        "CVE-2026-68451",
+        "CVE-2026-68452",
+        "CVE-2026-68470",
+        "CVE-2026-72003",
+        "CVE-2026-72298",
+        "CVE-2026-74446",
+        "CVE-2026-74480",
+        "CVE-2026-74493",
+        "CVE-2026-80792",
+        "CVE-2026-97422",
+        "CVE-2026-97425",
+        "CVE-2026-97427",
+        "CVE-2026-97493",
+        "CVE-2026-97494",
+        "CVE-2026-97495",
+        "CVE-2026-97496",
+        "CVE-2026-97497",
+        "CVE-2026-98116",
+        "CVE-2026-98741",
+        "CVE-2026-99032",
+        "CVE-2026-99283"
+      ],
+      "products": [
+        "Rocky Linux: kernel",
+        "Rocky Linux: kernel-64k",
+        "Rocky Linux: kernel-64k-core",
+        "Rocky Linux: kernel-64k-debug",
+        "Rocky Linux: kernel-64k-debug-core",
+        "Rocky Linux: kernel-64k-debug-debuginfo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel-modules-core 0:6.12.0-264.17.1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-rt 0:6.12.0-264.17.1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-uki-virt 0:6.12.0-264.17.1.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:100666",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: flatpak security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100666",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:34Z",
+      "cves": [
+        "CVE-2026-92162"
+      ],
+      "products": [
+        "Rocky Linux: flatpak",
+        "Rocky Linux: flatpak-debuginfo",
+        "Rocky Linux: flatpak-debugsource",
+        "Rocky Linux: flatpak-devel",
+        "Rocky Linux: flatpak-libs",
+        "Rocky Linux: flatpak-libs-debuginfo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in flatpak 0:1.18.0-2.el10_3.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in flatpak-libs 0:1.18.0-2.el10_3.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in flatpak-session-helper-debuginfo 0:1.18.0-2.el10_3.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:100681",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: expat security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100681",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:34Z",
+      "cves": [
+        "CVE-2026-113351",
+        "CVE-2026-115506",
+        "CVE-2026-117610",
+        "CVE-2026-118370"
+      ],
+      "products": [
+        "Rocky Linux: expat",
+        "Rocky Linux: expat-debuginfo",
+        "Rocky Linux: expat-debugsource",
+        "Rocky Linux: expat-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in expat-debuginfo 0:2.7.3-2.el10_3.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in expat-debugsource 0:2.7.3-2.el10_3.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in expat-devel 0:2.7.3-2.el10_3.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:100685",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: curl security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100685",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:34Z",
+      "cves": [
+        "CVE-2025-14017",
+        "CVE-2025-14819",
+        "CVE-2026-10536",
+        "CVE-2026-11856",
+        "CVE-2026-12064",
+        "CVE-2026-1965",
+        "CVE-2026-3783",
+        "CVE-2026-3784",
+        "CVE-2026-5545",
+        "CVE-2026-6253",
+        "CVE-2026-6429",
+        "CVE-2026-7168",
+        "CVE-2026-8286",
+        "CVE-2026-8458",
+        "CVE-2026-8924",
+        "CVE-2026-8926",
+        "CVE-2026-8927",
+        "CVE-2026-8932",
+        "CVE-2026-9079",
+        "CVE-2026-92392",
+        "CVE-2026-9547"
+      ],
+      "products": [
+        "Rocky Linux: curl",
+        "Rocky Linux: curl-debuginfo",
+        "Rocky Linux: curl-debugsource",
+        "Rocky Linux: libcurl",
+        "Rocky Linux: libcurl-debuginfo",
+        "Rocky Linux: libcurl-devel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libcurl-devel 0:8.12.1-9.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in libcurl-debuginfo 0:8.12.1-9.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in curl-debugsource 0:8.12.1-9.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:100687",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Critical: edk2 security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100687",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:34Z",
+      "cves": [
+        "CVE-2026-97631"
+      ],
+      "products": [
+        "Rocky Linux: edk2-aarch64",
+        "Rocky Linux: edk2-debugsource",
+        "Rocky Linux: edk2-ovmf",
+        "Rocky Linux: edk2-tools",
+        "Rocky Linux: edk2-tools-debuginfo",
+        "Rocky Linux: edk2-tools-doc"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in edk2-tools 0:20260221-7.el10_3.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in edk2-tools-debuginfo 0:20260221-7.el10_3.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in edk2-debugsource 0:20260221-7.el10_3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:100696",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: qt6-qt3d security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100696",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:34Z",
+      "cves": [
+        "CVE-2026-111487"
+      ],
+      "products": [
+        "Rocky Linux: qt6-qt3d",
+        "Rocky Linux: qt6-qt3d-debuginfo",
+        "Rocky Linux: qt6-qt3d-debugsource",
+        "Rocky Linux: qt6-qt3d-devel",
+        "Rocky Linux: qt6-qt3d-examples",
+        "Rocky Linux: qt6-qt3d-examples-debuginfo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in qt6-qt3d-debuginfo 0:6.10.1-1.el10_3.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in qt6-qt3d-debugsource 0:6.10.1-1.el10_3.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in qt6-qt3d-examples 0:6.10.1-1.el10_3.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:100701",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: thunderbird security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100701",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:33Z",
+      "cves": [
+        "CVE-2026-118007",
+        "CVE-2026-118019",
+        "CVE-2026-118021",
+        "CVE-2026-118024",
+        "CVE-2026-124853",
+        "CVE-2026-124854",
+        "CVE-2026-124855",
+        "CVE-2026-124856",
+        "CVE-2026-124857",
+        "CVE-2026-124858",
+        "CVE-2026-124859",
+        "CVE-2026-124860",
+        "CVE-2026-124861",
+        "CVE-2026-124862",
+        "CVE-2026-124863",
+        "CVE-2026-124864",
+        "CVE-2026-124865",
+        "CVE-2026-124866",
+        "CVE-2026-124868",
+        "CVE-2026-124869",
+        "CVE-2026-124870",
+        "CVE-2026-124872",
+        "CVE-2026-124873",
+        "CVE-2026-124874",
+        "CVE-2026-124875",
+        "CVE-2026-124876",
+        "CVE-2026-124877",
+        "CVE-2026-124879",
+        "CVE-2026-124880",
+        "CVE-2026-124881",
+        "CVE-2026-124882",
+        "CVE-2026-124883",
+        "CVE-2026-124884",
+        "CVE-2026-124885",
+        "CVE-2026-124886",
+        "CVE-2026-124887",
+        "CVE-2026-124888",
+        "CVE-2026-124889",
+        "CVE-2026-124890",
+        "CVE-2026-124891",
+        "CVE-2026-124892",
+        "CVE-2026-124893",
+        "CVE-2026-124894",
+        "CVE-2026-124895",
+        "CVE-2026-124896",
+        "CVE-2026-124897",
+        "CVE-2026-124898",
+        "CVE-2026-124899",
+        "CVE-2026-124901",
+        "CVE-2026-124902",
+        "CVE-2026-124903",
+        "CVE-2026-124905",
+        "CVE-2026-124906",
+        "CVE-2026-124907",
+        "CVE-2026-124909",
+        "CVE-2026-124910",
+        "CVE-2026-124912",
+        "CVE-2026-124913",
+        "CVE-2026-124914",
+        "CVE-2026-124915"
+      ],
+      "products": [
+        "Rocky Linux: thunderbird",
+        "Rocky Linux: thunderbird-debuginfo",
+        "Rocky Linux: thunderbird-debugsource"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in thunderbird-debuginfo 0:153.7.0-1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in thunderbird-debugsource 0:153.7.0-1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in thunderbird 0:153.7.0-1.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:100744",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Critical: nginx security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:100744",
+      "released": "2026-11-21T12:06:29Z",
+      "updated": "2026-11-27T00:09:34Z",
+      "cves": [
+        "CVE-2026-113425",
+        "CVE-2026-118899",
+        "CVE-2026-121810",
+        "CVE-2026-123007",
+        "CVE-2026-123633",
+        "CVE-2026-123634"
+      ],
+      "products": [
+        "Rocky Linux: nginx",
+        "Rocky Linux: nginx-all-modules",
+        "Rocky Linux: nginx-core",
+        "Rocky Linux: nginx-core-debuginfo",
+        "Rocky Linux: nginx-debuginfo",
+        "Rocky Linux: nginx-debugsource"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx-mod-http-image-filter-debuginfo 2:1.26.3-16.el10_3.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx-mod-http-xslt-filter 2:1.26.3-16.el10_3.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in nginx-mod-http-image-filter 2:1.26.3-16.el10_3.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-cg2d-cdd2-tkjp-2puc",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -5955,6 +7104,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1188",
+      "src": "canada_cyber",
+      "vendor": "Canadian Centre for Cyber Security",
+      "title": "Apache security advisory (AV26-1188)",
+      "url": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1188",
+      "released": "2026-11-21T13:17:12Z",
+      "updated": "2026-11-21T13:17:12Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://cyber.gc.ca/en/alerts-advisories/apache-security-advisory-av26-1188"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-4hk2-sge6-2yie-ndpk",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -5966,6 +7131,28 @@
         "CVE-2026-59987"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-dmpi-2c22-sxrx-efmo",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Issue summary: Verifying a maliciously crafted CMS or PKCS#7 SignedData",
+      "url": "https://scout.docker.com/v/DHI-dmpi-2c22-sxrx-efmo",
+      "released": "2026-11-21T16:31:30Z",
+      "updated": "2026-11-24T19:48:50Z",
+      "cves": [
+        "CVE-2026-121482"
+      ],
+      "products": [
+        "Docker Hardened Images: openssl"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openssl 3.5.9-1~deb13u1+dhi1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "DHI-zpqq-uqkt-l6hs-kvxw",

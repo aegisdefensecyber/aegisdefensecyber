@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-09",
-  "count": 119,
+  "count": 123,
   "items": [
     {
       "id": "ICSA-26-197-05",
@@ -996,6 +996,37 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:37070",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: perl:5.32 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:37070",
+      "released": "2026-07-09T05:22:41Z",
+      "updated": "2026-11-05T15:51:47Z",
+      "cves": [
+        "CVE-2025-40909"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream AUS (v.8.6)",
+        "Red Hat Enterprise Linux AppStream EUS EXTENSION (v.8.6)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:37070"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-CP05946",
@@ -3650,6 +3681,58 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-IV00591",
+      "src": "cleanstart",
+      "title": "Security fixes for CVE-2025-61726, CVE-2025-61727, CVE-2025-61728, CVE-2025-61729, CVE-2025-61730, CVE-2025-61731, CVE-2025-61732, CVE-2025-68119, CVE-2025-68121, CVE-2026-25679, CVE-2026-27139, CVE-2026-27140, CVE-2026…",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-IV00591.json",
+      "released": "2026-07-09T10:08:35Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61726",
+        "CVE-2025-61727",
+        "CVE-2025-61728",
+        "CVE-2025-61729",
+        "CVE-2025-61730",
+        "CVE-2025-61731",
+        "CVE-2025-61732",
+        "CVE-2025-68119",
+        "CVE-2025-68121",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27140",
+        "CVE-2026-27142",
+        "CVE-2026-27143",
+        "CVE-2026-27144",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32288",
+        "CVE-2026-32289",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-39817",
+        "CVE-2026-39819",
+        "CVE-2026-39820",
+        "CVE-2026-39823",
+        "CVE-2026-39825",
+        "CVE-2026-39826",
+        "CVE-2026-39836",
+        "CVE-2026-42499",
+        "CVE-2026-42501"
+      ],
+      "products": [
+        "CleanStart: nginx-prometheus-exporter-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nginx-prometheus-exporter-fips 1.5.1-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-FY61868",
       "src": "cleanstart",
       "title": "Security fixes for CVE-2026-25679, CVE-2026-27140, CVE-2026-32280, CVE-2026-32281, CVE-2026-32283, CVE-2026-32289 applied in versions: 1.13.2-r0, 1.13.2-r1",
@@ -3824,6 +3907,33 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-golang-2023-54365",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Traefik - Denial of Service via HTTP/2 Request Handling",
+      "url": "https://access.redhat.com/security/cve/CVE-2023-54365",
+      "released": "2026-07-09T10:41:02Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-54365"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: golang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang 1.20.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang 1.21.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "SUSE-RU-2026:2815-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -3868,6 +3978,22 @@
         "Datasolution acymailing.com AcyMailing extension for Joomla"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-109701",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-15308 affecting package python-py 1.11.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15308",
+      "released": "2026-07-09T17:16:58Z",
+      "updated": "2026-10-27T05:36:16Z",
+      "cves": [
+        "CVE-2026-15308"
+      ],
+      "products": [
+        "Azure Linux: python-py"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-92271",

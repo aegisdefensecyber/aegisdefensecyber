@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-12-01",
-  "count": 7,
+  "count": 102,
   "items": [
     {
       "id": "ALSA-2025:22387",
@@ -150,6 +150,2261 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "ASB-A-289809991",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In notifyTimeout of CallRedirectionProcessor, there is a possible permission bypass due to a logic error in the code. This could lead to local escalation of privilege and background activity launch with no additional ex…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-40130"
+      ],
+      "products": [
+        "Android: platform/packages/services/Telecomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/services/Telecomm 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Telecomm 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Telecomm 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-291281543",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ensureBound of RemotePrintService.java, there is a possible way for a background app to keep foreground permissions due to a permissions bypass. This could lead to local escalation of privilege with user execution pr…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-32319"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/vendor/google_shared/build/release"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/google_shared/build/release 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-299633613",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of WifiScanModeActivity.java, there is a possible way to bypass a device config restriction due to a missing permission check. This could lead to local escalation of privilege with no additional ex…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48599"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Settings 13:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Settings 14:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-301952571",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In DefaultTransitionHandler.java, there is a possible way to unknowingly grant permissions to an app due to a tapjacking/overlay attack. This could lead to local escalation of privilege with no additional execution priv…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48639"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/frameworks/native"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/native 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-303408193",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In startAlwaysOnVpn of Vpn.java, there is a possible way to disable always-on VPN due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User i…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48588"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 13:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-305710469",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to read files from another user due to a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User inte…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48591"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/packages/services/Mms"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Mms 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-305710989",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to read files from another user due to a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User inte…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48604"
+      ],
+      "products": [
+        "Android: platform/packages/services/Mms"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/services/Mms 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Mms 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Mms 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-326571066",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In startNextMatchingActivity of ActivityTaskManagerService.java, there is a possible way to launch an activity from the background due to a logic error in the code. This could lead to local escalation of privilege with …",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48627"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 13:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 14:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-326926596",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of Session.java, there is a possible way to view images belonging to a different user of the device due to a logic error in the code. This could lead to local escalation of privilege with no additi…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-32329"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 13:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-327137311",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of Session.java, there is a possible way to view images belonging to a different user of the device due to a logic error in the code. This could lead to local escalation of privilege with no additi…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-32328"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 13:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-337775777",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to leak audio files across user profiles due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User int…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22420"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-337784859",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onActivityResult of EditFdnContactScreen.java, there is a possible way to leak contacts from the work profile due to a confused deputy. This could lead to local escalation of privilege with no additional execution pr…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48586"
+      ],
+      "products": [
+        "Android: platform/packages/services/Telephony"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/services/Telephony 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Telephony 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Telephony 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-339637822",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In sendCommand of MediaSessionRecord.java, there is a possible way to launch the foreground service while the app is in the background due to FGS while-in-use abuse. This could lead to local escalation of privilege with…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48573"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-352024705",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onSomePackagesChanged of VoiceInteractionManagerService.java, there is a possible way for a third party application's component name to persist even after uninstalling due to a logic error in the code. This could lea…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48620"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-352518318",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In findAvailRecognizer of VoiceInteractionManagerService.java, there is a possible way to become the default speech recognizer app due to an insecure default value. This could lead to local escalation of privilege with …",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48629"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-362492829",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of HeaderPrivacyIconsController.kt, there is a possible way to grand permissions across user due to a logic error in the code. This could lead to local escalation of privilege with no additional ex…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48589"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-376461726",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In notifyTimeout of CallRedirectionProcessor.java, there is a possible persistent connection due to improper input validation. This could lead to local escalation of privilege and background activity launches with User …",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-22432"
+      ],
+      "products": [
+        "Android: platform/packages/services/Telecomm"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/services/Telecomm 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Telecomm 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/services/Telecomm 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-376462130",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In validateIconUserBoundary of PrintManagerService.java, there is a possible cross-user image leak due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges neede…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48628"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-381339822",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to launch an application from the background due to a precondition check failure. This could lead to remote escalation of privilege with no additional execution privileges …",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48626"
+      ],
+      "products": [
+        "Android: platform/frameworks/base",
+        "Android: platform/packages/apps/Launcher3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Launcher3 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-381885240",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of BaseBundle.java, there is a possible way to execute arbitrary code due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges need…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48583"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-384999601",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-384999601",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-6573"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-385736540",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to launch activities from the background due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. User …",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48572"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-391895151",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In disassociate of DisassociationProcessor.java, there is a possible way for an app to continue reading notifications when not associated to a companion device due to improper input validation. This could lead to local …",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48525"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-393582077",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In connectInternal of MediaBrowser.java, there is a possible way to access while in use permission while the app is in background due to a logic error in the code. This could lead to local escalation of privilege with n…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48580"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-404254549",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In processLaunchBrowser of CommandParamsFactory.java, there is a possible browser interaction from the lockscreen due to improper locking. This could lead to physical escalation of privilege with no additional execution…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48618"
+      ],
+      "products": [
+        "Android: platform/frameworks/opt/telephony"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/opt/telephony 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/opt/telephony 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/opt/telephony 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-412662901",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In ProcessArea of dng_misc_opcodes.cpp, there is a possible out of bounds read due to a buffer overflow. This could lead to local information disclosure with no additional execution privileges needed. User interaction i…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48622"
+      ],
+      "products": [
+        "Android: platform/cts",
+        "Android: platform/external/dng_sdk",
+        "Android: platform/external/libjpeg-turbo",
+        "Android: platform/external/skia"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/cts 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/dng_sdk 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/skia 15:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-416259832",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In InputMethodInfo of InputMethodInfo.java, there is a possible permanent denial of service due to resource exhaustion. This could lead to local denial of service with no additional execution privileges needed. User int…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48603"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-416490321",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to create a large amount of app ops due to a logic error in the code. This could lead to local denial of service with no additional execution privileges needed. User intera…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48607"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-416692063",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-416692063",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-25177"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-417463103",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of CertInstaller.java, there is a possible way to install certificates due to a permissions bypass. This could lead to local escalation of privilege with no additional execution privileges needed. …",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48575"
+      ],
+      "products": [
+        "Android: platform/packages/apps/CertInstaller"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/CertInstaller 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/CertInstaller 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/CertInstaller 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-417987184",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In verifyAndGetBypass of AppOpsService.java, there is a possible method for a malicious app to prevent dialing emergency services under limited circumstances due to resource exhaustion. This could lead to local denial o…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48590"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-417988098",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In hasAccountsOnAnyUser of DevicePolicyManagerService.java, there is a possible way to add a Device Owner after provisioning due to a logic error in the code. This could lead to local escalation of privilege with no add…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48633"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-418774489",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to alter the primary user's face unlock settings due to a confused deputy. This could lead to physical escalation of privilege with no additional execution privileges neede…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48598"
+      ],
+      "products": [
+        "Android: platform/packages/apps/Settings"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/packages/apps/Settings 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/packages/apps/Settings 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-425662627",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of NotificationManagerService.java, there is a possible way to bypass the per-package channel limits causing resource exhaustion. This could lead to local denial of service with no additional execu…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48584"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-425907218",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-425907218",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-46711"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-426205822",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In updateNotificationChannelGroupFromPrivilegedListener of NotificationManagerService.java, there is a possible permanent denial of service due to resource exhaustion. This could lead to local denial of service with no …",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48576"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-426207912",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible permanent denial of service due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction …",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48601"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-427113482",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In initDecoder of C2SoftDav1dDec.cpp, there is a possible out of bounds read due to a heap buffer overflow. This could lead to remote information disclosure with no additional execution privileges needed. User interacti…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48592"
+      ],
+      "products": [
+        "Android: platform/frameworks/av"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/av 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/av 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/av 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-427206637",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onUidImportance of DisassociationProcessor.java, there is a possible way to retain companion application privileges after disassociation due to improper input validation. This could lead to local escalation of privil…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48594"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-428702264",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-428702264",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-6349"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-429381687",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-429381687",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-58410"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-430042895",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-430042895",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-47354"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom/opensource/dsp-kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom/opensource/dsp-kernel SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-430043154",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-430043154",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-47351"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom/opensource/dsp-kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom/opensource/dsp-kernel SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-430568718",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In rebootWipeUserData of RecoverySystem.java, there is a possible way to factory reset the device while in DSU mode due to a missing permission check. This could lead to physical denial of service with no additional exe…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48614"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-432439762",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In __pkvm_guest_relinquish_to_host of mem_protect.c, there is a possible configuration data leak due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges …",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48610"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-432751421",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of eventpoll.c, there is a possible use after free due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interactio…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-38349"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-432753641",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In unix_stream_recv_urg of af_unix.c, there is a possible way to achieve code execution due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User inte…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-38236"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-432804305",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for expl…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-35970"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-435065128",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-435065128",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-31717"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-435076697",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-435076697",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-31718"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-436201996",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In xfrmi_changelink of xfrm_interface_core.c, there is a possible use after free due to a missing null check. This could lead to local escalation of privilege with no additional execution privileges needed. User interac…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-38500"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-436270922",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to trick a user into accepting a permission due to a tapjacking/overlay attack. This could lead to local escalation of privilege with no additional execution privileges nee…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48597"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-436580278",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In init_pkvm_hyp_vcpu of pkvm.c, there is a possible out of bounds write due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interactio…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48623"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-438098181",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In appendFrom of Parcel.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48596"
+      ],
+      "products": [
+        "Android: platform/frameworks/native"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/native 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/native 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/native 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-442288321",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-442288321",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20730"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-442288324",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-442288324",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20726"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-442288325",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-442288325",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20725"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-442295794",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-442295794",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20727"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-442540376",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In __pkvm_load_tracing of trace.c, there is a possible out-of-bounds write due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interact…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48638"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-442620646",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-442620646",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-47382"
+      ],
+      "products": [
+        "Android: abl/tianocore/edk2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in abl/tianocore/edk2 SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-443053939",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of arm-smmu-v3.c, there is a possible out-of-bounds write due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User int…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48624"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-443063131",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-443063131",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-8045"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-443742829",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In setDisplayName of AssociationRequest.java, there is a possible way to cause CDM associations to persist after the user has disassociated them due to improper input validation. This could lead to local escalation of p…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48632"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 16-qpr2-next:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 15:2025-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 16:2025-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-443763663",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple functions of mem_protect.c, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interacti…",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-48637"
+      ],
+      "products": [
+        "Android: :linux_kernel:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :linux_kernel: :2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-445775436",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-445775436",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20790"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-445775437",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-445775437",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20759"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-445775438",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-445775438",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20758"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-445775439",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-445775439",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20757"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-445777810",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-445777810",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20750"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-445785195",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-445785195",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20753"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-445785196",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-445785196",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20754"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-445785199",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-445785199",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20791"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-445793666",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-445793666",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20756"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-445793668",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-445793668",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20752"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-445793670",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-445793670",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20751"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-445793671",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-445793671",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20755"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-446071856",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-446071856",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-20792"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-448234052",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-448234052",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-3012"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-448236351",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-448236351",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-11131"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-448236352",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-448236352",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-11133"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-448253912",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-448253912",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-11132"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-448253913",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-448253913",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-61617"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-448275674",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-448275674",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-61608"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-448275675",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-448275675",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-61610"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-448276914",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-448276914",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-61619"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-448276915",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-448276915",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-61607"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-448277334",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-448277334",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-61618"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-448277338",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-448277338",
+      "url": "https://source.android.com/security/bulletin/2025-12-01",
+      "released": "2025-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-61609"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2025-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2025:22404",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -180,6 +2435,74 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2025:22417",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gimp:2.8 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:22417",
+      "released": "2025-12-01T12:35:09Z",
+      "updated": "2026-11-05T14:51:10Z",
+      "cves": [
+        "CVE-2025-10920",
+        "CVE-2025-10921",
+        "CVE-2025-10922",
+        "CVE-2025-10923",
+        "CVE-2025-10924",
+        "CVE-2025-10925",
+        "CVE-2025-10934"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:22417"
+        },
+        {
+          "t": "No mitigation is currently available that meets Red Hat Product Security’s standards for usability, deployment, applicability, or stability.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-109689",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-13836 affecting package python-py 1.11.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13836",
+      "released": "2025-12-01T18:16:04Z",
+      "updated": "2026-10-27T05:36:16Z",
+      "cves": [
+        "CVE-2025-13836"
+      ],
+      "products": [
+        "Azure Linux: python-py"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-109692",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-13837 affecting package python-py 1.11.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13837",
+      "released": "2025-12-01T18:16:04Z",
+      "updated": "2026-10-27T05:36:16Z",
+      "cves": [
+        "CVE-2025-13837"
+      ],
+      "products": [
+        "Azure Linux: python-py"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-71264",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -200,6 +2523,37 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:22445",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gimp security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:22445",
+      "released": "2025-12-01T19:44:30Z",
+      "updated": "2026-11-05T14:51:11Z",
+      "cves": [
+        "CVE-2025-10922",
+        "CVE-2025-10934"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream EUS (v.9.6)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:22445"
+        },
+        {
+          "t": "No mitigation is currently available that meets Red Hat Product Security’s standards for usability, deployment, applicability, or stability.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2025:22195",
@@ -230,6 +2584,92 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:22497",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gimp security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:22497",
+      "released": "2025-12-01T21:05:45Z",
+      "updated": "2026-11-05T14:51:11Z",
+      "cves": [
+        "CVE-2025-10922",
+        "CVE-2025-10934"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream E4S (v.9.0)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:22497"
+        },
+        {
+          "t": "No mitigation is currently available that meets Red Hat Product Security’s standards for usability, deployment, applicability, or stability.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2025:22498",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: gimp security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:22498",
+      "released": "2025-12-01T21:21:36Z",
+      "updated": "2026-11-05T14:51:12Z",
+      "cves": [
+        "CVE-2025-10922",
+        "CVE-2025-10934"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream E4S (v.9.2)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:22498"
+        },
+        {
+          "t": "No mitigation is currently available that meets Red Hat Product Security’s standards for usability, deployment, applicability, or stability.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-569q-mpph-wgww",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Better Auth affected by external request basePath modification DoS",
+      "url": "https://github.com/advisories/GHSA-569q-mpph-wgww",
+      "released": "2025-12-01T21:29:48Z",
+      "updated": "2026-09-01T18:56:11Z",
+      "cves": [
+        "CVE-2025-71401"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: better-auth"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in better-auth 1.4.2",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
     }
   ]
 }

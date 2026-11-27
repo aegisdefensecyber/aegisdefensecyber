@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-07-09",
-  "count": 4,
+  "count": 8,
   "items": [
     {
       "id": "ALSA-2025:10677",
@@ -61,6 +61,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BELL-CVE-2025-38237",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2025-38237",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2025-38237",
+      "released": "2025-07-09T06:00:04Z",
+      "updated": "2026-10-06T20:01:59Z",
+      "cves": [
+        "CVE-2025-38237"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.189-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BELL-CVE-2025-7345",
       "src": "osv_bellsoft",
       "vendor": "Bellsoft",
@@ -85,6 +115,111 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10698",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: libxml2 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10698",
+      "released": "2025-07-09T12:04:08Z",
+      "updated": "2026-11-05T15:41:01Z",
+      "cves": [
+        "CVE-2025-6021",
+        "CVE-2025-49794",
+        "CVE-2025-49796"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 8)",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10698"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options don't meet the Red Hat Product Security criteria comprising ease of use an…",
+          "u": null
+        },
+        {
+          "t": "There's no available mitigation other than avoid processing untrusted XML documents before updating to the libxml version containing the fix.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2025:10699",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: libxml2 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10699",
+      "released": "2025-07-09T12:18:48Z",
+      "updated": "2026-11-05T15:41:01Z",
+      "cves": [
+        "CVE-2025-6021",
+        "CVE-2025-49794",
+        "CVE-2025-49796"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)",
+        "Red Hat Enterprise Linux BaseOS (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10699"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options don't meet the Red Hat Product Security criteria comprising ease of use an…",
+          "u": null
+        },
+        {
+          "t": "There's no available mitigation other than avoid processing untrusted XML documents before updating to the libxml version containing the fix.",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2025:10707",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: sudo security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10707",
+      "released": "2025-07-09T13:08:53Z",
+      "updated": "2026-11-05T14:35:28Z",
+      "cves": [
+        "CVE-2025-32462"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.0,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream EUS (v.9.4)",
+        "Red Hat Enterprise Linux BaseOS EUS (v.9.4)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10707"
+        },
+        {
+          "t": "For environments using sudoers files: Remove rules defined in sudoers files that are for any system other than the local system. For environments using LDAP: U…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "WID-SEC-W-2025-1522",

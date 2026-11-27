@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-18",
-  "count": 21,
+  "count": 23,
   "items": [
     {
       "id": "openSUSE-SU-2026:10570-1",
@@ -552,6 +552,60 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-golang-2026-27143",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Missing bound checks can lead to memory corruption in safe Go in cmd/compile",
+      "url": "https://pkg.go.dev/vuln/GO-2026-4868",
+      "released": "2026-04-18T08:42:32Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-27143"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: golang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang 1.25.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang 1.26.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-golang-2026-27144",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Miscompilation allows memory corruption via CONVNOP-wrapped array copy in cmd/compile",
+      "url": "https://pkg.go.dev/vuln/GO-2026-4867",
+      "released": "2026-04-18T08:42:34Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-27144"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: golang"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang 1.25.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang 1.26.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

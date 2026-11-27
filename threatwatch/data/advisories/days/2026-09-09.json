@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-09",
-  "count": 178,
+  "count": 186,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1135",
@@ -1531,6 +1531,30 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-GH96150",
+      "src": "cleanstart",
+      "title": "Netty (io",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-GH96150.json",
+      "released": "2026-09-09T00:38:07Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-54515",
+        "CVE-2026-59889",
+        "CVE-2026-62243",
+        "CVE-2026-75595"
+      ],
+      "products": [
+        "CleanStart: apache-zookeeper"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apache-zookeeper 3.8.6-r6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-BA42566",
@@ -4029,6 +4053,83 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:66026",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: virtuoso-opensource security update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:66026",
+      "released": "2026-09-09T16:06:22Z",
+      "updated": "2026-11-05T16:39:35Z",
+      "cves": [
+        "CVE-2025-61021"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Server (v. 7 ELS)",
+        "Red Hat Enterprise Linux Server Optional (v. 7 ELS)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:66026"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:66016",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang-fips: Golang FIPS zeroed buffer",
+      "url": "https://access.redhat.com/errata/RHSA-2026:66016",
+      "released": "2026-09-09T16:12:37Z",
+      "updated": "2026-11-27T04:28:57Z",
+      "cves": [
+        "CVE-2024-9355",
+        "CVE-2024-45336",
+        "CVE-2026-33818",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:66016"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-80920",
+      "src": "cvelistv5",
+      "title": "CVE-2026-80920",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-80920",
+      "released": "2026-09-09T16:13:17Z",
+      "updated": "2026-11-16T09:52:01Z",
+      "cves": [
+        "CVE-2026-80920"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "ROOT-APP-NPM-CVE-2024-55565",
       "src": "osv_root",
       "vendor": "Root",
@@ -4160,6 +4261,72 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-99957",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80917 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80917",
+      "released": "2026-09-09T17:17:46Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-80917"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-99959",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80914 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80914",
+      "released": "2026-09-09T17:17:46Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-80914"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-99965",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80918 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80918",
+      "released": "2026-09-09T17:17:46Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-80918"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-99968",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -4190,6 +4357,28 @@
         "Azure Linux: kernel"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99954",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80923 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80923",
+      "released": "2026-09-09T17:17:47Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2026-80923"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "DRUPAL-CONTRIB-2026-138",

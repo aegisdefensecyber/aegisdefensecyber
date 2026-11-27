@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-03-26",
-  "count": 3,
+  "count": 4,
   "items": [
     {
       "id": "msrc_CVE-2024-8176",
@@ -78,6 +78,37 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:3131",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang: net/http: net/http: sensitive headers incorrectly sent after cross-domain redirect",
+      "url": "https://access.redhat.com/errata/RHSA-2025:3131",
+      "released": "2025-03-26T17:39:24Z",
+      "updated": "2026-11-27T04:28:45Z",
+      "cves": [
+        "CVE-2024-45336",
+        "CVE-2024-45338",
+        "CVE-2025-27144"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.17 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade your cluster and fully apply this errata update: https://docs.openshift.com…",
+          "u": "https://access.redhat.com/errata/RHSA-2025:3131"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "As a workaround, applications can pre-validate that payloads being passed to Go JOSE do not contain an excessive number of `.` characters.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

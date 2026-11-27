@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-02-28",
-  "count": 13,
+  "count": 14,
   "items": [
     {
       "id": "msrc_CVE-2025-71150",
@@ -153,6 +153,39 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-72hv-8253-57qq",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "jackson-core: Number Length Constraint Bypass in Async Parser Leads to Potential DoS Condition",
+      "url": "https://github.com/advisories/GHSA-72hv-8253-57qq",
+      "released": "2026-02-28T02:01:05Z",
+      "updated": "2026-09-01T18:57:17Z",
+      "cves": [
+        "CVE-2026-18401"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Maven: com.fasterxml.jackson.core:jackson-core",
+        "Maven: tools.jackson.core:jackson-core"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tools.jackson.core:jackson-core 3.1.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-core 2.21.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in com.fasterxml.jackson.core:jackson-core 2.18.6",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
     },
     {
       "id": "SUSE-SU-2026:0698-1",

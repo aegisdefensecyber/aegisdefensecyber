@@ -1,8 +1,246 @@
 {
   "schemaVersion": 1,
   "date": "2024-12-01",
-  "count": 2,
+  "count": 11,
   "items": [
+    {
+      "id": "ASB-A-340239088",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to avoid unbinding of a service from the system due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges n…",
+      "url": "https://source.android.com/security/bulletin/2024-12-01",
+      "released": "2024-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-43762"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 15-next:2024-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12:2024-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 12L:2024-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-349678452",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In skia_alloc_func of SkDeflate.cpp, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction …",
+      "url": "https://source.android.com/security/bulletin/2024-12-01",
+      "released": "2024-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-43768"
+      ],
+      "products": [
+        "Android: platform/external/skia"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/skia 12:2024-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/skia 12L:2024-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/skia 13:2024-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-350118416",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In resizeToAtLeast of SkRegion.cpp, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction i…",
+      "url": "https://source.android.com/security/bulletin/2024-12-01",
+      "released": "2024-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-43097"
+      ],
+      "products": [
+        "Android: platform/external/skia"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/skia 12:2024-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/skia 12L:2024-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/skia 13:2024-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-352631932",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In prepare_to_draw_into_mask of SkBlurMaskFilterImpl.cpp, there is a possible heap overflow due to improper input validation. This could lead to remote code execution with no additional execution privileges needed. User…",
+      "url": "https://source.android.com/security/bulletin/2024-12-01",
+      "released": "2024-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-43767"
+      ],
+      "products": [
+        "Android: platform/external/skia"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/external/skia 12:2024-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/skia 12L:2024-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/external/skia 13:2024-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-357079333",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In DevmemValidateFlags of devicemem_server.c , there is a possible out of bounds write due to memory corruption. This could lead to local escalation of privilege with no additional execution privileges needed. User inte…",
+      "url": "https://source.android.com/security/bulletin/2024-12-01",
+      "released": "2024-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-43077"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2024-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-360807442",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In isPackageDeviceAdmin of PackageManagerService.java, there is a possible edge case which could prevent the uninstallation of CloudDpc due to a logic error in the code. This could lead to local escalation of privilege …",
+      "url": "https://source.android.com/security/bulletin/2024-12-01",
+      "released": "2024-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-43769"
+      ],
+      "products": [
+        "Android: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 15-next:2024-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 13:2024-12-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/base 14:2024-12-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-363029346",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In TBD of TBD, there is a possible use-after-free due to a logic error in the code. This could lead to local escalation of privilege in the kernel with no additional execution privileges needed. User interaction is not …",
+      "url": "https://source.android.com/security/bulletin/2024-12-01",
+      "released": "2024-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-43701"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2024-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-364017561",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-364017561",
+      "url": "https://source.android.com/security/bulletin/2024-12-01",
+      "released": "2024-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-33063"
+      ],
+      "products": [
+        "Android: platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn SoCVersion:2024-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ASB-A-371710871",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "ASB-A-371710871",
+      "url": "https://source.android.com/security/bulletin/2024-12-01",
+      "released": "2024-12-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-20125"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: SoCVersion:2024-12-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
     {
       "id": "openSUSE-SU-2024:0384-1",
       "src": "csaf_opensuse",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-04-16",
-  "count": 14,
+  "count": 16,
   "items": [
     {
       "id": "msrc_CVE-2011-2501",
@@ -188,6 +188,29 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-gdal-2025-29480",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Buffer Overflow vulnerability in gdal 3.10.2 allows a local attacker to cause a denial of service via the OGRSpatialReference::Release function. NOTE: the Supplier indicates that the report is invalid and could not be r…",
+      "url": "https://github.com/lmarch2/poc/blob/main/gdal/gdal.md",
+      "released": "2025-04-16T07:10:31Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-29480"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: gdal"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gdal 3.10.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BIT-drupal-2025-3057",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -213,6 +236,36 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:3945",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: mod_auth_openidc security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:3945",
+      "released": "2025-04-16T10:34:55Z",
+      "updated": "2026-11-05T14:35:58Z",
+      "cves": [
+        "CVE-2025-31492"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream E4S (v.9.0)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:3945"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use a…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-60479",

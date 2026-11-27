@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-22",
-  "count": 59,
+  "count": 64,
   "items": [
     {
       "id": "CERTFR-2026-ALE-008",
@@ -744,6 +744,33 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-EP65920",
+      "src": "cleanstart",
+      "title": "Parsing an invalid SVCB or HTTPS RR can panic when the size of a parameter value overflows the message buffer",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-EP65920.json",
+      "released": "2026-07-22T00:36:08Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-24051",
+        "CVE-2026-29181",
+        "CVE-2026-33186",
+        "CVE-2026-39882",
+        "CVE-2026-39883",
+        "CVE-2026-46600",
+        "CVE-2026-56852"
+      ],
+      "products": [
+        "CleanStart: knative-serving"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in knative-serving 1.22.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-FV79231",
       "src": "cleanstart",
       "title": "Netty is a network application framework for development of protocol servers and clients",
@@ -915,6 +942,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BELL-CVE-2026-64192",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-64192",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-64192",
+      "released": "2026-07-22T06:04:20Z",
+      "updated": "2026-10-06T20:02:02Z",
+      "cves": [
+        "CVE-2026-64192"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.189-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.103-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.43-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BELL-CVE-2026-63839",
       "src": "osv_bellsoft",
       "vendor": "Bellsoft",
@@ -935,6 +992,66 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-64082",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-64082",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-64082",
+      "released": "2026-07-22T06:06:00Z",
+      "updated": "2026-10-06T20:02:02Z",
+      "cves": [
+        "CVE-2026-64082"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.189-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.111-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.53-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-64139",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-64139",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-64139",
+      "released": "2026-07-22T06:06:01Z",
+      "updated": "2026-10-06T20:02:02Z",
+      "cves": [
+        "CVE-2026-64139"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.189-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.92-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "BELL-CVE-2026-32285",
@@ -1187,6 +1304,38 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "GHSA-px8p-9vwx-vf98",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "fflate unzipSync can enter an infinite loop when parsing malformed ZIP64 archives",
+      "url": "https://github.com/advisories/GHSA-px8p-9vwx-vf98",
+      "released": "2026-07-22T09:32:13Z",
+      "updated": "2026-09-03T14:58:12Z",
+      "cves": [
+        "CVE-2026-45820"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: fflate"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in fflate 0.4.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in fflate 0.5.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in fflate 0.6.11",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21415-1",

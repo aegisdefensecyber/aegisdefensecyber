@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-26",
-  "count": 56,
+  "count": 65,
   "items": [
     {
       "id": "ELA-1903-1",
@@ -20,6 +20,50 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ELA-1904-1",
+      "src": "osv_debian_elts",
+      "vendor": "Debian Elts",
+      "title": "ELA-1904-1",
+      "url": "https://deb.freexian.com/extended-lts/tracker/ELA-1904-1",
+      "updated": "2026-11-26T00:00:00Z",
+      "products": [
+        "Debian: python-git"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python-git 2.1.11-1+deb10u3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ELA-1905-1",
+      "src": "osv_debian_elts",
+      "vendor": "Debian Elts",
+      "title": "ELA-1905-1",
+      "url": "https://deb.freexian.com/extended-lts/tracker/ELA-1905-1",
+      "updated": "2026-11-26T00:00:00Z",
+      "products": [
+        "Debian: gst-plugins-good1.0"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gst-plugins-good1.0 1.10.4-1+deb9u6",
+          "u": null
+        },
+        {
+          "t": "Fixed in gst-plugins-good1.0 1.14.4-1+deb10u6",
+          "u": null
+        },
+        {
+          "t": "Fixed in gst-plugins-good1.0 1.18.4-2+deb11u5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CERTFR-2026-AVI-1623",
@@ -296,6 +340,118 @@
       ],
       "lang": "fr",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "ALSA-2026:103817",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Critical: kernel security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:103817",
+      "released": "2026-11-26T00:00:00Z",
+      "updated": "2026-11-26T21:13:15Z",
+      "cves": [
+        "CVE-2026-63916",
+        "CVE-2026-98741",
+        "CVE-2026-99236",
+        "CVE-2026-99362"
+      ],
+      "products": [
+        "AlmaLinux: bpftool",
+        "AlmaLinux: kernel",
+        "AlmaLinux: kernel-abi-stablelists",
+        "AlmaLinux: kernel-core",
+        "AlmaLinux: kernel-cross-headers",
+        "AlmaLinux: kernel-debug"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in bpftool 4.18.0-553.190.1.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel 4.18.0-553.190.1.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-abi-stablelists 4.18.0-553.190.1.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "ALSA-2026:103838",
+      "src": "osv_almalinux",
+      "vendor": "Almalinux",
+      "title": "Critical: kernel-rt security, bug fix, and enhancement update",
+      "url": "https://access.redhat.com/errata/RHSA-2026:103838",
+      "released": "2026-11-26T00:00:00Z",
+      "updated": "2026-11-26T21:12:05Z",
+      "cves": [
+        "CVE-2026-63916",
+        "CVE-2026-98741",
+        "CVE-2026-99236",
+        "CVE-2026-99362"
+      ],
+      "products": [
+        "AlmaLinux: kernel-rt",
+        "AlmaLinux: kernel-rt-core",
+        "AlmaLinux: kernel-rt-debug",
+        "AlmaLinux: kernel-rt-debug-core",
+        "AlmaLinux: kernel-rt-debug-devel",
+        "AlmaLinux: kernel-rt-debug-modules"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel-rt 4.18.0-553.190.1.rt7.531.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-rt-core 4.18.0-553.190.1.rt7.531.el8_10",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-rt-debug 4.18.0-553.190.1.rt7.531.el8_10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:103384",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: grafana security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:103384",
+      "released": "2026-11-26T00:06:48Z",
+      "updated": "2026-11-27T00:09:36Z",
+      "cves": [
+        "CVE-2026-102589",
+        "CVE-2026-106475",
+        "CVE-2026-111000",
+        "CVE-2026-78660"
+      ],
+      "products": [
+        "Rocky Linux: grafana",
+        "Rocky Linux: grafana-debuginfo",
+        "Rocky Linux: grafana-debugsource",
+        "Rocky Linux: grafana-selinux"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana-debugsource 0:12.4.3-3.el10_3.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana-debuginfo 0:12.4.3-3.el10_3.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana 0:12.4.3-3.el10_3.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "msrc_CVE-2026-136411",
@@ -1447,6 +1603,113 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RLSA-2026:103494",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: kernel security, bug fix, and enhancement update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:103494",
+      "released": "2026-11-26T12:18:59Z",
+      "updated": "2026-11-27T00:09:37Z",
+      "cves": [
+        "CVE-2026-72061",
+        "CVE-2026-72282",
+        "CVE-2026-74385",
+        "CVE-2026-89450",
+        "CVE-2026-90429",
+        "CVE-2026-97991",
+        "CVE-2026-99462"
+      ],
+      "products": [
+        "Rocky Linux: kernel",
+        "Rocky Linux: kernel-64k",
+        "Rocky Linux: kernel-64k-core",
+        "Rocky Linux: kernel-64k-debug",
+        "Rocky Linux: kernel-64k-debug-core",
+        "Rocky Linux: kernel-64k-debug-debuginfo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel-rt-64k 0:6.12.0-264.21.1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-64k-devel 0:6.12.0-264.21.1.el10_3",
+          "u": null
+        },
+        {
+          "t": "Fixed in kernel-rt-debug-modules-extra 0:6.12.0-264.21.1.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RLSA-2026:103517",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Important: ghostscript security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:103517",
+      "released": "2026-11-26T12:18:59Z",
+      "updated": "2026-11-27T00:09:37Z",
+      "cves": [
+        "CVE-2026-125396"
+      ],
+      "products": [
+        "Rocky Linux: ghostscript",
+        "Rocky Linux: ghostscript-debuginfo",
+        "Rocky Linux: ghostscript-debugsource",
+        "Rocky Linux: ghostscript-doc",
+        "Rocky Linux: ghostscript-tools-dvipdf",
+        "Rocky Linux: ghostscript-tools-fonts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in ghostscript-debuginfo 0:10.02.1-17.el10_3.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in ghostscript 0:10.02.1-17.el10_3.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in libgs-debuginfo 0:10.02.1-17.el10_3.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:103808",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "openssl: OpenSSL: Denial of Service via NULL pointer dereference during DANE TLSA record processing",
+      "url": "https://access.redhat.com/errata/RHSA-2026:103808",
+      "released": "2026-11-26T12:46:07Z",
+      "updated": "2026-11-27T04:26:08Z",
+      "cves": [
+        "CVE-2026-84786",
+        "CVE-2026-107494",
+        "CVE-2026-121482"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://images.redhat.com/",
+          "u": "https://access.redhat.com/errata/RHSA-2026:103808"
+        },
+        {
+          "t": "Disable DANE/TLSA validation in TLS clients unless explicitly required. Do not enable DANE against untrusted DNS or certificate inputs. Restrict affected clients to trusted name resolution paths.",
+          "u": null
+        },
+        {
+          "t": "Expose OpenSSL QUIC endpoints only to trusted networks. Apply memory cgroup/ulimit controls to contain process blast radius. Prefer non-QUIC transports where QUIC is not required.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "NCSC-2026-0522",
       "src": "csaf_ncscnl",
       "vendor": "GitLab",
@@ -1522,6 +1785,22 @@
       ],
       "lang": "nl",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "https://cyber.gc.ca/en/alerts-advisories/postgresql-security-advisory-av26-1211",
+      "src": "canada_cyber",
+      "vendor": "Canadian Centre for Cyber Security",
+      "title": "PostgreSQL security advisory (AV26-1211)",
+      "url": "https://cyber.gc.ca/en/alerts-advisories/postgresql-security-advisory-av26-1211",
+      "released": "2026-11-26T13:09:51Z",
+      "updated": "2026-11-26T13:09:51Z",
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://cyber.gc.ca/en/alerts-advisories/postgresql-security-advisory-av26-1211"
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-137594",

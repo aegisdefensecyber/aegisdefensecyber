@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-07-01",
-  "count": 1,
+  "count": 2,
   "items": [
     {
       "id": "RHSA-2025:9751",
@@ -32,6 +32,36 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:10110",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: sudo security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:10110",
+      "released": "2025-07-01T19:51:29Z",
+      "updated": "2026-11-05T14:35:26Z",
+      "cves": [
+        "CVE-2025-32462"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.0,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux BaseOS (v. 8)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:10110"
+        },
+        {
+          "t": "For environments using sudoers files: Remove rules defined in sudoers files that are for any system other than the local system. For environments using LDAP: U…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-10-30",
-  "count": 6,
+  "count": 10,
   "items": [
     {
       "id": "msrc_CVE-2023-52981",
@@ -114,6 +114,93 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-69412",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-40102 affecting package kernel for versions less than 6.6.157.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-40102",
+      "released": "2025-10-30T10:15:34Z",
+      "updated": "2026-09-23T19:05:44Z",
+      "cves": [
+        "CVE-2025-40102"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2025:19318",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: redis:6 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:19318",
+      "released": "2025-10-30T10:22:17Z",
+      "updated": "2026-11-05T15:41:39Z",
+      "cves": [
+        "CVE-2025-46817",
+        "CVE-2025-49844"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream AUS (v.8.4)",
+        "Red Hat Enterprise Linux AppStream EUS EXTENSION (v.8.4)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:19318"
+        },
+        {
+          "t": "No mitigation is currently available that meets Red Hat Product Security’s standards for usability, deployment, applicability, or stability. To reduce the risk…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2025:19345",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: redis:7 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:19345",
+      "released": "2025-10-30T14:18:20Z",
+      "updated": "2026-11-05T15:41:39Z",
+      "cves": [
+        "CVE-2025-46817",
+        "CVE-2025-46818",
+        "CVE-2025-46819",
+        "CVE-2025-49844"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux AppStream (v. 9)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:19345"
+        },
+        {
+          "t": "No mitigation is currently available that meets Red Hat Product Security’s standards for usability, deployment, applicability, or stability. To reduce the risk…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "GO-2025-4044",
       "src": "osv_go",
       "vendor": "Go",
@@ -134,6 +221,47 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2025:19352",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: webkitgtk4 security update",
+      "url": "https://access.redhat.com/errata/RHSA-2025:19352",
+      "released": "2025-10-30T15:11:28Z",
+      "updated": "2026-11-05T14:35:53Z",
+      "cves": [
+        "CVE-2025-31223",
+        "CVE-2025-31277",
+        "CVE-2025-43272",
+        "CVE-2025-43342",
+        "CVE-2025-43356",
+        "CVE-2025-43368",
+        "CVE-2025-43419"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Server (v. 7 ELS)",
+        "Red Hat Enterprise Linux Server Optional (v. 7 ELS)"
+      ],
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2025:19352"
+        },
+        {
+          "t": "Do not process or load untrusted web content with WebKitGTK. In Red Hat Enterprise Linux 7, the following packages require WebKitGTK4: evolution-data-server, g…",
+          "u": null
+        },
+        {
+          "t": "Do not visit untrusted websites. Also, do not process or load untrusted web content with WebKitGTK. In Red Hat Enterprise Linux 7, the following packages requi…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     }
   ]
 }
