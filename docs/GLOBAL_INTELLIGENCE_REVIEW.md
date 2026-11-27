@@ -88,4 +88,23 @@ A joint FAO and WFP early-warning report released on 27 November 2026 says acute
 
 ---
 
-4 draft(s).
+## GI-2026-0018 — Guinea-Bissau junta postpones elections by two years to 2028
+
+**MODERATE** · Reported · Geopolitical · Africa · Guinea-Bissau · event 2026-11-26 · trend Escalating
+
+Guinea-Bissau's military rulers postponed presidential and legislative elections that were due on 6 December by two years, to 26 November 2028, citing insufficient technical, material and financial conditions. The announcement came on the first anniversary of the 26 November 2025 coup that overthrew President Umaro Sissoco Embalo and extends military-led rule to three years.
+
+**Reported claims**
+- The ruling junta postponed the presidential and legislative elections due on 6 December by two years, to 26 November 2028. _(attributed to Decree signed by transitional president General Horta N'Tam)_ [1][2]
+- The decree cites insufficient technical, material and financial conditions for the vote; a new electoral census and mapping are required, constituencies fall from 29 to 12 and parliament shrinks from 102 to 65 members. _(attributed to RTÉ News)_ [1]
+- N'Tam said in a televised address that the process must guarantee legality, transparency, inclusivity and credibility, and that first-ever municipal elections would be held. _(attributed to General Horta N'Tam (televised address))_ [1]
+
+**Priority rationale:** MODERATE: a significant setback to a return to civilian rule; no violence or unrest reported.
+
+**Sources**
+1. RTÉ News, "Guinea-Bissau junta postpones presidential election" (2026-11-27) https://www.rte.ie/news/2026/1127/1600846-guinea-bissau/
+2. Africanews, "Guinea-Bissau delays elections for two years to 2028" (2026-11-27) https://www.africanews.com/2026/11/26/guinea-bissau-delays-elections-for-two-years-to-2028/
+
+---
+
+5 draft(s).
