@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-09",
-  "count": 398,
+  "count": 417,
   "items": [
     {
       "id": "ELA-1882-1",
@@ -1410,7 +1410,7 @@
       "title": "smb: client: validate the data area in SMB2_read()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99272.json",
       "released": "2026-11-09T01:01:22Z",
-      "updated": "2026-11-25T01:05:55Z",
+      "updated": "2026-11-26T14:03:29Z",
       "cves": [
         "CVE-2026-99272"
       ],
@@ -1457,7 +1457,7 @@
       "title": "smb: client: fix fiemap wild read on empty truncated response",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99274.json",
       "released": "2026-11-09T01:01:27Z",
-      "updated": "2026-11-25T01:06:00Z",
+      "updated": "2026-11-26T14:03:36Z",
       "cves": [
         "CVE-2026-99274"
       ],
@@ -1535,7 +1535,7 @@
       "title": "net/sched: sch_teql: fix use-after-free on lower qdisc drop",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99282.json",
       "released": "2026-11-09T01:01:34Z",
-      "updated": "2026-11-25T01:06:05Z",
+      "updated": "2026-11-26T14:03:43Z",
       "cves": [
         "CVE-2026-99282"
       ],
@@ -1563,7 +1563,7 @@
       "title": "netfilter: conntrack: tcp: use UNACK timeout for non-closing RST packets",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99283.json",
       "released": "2026-11-09T01:01:37Z",
-      "updated": "2026-11-25T01:06:10Z",
+      "updated": "2026-11-26T14:03:52Z",
       "cves": [
         "CVE-2026-99283"
       ],
@@ -1591,7 +1591,7 @@
       "title": "net: skbuff: propagate shared-frag marker in skb_zerocopy()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99284.json",
       "released": "2026-11-09T01:01:39Z",
-      "updated": "2026-11-25T01:06:15Z",
+      "updated": "2026-11-26T14:03:58Z",
       "cves": [
         "CVE-2026-99284"
       ],
@@ -1646,6 +1646,51 @@
       "sev": "HIGH",
       "cvss": 7.3,
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:96076",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "crypto/tls: crypto/tls: Incorrect certificate validation during TLS session resumption",
+      "url": "https://access.redhat.com/errata/RHSA-2026:96076",
+      "released": "2026-11-09T01:45:39Z",
+      "updated": "2026-11-27T15:19:08Z",
+      "cves": [
+        "CVE-2025-68121",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-33810",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-42504",
+        "CVE-2026-55677",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-78667",
+        "CVE-2026-78669",
+        "CVE-2026-94440",
+        "CVE-2026-97031"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:96076"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-124555",
@@ -2543,6 +2588,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-113098",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-124586 affecting package opencc 1.1.1-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124586",
+      "released": "2026-11-09T10:17:08Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-124586"
+      ],
+      "products": [
+        "Azure Linux: opencc"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-120832",
       "src": "cvelistv5",
       "vendor": "Apache Software Foundation",
@@ -3332,6 +3393,68 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:96291",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/grpc: gRPC-Go: Denial of Service via malformed RPC requests",
+      "url": "https://access.redhat.com/errata/RHSA-2026:96291",
+      "released": "2026-11-09T12:53:43Z",
+      "updated": "2026-11-27T15:19:10Z",
+      "cves": [
+        "CVE-2026-84445",
+        "CVE-2026-92615",
+        "CVE-2026-102278"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "See the following documentation for details on how to enable Red Hat Edge Manager and more: https://docs.redhat.com/en/documentation/red_hat_edge_manager/1.3",
+          "u": "https://access.redhat.com/errata/RHSA-2026:96291"
+        },
+        {
+          "t": "There is no application-level workaround that fully eliminates this race condition without a code change. The following deployment-level measures reduce exposure in multi-tenant environments: - Avoid mTLS client certificates for git reposi…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:96293",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/grpc: gRPC-Go: Denial of Service via malformed RPC requests",
+      "url": "https://access.redhat.com/errata/RHSA-2026:96293",
+      "released": "2026-11-09T12:54:47Z",
+      "updated": "2026-11-27T15:19:11Z",
+      "cves": [
+        "CVE-2026-84445",
+        "CVE-2026-92615",
+        "CVE-2026-102278"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "See the following documentation for details on how to enable Red Hat Edge Manager and more: https://docs.redhat.com/en/documentation/red_hat_edge_manager/1.3",
+          "u": "https://access.redhat.com/errata/RHSA-2026:96293"
+        },
+        {
+          "t": "There is no application-level workaround that fully eliminates this race condition without a code change. The following deployment-level measures reduce exposure in multi-tenant environments: - Avoid mTLS client certificates for git reposi…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-124624",
       "src": "cvelistv5",
       "title": "PipraPay pp-token anti-CSRF pp-adapter.php hash_hmac hard-coded credentials",
@@ -3554,6 +3677,86 @@
         "hnswlib hnswlib"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-112910",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-124249 affecting package python-py 1.11.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124249",
+      "released": "2026-11-09T15:17:14Z",
+      "updated": "2026-11-10T05:31:45Z",
+      "cves": [
+        "CVE-2026-124249"
+      ],
+      "products": [
+        "Azure Linux: python-py"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-113350",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-124249 affecting package docbook5-style-xsl 1.79.2-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124249",
+      "released": "2026-11-09T15:17:14Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-124249"
+      ],
+      "products": [
+        "Azure Linux: docbook5-style-xsl"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-113636",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-124249 affecting package tensorflow 2.16.1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124249",
+      "released": "2026-11-09T15:17:14Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-124249"
+      ],
+      "products": [
+        "Azure Linux: tensorflow"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112913",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-19552 affecting package python-py 1.11.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19552",
+      "released": "2026-11-09T15:17:21Z",
+      "updated": "2026-11-10T05:31:45Z",
+      "cves": [
+        "CVE-2026-19552"
+      ],
+      "products": [
+        "Azure Linux: python-py"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-113374",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-19552 affecting package tensorflow 2.16.1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19552",
+      "released": "2026-11-09T15:17:21Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-19552"
+      ],
+      "products": [
+        "Azure Linux: tensorflow"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22268-1",
@@ -3869,6 +4072,29 @@
       "cvss": 2.4,
       "products": [
         "OctoPrint OctoPrint"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-19706",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Openshift/installer: openshift installer: unconditional csr approval during agent-based installation (abi) bootstrap",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-19706",
+      "released": "2026-11-09T17:20:11Z",
+      "updated": "2026-11-18T09:51:54Z",
+      "cves": [
+        "CVE-2026-19706"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.3,
+      "products": [
+        "Red Hat Assisted Installer for Red Hat OpenShift Container Platform 2",
+        "Red Hat Assisted Installer for Red Hat OpenShift Container Platform 2",
+        "Red Hat Assisted Installer for Red Hat OpenShift Container Platform 2",
+        "Red Hat Multicluster Engine for Kubernetes",
+        "Red Hat Multicluster Engine for Kubernetes",
+        "Red Hat Multicluster Engine for Kubernetes"
       ],
       "seen": "2026-11-27"
     },
@@ -4882,6 +5108,22 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-113356",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-125040 affecting package gstreamer1-plugins-base 1.20.0-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125040",
+      "released": "2026-11-09T19:16:48Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-125040"
+      ],
+      "products": [
+        "Azure Linux: gstreamer1-plugins-base"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-87857",
       "src": "cvelistv5",
       "vendor": "Temporal Technologies, Inc.",
@@ -5007,6 +5249,38 @@
         "Canonical apport"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-113516",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-119078 affecting package javapackages-bootstrap 1.14.0-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119078",
+      "released": "2026-11-09T20:18:04Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-119078"
+      ],
+      "products": [
+        "Azure Linux: javapackages-bootstrap"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-113371",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-124987 affecting package yq 4.45.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124987",
+      "released": "2026-11-09T20:18:10Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-124987"
+      ],
+      "products": [
+        "Azure Linux: yq"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-123806",
@@ -5468,6 +5742,27 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "DHI-g3jm-ditw-hs6p-xrga",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Echo is a Go web framework. From 4.0.0 until 5.1.0, Context.RealIP falls back to client-supplied X-Forwarded-For or…",
+      "url": "https://scout.docker.com/v/DHI-g3jm-ditw-hs6p-xrga",
+      "released": "2026-11-09T20:59:56Z",
+      "updated": "2026-11-27T15:12:27Z",
+      "cves": [
+        "CVE-2026-118653"
+      ],
+      "products": [
+        "Docker Hardened Images: docker-sbx",
+        "Docker Hardened Images: hatchet-lite",
+        "Docker Hardened Images: hatchet-lite-dev",
+        "Docker Hardened Images: hatchet-lite-fips",
+        "Docker Hardened Images: hatchet-lite-fips-dev",
+        "Docker Hardened Images: temporalio-admin-tools-1.28"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-l3od-6fuu-og57-e7sl",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -5511,6 +5806,27 @@
         "CVE-2025-10966"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-r4bt-6jlw-niif-eg4j",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Echo is a Go web framework. From 4.0.0 until 5.4.0, the Proxy middleware can preserve an attacker-supplied X-Real-IP…",
+      "url": "https://scout.docker.com/v/DHI-r4bt-6jlw-niif-eg4j",
+      "released": "2026-11-09T20:59:56Z",
+      "updated": "2026-11-27T15:12:27Z",
+      "cves": [
+        "CVE-2026-118651"
+      ],
+      "products": [
+        "Docker Hardened Images: docker-sbx",
+        "Docker Hardened Images: hatchet-lite",
+        "Docker Hardened Images: hatchet-lite-dev",
+        "Docker Hardened Images: hatchet-lite-fips",
+        "Docker Hardened Images: hatchet-lite-fips-dev",
+        "Docker Hardened Images: temporalio-admin-tools-1.28"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "DHI-vdjp-parp-27l6-bxso",
@@ -6416,6 +6732,38 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-113368",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-104259 affecting package mod_security 2.9.7-8",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104259",
+      "released": "2026-11-09T22:18:22Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-104259"
+      ],
+      "products": [
+        "Azure Linux: mod_security"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-114296",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-123817 affecting package python-aiohttp 3.6.2-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123817",
+      "released": "2026-11-09T22:18:38Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-123817"
+      ],
+      "products": [
+        "Azure Linux: python-aiohttp"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "PYSEC-2026-4389",
       "src": "pysec",
       "vendor": "PyPI",
@@ -6455,6 +6803,22 @@
         "Docker Hardened Images: druid-37-fips",
         "Docker Hardened Images: druid-38",
         "Docker Hardened Images: druid-38-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-113083",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-61812 affecting package mod_security 2.9.7-8",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61812",
+      "released": "2026-11-09T22:18:53Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-61812"
+      ],
+      "products": [
+        "Azure Linux: mod_security"
       ],
       "seen": "2026-11-27"
     },
@@ -6521,6 +6885,59 @@
       ],
       "products": [
         "Docker Hardened Images: git"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:96629",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang.org/x/net/html: golang.org/x/net/html: Arbitrary code execution via Cross-Site Scripting",
+      "url": "https://access.redhat.com/errata/RHSA-2026:96629",
+      "released": "2026-11-09T22:26:19Z",
+      "updated": "2026-11-27T15:19:11Z",
+      "cves": [
+        "CVE-2026-25681",
+        "CVE-2026-27136",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-39834",
+        "CVE-2026-41178",
+        "CVE-2026-42502",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-56864",
+        "CVE-2026-56865",
+        "CVE-2026-63209",
+        "CVE-2026-84292",
+        "CVE-2026-84304",
+        "CVE-2026-84375",
+        "CVE-2026-84394",
+        "CVE-2026-84445",
+        "CVE-2026-88031",
+        "CVE-2026-93748",
+        "CVE-2026-106445",
+        "CVE-2026-106446"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "fix": [
+        {
+          "t": "For multicluster engine for Kubernetes, see the following documentation for details on how to install the images: https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/latest/html/clusters/cluster…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:96629"
+        },
+        {
+          "t": "To mitigate this flaw, applications processing untrusted HTML input must implement strict input sanitization and ensure all output is properly encoded before rendering. Deploying a comprehensive Content Security Policy (CSP) can restrict s…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -6745,7 +7162,10 @@
       "title": "ImageMagick: Schwachstelle ermöglicht Offenlegung von Informationen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4418",
       "released": "2026-11-09T23:00:00Z",
-      "updated": "2026-11-09T23:00:00Z",
+      "updated": "2026-11-26T23:00:00Z",
+      "cves": [
+        "CVE-2026-137464"
+      ],
       "sev": "LOW",
       "products": [
         "ImageMagick"
@@ -6961,7 +7381,7 @@
       "title": "Ghostscript: Schwachstelle ermöglicht Codeausführung",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4424",
       "released": "2026-11-09T23:00:00Z",
-      "updated": "2026-11-25T23:00:00Z",
+      "updated": "2026-11-26T23:00:00Z",
       "cves": [
         "CVE-2026-125396"
       ],
@@ -6970,6 +7390,7 @@
         "Fedora Linux",
         "Gentoo Linux",
         "Ghostscript",
+        "Oracle Linux",
         "RESF Rocky Linux",
         "Red Hat Enterprise Linux"
       ],
@@ -7157,7 +7578,7 @@
       "title": "MIT Kerberos: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4435",
       "released": "2026-11-09T23:00:00Z",
-      "updated": "2026-11-25T23:00:00Z",
+      "updated": "2026-11-26T23:00:00Z",
       "cves": [
         "CVE-2026-107364",
         "CVE-2026-107708",

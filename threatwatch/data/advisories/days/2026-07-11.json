@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-11",
-  "count": 17,
+  "count": 25,
   "items": [
     {
       "id": "openSUSE-SU-2026:11254-1",
@@ -212,7 +212,7 @@
       "title": "setuptools: MANIFEST.in exclusion bypass in sdist via Unicode normalization collision (NFC/NFD) on macOS APFS/HFS+",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-59890.json",
       "released": "2026-07-11T01:07:37Z",
-      "updated": "2026-11-16T22:57:15Z",
+      "updated": "2026-11-27T01:10:37Z",
       "cves": [
         "CVE-2026-59890"
       ],
@@ -221,10 +221,10 @@
       "products": [
         "Azure Linux",
         "python-setuptools",
+        "firefox",
         "azl3 python-pip 0:24.2-9.azl3",
         "azl3 python-virtualenv 0:20.36.1-5.azl3",
-        "azl3 python3 0:3.12.9-13.azl3",
-        "azl3 tensorflow 0:2.16.1-11.azl3"
+        "azl3 python3 0:3.12.9-13.azl3"
       ],
       "fix": [
         {
@@ -455,6 +455,214 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:2855-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 11 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20262855-1/",
+      "released": "2026-07-11T03:40:19Z",
+      "updated": "2026-09-17T16:29:38Z",
+      "cves": [
+        "CVE-2026-23393",
+        "CVE-2026-31505",
+        "CVE-2026-31533",
+        "CVE-2026-31570",
+        "CVE-2026-31586",
+        "CVE-2026-31685",
+        "CVE-2026-43025",
+        "CVE-2026-43027",
+        "CVE-2026-43037",
+        "CVE-2026-43120",
+        "CVE-2026-43190",
+        "CVE-2026-43366",
+        "CVE-2026-43494",
+        "CVE-2026-43501",
+        "CVE-2026-45970",
+        "CVE-2026-46120",
+        "CVE-2026-46173",
+        "CVE-2026-46227",
+        "CVE-2026-46243",
+        "CVE-2026-52909",
+        "CVE-2026-52943",
+        "CVE-2026-53362"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:2857-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 8 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20262857-1/",
+      "released": "2026-07-11T04:04:28Z",
+      "updated": "2026-09-17T16:29:40Z",
+      "cves": [
+        "CVE-2025-71089",
+        "CVE-2026-23393",
+        "CVE-2026-31505",
+        "CVE-2026-31533",
+        "CVE-2026-31570",
+        "CVE-2026-31586",
+        "CVE-2026-31685",
+        "CVE-2026-31758",
+        "CVE-2026-43025",
+        "CVE-2026-43027",
+        "CVE-2026-43037",
+        "CVE-2026-43120",
+        "CVE-2026-43190",
+        "CVE-2026-43366",
+        "CVE-2026-43437",
+        "CVE-2026-43494",
+        "CVE-2026-43501",
+        "CVE-2026-45970",
+        "CVE-2026-46120",
+        "CVE-2026-46173",
+        "CVE-2026-46227",
+        "CVE-2026-46243",
+        "CVE-2026-52909",
+        "CVE-2026-52943",
+        "CVE-2026-53362"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:2858-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 9 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20262858-1/",
+      "released": "2026-07-11T04:04:31Z",
+      "updated": "2026-09-17T16:29:41Z",
+      "cves": [
+        "CVE-2026-23393",
+        "CVE-2026-31505",
+        "CVE-2026-31533",
+        "CVE-2026-31570",
+        "CVE-2026-31586",
+        "CVE-2026-31685",
+        "CVE-2026-31758",
+        "CVE-2026-43025",
+        "CVE-2026-43027",
+        "CVE-2026-43037",
+        "CVE-2026-43120",
+        "CVE-2026-43190",
+        "CVE-2026-43366",
+        "CVE-2026-43437",
+        "CVE-2026-43494",
+        "CVE-2026-43501",
+        "CVE-2026-45970",
+        "CVE-2026-46120",
+        "CVE-2026-46173",
+        "CVE-2026-46227",
+        "CVE-2026-46243",
+        "CVE-2026-52909",
+        "CVE-2026-52943",
+        "CVE-2026-53362"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-56288",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-56288",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-56288",
+      "released": "2026-07-11T06:04:33Z",
+      "updated": "2026-10-31T06:03:15Z",
+      "cves": [
+        "CVE-2026-56288"
+      ],
+      "products": [
+        "Alpaquita: patch",
+        "BellSoft Hardened Containers: patch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in patch 2.7.6-r10",
+          "u": null
+        },
+        {
+          "t": "Fixed in patch 2.8.1-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in patch 2.8.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-56289",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-56289",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-56289",
+      "released": "2026-07-11T06:04:33Z",
+      "updated": "2026-10-31T06:03:17Z",
+      "cves": [
+        "CVE-2026-56289"
+      ],
+      "products": [
+        "Alpaquita: patch",
+        "BellSoft Hardened Containers: patch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in patch 2.7.6-r10",
+          "u": null
+        },
+        {
+          "t": "Fixed in patch 2.8.1-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in patch 2.8.1-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BELL-CVE-2026-59818",
       "src": "osv_bellsoft",
       "vendor": "Bellsoft",
@@ -475,6 +683,117 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:2862-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 15 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20262862-1/",
+      "released": "2026-07-11T06:44:04Z",
+      "updated": "2026-09-17T16:29:43Z",
+      "cves": [
+        "CVE-2026-43501",
+        "CVE-2026-45970",
+        "CVE-2026-46120",
+        "CVE-2026-46173",
+        "CVE-2026-46227",
+        "CVE-2026-46243",
+        "CVE-2026-52909",
+        "CVE-2026-52943",
+        "CVE-2026-53362"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:2863-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 16 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20262863-1/",
+      "released": "2026-07-11T06:44:07Z",
+      "updated": "2026-09-17T16:29:44Z",
+      "cves": [
+        "CVE-2026-46120",
+        "CVE-2026-46173",
+        "CVE-2026-46227",
+        "CVE-2026-52909",
+        "CVE-2026-52943",
+        "CVE-2026-53362"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:2864-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 45 for SUSE Linux Enterprise 15 SP4)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20262864-1/",
+      "released": "2026-07-11T21:22:54Z",
+      "updated": "2026-09-17T16:29:46Z",
+      "cves": [
+        "CVE-2025-71089",
+        "CVE-2026-23393",
+        "CVE-2026-31533",
+        "CVE-2026-31570",
+        "CVE-2026-31586",
+        "CVE-2026-31685",
+        "CVE-2026-31758",
+        "CVE-2026-43025",
+        "CVE-2026-43027",
+        "CVE-2026-43037",
+        "CVE-2026-43190",
+        "CVE-2026-43437",
+        "CVE-2026-43494",
+        "CVE-2026-43501",
+        "CVE-2026-45970",
+        "CVE-2026-46120",
+        "CVE-2026-46173",
+        "CVE-2026-46227",
+        "CVE-2026-46243",
+        "CVE-2026-52909",
+        "CVE-2026-52943"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP4"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-02-13",
-  "count": 36,
+  "count": 38,
   "items": [
     {
       "id": "openSUSE-SU-2026:10194-1",
@@ -301,6 +301,57 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CLEANSTART-2026-TR92727",
+      "src": "cleanstart",
+      "title": "During session resumption in crypto/tls, if the underlying Config has its ClientCAs or RootCAs fields mutated between the initial handshake and the resumed handshake, the resumed handshake may succ...",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-TR92727",
+      "released": "2026-02-13T00:41:14Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61727",
+        "CVE-2025-61729",
+        "CVE-2025-68121"
+      ],
+      "products": [
+        "CleanStart: prometheus-operator-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in prometheus-operator-fips 0.88.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-WV76464",
+      "src": "cleanstart",
+      "title": "libexpat in Expat before 2",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-WV76464",
+      "released": "2026-02-13T00:43:45Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2015-20107",
+        "CVE-2015-2104",
+        "CVE-2019-16056",
+        "CVE-2019-5010",
+        "CVE-2021-29921",
+        "CVE-2024-6232",
+        "CVE-2024-6923",
+        "CVE-2025-59375"
+      ],
+      "products": [
+        "CleanStart: python3"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python3 3.9.5-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CLEANSTART-2026-MH09144",

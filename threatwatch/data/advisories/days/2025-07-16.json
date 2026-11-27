@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-07-16",
-  "count": 13,
+  "count": 17,
   "items": [
     {
       "id": "ALSA-2025:11332",
@@ -248,6 +248,29 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-pytorch-2024-48063",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In PyTorch <=2.4.1, the RemoteModule has Deserialization RCE. NOTE: this is disputed by multiple parties because this is intended behavior in PyTorch distributed computing.",
+      "url": "https://gist.github.com/hexian2001/c046c066895a963ecc0a2cf9e1180065",
+      "released": "2025-07-16T08:07:39Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-48063"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: pytorch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pytorch 2.5.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BIT-mariadb-2025-30693",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -304,6 +327,99 @@
         },
         {
           "t": "Fixed in mariadb 11.4.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-php-2025-1220",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Null byte termination in hostnames",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-3cr5-j632-f35r",
+      "released": "2025-07-16T08:19:12Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-1220"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.1.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.2.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.23",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-php-2025-1735",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "pgsql extension does not check for errors during escaping",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-hrwm-9436-5mv3",
+      "released": "2025-07-16T08:19:20Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-1735"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.1.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.2.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.23",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-php-2025-6491",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "NULL Pointer Dereference in PHP SOAP Extension via Large XML Namespace Prefix",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-453j-q27h-5p8x",
+      "released": "2025-07-16T08:19:30Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-6491"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.1.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.2.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.23",
           "u": null
         }
       ],

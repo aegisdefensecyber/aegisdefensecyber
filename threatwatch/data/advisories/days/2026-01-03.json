@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-01-03",
-  "count": 7,
+  "count": 8,
   "items": [
     {
       "id": "openSUSE-SU-2026:10004-1",
@@ -243,6 +243,32 @@
       "fix": [
         {
           "t": "Fixed in gitea 1.22.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-pytorch-2025-63396",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in PyTorch v2.5 and v2.7.1. Omission of profiler.stop() can cause torch.profiler.profile (PythonTracer) to crash or hang during finalization, leading to a Denial of Service (DoS).",
+      "released": "2026-01-03T11:47:28Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-63396"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: pytorch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pytorch 2.5.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in pytorch 2.8.0",
           "u": null
         }
       ],

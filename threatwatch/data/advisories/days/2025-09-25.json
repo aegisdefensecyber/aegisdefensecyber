@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-09-25",
-  "count": 11,
+  "count": 14,
   "items": [
     {
       "id": "RHSA-2025:16667",
@@ -43,7 +43,7 @@
       "title": "drm/amd/pm: fix a potential gpu_metrics_table memory leak",
       "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2021-47658.json",
       "released": "2025-09-25T01:01:19Z",
-      "updated": "2026-09-17T01:50:09Z",
+      "updated": "2026-11-26T14:04:04Z",
       "cves": [
         "CVE-2021-47658"
       ],
@@ -63,12 +63,12 @@
       "title": "Bluetooth: hci_event: Ignore multiple conn complete events",
       "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2022-49138.json",
       "released": "2025-09-25T01:01:24Z",
-      "updated": "2026-09-17T01:50:18Z",
+      "updated": "2026-11-26T14:04:09Z",
       "cves": [
         "CVE-2022-49138"
       ],
-      "sev": "MEDIUM",
-      "cvss": 5.7,
+      "sev": "HIGH",
+      "cvss": 8.8,
       "products": [
         "Azure Linux",
         "kernel"
@@ -83,12 +83,12 @@
       "title": "memstick/mspro_block: fix handling of read-only devices",
       "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2022-49178.json",
       "released": "2025-09-25T01:01:40Z",
-      "updated": "2026-09-17T01:50:26Z",
+      "updated": "2026-11-26T14:04:14Z",
       "cves": [
         "CVE-2022-49178"
       ],
-      "sev": "MEDIUM",
-      "cvss": 5.5,
+      "sev": "HIGH",
+      "cvss": 7.8,
       "products": [
         "Azure Linux",
         "kernel"
@@ -103,7 +103,7 @@
       "title": "drm/vc4: don't check if plane->state->fb == state->fb",
       "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-35932.json",
       "released": "2025-09-25T01:01:55Z",
-      "updated": "2026-09-07T01:49:59Z",
+      "updated": "2026-11-26T14:04:19Z",
       "cves": [
         "CVE-2024-35932"
       ],
@@ -115,6 +115,44 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-35956",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "btrfs: qgroup: fix qgroup prealloc rsv leak in subvolume operations",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-35956.json",
+      "released": "2025-09-25T01:02:09Z",
+      "updated": "2026-11-26T14:04:27Z",
+      "cves": [
+        "CVE-2024-35956"
+      ],
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "msrc_CVE-2024-36000",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "mm/hugetlb: fix missing hugetlb_lock for resv uncharge",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-36000.json",
+      "released": "2025-09-25T01:02:15Z",
+      "updated": "2026-11-26T14:04:39Z",
+      "cves": [
+        "CVE-2024-36000"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2025:16166",
@@ -144,6 +182,32 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2025-39862",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2025-39862",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2025-39862",
+      "released": "2025-09-25T06:06:03Z",
+      "updated": "2026-11-03T06:23:05Z",
+      "cves": [
+        "CVE-2025-39862"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.115-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
       "seen": "2026-11-27"
     },
     {

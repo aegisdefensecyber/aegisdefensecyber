@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-12",
-  "count": 31,
+  "count": 54,
   "items": [
     {
       "id": "openSUSE-SU-2026:11255-1",
@@ -334,6 +334,34 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:22635-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for php8",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202622635-1/",
+      "released": "2026-07-12T13:02:50Z",
+      "updated": "2026-09-16T20:03:39Z",
+      "cves": [
+        "CVE-2026-12184",
+        "CVE-2026-14355"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "WID-SEC-W-2026-2281",
       "src": "csaf_certbund",
       "vendor": "Open Source",
@@ -442,6 +470,55 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:2866-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 22 for SUSE Linux Enterprise 15 SP6)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20262866-1/",
+      "released": "2026-07-12T23:25:49Z",
+      "updated": "2026-09-17T16:29:47Z",
+      "cves": [
+        "CVE-2026-23393",
+        "CVE-2026-31505",
+        "CVE-2026-31533",
+        "CVE-2026-31570",
+        "CVE-2026-31586",
+        "CVE-2026-31685",
+        "CVE-2026-31758",
+        "CVE-2026-43025",
+        "CVE-2026-43027",
+        "CVE-2026-43037",
+        "CVE-2026-43120",
+        "CVE-2026-43190",
+        "CVE-2026-43366",
+        "CVE-2026-43437",
+        "CVE-2026-43494",
+        "CVE-2026-43501",
+        "CVE-2026-45970",
+        "CVE-2026-46120",
+        "CVE-2026-46173",
+        "CVE-2026-46227",
+        "CVE-2026-46243",
+        "CVE-2026-52909",
+        "CVE-2026-52943",
+        "CVE-2026-53362"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "BIT-airflow-2026-48891",
@@ -798,6 +875,505 @@
         },
         {
           "t": "Fixed in joomla 6.1.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2021-22896",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Nextcloud Mail before 1.9.5 suffers from improper access control due to a missing permission check allowing other authenticated users to create mail aliases for other users.",
+      "url": "https://github.com/nextcloud/mail/pull/4864",
+      "released": "2026-07-12T23:47:36Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-22896"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 1.9.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2021-22905",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Nextcloud Android App (com.nextcloud.client) before v3.16.0 is vulnerable to information disclosure due to searches for sharees being performed by default on the lookup server instead of only using the local Nextcloud s…",
+      "url": "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-22v9-q3r6-x7cj",
+      "released": "2026-07-12T23:47:37Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-22905"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 3.16.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2021-22912",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Nextcloud iOS before 3.4.2 suffers from an information disclosure vulnerability when searches for sharees utilize the lookup server by default instead of only on the local Nextcloud server unless a global search has bee…",
+      "url": "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-m7w4-cvjr-76mh",
+      "released": "2026-07-12T23:47:38Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-22912"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 3.4.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2021-32658",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Sensitive data may not be removed from storage on account removal",
+      "url": "https://github.com/nextcloud/android/commit/355f3c745b464b741b20a3b96597303490c26333",
+      "released": "2026-07-12T23:47:39Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-32658"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 3.16.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2021-32694",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Malicious Android application can crash the Nextcloud Android Client",
+      "url": "https://github.com/nextcloud/android/pull/7919",
+      "released": "2026-07-12T23:47:41Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-32694"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 3.15.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2021-32695",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Malicious Android app could access Shared Preferences of the Nextcloud Android client",
+      "url": "https://github.com/nextcloud/android/pull/8433",
+      "released": "2026-07-12T23:47:42Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-32695"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 3.16.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2021-32727",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "End-to-end encryption device setup did not verify public key",
+      "url": "https://github.com/nextcloud/android/pull/8438",
+      "released": "2026-07-12T23:47:43Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-32727"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 3.16.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2021-41166",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Permission bypass in Nextcloud Android App",
+      "url": "https://github.com/nextcloud/android/commit/aa47197109970b8449c4e44601eba36e3481b086",
+      "released": "2026-07-12T23:47:44Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-41166"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 3.17.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2021-43863",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "SQL Injection in FileContentProvider (GHSL-2021-1007)",
+      "url": "https://github.com/nextcloud/android/commit/627caba60e69e223b0fc89c4cb18eaa76a95db95",
+      "released": "2026-07-12T23:47:45Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-43863"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 3.18.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2022-24885",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper Authentication in Nextcloud Android Files",
+      "url": "https://github.com/nextcloud/android/pull/9816",
+      "released": "2026-07-12T23:47:47Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-24885"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 3.19.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2022-24886",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Exposure of Sensitive Information to an Unauthorized Actor in com.nextcloud.client",
+      "url": "https://github.com/nextcloud/android/pull/9726",
+      "released": "2026-07-12T23:47:48Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-24886"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 3.19.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2022-29160",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Sensitive files/data exist after deletion of user account in Nextcloud Android",
+      "url": "https://github.com/nextcloud/android/pull/9644",
+      "released": "2026-07-12T23:47:49Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-29160"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 3.19.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2022-39210",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Access to internal files of the Nextcloud Android app",
+      "url": "https://github.com/nextcloud/android/pull/10544",
+      "released": "2026-07-12T23:47:50Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-39210"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 3.21.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2023-28647",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "App pin of the iOS app can be bypassed in Nextcloud iOS",
+      "url": "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-wjgg-2v4p-2gq6",
+      "released": "2026-07-12T23:47:53Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-28647"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 4.7.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2023-28999",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Nextcloud: Lack of authenticity of metadata keys allows a malicious server to gain access to E2EE folders",
+      "url": "https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/appliedcrypto/education/theses/report_DanieleCoppola.pdf",
+      "released": "2026-07-12T23:47:54Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-28999"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 4.8.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2023-49790",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "App PIN code can be bypassed in Nextcloud Files iOS",
+      "url": "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-j8g7-88vv-rggv",
+      "released": "2026-07-12T23:47:55Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-49790"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 4.9.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2025-66547",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Nextcloud Server users can modify tags on files that do not belong to them",
+      "url": "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-hq6c-r898-fgf2",
+      "released": "2026-07-12T23:47:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-66547"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 31.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2026-45281",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Nextcloud: Cross-Account Calendar Takeover via Unauthorized Group-Member-Set Update",
+      "url": "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-hrrv-mp25-26vv",
+      "released": "2026-07-12T23:48:02Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-45281"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 32.0.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in nextcloud 33.0.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2026-45690",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Nextcloud: Two-Factor Authentication Bypass via Pending Session Token Replay",
+      "url": "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-jgcj-v42r-9922",
+      "released": "2026-07-12T23:48:03Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-45690"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 32.0.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in nextcloud 33.0.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2026-45691",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Nextcloud: Bypass of second factor authentication on DAV endpoints",
+      "url": "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-mp6x-g55j-w9jw",
+      "released": "2026-07-12T23:48:05Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-45691"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 32.0.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in nextcloud 33.0.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nextcloud-2026-45810",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Nextcloud: Propfind requests for file comments allowed to load comments for other files",
+      "url": "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-285v-p9x9-cjhj",
+      "released": "2026-07-12T23:48:06Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-45810"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nextcloud"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nextcloud 31.0.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in nextcloud 32.0.3",
           "u": null
         }
       ],

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-10-16",
-  "count": 11,
+  "count": 15,
   "items": [
     {
       "id": "msrc_CVE-2025-39990",
@@ -28,6 +28,22 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-109466",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-11683 affecting package perl-YAML-Syck 1.34-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11683",
+      "released": "2025-10-16T01:15:32Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2025-11683"
+      ],
+      "products": [
+        "Azure Linux: perl-YAML-Syck"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-109514",
@@ -71,6 +87,37 @@
         },
         {
           "t": "Fixed in keydb 7.4.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-redis-2025-49844",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Redis Lua Use-After-Free may lead to remote code execution",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-4789-qfc9-5f9q",
+      "released": "2025-10-16T09:18:53Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-49844"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: redis"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in redis 6.2.20",
+          "u": null
+        },
+        {
+          "t": "Fixed in redis 7.2.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in redis 7.4.6",
           "u": null
         }
       ],
@@ -194,6 +241,68 @@
         },
         {
           "t": "Fixed in keydb 8.0.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-redis-2025-32023",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Redis allows out of bounds writes in hyperloglog commands leading to RCE",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-rp2m-q4j6-gr43",
+      "released": "2025-10-16T12:06:41Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-32023"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: redis"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in redis 6.2.19",
+          "u": null
+        },
+        {
+          "t": "Fixed in redis 7.2.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in redis 8.0.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-redis-2025-48367",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Redis DoS Vulnerability due to bad connection error handling",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-4q32-c38c-pwgq",
+      "released": "2025-10-16T12:07:00Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-48367"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: redis"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in redis 6.2.19",
+          "u": null
+        },
+        {
+          "t": "Fixed in redis 7.2.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in redis 8.0.3",
           "u": null
         }
       ],

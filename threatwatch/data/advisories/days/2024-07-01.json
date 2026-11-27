@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-07-01",
-  "count": 28,
+  "count": 29,
   "items": [
     {
       "id": "ASB-A-260126994",
@@ -615,6 +615,28 @@
       "fix": [
         {
           "t": "Fixed in :unknown: SoCVersion:2024-07-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-324406734",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In WIRELESS_SETTINGS of AndroidManifest.xml, there is a possible way to trick the user into trusting a malicious app and granting it permissions due to implicit intent hijacking. This could lead to local escalation of p…",
+      "url": "https://source.android.com/security/bulletin/2024-07-01",
+      "released": "2024-07-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-31338"
+      ],
+      "products": [
+        "Wear: platform/vendor/google_clockwork"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 13:2024-07-01",
           "u": null
         }
       ],

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-01-29",
-  "count": 2,
+  "count": 5,
   "items": [
     {
       "id": "msrc_CVE-2024-50073",
@@ -28,6 +28,74 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2024-50249",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "ACPI: CPPC: Make rmw_lock a raw_spin_lock",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-50249.json",
+      "released": "2025-01-29T00:00:00Z",
+      "updated": "2026-11-26T14:05:14Z",
+      "cves": [
+        "CVE-2024-50249"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.64.2-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:5.15.173.1-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "5.15.173.1-1:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "msrc_CVE-2024-53042",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "ipv4: ip_tunnel: Fix suspicious RCU usage warning in ip_tunnel_init_flow()",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-53042.json",
+      "released": "2025-01-29T00:00:00Z",
+      "updated": "2026-11-26T14:05:19Z",
+      "cves": [
+        "CVE-2024-53042"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.64.2-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "0:5.15.173.1-1.cbl2:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        },
+        {
+          "t": "5.15.173.1-1:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "msrc_CVE-2024-9681",
@@ -66,6 +134,29 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-solr-2024-52012",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Solr: Configset upload on Windows allows arbitrary path write-access",
+      "url": "https://lists.apache.org/thread/yp39pgbv4vf1746pf5yblz84lv30vfxd",
+      "released": "2025-01-29T07:20:30Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-52012"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: solr"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in solr 9.8.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

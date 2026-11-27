@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-03-02",
-  "count": 2,
+  "count": 4,
   "items": [
     {
       "id": "BIT-mastodon-2025-27399",
@@ -44,6 +44,52 @@
       "fix": [
         {
           "t": "Fixed in mastodon 4.3.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-odoo-2024-12368",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper access control in the auth_oauth module of Odoo Community 15.0 and Odoo Enterprise 15.0 allows an internal user to export the OAuth tokens of other users.",
+      "url": "https://github.com/odoo/odoo/issues/193854",
+      "released": "2025-03-02T07:16:14Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-12368"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: odoo"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in odoo 15.0.20240510",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-passenger-2025-26803",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "The http parser in Phusion Passenger 6.0.21 through 6.0.25 before 6.0.26 allows a denial of service during parsing of a request with an invalid HTTP method.",
+      "url": "https://blog.phusion.nl/2025/02/19/passenger-6-0-26/",
+      "released": "2025-03-02T07:16:46Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-26803"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: passenger"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in passenger 6.0.26",
           "u": null
         }
       ],

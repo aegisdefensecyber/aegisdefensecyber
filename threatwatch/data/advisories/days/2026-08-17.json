@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-17",
-  "count": 161,
+  "count": 176,
   "items": [
     {
       "id": "openSUSE-SU-2026:11529-1",
@@ -2540,6 +2540,212 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-nifi-2026-62354",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache NiFi: Incorrect Authorization for Parameter Context Validation Requests",
+      "released": "2026-08-17T05:49:52Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-62354"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: nifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nifi 2.11.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nifi-2026-68981",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache NiFi: Uncontrolled Resource Consumption through Decompression of HTTP Requests",
+      "released": "2026-08-17T05:49:56Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-68981"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: nifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nifi 2.11.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-node-2026-56847",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw in Node.js Permission Model enforcement allows `trace_events.createTracing().enable()` Writes Trace Logs Outside `--allow-fs-write`. This can lead to confidentiality impact or bypass of the intended security boun…",
+      "url": "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases",
+      "released": "2026-08-17T05:52:23Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-56847"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: node"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in node 22.23.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 24.18.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 26.5.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-node-2026-56850",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw in Node.js HTTPS Agent connection reuse can cause PFX object-array key collisions, allowing mutual TLS (mTLS) client identities to be reused across requests configured with different client certificates. This vul…",
+      "url": "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases",
+      "released": "2026-08-17T05:52:26Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-56850"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: node"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in node 22.23.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 24.18.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 26.5.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-node-2026-58043",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw in Node.js Permission Model enforcement can over-grant filesystem access across radix-tree prefix boundaries. Under `--permission`, an attacker who is granted access to one path can abuse boundary handling to rea…",
+      "url": "https://nodejs.org/en/blog/vulnerability/july-2026-security-releases",
+      "released": "2026-08-17T05:52:33Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-58043"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: node"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in node 22.23.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 24.18.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 26.5.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-proxysql-2026-48772",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "ProxySQL: PROXY-Protocol-v1 UNKNOWN parses spoofed source IP, bypassing mysql_query_rules.client_addr ACL",
+      "url": "https://github.com/sysown/proxysql/security/advisories/GHSA-gw94-85m2-x8v2",
+      "released": "2026-08-17T05:52:40Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-48772"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: proxysql"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in proxysql 3.0.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-proxysql-2026-48773",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "ProxySQL pre-auth heap overflow in MySQL and PostgreSQL first-packet handling",
+      "url": "https://github.com/sysown/proxysql/security/advisories/GHSA-58ww-865x-grpr",
+      "released": "2026-08-17T05:52:41Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-48773"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: proxysql"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in proxysql 3.0.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-proxysql-2026-48774",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "ProxySQL MCP run_sql_readonly executes side-effecting MySQL multi-statements despite read-only contract",
+      "url": "https://github.com/sysown/proxysql/security/advisories/GHSA-7wh6-2vcc-gcm4",
+      "released": "2026-08-17T05:52:43Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-48774"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: proxysql"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in proxysql 3.0.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BIT-rclone-2026-71310",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -2561,6 +2767,81 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-php-2026-7260",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Stack overflow in phar with circular symlinks",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-vc5h-9ppw-p5f3",
+      "released": "2026-08-17T05:53:44Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-7260"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.2.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.4.24",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-superset-2026-23981",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Superset: Improper Authorization in Chart Update allowing Dashboard Modification",
+      "released": "2026-08-17T05:55:39Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-23981"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: superset"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in superset 6.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-superset-2026-23985",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Superset: Regular Expression Denial of Service (ReDoS) in SQL Parser",
+      "released": "2026-08-17T05:55:44Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-23985"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: superset"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in superset 6.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "BIT-gitlab-2025-14562",
@@ -3603,6 +3884,84 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-powershell-2026-70337",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Microsoft PowerShell Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70337",
+      "released": "2026-08-17T11:42:58Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-70337"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.4.19",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.5.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.6.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2026-70338",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Microsoft PowerShell Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70338",
+      "released": "2026-08-17T11:42:58Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-70338"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.4.19",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.5.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.6.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:23186-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for suseconnect-ng",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623186-1/",
+      "released": "2026-08-17T11:45:04Z",
+      "updated": "2026-09-16T20:12:25Z",
+      "sev": "MEDIUM",
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RUSTSEC-2026-0258",
       "src": "osv_rustsec",
       "vendor": "Rustsec",
@@ -3677,6 +4036,34 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:23188-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openvswitch",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623188-1/",
+      "released": "2026-08-17T16:50:12Z",
+      "updated": "2026-09-16T20:12:27Z",
+      "cves": [
+        "CVE-2025-0650",
+        "CVE-2026-5265",
+        "CVE-2026-5367"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:21585-1",

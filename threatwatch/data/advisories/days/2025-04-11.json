@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-04-11",
-  "count": 7,
+  "count": 8,
   "items": [
     {
       "id": "msrc_CVE-2021-4217",
@@ -192,6 +192,29 @@
       "fix": [
         {
           "t": "Fixed in helm 3.17.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-sqlite-2025-29087",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In SQLite 3.44.0 through 3.49.0 before 3.49.1, the concat_ws() SQL function can cause memory to be written beyond the end of a malloc-allocated buffer. If the separator argument is attacker-controlled and has a large st…",
+      "url": "https://gist.github.com/ylwango613/a44a29f1ef074fa783e29f04a0afd62a",
+      "released": "2025-04-11T19:26:41Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-29087"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: sqlite"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in sqlite 3.49.1",
           "u": null
         }
       ],

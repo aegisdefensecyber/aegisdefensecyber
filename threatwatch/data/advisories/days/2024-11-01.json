@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-11-01",
-  "count": 37,
+  "count": 42,
   "items": [
     {
       "id": "msrc_CVE-2024-8006",
@@ -906,6 +906,116 @@
       "fix": [
         {
           "t": "Fixed in :linux_kernel:Qualcomm SoCVersion:2024-11-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-350472698",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In dhd_prot_flowrings_pool_release of dhd_msgbuf.c, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed.…",
+      "url": "https://source.android.com/security/bulletin/2024-11-01",
+      "released": "2024-11-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-47038"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2024-11-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-353493525",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "there is a possible UAF due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+      "url": "https://source.android.com/security/bulletin/2024-11-01",
+      "released": "2024-11-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-47040"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2024-11-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-353516777",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In isSlotMarkedSuccessful of BootControl.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges needed. User in…",
+      "url": "https://source.android.com/security/bulletin/2024-11-01",
+      "released": "2024-11-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-47039"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2024-11-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-303960097",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In BluetoothScanModeEnforcer of BluetoothScanModeEnforcer.java , there is a possible way to make the device discoverable without user notice due to a permissions bypass. This could lead to local escalation of privilege …",
+      "url": "https://source.android.com/security/bulletin/2024-11-01",
+      "released": "2024-11-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-43094"
+      ],
+      "products": [
+        "Wear: platform/frameworks/opt/wear"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/opt/wear 13:2024-11-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-355642327",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onIntentSelected of ResolverActivity.java, there is a possible way to launch an arbitrary activity with SYSTEM_UID 1000 due to intent redirection. This could lead to local escalation of privilege with no additional e…",
+      "url": "https://source.android.com/security/bulletin/2024-11-01",
+      "released": "2024-11-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-31330"
+      ],
+      "products": [
+        "Wear: platform/vendor/google_clockwork"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 13:2024-11-01",
           "u": null
         }
       ],

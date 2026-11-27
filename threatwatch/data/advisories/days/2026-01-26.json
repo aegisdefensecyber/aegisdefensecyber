@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-01-26",
-  "count": 28,
+  "count": 54,
   "items": [
     {
       "id": "openSUSE-SU-2026:10088-1",
@@ -652,6 +652,732 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-node-2025-55130",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw in Node.js’s Permissions model allows attackers to bypass `--allow-fs-read` and `--allow-fs-write` restrictions using crafted relative symlink paths. By chaining directories and symlinks, a script granted access …",
+      "url": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases",
+      "released": "2026-01-26T14:47:49Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-55130"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: node"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in node 20.20.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 22.22.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 24.13.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-node-2025-55132",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw in Node.js's permission model allows a file's access and modification timestamps to be changed via `futimes()` even when the process has only read permissions. Unlike `utimes()`, `futimes()` does not apply the ex…",
+      "url": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases",
+      "released": "2026-01-26T14:47:53Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-55132"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: node"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in node 20.20.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 22.22.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 24.13.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-node-2025-59464",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A memory leak in Node.js’s OpenSSL integration occurs when converting `X.509` certificate fields to UTF-8 without freeing the allocated buffer. When applications call `socket.getPeerCertificate(true)`, each certificate …",
+      "url": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases",
+      "released": "2026-01-26T14:47:55Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-59464"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: node"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in node 24.12.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-node-2025-59465",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A malformed `HTTP/2 HEADERS` frame with oversized, invalid `HPACK` data can cause Node.js to crash by triggering an unhandled `TLSSocket` error `ECONNRESET`. Instead of safely closing the connection, the process crashes…",
+      "url": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases",
+      "released": "2026-01-26T14:47:56Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-59465"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: node"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in node 20.20.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 22.22.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 24.13.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-node-2025-59466",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "We have identified a bug in Node.js error handling where \"Maximum call stack size exceeded\" errors become uncatchable when `async_hooks.createHook()` is enabled. Instead of reaching `process.on('uncaughtException')`, th…",
+      "url": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases",
+      "released": "2026-01-26T14:47:58Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-59466"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: node"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in node 20.20.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 22.22.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 24.13.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-node-2026-21636",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw in Node.js's permission model allows Unix Domain Socket (UDS) connections to bypass network restrictions when `--permission` is enabled. Even without `--allow-net`, attacker-controlled inputs (such as URLs or soc…",
+      "url": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases",
+      "released": "2026-01-26T14:48:00Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-21636"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: node"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in node 25.3.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-node-2026-21637",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "A flaw in Node.js TLS error handling allows remote attackers to crash or exhaust resources of a TLS server when `pskCallback` or `ALPNCallback` are in use. Synchronous exceptions thrown during these callbacks bypass sta…",
+      "url": "https://nodejs.org/en/blog/vulnerability/december-2025-security-releases",
+      "released": "2026-01-26T14:48:02Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-21637"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: node"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in node 20.20.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 22.22.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in node 24.13.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-32044",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: unauthenticated rest api user data exposure",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-32044",
+      "released": "2026-01-26T14:49:29Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-32044"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.5.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-32045",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: hidden grades shown to users without permission on some grade reports",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-32045",
+      "released": "2026-01-26T14:49:30Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-32045"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.1.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.3.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3625",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: user dos and name disclosure via idor in moodle mfa email factor revoke action",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3625",
+      "released": "2026-01-26T14:49:31Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3625"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.5.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3627",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: partial data exposure in moodle before completing multi-factor authentication",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3627",
+      "released": "2026-01-26T14:49:33Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3627"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.5.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3628",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: moodle assignment submission search leaks anonymous student identities",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3628",
+      "released": "2026-01-26T14:49:34Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3628"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.5.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3634",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: moodle allows course self-enrolment before completing mfa",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3634",
+      "released": "2026-01-26T14:49:36Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3634"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.5.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3635",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: csrf risk in moodle user tours manager allows tour duplication",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3635",
+      "released": "2026-01-26T14:49:37Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3635"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.1.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3636",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: idor in moodle rss block allows unauthorized access to rss feeds",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3636",
+      "released": "2026-01-26T14:49:39Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3636"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.1.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3637",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: csrf token exposure via url in moodle mod_data module",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3637",
+      "released": "2026-01-26T14:49:40Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3637"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.5.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3640",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: idor in web service allows users enrolled in a course to access some details of other users",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3640",
+      "released": "2026-01-26T14:49:43Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3640"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.1.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3641",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: authenticated remote code execution risk in the moodle lms dropbox repository",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3641",
+      "released": "2026-01-26T14:49:44Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3641"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.1.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3642",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: authenticated remote code execution risk in the moodle lms equella repository",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3642",
+      "released": "2026-01-26T14:49:46Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3642"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.1.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3643",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: reflected xss risk in policy tool",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3643",
+      "released": "2026-01-26T14:49:47Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3643"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.1.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3644",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: ajax section delete does not respect course_can_delete_section()",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3644",
+      "released": "2026-01-26T14:49:49Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3644"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.1.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3645",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: idor in messaging web service allows access to some user details",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3645",
+      "released": "2026-01-26T14:49:50Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3645"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.1.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2025-3647",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Moodle: idor when accessing the cohorts report",
+      "url": "https://access.redhat.com/security/cve/CVE-2025-3647",
+      "released": "2026-01-26T14:49:52Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3647"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.1.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.4.8",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-solr-2026-22022",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Solr: Unauthorized bypass of certain \"predefined permission\" rules in the RuleBasedAuthorizationPlugin",
+      "released": "2026-01-26T14:49:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-22022"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: solr"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in solr 9.10.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-solr-2026-22444",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Solr: Insufficient file-access checking in standalone core-creation requests",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22444",
+      "released": "2026-01-26T14:49:58Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-22444"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: solr"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in solr 9.10.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-111596",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -708,6 +1434,22 @@
           "t": "Fixed in keda 2.14.1-11",
           "u": null
         }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-110336",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-11687 affecting package gi-docgen 2024.1-4",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-11687",
+      "released": "2026-01-26T20:16:07Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2025-11687"
+      ],
+      "products": [
+        "Azure Linux: gi-docgen"
       ],
       "seen": "2026-11-27"
     },

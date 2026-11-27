@@ -1,8 +1,54 @@
 {
   "schemaVersion": 1,
   "date": "2025-06-11",
-  "count": 10,
+  "count": 12,
   "items": [
+    {
+      "id": "BIT-pytorch-2024-31580",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PyTorch before v2.2.0 was discovered to contain a heap buffer overflow vulnerability in the component /runtime/vararg_functions.cpp. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted i…",
+      "url": "https://gist.github.com/1047524396/038c78f2f007345e6f497698ace2aa3d",
+      "released": "2025-06-11T05:57:22Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-31580"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: pytorch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pytorch 2.2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-pytorch-2024-31583",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Pytorch before version v2.2.0 was discovered to contain a use-after-free vulnerability in torch/csrc/jit/mobile/interpreter.cpp.",
+      "url": "https://gist.github.com/1047524396/43e19a41f2b36503a4a228c32cdbc176",
+      "released": "2025-06-11T05:57:26Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-31583"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: pytorch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pytorch 2.2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
     {
       "id": "ESSA-2025:3015",
       "src": "csaf_opensuse",

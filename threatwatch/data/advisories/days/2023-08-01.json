@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2023-08-01",
-  "count": 37,
+  "count": 46,
   "items": [
     {
       "id": "ASB-A-174737879",
@@ -1036,6 +1036,218 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "WSB-A-133761964",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onCreate of LockSettingsActivity.java, there is a possible way set a new lockscreen PIN without entering the existing PIN due to a permissions bypass. This could lead to local escalation of privilege with no addition…",
+      "url": "https://source.android.com/security/bulletin/2023-08-01",
+      "released": "2023-08-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21235"
+      ],
+      "products": [
+        "Wear: platform/vendor/google_clockwork"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 11:2023-08-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 13:2023-08-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-187307530",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getIntentForButton of ButtonManager.java, there is a possible way for an unprivileged application to start a non-exported or permission-protected activity due to a missing permission check. This could lead to local e…",
+      "url": "https://source.android.com/security/bulletin/2023-08-01",
+      "released": "2023-08-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21231"
+      ],
+      "products": [
+        "Wear: platform/vendor/google_clockwork"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 13:2023-08-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-191680486",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onAccessPointChanged of AccessPointPreference.java, there is a possible way for unprivileged apps to receive a broadcast about WiFi access point change and its BSSID or SSID due to a precondition check failure. This …",
+      "url": "https://source.android.com/security/bulletin/2023-08-01",
+      "released": "2023-08-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21230"
+      ],
+      "products": [
+        "Wear: platform/vendor/google_clockwork"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 11:2023-08-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 13:2023-08-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-261073851",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations of avrc, there is a possible leak of heap data due to uninitialized data. This could lead to remote information disclosure with no additional execution privileges needed. User interaction is not ne…",
+      "url": "https://source.android.com/security/bulletin/2023-08-01",
+      "released": "2023-08-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21233"
+      ],
+      "products": [
+        "Wear: platform/system/bt"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/system/bt 13-next:2023-08-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/system/bt 11:2023-08-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-265431830",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In registerServiceLocked of ManagedServices.java, there is a possible bypass of background activity launch restrictions due to an unsafe PendingIntent. This could lead to local escalation of privilege with no additional…",
+      "url": "https://source.android.com/security/bulletin/2023-08-01",
+      "released": "2023-08-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21229"
+      ],
+      "products": [
+        "Wear: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 13-next:2023-08-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-265474852",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In checkDebuggingDisallowed of DeviceVersionFragment.java, there is a possible way to access adb before SUW completion due to an insecure default value. This could lead to local escalation of privilege with no additiona…",
+      "url": "https://source.android.com/security/bulletin/2023-08-01",
+      "released": "2023-08-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-35689"
+      ],
+      "products": [
+        "Wear: platform/vendor/google_clockwork"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 11:2023-08-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 13:2023-08-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-267251033",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to retrieve sensor data without permissions due to a permissions bypass. This could lead to local information disclosure with no additional execution privileges needed. Use…",
+      "url": "https://source.android.com/security/bulletin/2023-08-01",
+      "released": "2023-08-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2023-21232"
+      ],
+      "products": [
+        "Wear: platform/frameworks/opt/wear"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/opt/wear 11:2023-08-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/opt/wear 13:2023-08-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-6263-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "openjdk-8, openjdk-lts, openjdk-17 vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-6263-1",
+      "released": "2023-08-01T07:53:27Z",
+      "updated": "2026-11-24T09:37:29Z",
+      "cves": [
+        "CVE-2023-22006",
+        "CVE-2023-22036",
+        "CVE-2023-22041",
+        "CVE-2023-22044",
+        "CVE-2023-22045",
+        "CVE-2023-22049",
+        "CVE-2023-25193"
+      ],
+      "products": [
+        "Ubuntu: openjdk-17",
+        "Ubuntu: openjdk-8",
+        "Ubuntu: openjdk-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openjdk-8 8u382-ga-1~16.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in openjdk-lts 11.0.20+8-1ubuntu1~18.04",
+          "u": null
+        },
+        {
+          "t": "Fixed in openjdk-17 17.0.8+7-1~18.04",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2023:4349",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -1061,6 +1273,32 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-6266-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "librsvg vulnerability",
+      "url": "https://ubuntu.com/security/notices/USN-6266-1",
+      "released": "2023-08-01T11:43:51Z",
+      "updated": "2026-11-24T09:37:29Z",
+      "cves": [
+        "CVE-2023-38633"
+      ],
+      "products": [
+        "Ubuntu: librsvg"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in librsvg 2.48.9-1ubuntu0.20.04.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in librsvg 2.52.5+dfsg-3ubuntu0.2",
+          "u": null
+        }
+      ],
       "seen": "2026-11-27"
     }
   ]

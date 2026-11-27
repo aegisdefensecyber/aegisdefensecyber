@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-05",
-  "count": 194,
+  "count": 208,
   "items": [
     {
       "id": "ELA-1881-1",
@@ -1681,6 +1681,35 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:95437",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:95437",
+      "released": "2026-11-05T07:01:36Z",
+      "updated": "2026-11-27T15:19:04Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:95437"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-107776",
       "src": "cvelistv5",
       "vendor": "Unknown",
@@ -2301,6 +2330,50 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "RHSA-2026:95517",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "grafana: Grafana: Session takeover via Auth Proxy cache key collision",
+      "url": "https://access.redhat.com/errata/RHSA-2026:95517",
+      "released": "2026-11-05T11:40:25Z",
+      "updated": "2026-11-27T15:19:05Z",
+      "cves": [
+        "CVE-2026-14199",
+        "CVE-2026-15815",
+        "CVE-2026-17183",
+        "CVE-2026-39834",
+        "CVE-2026-42127",
+        "CVE-2026-63209",
+        "CVE-2026-73501",
+        "CVE-2026-73502",
+        "CVE-2026-76905",
+        "CVE-2026-77354",
+        "CVE-2026-77405",
+        "CVE-2026-77411",
+        "CVE-2026-84445",
+        "CVE-2026-88031",
+        "CVE-2026-92542",
+        "CVE-2026-92543"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "fix": [
+        {
+          "t": "For more details, see the Red Hat Advanced Cluster Management for Kubernetes documentation: https://docs.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.16/html/multicluster_global_hub/index",
+          "u": "https://access.redhat.com/errata/RHSA-2026:95517"
+        },
+        {
+          "t": "Set [auth.proxy] sync_ttl = 0 to disable the identity cache (identity is then synced on every request), or upgrade to a fixed version: 11.0.0+, 12.4.10+ (12.4.x), 13.0.8+ (13.0.x), 13.1.5+ (13.1.x), or 13.2.1+ (13.2.x and newer — 13.2.0 it…",
+          "u": null
+        },
+        {
+          "t": "While no configuration fully mitigates this issue, exposure can be reduced by limiting plugin installations to vetted and pinned sets of plugins from trusted sources. Additionally, disable the `plugin_admin_enabled` setting in the Grafana …",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RUSTSEC-2026-0449",
       "src": "osv_rustsec",
       "vendor": "Rustsec",
@@ -2582,6 +2655,44 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:95576",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "crypto/x509: golang: golang crypto/x509: Denial of Service via excessive processing of DNS SAN entries",
+      "url": "https://access.redhat.com/errata/RHSA-2026:95576",
+      "released": "2026-11-05T14:40:55Z",
+      "updated": "2026-11-27T15:19:06Z",
+      "cves": [
+        "CVE-2026-27145",
+        "CVE-2026-32283",
+        "CVE-2026-33818",
+        "CVE-2026-42504",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-111943"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update as a new RHOSO 18.0 deployment, see “Deploying Red Hat OpenStack Services on OpenShift…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:95576"
+        },
+        {
+          "t": "A flaw was found in the Go standard library crypto/x509 package. When verifying a TLS certificate hostname, VerifyHostname processed each DNS Subject Alternative Name (SAN) entry in a loop and repeatedly split the candidate hostname on \".\"…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:22257-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -2605,6 +2716,237 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:95577",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/grpc: gRPC-Go: Denial of Service via malformed RPC requests",
+      "url": "https://access.redhat.com/errata/RHSA-2026:95577",
+      "released": "2026-11-05T14:49:00Z",
+      "updated": "2026-11-27T15:19:06Z",
+      "cves": [
+        "CVE-2026-84445"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 5.0, see the following documentation for important instructions about upgrading your cluster and applying this asynchronous errata update: https://docs.redhat.com/en/documentation/openshift_container_platfo…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:95577"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:95591",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "undici: undici: Denial of Service via unrequested WebSocket subprotocol",
+      "url": "https://access.redhat.com/errata/RHSA-2026:95591",
+      "released": "2026-11-05T15:58:00Z",
+      "updated": "2026-11-27T15:19:06Z",
+      "cves": [
+        "CVE-2026-19534",
+        "CVE-2026-27145",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-39834",
+        "CVE-2026-42504",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-63209",
+        "CVE-2026-75838",
+        "CVE-2026-75899",
+        "CVE-2026-75931",
+        "CVE-2026-75975",
+        "CVE-2026-76172",
+        "CVE-2026-77301",
+        "CVE-2026-82417",
+        "CVE-2026-84292",
+        "CVE-2026-84304",
+        "CVE-2026-84375",
+        "CVE-2026-84445",
+        "CVE-2026-84961",
+        "CVE-2026-85152",
+        "CVE-2026-87018",
+        "CVE-2026-102276",
+        "CVE-2026-102278",
+        "CVE-2026-109383",
+        "CVE-2026-109829",
+        "CVE-2026-109855",
+        "CVE-2026-109869",
+        "CVE-2026-116591"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "fix": [
+        {
+          "t": "For Cluster Observability Operator 1.5, see the following instructions to apply this update: https://docs.redhat.com/en/documentation/red_hat_openshift_cluster_observability_operator/1-latest",
+          "u": "https://access.redhat.com/errata/RHSA-2026:95591"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "A flaw was found in the Go standard library crypto/x509 package. When verifying a TLS certificate hostname, VerifyHostname processed each DNS Subject Alternative Name (SAN) entry in a loop and repeatedly split the candidate hostname on \".\"…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112694",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-122330 affecting package blosc 1.21.6-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-122330",
+      "released": "2026-11-05T16:17:46Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-122330"
+      ],
+      "products": [
+        "Azure Linux: blosc"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112700",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-61813 affecting package mod_security 2.9.7-8",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61813",
+      "released": "2026-11-05T16:17:47Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-61813"
+      ],
+      "products": [
+        "Azure Linux: mod_security"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112871",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-123158 affecting package openssh 9.8p1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
+      "released": "2026-11-05T16:17:47Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-123158"
+      ],
+      "products": [
+        "Azure Linux: openssh"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112702",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-82413 affecting package ntopng 5.2.1-8",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82413",
+      "released": "2026-11-05T17:18:21Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-82413"
+      ],
+      "products": [
+        "Azure Linux: ntopng"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112705",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-97371 affecting package ntopng 5.2.1-8",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97371",
+      "released": "2026-11-05T17:18:22Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-97371"
+      ],
+      "products": [
+        "Azure Linux: ntopng"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "https://github.com/kubernetes/kubernetes/issues/143852",
+      "src": "kubernetes",
+      "vendor": "Kubernetes",
+      "title": "CVE-2026-116472",
+      "url": "https://github.com/kubernetes/kubernetes/issues/143852",
+      "released": "2026-11-05T17:21:19Z",
+      "updated": "2026-11-05T17:21:19Z",
+      "cves": [
+        "CVE-2026-116472"
+      ],
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://github.com/kubernetes/kubernetes/issues/143852"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:95612",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang: net/url: Memory exhaustion in query parameter parsing in net/url",
+      "url": "https://access.redhat.com/errata/RHSA-2026:95612",
+      "released": "2026-11-05T17:58:31Z",
+      "updated": "2026-11-27T15:19:07Z",
+      "cves": [
+        "CVE-2025-61726",
+        "CVE-2025-61729",
+        "CVE-2026-25679",
+        "CVE-2026-27136",
+        "CVE-2026-27145",
+        "CVE-2026-32280",
+        "CVE-2026-32283",
+        "CVE-2026-33811",
+        "CVE-2026-33814",
+        "CVE-2026-33818",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-42499",
+        "CVE-2026-42504",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-63209"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer to: https://docs.openshift.com/container-platform/latest/updating/updating_a_cl…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:95612"
+        },
+        {
+          "t": "Red Hat has investigated whether a possible mitigation exists for this issue, and has not been able to identify a practical example. Please update the affected package as soon as possible.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "CVE-2026-118494",
@@ -2742,6 +3084,55 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:95712",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang.org/x/net/html: golang.org/x/net/html: Arbitrary code execution via Cross-Site Scripting",
+      "url": "https://access.redhat.com/errata/RHSA-2026:95712",
+      "released": "2026-11-05T20:41:20Z",
+      "updated": "2026-11-27T15:19:08Z",
+      "cves": [
+        "CVE-2026-25681",
+        "CVE-2026-27136",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-39834",
+        "CVE-2026-41178",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-56864",
+        "CVE-2026-56865",
+        "CVE-2026-63209",
+        "CVE-2026-84304",
+        "CVE-2026-84445",
+        "CVE-2026-88031",
+        "CVE-2026-93748",
+        "CVE-2026-106445",
+        "CVE-2026-106446"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "fix": [
+        {
+          "t": "For multicluster engine for Kubernetes, see the following documentation for details on how to install the images: https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/latest/html/clusters/cluster…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:95712"
+        },
+        {
+          "t": "To mitigate this flaw, applications processing untrusted HTML input must implement strict input sanitization and ensure all output is properly encoded before rendering. Deploying a comprehensive Content Security Policy (CSP) can restrict s…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "PYSEC-2026-4363",
       "src": "pysec",
       "vendor": "PyPI",
@@ -2831,6 +3222,22 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112711",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-112910 affecting package python-filelock 3.20.3-4",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-112910",
+      "released": "2026-11-05T22:17:46Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-112910"
+      ],
+      "products": [
+        "Azure Linux: python-filelock"
+      ],
       "seen": "2026-11-27"
     },
     {
@@ -4542,13 +4949,15 @@
       "title": "MariaDB: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4367",
       "released": "2026-11-05T23:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-26T23:00:00Z",
       "cves": [
         "CVE-2026-102523"
       ],
       "sev": "HIGH",
       "products": [
         "MariaDB",
+        "Oracle Linux",
+        "RESF Rocky Linux",
         "Red Hat Enterprise Linux",
         "SUSE openSUSE"
       ],
@@ -4750,7 +5159,7 @@
       "title": "Red Hat Enterprise Linux (cockpit-files): Mehrere Schwachstellen ermöglichen Manipulation von Dateien",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4376",
       "released": "2026-11-05T23:00:00Z",
-      "updated": "2026-11-23T23:00:00Z",
+      "updated": "2026-11-26T23:00:00Z",
       "cves": [
         "CVE-2026-91202",
         "CVE-2026-91203",

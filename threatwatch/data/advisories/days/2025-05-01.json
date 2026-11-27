@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-05-01",
-  "count": 42,
+  "count": 49,
   "items": [
     {
       "id": "ASB-A-191743558",
@@ -1071,6 +1071,194 @@
         },
         {
           "t": "Fixed in :unknown: rvc-qpr:2025-05-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-330507809",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "There is a possible bypass of carrier restrictions due to an unusual root cause. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploi…",
+      "url": "https://source.android.com/security/bulletin/2025-05-01",
+      "released": "2025-05-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-27700"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2025-05-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-384814655",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In the function process_crypto_cmd, the values of ptrs[i] can be potentially equal to NULL which is valid value after calling slice_map_array(). Later this values will be derefenced without prior NULL check, which can l…",
+      "url": "https://source.android.com/security/bulletin/2025-05-01",
+      "released": "2025-05-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-27701"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2025-05-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-338974267",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In setupAccessibilityServices of AccessibilityFragment.java , there is a possible way to hide an enabled accessibility service due to a logic error in the code. This could lead to local denial of service with no additio…",
+      "url": "https://source.android.com/security/bulletin/2025-05-01",
+      "released": "2025-05-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-40664"
+      ],
+      "products": [
+        "Wear: platform/vendor/google_clockwork"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 15-next:2025-05-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 13:2025-05-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 14:2025-05-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-371195880",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In setupAccessibilityServices of AccessibilityFragment.java, there is a possible way to hide an enabled accessibility service due to a logic error in the code. This could lead to local escalation of privilege with no ad…",
+      "url": "https://source.android.com/security/bulletin/2025-05-01",
+      "released": "2025-05-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-26431"
+      ],
+      "products": [
+        "Wear: platform/vendor/google_clockwork"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 15-next:2025-05-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 14:2025-05-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-372227605",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In getComponentName of AccessibilitySettingsUtils.java, there is a possible way to for a malicious Talkback service to be enabled instead of the system component due to a logic error in the code. This could lead to loca…",
+      "url": "https://source.android.com/security/bulletin/2025-05-01",
+      "released": "2025-05-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-26439"
+      ],
+      "products": [
+        "Wear: platform/frameworks/opt/wear"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/opt/wear 15-next:2025-05-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/frameworks/opt/wear 14:2025-05-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-387497730",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In initPhoneSwitch of SystemSettingsFragment.java, there is a possible FRP bypass due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User i…",
+      "url": "https://source.android.com/security/bulletin/2025-05-01",
+      "released": "2025-05-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-26419"
+      ],
+      "products": [
+        "Wear: platform/vendor/google_clockwork",
+        "Wear: platform/vendor/google_clockwork_partners/packages/WearServices"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 15-next:2025-05-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/google_clockwork_partners/packages/WearServices 15-next:2025-05-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 13:2025-05-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-moodle-2024-38275",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "moodle: HTTP authorization header is preserved between \"emulated redirects\"",
+      "url": "https://moodle.org/mod/forum/discuss.php?d=459500",
+      "released": "2025-05-01T05:57:26Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-38275"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: moodle"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in moodle 4.1.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.2.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in moodle 4.3.5",
           "u": null
         }
       ],

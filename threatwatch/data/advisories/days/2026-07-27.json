@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-27",
-  "count": 36,
+  "count": 60,
   "items": [
     {
       "id": "openSUSE-SU-2026:11383-1",
@@ -537,6 +537,494 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-openbao-2024-7594",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Vault SSH Secrets Engine Configuration Did Not Restrict Valid Principals By Default",
+      "url": "https://discuss.hashicorp.com/t/hcsec-2024-20-vault-ssh-secrets-engine-configuration-did-not-restrict-valid-principals-by-default/70251",
+      "released": "2026-07-27T05:48:43Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-7594"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2024-8185",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Vault Vulnerable to Denial of Service When Processing Raft Join Requests",
+      "url": "https://discuss.hashicorp.com/t/hcsec-2024-26-vault-vulnerable-to-denial-of-service-through-memory-exhaustion-when-processing-raft-cluster-join-requests/71047",
+      "released": "2026-07-27T05:48:44Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-8185"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.0.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2024-9180",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Vault Operators in Root Namespace May Elevate Their Privileges",
+      "url": "https://discuss.hashicorp.com/t/hcsec-2024-21-vault-operators-in-root-namespace-may-elevate-their-privileges/70565",
+      "released": "2026-07-27T05:48:45Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-9180"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.0.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2025-4166",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Vault May Include Sensitive Data in Error Logs When Using the KV v2 Plugin",
+      "url": "https://discuss.hashicorp.com/t/hcsec-2025-09-vault-may-expose-sensitive-information-in-error-logs-when-processing-malformed-data-with-the-kv-v2-plugin",
+      "released": "2026-07-27T05:48:46Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-4166"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.2.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2025-52893",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao May Leak Sensitive Information in Logs When Processing Malformed Data",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-8f5r-8cmq-7fmq",
+      "released": "2026-07-27T05:48:48Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-52893"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.3.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2025-54996",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao Root Namespace Operator May Elevate Token Privileges",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-vf84-mxrq-crqc",
+      "released": "2026-07-27T05:48:50Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-54996"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 0.0.0-20250806193240-9b0b5d4f345f",
+          "u": null
+        },
+        {
+          "t": "Fixed in openbao 2.3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2025-54997",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao: Privileged Operator May Execute Code on the Underlying Host",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-xp75-r577-cvhp",
+      "released": "2026-07-27T05:48:51Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-54997"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 0.0.0-20250806194004-a14053c9679d",
+          "u": null
+        },
+        {
+          "t": "Fixed in openbao 2.3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2025-54998",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao Userpass and LDAP User Lockout Bypass",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-j3xv-7fxp-gfhx",
+      "released": "2026-07-27T05:48:52Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-54998"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 0.0.0-20250807212521-c52795c1ef74",
+          "u": null
+        },
+        {
+          "t": "Fixed in openbao 2.3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2025-54999",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao: Timing Side-Channel in Userpass Auth Method",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-hh28-h22f-8357",
+      "released": "2026-07-27T05:48:54Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-54999"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 0.0.0-20250806193356-4d9b5d3d6486",
+          "u": null
+        },
+        {
+          "t": "Fixed in openbao 2.3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2025-55000",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao TOTP Secrets Engine Enables Code Reuse",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-f7c3-mhj2-9pvg",
+      "released": "2026-07-27T05:48:55Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-55000"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 0.0.0-20250806193153-183891f8d535",
+          "u": null
+        },
+        {
+          "t": "Fixed in openbao 2.3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2025-55001",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao LDAP MFA Enforcement Bypass When Using Username As Alias",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-2q8q-8fgw-9p6p",
+      "released": "2026-07-27T05:48:56Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-55001"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 0.0.0-20250807212521-c52795c1ef74",
+          "u": null
+        },
+        {
+          "t": "Fixed in openbao 2.3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2025-55003",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao Login MFA Bypasses Rate Limiting and TOTP Token Reuse",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-rxp7-9q75-vj3p",
+      "released": "2026-07-27T05:48:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-55003"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 0.0.0-20250807113757-8340a6918f6c",
+          "u": null
+        },
+        {
+          "t": "Fixed in openbao 2.3.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2025-59043",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao vulnerable to denial of service via malicious JSON request processing",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-g46h-2rq9-gw5m",
+      "released": "2026-07-27T05:48:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-59043"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.4.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2025-62705",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao and Vault Leak []byte Fields in Audit Logs",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-rc54-2g2c-g36g",
+      "released": "2026-07-27T05:49:01Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-62705"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.4.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2025-64761",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao Privileged Operator Identity Group Root Escalation",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-7ff4-jw48-3436",
+      "released": "2026-07-27T05:49:02Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-64761"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.4.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2026-33758",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao has Reflected XSS in its OIDC authentication error message",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-cpj3-3r2f-xj59",
+      "released": "2026-07-27T05:49:05Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-33758"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.5.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2026-39388",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao's Certificate Authentication Allows Token Renewal With Different Certificate",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-7ccv-rp6m-rffr",
+      "released": "2026-07-27T05:49:06Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-39388"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.5.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2026-39396",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao has Decompression Bomb via Unbounded Copy in OCI Plugin Extraction (DoS)",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-r65v-xgwc-g56j",
+      "released": "2026-07-27T05:49:07Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-39396"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.5.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2026-39946",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao allows SQL Injection in PostgreSQL database secrets engine",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-6vgr-cp5c-ffx3",
+      "released": "2026-07-27T05:49:08Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-39946"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.5.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2026-40264",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao's Token Store Allows Cross-Namespace Renewal, Revocation",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-p49j-v9wc-wg57",
+      "released": "2026-07-27T05:49:09Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-40264"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.5.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RHSA-2026:46467",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -597,6 +1085,60 @@
       "products": [
         "Azure Linux: kubevirt"
       ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:22950-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for go1.26-openssl, go1.25-openssl, go1.24-openssl, go1.23-openssl, go1.22-openssl, go1.26, go1.25, go1.24, go1.23, go1.22, go1.21",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202622950-1/",
+      "released": "2026-07-27T10:18:15Z",
+      "updated": "2026-09-16T20:08:30Z",
+      "cves": [
+        "CVE-2025-22871"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:22958-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for go1.26-openssl, go1.25-openssl, go1.24-openssl, go1.23-openssl, go1.22-openssl, go1.26, go1.25, go1.24, go1.23, go1.22, go1.21",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202622958-1/",
+      "released": "2026-07-27T10:18:15Z",
+      "updated": "2026-09-16T20:08:40Z",
+      "cves": [
+        "CVE-2025-22871"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
       "seen": "2026-11-27"
     },
     {
@@ -888,6 +1430,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-94061",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-64539 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64539",
+      "released": "2026-07-27T21:17:06Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-64539"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "WID-SEC-W-2026-2533",
       "src": "csaf_certbund",
       "vendor": "Debian",
@@ -924,7 +1488,7 @@
       "title": "Linux Kernel: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2536",
       "released": "2026-07-27T22:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-26T23:00:00Z",
       "cves": [
         "CVE-2026-64537",
         "CVE-2026-64538",
@@ -1000,6 +1564,27 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "WID-SEC-W-2026-2545",
+      "src": "csaf_certbund",
+      "vendor": "Open Source",
+      "title": "binutils: Schwachstelle ermöglicht Denial of Service und Offenlegung",
+      "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2545",
+      "released": "2026-07-27T22:00:00Z",
+      "updated": "2026-11-26T23:00:00Z",
+      "cves": [
+        "CVE-2026-15003"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "binutils",
+        "Red Hat Enterprise Linux",
+        "SUSE openSUSE",
+        "Ubuntu Linux"
+      ],
+      "lang": "de",
+      "seen": "2026-11-27"
     }
   ]
 }

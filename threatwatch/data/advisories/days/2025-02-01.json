@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-02-01",
-  "count": 48,
+  "count": 51,
   "items": [
     {
       "id": "msrc_CVE-2022-49043",
@@ -1200,6 +1200,84 @@
       "fix": [
         {
           "t": "Fixed in :unknown: SoCVersion:2025-02-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-353503536",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In registerCallback of BatteryMitigationAidl.cpp, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure with no additional execution privileges needed. Use…",
+      "url": "https://source.android.com/security/bulletin/2025-02-01",
+      "released": "2025-02-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2025-0085"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2025-02-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-319902231",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In apk-versions.txt, there is a possible corruption of telemetry opt-in settings on other watches when setting up a new Pixel Watch due to a logic error in the code. This could lead to local escalation of privilege with…",
+      "url": "https://source.android.com/security/bulletin/2025-02-01",
+      "released": "2025-02-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-49731"
+      ],
+      "products": [
+        "Wear: platform/vendor/partner_cw_prebuilts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/partner_cw_prebuilts 15-next:2025-02-01",
+          "u": null
+        },
+        {
+          "t": "Fixed in platform/vendor/partner_cw_prebuilts 13:2025-02-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2025-21673",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2025-21673",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2025-21673",
+      "released": "2025-02-01T05:57:08Z",
+      "updated": "2026-11-03T20:02:41Z",
+      "cves": [
+        "CVE-2025-21673"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.191-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.41-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
           "u": null
         }
       ],

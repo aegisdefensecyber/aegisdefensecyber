@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-05-01",
-  "count": 29,
+  "count": 35,
   "items": [
     {
       "id": "msrc_CVE-2024-31755",
@@ -626,6 +626,138 @@
       "fix": [
         {
           "t": "Fixed in :unknown: SoCVersion:2024-05-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-324565943",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In gpu_slc_get_region of pixel_gpu_slc.c, there is a possible EoP due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed …",
+      "url": "https://source.android.com/security/bulletin/2024-05-01",
+      "released": "2024-05-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-32929"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2024-05-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "PUB-A-329067188",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible way to use a paired Bluetooth LE audio device to achieve code execution due to a use after free. This could lead to local escalation of privilege with no additional execution p…",
+      "url": "https://source.android.com/security/bulletin/2024-05-01",
+      "released": "2024-05-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-23694"
+      ],
+      "products": [
+        "Android: :unknown:"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in :unknown: Pixel-family specific:2024-05-05",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-268737818",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In config.xml, there is a possible way to launch an activity from the background due to an extraneous package included in the DND allow list. This could lead to local escalation of privilege with no additional execution…",
+      "url": "https://source.android.com/security/bulletin/2024-05-01",
+      "released": "2024-05-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-23703"
+      ],
+      "products": [
+        "Wear: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 14-next:2024-05-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-290819041",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In themes.xml, there is a possible way to trick the user into performing unintended actions due to a tapjacking/overlay attack. This could lead to local escalation of privilege with no additional execution privileges ne…",
+      "url": "https://source.android.com/security/bulletin/2024-05-01",
+      "released": "2024-05-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-23702"
+      ],
+      "products": [
+        "Wear: platform/vendor/google_clockwork"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 13:2024-05-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-300267802",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In onCreate of SettingsApplication.java, there is a possible way to trick the user into allowing a permission due to a tapjacking/overlay attack. This could lead to local escalation of privilege with no additional execu…",
+      "url": "https://source.android.com/security/bulletin/2024-05-01",
+      "released": "2024-05-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-23701"
+      ],
+      "products": [
+        "Wear: platform/vendor/google_clockwork"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/vendor/google_clockwork 13:2024-05-01",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "WSB-A-310634539",
+      "src": "osv_android",
+      "vendor": "Android",
+      "title": "In multiple locations, there is a possible permission grant bypass due to an insecure default value. This could lead to local escalation of privilege by a malicious app with no additional execution privileges needed. Us…",
+      "url": "https://source.android.com/security/bulletin/2024-05-01",
+      "released": "2024-05-01T00:00:00Z",
+      "updated": "2026-11-18T17:10:23Z",
+      "cves": [
+        "CVE-2024-23700"
+      ],
+      "products": [
+        "Wear: platform/frameworks/base"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in platform/frameworks/base 14-next:2024-05-01",
           "u": null
         }
       ],

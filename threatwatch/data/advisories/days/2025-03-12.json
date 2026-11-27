@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-03-12",
-  "count": 12,
+  "count": 13,
   "items": [
     {
       "id": "RHSA-2025:2673",
@@ -52,6 +52,29 @@
       "fix": [
         {
           "t": "Fixed in wpa_supplicant 2.10-3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-neo4j-2024-34517",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "The Cypher component in Neo4j 5.0.0 through 5.18 mishandles IMMUTABLE privileges in some situations where an attacker already has admin access.",
+      "url": "https://github.com/advisories/GHSA-p343-9qwp-pqxv",
+      "released": "2025-03-12T07:15:48Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-34517"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: neo4j"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in neo4j 5.20.0",
           "u": null
         }
       ],

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-11",
-  "count": 25,
+  "count": 33,
   "items": [
     {
       "id": "msrc_CVE-2026-3731",
@@ -462,6 +462,190 @@
         "SUSE Linux Micro 6.0"
       ],
       "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-parse-2026-29182",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server: Cloud Hooks and Cloud Jobs bypass `readOnlyMasterKey` write restriction",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-vc89-5g3r-cmhh",
+      "released": "2026-03-11T15:48:46Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-29182"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 9.4.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-parse-2026-30228",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server: File creation and deletion bypasses `readOnlyMasterKey` write restriction",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-xfh7-phr7-gr2x",
+      "released": "2026-03-11T15:48:49Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-30228"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 9.5.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-parse-2026-30229",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server: Endpoint `/loginAs` allows `readOnlyMasterKey` to gain full read and write access as any user",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-79wj-8rqv-jvp5",
+      "released": "2026-03-11T15:48:51Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-30229"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 9.5.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-parse-2026-30835",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server: Malformed `$regex` query leaks database error details in API response",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-9cp7-3q5w-j92g",
+      "released": "2026-03-11T15:48:54Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-30835"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 9.5.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-parse-2026-30848",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server: `PagesRouter` path traversal allows reading files outside configured pages directory",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-hm3f-q6rw-m6wh",
+      "released": "2026-03-11T15:48:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-30848"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 9.5.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-parse-2026-30850",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server: File metadata endpoint bypasses `beforeFind` / `afterFind` trigger authorization",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-hwx8-q9cg-mqmc",
+      "released": "2026-03-11T15:48:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-30850"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 9.5.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-parse-2026-30854",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server: GraphQL `__type` introspection bypass via inline fragments when public introspection is disabled",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-q5q9-2rhp-33qw",
+      "released": "2026-03-11T15:49:02Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-30854"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 9.5.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-parse-2026-30863",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server: JWT audience validation bypass in Google, Apple, and Facebook authentication adapters",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-x6fw-778m-wr9v",
+      "released": "2026-03-11T15:49:05Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-30863"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 9.5.0",
+          "u": null
+        }
+      ],
       "seen": "2026-11-27"
     },
     {

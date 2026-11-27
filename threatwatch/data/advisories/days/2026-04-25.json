@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-25",
-  "count": 25,
+  "count": 37,
   "items": [
     {
       "id": "openSUSE-SU-2026:10611-1",
@@ -336,6 +336,104 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-YX54699",
+      "src": "cleanstart",
+      "title": "race condition in the Apache Kafka Java producer client’s buffer pool management can cause messages to be silently delivered to incorrect topics",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-YX54699.json",
+      "released": "2026-04-25T00:46:03Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-11143",
+        "CVE-2026-1605",
+        "CVE-2026-33870",
+        "CVE-2026-33871",
+        "CVE-2026-35554"
+      ],
+      "products": [
+        "CleanStart: strimzi-kafka-operator"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in strimzi-kafka-operator 0.50.1-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-VN02574",
+      "src": "cleanstart",
+      "title": "spdystream is a Go library for multiplexing streams over SPDY connections",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-VN02574.json",
+      "released": "2026-04-25T00:46:34Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61726",
+        "CVE-2025-61728",
+        "CVE-2025-61729",
+        "CVE-2025-61730",
+        "CVE-2025-68119",
+        "CVE-2025-68121",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-35469",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: velero-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in velero-fips 1.18.0-r2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-WL14185",
+      "src": "cleanstart",
+      "title": "spdystream is a Go library for multiplexing streams over SPDY connections",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-WL14185.json",
+      "released": "2026-04-25T00:47:05Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-61726",
+        "CVE-2025-61728",
+        "CVE-2025-61729",
+        "CVE-2025-61730",
+        "CVE-2025-68119",
+        "CVE-2025-68121",
+        "CVE-2026-24051",
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33186",
+        "CVE-2026-33810",
+        "CVE-2026-34986",
+        "CVE-2026-35469",
+        "CVE-2026-39883"
+      ],
+      "products": [
+        "CleanStart: velero-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in velero-fips 1.17.2-r6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "msrc_CVE-2026-23434",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -497,6 +595,260 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-31557",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-31557",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-31557",
+      "released": "2026-04-25T06:08:51Z",
+      "updated": "2026-11-03T20:02:57Z",
+      "cves": [
+        "CVE-2026-31557"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.191-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.80-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-31663",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-31663",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-31663",
+      "released": "2026-04-25T06:08:52Z",
+      "updated": "2026-11-03T20:02:58Z",
+      "cves": [
+        "CVE-2026-31663"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.191-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.95-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-31568",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-31568",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-31568",
+      "released": "2026-04-25T06:08:54Z",
+      "updated": "2026-11-03T20:02:57Z",
+      "cves": [
+        "CVE-2026-31568"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.191-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-31579",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-31579",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-31579",
+      "released": "2026-04-25T06:08:54Z",
+      "updated": "2026-11-03T06:23:09Z",
+      "cves": [
+        "CVE-2026-31579"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.115-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-31592",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-31592",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-31592",
+      "released": "2026-04-25T06:08:55Z",
+      "updated": "2026-11-03T20:02:57Z",
+      "cves": [
+        "CVE-2026-31592"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.191-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.115-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-31630",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-31630",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-31630",
+      "released": "2026-04-25T06:08:55Z",
+      "updated": "2026-11-03T06:23:09Z",
+      "cves": [
+        "CVE-2026-31630"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.175-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.115-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-31655",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-31655",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-31655",
+      "released": "2026-04-25T06:08:56Z",
+      "updated": "2026-11-03T20:02:58Z",
+      "cves": [
+        "CVE-2026-31655"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.191-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.85-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-31432",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-31432",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-31432",
+      "released": "2026-04-25T06:10:13Z",
+      "updated": "2026-11-03T20:02:57Z",
+      "cves": [
+        "CVE-2026-31432"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.191-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.81-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-31501",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-31501",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-31501",
+      "released": "2026-04-25T06:10:14Z",
+      "updated": "2026-10-23T20:02:18Z",
+      "cves": [
+        "CVE-2026-31501"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.58-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "BELL-CVE-2026-41989",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-30",
-  "count": 234,
+  "count": 271,
   "items": [
     {
       "id": "ELA-1872-1",
@@ -1195,7 +1195,7 @@
       "title": "SSA-443410: Node2Shell Vulnerability in Industrial Edge Management Applications",
       "url": "https://cert-portal.siemens.com/productcert/html/ssa-443410.html",
       "released": "2026-10-30T00:00:00Z",
-      "updated": "2026-11-06T00:00:00Z",
+      "updated": "2026-11-27T00:00:00Z",
       "cves": [
         "CVE-2026-111497"
       ],
@@ -1211,15 +1211,15 @@
       ],
       "fix": [
         {
-          "t": "Stop Common Configurator on Device (CC on Edge) until a fix is available",
-          "u": null
-        },
-        {
           "t": "Uninstall all Management Applications and protect your IEM instance with a Firewall/WAF until a fix is available",
           "u": null
         },
         {
           "t": "Update to V1.15.1 or later version",
+          "u": null
+        },
+        {
+          "t": "Update to V1.24.3 or later version",
           "u": null
         }
       ],
@@ -1230,21 +1230,26 @@
       "id": "SSA-898633",
       "src": "csaf_siemens",
       "vendor": "Siemens",
-      "title": "SSA-898633: Node2Shell Vulnerability in Palo Alto Networks PAN-OS on RUGGEDCOM APE1808 Devices",
+      "title": "SSA-898633: Brotli Vulnerability in Palo Alto Networks PAN-OS on RUGGEDCOM APE1808 Devices",
       "url": "https://cert-portal.siemens.com/productcert/html/ssa-898633.html",
       "released": "2026-10-30T00:00:00Z",
-      "updated": "2026-10-30T00:00:00Z",
+      "updated": "2026-11-27T00:00:00Z",
       "cves": [
         "CVE-2026-111497"
       ],
       "sev": "CRITICAL",
       "cvss": 9.8,
       "products": [
+        "Palo Alto Networks PAN-OS VM-Series",
         "RUGGEDCOM APE1808"
       ],
       "fix": [
         {
-          "t": "Upgrade to corresponding available PAN-OS version. Contact customer support to receive additional patch and update information.",
+          "t": "set system setting brotli-encoding disable (CLI, 11.2.4+), or clear Allow Brotli Encoding under Device &gt; Setup &gt; Content-ID and commit (web UI, 12.1.2+)",
+          "u": null
+        },
+        {
+          "t": "Contact customer support to receive additional patch and update information.",
           "u": null
         }
       ],
@@ -1391,7 +1396,7 @@
       "title": "CVE-2026-111497",
       "url": "https://cert-portal.siemens.com/productcert/html/ssa-443410.html",
       "released": "2026-10-30T00:00:00Z",
-      "updated": "2026-11-06T00:00:00Z",
+      "updated": "2026-11-27T00:00:00Z",
       "cves": [
         "CVE-2026-111497"
       ],
@@ -1401,21 +1406,21 @@
         "Cloud Connector Configurator < V1.24.3",
         "Industrial Edge Management Cloud",
         "Common Configurator (CC on IEM)",
-        "Common Configurator on Device (CC on Edge)",
+        "Common Configurator on Device (CC on Edge) < V2.7.2",
         "Data Flow Monitoring < V3.0.18",
         "Databus Configurator < V4.0.1"
       ],
       "fix": [
-        {
-          "t": "Stop Common Configurator on Device (CC on Edge) until a fix is available",
-          "u": null
-        },
         {
           "t": "Uninstall all Management Applications and protect your IEM instance with a Firewall/WAF until a fix is available",
           "u": null
         },
         {
           "t": "Currently no fix is available",
+          "u": null
+        },
+        {
+          "t": "Update to V1.15.1 or later version",
           "u": null
         }
       ],
@@ -1428,22 +1433,49 @@
       "title": "CVE-2026-111497",
       "url": "https://cert-portal.siemens.com/productcert/html/ssa-898633.html",
       "released": "2026-10-30T00:00:00Z",
-      "updated": "2026-10-30T00:00:00Z",
+      "updated": "2026-11-27T00:00:00Z",
       "cves": [
         "CVE-2026-111497"
       ],
       "sev": "CRITICAL",
       "cvss": 9.8,
       "products": [
-        "RUGGEDCOM APE1808 with Palo Alto Networks PAN-OS"
+        "Palo Alto Networks PAN-OS VM-Series installed on RUGGEDCOM APE1808"
       ],
       "fix": [
         {
-          "t": "Upgrade to corresponding available PAN-OS version. Contact customer support to receive additional patch and update information.",
+          "t": "set system setting brotli-encoding disable (CLI, 11.2.4+), or clear Allow Brotli Encoding under Device &gt; Setup &gt; Content-ID and commit (web UI, 12.1.2+)",
+          "u": null
+        },
+        {
+          "t": "Contact customer support to receive additional patch and update information.",
           "u": null
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "openSUSE-SU-2026:12361-1",
+      "src": "direct_csaf",
+      "vendor": "SUSE",
+      "title": "CVE-2026-18487",
+      "url": "https://www.suse.com/security/cve/CVE-2026-18487/",
+      "released": "2026-10-30T00:00:00Z",
+      "updated": "2026-11-27T10:11:57Z",
+      "cves": [
+        "CVE-2026-18487",
+        "CVE-2026-77679",
+        "CVE-2026-77682",
+        "CVE-2026-94291"
+      ],
+      "sev": "MODERATE",
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ALSA-2026:93072",
@@ -2342,6 +2374,412 @@
         "Red Hat streams for Apache Kafka 3"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-99129",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99129 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99129",
+      "released": "2026-10-30T06:06:41Z",
+      "updated": "2026-10-30T06:35:37Z",
+      "cves": [
+        "CVE-2026-99129"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99194",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99194 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99194",
+      "released": "2026-10-30T06:06:41Z",
+      "updated": "2026-10-30T06:35:41Z",
+      "cves": [
+        "CVE-2026-99194"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99101",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99101 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99101",
+      "released": "2026-10-30T06:06:42Z",
+      "updated": "2026-11-01T20:02:37Z",
+      "cves": [
+        "CVE-2026-99101"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99102",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99102 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99102",
+      "released": "2026-10-30T06:06:42Z",
+      "updated": "2026-10-30T06:35:35Z",
+      "cves": [
+        "CVE-2026-99102"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99104",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99104 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99104",
+      "released": "2026-10-30T06:06:42Z",
+      "updated": "2026-10-30T06:35:35Z",
+      "cves": [
+        "CVE-2026-99104"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99107",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99107 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99107",
+      "released": "2026-10-30T06:06:42Z",
+      "updated": "2026-10-30T06:35:35Z",
+      "cves": [
+        "CVE-2026-99107"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99108",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99108 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99108",
+      "released": "2026-10-30T06:06:42Z",
+      "updated": "2026-10-30T06:35:35Z",
+      "cves": [
+        "CVE-2026-99108"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99119",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99119 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99119",
+      "released": "2026-10-30T06:06:43Z",
+      "updated": "2026-10-30T06:35:36Z",
+      "cves": [
+        "CVE-2026-99119"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99125",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-99125",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99125",
+      "released": "2026-10-30T06:06:43Z",
+      "updated": "2026-10-30T06:35:37Z",
+      "cves": [
+        "CVE-2026-99125"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99168",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99168 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99168",
+      "released": "2026-10-30T06:06:43Z",
+      "updated": "2026-10-30T06:35:40Z",
+      "cves": [
+        "CVE-2026-99168"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99170",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99170 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99170",
+      "released": "2026-10-30T06:06:43Z",
+      "updated": "2026-10-30T06:35:40Z",
+      "cves": [
+        "CVE-2026-99170"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99188",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99188 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99188",
+      "released": "2026-10-30T06:06:44Z",
+      "updated": "2026-10-30T06:35:41Z",
+      "cves": [
+        "CVE-2026-99188"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99197",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99197 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99197",
+      "released": "2026-10-30T06:06:44Z",
+      "updated": "2026-10-30T06:35:42Z",
+      "cves": [
+        "CVE-2026-99197"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99198",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99198 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99198",
+      "released": "2026-10-30T06:06:44Z",
+      "updated": "2026-10-30T06:35:42Z",
+      "cves": [
+        "CVE-2026-99198"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99199",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99199 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99199",
+      "released": "2026-10-30T06:06:44Z",
+      "updated": "2026-10-30T06:35:42Z",
+      "cves": [
+        "CVE-2026-99199"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99200",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99200 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99200",
+      "released": "2026-10-30T06:06:44Z",
+      "updated": "2026-10-30T06:35:42Z",
+      "cves": [
+        "CVE-2026-99200"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99205",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99205 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99205",
+      "released": "2026-10-30T06:06:45Z",
+      "updated": "2026-10-30T06:35:42Z",
+      "cves": [
+        "CVE-2026-99205"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99207",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99207 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99207",
+      "released": "2026-10-30T06:06:45Z",
+      "updated": "2026-10-30T06:35:42Z",
+      "cves": [
+        "CVE-2026-99207"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99141",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99141 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99141",
+      "released": "2026-10-30T06:08:46Z",
+      "updated": "2026-10-30T06:35:38Z",
+      "cves": [
+        "CVE-2026-99141"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99144",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99144 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99144",
+      "released": "2026-10-30T06:08:46Z",
+      "updated": "2026-10-30T06:35:38Z",
+      "cves": [
+        "CVE-2026-99144"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99145",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99145 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99145",
+      "released": "2026-10-30T06:08:46Z",
+      "updated": "2026-10-30T06:35:38Z",
+      "cves": [
+        "CVE-2026-99145"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99149",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99149 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99149",
+      "released": "2026-10-30T06:08:46Z",
+      "updated": "2026-10-30T06:35:38Z",
+      "cves": [
+        "CVE-2026-99149"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99151",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99151 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99151",
+      "released": "2026-10-30T06:08:46Z",
+      "updated": "2026-10-30T06:35:38Z",
+      "cves": [
+        "CVE-2026-99151"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99162",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99162 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99162",
+      "released": "2026-10-30T06:08:47Z",
+      "updated": "2026-10-30T06:35:39Z",
+      "cves": [
+        "CVE-2026-99162"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99164",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99164 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99164",
+      "released": "2026-10-30T06:08:47Z",
+      "updated": "2026-10-30T06:35:39Z",
+      "cves": [
+        "CVE-2026-99164"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99177",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99177 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99177",
+      "released": "2026-10-30T06:08:47Z",
+      "updated": "2026-10-30T06:35:40Z",
+      "cves": [
+        "CVE-2026-99177"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99185",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99185 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99185",
+      "released": "2026-10-30T06:08:47Z",
+      "updated": "2026-10-30T06:35:41Z",
+      "cves": [
+        "CVE-2026-99185"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99186",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99186 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99186",
+      "released": "2026-10-30T06:08:47Z",
+      "updated": "2026-10-30T06:35:41Z",
+      "cves": [
+        "CVE-2026-99186"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99193",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99193 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99193",
+      "released": "2026-10-30T06:08:48Z",
+      "updated": "2026-10-30T06:35:41Z",
+      "cves": [
+        "CVE-2026-99193"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99195",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99195 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99195",
+      "released": "2026-10-30T06:08:48Z",
+      "updated": "2026-10-30T06:35:41Z",
+      "cves": [
+        "CVE-2026-99195"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-99196",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "CVE-2026-99196 does not affect BellSoft software",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99196",
+      "released": "2026-10-30T06:08:48Z",
+      "updated": "2026-10-30T06:35:42Z",
+      "cves": [
+        "CVE-2026-99196"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ROOT-APP-NPM-CVE-2026-111770",
@@ -4025,6 +4463,38 @@
       ],
       "products": [
         "Azure Linux: sqlite"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112673",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-119378 affecting package libdb 5.3.28-9",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119378",
+      "released": "2026-10-30T12:16:36Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-119378"
+      ],
+      "products": [
+        "Azure Linux: libdb"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112688",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-119566 affecting package telegraf 1.31.0-38",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119566",
+      "released": "2026-10-30T12:16:44Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-119566"
+      ],
+      "products": [
+        "Azure Linux: telegraf"
       ],
       "seen": "2026-11-27"
     },
@@ -6777,6 +7247,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-112336",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-119601 affecting package afflib for versions less than 3.7.23-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119601",
+      "released": "2026-10-30T14:16:48Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-119601"
+      ],
+      "products": [
+        "Azure Linux: afflib"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in afflib 3.7.23-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:22287-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -7034,6 +7526,38 @@
         "pistacheio pistache"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-112663",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-119729 affecting package gstreamer1-plugins-base 1.20.0-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119729",
+      "released": "2026-10-30T19:18:21Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-119729"
+      ],
+      "products": [
+        "Azure Linux: gstreamer1-plugins-base"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112714",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-119842 affecting package gstreamer1-plugins-base 1.20.0-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119842",
+      "released": "2026-10-30T19:18:22Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-119842"
+      ],
+      "products": [
+        "Azure Linux: gstreamer1-plugins-base"
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

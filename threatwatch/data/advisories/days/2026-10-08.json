@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-08",
-  "count": 262,
+  "count": 306,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1280",
@@ -779,6 +779,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BELL-CVE-2026-92262",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-92262",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-92262",
+      "released": "2026-10-08T00:13:52Z",
+      "updated": "2026-11-02T10:59:07Z",
+      "cves": [
+        "CVE-2026-92262"
+      ],
+      "products": [
+        "Alpaquita: mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb 10.6.28-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 11.4.13-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 11.8.9-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BELL-CVE-2025-55480",
       "src": "osv_bellsoft",
       "vendor": "Bellsoft",
@@ -1128,7 +1158,7 @@
       "title": "Twisted: IMAP wildcardToRegexp() ReDoS",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-106454.json",
       "released": "2026-10-08T01:15:31Z",
-      "updated": "2026-11-16T22:44:29Z",
+      "updated": "2026-11-27T01:08:41Z",
       "cves": [
         "CVE-2026-106454"
       ],
@@ -1136,6 +1166,7 @@
       "cvss": 4.3,
       "products": [
         "Azure Linux",
+        "firefox",
         "python-twisted",
         "azl4 firefox 0:156.0.1-13.azl4"
       ],
@@ -1904,6 +1935,28 @@
         },
         {
           "t": "Fixed in linux-lts 6.18.55-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-98353",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-98353",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-98353",
+      "released": "2026-10-08T06:05:44Z",
+      "updated": "2026-10-23T20:02:38Z",
+      "cves": [
+        "CVE-2026-98353"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.18.58-r0",
           "u": null
         }
       ],
@@ -3619,6 +3672,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-106736",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-107570 affecting package mutt 2.2.12-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107570",
+      "released": "2026-10-08T12:17:14Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-107570"
+      ],
+      "products": [
+        "Azure Linux: mutt"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "ROOT-APP-NPM-AIKIDO-2026-641142",
       "src": "osv_root",
       "vendor": "Root",
@@ -3913,6 +3982,70 @@
       ],
       "products": [
         "Azure Linux: msgpack"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107042",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-61801 affecting package buildah 1.43.1-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61801",
+      "released": "2026-10-08T17:17:17Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-61801"
+      ],
+      "products": [
+        "Azure Linux: buildah"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107072",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-61801 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61801",
+      "released": "2026-10-08T17:17:17Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-61801"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107099",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-61801 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61801",
+      "released": "2026-10-08T17:17:17Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-61801"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107111",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-61801 affecting package podman 5.6.1-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-61801",
+      "released": "2026-10-08T17:17:17Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-61801"
+      ],
+      "products": [
+        "Azure Linux: podman"
       ],
       "seen": "2026-11-27"
     },
@@ -4246,6 +4379,102 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-107057",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-107325 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107325",
+      "released": "2026-10-08T19:17:00Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-107325"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107060",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-107324 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107324",
+      "released": "2026-10-08T19:17:00Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-107324"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107084",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-107324 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107324",
+      "released": "2026-10-08T19:17:00Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-107324"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107090",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-107325 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107325",
+      "released": "2026-10-08T19:17:00Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-107325"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107108",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-107325 affecting package podman 5.6.1-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107325",
+      "released": "2026-10-08T19:17:00Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-107325"
+      ],
+      "products": [
+        "Azure Linux: podman"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107123",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-107324 affecting package podman 5.6.1-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-107324",
+      "released": "2026-10-08T19:17:00Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-107324"
+      ],
+      "products": [
+        "Azure Linux: podman"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-107595",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -4426,6 +4655,22 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107129",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-106435 affecting package python-pymongo 4.2.0-9",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106435",
+      "released": "2026-10-08T21:17:51Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-106435"
+      ],
+      "products": [
+        "Azure Linux: python-pymongo"
+      ],
       "seen": "2026-11-27"
     },
     {
@@ -4633,7 +4878,7 @@
       "title": "MIT Kerberos: Mehrere Schwachstellen ermöglichen Denial of Service",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3836",
       "released": "2026-10-08T22:00:00Z",
-      "updated": "2026-11-25T23:00:00Z",
+      "updated": "2026-11-26T23:00:00Z",
       "cves": [
         "CVE-2026-107708",
         "CVE-2026-107778"
@@ -4684,7 +4929,7 @@
       "title": "Golang Go: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3841",
       "released": "2026-10-08T22:00:00Z",
-      "updated": "2026-11-25T23:00:00Z",
+      "updated": "2026-11-26T23:00:00Z",
       "cves": [
         "CVE-2026-56857",
         "CVE-2026-56866",
@@ -5295,6 +5540,246 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-107021",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78659 affecting package azl-otel-collector 0.127.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78659",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78659"
+      ],
+      "products": [
+        "Azure Linux: azl-otel-collector"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107024",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78663 affecting package azl-otel-collector 0.127.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78663",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78663"
+      ],
+      "products": [
+        "Azure Linux: azl-otel-collector"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107033",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78660 affecting package azl-otel-collector 0.127.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78660",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78660"
+      ],
+      "products": [
+        "Azure Linux: azl-otel-collector"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107036",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78660 affecting package buildah 1.43.1-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78660",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78660"
+      ],
+      "products": [
+        "Azure Linux: buildah"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107039",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78659 affecting package buildah 1.43.1-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78659",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78659"
+      ],
+      "products": [
+        "Azure Linux: buildah"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107051",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78663 affecting package buildah 1.43.1-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78663",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78663"
+      ],
+      "products": [
+        "Azure Linux: buildah"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107054",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78660 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78660",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78660"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107066",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78663 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78663",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78663"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107069",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78659 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78659",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78659"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107087",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78659 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78659",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78659"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107093",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78663 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78663",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78663"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107096",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78660 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78660",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78660"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107105",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78660 affecting package podman 5.6.1-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78660",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78660"
+      ],
+      "products": [
+        "Azure Linux: podman"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107114",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78659 affecting package podman 5.6.1-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78659",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78659"
+      ],
+      "products": [
+        "Azure Linux: podman"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107120",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78663 affecting package podman 5.6.1-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78663",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78663"
+      ],
+      "products": [
+        "Azure Linux: podman"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-107147",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -5531,6 +6016,72 @@
       ],
       "products": [
         "Azure Linux: docker-compose"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107366",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78663 affecting package etcd for versions less than 3.5.35-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78663",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-78663"
+      ],
+      "products": [
+        "Azure Linux: etcd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in etcd 3.5.35-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107372",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78660 affecting package etcd for versions less than 3.5.35-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78660",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-78660"
+      ],
+      "products": [
+        "Azure Linux: etcd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in etcd 3.5.35-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107375",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78659 affecting package etcd for versions less than 3.5.35-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78659",
+      "released": "2026-10-08T23:17:03Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-78659"
+      ],
+      "products": [
+        "Azure Linux: etcd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in etcd 3.5.35-1",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -6031,6 +6582,108 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-107027",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78669 affecting package azl-otel-collector 0.127.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+      "released": "2026-10-08T23:17:04Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78669"
+      ],
+      "products": [
+        "Azure Linux: azl-otel-collector"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107045",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78669 affecting package buildah 1.43.1-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+      "released": "2026-10-08T23:17:04Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78669"
+      ],
+      "products": [
+        "Azure Linux: buildah"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107075",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78669 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+      "released": "2026-10-08T23:17:04Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78669"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107102",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78669 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+      "released": "2026-10-08T23:17:04Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78669"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107126",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78669 affecting package podman 5.6.1-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+      "released": "2026-10-08T23:17:04Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78669"
+      ],
+      "products": [
+        "Azure Linux: podman"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107369",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78669 affecting package etcd for versions less than 3.5.35-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78669",
+      "released": "2026-10-08T23:17:04Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-78669"
+      ],
+      "products": [
+        "Azure Linux: etcd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in etcd 3.5.35-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-107402",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -6191,6 +6844,86 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-107030",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-97032 affecting package azl-otel-collector 0.127.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97032",
+      "released": "2026-10-08T23:17:06Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-97032"
+      ],
+      "products": [
+        "Azure Linux: azl-otel-collector"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107048",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-97032 affecting package buildah 1.43.1-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97032",
+      "released": "2026-10-08T23:17:06Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-97032"
+      ],
+      "products": [
+        "Azure Linux: buildah"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107063",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-97032 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97032",
+      "released": "2026-10-08T23:17:06Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-97032"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107081",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-97032 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97032",
+      "released": "2026-10-08T23:17:06Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-97032"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107117",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-97032 affecting package podman 5.6.1-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97032",
+      "released": "2026-10-08T23:17:06Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-97032"
+      ],
+      "products": [
+        "Azure Linux: podman"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-107153",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -6251,6 +6984,28 @@
       ],
       "products": [
         "Azure Linux: docker-cli"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-107378",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-97032 affecting package etcd for versions less than 3.5.35-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97032",
+      "released": "2026-10-08T23:17:06Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-97032"
+      ],
+      "products": [
+        "Azure Linux: etcd"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in etcd 3.5.35-1",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },

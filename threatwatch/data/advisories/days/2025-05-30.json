@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-05-30",
-  "count": 2,
+  "count": 6,
   "items": [
     {
       "id": "msrc_CVE-2025-47273",
@@ -10,7 +10,7 @@
       "title": "setuptools has a path traversal vulnerability in PackageIndex.download that leads to Arbitrary File Write",
       "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2025-47273.json",
       "released": "2025-05-30T00:00:00Z",
-      "updated": "2026-11-16T22:32:57Z",
+      "updated": "2026-11-27T01:05:52Z",
       "cves": [
         "CVE-2025-47273"
       ],
@@ -19,10 +19,10 @@
       "products": [
         "Azure Linux",
         "python-setuptools",
+        "firefox",
         "cbl2 python-virtualenv 0:20.26.6-1.cbl2",
         "azl3 python3 0:3.12.9-1.azl3",
-        "azl3 tensorflow 0:2.16.1-9.azl3",
-        "azl3 python-virtualenv 0:20.36.1-1.azl3"
+        "azl3 tensorflow 0:2.16.1-9.azl3"
       ],
       "fix": [
         {
@@ -32,6 +32,98 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-pytorch-2025-2998",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PyTorch torch.nn.utils.rnn.pad_packed_sequence memory corruption",
+      "url": "https://github.com/pytorch/pytorch/issues/149622",
+      "released": "2025-05-30T05:56:55Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-2998"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: pytorch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pytorch 2.7.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-pytorch-2025-2999",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PyTorch torch.nn.utils.rnn.unpack_sequence memory corruption",
+      "url": "https://github.com/pytorch/pytorch/issues/149622",
+      "released": "2025-05-30T05:56:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-2999"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: pytorch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pytorch 2.7.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-pytorch-2025-3000",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PyTorch torch.jit.script memory corruption",
+      "url": "https://github.com/pytorch/pytorch/issues/149623",
+      "released": "2025-05-30T05:57:02Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3000"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: pytorch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pytorch 2.7.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-pytorch-2025-3001",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PyTorch torch.lstm_cell memory corruption",
+      "url": "https://github.com/pytorch/pytorch/issues/149626",
+      "released": "2025-05-30T05:57:06Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-3001"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: pytorch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pytorch 2.7.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-62282",

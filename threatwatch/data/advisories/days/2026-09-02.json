@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-02",
-  "count": 367,
+  "count": 372,
   "items": [
     {
       "id": "CERTFR-2026-ALE-009",
@@ -1992,6 +1992,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:23512-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openssl-3",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623512-1/",
+      "released": "2026-09-02T09:10:40Z",
+      "updated": "2026-09-17T16:21:54Z",
+      "cves": [
+        "CVE-2026-54874",
+        "CVE-2026-63072",
+        "CVE-2026-63074",
+        "CVE-2026-63076",
+        "CVE-2026-75803"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "SUSE-SU-2026:23513-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -2017,6 +2047,64 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:23515-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libvirt",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623515-1/",
+      "released": "2026-09-02T09:15:59Z",
+      "updated": "2026-09-17T16:21:57Z",
+      "cves": [
+        "CVE-2026-18917",
+        "CVE-2026-61477",
+        "CVE-2026-63622",
+        "CVE-2026-63623",
+        "CVE-2026-77159"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:23538-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openssl-3-livepatches",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623538-1/",
+      "released": "2026-09-02T09:18:15Z",
+      "updated": "2026-09-17T16:22:19Z",
+      "cves": [
+        "CVE-2026-14457",
+        "CVE-2026-63072",
+        "CVE-2026-63076"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "RHSA-2026:62507",
@@ -6121,6 +6209,40 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "GHSA-cvhv-g4rq-3hmw",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "ImageMagick: Memory Leak when providing invalid options to the cli",
+      "url": "https://github.com/advisories/GHSA-cvhv-g4rq-3hmw",
+      "released": "2026-09-02T14:27:49Z",
+      "updated": "2026-09-08T15:45:10Z",
+      "sev": "LOW",
+      "products": [
+        "NuGet: Magick.NET-Q16-AnyCPU",
+        "NuGet: Magick.NET-Q16-HDRI-AnyCPU",
+        "NuGet: Magick.NET-Q16-HDRI-OpenMP-arm64",
+        "NuGet: Magick.NET-Q16-HDRI-arm64",
+        "NuGet: Magick.NET-Q16-HDRI-x64",
+        "NuGet: Magick.NET-Q16-HDRI-x86"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in Magick.NET-Q16-AnyCPU 14.15.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in Magick.NET-Q16-HDRI-AnyCPU 14.15.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in Magick.NET-Q16-HDRI-OpenMP-arm64 14.15.0",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-27"
+    },
+    {
       "id": "GHSA-cw6x-m8jw-qmrh",
       "src": "github",
       "vendor": "Open source (GitHub)",
@@ -8287,6 +8409,29 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-66786",
+      "src": "cvelistv5",
+      "vendor": "Red Hat",
+      "title": "Submariner: submariner: ipsec.conf stanza injection via remote-supplied cablename and subnets",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-66786",
+      "released": "2026-09-02T17:57:19Z",
+      "updated": "2026-11-18T04:19:00Z",
+      "cves": [
+        "CVE-2026-66786"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "Red Hat Red Hat Advanced Cluster Management for Kubernetes 2.16",
+        "Red Hat Red Hat Advanced Cluster Management for Kubernetes 2.16",
+        "Red Hat Red Hat Advanced Cluster Management for Kubernetes 2.16",
+        "Red Hat Red Hat Advanced Cluster Management for Kubernetes 2.16",
+        "Red Hat Red Hat Advanced Cluster Management for Kubernetes 2.16",
+        "Red Hat Red Hat Advanced Cluster Management for Kubernetes 2.16"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RLSA-2026:62507",
       "src": "osv_rocky",
       "vendor": "Rocky",
@@ -9576,7 +9721,7 @@
       "title": "util-linux: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3160",
       "released": "2026-09-02T22:00:00Z",
-      "updated": "2026-11-25T23:00:00Z",
+      "updated": "2026-11-26T23:00:00Z",
       "cves": [
         "CVE-2026-78409",
         "CVE-2026-78410"

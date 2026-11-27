@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-05-14",
-  "count": 31,
+  "count": 35,
   "items": [
     {
       "id": "ICSA-24-135-04",
@@ -957,6 +957,114 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-php-2024-3096",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PHP function password_verify can erroneously return true when argument contains NUL",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-h746-cjrr-wfmr",
+      "released": "2024-05-14T07:29:06Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-3096"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.1.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.2.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-php-2024-2757",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PHP mb_encode_mimeheader runs endlessly for some inputs",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-fjp9-9hwx-59fq",
+      "released": "2024-05-14T07:29:20Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-2757"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.3.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-php-2024-1874",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Command injection via array-ish $command parameter of proc_open()",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-pc52-254m-w9w7",
+      "released": "2024-05-14T07:29:52Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-1874"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.1.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.2.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-scylladb-2023-33972",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Privilege escalation from having CREATE access on a keyspace in Scylladb",
+      "url": "https://github.com/scylladb/scylladb/security/advisories/GHSA-ww5v-p45p-3vhq",
+      "released": "2024-05-14T14:38:04Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-33972"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: scylladb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in scylladb 5.2.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

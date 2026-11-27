@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-10-15",
-  "count": 14,
+  "count": 16,
   "items": [
     {
       "id": "CVE-2023-7311",
@@ -107,6 +107,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-68519",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-39990 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-39990",
+      "released": "2025-10-15T08:15:37Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2025-39990"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "BIT-mastodon-2025-62174",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -194,6 +216,29 @@
         },
         {
           "t": "Fixed in mastodon 4.4.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-pytorch-2025-55560",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue in pytorch v2.7.0 can lead to a Denial of Service (DoS) when a PyTorch model consists of torch.Tensor.to_sparse() and torch.Tensor.to_dense() and is compiled by Inductor.",
+      "url": "https://gist.github.com/shaoyuyoung/0e7d2a586297ae9c8ed14d8706749efc",
+      "released": "2025-10-15T08:50:02Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-55560"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: pytorch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pytorch 2.7.1",
           "u": null
         }
       ],

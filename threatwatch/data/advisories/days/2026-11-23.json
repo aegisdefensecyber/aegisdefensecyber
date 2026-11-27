@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-23",
-  "count": 483,
+  "count": 498,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1599",
@@ -2617,7 +2617,7 @@
       "title": "## Who is affected",
       "url": "https://scout.docker.com/v/DHI-bpjp-bmps-262q-me5n",
       "released": "2026-11-23T09:56:39Z",
-      "updated": "2026-11-26T13:45:22Z",
+      "updated": "2026-11-27T09:28:18Z",
       "products": [
         "Docker Hardened Images: meilisearch",
         "Docker Hardened Images: mise",
@@ -2897,12 +2897,29 @@
       "title": "Vim 9.2.0405 before 9.2.1352 contains a security bypass vulnerability in expand_tag_fname() that allows attackers to…",
       "url": "https://scout.docker.com/v/DHI-yyc3-ehw3-r32l-kq52",
       "released": "2026-11-23T11:44:10Z",
-      "updated": "2026-11-25T19:18:38Z",
+      "updated": "2026-11-27T11:06:07Z",
       "cves": [
         "CVE-2026-134832"
       ],
-      "products": [
-        "Docker Hardened Images: vim"
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "src": "cisa_advisories",
+      "vendor": "CISA",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "released": "2026-11-23T12:00:00Z",
+      "updated": "2026-11-23T12:00:00Z",
+      "cves": [
+        "CVE-2026-133968",
+        "CVE-2026-134624"
+      ],
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -2993,7 +3010,7 @@
       "title": "Critical: php:8.3 security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:102226",
       "released": "2026-11-23T12:04:36Z",
-      "updated": "2026-11-27T00:08:07Z",
+      "updated": "2026-11-27T12:07:49Z",
       "cves": [
         "CVE-2026-115560",
         "CVE-2026-126714",
@@ -3039,7 +3056,7 @@
       "title": "Critical: php8.4 security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100821",
       "released": "2026-11-23T12:06:29Z",
-      "updated": "2026-11-27T00:09:34Z",
+      "updated": "2026-11-27T12:09:09Z",
       "cves": [
         "CVE-2026-115560",
         "CVE-2026-126714",
@@ -3075,6 +3092,120 @@
         },
         {
           "t": "Fixed in php8.4-fpm 0:8.4.28-1.el10_3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "openSUSE-SU-2026:22446-1",
+      "src": "direct_csaf",
+      "vendor": "SUSE",
+      "title": "CVE-2026-101516",
+      "url": "https://bugzilla.suse.com/1282358",
+      "released": "2026-11-23T13:05:53Z",
+      "updated": "2026-11-27T10:13:03Z",
+      "cves": [
+        "CVE-2026-101516",
+        "CVE-2026-114820",
+        "CVE-2026-114938",
+        "CVE-2026-114939",
+        "CVE-2026-114940",
+        "CVE-2026-114941",
+        "CVE-2026-114942",
+        "CVE-2026-114943",
+        "CVE-2026-114944",
+        "CVE-2026-114945",
+        "CVE-2026-114946",
+        "CVE-2026-114947",
+        "CVE-2026-83374",
+        "CVE-2026-83376",
+        "CVE-2026-83378",
+        "CVE-2026-83380",
+        "CVE-2026-83381",
+        "CVE-2026-83387",
+        "CVE-2026-83395",
+        "CVE-2026-83400",
+        "CVE-2026-87255",
+        "CVE-2026-87290",
+        "CVE-2026-87291",
+        "CVE-2026-87292",
+        "CVE-2026-87294",
+        "CVE-2026-87367",
+        "CVE-2026-91332",
+        "CVE-2026-91333",
+        "CVE-2026-91334",
+        "CVE-2026-91335",
+        "CVE-2026-91373",
+        "CVE-2026-91374",
+        "CVE-2026-91375",
+        "CVE-2026-91379",
+        "CVE-2026-91380",
+        "CVE-2026-91394",
+        "CVE-2026-91397",
+        "CVE-2026-91398",
+        "CVE-2026-91400",
+        "CVE-2026-91403",
+        "CVE-2026-91415",
+        "CVE-2026-91418",
+        "CVE-2026-91451",
+        "CVE-2026-91452",
+        "CVE-2026-91453",
+        "CVE-2026-91461",
+        "CVE-2026-91462",
+        "CVE-2026-91463",
+        "CVE-2026-91464",
+        "CVE-2026-91487"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "openSUSE-SU-2026:22457-1",
+      "src": "direct_csaf",
+      "vendor": "SUSE",
+      "title": "CVE-2026-118598",
+      "url": "https://bugzilla.suse.com/1275932",
+      "released": "2026-11-23T13:08:42Z",
+      "updated": "2026-11-27T10:13:15Z",
+      "cves": [
+        "CVE-2026-118598",
+        "CVE-2026-118599",
+        "CVE-2026-77679",
+        "CVE-2026-77682"
+      ],
+      "sev": "IMPORTANT",
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "openSUSE-SU-2026:22458-1",
+      "src": "direct_csaf",
+      "vendor": "SUSE",
+      "title": "CVE-2026-132999",
+      "url": "https://bugzilla.suse.com/1290943",
+      "released": "2026-11-23T13:08:42Z",
+      "updated": "2026-11-27T10:13:16Z",
+      "cves": [
+        "CVE-2026-132999"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
           "u": null
         }
       ],
@@ -3150,7 +3281,7 @@
       "title": "CVE-2026-101516",
       "url": "https://bugzilla.suse.com/1282358",
       "released": "2026-11-23T13:11:14Z",
-      "updated": "2026-11-26T10:30:53Z",
+      "updated": "2026-11-27T10:12:51Z",
       "cves": [
         "CVE-2026-101516",
         "CVE-2026-114820",
@@ -3361,13 +3492,33 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "openSUSE-SU-2026:22460-1",
+      "src": "direct_csaf",
+      "vendor": "SUSE",
+      "title": "CVE-2026-69150",
+      "url": "https://bugzilla.suse.com/1285392",
+      "released": "2026-11-23T14:05:52Z",
+      "updated": "2026-11-27T10:13:17Z",
+      "cves": [
+        "CVE-2026-69150"
+      ],
+      "sev": "MODERATE",
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:22419-1",
       "src": "direct_csaf",
       "vendor": "SUSE",
       "title": "CVE-2026-101516",
       "url": "https://bugzilla.suse.com/1282358",
       "released": "2026-11-23T14:32:44Z",
-      "updated": "2026-11-26T10:30:54Z",
+      "updated": "2026-11-27T10:12:52Z",
       "cves": [
         "CVE-2026-101516",
         "CVE-2026-114820",
@@ -4292,6 +4443,95 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "openSUSE-SU-2026:22448-1",
+      "src": "direct_csaf",
+      "vendor": "SUSE",
+      "title": "CVE-2026-132825",
+      "url": "https://bugzilla.suse.com/1290919",
+      "released": "2026-11-23T15:45:46Z",
+      "updated": "2026-11-27T10:13:05Z",
+      "cves": [
+        "CVE-2026-132825"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "openSUSE-SU-2026:22447-1",
+      "src": "direct_csaf",
+      "vendor": "SUSE",
+      "title": "CVE-2026-101516",
+      "url": "https://bugzilla.suse.com/1282358",
+      "released": "2026-11-23T15:49:13Z",
+      "updated": "2026-11-27T10:13:04Z",
+      "cves": [
+        "CVE-2026-101516",
+        "CVE-2026-114820",
+        "CVE-2026-114938",
+        "CVE-2026-114939",
+        "CVE-2026-114940",
+        "CVE-2026-114941",
+        "CVE-2026-114942",
+        "CVE-2026-114943",
+        "CVE-2026-114944",
+        "CVE-2026-114945",
+        "CVE-2026-114946",
+        "CVE-2026-83374",
+        "CVE-2026-83376",
+        "CVE-2026-83378",
+        "CVE-2026-83380",
+        "CVE-2026-83381",
+        "CVE-2026-83387",
+        "CVE-2026-83395",
+        "CVE-2026-83400",
+        "CVE-2026-87290",
+        "CVE-2026-87291",
+        "CVE-2026-87292",
+        "CVE-2026-87294",
+        "CVE-2026-87367",
+        "CVE-2026-91332",
+        "CVE-2026-91333",
+        "CVE-2026-91334",
+        "CVE-2026-91335",
+        "CVE-2026-91373",
+        "CVE-2026-91374",
+        "CVE-2026-91375",
+        "CVE-2026-91379",
+        "CVE-2026-91380",
+        "CVE-2026-91394",
+        "CVE-2026-91397",
+        "CVE-2026-91398",
+        "CVE-2026-91400",
+        "CVE-2026-91403",
+        "CVE-2026-91415",
+        "CVE-2026-91418",
+        "CVE-2026-91451",
+        "CVE-2026-91452",
+        "CVE-2026-91453",
+        "CVE-2026-91461",
+        "CVE-2026-91462",
+        "CVE-2026-91463",
+        "CVE-2026-91464",
+        "CVE-2026-91487"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "https://cyber.gc.ca/en/alerts-advisories/splunk-security-advisory-av26-1196",
       "src": "canada_cyber",
       "vendor": "Canadian Centre for Cyber Security",
@@ -4355,6 +4595,27 @@
       "updated": "2026-11-26T13:27:56Z",
       "products": [
         "Docker Hardened Images: logto-1"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-xtyh-hr7y-epay-fheq",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Cleartext storage in encrypted parquet file vulnerability in Apache Arrow Rust (`parquet` crate), from version 55.0.0…",
+      "url": "https://scout.docker.com/v/DHI-xtyh-hr7y-epay-fheq",
+      "released": "2026-11-23T16:16:23Z",
+      "updated": "2026-11-27T09:32:47Z",
+      "cves": [
+        "CVE-2026-125651"
+      ],
+      "products": [
+        "Docker Hardened Images: influxdb3-3.10",
+        "Docker Hardened Images: influxdb3-3.11",
+        "Docker Hardened Images: influxdb3-3.12",
+        "Docker Hardened Images: milvus-3.0",
+        "Docker Hardened Images: milvus-3.0-fips",
+        "Docker Hardened Images: milvus-3.0-fips-libs"
       ],
       "seen": "2026-11-27"
     },
@@ -9310,7 +9571,7 @@
       "title": "(*x509.Certificate).VerifyHostname previously called matchHostnames in a loop over all DNS Subject Alternative Name…",
       "url": "https://scout.docker.com/v/DHI-554x-5ycn-wpon-7svs",
       "released": "2026-11-23T20:40:10Z",
-      "updated": "2026-11-26T19:29:41Z",
+      "updated": "2026-11-27T16:18:06Z",
       "cves": [
         "CVE-2026-27145"
       ],
@@ -9345,7 +9606,7 @@
       "title": "When returning errors, functions in the net/textproto package would include its input as part of the error. This might…",
       "url": "https://scout.docker.com/v/DHI-laym-z65s-p7pq-lx7k",
       "released": "2026-11-23T20:40:10Z",
-      "updated": "2026-11-26T19:41:02Z",
+      "updated": "2026-11-27T14:44:15Z",
       "cves": [
         "CVE-2026-42507"
       ],
@@ -9374,13 +9635,167 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "DHI-kxjd-r66v-e5eo-l7yp",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Moby is an open source container framework. Prior to version 29.3.1, a security vulnerability has been detected that…",
+      "url": "https://scout.docker.com/v/DHI-kxjd-r66v-e5eo-l7yp",
+      "released": "2026-11-23T20:42:02Z",
+      "updated": "2026-11-27T14:26:43Z",
+      "cves": [
+        "CVE-2026-33997"
+      ],
+      "products": [
+        "Docker Hardened Images: cdi",
+        "Docker Hardened Images: cdi-apiserver",
+        "Docker Hardened Images: cdi-apiserver-dev",
+        "Docker Hardened Images: cdi-apiserver-fips",
+        "Docker Hardened Images: cdi-apiserver-fips-dev",
+        "Docker Hardened Images: cdi-cloner"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-25yo-copv-kazd-22vu",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Moby is an open source container framework. In Docker Engine prior to version 29.5.1, Docker Daemon versions 28.5.2 and…",
+      "url": "https://scout.docker.com/v/DHI-25yo-copv-kazd-22vu",
+      "released": "2026-11-23T20:42:17Z",
+      "updated": "2026-11-27T14:26:43Z",
+      "cves": [
+        "CVE-2026-41568"
+      ],
+      "products": [
+        "Docker Hardened Images: cdi",
+        "Docker Hardened Images: cdi-apiserver",
+        "Docker Hardened Images: cdi-apiserver-dev",
+        "Docker Hardened Images: cdi-apiserver-fips",
+        "Docker Hardened Images: cdi-apiserver-fips-dev",
+        "Docker Hardened Images: cdi-cloner"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-7k3j-7jhm-rb5z-sywi",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Moby is an open source container framework. In versions prior to 29.5.1 and in moby/moby v2 prior to v2.0.0-beta.14…",
+      "url": "https://scout.docker.com/v/DHI-7k3j-7jhm-rb5z-sywi",
+      "released": "2026-11-23T20:42:17Z",
+      "updated": "2026-11-27T14:26:43Z",
+      "cves": [
+        "CVE-2026-41567"
+      ],
+      "products": [
+        "Docker Hardened Images: cdi",
+        "Docker Hardened Images: cdi-apiserver",
+        "Docker Hardened Images: cdi-apiserver-dev",
+        "Docker Hardened Images: cdi-apiserver-fips",
+        "Docker Hardened Images: cdi-apiserver-fips-dev",
+        "Docker Hardened Images: cdi-cloner"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-g3vo-jsui-bv5e-ellm",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Moby is an open source container framework. In Docker Engine prior to version 29.5.1, Docker Daemon versions 28.5.2 and…",
+      "url": "https://scout.docker.com/v/DHI-g3vo-jsui-bv5e-ellm",
+      "released": "2026-11-23T20:42:17Z",
+      "updated": "2026-11-27T14:26:43Z",
+      "cves": [
+        "CVE-2026-42306"
+      ],
+      "products": [
+        "Docker Hardened Images: cdi",
+        "Docker Hardened Images: cdi-apiserver",
+        "Docker Hardened Images: cdi-apiserver-dev",
+        "Docker Hardened Images: cdi-apiserver-fips",
+        "Docker Hardened Images: cdi-apiserver-fips-dev",
+        "Docker Hardened Images: cdi-cloner"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-cxkr-evla-m2cx-wnso",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A malicious GOPROXY was previously capable of forging up to two sumdb tiles that allow for a requested module to bypass…",
+      "url": "https://scout.docker.com/v/DHI-cxkr-evla-m2cx-wnso",
+      "released": "2026-11-23T20:48:33Z",
+      "updated": "2026-11-27T11:36:22Z",
+      "cves": [
+        "CVE-2026-56865"
+      ],
+      "products": [
+        "Docker Hardened Images: alertmanager",
+        "Docker Hardened Images: alertmanager-dev",
+        "Docker Hardened Images: alertmanager-fips",
+        "Docker Hardened Images: alertmanager-fips-dev",
+        "Docker Hardened Images: amazon-vpc-cni-k8s",
+        "Docker Hardened Images: amazon-vpc-cni-k8s-dev"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang-1.26-dev 1.26.6-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang-1.26-dev 1.26.6-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang-1.26 1.26.6-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-dgio-lu5f-u3m3-h3k6",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A malicious GOSUMDB was capable of serving arbitrary module content not contained within the transparency log. This…",
+      "url": "https://scout.docker.com/v/DHI-dgio-lu5f-u3m3-h3k6",
+      "released": "2026-11-23T20:48:33Z",
+      "updated": "2026-11-27T11:36:10Z",
+      "cves": [
+        "CVE-2026-56864"
+      ],
+      "products": [
+        "Docker Hardened Images: alertmanager",
+        "Docker Hardened Images: alertmanager-dev",
+        "Docker Hardened Images: alertmanager-fips",
+        "Docker Hardened Images: alertmanager-fips-dev",
+        "Docker Hardened Images: amazon-vpc-cni-k8s",
+        "Docker Hardened Images: amazon-vpc-cni-k8s-dev"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in golang-1.26-dev 1.26.6-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang-1.26-dev 1.26.6-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in golang-1.26 1.26.6-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-nlat-w2pc-22ps-ah64",
       "src": "osv_dhi",
       "vendor": "Dhi",
       "title": "A norm.Iter can enter an infinite loop when handling input containing invalid UTF-8 bytes.",
       "url": "https://scout.docker.com/v/DHI-nlat-w2pc-22ps-ah64",
       "released": "2026-11-23T20:49:00Z",
-      "updated": "2026-11-26T14:22:12Z",
+      "updated": "2026-11-27T14:44:31Z",
       "cves": [
         "CVE-2026-56852"
       ],
@@ -9722,7 +10137,7 @@
       "title": "Decoding a maliciously-crafted MIME header containing many invalid encoded-words can consume excessive CPU.",
       "url": "https://scout.docker.com/v/DHI-wpbf-qrfa-4qon-ihwm",
       "released": "2026-11-23T20:54:11Z",
-      "updated": "2026-11-26T20:09:08Z",
+      "updated": "2026-11-27T06:24:28Z",
       "cves": [
         "CVE-2026-42504"
       ],
@@ -10110,7 +10525,7 @@
       "title": "ws.ReadFrame, ws.MustReadFrame, and the wsutil message readers allocate a buffer of the payload length declared in the…",
       "url": "https://scout.docker.com/v/DHI-nun6-vp5j-n2rx-ara2",
       "released": "2026-11-23T21:01:35Z",
-      "updated": "2026-11-26T13:16:40Z",
+      "updated": "2026-11-27T15:02:32Z",
       "products": [
         "Docker Hardened Images: cloudflared",
         "Docker Hardened Images: cloudflared-dev",
@@ -10118,6 +10533,20 @@
         "Docker Hardened Images: cloudflared-fips-dev",
         "Docker Hardened Images: grafana-image-renderer",
         "Docker Hardened Images: grafana-image-renderer-dev"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grafana-image-renderer-dev 5.12.11-r2",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana-image-renderer-dev 5.12.11-r2",
+          "u": null
+        },
+        {
+          "t": "Fixed in grafana-image-renderer 5.12.11-r2",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -10351,12 +10780,9 @@
       "title": "A flaw was found in hivex. By supplying a specially crafted Windows registry hive file, an attacker can trigger an…",
       "url": "https://scout.docker.com/v/DHI-cgig-zxpu-zt5z-qt5q",
       "released": "2026-11-23T22:07:18Z",
-      "updated": "2026-11-23T22:07:18Z",
+      "updated": "2026-11-27T11:05:38Z",
       "cves": [
         "CVE-2026-120740"
-      ],
-      "products": [
-        "Docker Hardened Images: hivex"
       ],
       "seen": "2026-11-26"
     },
@@ -11368,11 +11794,11 @@
     {
       "id": "WID-SEC-W-2026-4769",
       "src": "csaf_certbund",
-      "vendor": "VMware",
+      "vendor": "Google",
       "title": "VMware Cloud Foundation, vSphere, vCenter Server, ESXi, Workstation, Fusion und Tools: Mehrere Schwachstellen",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4769",
       "released": "2026-11-23T23:00:00Z",
-      "updated": "2026-11-25T23:00:00Z",
+      "updated": "2026-11-26T23:00:00Z",
       "cves": [
         "CVE-2026-123903",
         "CVE-2026-123904",
@@ -11392,12 +11818,12 @@
       ],
       "sev": "HIGH",
       "products": [
+        "Google Cloud Platform",
         "Cloud Foundation",
         "ESXi",
         "Fusion",
         "Tools",
-        "Workstation",
-        "vCenter Server"
+        "Workstation"
       ],
       "lang": "de",
       "seen": "2026-11-26"
@@ -11424,7 +11850,7 @@
       "title": "OpenSSL: Mehrere Schwachstellen ermöglichen Denial of Service",
       "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-4771",
       "released": "2026-11-23T23:00:00Z",
-      "updated": "2026-11-24T23:00:00Z",
+      "updated": "2026-11-26T23:00:00Z",
       "cves": [
         "CVE-2026-107494",
         "CVE-2026-121482",
@@ -11432,10 +11858,38 @@
       ],
       "sev": "MEDIUM",
       "products": [
-        "OpenSSL"
+        "OpenSSL",
+        "Red Hat Enterprise Linux"
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "DHI-ma2l-afkm-cy63-h7g4",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "JLine is a Java library for handling console input. From 3.0.0 until 3.30.15 and 4.3.1, the JLine built-in less viewer…",
+      "url": "https://scout.docker.com/v/DHI-ma2l-afkm-cy63-h7g4",
+      "released": "2026-11-23T23:16:49Z",
+      "updated": "2026-11-27T10:40:11Z",
+      "cves": [
+        "CVE-2026-77423"
+      ],
+      "products": [
+        "Docker Hardened Images: activemq-artemis",
+        "Docker Hardened Images: data-prepper",
+        "Docker Hardened Images: datahub-upgrade",
+        "Docker Hardened Images: druid-36",
+        "Docker Hardened Images: druid-36-fips",
+        "Docker Hardened Images: druid-37"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in activemq-artemis 2.56.0-0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "USN-9189-1",

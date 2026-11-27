@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-01-02",
-  "count": 8,
+  "count": 9,
   "items": [
     {
       "id": "openSUSE-SU-2026:10003-1",
@@ -226,6 +226,37 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-pebble-2024-3250",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "It was discovered that Canonical's Pebble service manager read-file API and the associated pebble pull command, before v1.10.2, allowed unprivileged local users to read files with root-equivalent permissions when Pebble…",
+      "url": "https://github.com/canonical/pebble/security/advisories/GHSA-4685-2x5r-65pj",
+      "released": "2026-01-02T17:44:20Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-3250"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: pebble"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pebble 1.4.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in pebble 1.7.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in pebble 1.10.2",
+          "u": null
+        }
+      ],
       "seen": "2026-11-27"
     }
   ]

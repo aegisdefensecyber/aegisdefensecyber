@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-09-04",
-  "count": 173,
+  "count": 192,
   "items": [
     {
       "id": "msrc_CVE-2025-1365",
@@ -355,12 +355,10 @@
       "title": "md: Don't register sync_thread for reshape directly",
       "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-26756.json",
       "released": "2025-09-04T00:20:09Z",
-      "updated": "2026-11-05T15:05:09Z",
+      "updated": "2026-11-26T14:04:08Z",
       "cves": [
         "CVE-2024-26756"
       ],
-      "sev": "MEDIUM",
-      "cvss": 5.5,
       "products": [
         "Azure Linux",
         "kernel"
@@ -802,7 +800,7 @@
       "title": "btrfs: scrub: handle RST lookup error correctly",
       "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-41067.json",
       "released": "2025-09-04T00:39:06Z",
-      "updated": "2026-11-05T15:04:03Z",
+      "updated": "2026-11-26T14:04:24Z",
       "cves": [
         "CVE-2024-41067"
       ],
@@ -917,6 +915,26 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "msrc_CVE-2023-52632",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "drm/amdkfd: Fix lock dependency warning with srcu",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2023-52632.json",
+      "released": "2025-09-04T00:46:27Z",
+      "updated": "2026-11-26T14:04:22Z",
+      "cves": [
+        "CVE-2023-52632"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
     },
     {
       "id": "msrc_CVE-2024-57898",
@@ -1568,7 +1586,7 @@
       "title": "drm/dp: Fix OOB read when handling Post Cursor2 register",
       "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2022-49218.json",
       "released": "2025-09-04T01:25:00Z",
-      "updated": "2026-09-17T01:49:07Z",
+      "updated": "2026-11-26T14:04:32Z",
       "cves": [
         "CVE-2022-49218"
       ],
@@ -2534,7 +2552,7 @@
       "title": "drm/amd/display: Disable idle reallow as part of command/gpint execution",
       "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-36024.json",
       "released": "2025-09-04T02:42:30Z",
-      "updated": "2026-11-05T15:04:58Z",
+      "updated": "2026-11-26T14:04:56Z",
       "cves": [
         "CVE-2024-36024"
       ],
@@ -3067,7 +3085,7 @@
       "title": "srcu: Tighten cleanup_srcu_struct() GP checks",
       "url": "https://msrc.microsoft.com/csaf/vex/2025/msrc_cve-2022-49651.json",
       "released": "2025-09-04T03:37:05Z",
-      "updated": "2026-09-22T14:46:50Z",
+      "updated": "2026-11-26T14:04:58Z",
       "cves": [
         "CVE-2022-49651"
       ],
@@ -3744,6 +3762,32 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "msrc_CVE-2024-8612",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "Qemu-kvm: information leak in virtio devices",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-8612.json",
+      "released": "2025-09-04T05:21:33Z",
+      "updated": "2026-11-26T14:10:31Z",
+      "cves": [
+        "CVE-2024-8612"
+      ],
+      "sev": "LOW",
+      "cvss": 3.8,
+      "products": [
+        "Azure Linux",
+        "qemu"
+      ],
+      "fix": [
+        {
+          "t": "0:9.1.0-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "msrc_CVE-2023-29403",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -4042,6 +4086,26 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "msrc_CVE-2024-36921",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "wifi: iwlwifi: mvm: guard against invalid STA ID on removal",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-36921.json",
+      "released": "2025-09-04T07:03:47Z",
+      "updated": "2026-11-26T14:06:46Z",
+      "cves": [
+        "CVE-2024-36921"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "Azure Linux",
+        "kernel"
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "msrc_CVE-2024-45782",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -4082,7 +4146,7 @@
       "title": "In the Linux kernel through 6.7.1, there is a use-after-free in cec_queue_msg_fh, related to drivers/media/cec/core/cec-adap.c and drivers/media/cec/core/cec-api.c.",
       "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-23848.json",
       "released": "2025-09-04T07:38:03Z",
-      "updated": "2026-11-05T14:56:17Z",
+      "updated": "2026-11-26T14:04:00Z",
       "cves": [
         "CVE-2024-23848"
       ],
@@ -4506,6 +4570,400 @@
         }
       ],
       "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2020-0951",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Windows Defender Application Control Security Feature Bypass Vulnerability",
+      "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0951",
+      "released": "2025-09-04T17:48:31Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-0951"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.0.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.1.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2020-1108",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": ".NET Core & .NET Framework Denial of Service Vulnerability",
+      "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1108",
+      "released": "2025-09-04T17:48:33Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-1108"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2021-41355",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": ".NET Core and Visual Studio Information Disclosure Vulnerability",
+      "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-41355",
+      "released": "2025-09-04T17:48:36Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-41355"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.1.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2021-43896",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Microsoft PowerShell Spoofing Vulnerability",
+      "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2021-43896",
+      "released": "2025-09-04T17:48:37Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-43896"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2022-23267",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": ".NET and Visual Studio Denial of Service Vulnerability",
+      "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-23267",
+      "released": "2025-09-04T17:48:39Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-23267"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.0.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.2.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2022-24512",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": ".NET and Visual Studio Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-24512",
+      "released": "2025-09-04T17:48:40Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-24512"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.0.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.1.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.2.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2022-41076",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PowerShell Remote Code Execution Vulnerability",
+      "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41076",
+      "released": "2025-09-04T17:48:44Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-41076"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2022-41121",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Windows Graphics Component Elevation of Privilege Vulnerability",
+      "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-41121",
+      "released": "2025-09-04T17:48:45Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-41121"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2023-36013",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PowerShell Information Disclosure Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36013",
+      "released": "2025-09-04T17:48:49Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-36013"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.2.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.3.10",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2024-0057",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "NET, .NET Framework, and Visual Studio Security Feature Bypass Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-0057",
+      "released": "2025-09-04T17:48:50Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-0057"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.2.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.3.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.4.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2024-21392",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": ".NET and Visual Studio Denial of Service Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-21392",
+      "released": "2025-09-04T17:48:52Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-21392"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.3.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2024-21409",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": ".NET, .NET Framework, and Visual Studio Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-21409",
+      "released": "2025-09-04T17:48:53Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-21409"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.2.19",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.4.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2024-26190",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Microsoft QUIC Denial of Service Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-26190",
+      "released": "2025-09-04T17:48:54Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-26190"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.3.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.4.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2024-30045",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": ".NET and Visual Studio Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-30045",
+      "released": "2025-09-04T17:48:56Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-30045"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.4.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2025-21171",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": ".NET Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21171",
+      "released": "2025-09-04T17:48:57Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-21171"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.5.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-powershell-2025-30399",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": ".NET and Visual Studio Remote Code Execution Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-30399",
+      "released": "2025-09-04T17:48:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-30399"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: powershell"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in powershell 7.4.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in powershell 7.5.2",
+          "u": null
+        }
+      ],
       "seen": "2026-11-27"
     },
     {

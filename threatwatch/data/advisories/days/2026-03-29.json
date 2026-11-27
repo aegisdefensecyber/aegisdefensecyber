@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-29",
-  "count": 16,
+  "count": 18,
   "items": [
     {
       "id": "openSUSE-SU-2026:10458-1",
@@ -239,7 +239,7 @@
       "title": "python-ecdsa: Denial of Service via improper DER length validation in crafted private keys",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-33936.json",
       "released": "2026-03-29T01:01:47Z",
-      "updated": "2026-11-16T22:50:28Z",
+      "updated": "2026-11-27T01:08:45Z",
       "cves": [
         "CVE-2026-33936"
       ],
@@ -248,6 +248,7 @@
       "products": [
         "Azure Linux",
         "python-ecdsa",
+        "firefox",
         "azl4 firefox 0:156.0.1-13.azl4",
         "azl4 mozjs140 0:140.13.0-6.azl4"
       ],
@@ -327,7 +328,7 @@
       "title": "Requests has Insecure Temp File Reuse in its extract_zipped_paths() utility function",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-25645.json",
       "released": "2026-03-29T01:02:28Z",
-      "updated": "2026-11-16T22:48:14Z",
+      "updated": "2026-11-27T01:08:28Z",
       "cves": [
         "CVE-2026-25645"
       ],
@@ -336,6 +337,7 @@
       "products": [
         "Azure Linux",
         "python-requests",
+        "firefox",
         "azl4 firefox 0:156.0.1-13.azl4",
         "azl4 mozjs140 0:140.13.0-6.azl4"
       ],
@@ -512,6 +514,52 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-23295",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-23295",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-23295",
+      "released": "2026-03-29T06:09:34Z",
+      "updated": "2026-10-23T20:02:17Z",
+      "cves": [
+        "CVE-2026-23295"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BELL-CVE-2026-23371",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-23371",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-23371",
+      "released": "2026-03-29T06:09:35Z",
+      "updated": "2026-11-03T20:02:56Z",
+      "cves": [
+        "CVE-2026-23371"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.191-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.115-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     }
   ]
 }

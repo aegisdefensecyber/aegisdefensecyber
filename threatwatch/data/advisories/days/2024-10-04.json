@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-10-04",
-  "count": 2,
+  "count": 6,
   "items": [
     {
       "id": "BIT-jenkins-2024-47804",
@@ -44,6 +44,122 @@
       "fix": [
         {
           "t": "Fixed in jenkins 2.462.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-python-2023-41105",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Python 3.11 through 3.11.4. If a path containing '\\0' bytes is passed to os.path.normpath(), the path will be truncated unexpectedly at the first '\\0' byte. There are plausible cases in which …",
+      "url": "https://security.netapp.com/advisory/ntap-20231006-0015/",
+      "released": "2024-10-04T16:35:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2023-41105"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: python"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python 3.11.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-python-2022-45061",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presen…",
+      "url": "https://github.com/python/cpython/issues/98433",
+      "released": "2024-10-04T16:38:13Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-45061"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: python"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python 3.7.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in python 3.10.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in python 3.11.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-python-2022-26488",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Python before 3.10.3 on Windows, local users can gain privileges because the search path is inadequately secured. The installer may allow a local attacker to add user-writable directories to the system search path. T…",
+      "url": "https://security.netapp.com/advisory/ntap-20220419-0005/",
+      "released": "2024-10-04T16:38:49Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-26488"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: python"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python 3.7.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in python 3.10.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in python 3.8.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-python-2021-3177",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Python 3.x through 3.9.1 has a buffer overflow in PyCArg_repr in _ctypes/callproc.c, which may lead to remote code execution in certain Python applications that accept floating-point numbers as untrusted input, as demon…",
+      "url": "https://bugs.python.org/issue42938",
+      "released": "2024-10-04T16:39:59Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2021-3177"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: python"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python 3.6.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in python 3.7.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in python 3.8.8",
           "u": null
         }
       ],

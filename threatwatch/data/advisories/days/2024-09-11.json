@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-09-11",
-  "count": 19,
+  "count": 20,
   "items": [
     {
       "id": "msrc_CVE-2012-6708",
@@ -10,12 +10,10 @@
       "title": "jQuery before 1.9.0 is vulnerable to Cross-site Scripting (XSS) attacks. The jQuery(strInput) function does not differentiate selectors from HTML in a reliable fashion. In vulnerable versions jQuery determined whether t…",
       "url": "https://msrc.microsoft.com/csaf/vex/2018/msrc_cve-2012-6708.json",
       "released": "2024-09-11T00:00:00Z",
-      "updated": "2026-11-16T22:15:10Z",
+      "updated": "2026-11-27T01:04:23Z",
       "cves": [
         "CVE-2012-6708"
       ],
-      "sev": "MEDIUM",
-      "cvss": 6.1,
       "products": [
         "Azure Linux",
         "slf4j",
@@ -48,19 +46,17 @@
       "title": "jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option causing text/javascript responses to be executed.",
       "url": "https://msrc.microsoft.com/csaf/vex/2018/msrc_cve-2015-9251.json",
       "released": "2024-09-11T00:00:00Z",
-      "updated": "2026-11-16T22:21:36Z",
+      "updated": "2026-11-27T01:04:29Z",
       "cves": [
         "CVE-2015-9251"
       ],
-      "sev": "MEDIUM",
-      "cvss": 6.1,
       "products": [
         "Azure Linux",
         "slf4j",
         "python-blinker",
         "ceph",
         "orangefs",
-        "azl3 mozjs 0:102.15.1-1.azl3"
+        "firefox"
       ],
       "fix": [
         {
@@ -86,7 +82,7 @@
       "title": "jQuery before 3.4.0 as used in Drupal Backdrop CMS and other products mishandles jQuery.extend(true {} ...) because of Object.prototype pollution. If an unsanitized source object contained an enumerable __proto__ proper…",
       "url": "https://msrc.microsoft.com/csaf/vex/2019/msrc_cve-2019-11358.json",
       "released": "2024-09-11T00:00:00Z",
-      "updated": "2026-11-16T22:15:48Z",
+      "updated": "2026-11-27T01:04:42Z",
       "cves": [
         "CVE-2019-11358"
       ],
@@ -97,8 +93,8 @@
         "m2crypto",
         "python-pygments",
         "orangefs",
-        "azl3 orangefs 0:2.9.8-3.azl3",
-        "cbl2 python-tensorboard 0:2.11.0-3.cbl2"
+        "firefox",
+        "azl3 orangefs 0:2.9.8-3.azl3"
       ],
       "fix": [
         {
@@ -441,6 +437,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "msrc_CVE-2024-27435",
+      "src": "csaf_microsoft",
+      "vendor": "Microsoft",
+      "title": "nvme: fix reconnection fail due to reserved tag allocation",
+      "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-27435.json",
+      "released": "2024-09-11T00:00:00Z",
+      "updated": "2026-11-26T14:10:15Z",
+      "cves": [
+        "CVE-2024-27435"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "Azure Linux",
+        "hyperv-daemons",
+        "cbl2 kernel 0:5.15.200.1-1.cbl2",
+        "cbl2 kernel 0:5.15.202.1-1.cbl2",
+        "cbl2 kernel 5.15.202.1-1",
+        "cbl2 kernel 0:5.15.186.1-1.cbl2"
+      ],
+      "fix": [
+        {
+          "t": "0:6.6.35.1-1.azl3:Security Update:https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade",
+          "u": "https://learn.microsoft.com/en-us/azure/azure-linux/tutorial-azure-linux-upgrade"
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "msrc_CVE-2024-35235",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -478,12 +504,10 @@
       "title": "dm-raid: really frozen sync_thread during suspend",
       "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-35794.json",
       "released": "2024-09-11T00:00:00Z",
-      "updated": "2026-11-05T15:03:40Z",
+      "updated": "2026-11-26T14:04:07Z",
       "cves": [
         "CVE-2024-35794"
       ],
-      "sev": "MEDIUM",
-      "cvss": 5.5,
       "products": [
         "Azure Linux",
         "hyperv-daemons",
@@ -506,7 +530,7 @@
       "title": "md/dm-raid: don't call md_reap_sync_thread() directly",
       "url": "https://msrc.microsoft.com/csaf/vex/2024/msrc_cve-2024-35808.json",
       "released": "2024-09-11T00:00:00Z",
-      "updated": "2026-11-05T15:05:12Z",
+      "updated": "2026-11-26T14:05:03Z",
       "cves": [
         "CVE-2024-35808"
       ],

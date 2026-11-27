@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-10-09",
-  "count": 11,
+  "count": 16,
   "items": [
     {
       "id": "openSUSE-SU-2024:0328-1",
@@ -50,6 +50,38 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-110330",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2024-9675 affecting package buildah 1.43.1-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9675",
+      "released": "2024-10-09T15:15:17Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2024-9675"
+      ],
+      "products": [
+        "Azure Linux: buildah"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112327",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2024-9675 affecting package python-flask 1.1.1-4",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9675",
+      "released": "2024-10-09T15:15:17Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2024-9675"
+      ],
+      "products": [
+        "Azure Linux: python-flask"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "AZL-112345",
@@ -175,6 +207,95 @@
       "sev": "MEDIUM",
       "products": [
         "Bitnami: keydb"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-redis-2024-31449",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Lua library commands may lead to stack overflow and RCE in Redis",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-whxg-wx83-85p5",
+      "released": "2024-10-09T16:41:01Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-31449"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: redis"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in redis 6.2.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in redis 7.2.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in redis 7.4.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-redis-2024-31228",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Denial-of-service due to unbounded pattern matching in Redis",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-66gq-c942-6976",
+      "released": "2024-10-09T16:41:13Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-31228"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: redis"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in redis 6.2.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in redis 7.2.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in redis 7.4.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-redis-2024-31227",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Denial-of-service due to malformed ACL selectors in Redis",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-38p4-26x2-vqhh",
+      "released": "2024-10-09T16:41:26Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-31227"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: redis"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in redis 7.2.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in redis 7.4.1",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },

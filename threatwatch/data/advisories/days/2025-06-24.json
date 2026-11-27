@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-06-24",
-  "count": 10,
+  "count": 12,
   "items": [
     {
       "id": "RHSA-2025:9418",
@@ -200,6 +200,52 @@
       ],
       "products": [
         "Azure Linux: podman"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openresty-2024-33452",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue in OpenResty lua-nginx-module v.0.10.26 and before allows a remote attacker to conduct HTTP request smuggling via a crafted HEAD request.",
+      "url": "https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn",
+      "released": "2025-06-24T14:52:16Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-33452"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: openresty"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openresty 1.25.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-rabbitmq-2025-50200",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "RabbitMQ Node can log Basic Auth header from an HTTP request",
+      "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-gh3x-4x42-fvq8",
+      "released": "2025-06-24T14:58:31Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-50200"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: rabbitmq"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in rabbitmq 4.0.8",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },

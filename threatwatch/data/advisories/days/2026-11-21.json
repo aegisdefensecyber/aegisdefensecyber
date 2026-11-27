@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-21",
-  "count": 285,
+  "count": 308,
   "items": [
     {
       "id": "ELA-1898-1",
@@ -92,6 +92,27 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "openSUSE-SU-2026:12646-1",
+      "src": "direct_csaf",
+      "vendor": "SUSE",
+      "title": "CVE-2024-21963",
+      "url": "https://www.suse.com/security/cve/CVE-2024-21963/",
+      "released": "2026-11-21T00:00:00Z",
+      "updated": "2026-11-27T10:12:11Z",
+      "cves": [
+        "CVE-2024-21963"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ALSA-2026:100991",
@@ -222,6 +243,23 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "DHI-ecd4-4ixx-7rqu-2ha2",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "wcmatch is a Python library for wildcard file-name matching. Prior to 11.2, under the default flags, matching a…",
+      "url": "https://scout.docker.com/v/DHI-ecd4-4ixx-7rqu-2ha2",
+      "released": "2026-11-21T00:49:15Z",
+      "updated": "2026-11-27T15:27:55Z",
+      "cves": [
+        "CVE-2026-132276"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: datahub-ingestion-locked"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "DHI-aloh-vhzp-t5aq-j6kc",
       "src": "osv_dhi",
       "vendor": "Dhi",
@@ -243,13 +281,43 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "DHI-wsbc-yvmf-m3vs-3qhl",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "PCRE2 before 10.49, when there is an attacker-controlled regular expression and certain JIT API usage, allows an…",
+      "url": "https://scout.docker.com/v/DHI-wsbc-yvmf-m3vs-3qhl",
+      "released": "2026-11-21T01:00:46Z",
+      "updated": "2026-11-27T03:55:56Z",
+      "cves": [
+        "CVE-2026-103111"
+      ],
+      "products": [
+        "Docker Hardened Images: pcre2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pcre2 10.49-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in pcre2 10.49-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in pcre2 10.46-1~deb13u3+dhi0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "msrc_CVE-2026-99368",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
       "title": "NFSD: Do not send CB_RECALL_ANY to NFSv4.0 clients",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99368.json",
       "released": "2026-11-21T01:01:42Z",
-      "updated": "2026-11-25T01:11:04Z",
+      "updated": "2026-11-26T14:11:25Z",
       "cves": [
         "CVE-2026-99368"
       ],
@@ -273,7 +341,7 @@
       "title": "ksmbd: prevent stale data from being written by SMB2 WRITE requests",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99534.json",
       "released": "2026-11-21T01:01:50Z",
-      "updated": "2026-11-25T01:10:36Z",
+      "updated": "2026-11-26T14:12:02Z",
       "cves": [
         "CVE-2026-99534"
       ],
@@ -297,7 +365,7 @@
       "title": "ksmbd: prevent share root removal through empty paths",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99535.json",
       "released": "2026-11-21T01:01:59Z",
-      "updated": "2026-11-25T01:10:42Z",
+      "updated": "2026-11-26T14:12:13Z",
       "cves": [
         "CVE-2026-99535"
       ],
@@ -321,7 +389,7 @@
       "title": "NFSD: copy SETXATTR data from all XDR buffer segments",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99370.json",
       "released": "2026-11-21T01:02:28Z",
-      "updated": "2026-11-25T01:11:09Z",
+      "updated": "2026-11-26T14:11:35Z",
       "cves": [
         "CVE-2026-99370"
       ],
@@ -347,7 +415,7 @@
       "title": "nfsd: clear XDR padding in GETXATTR replies",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99371.json",
       "released": "2026-11-21T01:02:59Z",
-      "updated": "2026-11-25T01:11:14Z",
+      "updated": "2026-11-26T14:11:40Z",
       "cves": [
         "CVE-2026-99371"
       ],
@@ -371,7 +439,7 @@
       "title": "ksmbd: preserve unreadable named streams on open",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99537.json",
       "released": "2026-11-21T01:03:01Z",
-      "updated": "2026-11-25T01:10:48Z",
+      "updated": "2026-11-26T14:12:19Z",
       "cves": [
         "CVE-2026-99537"
       ],
@@ -395,7 +463,7 @@
       "title": "NFSv4/flexfiles: fail I/O to the data server once a lock is lost",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99375.json",
       "released": "2026-11-21T01:03:10Z",
-      "updated": "2026-11-25T01:11:20Z",
+      "updated": "2026-11-26T14:11:44Z",
       "cves": [
         "CVE-2026-99375"
       ],
@@ -419,7 +487,7 @@
       "title": "ksmbd: ignore network devices of other namespaces",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99538.json",
       "released": "2026-11-21T01:03:13Z",
-      "updated": "2026-11-25T01:10:53Z",
+      "updated": "2026-11-26T14:12:25Z",
       "cves": [
         "CVE-2026-99538"
       ],
@@ -443,7 +511,7 @@
       "title": "NFSv4/pnfs: Free the netid when draining a data-server address list",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99376.json",
       "released": "2026-11-21T01:03:25Z",
-      "updated": "2026-11-25T01:11:24Z",
+      "updated": "2026-11-26T14:11:49Z",
       "cves": [
         "CVE-2026-99376"
       ],
@@ -467,7 +535,7 @@
       "title": "ksmbd: fix parent dentry lifetime in directory enumeration",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99540.json",
       "released": "2026-11-21T01:03:26Z",
-      "updated": "2026-11-25T01:10:59Z",
+      "updated": "2026-11-26T14:12:37Z",
       "cves": [
         "CVE-2026-99540"
       ],
@@ -511,7 +579,7 @@
       "title": "pnfs/blocklayout: Complete a device upcall when the pipe is closed",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99378.json",
       "released": "2026-11-21T01:03:42Z",
-      "updated": "2026-11-25T01:11:35Z",
+      "updated": "2026-11-26T14:12:11Z",
       "cves": [
         "CVE-2026-99378"
       ],
@@ -535,7 +603,7 @@
       "title": "backlight: qcom-wled: Fix NULL pointer dereference in wled_remove()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99543.json",
       "released": "2026-11-21T01:03:45Z",
-      "updated": "2026-11-25T01:11:03Z",
+      "updated": "2026-11-26T14:12:44Z",
       "cves": [
         "CVE-2026-99543"
       ],
@@ -559,7 +627,7 @@
       "title": "Drivers: hv: vmbus: Bounds check the shared ring buffer indices",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99544.json",
       "released": "2026-11-21T01:03:52Z",
-      "updated": "2026-11-25T01:11:08Z",
+      "updated": "2026-11-26T14:12:49Z",
       "cves": [
         "CVE-2026-99544"
       ],
@@ -621,7 +689,7 @@
       "title": "net/sched: cls_flower: avoid stale mask references after delete",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99546.json",
       "released": "2026-11-21T01:05:10Z",
-      "updated": "2026-11-25T01:11:13Z",
+      "updated": "2026-11-26T14:12:56Z",
       "cves": [
         "CVE-2026-99546"
       ],
@@ -647,7 +715,7 @@
       "title": "thunderbolt: Do not RPM complete unrelated subtrees on unplug",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99547.json",
       "released": "2026-11-21T01:05:19Z",
-      "updated": "2026-11-25T01:11:18Z",
+      "updated": "2026-11-26T14:13:03Z",
       "cves": [
         "CVE-2026-99547"
       ],
@@ -671,7 +739,7 @@
       "title": "smb: client: fix early procfs exposure race",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99548.json",
       "released": "2026-11-21T01:05:26Z",
-      "updated": "2026-11-25T01:11:23Z",
+      "updated": "2026-11-26T14:13:09Z",
       "cves": [
         "CVE-2026-99548"
       ],
@@ -695,7 +763,7 @@
       "title": "smb: client: fix buffer overflow in SMB2_tcon()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99385.json",
       "released": "2026-11-21T01:05:34Z",
-      "updated": "2026-11-25T01:11:52Z",
+      "updated": "2026-11-26T14:12:42Z",
       "cves": [
         "CVE-2026-99385"
       ],
@@ -721,7 +789,7 @@
       "title": "smb: client: do not pass a NULL buf to is_oplock_break()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99549.json",
       "released": "2026-11-21T01:05:34Z",
-      "updated": "2026-11-25T01:11:28Z",
+      "updated": "2026-11-26T14:14:05Z",
       "cves": [
         "CVE-2026-99549"
       ],
@@ -747,7 +815,7 @@
       "title": "ocfs2: pin owning modules for open debugfs files",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99550.json",
       "released": "2026-11-21T01:05:42Z",
-      "updated": "2026-11-25T01:11:33Z",
+      "updated": "2026-11-26T14:14:11Z",
       "cves": [
         "CVE-2026-99550"
       ],
@@ -771,7 +839,7 @@
       "title": "smb: smbdirect: fix buffer length underflow in RDMA transfers",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99388.json",
       "released": "2026-11-21T01:05:48Z",
-      "updated": "2026-11-25T01:12:02Z",
+      "updated": "2026-11-26T14:12:56Z",
       "cves": [
         "CVE-2026-99388"
       ],
@@ -797,7 +865,7 @@
       "title": "ocfs2: drain quorum work before removing the cluster",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99551.json",
       "released": "2026-11-21T01:05:50Z",
-      "updated": "2026-11-25T01:11:39Z",
+      "updated": "2026-11-26T14:14:16Z",
       "cves": [
         "CVE-2026-99551"
       ],
@@ -821,7 +889,7 @@
       "title": "smb: server: size directory name conversion buffer correctly",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99389.json",
       "released": "2026-11-21T01:05:58Z",
-      "updated": "2026-11-25T01:12:08Z",
+      "updated": "2026-11-26T14:13:04Z",
       "cves": [
         "CVE-2026-99389"
       ],
@@ -873,7 +941,7 @@
       "title": "ocfs2/dlm: drain join handlers before releasing module text",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99552.json",
       "released": "2026-11-21T01:06:07Z",
-      "updated": "2026-11-25T01:11:45Z",
+      "updated": "2026-11-26T14:14:23Z",
       "cves": [
         "CVE-2026-99552"
       ],
@@ -897,7 +965,7 @@
       "title": "xfs: bound inode fork length against the fork size during log recovery",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99395.json",
       "released": "2026-11-21T01:06:16Z",
-      "updated": "2026-11-25T01:01:29Z",
+      "updated": "2026-11-26T14:13:12Z",
       "cves": [
         "CVE-2026-99395"
       ],
@@ -923,7 +991,7 @@
       "title": "sevenz-rust2 is a Rust-native 7z compressor and `decompress`or. Prior to 0.21.1, extracting an attacker-supplied 7z…",
       "url": "https://scout.docker.com/v/DHI-36zy-rquw-dclp-atcu",
       "released": "2026-11-21T01:08:01Z",
-      "updated": "2026-11-26T13:45:22Z",
+      "updated": "2026-11-27T11:11:22Z",
       "cves": [
         "CVE-2026-61725"
       ],
@@ -939,7 +1007,7 @@
       "title": "net: usb: pegasus: do not advance rx_skb->data on dropped frames",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99554.json",
       "released": "2026-11-21T01:08:04Z",
-      "updated": "2026-11-25T01:11:53Z",
+      "updated": "2026-11-26T14:14:28Z",
       "cves": [
         "CVE-2026-99554"
       ],
@@ -963,7 +1031,7 @@
       "title": "xfs: bound da-node entry count against the correct geometry",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99396.json",
       "released": "2026-11-21T01:08:40Z",
-      "updated": "2026-11-25T01:01:34Z",
+      "updated": "2026-11-26T14:14:05Z",
       "cves": [
         "CVE-2026-99396"
       ],
@@ -987,7 +1055,7 @@
       "title": "ksmbd: serialize directory emptiness checks with readdir",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99556.json",
       "released": "2026-11-21T01:08:45Z",
-      "updated": "2026-11-25T01:11:59Z",
+      "updated": "2026-11-26T14:14:33Z",
       "cves": [
         "CVE-2026-99556"
       ],
@@ -1013,7 +1081,7 @@
       "title": "xfs: reject remote xattr entries with an out-of-range value length",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99399.json",
       "released": "2026-11-21T01:08:56Z",
-      "updated": "2026-11-25T01:01:39Z",
+      "updated": "2026-11-26T14:14:14Z",
       "cves": [
         "CVE-2026-99399"
       ],
@@ -1039,7 +1107,7 @@
       "title": "ceph: fail readdir when the MDS reply carries no dirfrag",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99557.json",
       "released": "2026-11-21T01:08:56Z",
-      "updated": "2026-11-25T01:12:03Z",
+      "updated": "2026-11-26T14:14:42Z",
       "cves": [
         "CVE-2026-99557"
       ],
@@ -1063,7 +1131,7 @@
       "title": "blk-crypto: fix NULL deref and UAF in __blk_crypto_evict_key()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99558.json",
       "released": "2026-11-21T01:09:10Z",
-      "updated": "2026-11-25T01:12:08Z",
+      "updated": "2026-11-26T14:14:46Z",
       "cves": [
         "CVE-2026-99558"
       ],
@@ -1087,7 +1155,7 @@
       "title": "xfs: reject out-of-range attribute value lengths in xfs_attr_copy_value",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99400.json",
       "released": "2026-11-21T01:09:17Z",
-      "updated": "2026-11-25T01:01:44Z",
+      "updated": "2026-11-26T14:14:20Z",
       "cves": [
         "CVE-2026-99400"
       ],
@@ -1113,7 +1181,7 @@
       "title": "fork: don't create io threads once PF_POSTCOREDUMP is set",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99561.json",
       "released": "2026-11-21T01:09:26Z",
-      "updated": "2026-11-25T01:12:13Z",
+      "updated": "2026-11-26T14:14:50Z",
       "cves": [
         "CVE-2026-99561"
       ],
@@ -1137,7 +1205,7 @@
       "title": "xfs: mark overfull dabtree node blocks as corrupt",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99403.json",
       "released": "2026-11-21T01:09:37Z",
-      "updated": "2026-11-25T01:01:51Z",
+      "updated": "2026-11-26T14:14:28Z",
       "cves": [
         "CVE-2026-99403"
       ],
@@ -1161,7 +1229,7 @@
       "title": "xfs: check fork type against dabtree block magic number",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99404.json",
       "released": "2026-11-21T01:09:44Z",
-      "updated": "2026-11-25T01:01:57Z",
+      "updated": "2026-11-26T14:14:34Z",
       "cves": [
         "CVE-2026-99404"
       ],
@@ -1185,7 +1253,7 @@
       "title": "ksmbd: wait for negotiation before receiving another PDU",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99565.json",
       "released": "2026-11-21T01:09:44Z",
-      "updated": "2026-11-25T01:12:19Z",
+      "updated": "2026-11-26T14:14:56Z",
       "cves": [
         "CVE-2026-99565"
       ],
@@ -1227,7 +1295,7 @@
       "title": "ovl: skip copy up of empty security.capability",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99414.json",
       "released": "2026-11-21T01:09:57Z",
-      "updated": "2026-11-25T01:02:04Z",
+      "updated": "2026-11-26T14:02:12Z",
       "cves": [
         "CVE-2026-99414"
       ],
@@ -1251,7 +1319,7 @@
       "title": "ovl: set the revalidate flags after d_instantiate()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99415.json",
       "released": "2026-11-21T01:10:02Z",
-      "updated": "2026-11-25T01:02:09Z",
+      "updated": "2026-11-26T14:02:17Z",
       "cves": [
         "CVE-2026-99415"
       ],
@@ -1275,7 +1343,7 @@
       "title": "ovl: read the nlink xattr of every indexed non-dir",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99416.json",
       "released": "2026-11-21T01:10:08Z",
-      "updated": "2026-11-25T01:02:14Z",
+      "updated": "2026-11-26T14:02:21Z",
       "cves": [
         "CVE-2026-99416"
       ],
@@ -1299,7 +1367,7 @@
       "title": "ovl: fix a torn path in ovl_get_redirect()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99417.json",
       "released": "2026-11-21T01:10:20Z",
-      "updated": "2026-11-25T01:02:20Z",
+      "updated": "2026-11-26T14:02:25Z",
       "cves": [
         "CVE-2026-99417"
       ],
@@ -1323,7 +1391,7 @@
       "title": "ovl: do not copy up an xattr value that was never read",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99418.json",
       "released": "2026-11-21T01:10:30Z",
-      "updated": "2026-11-25T01:02:25Z",
+      "updated": "2026-11-26T14:02:30Z",
       "cves": [
         "CVE-2026-99418"
       ],
@@ -1347,7 +1415,7 @@
       "title": "ovl: do not copy up a dentry that was removed",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99419.json",
       "released": "2026-11-21T01:10:37Z",
-      "updated": "2026-11-25T01:02:30Z",
+      "updated": "2026-11-26T14:02:34Z",
       "cves": [
         "CVE-2026-99419"
       ],
@@ -1371,7 +1439,7 @@
       "title": "ovl: check that the parents of volatile/dirty are dirs",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99420.json",
       "released": "2026-11-21T01:10:43Z",
-      "updated": "2026-11-25T01:02:36Z",
+      "updated": "2026-11-26T14:02:38Z",
       "cves": [
         "CVE-2026-99420"
       ],
@@ -1395,7 +1463,7 @@
       "title": "ovl: use the pinned upper dir in ovl_fix_origin()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99422.json",
       "released": "2026-11-21T01:10:49Z",
-      "updated": "2026-11-25T01:02:41Z",
+      "updated": "2026-11-26T14:02:43Z",
       "cves": [
         "CVE-2026-99422"
       ],
@@ -1421,7 +1489,7 @@
       "title": "ovl: take a snapshot of the name for copy up",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99423.json",
       "released": "2026-11-21T01:10:59Z",
-      "updated": "2026-11-25T01:02:50Z",
+      "updated": "2026-11-26T14:02:46Z",
       "cves": [
         "CVE-2026-99423"
       ],
@@ -1445,7 +1513,7 @@
       "title": "ovl: set OVL_WHITEOUTS before publishing the upper dir",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99424.json",
       "released": "2026-11-21T01:11:06Z",
-      "updated": "2026-11-25T01:02:55Z",
+      "updated": "2026-11-26T14:02:51Z",
       "cves": [
         "CVE-2026-99424"
       ],
@@ -1471,7 +1539,7 @@
       "title": "ovl: hold a reference on the parent in readdir",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99425.json",
       "released": "2026-11-21T01:11:12Z",
-      "updated": "2026-11-25T01:03:00Z",
+      "updated": "2026-11-26T14:02:56Z",
       "cves": [
         "CVE-2026-99425"
       ],
@@ -1497,7 +1565,7 @@
       "title": "smb: client: fix OOB last_entry pointer from unbounded LastNameOffset",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99427.json",
       "released": "2026-11-21T01:11:28Z",
-      "updated": "2026-11-25T01:03:17Z",
+      "updated": "2026-11-26T14:03:14Z",
       "cves": [
         "CVE-2026-99427"
       ],
@@ -1521,7 +1589,7 @@
       "title": "ocfs2: snapshot dentry names in file and setattr traces",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99428.json",
       "released": "2026-11-21T01:11:35Z",
-      "updated": "2026-11-25T01:04:56Z",
+      "updated": "2026-11-26T14:03:19Z",
       "cves": [
         "CVE-2026-99428"
       ],
@@ -1563,7 +1631,7 @@
       "title": "ocfs2: pin refcount trees before dropping the lookup lock",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99429.json",
       "released": "2026-11-21T01:11:48Z",
-      "updated": "2026-11-25T01:05:05Z",
+      "updated": "2026-11-26T14:03:23Z",
       "cves": [
         "CVE-2026-99429"
       ],
@@ -1589,7 +1657,7 @@
       "title": "ocfs2: fix chunk number of the first chunk in a local quota file",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99430.json",
       "released": "2026-11-21T01:11:55Z",
-      "updated": "2026-11-25T01:05:12Z",
+      "updated": "2026-11-26T14:03:29Z",
       "cves": [
         "CVE-2026-99430"
       ],
@@ -1615,7 +1683,7 @@
       "title": "ocfs2: cancel quota sync work before freeing quota info",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99431.json",
       "released": "2026-11-21T01:12:05Z",
-      "updated": "2026-11-25T01:05:17Z",
+      "updated": "2026-11-26T14:03:34Z",
       "cves": [
         "CVE-2026-99431"
       ],
@@ -1639,7 +1707,7 @@
       "title": "ocfs2/dlm: hold the lookup reference across convert AST enqueue",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99432.json",
       "released": "2026-11-21T01:12:12Z",
-      "updated": "2026-11-25T01:05:23Z",
+      "updated": "2026-11-26T14:03:39Z",
       "cves": [
         "CVE-2026-99432"
       ],
@@ -1665,7 +1733,7 @@
       "title": "ksmbd: fix invalid pointer dereference when get_inode_acl() fails",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99323.json",
       "released": "2026-11-21T01:12:17Z",
-      "updated": "2026-11-25T01:08:03Z",
+      "updated": "2026-11-26T14:05:13Z",
       "cves": [
         "CVE-2026-99323"
       ],
@@ -1689,7 +1757,7 @@
       "title": "ocfs2/dlm: hold a lock reference across grant AST enqueue",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99433.json",
       "released": "2026-11-21T01:12:50Z",
-      "updated": "2026-11-25T01:05:28Z",
+      "updated": "2026-11-26T14:03:47Z",
       "cves": [
         "CVE-2026-99433"
       ],
@@ -1715,7 +1783,7 @@
       "title": "ksmbd: fix out-of-bounds read when padding the final compound response",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99324.json",
       "released": "2026-11-21T01:13:22Z",
-      "updated": "2026-11-25T01:08:11Z",
+      "updated": "2026-11-26T14:05:18Z",
       "cves": [
         "CVE-2026-99324"
       ],
@@ -1739,7 +1807,7 @@
       "title": "ocfs2/heartbeat: unlink live slots when their node is missing",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99434.json",
       "released": "2026-11-21T01:13:22Z",
-      "updated": "2026-11-25T01:05:34Z",
+      "updated": "2026-11-26T14:03:55Z",
       "cves": [
         "CVE-2026-99434"
       ],
@@ -1763,7 +1831,7 @@
       "title": "media: rc: mce_kbd: Fix inconsistent locking of keylock",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99438.json",
       "released": "2026-11-21T01:13:32Z",
-      "updated": "2026-11-25T01:05:40Z",
+      "updated": "2026-11-26T14:03:59Z",
       "cves": [
         "CVE-2026-99438"
       ],
@@ -1787,7 +1855,7 @@
       "title": "HID: roccat: kovaplus: reject short button reports",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99327.json",
       "released": "2026-11-21T01:13:33Z",
-      "updated": "2026-11-25T01:08:17Z",
+      "updated": "2026-11-26T14:05:23Z",
       "cves": [
         "CVE-2026-99327"
       ],
@@ -1811,7 +1879,7 @@
       "title": "HID: picoLCD: check for fb_deferred_io_init() error",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99328.json",
       "released": "2026-11-21T01:13:40Z",
-      "updated": "2026-11-25T01:08:23Z",
+      "updated": "2026-11-26T14:05:27Z",
       "cves": [
         "CVE-2026-99328"
       ],
@@ -1853,7 +1921,7 @@
       "title": "HID: cp2112: validate response report lengths",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99331.json",
       "released": "2026-11-21T01:13:47Z",
-      "updated": "2026-11-25T01:08:36Z",
+      "updated": "2026-11-26T14:05:32Z",
       "cves": [
         "CVE-2026-99331"
       ],
@@ -1877,7 +1945,7 @@
       "title": "phy: core: Fix race-condition between _of_phy_get() and try_module_get()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99446.json",
       "released": "2026-11-21T01:13:50Z",
-      "updated": "2026-11-25T01:05:50Z",
+      "updated": "2026-11-26T14:04:10Z",
       "cves": [
         "CVE-2026-99446"
       ],
@@ -1901,7 +1969,7 @@
       "title": "HID: amd_sfh: Use report type from request node",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99333.json",
       "released": "2026-11-21T01:13:55Z",
-      "updated": "2026-11-25T01:08:42Z",
+      "updated": "2026-11-26T14:05:37Z",
       "cves": [
         "CVE-2026-99333"
       ],
@@ -1925,7 +1993,7 @@
       "title": "ufs: use u64 for directory size in ufs_last_byte",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99448.json",
       "released": "2026-11-21T01:13:58Z",
-      "updated": "2026-11-25T01:05:55Z",
+      "updated": "2026-11-26T14:04:15Z",
       "cves": [
         "CVE-2026-99448"
       ],
@@ -1951,7 +2019,7 @@
       "title": "KVM: PPC: Book3S HV: Add preempt_disable() around virtual-mode HPTE bit-lock users",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99334.json",
       "released": "2026-11-21T01:14:01Z",
-      "updated": "2026-11-25T01:08:48Z",
+      "updated": "2026-11-26T14:06:21Z",
       "cves": [
         "CVE-2026-99334"
       ],
@@ -1975,7 +2043,7 @@
       "title": "usb: gadget: fix refcount underflow in gadgetfs_bind() error path",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99449.json",
       "released": "2026-11-21T01:14:08Z",
-      "updated": "2026-11-25T01:06:00Z",
+      "updated": "2026-11-26T14:04:20Z",
       "cves": [
         "CVE-2026-99449"
       ],
@@ -1999,7 +2067,7 @@
       "title": "KVM: x86: Zero reserved synic flags when delivering message to avoid stack leak",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99339.json",
       "released": "2026-11-21T01:14:09Z",
-      "updated": "2026-11-25T01:08:57Z",
+      "updated": "2026-11-26T14:06:35Z",
       "cves": [
         "CVE-2026-99339"
       ],
@@ -2023,7 +2091,7 @@
       "title": "KVM: x86: Request event processing for exception VM-Exits",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99341.json",
       "released": "2026-11-21T01:14:15Z",
-      "updated": "2026-11-25T01:09:02Z",
+      "updated": "2026-11-26T14:06:42Z",
       "cves": [
         "CVE-2026-99341"
       ],
@@ -2065,7 +2133,7 @@
       "title": "wifi: ath9k: delete channel-context timers on deinit",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99452.json",
       "released": "2026-11-21T01:14:22Z",
-      "updated": "2026-11-25T01:06:06Z",
+      "updated": "2026-11-26T14:04:25Z",
       "cves": [
         "CVE-2026-99452"
       ],
@@ -2107,7 +2175,7 @@
       "title": "xen-blkfront: unbind irq before tearing down ring and shadow requests",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99453.json",
       "released": "2026-11-21T01:14:30Z",
-      "updated": "2026-11-25T01:06:11Z",
+      "updated": "2026-11-26T14:04:30Z",
       "cves": [
         "CVE-2026-99453"
       ],
@@ -2131,7 +2199,7 @@
       "title": "KVM: x86/mmu: Bug the VM if KVM attempts to walk more levels than the MMU has",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99343.json",
       "released": "2026-11-21T01:14:31Z",
-      "updated": "2026-11-25T01:09:08Z",
+      "updated": "2026-11-26T14:06:51Z",
       "cves": [
         "CVE-2026-99343"
       ],
@@ -2157,7 +2225,7 @@
       "title": "KVM: nSVM: Ignore EFER.LMA if EFER.LME=0 when preparing L2 state",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99344.json",
       "released": "2026-11-21T01:14:38Z",
-      "updated": "2026-11-25T01:09:15Z",
+      "updated": "2026-11-26T14:07:04Z",
       "cves": [
         "CVE-2026-99344"
       ],
@@ -2181,7 +2249,7 @@
       "title": "serial: core: shut down initialized port on removal",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99455.json",
       "released": "2026-11-21T01:14:42Z",
-      "updated": "2026-11-25T01:06:20Z",
+      "updated": "2026-11-26T14:04:38Z",
       "cves": [
         "CVE-2026-99455"
       ],
@@ -2205,7 +2273,7 @@
       "title": "scsi: dc395x: sync the waiting_timer before freeing the host",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99456.json",
       "released": "2026-11-21T01:14:49Z",
-      "updated": "2026-11-25T01:06:25Z",
+      "updated": "2026-11-26T14:04:45Z",
       "cves": [
         "CVE-2026-99456"
       ],
@@ -2229,7 +2297,7 @@
       "title": "KVM: SVM: Trigger new ASID allocation in both VMCBs on pCPU switch",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99346.json",
       "released": "2026-11-21T01:14:51Z",
-      "updated": "2026-11-25T01:09:27Z",
+      "updated": "2026-11-26T14:07:15Z",
       "cves": [
         "CVE-2026-99346"
       ],
@@ -2255,7 +2323,7 @@
       "title": "afs: Fix afs to abort the rxrpc call on send error",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99348.json",
       "released": "2026-11-21T01:15:04Z",
-      "updated": "2026-11-25T01:09:41Z",
+      "updated": "2026-11-26T14:07:31Z",
       "cves": [
         "CVE-2026-99348"
       ],
@@ -2315,7 +2383,7 @@
       "title": "media: microchip-isc: take a reference on the parsed endpoints",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99465.json",
       "released": "2026-11-21T01:15:15Z",
-      "updated": "2026-11-25T01:06:45Z",
+      "updated": "2026-11-26T14:05:00Z",
       "cves": [
         "CVE-2026-99465"
       ],
@@ -2339,7 +2407,7 @@
       "title": "rxrpc: Fix update of call->tx_pending without holding lock",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99350.json",
       "released": "2026-11-21T01:15:18Z",
-      "updated": "2026-11-25T01:09:47Z",
+      "updated": "2026-11-26T14:08:59Z",
       "cves": [
         "CVE-2026-99350"
       ],
@@ -2363,7 +2431,7 @@
       "title": "media: microchip-csi2dc: fix async notifier leak on probe error path",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99466.json",
       "released": "2026-11-21T01:15:22Z",
-      "updated": "2026-11-25T01:06:53Z",
+      "updated": "2026-11-26T14:05:04Z",
       "cves": [
         "CVE-2026-99466"
       ],
@@ -2387,7 +2455,7 @@
       "title": "sunrpc: treat empty auth.unix.gid replies as negative entries",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99351.json",
       "released": "2026-11-21T01:15:25Z",
-      "updated": "2026-11-25T01:09:53Z",
+      "updated": "2026-11-26T14:09:18Z",
       "cves": [
         "CVE-2026-99351"
       ],
@@ -2429,7 +2497,7 @@
       "title": "SUNRPC: trace an accepted transport before publishing it",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99352.json",
       "released": "2026-11-21T01:15:33Z",
-      "updated": "2026-11-25T01:09:59Z",
+      "updated": "2026-11-26T14:09:37Z",
       "cves": [
         "CVE-2026-99352"
       ],
@@ -2453,7 +2521,7 @@
       "title": "media: imx-jpeg: cancel timeout worker when streaming stops",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99468.json",
       "released": "2026-11-21T01:15:36Z",
-      "updated": "2026-11-25T01:06:59Z",
+      "updated": "2026-11-26T14:05:10Z",
       "cves": [
         "CVE-2026-99468"
       ],
@@ -2479,7 +2547,7 @@
       "title": "SUNRPC: Reject a socket that already has an svc_sock attached",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99353.json",
       "released": "2026-11-21T01:15:40Z",
-      "updated": "2026-11-25T01:10:04Z",
+      "updated": "2026-11-26T14:10:01Z",
       "cves": [
         "CVE-2026-99353"
       ],
@@ -2503,7 +2571,7 @@
       "title": "media: gspca: use vb2_video_unregister_device() on disconnect",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99469.json",
       "released": "2026-11-21T01:15:43Z",
-      "updated": "2026-11-25T01:07:06Z",
+      "updated": "2026-11-26T14:05:17Z",
       "cves": [
         "CVE-2026-99469"
       ],
@@ -2527,7 +2595,7 @@
       "title": "sunrpc: pin gss module across auth_domain RCU free",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99354.json",
       "released": "2026-11-21T01:15:47Z",
-      "updated": "2026-11-25T01:10:09Z",
+      "updated": "2026-11-26T14:10:08Z",
       "cves": [
         "CVE-2026-99354"
       ],
@@ -2551,7 +2619,7 @@
       "title": "media: cx23885: unregister DVB bus when SP2 CI setup fails",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99470.json",
       "released": "2026-11-21T01:15:49Z",
-      "updated": "2026-11-25T01:07:12Z",
+      "updated": "2026-11-26T14:05:21Z",
       "cves": [
         "CVE-2026-99470"
       ],
@@ -2575,7 +2643,7 @@
       "title": "SUNRPC: fix oversized GSS proxy token copy",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99355.json",
       "released": "2026-11-21T01:15:52Z",
-      "updated": "2026-11-25T01:10:14Z",
+      "updated": "2026-11-26T14:10:13Z",
       "cves": [
         "CVE-2026-99355"
       ],
@@ -2601,7 +2669,7 @@
       "title": "KVM: PPC: Book3S HV: Add SRCU protection for virtual-mode HPT hcalls",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99471.json",
       "released": "2026-11-21T01:15:55Z",
-      "updated": "2026-11-25T01:07:18Z",
+      "updated": "2026-11-26T14:05:25Z",
       "cves": [
         "CVE-2026-99471"
       ],
@@ -2627,7 +2695,7 @@
       "title": "SUNRPC: Copy the deferred RPC Call from the head buffer",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99357.json",
       "released": "2026-11-21T01:15:58Z",
-      "updated": "2026-11-25T01:10:20Z",
+      "updated": "2026-11-26T14:10:18Z",
       "cves": [
         "CVE-2026-99357"
       ],
@@ -2651,7 +2719,7 @@
       "title": "HID: hiddev: keep state alive through disconnect unlock",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99474.json",
       "released": "2026-11-21T01:16:00Z",
-      "updated": "2026-11-25T01:07:24Z",
+      "updated": "2026-11-26T14:05:29Z",
       "cves": [
         "CVE-2026-99474"
       ],
@@ -2675,7 +2743,7 @@
       "title": "nfsd: zero NFSv4 COMPOUND tag padding",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99358.json",
       "released": "2026-11-21T01:16:03Z",
-      "updated": "2026-11-25T01:10:24Z",
+      "updated": "2026-11-26T14:10:22Z",
       "cves": [
         "CVE-2026-99358"
       ],
@@ -2699,7 +2767,7 @@
       "title": "genirq: Defer kfree(irqaction) until irq_thread_dtor() finishes",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99475.json",
       "released": "2026-11-21T01:17:39Z",
-      "updated": "2026-11-25T01:07:30Z",
+      "updated": "2026-11-26T14:05:35Z",
       "cves": [
         "CVE-2026-99475"
       ],
@@ -2741,7 +2809,7 @@
       "title": "fbdev: atmel_lcdfb: Prevent FIFO work after removal",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99479.json",
       "released": "2026-11-21T01:17:56Z",
-      "updated": "2026-11-25T01:07:36Z",
+      "updated": "2026-11-26T14:05:39Z",
       "cves": [
         "CVE-2026-99479"
       ],
@@ -2765,7 +2833,7 @@
       "title": "nfsd: propagate SETXATTR value decode errors",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99361.json",
       "released": "2026-11-21T01:18:04Z",
-      "updated": "2026-11-25T01:10:31Z",
+      "updated": "2026-11-26T14:10:29Z",
       "cves": [
         "CVE-2026-99361"
       ],
@@ -2807,7 +2875,7 @@
       "title": "nfsd: preflight SEQUENCE replies before accepting a slot",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99362.json",
       "released": "2026-11-21T01:18:11Z",
-      "updated": "2026-11-25T01:10:38Z",
+      "updated": "2026-11-26T14:10:34Z",
       "cves": [
         "CVE-2026-99362"
       ],
@@ -2833,7 +2901,7 @@
       "title": "ALSA: emux: Fix UAF of soundfont zones at note-on",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99484.json",
       "released": "2026-11-21T01:18:12Z",
-      "updated": "2026-11-25T01:07:53Z",
+      "updated": "2026-11-26T14:06:31Z",
       "cves": [
         "CVE-2026-99484"
       ],
@@ -2859,7 +2927,7 @@
       "title": "NFSD: Map flex file layout IDs through the request's user namespace",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99363.json",
       "released": "2026-11-21T01:18:19Z",
-      "updated": "2026-11-25T01:10:44Z",
+      "updated": "2026-11-26T14:10:39Z",
       "cves": [
         "CVE-2026-99363"
       ],
@@ -2883,7 +2951,7 @@
       "title": "klist: avoid accesses after waking klist_remove()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99488.json",
       "released": "2026-11-21T01:18:21Z",
-      "updated": "2026-11-25T01:07:59Z",
+      "updated": "2026-11-26T14:06:41Z",
       "cves": [
         "CVE-2026-99488"
       ],
@@ -2907,7 +2975,7 @@
       "title": "nfsd: Fix id-to-name cache entry leak in idtoname_parse()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99365.json",
       "released": "2026-11-21T01:18:27Z",
-      "updated": "2026-11-25T01:10:49Z",
+      "updated": "2026-11-26T14:10:44Z",
       "cves": [
         "CVE-2026-99365"
       ],
@@ -2931,7 +2999,7 @@
       "title": "HID: wacom: Redesign shared sibling data lifecycle",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99489.json",
       "released": "2026-11-21T01:18:28Z",
-      "updated": "2026-11-25T01:08:06Z",
+      "updated": "2026-11-26T14:06:48Z",
       "cves": [
         "CVE-2026-99489"
       ],
@@ -2955,7 +3023,7 @@
       "title": "nfsd: don't modify a session slot when replaying its cached reply",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99366.json",
       "released": "2026-11-21T01:18:36Z",
-      "updated": "2026-11-25T01:10:54Z",
+      "updated": "2026-11-26T14:11:04Z",
       "cves": [
         "CVE-2026-99366"
       ],
@@ -2981,7 +3049,7 @@
       "title": "HID: wacom: Fix Use-After-Free in wacom_bamboo_pad",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99490.json",
       "released": "2026-11-21T01:18:37Z",
-      "updated": "2026-11-25T01:08:14Z",
+      "updated": "2026-11-26T14:07:04Z",
       "cves": [
         "CVE-2026-99490"
       ],
@@ -3005,7 +3073,7 @@
       "title": "NFSD: Don't complete a cld upcall the daemon has not read",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99367.json",
       "released": "2026-11-21T01:18:42Z",
-      "updated": "2026-11-25T01:10:59Z",
+      "updated": "2026-11-26T14:11:13Z",
       "cves": [
         "CVE-2026-99367"
       ],
@@ -3029,7 +3097,7 @@
       "title": "HID: wacom: Fix Use-After-Free in wacom_intuos_pad",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99491.json",
       "released": "2026-11-21T01:18:43Z",
-      "updated": "2026-11-25T01:08:19Z",
+      "updated": "2026-11-26T14:07:08Z",
       "cves": [
         "CVE-2026-99491"
       ],
@@ -3053,7 +3121,7 @@
       "title": "HID: wacom: Advertise SW_MUTE_DEVICE capability prior to registration",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99492.json",
       "released": "2026-11-21T01:18:50Z",
-      "updated": "2026-11-25T01:08:28Z",
+      "updated": "2026-11-26T14:07:12Z",
       "cves": [
         "CVE-2026-99492"
       ],
@@ -3077,7 +3145,7 @@
       "title": "s390/zcrypt: Fix out-of-bounds ptr advance in cca_query_crypto_facility()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99494.json",
       "released": "2026-11-21T01:18:57Z",
-      "updated": "2026-11-25T01:08:39Z",
+      "updated": "2026-11-26T14:07:18Z",
       "cves": [
         "CVE-2026-99494"
       ],
@@ -3101,7 +3169,7 @@
       "title": "s390/probes: Fix wrong opcode for cgrb fixup",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99497.json",
       "released": "2026-11-21T01:19:16Z",
-      "updated": "2026-11-25T01:08:52Z",
+      "updated": "2026-11-26T14:09:06Z",
       "cves": [
         "CVE-2026-99497"
       ],
@@ -3125,7 +3193,7 @@
       "title": "io_uring: defer foreign io-wq enqueues to task_work",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99798.json",
       "released": "2026-11-21T01:19:16Z",
-      "updated": "2026-11-25T01:02:41Z",
+      "updated": "2026-11-26T14:10:09Z",
       "cves": [
         "CVE-2026-99798"
       ],
@@ -3151,7 +3219,7 @@
       "title": "ata: sata_fsl: Fix use-after-free of host_priv on probe() failure",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99503.json",
       "released": "2026-11-21T01:19:23Z",
-      "updated": "2026-11-25T01:08:59Z",
+      "updated": "2026-11-26T14:09:25Z",
       "cves": [
         "CVE-2026-99503"
       ],
@@ -3175,7 +3243,7 @@
       "title": "io_uring/sqpoll: don't wait for the thread to exit",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99799.json",
       "released": "2026-11-21T01:19:24Z",
-      "updated": "2026-11-25T01:02:48Z",
+      "updated": "2026-11-26T14:10:14Z",
       "cves": [
         "CVE-2026-99799"
       ],
@@ -3199,7 +3267,7 @@
       "title": "apparmor: fix a use-after-free in aa_lookupn_ns()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99505.json",
       "released": "2026-11-21T01:19:29Z",
-      "updated": "2026-11-25T01:09:06Z",
+      "updated": "2026-11-26T14:09:43Z",
       "cves": [
         "CVE-2026-99505"
       ],
@@ -3223,7 +3291,7 @@
       "title": "io_uring/io-wq: save worker type before dropping its reference",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99804.json",
       "released": "2026-11-21T01:19:29Z",
-      "updated": "2026-11-25T01:02:56Z",
+      "updated": "2026-11-26T14:10:18Z",
       "cves": [
         "CVE-2026-99804"
       ],
@@ -3267,7 +3335,7 @@
       "title": "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99507.json",
       "released": "2026-11-21T01:19:42Z",
-      "updated": "2026-11-25T01:09:12Z",
+      "updated": "2026-11-26T14:10:05Z",
       "cves": [
         "CVE-2026-99507"
       ],
@@ -3311,7 +3379,7 @@
       "title": "media: imon: fix use-after-free in display_close via dev_dbg",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99509.json",
       "released": "2026-11-21T01:19:55Z",
-      "updated": "2026-11-25T01:09:19Z",
+      "updated": "2026-11-26T14:10:15Z",
       "cves": [
         "CVE-2026-99509"
       ],
@@ -3335,7 +3403,7 @@
       "title": "media: hackrf: fix use-after-free in hackrf_alloc_urbs() error path",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99510.json",
       "released": "2026-11-21T01:20:01Z",
-      "updated": "2026-11-25T01:09:26Z",
+      "updated": "2026-11-26T14:10:20Z",
       "cves": [
         "CVE-2026-99510"
       ],
@@ -3361,7 +3429,7 @@
       "title": "media: cx23885: Fix use-after-free in cx23885_finidev due to race condition",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99511.json",
       "released": "2026-11-21T01:20:08Z",
-      "updated": "2026-11-25T01:09:31Z",
+      "updated": "2026-11-26T14:10:25Z",
       "cves": [
         "CVE-2026-99511"
       ],
@@ -3385,7 +3453,7 @@
       "title": "media: au0828: fix use-after-free in bulk_timeout timer on disconnect",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99512.json",
       "released": "2026-11-21T01:20:16Z",
-      "updated": "2026-11-25T01:09:40Z",
+      "updated": "2026-11-26T14:10:30Z",
       "cves": [
         "CVE-2026-99512"
       ],
@@ -3409,7 +3477,7 @@
       "title": "lockd: Fix use-after-free in nlmsvc_retry_blocked",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99513.json",
       "released": "2026-11-21T01:20:22Z",
-      "updated": "2026-11-25T01:09:46Z",
+      "updated": "2026-11-26T14:10:35Z",
       "cves": [
         "CVE-2026-99513"
       ],
@@ -3435,7 +3503,7 @@
       "title": "landlock: Fix superblock use-after-free in release_inode()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99514.json",
       "released": "2026-11-21T01:20:28Z",
-      "updated": "2026-11-25T01:09:53Z",
+      "updated": "2026-11-26T14:10:40Z",
       "cves": [
         "CVE-2026-99514"
       ],
@@ -3459,7 +3527,7 @@
       "title": "nvmet-fc: fix use-after-free in nvmet_fc_ls_create_connection()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99516.json",
       "released": "2026-11-21T01:20:34Z",
-      "updated": "2026-11-25T01:09:59Z",
+      "updated": "2026-11-26T14:10:48Z",
       "cves": [
         "CVE-2026-99516"
       ],
@@ -3485,7 +3553,7 @@
       "title": "rapidio: mport_cdev: fix use-after-free in mport_mm_close()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99521.json",
       "released": "2026-11-21T01:20:40Z",
-      "updated": "2026-11-25T01:10:03Z",
+      "updated": "2026-11-26T14:11:07Z",
       "cves": [
         "CVE-2026-99521"
       ],
@@ -3527,7 +3595,7 @@
       "title": "smb: client: fix use-after-free infoleak via the readdir resume name",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99526.json",
       "released": "2026-11-21T01:20:51Z",
-      "updated": "2026-11-25T01:10:08Z",
+      "updated": "2026-11-26T14:11:15Z",
       "cves": [
         "CVE-2026-99526"
       ],
@@ -3551,7 +3619,7 @@
       "title": "SUNRPC: fix netns use-after-free in write_gssp()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99528.json",
       "released": "2026-11-21T01:20:57Z",
-      "updated": "2026-11-25T01:10:12Z",
+      "updated": "2026-11-26T14:11:32Z",
       "cves": [
         "CVE-2026-99528"
       ],
@@ -3577,7 +3645,7 @@
       "title": "wifi: b43: fix use-after-free in b43_bcma_remove()",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99529.json",
       "released": "2026-11-21T01:21:04Z",
-      "updated": "2026-11-25T01:10:17Z",
+      "updated": "2026-11-26T14:11:38Z",
       "cves": [
         "CVE-2026-99529"
       ],
@@ -3601,7 +3669,7 @@
       "title": "ksmbd: verify transform SessionId matches the decrypted header",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99531.json",
       "released": "2026-11-21T01:21:12Z",
-      "updated": "2026-11-25T01:10:24Z",
+      "updated": "2026-11-26T14:11:43Z",
       "cves": [
         "CVE-2026-99531"
       ],
@@ -3625,7 +3693,7 @@
       "title": "ksmbd: validate security descriptor offsets before pointer arithmetic",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-99532.json",
       "released": "2026-11-21T01:21:18Z",
-      "updated": "2026-11-25T01:10:29Z",
+      "updated": "2026-11-26T14:11:47Z",
       "cves": [
         "CVE-2026-99532"
       ],
@@ -3987,7 +4055,7 @@
       "title": "Important: cifs-utils security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100494",
       "released": "2026-11-21T06:01:01Z",
-      "updated": "2026-11-27T00:05:07Z",
+      "updated": "2026-11-27T12:05:09Z",
       "cves": [
         "CVE-2026-104715"
       ],
@@ -4022,7 +4090,7 @@
       "title": "Moderate: gfs2-utils security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100509",
       "released": "2026-11-21T06:01:01Z",
-      "updated": "2026-11-27T00:05:07Z",
+      "updated": "2026-11-27T12:05:09Z",
       "cves": [
         "CVE-2026-71220",
         "CVE-2026-71221"
@@ -4055,7 +4123,7 @@
       "title": "Important: libpcap security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100511",
       "released": "2026-11-21T06:01:01Z",
-      "updated": "2026-11-27T00:05:07Z",
+      "updated": "2026-11-27T12:05:09Z",
       "cves": [
         "CVE-2026-6554"
       ],
@@ -4088,7 +4156,7 @@
       "title": "Important: rsync security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100541",
       "released": "2026-11-21T06:01:01Z",
-      "updated": "2026-11-27T00:05:07Z",
+      "updated": "2026-11-27T12:05:09Z",
       "cves": [
         "CVE-2026-119741"
       ],
@@ -4121,7 +4189,7 @@
       "title": "Important: python-oauthlib security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100542",
       "released": "2026-11-21T06:01:01Z",
-      "updated": "2026-11-27T00:05:07Z",
+      "updated": "2026-11-27T12:05:09Z",
       "cves": [
         "CVE-2026-118669"
       ],
@@ -4143,7 +4211,7 @@
       "title": "Moderate: rpm security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100637",
       "released": "2026-11-21T06:01:01Z",
-      "updated": "2026-11-27T00:05:07Z",
+      "updated": "2026-11-27T12:05:09Z",
       "cves": [
         "CVE-2026-78367",
         "CVE-2026-84837"
@@ -4179,7 +4247,7 @@
       "title": "Important: expat security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100671",
       "released": "2026-11-21T06:01:01Z",
-      "updated": "2026-11-27T00:05:07Z",
+      "updated": "2026-11-27T12:05:09Z",
       "cves": [
         "CVE-2026-113351",
         "CVE-2026-115506",
@@ -4215,7 +4283,7 @@
       "title": "Important: kernel security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100730",
       "released": "2026-11-21T06:01:01Z",
-      "updated": "2026-11-27T00:05:07Z",
+      "updated": "2026-11-27T12:05:09Z",
       "cves": [
         "CVE-2026-64375",
         "CVE-2026-64549",
@@ -4262,7 +4330,7 @@
       "title": "Moderate: gstreamer1-plugins-bad-free security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100479",
       "released": "2026-11-21T06:01:25Z",
-      "updated": "2026-11-27T00:05:09Z",
+      "updated": "2026-11-27T12:05:10Z",
       "cves": [
         "CVE-2026-125707"
       ],
@@ -4295,7 +4363,7 @@
       "title": "Important: gnome-remote-desktop security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100498",
       "released": "2026-11-21T06:01:25Z",
-      "updated": "2026-11-27T00:05:10Z",
+      "updated": "2026-11-27T12:05:10Z",
       "cves": [
         "CVE-2026-109832",
         "CVE-2026-96541"
@@ -4328,7 +4396,7 @@
       "title": "Important: unbound security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100519",
       "released": "2026-11-21T06:01:25Z",
-      "updated": "2026-11-27T00:05:09Z",
+      "updated": "2026-11-27T12:05:10Z",
       "cves": [
         "CVE-2026-33278"
       ],
@@ -4363,7 +4431,7 @@
       "title": "Important: java-1.8.0-openjdk security update for Rocky Linux 8",
       "url": "https://errata.rockylinux.org/RLSA-2026:100556",
       "released": "2026-11-21T06:01:25Z",
-      "updated": "2026-11-27T00:05:09Z",
+      "updated": "2026-11-27T12:05:10Z",
       "cves": [
         "CVE-2026-114939",
         "CVE-2026-114940",
@@ -4402,7 +4470,7 @@
       "title": "Important: flatpak security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100667",
       "released": "2026-11-21T06:01:25Z",
-      "updated": "2026-11-27T00:05:10Z",
+      "updated": "2026-11-27T12:05:10Z",
       "cves": [
         "CVE-2026-92162"
       ],
@@ -4437,7 +4505,7 @@
       "title": "Important: qt5-qt3d security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100675",
       "released": "2026-11-21T06:01:25Z",
-      "updated": "2026-11-27T00:05:10Z",
+      "updated": "2026-11-27T12:05:10Z",
       "cves": [
         "CVE-2026-111487"
       ],
@@ -4472,7 +4540,7 @@
       "title": "Important: fltk security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100695",
       "released": "2026-11-21T06:01:25Z",
-      "updated": "2026-11-27T00:05:10Z",
+      "updated": "2026-11-27T12:05:10Z",
       "cves": [
         "CVE-2026-116723",
         "CVE-2026-116724"
@@ -4506,7 +4574,7 @@
       "title": "Critical: nginx:1.24 security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100747",
       "released": "2026-11-21T06:01:25Z",
-      "updated": "2026-11-27T00:05:10Z",
+      "updated": "2026-11-27T12:05:10Z",
       "cves": [
         "CVE-2026-113425",
         "CVE-2026-118899",
@@ -4545,7 +4613,7 @@
       "title": "Important: kernel-rt security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100729",
       "released": "2026-11-21T06:02:09Z",
-      "updated": "2026-11-27T00:05:11Z",
+      "updated": "2026-11-27T12:05:11Z",
       "cves": [
         "CVE-2026-64375",
         "CVE-2026-64549",
@@ -4592,7 +4660,7 @@
       "title": "Important: kernel security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100662",
       "released": "2026-11-21T06:05:18Z",
-      "updated": "2026-11-27T00:08:06Z",
+      "updated": "2026-11-27T12:07:48Z",
       "cves": [
         "CVE-2026-45861",
         "CVE-2026-45970",
@@ -4639,7 +4707,7 @@
       "title": "Moderate: gstreamer1-plugins-bad-free security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100478",
       "released": "2026-11-21T06:05:33Z",
-      "updated": "2026-11-27T00:08:05Z",
+      "updated": "2026-11-27T12:07:47Z",
       "cves": [
         "CVE-2026-125707"
       ],
@@ -4674,7 +4742,7 @@
       "title": "Important: vim security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100487",
       "released": "2026-11-21T06:05:33Z",
-      "updated": "2026-11-27T00:08:05Z",
+      "updated": "2026-11-27T12:07:47Z",
       "cves": [
         "CVE-2026-43961"
       ],
@@ -4709,7 +4777,7 @@
       "title": "Important: skopeo security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100640",
       "released": "2026-11-21T06:05:33Z",
-      "updated": "2026-11-27T00:08:06Z",
+      "updated": "2026-11-27T12:07:48Z",
       "cves": [
         "CVE-2026-111943",
         "CVE-2026-78667",
@@ -4744,7 +4812,7 @@
       "title": "Important: qt5-qt3d security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100670",
       "released": "2026-11-21T06:05:33Z",
-      "updated": "2026-11-27T00:08:06Z",
+      "updated": "2026-11-27T12:07:47Z",
       "cves": [
         "CVE-2026-111487"
       ],
@@ -4779,7 +4847,7 @@
       "title": "Important: expat security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100679",
       "released": "2026-11-21T06:05:33Z",
-      "updated": "2026-11-27T00:08:06Z",
+      "updated": "2026-11-27T12:07:47Z",
       "cves": [
         "CVE-2026-113351",
         "CVE-2026-115506",
@@ -4815,7 +4883,7 @@
       "title": "Important: curl security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100686",
       "released": "2026-11-21T06:05:33Z",
-      "updated": "2026-11-27T00:08:06Z",
+      "updated": "2026-11-27T12:07:48Z",
       "cves": [
         "CVE-2026-11856",
         "CVE-2026-1965",
@@ -4863,7 +4931,7 @@
       "title": "Important: gnome-remote-desktop security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100697",
       "released": "2026-11-21T06:05:33Z",
-      "updated": "2026-11-27T00:08:06Z",
+      "updated": "2026-11-27T12:07:47Z",
       "cves": [
         "CVE-2026-109832",
         "CVE-2026-96541"
@@ -4896,7 +4964,7 @@
       "title": "Low: edk2 security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100717",
       "released": "2026-11-21T06:05:33Z",
-      "updated": "2026-11-27T00:08:05Z",
+      "updated": "2026-11-27T12:07:47Z",
       "cves": [
         "CVE-2026-28390",
         "CVE-2026-97631"
@@ -4932,7 +5000,7 @@
       "title": "Critical: nginx:1.26 security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100745",
       "released": "2026-11-21T06:05:33Z",
-      "updated": "2026-11-27T00:08:06Z",
+      "updated": "2026-11-27T12:07:48Z",
       "cves": [
         "CVE-2026-113425",
         "CVE-2026-118899",
@@ -4972,7 +5040,7 @@
       "title": "Critical: nginx security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100748",
       "released": "2026-11-21T06:05:33Z",
-      "updated": "2026-11-27T00:08:06Z",
+      "updated": "2026-11-27T12:07:48Z",
       "cves": [
         "CVE-2026-113425",
         "CVE-2026-118899",
@@ -5011,7 +5079,7 @@
       "title": "KEDA is a Kubernetes-based Event Driven Autoscaling component. Prior to 2.20.0, pkg/scalers/postgresql_scaler.go…",
       "url": "https://scout.docker.com/v/DHI-r446-x4mv-jxri-r5p7",
       "released": "2026-11-21T06:29:45Z",
-      "updated": "2026-11-25T00:05:53Z",
+      "updated": "2026-11-27T15:34:41Z",
       "cves": [
         "CVE-2026-53572"
       ],
@@ -5022,6 +5090,32 @@
         "Docker Hardened Images: keda-2.19-fips-dev",
         "Docker Hardened Images: keda-metrics-apiserver-2.19",
         "Docker Hardened Images: keda-metrics-apiserver-2.19-dev"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-26hr-jj3i-d6jv-65je",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a…",
+      "url": "https://scout.docker.com/v/DHI-26hr-jj3i-d6jv-65je",
+      "released": "2026-11-21T06:31:52Z",
+      "updated": "2026-11-27T03:55:56Z",
+      "cves": [
+        "CVE-2026-86145"
+      ],
+      "products": [
+        "Docker Hardened Images: pcre2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pcre2 10.48-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in pcre2 10.48-r0",
+          "u": null
+        }
       ],
       "seen": "2026-11-27"
     },
@@ -5061,6 +5155,32 @@
       "updated": "2026-11-25T02:57:18Z",
       "cves": [
         "CVE-2026-89156"
+      ],
+      "products": [
+        "Docker Hardened Images: pcre2"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pcre2 10.48-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in pcre2 10.48-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-kgqg-sw4j-aqty-g7wq",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An…",
+      "url": "https://scout.docker.com/v/DHI-kgqg-sw4j-aqty-g7wq",
+      "released": "2026-11-21T06:31:52Z",
+      "updated": "2026-11-27T03:55:56Z",
+      "cves": [
+        "CVE-2026-89161"
       ],
       "products": [
         "Docker Hardened Images: pcre2"
@@ -5191,6 +5311,27 @@
           "t": "Fixed in zlib 1:1.3.dfsg+really1.3.1-1+deb13u0+dhi4",
           "u": null
         }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-ogj4-a2d2-oxl5-wtem",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "Moby is an open source container framework. Prior to version 29.3.1, a security vulnerability has been detected that…",
+      "url": "https://scout.docker.com/v/DHI-ogj4-a2d2-oxl5-wtem",
+      "released": "2026-11-21T06:39:20Z",
+      "updated": "2026-11-27T14:26:43Z",
+      "cves": [
+        "CVE-2026-34040"
+      ],
+      "products": [
+        "Docker Hardened Images: cdi",
+        "Docker Hardened Images: cdi-apiserver",
+        "Docker Hardened Images: cdi-apiserver-dev",
+        "Docker Hardened Images: cdi-apiserver-fips",
+        "Docker Hardened Images: cdi-apiserver-fips-dev",
+        "Docker Hardened Images: cdi-cloner"
       ],
       "seen": "2026-11-27"
     },
@@ -5927,7 +6068,7 @@
       "title": "The _.unset and _.omit functions in Lodash are vulnerable to prototype pollution. The fix for CVE-2025-13465 only…",
       "url": "https://scout.docker.com/v/DHI-czjz-dlqh-bsmw-ftnb",
       "released": "2026-11-21T07:53:35Z",
-      "updated": "2026-11-26T13:40:10Z",
+      "updated": "2026-11-27T15:12:27Z",
       "cves": [
         "CVE-2026-2950"
       ],
@@ -6212,6 +6353,327 @@
       ],
       "products": [
         "Docker Hardened Images: perl-cpanel-json-xs"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-fass-so73-4cnn-2ff3",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "The brace-expansion library generates arbitrary strings containing a common prefix and suffix. Prior to versions 5.0.5…",
+      "url": "https://scout.docker.com/v/DHI-fass-so73-4cnn-2ff3",
+      "released": "2026-11-21T08:53:06Z",
+      "updated": "2026-11-27T15:12:27Z",
+      "cves": [
+        "CVE-2026-33750"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-fqpa-wjkh-v3uk-lqyi",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "The brace-expansion library generates arbitrary strings containing a common prefix and suffix. Prior to 1.1.18, 2.1.4…",
+      "url": "https://scout.docker.com/v/DHI-fqpa-wjkh-v3uk-lqyi",
+      "released": "2026-11-21T08:53:06Z",
+      "updated": "2026-11-27T15:12:27Z",
+      "cves": [
+        "CVE-2026-69152"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips",
+        "Docker Hardened Images: karma",
+        "Docker Hardened Images: karma-dev",
+        "Docker Hardened Images: karma-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-kevf-hzxa-s6wg-cvku",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "minimatch is a minimal matching utility for converting glob expressions into JavaScript RegExp objects. Prior to…",
+      "url": "https://scout.docker.com/v/DHI-kevf-hzxa-s6wg-cvku",
+      "released": "2026-11-21T08:53:06Z",
+      "updated": "2026-11-27T15:13:18Z",
+      "cves": [
+        "CVE-2026-27904"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-pn4j-uaby-5zqq-4tza",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "node-tar is a tar archive manipulation library for Node.js. Prior to 7.5.18, tar.replace accepts a checksum-valid tar…",
+      "url": "https://scout.docker.com/v/DHI-pn4j-uaby-5zqq-4tza",
+      "released": "2026-11-21T08:53:06Z",
+      "updated": "2026-11-27T15:13:18Z",
+      "cves": [
+        "CVE-2026-59874"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-vehb-nipq-ulmi-675p",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "minimatch is a minimal matching utility for converting glob expressions into JavaScript RegExp objects. Prior to…",
+      "url": "https://scout.docker.com/v/DHI-vehb-nipq-ulmi-675p",
+      "released": "2026-11-21T08:53:06Z",
+      "updated": "2026-11-27T15:13:18Z",
+      "cves": [
+        "CVE-2026-27903"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-cgum-bahj-5rl3-3zdk",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "node-tar,a Tar for Node.js, has a race condition vulnerability in versions up to and including 7.5.3. This is due to an…",
+      "url": "https://scout.docker.com/v/DHI-cgum-bahj-5rl3-3zdk",
+      "released": "2026-11-21T08:53:11Z",
+      "updated": "2026-11-27T15:13:18Z",
+      "cves": [
+        "CVE-2026-23950"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-jlda-b2dk-tpxr-kc4t",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "KaTeX is a fast, easy-to-use JavaScript library for TeX math rendering on the web. From 0.11.0 until 0.18.2, KaTeX uses…",
+      "url": "https://scout.docker.com/v/DHI-jlda-b2dk-tpxr-kc4t",
+      "released": "2026-11-21T08:53:11Z",
+      "updated": "2026-11-27T15:09:17Z",
+      "cves": [
+        "CVE-2026-103923"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: gitea",
+        "Docker Hardened Images: gitea-dev",
+        "Docker Hardened Images: gitea-fips",
+        "Docker Hardened Images: gitea-fips-dev",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-kafe-uuej-3rtu-6r6p",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "node-tar is a tar archive manipulation library for Node.js. Prior to 7.5.17, node-tar does not strip NUL bytes from PAX…",
+      "url": "https://scout.docker.com/v/DHI-kafe-uuej-3rtu-6r6p",
+      "released": "2026-11-21T08:53:11Z",
+      "updated": "2026-11-27T15:13:18Z",
+      "cves": [
+        "CVE-2026-59875"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-qlgz-j44b-e63a-m6mu",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "minimatch is a minimal matching utility for converting glob expressions into JavaScript RegExp objects. Versions 10.2.0…",
+      "url": "https://scout.docker.com/v/DHI-qlgz-j44b-e63a-m6mu",
+      "released": "2026-11-21T08:53:11Z",
+      "updated": "2026-11-27T15:13:18Z",
+      "cves": [
+        "CVE-2026-26996"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-uel5-ffd5-464b-mkky",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "node-tar,a Tar for Node.js, contains a vulnerability in versions prior to 7.5.7 where the security check for hardlink…",
+      "url": "https://scout.docker.com/v/DHI-uel5-ffd5-464b-mkky",
+      "released": "2026-11-21T08:53:11Z",
+      "updated": "2026-11-27T15:13:18Z",
+      "cves": [
+        "CVE-2026-24842"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-6w4b-ebb4-zpvk-a4rn",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "node-tar is a tar archive manipulation library for Node.js. Prior to 7.5.18, node-tar coerces all-digit PAX path and…",
+      "url": "https://scout.docker.com/v/DHI-6w4b-ebb4-zpvk-a4rn",
+      "released": "2026-11-21T08:54:17Z",
+      "updated": "2026-11-27T15:13:18Z",
+      "cves": [
+        "CVE-2026-59871"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-7ska-ue57-glbg-znjz",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "node-tar is a tar archive manipulation library for Node.js. Prior to 7.5.19, node-tar does not enforce hard upper…",
+      "url": "https://scout.docker.com/v/DHI-7ska-ue57-glbg-znjz",
+      "released": "2026-11-21T08:54:17Z",
+      "updated": "2026-11-27T15:13:18Z",
+      "cves": [
+        "CVE-2026-59873"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-nas2-kcb3-emc6-dudt",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "brace-expansion through 5.0.7 is vulnerable to denial of service via memory exhaustion. The expand() function limits…",
+      "url": "https://scout.docker.com/v/DHI-nas2-kcb3-emc6-dudt",
+      "released": "2026-11-21T08:54:17Z",
+      "updated": "2026-11-27T15:12:27Z",
+      "cves": [
+        "CVE-2026-14257"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips",
+        "Docker Hardened Images: karma",
+        "Docker Hardened Images: karma-dev",
+        "Docker Hardened Images: karma-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-nmxy-hiqv-yuzi-okny",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "node-tar is a full-featured Tar for Node.js. Prior to 7.5.16, tar (node-tar) applies a PAX extended header's size=…",
+      "url": "https://scout.docker.com/v/DHI-nmxy-hiqv-yuzi-okny",
+      "released": "2026-11-21T08:54:17Z",
+      "updated": "2026-11-27T15:13:18Z",
+      "cves": [
+        "CVE-2026-53655"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-skb6-23p5-bz2p-6on6",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "node-tar is a tar archive manipulation library for Node.js. Prior to 7.5.21, node-tar's filesFilter in src/list.ts uses…",
+      "url": "https://scout.docker.com/v/DHI-skb6-23p5-bz2p-6on6",
+      "released": "2026-11-21T08:54:17Z",
+      "updated": "2026-11-27T15:13:18Z",
+      "cves": [
+        "CVE-2026-73566"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips",
+        "Docker Hardened Images: kyverno-policy-reporter-ui",
+        "Docker Hardened Images: kyverno-policy-reporter-ui-dev",
+        "Docker Hardened Images: kyverno-policy-reporter-ui-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-wopv-cawv-3kzv-cg6r",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "A vulnerability was found in juliangruber brace-expansion up to 1.1.11/2.0.1/3.0.0/4.0.0. It has been rated as…",
+      "url": "https://scout.docker.com/v/DHI-wopv-cawv-3kzv-cg6r",
+      "released": "2026-11-21T08:54:17Z",
+      "updated": "2026-11-27T15:12:27Z",
+      "cves": [
+        "CVE-2025-5889"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "DHI-y2c4-makj-siso-ln3x",
+      "src": "osv_dhi",
+      "vendor": "Dhi",
+      "title": "brace-expansion through 5.0.6 is vulnerable to denial of service. The expand() function exhibits exponential-time…",
+      "url": "https://scout.docker.com/v/DHI-y2c4-makj-siso-ln3x",
+      "released": "2026-11-21T08:54:17Z",
+      "updated": "2026-11-27T15:12:27Z",
+      "cves": [
+        "CVE-2026-13149"
+      ],
+      "products": [
+        "Docker Hardened Images: datahub-ingestion",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample",
+        "Docker Hardened Images: jupyterhub-k8s-singleuser-sample-fips",
+        "Docker Hardened Images: karma",
+        "Docker Hardened Images: karma-dev",
+        "Docker Hardened Images: karma-fips"
       ],
       "seen": "2026-11-27"
     },
@@ -6620,7 +7082,7 @@
       "title": "Moderate: gstreamer1-plugins-bad-free security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100482",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:33Z",
+      "updated": "2026-11-27T12:09:08Z",
       "cves": [
         "CVE-2026-125707"
       ],
@@ -6655,7 +7117,7 @@
       "title": "Important: vim security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100486",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:33Z",
+      "updated": "2026-11-27T12:09:08Z",
       "cves": [
         "CVE-2026-43961"
       ],
@@ -6690,7 +7152,7 @@
       "title": "Important: podman security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100547",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:33Z",
+      "updated": "2026-11-27T12:09:08Z",
       "cves": [
         "CVE-2026-111943",
         "CVE-2026-78667",
@@ -6727,7 +7189,7 @@
       "title": "Important: buildah security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100554",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:34Z",
+      "updated": "2026-11-27T12:09:08Z",
       "cves": [
         "CVE-2026-111943",
         "CVE-2026-78667",
@@ -6764,7 +7226,7 @@
       "title": "Important: skopeo security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100639",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:34Z",
+      "updated": "2026-11-27T12:09:08Z",
       "cves": [
         "CVE-2026-111943",
         "CVE-2026-78667",
@@ -6800,7 +7262,7 @@
       "title": "Important: kernel security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100661",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:34Z",
+      "updated": "2026-11-27T12:09:08Z",
       "cves": [
         "CVE-2026-64541",
         "CVE-2026-68451",
@@ -6856,7 +7318,7 @@
       "title": "Important: flatpak security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100666",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:34Z",
+      "updated": "2026-11-27T12:09:08Z",
       "cves": [
         "CVE-2026-92162"
       ],
@@ -6891,7 +7353,7 @@
       "title": "Important: expat security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100681",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:34Z",
+      "updated": "2026-11-27T12:09:08Z",
       "cves": [
         "CVE-2026-113351",
         "CVE-2026-115506",
@@ -6927,7 +7389,7 @@
       "title": "Important: curl security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100685",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:34Z",
+      "updated": "2026-11-27T12:09:09Z",
       "cves": [
         "CVE-2025-14017",
         "CVE-2025-14819",
@@ -6982,7 +7444,7 @@
       "title": "Critical: edk2 security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100687",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:34Z",
+      "updated": "2026-11-27T12:09:08Z",
       "cves": [
         "CVE-2026-97631"
       ],
@@ -7017,7 +7479,7 @@
       "title": "Important: qt6-qt3d security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100696",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:34Z",
+      "updated": "2026-11-27T12:09:08Z",
       "cves": [
         "CVE-2026-111487"
       ],
@@ -7052,7 +7514,7 @@
       "title": "Important: thunderbird security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100701",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:33Z",
+      "updated": "2026-11-27T12:09:08Z",
       "cves": [
         "CVE-2026-118007",
         "CVE-2026-118019",
@@ -7143,7 +7605,7 @@
       "title": "Critical: nginx security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:100744",
       "released": "2026-11-21T12:06:29Z",
-      "updated": "2026-11-27T00:09:34Z",
+      "updated": "2026-11-27T12:09:09Z",
       "cves": [
         "CVE-2026-113425",
         "CVE-2026-118899",

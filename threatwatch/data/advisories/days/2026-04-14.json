@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-14",
-  "count": 53,
+  "count": 56,
   "items": [
     {
       "id": "openSUSE-SU-2026:10540-1",
@@ -272,6 +272,27 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-XO66325",
+      "src": "cleanstart",
+      "title": "Due to missing nil check, sending 0x0a-0x0f HTTP/2 frames will cause a running server to panic",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-XO66325.json",
+      "released": "2026-04-14T00:37:44Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-27141"
+      ],
+      "products": [
+        "CleanStart: gitea-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitea-fips 1.25.5-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-NH62318",
       "src": "cleanstart",
       "title": "Security fixes for ghsa-72hv-8253-57qq applied in versions: 3.6.4-r4",
@@ -484,6 +505,34 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-QZ16523",
+      "src": "cleanstart",
+      "title": "Due to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-QZ16523.json",
+      "released": "2026-04-14T00:44:44Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2025-58183",
+        "CVE-2025-58185",
+        "CVE-2025-58187",
+        "CVE-2025-58188",
+        "CVE-2025-58189",
+        "CVE-2025-61723",
+        "CVE-2025-61724",
+        "CVE-2025-61725"
+      ],
+      "products": [
+        "CleanStart: modelmesh-runtime-adapter"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in modelmesh-runtime-adapter 0.12.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "msrc_CVE-2026-40386",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -612,6 +661,36 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-31410",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-31410",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-31410",
+      "released": "2026-04-14T06:11:09Z",
+      "updated": "2026-11-03T20:02:57Z",
+      "cves": [
+        "CVE-2026-31410"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.191-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.80-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.35-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "msrc_CVE-2026-32157",

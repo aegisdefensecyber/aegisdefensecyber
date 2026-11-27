@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-04",
-  "count": 216,
+  "count": 230,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1112",
@@ -1147,6 +1147,50 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CLEANSTART-2026-XF15574",
+      "src": "cleanstart",
+      "title": "source-address critical option in the Permissions returned by an authentication callback was only enforced for the PublicKeyCallback and VerifiedPublicKeyCallback paths, extending the fix for CVE-2...",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-XF15574.json",
+      "released": "2026-09-04T00:39:46Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-56854"
+      ],
+      "products": [
+        "CleanStart: octo-sts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in octo-sts 0.8.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-RD72054",
+      "src": "cleanstart",
+      "title": "malicious GOSUMDB was capable of serving arbitrary module content not contained within the transparency log",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-RD72054.json",
+      "released": "2026-09-04T00:40:16Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-41178",
+        "CVE-2026-56864",
+        "CVE-2026-56865"
+      ],
+      "products": [
+        "CleanStart: grype-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in grype-fips 0.117.0-r1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CLEANSTART-2026-QE70350",
       "src": "cleanstart",
       "title": "source-address critical option in the Permissions returned by an authentication callback was only enforced for the PublicKeyCallback and VerifiedPublicKeyCallback paths, extending the fix for CVE-2...",
@@ -1192,6 +1236,40 @@
       "fix": [
         {
           "t": "Fixed in argo-workflows 3.7.17-r3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "CLEANSTART-2026-ZB03263",
+      "src": "cleanstart",
+      "title": "Netty is a network application framework for development of protocol servers and clients",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-ZB03263.json",
+      "released": "2026-09-04T00:46:48Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-44249",
+        "CVE-2026-44893",
+        "CVE-2026-45416",
+        "CVE-2026-45536",
+        "CVE-2026-45673",
+        "CVE-2026-45674",
+        "CVE-2026-47244",
+        "CVE-2026-47691",
+        "CVE-2026-48043",
+        "CVE-2026-48059",
+        "CVE-2026-50010",
+        "CVE-2026-50020",
+        "CVE-2026-50560",
+        "CVE-2026-6860"
+      ],
+      "products": [
+        "CleanStart: keycloak"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keycloak 26.4.2-r0",
           "u": null
         }
       ],
@@ -2492,6 +2570,90 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:23520-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for wget",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623520-1/",
+      "released": "2026-09-04T09:08:38Z",
+      "updated": "2026-09-17T16:22:00Z",
+      "cves": [
+        "CVE-2026-16599"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:23521-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for curl",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623521-1/",
+      "released": "2026-09-04T09:08:38Z",
+      "updated": "2026-09-17T16:22:01Z",
+      "cves": [
+        "CVE-2026-13608",
+        "CVE-2026-80229",
+        "CVE-2026-80230"
+      ],
+      "sev": "LOW",
+      "cvss": 3.7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:23522-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for helm",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623522-1/",
+      "released": "2026-09-04T09:08:39Z",
+      "updated": "2026-09-17T16:22:02Z",
+      "cves": [
+        "CVE-2026-37236",
+        "CVE-2026-41178",
+        "CVE-2026-48978",
+        "CVE-2026-50151",
+        "CVE-2026-63308"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-85546",
       "src": "gna-1",
       "vendor": "misp",
@@ -2526,6 +2688,29 @@
         "misp misp"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-nifi-2024-45477",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache NiFi: Improper Neutralization of Input in Parameter Description",
+      "url": "https://lists.apache.org/thread/shdv0tw9hggj7tx9pl7g93mgok2lwbj9",
+      "released": "2026-09-04T11:17:35Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-45477"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nifi 1.28.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "RUSTSEC-2026-0292",
@@ -2840,6 +3025,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-99594",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80761 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80761",
+      "released": "2026-09-04T16:18:01Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-80761"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-99615",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -3046,6 +3253,28 @@
       "fix": [
         {
           "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-99558",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80786 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80786",
+      "released": "2026-09-04T16:18:04Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-80786"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
           "u": null
         }
       ],
@@ -3976,6 +4205,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-99588",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80847 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80847",
+      "released": "2026-09-04T16:18:13Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-80847"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-99419",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -4058,6 +4309,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-99519",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80864 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80864",
+      "released": "2026-09-04T16:18:15Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-80864"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-99618",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -4102,6 +4375,28 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-99459",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80866 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80866",
+      "released": "2026-09-04T17:16:58Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-80866"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-99489",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -4132,6 +4427,28 @@
         "Azure Linux: kernel"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-99626",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80884 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80884",
+      "released": "2026-09-04T17:17:01Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-80884"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "GHSA-m3c3-78fh-w3w7",
@@ -4873,6 +5190,28 @@
       "fix": [
         {
           "t": "Fixed in kernel 6.6.157.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-99629",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-80905 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-80905",
+      "released": "2026-09-04T18:18:00Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-80905"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
           "u": null
         }
       ],

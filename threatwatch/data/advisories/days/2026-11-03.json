@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-03",
-  "count": 294,
+  "count": 321,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1443",
@@ -1121,6 +1121,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-112679",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-120830 affecting package libslirp for versions less than 4.9.7-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120830",
+      "released": "2026-11-03T00:17:18Z",
+      "updated": "2026-11-13T07:00:33Z",
+      "cves": [
+        "CVE-2026-120830"
+      ],
+      "products": [
+        "Azure Linux: libslirp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libslirp 4.9.7-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "msrc_CVE-2026-91334",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -1870,6 +1892,28 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-112682",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-120831 affecting package libslirp for versions less than 4.9.7-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120831",
+      "released": "2026-11-03T02:16:53Z",
+      "updated": "2026-11-13T07:00:33Z",
+      "cves": [
+        "CVE-2026-120831"
+      ],
+      "products": [
+        "Azure Linux: libslirp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libslirp 4.9.7-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "ROOT-APP-NPM-CVE-2026-24842",
       "src": "osv_root",
       "vendor": "Root",
@@ -2570,6 +2614,35 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "RHSA-2026:94489",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:94489",
+      "released": "2026-11-03T09:43:46Z",
+      "updated": "2026-11-27T15:18:58Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:94489"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "VDE-2026-119",
       "src": "csaf_welotecgmbh",
       "vendor": "Welotec",
@@ -2808,6 +2881,50 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:94498",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "crypto/x509: golang: golang crypto/x509: Denial of Service via excessive processing of DNS SAN entries",
+      "url": "https://access.redhat.com/errata/RHSA-2026:94498",
+      "released": "2026-11-03T10:44:09Z",
+      "updated": "2026-11-27T15:18:58Z",
+      "cves": [
+        "CVE-2026-27145",
+        "CVE-2026-32283",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-39833",
+        "CVE-2026-39834",
+        "CVE-2026-41178",
+        "CVE-2026-42504",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-63209",
+        "CVE-2026-84445"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For Red Hat OpenShift API for Data Protection 1.4, see the following documentation for instructions on how to apply this updat…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:94498"
+        },
+        {
+          "t": "A flaw was found in the Go standard library crypto/x509 package. When verifying a TLS certificate hostname, VerifyHostname processed each DNS Subject Alternative Name (SAN) entry in a loop and repeatedly split the candidate hostname on \".\"…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "ROOT-OS-DEBIAN-13-CVE-2025-10966",
@@ -5359,6 +5476,26 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
+      "src": "cisa_ics",
+      "vendor": "CISA",
+      "title": "Subnet Solutions PowerSYSTEM Center",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
+      "released": "2026-11-03T12:00:00Z",
+      "updated": "2026-11-03T12:00:00Z",
+      "cves": [
+        "CVE-2026-63017",
+        "CVE-2026-63774"
+      ],
+      "fix": [
+        {
+          "t": "See the vendor advisory for patches.",
+          "u": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "RUSTSEC-2026-0440",
       "src": "osv_rustsec",
       "vendor": "Rustsec",
@@ -6813,6 +6950,226 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-112595",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-99245 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99245",
+      "released": "2026-11-03T12:17:30Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-99245"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112598",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-99246 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99246",
+      "released": "2026-11-03T12:17:31Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-99246"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112601",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-99247 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99247",
+      "released": "2026-11-03T12:17:31Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-99247"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112604",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-99249 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99249",
+      "released": "2026-11-03T12:17:31Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-99249"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112607",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-99251 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99251",
+      "released": "2026-11-03T12:17:31Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-99251"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112610",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-99254 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99254",
+      "released": "2026-11-03T12:17:32Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-99254"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112613",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-99255 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99255",
+      "released": "2026-11-03T12:17:32Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-99255"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112616",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-99256 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99256",
+      "released": "2026-11-03T12:17:32Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-99256"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112619",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-99260 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99260",
+      "released": "2026-11-03T12:17:32Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-99260"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112622",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-99261 affecting package kernel for versions less than 6.6.161.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-99261",
+      "released": "2026-11-03T12:17:33Z",
+      "updated": "2026-11-05T07:22:58Z",
+      "cves": [
+        "CVE-2026-99261"
+      ],
+      "products": [
+        "Azure Linux: kernel"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kernel 6.6.161.1-1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "AZL-112625",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -6973,6 +7330,48 @@
         {
           "t": "Fixed in rootio-glibc 2.41-12+deb13u4.aikido.13",
           "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:94528",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/grpc: gRPC-Go: Denial of Service via malformed RPC requests",
+      "url": "https://access.redhat.com/errata/RHSA-2026:94528",
+      "released": "2026-11-03T13:16:34Z",
+      "updated": "2026-11-27T15:18:59Z",
+      "cves": [
+        "CVE-2026-84445"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 5.0, see the following documentation for important instructions about upgrading your cluster and applying this asynchronous errata update: https://docs.redhat.com/en/documentation/openshift_container_platfo…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:94528"
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:94531",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/grpc: gRPC-Go: Denial of Service via malformed RPC requests",
+      "url": "https://access.redhat.com/errata/RHSA-2026:94531",
+      "released": "2026-11-03T13:20:51Z",
+      "updated": "2026-11-27T15:18:59Z",
+      "cves": [
+        "CVE-2026-84445"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 5.0, see the following documentation for important instructions about upgrading your cluster and applying this asynchronous errata update: https://docs.redhat.com/en/documentation/openshift_container_platfo…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:94531"
         }
       ],
       "seen": "2026-11-27"
@@ -7164,6 +7563,37 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "RHSA-2026:94583",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "dompurify: DOMPurify: Cross-Site Scripting via IN_PLACE sanitization",
+      "url": "https://access.redhat.com/errata/RHSA-2026:94583",
+      "released": "2026-11-03T14:59:19Z",
+      "updated": "2026-11-27T15:19:00Z",
+      "cves": [
+        "CVE-2026-75838",
+        "CVE-2026-84445",
+        "CVE-2026-114406"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:94583"
+        },
+        {
+          "t": "To mitigate this vulnerability, avoid using DOMPurify with a custom IN_PLACE sanitization configuration that includes an element-removal hook. Default DOMPurify configurations are not affected by this flaw.",
+          "u": null
+        },
+        {
+          "t": "See the security bulletin for a detailed mitigation procedure.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "CVE-2026-121562",
       "src": "cvelistv5",
       "vendor": "CTFd",
@@ -7194,6 +7624,94 @@
           "t": "See the vendor advisory for patches.",
           "u": "https://kb.cert.org/vuls/id/124705"
         }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:94608",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "github.com/getkin/kin-openapi: kin-openapi: kin-openapi: ValidationHandler.Load() Fail-Open Authentication Bypass via NoopAuthenticationFunc Default",
+      "url": "https://access.redhat.com/errata/RHSA-2026:94608",
+      "released": "2026-11-03T16:02:28Z",
+      "updated": "2026-11-27T15:19:00Z",
+      "cves": [
+        "CVE-2026-73501",
+        "CVE-2026-73502",
+        "CVE-2026-77354",
+        "CVE-2026-84445",
+        "CVE-2026-88031",
+        "CVE-2026-92615",
+        "CVE-2026-102276",
+        "CVE-2026-102278"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "fix": [
+        {
+          "t": "See the following documentation for details on how to enable Red Hat Edge Manager and more: https://docs.redhat.com/en/documentation/red_hat_edge_manager/1.2",
+          "u": "https://access.redhat.com/errata/RHSA-2026:94608"
+        },
+        {
+          "t": "As a partial workaround, administrators can audit their OpenAPI specification files and ensure every content parameter declares an explicit schema for each media type, which prevents the nil-dereference code path from being reached.",
+          "u": null
+        },
+        {
+          "t": "If upgrading go.mongodb.org/mongo-driver to version 1.17.10 (v1) or 2.9.1 (v2) is not immediately possible, the following steps can reduce exposure: - Validate file identifiers before passing them to GridFS operations. Ensure that file IDs…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:94612",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "github.com/getkin/kin-openapi: kin-openapi: kin-openapi: ValidationHandler.Load() Fail-Open Authentication Bypass via NoopAuthenticationFunc Default",
+      "url": "https://access.redhat.com/errata/RHSA-2026:94612",
+      "released": "2026-11-03T16:04:22Z",
+      "updated": "2026-11-27T15:19:01Z",
+      "cves": [
+        "CVE-2026-73501",
+        "CVE-2026-73502",
+        "CVE-2026-77354",
+        "CVE-2026-84445",
+        "CVE-2026-88031",
+        "CVE-2026-92615",
+        "CVE-2026-102276",
+        "CVE-2026-102278"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "fix": [
+        {
+          "t": "See the following documentation for details on how to enable Red Hat Edge Manager and more: https://docs.redhat.com/en/documentation/red_hat_edge_manager/1.2",
+          "u": "https://access.redhat.com/errata/RHSA-2026:94612"
+        },
+        {
+          "t": "As a partial workaround, administrators can audit their OpenAPI specification files and ensure every content parameter declares an explicit schema for each media type, which prevents the nil-dereference code path from being reached.",
+          "u": null
+        },
+        {
+          "t": "If upgrading go.mongodb.org/mongo-driver to version 1.17.10 (v1) or 2.9.1 (v2) is not immediately possible, the following steps can reduce exposure: - Validate file identifiers before passing them to GridFS operations. Ensure that file IDs…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112634",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-120756 affecting package hdf5 1.14.6-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-120756",
+      "released": "2026-11-03T16:17:22Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-120756"
+      ],
+      "products": [
+        "Azure Linux: hdf5"
       ],
       "seen": "2026-11-27"
     },
@@ -7250,6 +7768,54 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-112649",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-115298 affecting package rubygem-elasticsearch 8.9.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115298",
+      "released": "2026-11-03T17:17:55Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-115298"
+      ],
+      "products": [
+        "Azure Linux: rubygem-elasticsearch"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112652",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-115710 affecting package rubygem-elasticsearch 8.9.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115710",
+      "released": "2026-11-03T17:17:55Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-115710"
+      ],
+      "products": [
+        "Azure Linux: rubygem-elasticsearch"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112655",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-115715 affecting package rubygem-elasticsearch 8.9.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115715",
+      "released": "2026-11-03T17:17:56Z",
+      "updated": "2026-11-16T05:30:07Z",
+      "cves": [
+        "CVE-2026-115715"
+      ],
+      "products": [
+        "Azure Linux: rubygem-elasticsearch"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "openSUSE-SU-2026:22226-1",
@@ -7372,6 +7938,32 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:94632",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "google.golang.org/grpc: gRPC-Go: Denial of Service via malformed RPC requests",
+      "url": "https://access.redhat.com/errata/RHSA-2026:94632",
+      "released": "2026-11-03T18:24:49Z",
+      "updated": "2026-11-27T15:19:01Z",
+      "cves": [
+        "CVE-2026-84445",
+        "CVE-2026-92615"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "See the following documentation for details on how to enable Red Hat Edge Manager and more: https://docs.redhat.com/en/documentation/red_hat_edge_manager/1.2",
+          "u": "https://access.redhat.com/errata/RHSA-2026:94632"
+        },
+        {
+          "t": "There is no application-level workaround that fully eliminates this race condition without a code change. The following deployment-level measures reduce exposure in multi-tenant environments: - Avoid mTLS client certificates for git reposi…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
+    {
       "id": "openSUSE-SU-2026:22222-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -7396,6 +7988,40 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-115731",
+      "src": "cvelistv5",
+      "vendor": "Perforce",
+      "title": "Report Deserialization Code Execution",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-115731",
+      "released": "2026-11-03T20:40:10Z",
+      "updated": "2026-11-18T04:55:49Z",
+      "cves": [
+        "CVE-2026-115731"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.4,
+      "products": [
+        "Perforce Puppet Enterprise"
+      ],
+      "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-112717",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-115731 affecting package puppet 7.34.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
+      "released": "2026-11-03T21:17:01Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-115731"
+      ],
+      "products": [
+        "Azure Linux: puppet"
+      ],
+      "seen": "2026-11-27"
     },
     {
       "id": "HSEC-2026-0011",

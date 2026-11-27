@@ -1,8 +1,39 @@
 {
   "schemaVersion": 1,
   "date": "2024-12-05",
-  "count": 1,
+  "count": 2,
   "items": [
+    {
+      "id": "BIT-python-2024-50602",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in libexpat before 2.6.4. There is a crash within the XML_ResumeParser function because XML_StopParser can stop/suspend an unstarted parser.",
+      "url": "https://security.netapp.com/advisory/ntap-20250404-0008/",
+      "released": "2024-12-05T07:15:23Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-50602"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: python"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in python 3.9.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in python 3.10.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in python 3.11.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-27"
+    },
     {
       "id": "RUSTSEC-2024-0447",
       "src": "osv_rustsec",
