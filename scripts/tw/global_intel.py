@@ -437,8 +437,14 @@ def perspective_violations(rec: dict, registry: list[dict]) -> list[str]:
     return errs
 
 
-def build(root: Path, now: datetime | None = None, write: bool = True) -> tuple[dict, list[str]]:
-    """Validate all records and (optionally) write the public data files. Returns (outputs, errors)."""
+def build(root: Path, now: datetime | None = None, write: bool = True,
+          allow_drafts: bool = False) -> tuple[dict, list[str]]:
+    """Validate all records and (optionally) write the public data files. Returns (outputs, errors).
+
+    Unreviewed drafts must stay on a review branch (gi-drafts/*), because everything on main is served
+    publicly by GitHub Pages. On main (`allow_drafts=False`) any non-public live record blocks the build;
+    approve_global.py, which runs on the review branch, passes allow_drafts=True.
+    """
     now = now or datetime.now(timezone.utc)
     rec_dir = root / "global-intelligence" / "editorial" / "records"
     data_dir = root / "global-intelligence" / "data"
@@ -460,6 +466,11 @@ def build(root: Path, now: datetime | None = None, write: bool = True) -> tuple[
         seen.add(rec["id"])
         errs += perspective_violations(rec, registry)
         records.append(rec)
+    if not allow_drafts:
+        drafts = [r["id"] for r in records if r["publication_status"] not in PUBLIC_STATUSES and not r["demo"]]
+        if drafts:
+            errs.append(f"unreviewed draft records are on the published branch: {', '.join(drafts)}; "
+                        "keep drafts on a gi-drafts/* review branch and merge only after approve_global.py")
     public = [r for r in records if r["publication_status"] in PUBLIC_STATUSES]
     demo = {r["demo"] for r in public}
     if len(demo) > 1:

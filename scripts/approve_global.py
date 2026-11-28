@@ -57,7 +57,7 @@ def main() -> int:
                  update_history=[{"date": now, "type": "published",
                                   "summary": f"Published after editorial review by {a.editor.strip()}."}])
         p.write_text(json.dumps(r, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    out, errs = build(ROOT)
+    out, errs = build(ROOT, allow_drafts=True)  # review branch: other drafts may remain
     if errs:
         for rid, text in backup.items():
             drafts[rid][0].write_text(text, encoding="utf-8")

@@ -27,7 +27,11 @@ on:
         type: boolean
         default: false
       send_email:
-        description: "(Re)send today's morning email to subscribers"
+        description: "Send today's morning email if it has not been sent yet (07:00-09:00 ET only)"
+        type: boolean
+        default: false
+      force_resend:
+        description: "DANGER: send the morning email again even if already sent or outside 07:00-09:00 ET"
         type: boolean
         default: false
   pull_request:
@@ -126,7 +130,7 @@ jobs:
           git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
           git push
       - name: Email the morning brief to subscribers (Zoho Campaigns)
-        if: steps.build.outputs.published == 'true' || inputs.send_email == true
+        if: steps.build.outputs.exit == '0' || inputs.send_email == true || inputs.force_resend == true   # send_digest.py decides: once per edition, 07:00-09:00 ET only
         continue-on-error: true   # email problems never fail or roll back the brief
         env:
           ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
@@ -138,7 +142,15 @@ jobs:
           ZOHO_TOPIC_ID: ${{ vars.ZOHO_TOPIC_ID }}
           ZOHO_ACCOUNTS_URL: ${{ vars.ZOHO_ACCOUNTS_URL }}
           ZOHO_CAMPAIGNS_URL: ${{ vars.ZOHO_CAMPAIGNS_URL }}
-        run: python scripts/send_digest.py
+          FORCE_RESEND: ${{ inputs.force_resend == true }}
+        run: |
+          python scripts/send_digest.py
+          # Record the sent edition so a re-run never emails the same brief twice.
+          git add threatwatch/email/digest-state.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Email: morning brief sent state"
+            for i in 1 2 3; do git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && break; sleep $((i * 10)); done
+          fi
       - name: Email significant alerts to alert subscribers (Zoho Campaigns)
         continue-on-error: true   # never blocks publication; alerts stay on the website and RSS
         env:

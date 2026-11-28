@@ -37,12 +37,13 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_digest import EMAIL_DIR, SITE_URL  # noqa: E402
-from tw.common import DATA_DIR, read_json  # noqa: E402
+from tw.common import DATA_DIR, ET, read_json  # noqa: E402
 
 REQUIRED = ("ZOHO_CLIENT_ID", "ZOHO_CLIENT_SECRET", "ZOHO_REFRESH_TOKEN")
 CONFIG = Path(__file__).resolve().parent.parent / "threatwatch" / "subscription-config.json"
@@ -153,10 +154,41 @@ def create_and_send(campaigns: str, token: str, edition: str, subject: str, cont
     return key
 
 
+STATE_FILE = EMAIL_DIR / "digest-state.json"   # editions already emailed (committed by the workflow)
+WINDOW_START, WINDOW_END = 7, 9                 # morning email goes out only 07:00-08:59 ET
+
+
+def send_allowed(edition: str, now_et: datetime, state: dict, force: bool = False) -> tuple[bool, str]:
+    """One email per edition, only for today's edition and only in the 7-9 AM ET window.
+
+    `force` (workflow_dispatch input force_resend) is the only way past either rule.
+    """
+    if force:
+        return True, "forced resend requested"
+    if edition in (state.get("sent") or {}):
+        return False, f"edition {edition} was already emailed at {state['sent'][edition].get('at')}; not sending again"
+    if edition != now_et.date().isoformat():
+        return False, f"edition {edition} is not today's ({now_et.date().isoformat()} ET); not sending"
+    if not WINDOW_START <= now_et.hour < WINDOW_END:
+        return False, (f"it is {now_et:%H:%M} ET, outside the {WINDOW_START:02d}:00-{WINDOW_END:02d}:00 ET "
+                       "morning window; not sending")
+    return True, "first send of today's edition inside the morning window"
+
+
+def record_sent(edition: str, now: datetime) -> None:
+    state = read_json(STATE_FILE, {}) or {}
+    sent = state.setdefault("sent", {})
+    sent[edition] = {"at": now.strftime("%Y-%m-%dT%H:%M:%SZ")}
+    state["sent"] = dict(sorted(sent.items(), reverse=True)[:60])
+    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    STATE_FILE.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
+
 
     missing = [n for n in REQUIRED if not _env(n)] + ([] if sender()[0] else ["ZOHO_FROM_EMAIL"])
     if missing:
@@ -167,6 +199,18 @@ def main() -> int:
     edition = meta.get("edition")
     if not edition or edition != latest.get("edition"):
         print(f"No email page for the current edition ({latest.get('edition')}); nothing sent.", file=sys.stderr)
+        return 1
+    now = datetime.now(timezone.utc)
+    state = read_json(STATE_FILE, {}) or {}
+    ok, why = send_allowed(edition, now.astimezone(ET), state, force=_env("FORCE_RESEND").lower() == "true")
+    if not ok and not args.dry_run:
+        missed = edition not in (state.get("sent") or {}) and now.astimezone(ET).hour >= WINDOW_END
+        print(("::warning::Morning email MISSED today: " if missed else "Morning email: ") + why + ".")
+        return 0
+    from build_digest import sender_identity
+    if not sender_identity()["postalAddress"]:
+        print("::error::EMAIL NOT SENT: postalAddress is empty in threatwatch/subscription-config.json. "
+              "A physical postal address is required in every commercial email (CAN-SPAM).", file=sys.stderr)
         return 1
     try:
         accounts = _https(_env("ZOHO_ACCOUNTS_URL", "https://accounts.zoho.com"), "ZOHO_ACCOUNTS_URL")
@@ -180,8 +224,9 @@ def main() -> int:
             return 0
         key = create_and_send(campaigns, token, edition, meta["subject"], content_url)
     except (DigestError, urllib.error.URLError, TimeoutError, ValueError, KeyError) as exc:
-        print(f"EMAIL NOT SENT: {exc}", file=sys.stderr)
+        print(f"::error::EMAIL NOT SENT: {exc}", file=sys.stderr)
         return 1
+    record_sent(edition, now)
     print(f"Morning brief {edition} sent through Zoho Campaigns (campaign {key}).")
     return 0
 

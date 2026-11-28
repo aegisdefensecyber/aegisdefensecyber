@@ -94,7 +94,7 @@ class BuildRules(unittest.TestCase):
     def test_build_outputs_and_drafts_hidden(self):
         self.put(base())
         self.put(base(id="GI-2026-0002", publication_status="verification_pending"))
-        out, errs = G.build(self.root, NOW)
+        out, errs = G.build(self.root, NOW, allow_drafts=True)
         self.assertEqual(errs, [])
         self.assertEqual([r["id"] for r in out["active-threats.json"]["records"]], ["GI-2026-0001"])
         self.assertEqual(out["last-updated.json"]["pending_review"], 1)
@@ -139,6 +139,12 @@ class BuildRules(unittest.TestCase):
         self.assertEqual(errs, [])
         self.assertEqual(len(out["historical-threats.json"]["records"]), 1)
         self.assertEqual(out["active-threats.json"]["records"], [])
+
+    def test_drafts_blocked_on_published_branch(self):
+        self.put(base())
+        self.put(base(id="GI-2026-0002", publication_status="verification_pending"))
+        _, errs = G.build(self.root, NOW, write=False)
+        self.assertTrue(any("unreviewed draft records" in e and "GI-2026-0002" in e for e in errs), errs)
 
     def put_registry(self, sources):
         (self.recs.parent / "sources.json").write_text(json.dumps({"schemaVersion": 1, "sources": sources}))

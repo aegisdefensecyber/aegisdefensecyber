@@ -42,6 +42,18 @@ this list guides drafting. Nothing ingests it automatically yet.
   independent.
 - `feed_verified: false` means the feed address has not been confirmed by fetching it.
 
+## Draft review flow (since 28 Nov 2026)
+Everything on `main` is served publicly by GitHub Pages, so **drafts never go to main**.
+1. The "AEGIS Global Intelligence source scan" scheduled task writes drafts (`publication_status:
+   "verification_pending"`; `published_at` and the history entry are reset by approve_global.py on approval)
+   on a new branch `gi-drafts/<YYYYMMDD-HHMM>`, runs
+   `scripts/review_global.py` there, and opens a pull request into `main` with the review pack.
+2. Review each draft against its sources. On the PR branch, delete rejected drafts and run
+   `python scripts/approve_global.py --editor "Your Name" <ids>` for the approved ones (one by one).
+3. Merge the PR. `build_global.py` (and the PR's CI) refuse to build while any unapproved draft is on the
+   branch, so a PR can only merge once every draft in it is approved or removed.
+The 8 drafts written before this change (GI-2026-0014 to 0021) are on branch `gi-drafts/20261128-backlog`.
+
 ## Going live
 1. Write the first real records as `GI-2026-0001.json` etc. (copy a demo file for the structure).
 2. Set every demo record's `publication_status` to `archived`, or delete the demo files *before* the first live

@@ -37,7 +37,12 @@
   if (!/^(\.\.\/)?[\w\-\/]*subscription-config\.json$/.test(cfgUrl)) cfgUrl = "subscription-config.json";
   fetch(cfgUrl, { cache: "no-cache" })
     .then(function (r) { return r.ok ? r.json() : null; })
-    .then(function (c) { cfg = c; var u = endpoint(c); if (u) { form.action = u; applyFields(c); } })
+    .then(function (c) {
+      cfg = c; var u = endpoint(c); if (u) { form.action = u; applyFields(c); }
+      // The "brief + alerts" choice stays hidden until the Zoho opt-in field is configured, so it never silently does nothing.
+      var ao = (c && c.alertsOptIn) || {}, fs = form.querySelector(".sub-choice");
+      if (fs && u && ao.field && SAFE_NAME.test(ao.field)) fs.hidden = false;
+    })
     .catch(function () { cfg = null; });
 
   form.querySelectorAll('input[name="tw_choice"]').forEach(function (r) { r.setAttribute("form", "tw-none"); });

@@ -26,6 +26,25 @@ class SourceError(RuntimeError):
     """A public source could not be fetched or failed validation."""
 
 
+_NEGATION = re.compile(r"\b(?:no|not|never|none|nor|neither|without|unaware|cannot|unable)\b|n't\b"
+                       r"|\bno (?:evidence|indication|known|reports?)\b", re.I)
+
+
+def affirms(pattern: "re.Pattern[str]", text: str | None) -> bool:
+    """True when `pattern` matches `text` in a clause that is not negated.
+
+    "We have not seen evidence of exploitation in the wild" and "not aware of any exploitation"
+    are NOT claims of exploitation; only the clause before each match (up to the previous
+    sentence or clause break) is checked for negation words.
+    """
+    t = str(text or "")
+    for m in pattern.finditer(t):
+        clause = re.split(r"[.;:!?\n]", t[:m.start()])[-1][-120:]
+        if not _NEGATION.search(clause):
+            return True
+    return False
+
+
 def now_utc() -> datetime:
     override = os.environ.get("TW_NOW")  # ISO timestamp, for tests only
     if override:

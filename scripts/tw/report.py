@@ -29,7 +29,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any, Callable
 
-from .common import ET, iso, safe_url
+from .common import ET, affirms, iso, safe_url
 
 REPORT_VERSION = 1
 TITLE = ["DAILY ENTERPRISE CYBERSECURITY", "THREAT INTELLIGENCE BRIEF"]
@@ -257,7 +257,10 @@ class Item:
             guess = _product_from_text(self.description)
             if guess:
                 self.vendor, self.product = "", guess
-        self.text_itw = bool(ITW_TEXT.search(self.description))
+        # An affirmative exploitation statement in the CVE record text (often written by the vendor as CNA).
+        # Shown as an unverified claim only: it never sets `exploited` or raises priority, and negated
+        # wording ("We have not seen evidence of exploitation in the wild") is not a claim at all.
+        self.text_itw = affirms(ITW_TEXT, self.description)
         self.cvss = r.get("cvss") or b.get("cvss")
         self.cwes = r.get("cwes") or b.get("cwes") or []
         self.affected = r.get("affected") or []
@@ -328,7 +331,7 @@ class Item:
 
     @property
     def exploited(self) -> bool:
-        return bool(self.kev) or bool(self.exploit_sources) or self.zero_day or self.text_itw
+        return bool(self.kev) or bool(self.exploit_sources) or self.zero_day
 
     def _priority(self) -> str:
         s = self.score or 0
@@ -355,8 +358,9 @@ class Item:
                 continue
             parts.append(f"reported exploited by {_src(s['source'])}" + (f" since {s['date']}" if s.get("date") else ""))
         if self.text_itw and not parts:
-            parts.append("described in its CVE record as exploited in the wild (not yet corroborated by CISA KEV, "
-                         "Project Zero, EUVD or VulnCheck)")
+            parts.append("described in its CVE record as exploited in the wild; this is an unverified claim, not "
+                         "corroborated by CISA KEV, Project Zero, EUVD or VulnCheck, so ThreatWatch does not treat it "
+                         "as confirmed exploitation")
         return _join(parts) if parts else ""
 
     def poc_phrase(self) -> str:
@@ -500,7 +504,7 @@ def select_items(brief: dict, catalog: "Catalog", tracked_before: set[str], now:
         if not rec:
             continue
         if not (row["zeroDay"] or row["itw"]):
-            if ITW_TEXT.search(_clean_text(rec.get("description"))):
+            if affirms(ITW_TEXT, _clean_text(rec.get("description"))):
                 chosen[cid] = Item(cid, rec, None, catalog.epss(cid), "itw")
             continue
         dates = [_d(s.get("date")) for s in (rec.get("exploitation") or {}).get("sources") or []
@@ -701,7 +705,7 @@ def _summary(brief, items, top, tracked, catalog, w_start, w_end) -> list[dict]:
         out.append(_p("No CVE met ThreatWatch prioritization criteria in this reporting window (new CISA KEV "
                       "additions, newly reported zero-day or in-the-wild exploitation, or newly published "
                       "network-reachable CVSS 9+ vulnerabilities). Previously reported issues are tracked in section 7."))
-    zero = [i for i in items if i.zero_day or i.exploit_sources or i.text_itw]
+    zero = [i for i in items if i.zero_day or i.exploit_sources]
     kev_total = c.get("kevTotal") if c.get("kevTotal") is not None else catalog.kev_count()
     kl = brief.get("kevLatest") or catalog.kev_latest()
     baseline = (f"{kev_total:,}" if isinstance(kev_total, int) else "Not verified") + (

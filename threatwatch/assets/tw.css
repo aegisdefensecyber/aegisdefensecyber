@@ -55,6 +55,7 @@ p { margin: 0 0 12px; }
 .notice { border-left: 3px solid var(--high); background: var(--content); padding: 12px 16px; margin: 0 0 16px; border-radius: 0 4px 4px 0; }
 .notice.demo { border-color: var(--crit); }
 .notice.info { border-color: var(--accent); }
+.notice.correction { border-color: var(--crit); }
 .notice.warn { border-color: var(--high, #d9a94e); }
 
 /* executive */
@@ -224,6 +225,8 @@ select, input[type="search"], input[type="date"] { background: var(--panel); col
 .sub-form button:hover { filter: brightness(1.1); }
 .sub-form button:disabled { opacity: .6; cursor: default; }
 .sub-msg { flex-basis: 100%; margin: 0; min-height: 1.4em; font-size: 14px; color: var(--muted); }
+.sub-fine { flex-basis: 100%; font-size: 13px; margin: 6px 0 0; opacity: .85; }
+.sub-fine a { color: inherit; text-decoration: underline; }
 .sub-msg.err { color: #ffb4ab; }
 .sub-msg.ok { color: #8be0a4; }
 @media print { .sub-band { display: none !important; } }
@@ -234,3 +237,5 @@ select, input[type="search"], input[type="date"] { background: var(--panel); col
 .sub-choice label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
 .sub-choice input { accent-color: var(--accent); width: 16px; height: 16px; }
 .sub-form .sub-msg { order: 4; }
+.sub-form .sub-fine { order: 5; }
+.sub-choice[hidden] { display: none; }

@@ -174,5 +174,43 @@ class ReportTests(unittest.TestCase):
         self.assertEqual(rep["footer"], "Enterprise Cyber Threat Intelligence | November 2026")
 
 
+class ExploitationTextTests(unittest.TestCase):
+    """Record text never confirms exploitation; negated wording is not a claim at all (CVE-2026-102769)."""
+
+    def _item(self, text):
+        r = rec("CVE-2099-0001", "Acme", "Widget", 9.8, "2026-11-20")
+        r["description"] = text
+        return R.Item("CVE-2099-0001", r, None, None, "itw")
+
+    def test_negated_text_is_not_a_claim(self):
+        i = self._item("A timing side channel leaks data. We have not seen evidence of exploitation in the wild.")
+        self.assertFalse(i.text_itw)
+        self.assertFalse(i.exploited)
+        self.assertNotEqual(i.priority, "Emergency")
+        self.assertEqual(i.exploitation_phrase(), "")
+
+    def test_affirmative_text_is_unverified_only(self):
+        i = self._item("This vulnerability was actively exploited against the service on 2026-11-23.")
+        self.assertTrue(i.text_itw)
+        self.assertFalse(i.exploited)
+        self.assertNotEqual(i.priority, "Emergency")
+        self.assertIn("unverified claim", i.exploitation_phrase())
+
+    def test_other_negations(self):
+        from tw.common import affirms
+        for t in ("Fortinet is not aware of any exploitation in the wild.", "There is no indication it has been exploited.",
+                  "It hasn't been exploited in the wild."):
+            self.assertFalse(affirms(R.ITW_TEXT, t), t)
+        self.assertTrue(affirms(R.ITW_TEXT, "No patch exists; the flaw is being actively exploited."))
+
+    def test_kev_still_confirms(self):
+        r = rec("CVE-2099-0002", "Acme", "Widget", 9.8, "2026-11-20",
+                kev={"dateAdded": "2026-11-20", "dueDate": "2026-12-11", "ransomware": "unknown"})
+        r["description"] = "We have not seen evidence of exploitation in the wild."
+        i = R.Item("CVE-2099-0002", r, None, None, "kev")
+        self.assertTrue(i.exploited)
+        self.assertEqual(i.priority, "Emergency")
+
+
 if __name__ == "__main__":
     unittest.main()

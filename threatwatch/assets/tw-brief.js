@@ -158,9 +158,22 @@
       freshness(b, status);
       renderToolbar(b, status, editions);
       renderReport(b.report, body);
+      showCorrections(b);
       return;
     }
     legacyBrief(b, status);
+    showCorrections(b);
+  }
+
+  // Published corrections stay visible on the edition they correct (never silently overwritten).
+  function showCorrections(b) {
+    var list = Array.isArray(b.corrections) ? b.corrections : [];
+    var notices = document.getElementById("notices");
+    list.forEach(function (c) {
+      if (!c || typeof c.text !== "string") return;
+      notices.appendChild(el("p", { cls: "notice correction" }, [
+        el("strong", { text: "Correction" + (c.date ? " (" + c.date + ")" : "") + ": " }), c.text]));
+    });
   }
 
   function freshness(b, status) {

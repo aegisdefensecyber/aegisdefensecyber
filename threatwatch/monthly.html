@@ -10,9 +10,9 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/tw.css?v=20261127a">
-<script src="assets/tw-subscribe.js?v=20261127a" defer></script>
-<script src="assets/tw-brief.js?v=20261124a" defer></script>
+<link rel="stylesheet" href="assets/tw.css?v=20261128a">
+<script src="assets/tw-subscribe.js?v=20261128a" defer></script>
+<script src="assets/tw-brief.js?v=20261128a" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the summary</a>
@@ -58,13 +58,13 @@
 <section id="subscribe" class="sub-band" aria-labelledby="subscribe-title">
   <div class="sub-in">
     <div class="sub-copy">
-      <h2 id="subscribe-title">Get the daily brief and alerts by email</h2>
-      <p>Free ThreatWatch updates in your inbox: the daily executive brief, and optionally alerts whenever something significant happens to technology on the AEGIS watchlist. Email address only; you’ll confirm by email, and you can unsubscribe anytime.</p>
+      <h2 id="subscribe-title">Get the daily brief by email</h2>
+      <p>Free ThreatWatch updates in your inbox: the daily executive brief (alert emails are coming soon; until then follow alerts on the Alerts page or by RSS). Email address only; you’ll confirm by email, and you can unsubscribe anytime.</p>
     </div>
     <form id="subscribe-form" class="sub-form" method="post" target="_blank" novalidate>
       <label for="sub-email" class="sr-only">Email address</label>
       <input id="sub-email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="254" placeholder="you@company.com">
-      <fieldset class="sub-choice">
+      <fieldset class="sub-choice" hidden>
         <legend class="sr-only">What would you like to receive?</legend>
         <label><input type="radio" name="tw_choice" value="daily" checked> Daily brief</label>
         <label><input type="radio" name="tw_choice" value="alerts"> Daily brief + significant alerts</label>
@@ -72,6 +72,7 @@
 
       <button type="submit">Subscribe</button>
       <p id="sub-msg" class="sub-msg" role="status" aria-live="polite"></p>
+      <p class="sub-fine">Sent with Zoho Campaigns. We use your address only to send what you subscribed to. <a href="../privacy/">Privacy notice</a></p>
     </form>
   </div>
 </section>
@@ -91,6 +92,7 @@
         <li><a href="alerts.html">Alerts</a></li>
         <li><a href="./#methodology">Methodology</a></li>
         <li><a href="mailto:info@aegisdefensecyber.com">Contact</a></li>
+      <li><a href="../privacy/">Privacy</a></li>
       </ul>
     </nav>
   </div>

@@ -5,19 +5,20 @@
   "watchName": "Self-hosted websites, email & collaboration",
   "priority": "EMERGENCY",
   "title": "Drupal Core — Threat Intelligence Update",
-  "headline": "CVE-2026-132165, an unauthenticated takeover and remote code execution flaw in the Drupal core installer (core/install.php), is on CISA KEV with a federal due date of today, 2026-11-27. A related installer access bypass, CVE-2026-136716, was fixed on 2026-11-25/26, so sites patched only to 10.6.22, 11.3.22 or 11.4.13 need the newer releases.",
-  "summary": "AEGIS records CVE-2026-132165 (SA-CORE-2026-017) as listed in CISA KEV on 2026-11-24 (due 2026-11-27) and as exploited per ENISA EUVD. Drupal released fixes on 2026-11-18 in 10.6.22, 11.3.22 and 11.4.13. University of Toronto InfoSec reports that core/install.php ships on every site and is not blocked by the default .htaccess, so most sites expose the endpoint unless it was locked down. AEGIS tracks six public GitHub repositories (PoC and scanner code, unvetted). A follow-on flaw, CVE-2026-136716 (SA-CORE-2026-019, forceful browsing in the installer), affects versions before 10.6.23, 11.3.23 and 11.4.14 according to its CVE record. National CERTs (NCSC-NL, CERT-FR, CERT-Bund) published advisories for it on 2026-11-25/26. Secondary reporting says it is also being exploited, but AEGIS does not show it as KEV-listed or exploited.",
+  "headline": "Both Drupal core installer flaws are now confirmed exploited and on CISA KEV: CVE-2026-132165 (unauthenticated takeover and remote code execution via core/install.php; KEV due 2026-11-27) and the follow-on access bypass CVE-2026-136716 (KEV added 2026-11-27, due 2026-11-30). Upgrade to 10.6.23, 11.3.23 or 11.4.14, which fix both.",
+  "summary": "AEGIS records CVE-2026-132165 (SA-CORE-2026-017) as listed in CISA KEV on 2026-11-24 (due 2026-11-27). Drupal rates it Highly critical (20/25) and states it received a report of exploitation on live sites as early as 2026-11-19 19:00 UTC. Fixes shipped on 2026-11-18 in 10.6.22, 11.3.22 and 11.4.13. University of Toronto InfoSec reports that core/install.php ships on every site and is not blocked by the default .htaccess, so most sites expose it unless locked down. A follow-on flaw, CVE-2026-136716 (SA-CORE-2026-019, access bypass in the installer, Highly critical 21/25), affects versions before 10.6.23, 11.3.23 and 11.4.14; Drupal states “This is being exploited in the wild”, and CISA added it to KEV on 2026-11-27. AEGIS tracks 7 public GitHub repositories for CVE-2026-132165 (unvetted).",
   "changes": [
     "2026-11-18: Drupal released SA-CORE-2026-017 (CVE-2026-132165) with fixes in 10.6.22, 11.3.22 and 11.4.13 (Drupal advisory, reported by University of Toronto InfoSec).",
     "2026-11-24: CISA added CVE-2026-132165 to KEV with a due date of 2026-11-27 (AEGIS KEV record, catalog version 2026.11.25). ENISA EUVD also marks it exploited (AEGIS).",
     "2026-11-25/26: CVE-2026-136716 (SA-CORE-2026-019), a follow-on installer access bypass, was published. Fixed versions are 10.6.23, 11.3.23 and 11.4.14 (AEGIS CVE record; NCSC-NL, CERT-FR and CERT-Bund advisories).",
     "2026-11-20 to 2026-11-27: the number of public PoC and scanner repositories grew to 6 (AEGIS PoC tracking).",
-    "2026-11-27: AEGIS raised a high alert for the new critical CVE in this category (alert 9bfffb594981)."
+    "2026-11-27: AEGIS raised a high alert for the new critical CVE in this category (alert 9bfffb594981).",
+    "2026-11-27: CISA added CVE-2026-136716 to KEV with a due date of 2026-11-30 (AEGIS KEV record). NVD published a CVSS 3.1 score of 9.8 for CVE-2026-132165 (AEGIS record, NVD analyzed 2026-11-27)."
   ],
   "assessment": [
     [
       "CVE / CVSS",
-      "CVE-2026-132165. NVD has no CVSS score yet. Drupal rates it Critical; secondary sources quote a Drupal risk score of 18/25, while one AI-written source says 20/25. CWE-306, missing authentication for a critical function."
+      "CVE-2026-132165. NVD CVSS 3.1: 9.8 (analyzed 2026-11-27; no NVD score existed when this briefing was first written). Drupal rates it Highly critical, 20/25. CWE-306, missing authentication for a critical function. CVE-2026-136716: CVSS 9.8 (CNA); Drupal Highly critical, 21/25."
     ],
     [
       "Attack vector / authentication",
@@ -29,7 +30,7 @@
     ],
     [
       "Exploitation attempts",
-      "Exploitation is confirmed by the CISA KEV listing on 2026-11-24 and by ENISA EUVD (AEGIS). Scale, actors and targets are not published."
+      "Confirmed. CVE-2026-132165: CISA KEV 2026-11-24, ENISA EUVD, and Drupal's own report of exploitation on live sites from 2026-11-19 19:00 UTC. CVE-2026-136716: Drupal states it is being exploited in the wild; CISA KEV 2026-11-27. Scale, actors and targets are not published."
     ],
     [
       "Successful compromise",
@@ -37,11 +38,11 @@
     ],
     [
       "Public PoC / exploit",
-      "Yes. AEGIS tracks 6 public GitHub repositories, including exploit and scanner code, all unvetted. University of Toronto states that a PoC exists."
+      "Yes. AEGIS tracks 7 public GitHub repositories for CVE-2026-132165 and 1 for CVE-2026-136716, including exploit and scanner code, all unvetted."
     ],
     [
       "CISA KEV / VulnCheck KEV",
-      "CISA KEV: added 2026-11-24, due 2026-11-27. Known ransomware use: unknown. VulnCheck KEV: not recorded in AEGIS."
+      "CISA KEV: CVE-2026-132165 added 2026-11-24, due 2026-11-27; CVE-2026-136716 added 2026-11-27, due 2026-11-30. Known ransomware use: unknown. VulnCheck KEV: not recorded in AEGIS."
     ],
     [
       "EPSS",
@@ -117,23 +118,23 @@
     ],
     [
       "CVSS changes",
-      "No NVD score yet for either CVE"
+      "NVD scored CVE-2026-132165 at 9.8 on 2026-11-27; CVE-2026-136716 carries a CNA score of 9.8."
     ],
     [
       "Exploitation intelligence",
-      "Confirmed by KEV for CVE-2026-132165. Exploitation of CVE-2026-136716 is reported but unverified."
+      "Confirmed for both: CVE-2026-132165 (KEV, EUVD, Drupal report) and CVE-2026-136716 (Drupal SA-CORE-2026-019, KEV)."
     ],
     [
       "KEV additions",
-      "CVE-2026-132165 added 2026-11-24. Watch whether CVE-2026-136716 is added."
+      "CVE-2026-132165 added 2026-11-24; CVE-2026-136716 added 2026-11-27."
     ],
     [
       "Next scheduled vendor release",
       "Drupal publishes core security releases on Wednesdays as needed."
     ]
   ],
-  "limitations": "The drupal.org advisory pages and the ENISA EUVD record could not be fetched during this run. Their contents come from the AEGIS record, University of Toronto InfoSec and news reporting. Drupal's own risk score is reported inconsistently (18/25 versus 20/25). Exploitation of CVE-2026-136716 rests on secondary and AI-summarized reporting and was not verified. No IOCs, actor attribution or victim counts were found.",
-  "judgment": "Confirmed: CVE-2026-132165 is CISA KEV-listed (2026-11-24) and exploited, needs no authentication, and has public exploit code. Drupal is widely deployed, so this is an emergency for any organization running Drupal. Organizations should treat every unpatched or unblocked install.php as potentially compromised and hunt before closing. Reported but unverified: active exploitation of the follow-on CVE-2026-136716. Patching to the newest releases closes both CVEs either way.",
+  "limitations": "When first written on 27 Nov, the drupal.org advisories could not be fetched; they were read and verified on 28 Nov. The ENISA EUVD record was not fetched. No IOCs, actor attribution or victim counts were found.",
+  "judgment": "Confirmed: both Drupal installer flaws are exploited in the wild and on CISA KEV, and neither needs authentication. Drupal is widely deployed, so this is an emergency for any organization running Drupal. Treat every unpatched or unblocked install.php as potentially compromised and hunt before closing. Upgrading to 10.6.23, 11.3.23 or 11.4.14 closes both CVEs.",
   "sources": [
     {
       "title": "Drupal SA-CORE-2026-017",
@@ -178,5 +179,17 @@
   ],
   "alertIds": [
     "9bfffb594981"
-  ]
+  ],
+  "draftedBy": "AI-drafted by Claude (AEGIS briefing scheduled task) from AEGIS data and public sources",
+  "review": {
+    "status": "not-reviewed",
+    "note": "Published on 27 Nov 2026, before the human-review gate was introduced on 28 Nov. Not reviewed by a person."
+  },
+  "corrections": [
+    {
+      "date": "2026-11-28",
+      "text": "This briefing was corrected. As first published it said Drupal rated CVE-2026-132165 “Critical” and attributed the 20/25 score to an AI-written source; Drupal’s own advisory rates it Highly critical, 20/25. It also called exploitation of CVE-2026-136716 “reported but unverified”, although Drupal had stated on 2026-11-25 that it is being exploited in the wild; CISA has since added it to KEV. The NVD score (9.8), PoC count and KEV status were updated to current values."
+    }
+  ],
+  "updatedAt": "2026-11-28T12:00:00Z"
 }

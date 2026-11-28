@@ -31,6 +31,28 @@ KEEP = 14  # email pages kept online (two weeks)
 UNSUBSCRIBE_TAG = "$[LI:UNSUBSCRIBE]$"   # Zoho Campaigns fills in each recipient's link
 
 NAVY, BLUE, INK, MUTED, LINE = "#1d3a5f", "#1f4e79", "#1f2933", "#52606d", "#d9e2ec"
+CONFIG = REPO_ROOT / "threatwatch" / "subscription-config.json"
+
+
+def sender_identity() -> dict:
+    """Legal sender name, postal address and privacy-notice URL for email footers (CAN-SPAM).
+
+    Kept in threatwatch/subscription-config.json. send_digest.py and send_alerts.py refuse to send
+    while postalAddress is empty, so no email ever goes out without a physical address.
+    """
+    cfg = read_json(CONFIG, {}) or {}
+    return {"legalName": str(cfg.get("legalName") or "Aegis Cyber Solutions LLC").strip(),
+            "postalAddress": str(cfg.get("postalAddress") or "").strip(),
+            "privacyUrl": str(cfg.get("privacyUrl") or f"{SITE_URL}/privacy/").strip()}
+
+
+def identity_footer_html(color: str) -> str:
+    who = sender_identity()
+    parts = [html.escape(who["legalName"])]
+    if who["postalAddress"]:
+        parts.append(html.escape(who["postalAddress"]))
+    url = who["privacyUrl"] if who["privacyUrl"].startswith("https://") else f"{SITE_URL}/privacy/"
+    return (" · ".join(parts) + f' · <a href="{html.escape(url, quote=True)}" style="color:{color}">Privacy notice</a>')
 FONT = "Helvetica, Arial, sans-serif"
 
 
@@ -112,7 +134,8 @@ def render(brief: dict) -> tuple[str, str]:
   You are receiving this because you subscribed to the AEGIS ThreatWatch daily brief at aegisdefensecyber.com.<br>
   <a href="{UNSUBSCRIBE_TAG}" style="color:{BLUE}">Unsubscribe</a> ·
   <a href="{SITE_URL}/" style="color:{BLUE}">aegisdefensecyber.com</a> ·
-  <a href="mailto:info@aegisdefensecyber.com" style="color:{BLUE}">info@aegisdefensecyber.com</a>
+  <a href="mailto:info@aegisdefensecyber.com" style="color:{BLUE}">info@aegisdefensecyber.com</a><br>
+  {identity_footer_html(BLUE)}
 </td></tr>
 </table></td></tr></table>
 </body></html>

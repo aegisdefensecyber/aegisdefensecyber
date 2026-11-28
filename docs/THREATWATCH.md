@@ -257,3 +257,28 @@ existed are reconstructed from catalog data (marked "reconstructed") the next ti
   advisory STIX files that ATT&CK cites for the campaign or actor, and from abuse.ch ThreatFox by
   actor tag (needs the `THREATFOX_AUTH_KEY` secret; skipped without it). IOCs are shown defanged
   and never as links. A failing IOC source keeps its previous IOCs.
+
+## Analyst briefings: human review gate (since 28 Nov 2026)
+Briefings (`threatwatch/data/briefings/`) are AI-drafted by the "AEGIS threat intelligence briefing"
+scheduled task. Every briefing records `draftedBy` and a `review` object, both shown on the Alerts page.
+1. The task runs `scripts/publish_briefing.py --draft <file>` on a branch `briefing/<date>` and opens a pull
+   request; nothing reaches the live site yet.
+2. A person checks the draft against its sources, then runs
+   `python scripts/approve_briefing.py --editor "Your Name" <date>-<watch>.json` on that branch and merges.
+3. `scripts/validate_data.py` (CI) rejects any briefing dated 2026-11-28 or later that is not reviewed.
+Corrections are added to a briefing's (or brief edition's) `corrections` list with a date; they are shown
+in red on the page and never silently overwritten.
+
+## Exploitation evidence rule (since 28 Nov 2026)
+Only CISA KEV, Google Project Zero, ENISA EUVD, VulnCheck KEV and structured vendor-advisory flags count
+as exploitation. CVE description text is shown only as an "unverified claim" and never raises priority;
+negated wording ("We have not seen evidence of exploitation in the wild") is not a claim at all
+(`tw.common.affirms`). See the correction on the 21-24 Nov 2026 briefs (CVE-2026-102769).
+
+## Morning email rules (since 28 Nov 2026)
+`send_digest.py` runs after every successful update but sends only (a) today's edition, (b) once per
+edition (`threatwatch/email/digest-state.json`, committed by the workflow) and (c) between 07:00 and
+09:00 ET. The workflow input `send_email` sends today's email if it has not gone out yet (still inside
+the window); `force_resend` is the only override. Both emails need `legalName` and `postalAddress` in
+`threatwatch/subscription-config.json` (CAN-SPAM); with no postal address nothing is sent and the run
+shows an error annotation. Privacy notice: `/privacy/`.

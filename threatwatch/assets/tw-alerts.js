@@ -119,7 +119,13 @@
       v.hidden = false;
       v.appendChild(el("div", { cls: "br-head" }, [
         el("span", { cls: "al-lv " + (PRI[b.priority] || "info"), text: "Priority: " + (b.priority || "ROUTINE") }),
-        el("h3", { text: b.title }), el("p", { cls: "muted", text: (b.date || "") + " · " + (b.watchName || b.watch || "") + " · written by the AEGIS briefing analyst from AEGIS data and public reporting" })]));
+        el("h3", { text: b.title }), el("p", { cls: "muted", text: (b.date || "") + " · " + (b.watchName || b.watch || "") +
+          (b.updatedAt ? " · updated " + b.updatedAt.slice(0, 10) : "") }),
+        el("p", { cls: "br-review", text: reviewLine(b) })]));
+      (b.corrections || []).forEach(function (c) {
+        if (c && typeof c.text === "string") v.appendChild(el("p", { cls: "notice correction" }, [
+          el("strong", { text: "Correction" + (c.date ? " (" + c.date + ")" : "") + ": " }), c.text]));
+      });
       if (b.headline) v.appendChild(el("p", { cls: "notice br-headline", text: b.headline }));
       if (b.summary) v.appendChild(el("p", { text: b.summary }));
       var sec = function (n, t) { v.appendChild(el("h4", { text: n + ". " + t })); };
@@ -138,6 +144,14 @@
       v.scrollIntoView({ behavior: "smooth", block: "start" });
     }).catch(function () { v.hidden = false; v.textContent = "This briefing could not be loaded."; });
   }
+  // Who drafted the briefing and whether a person reviewed it, always shown (AI drafting is disclosed).
+  function reviewLine(b) {
+    var who = b.draftedBy || "Drafted automatically";
+    var r = b.review || {};
+    if (r.status === "reviewed") return who + ". Reviewed by " + r.by + (r.at ? " on " + r.at.slice(0, 10) : "") + ".";
+    if (r.status === "pending") return who + ". Not yet reviewed by a person.";
+    return who + ". " + (r.note || "Not reviewed by a person.");
+  }
   function renderBriefings(idx) {
     var box = $("br-list"); box.textContent = "";
     var list = (idx.briefings || []).slice(0, 30);
@@ -146,6 +160,8 @@
       var b = el("button", { type: "button", cls: "linkish", text: m.title });
       b.addEventListener("click", function () { showBriefing(m); history.replaceState(null, "", "#" + m.file.replace(/\.json$/, "")); });
       return el("li", null, [el("span", { cls: "al-lv " + (PRI[m.priority] || "info"), text: m.priority || "ROUTINE" }), " ", m.date + " · ", b,
+        m.corrected ? el("span", { cls: "al-lv info", text: " Corrected" }) : null,
+        m.review === "reviewed" ? null : el("span", { cls: "muted", text: " · AI-drafted, not human-reviewed" }),
         m.headline ? el("div", { cls: "muted", text: m.headline }) : null]);
     })));
     var want = location.hash.slice(1);

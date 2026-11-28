@@ -94,7 +94,8 @@ Critical = confirmed exploitation or a CISA KEV addition. High = public exploit 
 <tr><td style="padding:12px 28px 24px;font:13px/1.5 {FONT};color:{MUTED}">All alerts, per-technology RSS feeds and analyst briefings:
 <a href="{BD.SITE_URL}/threatwatch/alerts.html" style="color:{BLUE}">aegisdefensecyber.com/threatwatch/alerts.html</a>.
 Reports are evidence, not proof that a specific system is affected; confirm against the vendor advisory before acting.<br><br>
-You receive this because you chose daily brief + alerts. <a href="{BD.UNSUBSCRIBE_TAG}" style="color:{MUTED}">Unsubscribe</a></td></tr>
+You receive this because you subscribed to AEGIS ThreatWatch alerts at aegisdefensecyber.com. <a href="{BD.UNSUBSCRIBE_TAG}" style="color:{MUTED}">Unsubscribe</a><br>
+{BD.identity_footer_html(MUTED)}</td></tr>
 </table></td></tr></table></body></html>
 """
     return stamp, subject, page
@@ -126,6 +127,10 @@ def main() -> int:
         if not p.get("pending"):
             print("No alert email pending.")
             return 0
+        if not BD.sender_identity()["postalAddress"]:
+            print("::error::ALERT EMAIL NOT SENT: postalAddress is empty in threatwatch/subscription-config.json "
+                  "(a physical postal address is required by CAN-SPAM).", file=sys.stderr)
+            return 1
         missing = [n for n in SD.REQUIRED if not SD._env(n)] + ([] if SD.sender()[0] else ["ZOHO_FROM_EMAIL"])
         if missing:
             print(f"Alert email not configured (missing {', '.join(missing)}); alerts remain on the website and RSS.")

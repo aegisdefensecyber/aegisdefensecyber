@@ -59,6 +59,9 @@ class DigestTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d, mock.patch.dict(os.environ, env, clear=True), \
                 mock.patch.object(send_digest, "_request", fake), \
                 mock.patch.object(send_digest, "EMAIL_DIR", Path(d)), \
+                mock.patch.object(send_digest, "STATE_FILE", Path(d) / "digest-state.json"), \
+                mock.patch.object(build_digest, "sender_identity", lambda: {"legalName": "Aegis Cyber Solutions LLC", "postalAddress": "1 Test St, Naples FL", "privacyUrl": "https://aegisdefensecyber.com/privacy/"}), \
+                mock.patch.object(send_digest, "send_allowed", lambda *a, **k: (True, "test")), \
                 mock.patch.object(send_digest, "read_json",
                                   lambda p, default=None: {"edition": "2026-11-24", "subject": "S",
                                                            "path": "threatwatch/email/2026-11-24.html"}), \
@@ -71,6 +74,17 @@ class DigestTests(unittest.TestCase):
         self.assertEqual(create[1]["from_email"], "threatwatch@aegisdefensecyber.com")
         self.assertTrue(any(c[0].endswith("sendcampaign") and c[1]["campaignkey"] == "123" for c in calls))
 
+    def test_missing_postal_address_blocks_send(self):
+        env = {n: "x" for n in send_digest.REQUIRED}
+        with mock.patch.dict(os.environ, env, clear=True), \
+                mock.patch.object(build_digest, "sender_identity", lambda: {"legalName": "L", "postalAddress": "", "privacyUrl": ""}), \
+                mock.patch.object(send_digest, "send_allowed", lambda *a, **k: (True, "test")), \
+                mock.patch.object(send_digest, "_request", lambda *a, **k: (_ for _ in ()).throw(AssertionError("no network"))), \
+                mock.patch.object(send_digest, "read_json",
+                                  lambda p, default=None: {"edition": "2026-11-24", "subject": "S", "path": "p.html"}), \
+                mock.patch.object(sys, "argv", ["send_digest.py"]):
+            self.assertEqual(send_digest.main(), 1)
+
     def test_zoho_error_reports_failure(self):
         def fake(url, data=None, headers=None, timeout=30):
             if url.startswith("https://aegisdefensecyber.com"):
@@ -80,10 +94,37 @@ class DigestTests(unittest.TestCase):
             raise AssertionError(url)
         env = {n: "x" for n in send_digest.REQUIRED}
         with mock.patch.dict(os.environ, env, clear=True), mock.patch.object(send_digest, "_request", fake), \
+                mock.patch.object(build_digest, "sender_identity", lambda: {"legalName": "Aegis Cyber Solutions LLC", "postalAddress": "1 Test St, Naples FL", "privacyUrl": "https://aegisdefensecyber.com/privacy/"}), \
+                mock.patch.object(send_digest, "send_allowed", lambda *a, **k: (True, "test")), \
                 mock.patch.object(send_digest, "read_json",
                                   lambda p, default=None: {"edition": "2026-11-24", "subject": "S", "path": "p.html"}), \
                 mock.patch.object(sys, "argv", ["send_digest.py"]):
             self.assertEqual(send_digest.main(), 1)
+
+
+class SendOncePerEditionTests(unittest.TestCase):
+    """The morning email goes out once per edition, only 07:00-08:59 ET, unless a resend is forced."""
+
+    def at(self, hhmm, day="2026-11-28"):
+        from datetime import datetime
+        from tw.common import ET
+        return datetime.fromisoformat(f"{day}T{hhmm}:00").replace(tzinfo=ET)
+
+    def test_window_and_once(self):
+        ok = send_digest.send_allowed
+        self.assertTrue(ok("2026-11-28", self.at("07:06"), {})[0])
+        self.assertFalse(ok("2026-11-28", self.at("06:59"), {})[0])
+        self.assertFalse(ok("2026-11-28", self.at("09:00"), {})[0])
+        self.assertFalse(ok("2026-11-28", self.at("12:10"), {})[0])
+        self.assertFalse(ok("2026-11-27", self.at("07:30"), {})[0])          # yesterday's edition
+        sent = {"sent": {"2026-11-28": {"at": "2026-11-28T12:07:00Z"}}}
+        self.assertFalse(ok("2026-11-28", self.at("07:40"), sent)[0])       # re-run never double-sends
+        self.assertTrue(ok("2026-11-28", self.at("15:00"), sent, force=True)[0])
+
+    def test_footer_has_identity_and_privacy(self):
+        f = build_digest.identity_footer_html("#000")
+        self.assertIn("Aegis Cyber Solutions LLC", f)
+        self.assertIn("/privacy/", f)
 
 
 if __name__ == "__main__":

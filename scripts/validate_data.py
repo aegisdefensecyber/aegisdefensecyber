@@ -60,7 +60,8 @@ def main() -> int:
         except (ValueError, FileNotFoundError) as exc:
             errs.append(f"{name}: {exc}")
     cfg = json.loads((REPO_ROOT / "threatwatch" / "subscription-config.json").read_text())
-    if set(cfg) - {"enabled", "signupUrl", "provider", "note", "emailField", "hiddenFields", "fromEmail", "fromName", "alertsOptIn"}:
+    if set(cfg) - {"enabled", "signupUrl", "provider", "note", "emailField", "hiddenFields", "fromEmail", "fromName", "alertsOptIn",
+                   "legalName", "postalAddress", "privacyUrl"}:
         errs.append("subscription-config.json contains unexpected keys (no secrets allowed)")
     import re as _re
     if cfg.get("emailField") is not None and not _re.fullmatch(r"[A-Za-z0-9_]{1,40}", str(cfg["emailField"])):
@@ -87,6 +88,18 @@ def main() -> int:
             txt = page.read_text()
             if 'id="subscribe-form"' in txt and f"https://{host}" not in txt.split("form-action", 1)[-1].split(">", 1)[0]:
                 errs.append(f"{page.relative_to(REPO_ROOT)}: CSP form-action does not allow the signup host {host}")
+    # Briefings: every one says who drafted it; from the review gate onward none reaches main unreviewed.
+    from publish_briefing import REVIEW_GATE_FROM, REVIEW_STATUSES
+    for p in sorted((DATA_DIR / "briefings").glob("20*.json")):
+        bf = json.loads(p.read_text())
+        rv = bf.get("review") or {}
+        if not str(bf.get("draftedBy") or "").strip():
+            errs.append(f"briefings/{p.name}: draftedBy is required (disclose who or what drafted it)")
+        if rv.get("status") not in REVIEW_STATUSES:
+            errs.append(f"briefings/{p.name}: review.status must be one of {REVIEW_STATUSES}")
+        elif str(bf.get("date") or "") >= REVIEW_GATE_FROM and not (
+                rv.get("status") == "reviewed" and rv.get("by") and rv.get("at")):
+            errs.append(f"briefings/{p.name}: not human-reviewed (run scripts/approve_briefing.py before merging)")
     from tw.global_intel import build as build_global
     errs += [f"global-intelligence: {e}" for e in build_global(REPO_ROOT, write=False)[1]]
     for e in errs:

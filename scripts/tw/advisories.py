@@ -25,7 +25,13 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from typing import Any
 
-from .common import USER_AGENT, safe_url
+from .common import USER_AGENT, affirms, safe_url
+
+# Exploitation wording in vendor text. Matched through common.affirms(), which ignores negated
+# clauses such as "not aware of any exploitation" or "no evidence of exploitation in the wild".
+_EXPLOITED_CSAF = re.compile(r"exploited\s*:\s*yes|actively exploited|exploited in the wild", re.I)
+_EXPLOITED_FORTINET = re.compile(r"exploited in the wild|observed [^.]{0,80}exploited", re.I)
+_EXPLOITED_PANW = re.compile(r"aware of (?:limited )?(?:malicious )?exploitation|actively exploited", re.I)
 
 CVE_RE = re.compile(r"CVE-\d{4}-\d{4,7}")
 RETAIN_DAYS = 90
@@ -209,7 +215,7 @@ def parse_csaf(doc: Any, url: str | None = None) -> list[dict]:
             if t.get("category") == "exploit_status":
                 note = _clip(t.get("details"), 200)
                 low = note.lower()
-                exploited = True if re.search(r"exploited\s*:\s*yes|actively exploited|exploited in the wild", low) else \
+                exploited = True if affirms(_EXPLOITED_CSAF, low) else \
                     False if re.search(r"exploited\s*:\s*no", low) else exploited
         desc = next((n.get("text") for n in v.get("notes") or [] if n.get("category") in ("description", "summary")), None)
         out.append({
@@ -442,7 +448,7 @@ def parse_fortinet_rss(xml: str) -> list[dict]:
                         "released": _iso(_ts(g("pubDate").strip())), "updated": _iso(_ts(g("pubDate").strip())),
                         "cvss": score, "severity": _sev(score), "products": [], "productsMore": 0,
                         "fixes": [{"type": "vendor_fix", "text": "See the Solutions section of the Fortinet advisory for fixed versions.", "url": link}],
-                        "exploited": True if re.search(r"exploited in the wild|observed .* exploited", desc, re.I) else None,
+                        "exploited": True if affirms(_EXPLOITED_FORTINET, desc) else None,
                         "exploitNote": None, "description": _clip(desc, 600) or None, "cwe": None})
     return out
 
@@ -493,8 +499,8 @@ def parse_panw(items: Any) -> list[dict]:
                         "cvss": a.get("baseScore") or None, "severity": (a.get("baseSeverity") or "").upper() or None,
                         "products": [_clip(p, 120) for p in (a.get("product") or [])][:8], "productsMore": 0,
                         "fixes": [{"type": "vendor_fix", "text": _clip(sol, 240), "url": url}] if sol else [],
-                        "exploited": True if re.search(r"aware of (?:limited )?(?:malicious )?exploitation|actively exploited", expl, re.I)
-                        else False if re.search(r"not aware of any malicious exploitation", expl, re.I) else None,
+                        "exploited": True if affirms(_EXPLOITED_PANW, expl)
+                        else False if re.search(r"not aware of any (?:malicious )?exploitation", expl or "", re.I) else None,
                         "exploitNote": _clip(expl, 200) or None, "description": _clip(prob, 600) or None, "cwe": None})
     return out
 
