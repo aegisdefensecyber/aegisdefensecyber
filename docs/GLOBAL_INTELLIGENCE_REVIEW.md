@@ -107,4 +107,62 @@ Guinea-Bissau's military rulers postponed presidential and legislative elections
 
 ---
 
-5 draft(s).
+## GI-2026-0019 — US forces disable Palau-flagged merchant ship trying to breach Iran port blockade in Gulf of Oman
+
+**MODERATE** · Reported · Military · Middle East · Iran, United States · event 2026-11-26 · trend Stable
+
+US Central Command said a US military aircraft fired precision munitions at the stern of the Palau-flagged merchant vessel Pacific Archer in the Gulf of Oman on 26 November, disabling its propulsion after it left the Iranian port of Bandar Abbas and tried to breach the US naval blockade of Iranian ports. CENTCOM said the civilian crew was unharmed. It is at least the 15th vessel publicly disclosed as disabled since the blockade began in the spring. On the same day Iran's Revolutionary Guards claimed a tanker using an unauthorised Strait of Hormuz route struck a naval mine.
+
+**Reported claims**
+- A US military aircraft fired precision munitions at the stern of the Palau-flagged M/V Pacific Archer in the Gulf of Oman on Thursday 26 November and its propulsion was ultimately disabled; the civilian crew was unharmed. _(attributed to US Central Command statement)_ [1][2]
+- The Pacific Archer had left the Iranian port of Bandar Abbas before attempting to breach the blockade; ship-tracking sites listed Singapore as its destination. _(attributed to US officials and ship-tracking sites, as reported by the Associated Press)_ [1][2]
+- It is at least the 15th vessel publicly acknowledged as disabled since the blockade began, the sixth since it resumed in the summer, and the first since 7 November; the US says it has redirected 158 merchant ships since July. _(attributed to Associated Press tally and US Central Command)_ [1][2]
+- Iran's Revolutionary Guards said two tankers tried to transit the Strait of Hormuz by an unauthorised route, that one struck a naval mine and the other turned back, and that such attempts had sharply decreased; the claims could not be independently verified. _(attributed to Islamic Revolutionary Guard Corps)_ [1][2]
+- Iranian navy commander Shahram Irani said on state television that Iran would carry out operations that would break the naval blockade and drive the enemy out of the region's waters. _(attributed to Shahram Irani, Iranian navy commander (state TV))_ [2]
+
+**Priority rationale:** MODERATE: kinetic action against a merchant ship in an active blockade but no casualties and consistent with an established pattern; related to the wider Gulf conflict covered in GI-2026-0001.
+
+**Sources**
+1. PBS NewsHour (AP), "U.S. military says it disabled another ship that tried to breach naval blockade on Iranian ports" (2026-11-27) https://www.pbs.org/newshour/world/u-s-military-says-it-disabled-another-ship-that-tried-to-breach-naval-blockade-on-iranian-ports — republished from AP
+2. Al Jazeera, "US military says it disabled merchant ship trying to breach Iran blockade" (2026-11-27) https://www.aljazeera.com/news/2026/11/27/us-military-says-it-disabled-merchant-ship-trying-to-breach-iran-blockade — republished from AP — state-affiliated
+
+---
+
+## GI-2026-0020 — Russia commissions Yasen-M nuclear submarine Perm, which Moscow says carries Zircon hypersonic missiles
+
+**LOW** · Reported · Military · Europe · Russia · event 2026-11-27 · trend Stable
+
+President Vladimir Putin attended a flag-raising ceremony at the Sevmash shipyard in Severodvinsk on 27 November marking the formal transfer of the Project 885M Yasen-M nuclear-powered submarine Perm to the Russian navy. Moscow says the Perm is the first submarine equipped with Zircon hypersonic missiles. Putin said the navy would receive five more submarines by 2030, three of them Yasen-M class.
+
+**Reported claims**
+- The Yasen-M class nuclear-powered submarine Perm was formally transferred to the navy at a flag-raising ceremony attended by Putin at the Sevmash shipyard in Severodvinsk on Friday 27 November. _(attributed to Kremlin video, as reported by AFP)_ [1][2]
+- The Perm is the first submarine equipped with Russia's Zircon hypersonic missiles. _(attributed to Russian government (Moscow's claim))_ [1]
+- The navy will receive five more submarines by 2030, including three Yasen-M class boats, able to operate in any part of the world's oceans with a range of cruise missiles. _(attributed to Vladimir Putin)_ [1][2]
+
+**Priority rationale:** LOW: a planned capability milestone with no immediate operational event.
+
+**Sources**
+1. Al Jazeera, "Putin unveils new Russian nuclear-powered submarine with hypersonic weapons" (2026-11-27) https://www.aljazeera.com/news/2026/11/27/putin-unveils-new-russian-nuclear-powered-submarine-with-hypersonic-weapons — republished from AFP — state-affiliated
+2. Arab News (AFP), "Putin unveils new nuclear submarine" (2026-11-27) https://www.arabnews.com/world/putin-unveils-new-nuclear-submarine-3014309 — republished from AFP
+
+---
+
+## GI-2026-0021 — Ukraine proposes Black Sea ceasefire to protect grain exports and awaits Russia's response
+
+**MODERATE** · Reported · Geopolitical · Europe · Ukraine, Russia · event 2026-11-27 · trend Stable
+
+Ukrainian Foreign Minister Andrii Sybiha said on 27 November that Kyiv had put forward a possible Black Sea ceasefire to restore freedom of navigation and keep agricultural exports flowing, and was awaiting Russia's response. Moscow has sought to include oil transportation in any deal, which Ukraine says belongs in a broader energy ceasefire. The offer follows escalating attacks on shipping and port infrastructure that have disrupted Black Sea shipments.
+
+**Reported claims**
+- Kyiv has put forward a possible Black Sea ceasefire, is ready to restore freedom of navigation and ensure uninterrupted agricultural exports, and has conveyed all of its proposals and is awaiting a response from Russia. _(attributed to Andrii Sybiha, Ukrainian foreign minister, at the Food from Ukraine conference)_ [1]
+- Russia has sought to include oil transportation in the deal, which Ukraine says belongs in a broader energy ceasefire; Sybiha accused Russia of repeatedly putting forward unrealistic demands. _(attributed to Al Jazeera, citing Sybiha via Suspilne)_ [1]
+- Attacks on vessels and port infrastructure have disrupted Black Sea shipments. _(attributed to Al Jazeera)_ [1]
+
+**Priority rationale:** MODERATE: a significant diplomatic initiative affecting global food-supply shipping, but no agreement yet; single-source draft.
+
+**Sources**
+1. Al Jazeera, "Kyiv offers Black Sea ceasefire, as Putin expands Russia's navy" (2026-11-27) https://www.aljazeera.com/news/2026/11/27/kyiv-offers-black-sea-ceasefire-as-putin-expands-russias-navy — republished from Reuters — state-affiliated
+
+---
+
+8 draft(s).
