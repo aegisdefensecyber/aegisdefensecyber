@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-28",
-  "count": 474,
+  "count": 481,
   "items": [
     {
       "id": "CERTFR-2026-ALE-011",
@@ -5310,6 +5310,46 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:72276",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "crypto/tls: crypto/tls: Incorrect certificate validation during TLS session resumption",
+      "url": "https://access.redhat.com/errata/RHSA-2026:72276",
+      "released": "2026-09-28T02:09:38Z",
+      "updated": "2026-11-28T04:12:27Z",
+      "cves": [
+        "CVE-2025-68121",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-33811",
+        "CVE-2026-33818",
+        "CVE-2026-39821",
+        "CVE-2026-42504",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:72276"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "msrc_CVE-2026-93219",
       "src": "csaf_microsoft",
       "vendor": "Microsoft",
@@ -10081,6 +10121,25 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "CVE-2026-94194",
+      "src": "cvelistv5",
+      "vendor": "elixir-mint",
+      "title": "Mint HTTP/1 client applies chunked framing when chunked is not the final transfer coding, enabling response smuggling through intermediaries",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-94194",
+      "released": "2026-09-28T11:15:30Z",
+      "updated": "2026-11-19T08:23:49Z",
+      "cves": [
+        "CVE-2026-94194"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "elixir-mint mint",
+        "elixir-mint mint"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "ROOT-APP-NPM-CVE-2025-7783",
       "src": "osv_root",
       "vendor": "Root",
@@ -11591,7 +11650,7 @@
       "title": "golang: net/http: net/http: sensitive headers incorrectly sent after cross-domain redirect",
       "url": "https://access.redhat.com/errata/RHSA-2026:72737",
       "released": "2026-09-28T18:05:41Z",
-      "updated": "2026-11-27T04:28:59Z",
+      "updated": "2026-11-28T04:12:28Z",
       "cves": [
         "CVE-2024-45336",
         "CVE-2025-22866",
@@ -11665,7 +11724,7 @@
       "title": "golang: net/http: net/http: sensitive headers incorrectly sent after cross-domain redirect",
       "url": "https://access.redhat.com/errata/RHSA-2026:72805",
       "released": "2026-09-28T19:05:31Z",
-      "updated": "2026-11-27T04:28:59Z",
+      "updated": "2026-11-28T04:12:29Z",
       "cves": [
         "CVE-2024-45336",
         "CVE-2025-22866",
@@ -12153,13 +12212,132 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "RHSA-2026:72850",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang.org/x/net/html: golang.org/x/net/html: Arbitrary code execution via Cross-Site Scripting",
+      "url": "https://access.redhat.com/errata/RHSA-2026:72850",
+      "released": "2026-09-28T21:30:31Z",
+      "updated": "2026-11-28T04:12:29Z",
+      "cves": [
+        "CVE-2026-25681",
+        "CVE-2026-33818",
+        "CVE-2026-41178",
+        "CVE-2026-56852",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-59879",
+        "CVE-2026-73500",
+        "CVE-2026-84445"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "For multicluster engine for Kubernetes, see the following documentation for details on how to install the images: https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.11/html/clusters/cluster_m…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:72850"
+        },
+        {
+          "t": "To mitigate this flaw, applications processing untrusted HTML input must implement strict input sanitization and ensure all output is properly encoded before rendering. Deploying a comprehensive Content Security Policy (CSP) can restrict s…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "RHSA-2026:72851",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "runc: opencontainers/selinux: container escape and denial of service due to arbitrary write gadgets and procfs write redirects",
+      "url": "https://access.redhat.com/errata/RHSA-2026:72851",
+      "released": "2026-09-28T21:31:03Z",
+      "updated": "2026-11-28T04:12:30Z",
+      "cves": [
+        "CVE-2025-52881",
+        "CVE-2026-25681",
+        "CVE-2026-33818",
+        "CVE-2026-39829",
+        "CVE-2026-41178",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-59879",
+        "CVE-2026-73500",
+        "CVE-2026-84445"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "fix": [
+        {
+          "t": "For multicluster engine for Kubernetes, see the following documentation for details on how to install the images: https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.14/html/clusters/cluster_m…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:72851"
+        },
+        {
+          "t": "Potential mitigations for this issue include: * Using rootless containers, as doing so will block most of the inadvertent writes (runc would run with reduced privileges, making attempts to write to procfs files ineffective). * Based on our…",
+          "u": null
+        },
+        {
+          "t": "To mitigate this flaw, applications processing untrusted HTML input must implement strict input sanitization and ensure all output is properly encoded before rendering. Deploying a comprehensive Content Security Policy (CSP) can restrict s…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "RHSA-2026:72853",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "golang.org/x/net/html: golang.org/x/net/html: Arbitrary code execution via Cross-Site Scripting",
+      "url": "https://access.redhat.com/errata/RHSA-2026:72853",
+      "released": "2026-09-28T21:31:27Z",
+      "updated": "2026-11-28T04:12:30Z",
+      "cves": [
+        "CVE-2026-25681",
+        "CVE-2026-33818",
+        "CVE-2026-39820",
+        "CVE-2026-41178",
+        "CVE-2026-46600",
+        "CVE-2026-56852",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-73500",
+        "CVE-2026-84445"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "For multicluster engine for Kubernetes, see the following documentation for details on how to install the images: https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.15/html/clusters/cluster_m…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:72853"
+        },
+        {
+          "t": "To mitigate this flaw, applications processing untrusted HTML input must implement strict input sanitization and ensure all output is properly encoded before rendering. Deploying a comprehensive Content Security Policy (CSP) can restrict s…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RHSA-2026:72854",
       "src": "direct_csaf",
       "vendor": "Red Hat",
       "title": "crypto/internal/nistec: golang: Timing sidechannel for P-256 on ppc64le in crypto/internal/nistec",
       "url": "https://access.redhat.com/errata/RHSA-2026:72854",
       "released": "2026-09-28T21:31:35Z",
-      "updated": "2026-11-27T04:29:00Z",
+      "updated": "2026-11-28T04:12:31Z",
       "cves": [
         "CVE-2025-22866",
         "CVE-2026-25681",
@@ -12621,6 +12799,82 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:72882",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:72882",
+      "released": "2026-09-28T22:01:10Z",
+      "updated": "2026-11-28T04:12:31Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-41178",
+        "CVE-2026-42504",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "Before you apply this update, make sure all previously released errata that are relevant to your system are applied. For details on how to apply this update, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:72882"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "To mitigate this issue, restrict network access to services that process MIME headers from untrusted sources. Implement input validation and sanitization for all incoming data, especially MIME headers, to prevent maliciously crafted conten…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "RHSA-2026:72885",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:72885",
+      "released": "2026-09-28T22:01:48Z",
+      "updated": "2026-11-28T04:12:32Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-41178",
+        "CVE-2026-42127",
+        "CVE-2026-42151",
+        "CVE-2026-42504",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "Before you apply this update, make sure all previously released errata that are relevant to your system are applied. For details on how to apply this update, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:72885"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "Restrict network access to the Grafana instance to only trusted clients and networks. This can be achieved by configuring firewall rules to limit inbound connections to the Grafana service port. If Grafana is exposed via a reverse proxy, e…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

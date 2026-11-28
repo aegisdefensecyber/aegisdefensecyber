@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-21",
-  "count": 48,
+  "count": 59,
   "items": [
     {
       "id": "openSUSE-SU-2026:11561-1",
@@ -429,6 +429,33 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-neo4j-2026-14587",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Unathenticated connection can hold Bolt channel open",
+      "url": "https://neo4j.com/security/CVE-2026-14587",
+      "released": "2026-08-21T05:51:22Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-14587"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: neo4j"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in neo4j 5.26.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in neo4j 2026.7.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RLSA-2026:57253",
       "src": "osv_rocky",
       "vendor": "Rocky",
@@ -815,6 +842,37 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-gitlab-2026-19478",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper Control of Generation of Code ('Code Injection') in GitLab",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-2-4-released/",
+      "released": "2026-08-21T09:07:34Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-19478"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: gitlab"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitlab 18.11.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 19.0.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 19.1.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-gitlab-2026-19650",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -844,6 +902,63 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-47080",
+      "src": "cvelistv5",
+      "vendor": "joshnuss",
+      "title": "CDATA Section Breakout via Unsanitised ]]> in xml_builder",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-47080",
+      "released": "2026-08-21T09:49:34Z",
+      "updated": "2026-11-19T08:43:24Z",
+      "cves": [
+        "CVE-2026-47080"
+      ],
+      "sev": "LOW",
+      "cvss": 2.1,
+      "products": [
+        "joshnuss xml_builder",
+        "joshnuss xml_builder"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-48590",
+      "src": "cvelistv5",
+      "vendor": "joshnuss",
+      "title": "Element and Attribute Names Injected Verbatim into XML Output in xml_builder",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-48590",
+      "released": "2026-08-21T09:51:25Z",
+      "updated": "2026-11-19T08:43:18Z",
+      "cves": [
+        "CVE-2026-48590"
+      ],
+      "sev": "LOW",
+      "cvss": 2.1,
+      "products": [
+        "joshnuss xml_builder",
+        "joshnuss xml_builder"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-47079",
+      "src": "cvelistv5",
+      "vendor": "joshnuss",
+      "title": "Round-trip Corruption via Improper Entity Escaping in xml_builder",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-47079",
+      "released": "2026-08-21T09:52:44Z",
+      "updated": "2026-11-19T08:43:13Z",
+      "cves": [
+        "CVE-2026-47079"
+      ],
+      "sev": "LOW",
+      "cvss": 2.1,
+      "products": [
+        "joshnuss xml_builder",
+        "joshnuss xml_builder"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "RLSA-2026:55798",
@@ -1193,6 +1308,101 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:23249-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openssh",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623249-1/",
+      "released": "2026-08-21T14:14:36Z",
+      "updated": "2026-09-20T18:41:20Z",
+      "cves": [
+        "CVE-2025-32728",
+        "CVE-2026-3497",
+        "CVE-2026-35385",
+        "CVE-2026-35388",
+        "CVE-2026-35414"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:23251-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for sssd",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623251-1/",
+      "released": "2026-08-21T14:14:36Z",
+      "updated": "2026-09-20T18:41:23Z",
+      "cves": [
+        "CVE-2026-68742",
+        "CVE-2026-68743",
+        "CVE-2026-68744"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3677-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for vim",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263677-1/",
+      "released": "2026-08-21T14:19:01Z",
+      "updated": "2026-09-17T16:41:39Z",
+      "cves": [
+        "CVE-2026-73070",
+        "CVE-2026-73071",
+        "CVE-2026-73072",
+        "CVE-2026-73074",
+        "CVE-2026-73075",
+        "CVE-2026-73076",
+        "CVE-2026-73077",
+        "CVE-2026-73078"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "openSUSE-SU-2026:21621-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1218,6 +1428,22 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-96984",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-54789 affecting package mod_auth_openidc 2.4.14.2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54789",
+      "released": "2026-08-21T16:17:19Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-54789"
+      ],
+      "products": [
+        "Azure Linux: mod_auth_openidc"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "AZL-96992",
@@ -1308,6 +1534,21 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-486p-g8x4-77mg",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: ONNX: TOCTOU arbitrary file read/write in save_external_dat",
+      "url": "https://github.com/advisories/GHSA-486p-g8x4-77mg",
+      "released": "2026-08-21T18:34:56Z",
+      "updated": "2026-09-08T20:57:28Z",
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: onnx"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-28"
+    },
+    {
       "id": "AZL-96989",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -1322,6 +1563,22 @@
         "Azure Linux: keda"
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-97652",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-44517 affecting package buildah 1.43.1-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44517",
+      "released": "2026-08-21T21:16:59Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-44517"
+      ],
+      "products": [
+        "Azure Linux: buildah"
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

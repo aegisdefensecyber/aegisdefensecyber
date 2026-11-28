@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-01-28",
-  "count": 11,
+  "count": 23,
   "items": [
     {
       "id": "AZL-56066",
@@ -48,6 +48,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-56379",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2024-45339 affecting package glog 0.3.5-16",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-45339",
+      "released": "2025-01-28T02:15:28Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2024-45339"
+      ],
+      "products": [
+        "Azure Linux: glog"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "AZL-98790",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -78,6 +94,68 @@
         "Azure Linux: golang"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-gitlab-2025-0314",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in GitLab",
+      "url": "https://gitlab.com/gitlab-org/gitlab/-/issues/512118",
+      "released": "2025-01-28T07:10:14Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-0314"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: gitlab"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitlab 17.6.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 17.7.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 17.8.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-gitlab-2024-11931",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Insufficient Granularity of Access Control in GitLab",
+      "url": "https://about.gitlab.com/releases/2025/01/22/patch-release-gitlab-17-8-1-released/https://about.gitlab.com/releases/2025/01/22/patch-release-gitlab-17-8-1-released/",
+      "released": "2025-01-28T07:25:07Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-11931"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: gitlab"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitlab 17.6.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 17.7.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 17.8.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "AZL-110333",
@@ -190,6 +268,304 @@
         "Azure Linux: skopeo"
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-7231-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "tcpreplay vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-7231-1",
+      "released": "2025-01-28T14:49:27Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2023-4256",
+        "CVE-2023-27783",
+        "CVE-2023-27784",
+        "CVE-2023-27785",
+        "CVE-2023-27786",
+        "CVE-2023-27787",
+        "CVE-2023-27788",
+        "CVE-2023-27789",
+        "CVE-2023-43279"
+      ],
+      "products": [
+        "Ubuntu: tcpreplay"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tcpreplay 3.4.4-2+deb8u1ubuntu0.1~esm3",
+          "u": null
+        },
+        {
+          "t": "Fixed in tcpreplay 4.2.6-1ubuntu0.1~esm5",
+          "u": null
+        },
+        {
+          "t": "Fixed in tcpreplay 4.3.2-1ubuntu0.1~esm3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7232-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "linux vulnerability",
+      "url": "https://ubuntu.com/security/notices/USN-7232-1",
+      "released": "2025-01-28T17:52:22Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2024-53141"
+      ],
+      "products": [
+        "Ubuntu: linux"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux 3.13.0-202.253",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7233-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "linux, linux-aws, linux-aws-hwe, linux-gcp, linux-gcp-4.15, linux-hwe, linux-kvm, linux-oracle vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-7233-1",
+      "released": "2025-01-28T18:56:19Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2024-26595",
+        "CVE-2024-26663",
+        "CVE-2024-26929",
+        "CVE-2024-38553",
+        "CVE-2024-38597",
+        "CVE-2024-38661",
+        "CVE-2024-40982",
+        "CVE-2024-41012",
+        "CVE-2024-41020",
+        "CVE-2024-41066",
+        "CVE-2024-42252",
+        "CVE-2024-42311",
+        "CVE-2024-43914",
+        "CVE-2024-53103",
+        "CVE-2024-53141"
+      ],
+      "products": [
+        "Ubuntu: linux",
+        "Ubuntu: linux-aws",
+        "Ubuntu: linux-aws-hwe",
+        "Ubuntu: linux-gcp",
+        "Ubuntu: linux-gcp-4.15",
+        "Ubuntu: linux-hwe"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-aws-hwe 4.15.0-1177.190~16.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-gcp 4.15.0-1170.187~16.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-hwe 4.15.0-233.245~16.04.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7234-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "linux, linux-bluefield, linux-gcp, linux-gcp-5.4, linux-ibm, linux-ibm-5.4, linux-kvm, linux-oracle, linux-oracle-5.4, linux-raspi vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-7234-1",
+      "released": "2025-01-28T19:30:00Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2023-21400",
+        "CVE-2024-40967",
+        "CVE-2024-53103",
+        "CVE-2024-53141",
+        "CVE-2024-53164"
+      ],
+      "products": [
+        "Ubuntu: linux",
+        "Ubuntu: linux-bluefield",
+        "Ubuntu: linux-gcp",
+        "Ubuntu: linux-gcp-5.4",
+        "Ubuntu: linux-ibm",
+        "Ubuntu: linux-ibm-5.4"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-gcp-5.4 5.4.0-1142.151~18.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-ibm-5.4 5.4.0-1085.90~18.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-oracle-5.4 5.4.0-1137.146~18.04.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7235-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "linux, linux-azure, linux-gcp, linux-gcp-5.15, linux-gke, linux-gkeop, linux-hwe-5.15, linux-ibm, linux-ibm-5.15, linux-intel-iotg, linux-intel-iotg-5.15, linux-kvm, linux-lowlatency, linux-lowlatency-hwe-5.15, linux-nv…",
+      "url": "https://ubuntu.com/security/notices/USN-7235-1",
+      "released": "2025-01-28T20:04:15Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2024-53103",
+        "CVE-2024-53141",
+        "CVE-2024-53164"
+      ],
+      "products": [
+        "Ubuntu: linux",
+        "Ubuntu: linux-azure",
+        "Ubuntu: linux-gcp",
+        "Ubuntu: linux-gcp-5.15",
+        "Ubuntu: linux-gke",
+        "Ubuntu: linux-gkeop"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-gcp-5.15 5.15.0-1075.84~20.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-hwe-5.15 5.15.0-131.141~20.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-ibm-5.15 5.15.0-1069.72~20.04.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7236-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "linux, linux-azure, linux-gcp, linux-gcp-6.8, linux-gke, linux-gkeop, linux-hwe-6.8, linux-ibm, linux-lowlatency, linux-nvidia, linux-nvidia-6.8, linux-nvidia-lowlatency, linux-oracle, linux-oracle-6.8, linux-raspi vuln…",
+      "url": "https://ubuntu.com/security/notices/USN-7236-1",
+      "released": "2025-01-28T20:53:53Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2024-53103",
+        "CVE-2024-53141",
+        "CVE-2024-53164"
+      ],
+      "products": [
+        "Ubuntu: linux",
+        "Ubuntu: linux-azure",
+        "Ubuntu: linux-gcp",
+        "Ubuntu: linux-gcp-6.8",
+        "Ubuntu: linux-gke",
+        "Ubuntu: linux-gkeop"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-gcp-6.8 6.8.0-1021.23~22.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-hwe-6.8 6.8.0-52.53~22.04.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-nvidia-6.8 6.8.0-1021.23~22.04.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7237-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "linux-oem-6.8 vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-7237-1",
+      "released": "2025-01-28T21:30:46Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2024-47715",
+        "CVE-2024-53103",
+        "CVE-2024-53141",
+        "CVE-2024-53164"
+      ],
+      "products": [
+        "Ubuntu: linux-oem-6.8"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-oem-6.8 6.8.0-1020.20",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7238-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "linux, linux-azure, linux-gcp, linux-oem-6.11, linux-raspi, linux-realtime vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-7238-1",
+      "released": "2025-01-28T21:44:31Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2024-53103",
+        "CVE-2024-53164"
+      ],
+      "products": [
+        "Ubuntu: linux-oem-6.11"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-oem-6.11 6.11.0-1013.13",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7239-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "libmicrodns vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-7239-1",
+      "released": "2025-01-28T23:36:20Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2020-6071",
+        "CVE-2020-6072",
+        "CVE-2020-6073",
+        "CVE-2020-6077",
+        "CVE-2020-6078",
+        "CVE-2020-6079",
+        "CVE-2020-6080"
+      ],
+      "products": [
+        "Ubuntu: libmicrodns"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libmicrodns 0.0.8-1ubuntu0.1~esm1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

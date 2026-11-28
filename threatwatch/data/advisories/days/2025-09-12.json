@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-09-12",
-  "count": 28,
+  "count": 31,
   "items": [
     {
       "id": "BELL-CVE-2025-39744",
@@ -342,6 +342,23 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-nifi-2020-27223",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Eclipse Jetty 9.4.6.v20170531 to 9.4.36.v20210114 (inclusive), 10.0.0, and 11.0.0 when Jetty handles a request containing multiple Accept headers with a large number of “quality” (i.e. q) parameters, the server may e…",
+      "url": "https://bugs.eclipse.org/bugs/show_bug.cgi?id=571128",
+      "released": "2025-09-12T11:46:41Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2020-27223"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nifi"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-nifi-2020-9486",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -579,6 +596,51 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nifi-2023-49145",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache NiFi: Improper Neutralization of Input in Advanced User Interface for Jolt",
+      "released": "2025-09-12T11:47:03Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2023-49145"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: nifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nifi 1.24.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-nifi-2024-56512",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache NiFi: Missing Complete Authorization for Parameter and Service References",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-56512",
+      "released": "2025-09-12T11:47:06Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-56512"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: nifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nifi 2.1.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

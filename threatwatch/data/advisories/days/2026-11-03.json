@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-03",
-  "count": 321,
+  "count": 326,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1443",
@@ -2200,6 +2200,58 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BELL-CVE-2026-99231",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-99231",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99231",
+      "released": "2026-11-03T06:06:36Z",
+      "updated": "2026-11-10T20:02:28Z",
+      "cves": [
+        "CVE-2026-99231"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.12.115-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BELL-CVE-2026-99233",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-99233",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-99233",
+      "released": "2026-11-03T06:06:36Z",
+      "updated": "2026-11-10T20:02:28Z",
+      "cves": [
+        "CVE-2026-99233"
+      ],
+      "products": [
+        "Alpaquita: linux-lts"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-lts 6.1.191-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.12.115-r0",
+          "u": null
+        },
+        {
+          "t": "Fixed in linux-lts 6.18.62-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "ROOT-APP-MAVEN-CVE-2026-13505",
@@ -5610,7 +5662,7 @@
       "title": "Important: bind security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:93925",
       "released": "2026-11-03T12:01:07Z",
-      "updated": "2026-11-17T12:04:12Z",
+      "updated": "2026-11-27T19:47:23Z",
       "cves": [
         "CVE-2026-19630",
         "CVE-2026-19662",
@@ -5626,15 +5678,15 @@
       ],
       "fix": [
         {
-          "t": "Fixed in bind 2:9.11.36-18.el8_10",
+          "t": "Fixed in bind 32:9.11.36-18.el8_10",
           "u": null
         },
         {
-          "t": "Fixed in bind-chroot 2:9.11.36-18.el8_10",
+          "t": "Fixed in bind-chroot 32:9.11.36-18.el8_10",
           "u": null
         },
         {
-          "t": "Fixed in bind-debuginfo 2:9.11.36-18.el8_10",
+          "t": "Fixed in bind-debuginfo 32:9.11.36-18.el8_10",
           "u": null
         }
       ],
@@ -5818,7 +5870,7 @@
       "title": "Important: bind9.16 security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:94011",
       "released": "2026-11-03T12:01:33Z",
-      "updated": "2026-11-17T12:04:14Z",
+      "updated": "2026-11-27T19:47:23Z",
       "cves": [
         "CVE-2026-19630",
         "CVE-2026-19662",
@@ -5836,15 +5888,15 @@
       ],
       "fix": [
         {
-          "t": "Fixed in bind9.16 2:9.16.23-0.22.el8_10.21",
+          "t": "Fixed in bind9.16 32:9.16.23-0.22.el8_10.21",
           "u": null
         },
         {
-          "t": "Fixed in bind9.16-chroot 2:9.16.23-0.22.el8_10.21",
+          "t": "Fixed in bind9.16-chroot 32:9.16.23-0.22.el8_10.21",
           "u": null
         },
         {
-          "t": "Fixed in bind9.16-debuginfo 2:9.16.23-0.22.el8_10.21",
+          "t": "Fixed in bind9.16-debuginfo 32:9.16.23-0.22.el8_10.21",
           "u": null
         }
       ],
@@ -6077,7 +6129,7 @@
       "title": "Important: bind security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:93610",
       "released": "2026-11-03T12:05:01Z",
-      "updated": "2026-11-13T03:22:23Z",
+      "updated": "2026-11-27T19:47:23Z",
       "cves": [
         "CVE-2026-19630",
         "CVE-2026-94300",
@@ -6085,11 +6137,24 @@
         "CVE-2026-97313"
       ],
       "products": [
-        "Rocky Linux: bind"
+        "Rocky Linux: bind",
+        "Rocky Linux: bind-chroot",
+        "Rocky Linux: bind-debuginfo",
+        "Rocky Linux: bind-debugsource",
+        "Rocky Linux: bind-devel",
+        "Rocky Linux: bind-dnssec-doc"
       ],
       "fix": [
         {
-          "t": "Fixed in bind 2:9.16.23-40.el9_8.13",
+          "t": "Fixed in bind 32:9.16.23-40.el9_8.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in bind-chroot 32:9.16.23-40.el9_8.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in bind-debuginfo 32:9.16.23-40.el9_8.13",
           "u": null
         }
       ],
@@ -7628,6 +7693,44 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CVE-2026-119215",
+      "src": "cvelistv5",
+      "vendor": "team-alembic",
+      "title": "AshAuthentication TOTP setup lets a user install their own authenticator secret on another user's account",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-119215",
+      "released": "2026-11-03T15:46:32Z",
+      "updated": "2026-11-19T06:57:31Z",
+      "cves": [
+        "CVE-2026-119215"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.6,
+      "products": [
+        "team-alembic ash_authentication",
+        "team-alembic ash_authentication"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-118505",
+      "src": "cvelistv5",
+      "vendor": "team-alembic",
+      "title": "AshAuthentication brute_force_strategy does not limit sign-in and request actions defined on the resource",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-118505",
+      "released": "2026-11-03T15:47:36Z",
+      "updated": "2026-11-19T07:56:45Z",
+      "cves": [
+        "CVE-2026-118505"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "team-alembic ash_authentication",
+        "team-alembic ash_authentication"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RHSA-2026:94608",
       "src": "direct_csaf",
       "vendor": "Red Hat",
@@ -7714,6 +7817,24 @@
         "Azure Linux: hdf5"
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-115716",
+      "src": "cvelistv5",
+      "vendor": "Elastic",
+      "title": "Allocation of Resources Without Limits or Throttling in APM Server Leading to Denial of Service",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-115716",
+      "released": "2026-11-03T16:44:15Z",
+      "updated": "2026-11-19T13:23:36Z",
+      "cves": [
+        "CVE-2026-115716"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "Elastic APM Server"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "openSUSE-SU-2026:22239-1",

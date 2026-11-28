@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-05-15",
-  "count": 51,
+  "count": 60,
   "items": [
     {
       "id": "msrc_CVE-2026-42304",
@@ -456,6 +456,29 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jupyterlab-2026-42557",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "jupyterlab: Command linker attributes in HTML enable one-click command execution from untrusted content",
+      "url": "https://github.com/jupyterlab/jupyterlab/security/advisories/GHSA-mqcg-5x36-vfcg",
+      "released": "2026-05-15T08:42:30Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-42557"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: jupyterlab"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jupyterlab 4.5.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-grafana-2026-28374",
@@ -937,6 +960,37 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-gitlab-2026-7481",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in GitLab",
+      "url": "https://gitlab.com/gitlab-org/gitlab/-/work_items/598646",
+      "released": "2026-05-15T09:11:18Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7481"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: gitlab"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitlab 18.9.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 18.10.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 18.11.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-gitlab-2026-8144",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -1055,6 +1109,116 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21677-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for dnsmasq",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621677-1/",
+      "released": "2026-05-15T10:44:28Z",
+      "updated": "2026-09-20T18:38:30Z",
+      "cves": [
+        "CVE-2026-2291",
+        "CVE-2026-4890",
+        "CVE-2026-4891",
+        "CVE-2026-4892",
+        "CVE-2026-4893",
+        "CVE-2026-5172",
+        "CVE-2026-6507"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:21679-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for iproute2",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621679-1/",
+      "released": "2026-05-15T10:44:29Z",
+      "updated": "2026-09-20T18:38:31Z",
+      "cves": [
+        "CVE-2024-58251"
+      ],
+      "sev": "LOW",
+      "cvss": 2.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:21676-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for rsync",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621676-1/",
+      "released": "2026-05-15T10:45:40Z",
+      "updated": "2026-09-20T18:38:29Z",
+      "cves": [
+        "CVE-2026-41035"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.2,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:21680-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for freeipmi",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621680-1/",
+      "released": "2026-05-15T10:52:01Z",
+      "updated": "2026-09-20T18:38:32Z",
+      "cves": [
+        "CVE-2026-33554"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.6,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "openSUSE-SU-2026:20757-1",
@@ -1181,6 +1345,49 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:21673-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621673-1/",
+      "released": "2026-05-15T12:22:55Z",
+      "updated": "2026-09-20T18:38:26Z",
+      "cves": [
+        "CVE-2025-54518",
+        "CVE-2026-46300"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-87002",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-34253 affecting package vorbis-tools 1.4.2-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34253",
+      "released": "2026-05-15T15:16:51Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-34253"
+      ],
+      "products": [
+        "Azure Linux: vorbis-tools"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "SUSE-SU-2026:1873-1",
@@ -1340,6 +1547,34 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:21684-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621684-1/",
+      "released": "2026-05-15T16:43:03Z",
+      "updated": "2026-09-20T18:38:33Z",
+      "cves": [
+        "CVE-2025-54518",
+        "CVE-2026-43500",
+        "CVE-2026-46300"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "openSUSE-SU-2026:20758-1",

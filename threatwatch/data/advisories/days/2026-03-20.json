@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-20",
-  "count": 53,
+  "count": 60,
   "items": [
     {
       "id": "openSUSE-SU-2026:10396-1",
@@ -394,6 +394,22 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-80318",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-33055 affecting package tardev-snapshotter 3.2.0.tardev1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33055",
+      "released": "2026-03-20T07:16:13Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-33055"
+      ],
+      "products": [
+        "Azure Linux: tardev-snapshotter"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "SUSE-SU-2026:0936-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -418,6 +434,22 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-80315",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-33056 affecting package tardev-snapshotter 3.2.0.tardev1-11",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33056",
+      "released": "2026-03-20T08:16:11Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-33056"
+      ],
+      "products": [
+        "Azure Linux: tardev-snapshotter"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-ceph-2020-10736",
@@ -622,6 +654,33 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-jenkins-2026-33001",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.554 and earlier, LTS 2.541.2 and earlier does not safely handle symbolic links during the extraction of .tar and .tar.gz archives, allowing crafted archives to write files to arbitrary locations on the filesys…",
+      "url": "https://www.jenkins.io/security/advisory/2026-03-18/#SECURITY-3657",
+      "released": "2026-03-20T09:15:10Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-33001"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.541.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.555.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-jenkins-2026-33002",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -647,6 +706,50 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-parse-2026-32594",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server GraphQL WebSocket endpoint bypasses security middleware",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-p2x3-8689-cwpg",
+      "released": "2026-03-20T09:19:20Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-32594"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 8.6.40",
+          "u": null
+        },
+        {
+          "t": "Fixed in parse 9.6.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-thrift-2020-13949",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In Apache Thrift 0.9.3 to 0.13.0, malicious RPC clients could send short messages which would result in a large memory allocation, potentially leading to denial of service.",
+      "url": "https://lists.apache.org/thread.html/r43dc2b2e928e9d845b07ac075634cb759d91bb852421dc282f87a74a%40%3Cdev.thrift.apache.org%3E",
+      "released": "2026-03-20T09:20:15Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2020-13949"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: thrift"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "SUSE-SU-2026:20917-1",
@@ -927,6 +1030,33 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-parse-2026-32878",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server vulnerable to schema poisoning via prototype pollution in deep copy",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-9ccr-fpp6-78qf",
+      "released": "2026-03-20T11:37:35Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-32878"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 8.6.44",
+          "u": null
+        },
+        {
+          "t": "Fixed in parse 9.6.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-parse-2026-32886",
@@ -1354,6 +1484,22 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-80309",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-33228 affecting package js-jquery 3.5.0-4",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33228",
+      "released": "2026-03-20T23:16:46Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-33228"
+      ],
+      "products": [
+        "Azure Linux: js-jquery"
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

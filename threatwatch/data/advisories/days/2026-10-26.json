@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-26",
-  "count": 254,
+  "count": 279,
   "items": [
     {
       "id": "ELA-1863-1",
@@ -2864,6 +2864,25 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CVE-2026-96581",
+      "src": "cvelistv5",
+      "vendor": "ash-project",
+      "title": "An upsert on the primary key in Ash ignores attribute multitenancy, so one tenant can read, overwrite and take over another tenant's records",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-96581",
+      "released": "2026-10-26T07:20:07Z",
+      "updated": "2026-11-19T08:10:32Z",
+      "cves": [
+        "CVE-2026-96581"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.6,
+      "products": [
+        "ash-project ash",
+        "ash-project ash"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "ROOT-APP-NPM-CVE-2026-2327",
       "src": "osv_root",
       "vendor": "Root",
@@ -3495,6 +3514,215 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CVE-2026-108525",
+      "src": "cvelistv5",
+      "vendor": "mtrudel",
+      "title": "HTTP/2 inbound flow control is not enforced, letting a client queue unbounded DATA in stream processes in Bandit",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-108525",
+      "released": "2026-10-26T13:29:42Z",
+      "updated": "2026-11-19T08:10:25Z",
+      "cves": [
+        "CVE-2026-108525"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "mtrudel bandit",
+        "mtrudel bandit"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-115269",
+      "src": "cvelistv5",
+      "vendor": "mtrudel",
+      "title": "HTTP/2 WINDOW_UPDATE and SETTINGS frames reset the request body read timeout in Bandit",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-115269",
+      "released": "2026-10-26T13:30:24Z",
+      "updated": "2026-11-19T08:08:45Z",
+      "cves": [
+        "CVE-2026-115269"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "mtrudel bandit",
+        "mtrudel bandit"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-114216",
+      "src": "cvelistv5",
+      "vendor": "mtrudel",
+      "title": "Chunk extensions accept bare LF and CR, enabling request smuggling in Bandit",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114216",
+      "released": "2026-10-26T13:30:41Z",
+      "updated": "2026-11-19T08:08:35Z",
+      "cves": [
+        "CVE-2026-114216"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "mtrudel bandit",
+        "mtrudel bandit"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-114213",
+      "src": "cvelistv5",
+      "vendor": "mtrudel",
+      "title": "WebSocket 1-byte continuation frames bypass `max_fragmented_message_size` in Bandit",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-114213",
+      "released": "2026-10-26T13:30:58Z",
+      "updated": "2026-11-19T08:08:27Z",
+      "cves": [
+        "CVE-2026-114213"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "mtrudel bandit",
+        "mtrudel bandit"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-110314",
+      "src": "cvelistv5",
+      "vendor": "mtrudel",
+      "title": "WebSocket frames keep reaching the WebSock after a server-initiated close in Bandit",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-110314",
+      "released": "2026-10-26T13:31:18Z",
+      "updated": "2026-11-19T08:08:20Z",
+      "cves": [
+        "CVE-2026-110314"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.3,
+      "products": [
+        "mtrudel bandit",
+        "mtrudel bandit"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-113436",
+      "src": "cvelistv5",
+      "vendor": "mtrudel",
+      "title": "Quadratic bignum parsing of Content-Length and Host port values in Bandit",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-113436",
+      "released": "2026-10-26T13:31:35Z",
+      "updated": "2026-11-19T08:08:02Z",
+      "cves": [
+        "CVE-2026-113436"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "mtrudel bandit",
+        "mtrudel bandit"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-111101",
+      "src": "cvelistv5",
+      "vendor": "mtrudel",
+      "title": "HTTP/1.1 chunked request bodies made of 1-byte chunks amplify memory use in Bandit",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-111101",
+      "released": "2026-10-26T13:31:48Z",
+      "updated": "2026-11-19T08:07:56Z",
+      "cves": [
+        "CVE-2026-111101"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "mtrudel bandit",
+        "mtrudel bandit"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-111103",
+      "src": "cvelistv5",
+      "vendor": "mtrudel",
+      "title": "HTTP/2 StreamError recovery rolls back connection state and bypasses per-connection limits in Bandit",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-111103",
+      "released": "2026-10-26T13:32:06Z",
+      "updated": "2026-11-19T08:07:50Z",
+      "cves": [
+        "CVE-2026-111103"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "mtrudel bandit",
+        "mtrudel bandit"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-109584",
+      "src": "cvelistv5",
+      "vendor": "mtrudel",
+      "title": "HTTP/2 cookie crumb join expands a small HPACK header block into an unbounded allocation in Bandit",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-109584",
+      "released": "2026-10-26T13:32:22Z",
+      "updated": "2026-11-19T08:07:44Z",
+      "cves": [
+        "CVE-2026-109584"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "mtrudel bandit",
+        "mtrudel bandit"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-110499",
+      "src": "cvelistv5",
+      "vendor": "mtrudel",
+      "title": "Client-chosen HPACK encoder table size is applied uncapped, growing per-connection state with every response in Bandit",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-110499",
+      "released": "2026-10-26T13:32:38Z",
+      "updated": "2026-11-19T08:07:37Z",
+      "cves": [
+        "CVE-2026-110499"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "mtrudel bandit",
+        "mtrudel bandit"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-108529",
+      "src": "cvelistv5",
+      "vendor": "mtrudel",
+      "title": "SETTINGS and stream-0 WINDOW_UPDATE frames trigger quadratic work over blocked streams in Bandit",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-108529",
+      "released": "2026-10-26T13:35:26Z",
+      "updated": "2026-11-19T08:07:31Z",
+      "cves": [
+        "CVE-2026-108529"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "mtrudel bandit",
+        "mtrudel bandit"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "CVE-2026-111590",
       "src": "cvelistv5",
       "vendor": "Harbor",
@@ -3594,6 +3822,101 @@
       ],
       "lang": "nl",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-112880",
+      "src": "cvelistv5",
+      "vendor": "benoitc",
+      "title": "CRLF injection in Proxy-Authorization header built from proxy_auth_fun in hackney",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-112880",
+      "released": "2026-10-26T13:48:46Z",
+      "updated": "2026-11-19T08:07:24Z",
+      "cves": [
+        "CVE-2026-112880"
+      ],
+      "sev": "LOW",
+      "cvss": 2.1,
+      "products": [
+        "benoitc hackney",
+        "benoitc hackney"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-115700",
+      "src": "cvelistv5",
+      "vendor": "benoitc",
+      "title": "SSRF allowlist bypass via percent-encoded bracketed IPv6 or trailing-dot IP literal in hackney",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-115700",
+      "released": "2026-10-26T13:49:02Z",
+      "updated": "2026-11-19T08:07:10Z",
+      "cves": [
+        "CVE-2026-115700"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "benoitc hackney",
+        "benoitc hackney"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-113440",
+      "src": "cvelistv5",
+      "vendor": "benoitc",
+      "title": "HTTP/1.1 and HTTP/2 redirects resend basic_auth and cookie to a different scheme or port in hackney",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-113440",
+      "released": "2026-10-26T13:49:17Z",
+      "updated": "2026-11-19T08:07:01Z",
+      "cves": [
+        "CVE-2026-113440"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6,
+      "products": [
+        "benoitc hackney",
+        "benoitc hackney"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-115693",
+      "src": "cvelistv5",
+      "vendor": "benoitc",
+      "title": "Custom cacerts or cacertfile do not restrict trust to the pinned CA in hackney",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-115693",
+      "released": "2026-10-26T13:49:29Z",
+      "updated": "2026-11-19T08:06:44Z",
+      "cves": [
+        "CVE-2026-115693"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "benoitc hackney",
+        "benoitc hackney"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-97200",
+      "src": "cvelistv5",
+      "vendor": "benoitc",
+      "title": "Unbounded response body buffering and decompression in hackney",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-97200",
+      "released": "2026-10-26T13:49:40Z",
+      "updated": "2026-11-19T08:06:25Z",
+      "cves": [
+        "CVE-2026-97200"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "benoitc hackney",
+        "benoitc hackney"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "RHSA-2026:90287",
@@ -4875,6 +5198,158 @@
         "Hugging Face LeRobot"
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "CVE-2026-65625",
+      "src": "cvelistv5",
+      "vendor": "potatosalad",
+      "title": "Attacker-controlled AES-GCM authentication tag length allows tag forgery in jose",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-65625",
+      "released": "2026-10-26T19:52:54Z",
+      "updated": "2026-11-19T08:03:11Z",
+      "cves": [
+        "CVE-2026-65625"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "potatosalad jose",
+        "potatosalad jose"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-65626",
+      "src": "cvelistv5",
+      "vendor": "potatosalad",
+      "title": "Bleichenbacher padding oracle in RSAES-PKCS1-v1_5 decryption in jose",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-65626",
+      "released": "2026-10-26T19:53:05Z",
+      "updated": "2026-11-19T08:03:06Z",
+      "cves": [
+        "CVE-2026-65626"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "potatosalad jose",
+        "potatosalad jose"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-65627",
+      "src": "cvelistv5",
+      "vendor": "potatosalad",
+      "title": "Decompression bomb via unbounded zlib:inflate in jose_jwe_zip:uncompress/2",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-65627",
+      "released": "2026-10-26T19:53:16Z",
+      "updated": "2026-11-19T08:03:00Z",
+      "cves": [
+        "CVE-2026-65627"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "potatosalad jose",
+        "potatosalad jose"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-65628",
+      "src": "cvelistv5",
+      "vendor": "potatosalad",
+      "title": "Infinite recursion (CPU denial-of-service) in JOSE.JWK.shared_secret/2 on mismatched key types",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-65628",
+      "released": "2026-10-26T19:53:27Z",
+      "updated": "2026-11-19T08:01:55Z",
+      "cves": [
+        "CVE-2026-65628"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "potatosalad jose",
+        "potatosalad jose"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-65629",
+      "src": "cvelistv5",
+      "vendor": "potatosalad",
+      "title": "Weak PBKDF2 parameters for password-encrypted private-key export in jose",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-65629",
+      "released": "2026-10-26T19:53:35Z",
+      "updated": "2026-11-19T08:01:46Z",
+      "cves": [
+        "CVE-2026-65629"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "potatosalad jose",
+        "potatosalad jose"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-65631",
+      "src": "cvelistv5",
+      "vendor": "potatosalad",
+      "title": "erlang-jose RSA JWK parsing attempts to factor an attacker-controlled modulus, enabling CPU-exhaustion denial of service",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-65631",
+      "released": "2026-10-26T19:53:45Z",
+      "updated": "2026-11-19T08:01:38Z",
+      "cves": [
+        "CVE-2026-65631"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.9,
+      "products": [
+        "potatosalad jose",
+        "potatosalad jose"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-65632",
+      "src": "cvelistv5",
+      "vendor": "potatosalad",
+      "title": "ECDSA signature length is not validated in jose, allowing signature malleability",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-65632",
+      "released": "2026-10-26T19:53:56Z",
+      "updated": "2026-11-19T08:01:32Z",
+      "cves": [
+        "CVE-2026-65632"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.1,
+      "products": [
+        "potatosalad jose",
+        "potatosalad jose"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-65630",
+      "src": "cvelistv5",
+      "vendor": "potatosalad",
+      "title": "Timing side-channel in pure-Erlang X25519 scalar multiplication leaks the private key in jose",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-65630",
+      "released": "2026-10-26T19:54:07Z",
+      "updated": "2026-11-19T08:00:58Z",
+      "cves": [
+        "CVE-2026-65630"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "potatosalad jose",
+        "potatosalad jose"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "AZL-111733",

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "date": "2014-12-20",
+  "count": 2,
+  "items": [
+    {
+      "id": "RHSA-2014:2025",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: ntp security update",
+      "url": "https://access.redhat.com/errata/RHSA-2014:2025",
+      "released": "2014-12-20T00:43:37Z",
+      "updated": "2026-11-07T05:09:02Z",
+      "cves": [
+        "CVE-2014-9293",
+        "CVE-2014-9294",
+        "CVE-2014-9295"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Desktop (v. 5 client)",
+        "Red Hat Enterprise Linux (v. 5 server)"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. This update is available via the Red Hat Netwo…",
+          "u": "https://access.redhat.com/errata/RHSA-2014:2025"
+        },
+        {
+          "t": "Issue these commands to explicitly generate a strong key and add it to the ntpd configuration: echo trustedkey 65535 >> /etc/ntp.conf printf \"65535\\tM\\t%s\\n\" $…",
+          "u": null
+        },
+        {
+          "t": "Add these lines (included by default starting with Red Hat Enterprise Linux 5) to the configuration file /etc/ntp.conf: restrict default kod nomodify notrap no…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "RHSA-2014:2024",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: ntp security update",
+      "url": "https://access.redhat.com/errata/RHSA-2014:2024",
+      "released": "2014-12-20T02:40:29Z",
+      "updated": "2026-11-07T05:08:58Z",
+      "cves": [
+        "CVE-2014-9293",
+        "CVE-2014-9294",
+        "CVE-2014-9295",
+        "CVE-2014-9296"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.8,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Desktop (v. 6)",
+        "Red Hat Enterprise Linux Desktop Optional (v. 6)",
+        "Red Hat Enterprise Linux HPC Node (v. 6)",
+        "Red Hat Enterprise Linux HPC Node Optional (v. 6)",
+        "Red Hat Enterprise Linux Server (v. 6)"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. This update is available via the Red Hat Netwo…",
+          "u": "https://access.redhat.com/errata/RHSA-2014:2024"
+        },
+        {
+          "t": "Issue these commands to explicitly generate a strong key and add it to the ntpd configuration: echo trustedkey 65535 >> /etc/ntp.conf printf \"65535\\tM\\t%s\\n\" $…",
+          "u": null
+        },
+        {
+          "t": "Add these lines (included by default starting with Red Hat Enterprise Linux 5) to the configuration file /etc/ntp.conf: restrict default kod nomodify notrap no…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    }
+  ]
+}

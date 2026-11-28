@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-11-16",
-  "count": 5,
+  "count": 11,
   "items": [
     {
       "id": "msrc_CVE-2024-52533",
@@ -35,6 +35,60 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-elk-2024-37285",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Kibana arbitrary code execution via YAML deserialization",
+      "url": "https://discuss.elastic.co/t/kibana-8-15-1-security-update-esa-2024-27-esa-2024-28/366119",
+      "released": "2024-11-16T07:08:55Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-37285"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 8.15.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-gitlab-2024-9693",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Incorrect Authorization in GitLab",
+      "url": "https://gitlab.com/gitlab-org/gitlab/-/issues/497449",
+      "released": "2024-11-16T07:09:22Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-9693"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: gitlab"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitlab 17.3.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 17.4.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 17.5.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-gitlab-2024-8648",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -66,6 +120,29 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-kibana-2024-37285",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Kibana arbitrary code execution via YAML deserialization",
+      "url": "https://discuss.elastic.co/t/kibana-8-15-1-security-update-esa-2024-27-esa-2024-28/366119",
+      "released": "2024-11-16T07:11:25Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-37285"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: kibana"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kibana 8.15.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-gitlab-2024-8180",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -95,6 +172,37 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-gitlab-2024-7404",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper Restriction of Rendered UI Layers or Frames in GitLab",
+      "url": "https://about.gitlab.com/releases/2024/11/13/patch-release-gitlab-17-5-2-released/#device-oauth-flow-allows-for-cross-window-forgery",
+      "released": "2024-11-16T07:12:07Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-7404"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: gitlab"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitlab 17.3.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 17.4.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 17.5.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-postgresql-2024-10979",
@@ -157,6 +265,68 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-postgresql-2024-10977",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PostgreSQL libpq retains an error message from man-in-the-middle",
+      "url": "https://www.postgresql.org/support/security/CVE-2024-10977/",
+      "released": "2024-11-16T07:16:52Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-10977"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: postgresql"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in postgresql 12.21.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in postgresql 13.17.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in postgresql 14.14.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-postgresql-2024-10976",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PostgreSQL row security below e.g. subqueries disregards user ID changes",
+      "url": "https://www.postgresql.org/support/security/CVE-2024-10976/",
+      "released": "2024-11-16T07:16:59Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-10976"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: postgresql"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in postgresql 13.17.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in postgresql 14.14.0",
+          "u": null
+        },
+        {
+          "t": "Fixed in postgresql 15.9.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

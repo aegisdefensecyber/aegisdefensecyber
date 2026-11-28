@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-22",
-  "count": 234,
+  "count": 253,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1210",
@@ -1348,6 +1348,32 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BELL-CVE-2026-81627",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-81627",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-81627",
+      "released": "2026-09-22T06:04:37Z",
+      "updated": "2026-11-06T16:15:41Z",
+      "cves": [
+        "CVE-2026-81627"
+      ],
+      "products": [
+        "Alpaquita: qemu"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in qemu 9.0.4-r5",
+          "u": null
+        },
+        {
+          "t": "Fixed in qemu 10.0.15-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RHSA-2026:69862",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -1692,6 +1718,41 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:69917",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "buildkit: github.com/moby/buildkit: BuildKit: File escape vulnerability",
+      "url": "https://access.redhat.com/errata/RHSA-2026:69917",
+      "released": "2026-09-22T08:24:04Z",
+      "updated": "2026-11-28T04:12:06Z",
+      "cves": [
+        "CVE-2026-15789",
+        "CVE-2026-33818",
+        "CVE-2026-41178",
+        "CVE-2026-56853",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-75593"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "It is recommended that existing users of OpenShift Source To Image upgrade to v1.6.4",
+          "u": "https://access.redhat.com/errata/RHSA-2026:69917"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "Restrict access to the BuildKit control API to only trusted users and services. Implement robust authentication and authorization policies for all clients interacting with the BuildKit daemon to prevent unauthorized access and potential fi…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RHSA-2026:69922",
       "src": "direct_csaf",
       "vendor": "Red Hat",
@@ -1716,6 +1777,103 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:4278-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libtpms",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20264278-1/",
+      "released": "2026-09-22T08:31:49Z",
+      "updated": "2026-09-23T08:31:48Z",
+      "cves": [
+        "CVE-2025-49133",
+        "CVE-2026-85769"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.3",
+        "SUSE Linux Enterprise Micro 5.4",
+        "SUSE Linux Enterprise Micro 5.5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:4280-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for perl-Authen-SASL",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20264280-1/",
+      "released": "2026-09-22T08:32:16Z",
+      "updated": "2026-09-23T08:31:50Z",
+      "cves": [
+        "CVE-2026-86219"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "RHSA-2026:69928",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:69928",
+      "released": "2026-09-22T08:36:27Z",
+      "updated": "2026-11-28T04:12:05Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-41178",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56854",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-71556"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "It is recommended that existing users of Red Hat OpenShift Builds 1.8.z upgrade to 1.8.2",
+          "u": "https://access.redhat.com/errata/RHSA-2026:69928"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "To reduce the risk of exploitation, do not clone or run worktree operations (checkout, status, add) on Git repositories originating from untrusted or attacker-controllable sources using an affected version of go-git. The issue is resolved …",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "ROOT-APP-NPM-AIKIDO-2026-10190",
@@ -2506,6 +2664,65 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:68538",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "crypto/tls: golang: Golang crypto/tls: Denial of Service via indefinite KeyUpdate messages",
+      "url": "https://access.redhat.com/errata/RHSA-2026:68538",
+      "released": "2026-09-22T09:08:03Z",
+      "updated": "2026-11-28T04:11:54Z",
+      "cves": [
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.21 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade your cluster and fully apply this asynchronous errata update: https://docs.…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:68538"
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "RHSA-2026:69945",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:69945",
+      "released": "2026-09-22T09:13:07Z",
+      "updated": "2026-11-28T04:12:06Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-41178",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56854",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-71556"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "It is recommended that existing users of Red Hat OpenShift Builds 1.8.z upgrade to 1.8.2",
+          "u": "https://access.redhat.com/errata/RHSA-2026:69945"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "To reduce the risk of exploitation, do not clone or run worktree operations (checkout, status, add) on Git repositories originating from untrusted or attacker-controllable sources using an affected version of go-git. The issue is resolved …",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "ROOT-APP-MAVEN-CVE-2026-40987",
@@ -3726,6 +3943,35 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:70103",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:70103",
+      "released": "2026-09-22T11:06:36Z",
+      "updated": "2026-11-28T04:12:07Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-56853",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:70103"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "openSUSE-SU-2026:21908-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -3750,6 +3996,44 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-89420",
+      "src": "cvelistv5",
+      "vendor": "ZenHive",
+      "title": "Session voucher adding no new funds is accepted without a charge in mpp, serving paid resources for free",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-89420",
+      "released": "2026-09-22T11:16:29Z",
+      "updated": "2026-11-19T08:26:55Z",
+      "cves": [
+        "CVE-2026-89420"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.1,
+      "products": [
+        "ZenHive mpp",
+        "ZenHive mpp"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-87119",
+      "src": "cvelistv5",
+      "vendor": "ZenHive",
+      "title": "mpp Tempo subscription key authorization is not bound to the issuing challenge, allowing a captured activation credential to be replayed",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-87119",
+      "released": "2026-09-22T11:16:56Z",
+      "updated": "2026-11-19T08:26:44Z",
+      "cves": [
+        "CVE-2026-87119"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "products": [
+        "ZenHive mpp",
+        "ZenHive mpp"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "ROOT-APP-MAVEN-CVE-2026-40983",
@@ -5335,6 +5619,45 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:70201",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "github.com/moby/go-archive: moby/go-archive: Arbitrary file write via link following in tar extraction",
+      "url": "https://access.redhat.com/errata/RHSA-2026:70201",
+      "released": "2026-09-22T14:19:35Z",
+      "updated": "2026-11-28T04:12:07Z",
+      "cves": [
+        "CVE-2026-17106",
+        "CVE-2026-19730",
+        "CVE-2026-33810",
+        "CVE-2026-33818",
+        "CVE-2026-42499",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:70201"
+        },
+        {
+          "t": "To mitigate this issue, avoid processing tar archives from untrusted sources. When handling archives from potentially untrusted origins, ensure that the extraction process is executed with the least privileges necessary to limit the impact…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "CVE-2026-95693",
       "src": "gna-1",
       "vendor": "MISP",
@@ -5523,6 +5846,109 @@
         "MISP MISP"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:70267",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "github.com/jackc/pgproto3: pgproto3: Denial of Service via negative field length in DataRow message",
+      "url": "https://access.redhat.com/errata/RHSA-2026:70267",
+      "released": "2026-09-22T14:59:52Z",
+      "updated": "2026-11-28T04:12:08Z",
+      "cves": [
+        "CVE-2026-4427",
+        "CVE-2026-6322",
+        "CVE-2026-9277",
+        "CVE-2026-10143",
+        "CVE-2026-12143",
+        "CVE-2026-13149",
+        "CVE-2026-13676",
+        "CVE-2026-14257",
+        "CVE-2026-15792",
+        "CVE-2026-15927",
+        "CVE-2026-16221",
+        "CVE-2026-18255",
+        "CVE-2026-32591",
+        "CVE-2026-33747",
+        "CVE-2026-33748",
+        "CVE-2026-33818",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-39822",
+        "CVE-2026-39828",
+        "CVE-2026-39829",
+        "CVE-2026-39830",
+        "CVE-2026-39831",
+        "CVE-2026-39832",
+        "CVE-2026-39835",
+        "CVE-2026-42151",
+        "CVE-2026-42154",
+        "CVE-2026-42499",
+        "CVE-2026-42504",
+        "CVE-2026-42508",
+        "CVE-2026-44432",
+        "CVE-2026-44486",
+        "CVE-2026-44487",
+        "CVE-2026-44488",
+        "CVE-2026-44492",
+        "CVE-2026-44494",
+        "CVE-2026-44495",
+        "CVE-2026-44496",
+        "CVE-2026-44705",
+        "CVE-2026-44990",
+        "CVE-2026-46595",
+        "CVE-2026-46597",
+        "CVE-2026-48526",
+        "CVE-2026-49477",
+        "CVE-2026-54058",
+        "CVE-2026-54060",
+        "CVE-2026-55379",
+        "CVE-2026-55380",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-57231",
+        "CVE-2026-59197",
+        "CVE-2026-59199",
+        "CVE-2026-59200",
+        "CVE-2026-59204",
+        "CVE-2026-59205",
+        "CVE-2026-59869",
+        "CVE-2026-59885",
+        "CVE-2026-59886",
+        "CVE-2026-67213",
+        "CVE-2026-67214",
+        "CVE-2026-67313",
+        "CVE-2026-67314",
+        "CVE-2026-67320",
+        "CVE-2026-67321",
+        "CVE-2026-69152",
+        "CVE-2026-69153",
+        "CVE-2026-73086",
+        "CVE-2026-73088",
+        "CVE-2026-73089",
+        "CVE-2026-84375"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer to: https://access.redhat.com/articles/11458",
+          "u": "https://access.redhat.com/errata/RHSA-2026:70267"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base or stability.",
+          "u": null
+        },
+        {
+          "t": "Applications using the `form-data` library should implement strict input validation and sanitization for all field names and filenames derived from untrusted sources. This prevents the injection of control characters (CR, LF, \") that could…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "CVE-2026-95806",
@@ -6860,6 +7286,56 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:4286-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for amazon-ssm-agent",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20264286-1/",
+      "released": "2026-09-22T16:08:49Z",
+      "updated": "2026-09-23T08:31:58Z",
+      "cves": [
+        "CVE-2026-56854",
+        "CVE-2026-56855",
+        "CVE-2026-71556",
+        "CVE-2026-71557",
+        "CVE-2026-78662"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Public Cloud 12",
+        "SUSE Linux Enterprise Server 12",
+        "SUSE Linux Enterprise Server for SAP Applications 12",
+        "SUSE Linux Enterprise High Performance Computing 12",
+        "SUSE Linux Enterprise Server 12 SP3"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:4287-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openssl-certs",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20264287-1/",
+      "released": "2026-09-22T16:08:58Z",
+      "updated": "2026-09-23T08:31:59Z",
+      "sev": "MEDIUM",
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 11 SP4 LTSS EXTREME CORE"
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RLSA-2026:69876",
       "src": "osv_rocky",
       "vendor": "Rocky",
@@ -7203,6 +7679,159 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:70392",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:70392",
+      "released": "2026-09-22T18:17:27Z",
+      "updated": "2026-11-28T04:12:09Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-56853",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "To start using the Web Terminal Operator, install the Web Terminal Operator from OpenShift OperatorHub on OpenShift Container Platform 4.19 or higher.",
+          "u": "https://access.redhat.com/errata/RHSA-2026:70392"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "RHSA-2026:70393",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:70393",
+      "released": "2026-09-22T18:30:08Z",
+      "updated": "2026-11-28T04:12:09Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-56853",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "To start using the Web Terminal Operator, install the Web Terminal Operator from OpenShift OperatorHub on OpenShift Container Platform 4.20 or higher.",
+          "u": "https://access.redhat.com/errata/RHSA-2026:70393"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "RHSA-2026:70394",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:70394",
+      "released": "2026-09-22T18:30:16Z",
+      "updated": "2026-11-28T04:12:09Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-56853",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "To start using the Web Terminal Operator, install the Web Terminal Operator from OpenShift OperatorHub on OpenShift Container Platform 4.22 or higher.",
+          "u": "https://access.redhat.com/errata/RHSA-2026:70394"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "RHSA-2026:70395",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:70395",
+      "released": "2026-09-22T18:30:36Z",
+      "updated": "2026-11-28T04:12:13Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-56853",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "To start using the Web Terminal Operator, install the Web Terminal Operator from OpenShift OperatorHub on OpenShift Container Platform 4.21 or higher.",
+          "u": "https://access.redhat.com/errata/RHSA-2026:70395"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "RHSA-2026:69961",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "github.com/moby/go-archive: moby/go-archive: Arbitrary file write via link following in tar extraction",
+      "url": "https://access.redhat.com/errata/RHSA-2026:69961",
+      "released": "2026-09-22T19:18:45Z",
+      "updated": "2026-11-28T04:12:06Z",
+      "cves": [
+        "CVE-2026-17106",
+        "CVE-2026-19730",
+        "CVE-2026-33818",
+        "CVE-2026-39830",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:69961"
+        },
+        {
+          "t": "To mitigate this issue, avoid processing tar archives from untrusted sources. When handling archives from potentially untrusted origins, ensure that the extraction process is executed with the least privileges necessary to limit the impact…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "WID-SEC-W-2026-3514",

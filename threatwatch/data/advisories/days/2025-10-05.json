@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-10-05",
-  "count": 26,
+  "count": 30,
   "items": [
     {
       "id": "msrc_CVE-2025-55551",
@@ -330,6 +330,37 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-mongodb-2025-6711",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Incomplete Redaction of Sensitive Information in MongoDB Server Logs",
+      "url": "https://jira.mongodb.org/browse/SERVER-98720",
+      "released": "2025-10-05T23:44:13Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-6711"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 6.0.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 7.0.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.0.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-mongodb-2025-6712",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -351,6 +382,37 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mongodb-2025-6713",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MongoDB Server may be susceptible to privilege escalation due to $mergeCursors stage",
+      "url": "https://jira.mongodb.org/browse/SERVER-106752",
+      "released": "2025-10-05T23:44:16Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-6713"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 6.0.22",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 7.0.19",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.0.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-mongodb-2025-6714",
@@ -658,6 +720,52 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-tensorflow-2025-55556",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "TensorFlow v2.18.0 was discovered to output random results when compiling Embedding, leading to unexpected behavior in the application.",
+      "url": "https://gist.github.com/shaoyuyoung/0e7d2a586297ae9c8ed14d8706749efc",
+      "released": "2025-10-05T23:59:42Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-55556"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: tensorflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tensorflow 2.18.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-tensorflow-2025-55559",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered TensorFlow v2.18.0. A Denial of Service (DoS) occurs when padding is set to 'valid' in tf.keras.layers.Conv2D.",
+      "url": "https://gist.github.com/shaoyuyoung/0e7d2a586297ae9c8ed14d8706749efc",
+      "released": "2025-10-05T23:59:43Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-55559"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: tensorflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tensorflow 2.18.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

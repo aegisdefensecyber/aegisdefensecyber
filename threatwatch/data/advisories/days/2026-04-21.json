@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-21",
-  "count": 60,
+  "count": 68,
   "items": [
     {
       "id": "openSUSE-SU-2026:10585-1",
@@ -585,6 +585,40 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:1509-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for nodejs22",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20261509-1/",
+      "released": "2026-04-21T06:27:53Z",
+      "updated": "2026-09-18T09:15:52Z",
+      "cves": [
+        "CVE-2026-21637",
+        "CVE-2026-21710",
+        "CVE-2026-21713",
+        "CVE-2026-21714",
+        "CVE-2026-21715",
+        "CVE-2026-21716",
+        "CVE-2026-21717"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 15 SP6-LTSS",
+        "SUSE Linux Enterprise Server 15 SP6",
+        "SUSE Linux Enterprise Server for SAP Applications 15 SP6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "SUSE-SU-2026:1513-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -689,6 +723,84 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21247-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for ncurses",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621247-1/",
+      "released": "2026-04-21T08:57:05Z",
+      "updated": "2026-09-20T18:37:51Z",
+      "cves": [
+        "CVE-2025-69720"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:21251-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libpng16",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621251-1/",
+      "released": "2026-04-21T09:02:28Z",
+      "updated": "2026-09-20T18:37:53Z",
+      "cves": [
+        "CVE-2026-34757"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:21250-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openvswitch",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621250-1/",
+      "released": "2026-04-21T09:05:08Z",
+      "updated": "2026-09-20T18:37:52Z",
+      "cves": [
+        "CVE-2026-34956"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.9,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "SUSE-SU-2026:1519-1",
@@ -1284,6 +1396,98 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-vault-2026-3605",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Vault KVv2 Metadata and Secret Deletion Policy Bypass Denial-of-Service",
+      "url": "https://discuss.hashicorp.com/t/hcsec-2026-05-vault-kvv2-metadata-and-secret-deletion-policy-bypass-denial-of-service/77342",
+      "released": "2026-04-21T12:15:52Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-3605"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: vault"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vault 2.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-vault-2026-4525",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Vault Token Leaked to Backends via Authorization: Bearer Passthrough Header",
+      "url": "https://discuss.hashicorp.com/t/hcsec-2026-07-vault-may-expose-tokens-to-auth-plugins-due-to-incorrect-header-sanitization/77344",
+      "released": "2026-04-21T12:15:54Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-4525"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: vault"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vault 2.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-vault-2026-5052",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Vault Vulnerable to Server-Side Request Forgery in ACME Challenge Validation via Attacker-Controlled DNS",
+      "url": "https://discuss.hashicorp.com/t/hcsec-2026-06-vault-vulnerable-to-server-side-request-forgery-in-acme-challenge-validation-via-attacker-controlled-dns/77343",
+      "released": "2026-04-21T12:15:56Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-5052"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: vault"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vault 2.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-vault-2026-5807",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Vault Vulnerable to Denial-of-Service via Unauthenticated Root Token Generation/Rekey Operations",
+      "url": "https://discuss.hashicorp.com/t/hcsec-2026-08-vault-vulnerable-to-denial-of-service-via-unauthenticated-root-token-generation-rekey-operations/77345",
+      "released": "2026-04-21T12:15:58Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-5807"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: vault"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in vault 2.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "SUSE-SU-2026:1535-1",

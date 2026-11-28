@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-05-12",
-  "count": 57,
+  "count": 84,
   "items": [
     {
       "id": "ICSA-26-134-06",
@@ -731,6 +731,95 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-cilium-2026-41520",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Cillium exposes sensitive information included in the cilium-bugtool debug archive",
+      "url": "https://github.com/cilium/cilium/security/advisories/GHSA-gj49-89wh-h4gj",
+      "released": "2026-05-12T08:39:50Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-41520"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: cilium"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cilium 1.17.15",
+          "u": null
+        },
+        {
+          "t": "Fixed in cilium 1.18.9",
+          "u": null
+        },
+        {
+          "t": "Fixed in cilium 1.19.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-libphp-2025-14179",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "SQL injection in pdo_firebird via NUL bytes in quoted strings",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-w476-322c-wpvm",
+      "released": "2026-05-12T08:50:08Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-14179"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.2.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.4.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-libphp-2026-6104",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Global buffer over-read in mb_convert_encoding() with attacker-supplied encoding",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-74r9-qxhc-fx53",
+      "released": "2026-05-12T08:50:20Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-6104"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.4.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.5.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-libphp-2026-6722",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -791,6 +880,188 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2026-7258",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Out-of-bounds read in urldecode() on NetBSD",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-m8rr-4c36-8gq4",
+      "released": "2026-05-12T08:50:25Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7258"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.2.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.4.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-libphp-2026-7259",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Null pointer dereference in php_mb_check_encoding() via mb_ereg_search_init()",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-wm6j-2649-pv75",
+      "released": "2026-05-12T08:50:27Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7259"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.2.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.4.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-libphp-2026-7261",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "SoapServer session-persisted object use-after-free via SOAP header fault",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-m33r-qmcv-p97q",
+      "released": "2026-05-12T08:50:28Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7261"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.2.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.4.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-libphp-2026-7262",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "NULL pointer dereference in SOAP apache:Map decoder with missing",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-hmxp-6pc4-f3vv",
+      "released": "2026-05-12T08:50:30Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7262"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.2.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.4.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-libphp-2026-7263",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "DoS attack via DOMNode::C14N()",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-4jhr-8w89-j733",
+      "released": "2026-05-12T08:50:32Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7263"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.4.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.5.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-libphp-2026-7568",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Signed integer overflow in metaphone()",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-96wq-48vp-hh57",
+      "released": "2026-05-12T08:50:34Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7568"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.2.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.4.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-mongodb-2026-8063",
@@ -1000,6 +1271,64 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-php-2025-14179",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "SQL injection in pdo_firebird via NUL bytes in quoted strings",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-w476-322c-wpvm",
+      "released": "2026-05-12T08:55:48Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-14179"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.2.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.4.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-php-2026-6104",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Global buffer over-read in mb_convert_encoding() with attacker-supplied encoding",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-74r9-qxhc-fx53",
+      "released": "2026-05-12T08:55:59Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-6104"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.4.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.5.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-php-2026-6722",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -1060,6 +1389,188 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-php-2026-7258",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Out-of-bounds read in urldecode() on NetBSD",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-m8rr-4c36-8gq4",
+      "released": "2026-05-12T08:56:03Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7258"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.2.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.4.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-php-2026-7259",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Null pointer dereference in php_mb_check_encoding() via mb_ereg_search_init()",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-wm6j-2649-pv75",
+      "released": "2026-05-12T08:56:05Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7259"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.2.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.4.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-php-2026-7261",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "SoapServer session-persisted object use-after-free via SOAP header fault",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-m33r-qmcv-p97q",
+      "released": "2026-05-12T08:56:07Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7261"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.2.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.4.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-php-2026-7262",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "NULL pointer dereference in SOAP apache:Map decoder with missing",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-hmxp-6pc4-f3vv",
+      "released": "2026-05-12T08:56:08Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7262"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.2.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.4.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-php-2026-7263",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "DoS attack via DOMNode::C14N()",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-4jhr-8w89-j733",
+      "released": "2026-05-12T08:56:10Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7263"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.4.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.5.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-php-2026-7568",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Signed integer overflow in metaphone()",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-96wq-48vp-hh57",
+      "released": "2026-05-12T08:56:11Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7568"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.2.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.31",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.4.21",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "SUSE-SU-2026:21636-1",
@@ -1203,6 +1714,87 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "SUSE-SU-2026:21626-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for dnsmasq",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621626-1/",
+      "released": "2026-05-12T09:38:42Z",
+      "updated": "2026-09-20T18:38:22Z",
+      "cves": [
+        "CVE-2023-49441",
+        "CVE-2026-2291"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:21627-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openssh",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621627-1/",
+      "released": "2026-05-12T09:38:42Z",
+      "updated": "2026-09-20T18:38:23Z",
+      "cves": [
+        "CVE-2026-35385",
+        "CVE-2026-35414"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:21628-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for helm",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621628-1/",
+      "released": "2026-05-12T09:44:44Z",
+      "updated": "2026-09-20T18:38:25Z",
+      "cves": [
+        "CVE-2025-55199",
+        "CVE-2026-35206"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "openSUSE-SU-2026:20741-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1311,6 +1903,33 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:21625-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621625-1/",
+      "released": "2026-05-12T10:32:52Z",
+      "updated": "2026-09-20T18:38:21Z",
+      "cves": [
+        "CVE-2026-43284",
+        "CVE-2026-43500"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "RUSTSEC-2026-0140",
@@ -1470,6 +2089,86 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-86799",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-27851 affecting package dovecot 2.3.20-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27851",
+      "released": "2026-05-12T14:16:56Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-27851"
+      ],
+      "products": [
+        "Azure Linux: dovecot"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-86802",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-33603 affecting package dovecot 2.3.20-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-33603",
+      "released": "2026-05-12T14:17:01Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-33603"
+      ],
+      "products": [
+        "Azure Linux: dovecot"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-86805",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-40016 affecting package dovecot 2.3.20-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40016",
+      "released": "2026-05-12T14:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-40016"
+      ],
+      "products": [
+        "Azure Linux: dovecot"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-86808",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-40020 affecting package dovecot 2.3.20-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40020",
+      "released": "2026-05-12T14:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-40020"
+      ],
+      "products": [
+        "Azure Linux: dovecot"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-86811",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-42006 affecting package dovecot 2.3.20-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42006",
+      "released": "2026-05-12T14:17:04Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-42006"
+      ],
+      "products": [
+        "Azure Linux: dovecot"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "openSUSE-SU-2026:20743-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1537,6 +2236,22 @@
         "Azure Linux: perl-YAML"
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-86901",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-5089 affecting package perl-YAML-Syck 1.34-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5089",
+      "released": "2026-05-12T17:16:21Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-5089"
+      ],
+      "products": [
+        "Azure Linux: perl-YAML-Syck"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "GHSA-r29c-68gh-xp6x",

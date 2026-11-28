@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-25",
-  "count": 178,
+  "count": 192,
   "items": [
     {
       "id": "openSUSE-SU-2026:11592-1",
@@ -779,6 +779,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-7r39-6q8m-qw68",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: clone_from()/clone() omit --separate-git-dir from unsafe_git_clone_options, enabling arbitrary git-directory creation outside the destination",
+      "url": "https://github.com/advisories/GHSA-7r39-6q8m-qw68",
+      "released": "2026-08-25T03:32:10Z",
+      "updated": "2026-09-08T18:41:44Z",
+      "sev": "HIGH",
+      "products": [
+        "PyPI: gitpython"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "GHSA-9557-234j-7rv9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: Dormant multi-line git-config values are corrupted into live injected directives (e.g. core.hooksPath) on any unrelated GitConfigParser write, enabling RCE",
+      "url": "https://github.com/advisories/GHSA-9557-234j-7rv9",
+      "released": "2026-08-25T03:32:10Z",
+      "updated": "2026-09-08T18:39:17Z",
+      "sev": "CRITICAL",
+      "products": [
+        "PyPI: GitPython"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-28"
+    },
+    {
       "id": "GHSA-crmc-f4m7-33fj",
       "src": "github",
       "vendor": "Open source (GitHub)",
@@ -807,6 +837,36 @@
       ],
       "reviewed": true,
       "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-6rj2-96f5-chj9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: GitPython: TagReference.create positional reference bypasses kwargs-only --file guard, enabling arbitrary file read (incomplete fix of 3af0c251)",
+      "url": "https://github.com/advisories/GHSA-6rj2-96f5-chj9",
+      "released": "2026-08-25T03:32:11Z",
+      "updated": "2026-09-08T19:10:57Z",
+      "sev": "HIGH",
+      "products": [
+        "PyPI: GitPython"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "GHSA-89ff-m8wv-p99r",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "Duplicate Advisory: GitPython: Incomplete unsafe_git_revision_options denylist omits --contents/-S, enabling arbitrary file read via Repo.blame()",
+      "url": "https://github.com/advisories/GHSA-89ff-m8wv-p99r",
+      "released": "2026-08-25T03:32:11Z",
+      "updated": "2026-09-08T18:41:21Z",
+      "sev": "HIGH",
+      "products": [
+        "PyPI: gitpython"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-28"
     },
     {
       "id": "GHSA-crp9-r7rq-c8cg",
@@ -1378,6 +1438,22 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "AZL-98045",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-78701 affecting package 389-ds-base 3.1.1-12",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-78701",
+      "released": "2026-08-25T08:18:10Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-78701"
+      ],
+      "products": [
+        "Azure Linux: 389-ds-base"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "ROOT-OS-DEBIAN-12-CVE-2025-29070",
       "src": "osv_root",
       "vendor": "Root",
@@ -1618,6 +1694,33 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keycloak-2026-14615",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Keycloak-services: keycloak: fgap v2 parent group children endpoint bypasses per-child view permission filter",
+      "url": "https://access.redhat.com/errata/RHSA-2026:50846",
+      "released": "2026-08-25T11:41:36Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-14615"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: keycloak"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keycloak 26.4.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in keycloak 26.6.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-keycloak-2026-15572",
@@ -1876,6 +1979,33 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-keycloak-2026-3009",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Org.keycloak/keycloak-services: improper enforcement of disabled identity provider in identitybrokerservice (authentication bypass)",
+      "url": "https://access.redhat.com/errata/RHSA-2026:3947",
+      "released": "2026-08-25T11:42:13Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-3009"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: keycloak"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in keycloak 26.4.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in keycloak 26.5.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-keycloak-2026-3047",
@@ -2950,6 +3080,64 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "SUSE-SU-2026:3796-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for librest",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263796-1/",
+      "released": "2026-08-25T12:38:35Z",
+      "updated": "2026-09-17T16:43:15Z",
+      "cves": [
+        "CVE-2026-16615"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3797-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for sssd",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263797-1/",
+      "released": "2026-08-25T12:38:52Z",
+      "updated": "2026-09-17T16:43:16Z",
+      "cves": [
+        "CVE-2026-68743"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RHSA-2026:59380",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -2979,6 +3167,70 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-97668",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-54874 affecting package openssl-fips-provider 3.1.2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-54874",
+      "released": "2026-08-25T13:19:24Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-54874"
+      ],
+      "products": [
+        "Azure Linux: openssl-fips-provider"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-97665",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-63072 affecting package openssl-fips-provider 3.1.2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63072",
+      "released": "2026-08-25T13:19:26Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-63072"
+      ],
+      "products": [
+        "Azure Linux: openssl-fips-provider"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-97674",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-63076 affecting package openssl-fips-provider 3.1.2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63076",
+      "released": "2026-08-25T13:19:26Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-63076"
+      ],
+      "products": [
+        "Azure Linux: openssl-fips-provider"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-97671",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-75803 affecting package openssl-fips-provider 3.1.2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-75803",
+      "released": "2026-08-25T13:19:29Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-75803"
+      ],
+      "products": [
+        "Azure Linux: openssl-fips-provider"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "GO-2026-6278",
@@ -3907,6 +4159,32 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:3803-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for LibVNCServer",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263803-1/",
+      "released": "2026-08-25T18:48:49Z",
+      "updated": "2026-09-17T16:43:22Z",
+      "cves": [
+        "CVE-2026-50538"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "RHSA-2026:59559",

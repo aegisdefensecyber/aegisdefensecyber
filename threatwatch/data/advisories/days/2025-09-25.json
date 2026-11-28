@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-09-25",
-  "count": 14,
+  "count": 17,
   "items": [
     {
       "id": "RHSA-2025:16667",
@@ -235,6 +235,98 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-django-2025-48432",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Django 5.2 before 5.2.3, 5.1 before 5.1.11, and 4.2 before 4.2.23. Internal HTTP response logging does not escape request.path, which allows remote attackers to potentially manipulate log outp…",
+      "released": "2025-09-25T08:40:36Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-48432"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 4.2.23",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.1.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.2.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-django-2025-57833",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "An issue was discovered in Django 4.2 before 4.2.24, 5.1 before 5.1.12, and 5.2 before 5.2.6. FilteredRelation is subject to SQL injection in column aliases, using a suitably crafted dictionary, with dictionary expansio…",
+      "url": "https://docs.djangoproject.com/en/dev/releases/security/",
+      "released": "2025-09-25T08:40:38Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-57833"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: django"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in django 4.2.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.1.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in django 5.2.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-mongoose-2025-23061",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Mongoose before 8.9.5 can improperly use a nested $where filter with a populate() match, leading to search injection. NOTE: this issue exists because of an incomplete fix for CVE-2024-53900.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-23061",
+      "released": "2025-09-25T08:46:40Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-23061"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: mongoose"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongoose 6.13.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongoose 7.8.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongoose 8.9.5",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-mongodb-2025-3084",

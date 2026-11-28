@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-02",
-  "count": 39,
+  "count": 46,
   "items": [
     {
       "id": "openSUSE-SU-2026:10277-1",
@@ -134,6 +134,33 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mastodon-2026-27468",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Mastodon may allow unconfirmed FASP to make subscriptions",
+      "url": "https://github.com/mastodon/mastodon/security/advisories/GHSA-qgmm-vr4c-ggjg",
+      "released": "2026-03-02T08:42:56Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-27468"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mastodon"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mastodon 4.4.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in mastodon 4.5.7",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-mastodon-2026-27477",
@@ -391,6 +418,37 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-gitlab-2026-0752",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in GitLab",
+      "url": "https://about.gitlab.com/releases/2026/02/25/patch-release-gitlab-18-9-1-released/",
+      "released": "2026-03-02T09:08:25Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-0752"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: gitlab"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitlab 18.7.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 18.8.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 18.9.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-gitlab-2026-1388",
@@ -789,6 +847,65 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:20528-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for cups",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620528-1/",
+      "released": "2026-03-02T13:19:17Z",
+      "updated": "2026-09-20T18:36:17Z",
+      "cves": [
+        "CVE-2025-58060",
+        "CVE-2025-58364",
+        "CVE-2025-58436",
+        "CVE-2025-61915"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:20529-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libsoup",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620529-1/",
+      "released": "2026-03-02T13:19:17Z",
+      "updated": "2026-09-20T18:36:18Z",
+      "cves": [
+        "CVE-2025-12105",
+        "CVE-2025-32049",
+        "CVE-2026-2369",
+        "CVE-2026-2443",
+        "CVE-2026-2708"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.6,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "SUSE-SU-2026:20534-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -1012,6 +1129,54 @@
         "Azure Linux: nmap"
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-78524",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-25884 affecting package exiv2 0.28.3-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25884",
+      "released": "2026-03-02T20:16:26Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-25884"
+      ],
+      "products": [
+        "Azure Linux: exiv2"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-78521",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-27596 affecting package exiv2 0.28.3-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27596",
+      "released": "2026-03-02T20:16:27Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-27596"
+      ],
+      "products": [
+        "Azure Linux: exiv2"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-78527",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-27631 affecting package exiv2 0.28.3-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27631",
+      "released": "2026-03-02T20:16:27Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-27631"
+      ],
+      "products": [
+        "Azure Linux: exiv2"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "WID-SEC-W-2026-0564",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-09-23",
-  "count": 180,
+  "count": 196,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1212",
@@ -2045,6 +2045,35 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:70391",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:70391",
+      "released": "2026-09-23T03:17:50Z",
+      "updated": "2026-11-28T04:12:08Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, which includes the changes described in this advisory, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:70391"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RLSA-2026:69655",
       "src": "osv_rocky",
       "vendor": "Rocky",
@@ -2274,6 +2303,72 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BELL-CVE-2026-93312",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-93312",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-93312",
+      "released": "2026-09-23T06:08:05Z",
+      "updated": "2026-11-13T23:50:33Z",
+      "cves": [
+        "CVE-2026-93312"
+      ],
+      "products": [
+        "Alpaquita: poppler"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in poppler 26.11.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BELL-CVE-2026-93313",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-93313",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-93313",
+      "released": "2026-09-23T06:08:05Z",
+      "updated": "2026-11-13T23:50:34Z",
+      "cves": [
+        "CVE-2026-93313"
+      ],
+      "products": [
+        "Alpaquita: poppler"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in poppler 26.11.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BELL-CVE-2026-93314",
+      "src": "osv_bellsoft",
+      "vendor": "Bellsoft",
+      "title": "BELL-CVE-2026-93314",
+      "url": "https://docs.bell-sw.com/security/cves/CVE-2026-93314",
+      "released": "2026-09-23T06:08:05Z",
+      "updated": "2026-11-13T23:50:34Z",
+      "cves": [
+        "CVE-2026-93314"
+      ],
+      "products": [
+        "Alpaquita: poppler"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in poppler 26.11.0-r0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BELL-CVE-2026-93990",
       "src": "osv_bellsoft",
       "vendor": "Bellsoft",
@@ -2335,6 +2430,50 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:70593",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:70593",
+      "released": "2026-09-23T06:31:49Z",
+      "updated": "2026-11-28T04:12:12Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-56852",
+        "CVE-2026-56853",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-65819",
+        "CVE-2026-67213",
+        "CVE-2026-75899",
+        "CVE-2026-75931",
+        "CVE-2026-75975",
+        "CVE-2026-76172",
+        "CVE-2026-84292",
+        "CVE-2026-84375",
+        "CVE-2026-84394",
+        "CVE-2026-84445"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, refer to: https://access.redhat.com/articles/11258",
+          "u": "https://access.redhat.com/errata/RHSA-2026:70593"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "- Upgrade gopacket to a version containing commit 210f25f or later. - If upgrading is not immediately possible, restrict network access to services that process untrusted packet data using gopacket. Where possible, use the recovering `gopa…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "NCSC-2026-0387",
       "src": "csaf_ncscnl",
       "vendor": "Check Point",
@@ -2352,6 +2491,36 @@
       ],
       "lang": "nl",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:68540",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "net/http/internal/http2: golang: golang.org/x/net: Go HTTP/2: Denial of Service via malformed SETTINGS_MAX_FRAME_SIZE frame",
+      "url": "https://access.redhat.com/errata/RHSA-2026:68540",
+      "released": "2026-09-23T07:15:53Z",
+      "updated": "2026-11-28T04:11:54Z",
+      "cves": [
+        "CVE-2026-33814",
+        "CVE-2026-33818",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.19 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade your cluster and fully apply this asynchronous errata update: https://docs.…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:68540"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "ROOT-APP-MAVEN-CVE-2023-1370",
@@ -2383,6 +2552,73 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:4292-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for google-osconfig-agent",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20264292-1/",
+      "released": "2026-09-23T07:55:28Z",
+      "updated": "2026-09-23T17:27:55Z",
+      "cves": [
+        "CVE-2026-41178",
+        "CVE-2026-56852",
+        "CVE-2026-56854",
+        "CVE-2026-56855",
+        "CVE-2026-78662",
+        "CVE-2026-84303",
+        "CVE-2026-84304",
+        "CVE-2026-84445"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Public Cloud 12",
+        "SUSE Linux Enterprise Server 12",
+        "SUSE Linux Enterprise Server for SAP Applications 12",
+        "SUSE Linux Enterprise High Performance Computing 12",
+        "SUSE Linux Enterprise Server 12 SP3"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:4294-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for gdb",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20264294-1/",
+      "released": "2026-09-23T07:56:22Z",
+      "updated": "2026-09-23T17:27:56Z",
+      "cves": [
+        "CVE-2026-13732"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "ROOT-APP-MAVEN-CVE-2021-42550",
@@ -2869,6 +3105,41 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:4308-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for apptainer",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20264308-1/",
+      "released": "2026-09-23T13:18:26Z",
+      "updated": "2026-09-24T10:28:06Z",
+      "cves": [
+        "CVE-2026-56854",
+        "CVE-2026-56855",
+        "CVE-2026-78662",
+        "CVE-2026-84303",
+        "CVE-2026-84304",
+        "CVE-2026-84445"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.1,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for HPC 15 SP7",
+        "SUSE Linux Enterprise High Performance Computing 15 SP7",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7",
+        "SUSE Linux Enterprise Server 15 SP6-LTSS",
+        "SUSE Linux Enterprise Server 15 SP6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "NCSC-2026-0390",
       "src": "csaf_ncscnl",
       "vendor": "Adobe",
@@ -2938,6 +3209,44 @@
       ],
       "lang": "nl",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:68534",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "net: golang: Go net package: Denial of Service via long CNAME response in LookupCNAME",
+      "url": "https://access.redhat.com/errata/RHSA-2026:68534",
+      "released": "2026-09-23T14:08:05Z",
+      "updated": "2026-11-28T04:11:57Z",
+      "cves": [
+        "CVE-2026-33811",
+        "CVE-2026-33818",
+        "CVE-2026-39820",
+        "CVE-2026-39821",
+        "CVE-2026-42499",
+        "CVE-2026-42504",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.2,
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.19 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade your cluster and fully apply this asynchronous errata update: https://docs.…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:68534"
+        },
+        {
+          "t": "To mitigate this issue, applications can be configured to use the pure Go DNS resolver instead of the `cgo` DNS resolver. This can be achieved by setting the `GODEBUG` environment variable to `netdns=go`. For example, to run a Go applicati…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "RHSA-2026:70753",
@@ -3062,6 +3371,58 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:70870",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "aws-smithy-json: aws-smithy-json: Denial of Service via uncontrolled recursion with deeply nested JSON",
+      "url": "https://access.redhat.com/errata/RHSA-2026:70870",
+      "released": "2026-09-23T15:01:55Z",
+      "updated": "2026-11-28T04:12:21Z",
+      "cves": [
+        "CVE-2026-18140",
+        "CVE-2026-25681",
+        "CVE-2026-27136",
+        "CVE-2026-29181",
+        "CVE-2026-33818",
+        "CVE-2026-35469",
+        "CVE-2026-39829",
+        "CVE-2026-39830",
+        "CVE-2026-39831",
+        "CVE-2026-39832",
+        "CVE-2026-41178",
+        "CVE-2026-42151",
+        "CVE-2026-42154",
+        "CVE-2026-42502",
+        "CVE-2026-42508",
+        "CVE-2026-46595",
+        "CVE-2026-46597",
+        "CVE-2026-46600",
+        "CVE-2026-46604",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "fix": [
+        {
+          "t": "For OpenShift Container Platform 4.21 see the following documentation, which will be updated shortly for this release, for important instructions on how to upgrade your cluster and fully apply this errata update: https://docs.redhat.com/en…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:70870"
+        },
+        {
+          "t": "Restrict network access to services that process JSON input using the `aws-smithy-json` runtime. Configure firewalls to limit incoming connections to trusted sources, thereby reducing the exposure to remote unauthenticated denial of servic…",
+          "u": null
+        },
+        {
+          "t": "To mitigate this flaw, applications processing untrusted HTML input must implement strict input sanitization and ensure all output is properly encoded before rendering. Deploying a comprehensive Content Security Policy (CSP) can restrict s…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "ROOT-APP-NPM-AIKIDO-2026-728255",
       "src": "osv_root",
       "vendor": "Root",
@@ -3088,6 +3449,35 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:4311-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for podofo",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20264311-1/",
+      "released": "2026-09-23T15:58:04Z",
+      "updated": "2026-09-24T10:28:09Z",
+      "cves": [
+        "CVE-2018-8002",
+        "CVE-2020-18971",
+        "CVE-2021-30470",
+        "CVE-2021-30471"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "DRUPAL-CONTRIB-2026-154",
@@ -4548,6 +4938,43 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RHSA-2026:71112",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "encoding/asn1: golang: Go encoding/asn1: Denial of Service via excessive recursion in Unmarshal",
+      "url": "https://access.redhat.com/errata/RHSA-2026:71112",
+      "released": "2026-09-23T21:07:17Z",
+      "updated": "2026-11-28T04:12:17Z",
+      "cves": [
+        "CVE-2026-33818",
+        "CVE-2026-54284",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-59893",
+        "CVE-2026-71491"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.1,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, refer to Ansible Automation Platform documentation.",
+          "u": "https://access.redhat.com/errata/RHSA-2026:71112"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability. The …",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RHSA-2026:71115",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -4588,6 +5015,95 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "RHSA-2026:71113",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "Automation-Controller: automation-controller: Kubernetes service account token exfiltration via HashiCorp Vault credential SSRF",
+      "url": "https://access.redhat.com/errata/RHSA-2026:71113",
+      "released": "2026-09-23T21:13:48Z",
+      "updated": "2026-11-28T04:12:20Z",
+      "cves": [
+        "CVE-2026-12564",
+        "CVE-2026-33818",
+        "CVE-2026-42504",
+        "CVE-2026-54284",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-59869",
+        "CVE-2026-59893",
+        "CVE-2026-67214",
+        "CVE-2026-67322",
+        "CVE-2026-67323",
+        "CVE-2026-67325",
+        "CVE-2026-69153",
+        "CVE-2026-71458",
+        "CVE-2026-71459",
+        "CVE-2026-71460",
+        "CVE-2026-71462",
+        "CVE-2026-71463",
+        "CVE-2026-71464",
+        "CVE-2026-71465",
+        "CVE-2026-71491",
+        "CVE-2026-73086",
+        "CVE-2026-75838",
+        "CVE-2026-75884",
+        "CVE-2026-78679",
+        "CVE-2026-84375",
+        "CVE-2026-84470",
+        "CVE-2026-84474",
+        "CVE-2026-84486",
+        "CVE-2026-84499",
+        "CVE-2026-84502",
+        "CVE-2026-84638",
+        "CVE-2026-84643",
+        "CVE-2026-84644",
+        "CVE-2026-84679",
+        "CVE-2026-84680",
+        "CVE-2026-84683",
+        "CVE-2026-84684",
+        "CVE-2026-84686",
+        "CVE-2026-84689",
+        "CVE-2026-84691",
+        "CVE-2026-84692",
+        "CVE-2026-84703",
+        "CVE-2026-84706",
+        "CVE-2026-84707",
+        "CVE-2026-84708",
+        "CVE-2026-84709",
+        "CVE-2026-84711",
+        "CVE-2026-84712",
+        "CVE-2026-84714",
+        "CVE-2026-84716",
+        "CVE-2026-84717",
+        "CVE-2026-84718",
+        "CVE-2026-84719",
+        "CVE-2026-84720",
+        "CVE-2026-84724",
+        "CVE-2026-87817",
+        "CVE-2026-87819"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, refer to Ansible Automation Platform documentation.",
+          "u": "https://access.redhat.com/errata/RHSA-2026:71113"
+        },
+        {
+          "t": "The following practices would help for avoiding exposure and mitigate this flaw: - Restrict network egress from controller pods using Kubernetes NetworkPolicy to prevent outbound connections to untrusted destinations. Only allow connection…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "AZL-105747",
@@ -4987,6 +5503,209 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "RHSA-2026:71114",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "Automation-Controller: automation-controller: Kubernetes service account token exfiltration via HashiCorp Vault credential SSRF",
+      "url": "https://access.redhat.com/errata/RHSA-2026:71114",
+      "released": "2026-09-23T22:13:48Z",
+      "updated": "2026-11-28T04:12:20Z",
+      "cves": [
+        "CVE-2026-12564",
+        "CVE-2026-33818",
+        "CVE-2026-42504",
+        "CVE-2026-54284",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-59869",
+        "CVE-2026-59893",
+        "CVE-2026-67322",
+        "CVE-2026-67323",
+        "CVE-2026-67325",
+        "CVE-2026-69152",
+        "CVE-2026-69153",
+        "CVE-2026-71458",
+        "CVE-2026-71459",
+        "CVE-2026-71460",
+        "CVE-2026-71462",
+        "CVE-2026-71463",
+        "CVE-2026-71464",
+        "CVE-2026-71465",
+        "CVE-2026-71491",
+        "CVE-2026-75884",
+        "CVE-2026-84470",
+        "CVE-2026-84474",
+        "CVE-2026-84499",
+        "CVE-2026-84502",
+        "CVE-2026-84638",
+        "CVE-2026-84643",
+        "CVE-2026-84644",
+        "CVE-2026-84678",
+        "CVE-2026-84679",
+        "CVE-2026-84680",
+        "CVE-2026-84683",
+        "CVE-2026-84684",
+        "CVE-2026-84686",
+        "CVE-2026-84689",
+        "CVE-2026-84691",
+        "CVE-2026-84692",
+        "CVE-2026-84703",
+        "CVE-2026-84706",
+        "CVE-2026-84707",
+        "CVE-2026-84708",
+        "CVE-2026-84709",
+        "CVE-2026-84711",
+        "CVE-2026-84712",
+        "CVE-2026-84714",
+        "CVE-2026-84716",
+        "CVE-2026-84717",
+        "CVE-2026-84718",
+        "CVE-2026-84719",
+        "CVE-2026-84720",
+        "CVE-2026-84724",
+        "CVE-2026-87817",
+        "CVE-2026-87819"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "fix": [
+        {
+          "t": "For details on how to apply this update, refer to Ansible Automation Platform documentation.",
+          "u": "https://access.redhat.com/errata/RHSA-2026:71114"
+        },
+        {
+          "t": "The following practices would help for avoiding exposure and mitigate this flaw: - Restrict network egress from controller pods using Kubernetes NetworkPolicy to prevent outbound connections to untrusted destinations. Only allow connection…",
+          "u": null
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "RHSA-2026:71179",
+      "src": "direct_csaf",
+      "vendor": "Red Hat",
+      "title": "ansible-automation-platform: privilege escalation via excessive group writable /etc/passwd permissions",
+      "url": "https://access.redhat.com/errata/RHSA-2026:71179",
+      "released": "2026-09-23T22:20:07Z",
+      "updated": "2026-11-28T04:12:22Z",
+      "cves": [
+        "CVE-2025-57847",
+        "CVE-2025-66418",
+        "CVE-2026-12564",
+        "CVE-2026-14257",
+        "CVE-2026-15307",
+        "CVE-2026-33818",
+        "CVE-2026-42215",
+        "CVE-2026-42284",
+        "CVE-2026-42504",
+        "CVE-2026-44244",
+        "CVE-2026-49825",
+        "CVE-2026-53488",
+        "CVE-2026-53492",
+        "CVE-2026-54284",
+        "CVE-2026-56853",
+        "CVE-2026-56858",
+        "CVE-2026-56859",
+        "CVE-2026-56860",
+        "CVE-2026-56862",
+        "CVE-2026-59877",
+        "CVE-2026-59893",
+        "CVE-2026-67322",
+        "CVE-2026-67323",
+        "CVE-2026-67325",
+        "CVE-2026-69152",
+        "CVE-2026-69153",
+        "CVE-2026-69244",
+        "CVE-2026-71458",
+        "CVE-2026-71459",
+        "CVE-2026-71460",
+        "CVE-2026-71462",
+        "CVE-2026-71463",
+        "CVE-2026-71464",
+        "CVE-2026-71465",
+        "CVE-2026-71491",
+        "CVE-2026-73086",
+        "CVE-2026-73620",
+        "CVE-2026-73622",
+        "CVE-2026-73623",
+        "CVE-2026-73624",
+        "CVE-2026-73625",
+        "CVE-2026-75884",
+        "CVE-2026-75899",
+        "CVE-2026-75931",
+        "CVE-2026-75975",
+        "CVE-2026-76172",
+        "CVE-2026-76218",
+        "CVE-2026-76219",
+        "CVE-2026-76220",
+        "CVE-2026-76221",
+        "CVE-2026-76222",
+        "CVE-2026-78676",
+        "CVE-2026-78679",
+        "CVE-2026-82417",
+        "CVE-2026-84292",
+        "CVE-2026-84375",
+        "CVE-2026-84394",
+        "CVE-2026-84470",
+        "CVE-2026-84474",
+        "CVE-2026-84486",
+        "CVE-2026-84499",
+        "CVE-2026-84502",
+        "CVE-2026-84638",
+        "CVE-2026-84643",
+        "CVE-2026-84644",
+        "CVE-2026-84679",
+        "CVE-2026-84680",
+        "CVE-2026-84683",
+        "CVE-2026-84684",
+        "CVE-2026-84686",
+        "CVE-2026-84689",
+        "CVE-2026-84691",
+        "CVE-2026-84692",
+        "CVE-2026-84703",
+        "CVE-2026-84706",
+        "CVE-2026-84707",
+        "CVE-2026-84708",
+        "CVE-2026-84709",
+        "CVE-2026-84711",
+        "CVE-2026-84712",
+        "CVE-2026-84714",
+        "CVE-2026-84716",
+        "CVE-2026-84717",
+        "CVE-2026-84718",
+        "CVE-2026-84719",
+        "CVE-2026-84720",
+        "CVE-2026-84724",
+        "CVE-2026-85393",
+        "CVE-2026-87817",
+        "CVE-2026-87819"
+      ],
+      "sev": "CRITICAL",
+      "cvss": 9.9,
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer to: https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platfor…",
+          "u": "https://access.redhat.com/errata/RHSA-2026:71179"
+        },
+        {
+          "t": "Mitigation for this issue is either not available or the currently available options do not meet the Red Hat Product Security criteria comprising ease of use and deployment, applicability to widespread installation base, or stability.",
+          "u": null
+        },
+        {
+          "t": "The following practices would help for avoiding exposure and mitigate this flaw: - Restrict network egress from controller pods using Kubernetes NetworkPolicy to prevent outbound connections to untrusted destinations. Only allow connection…",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

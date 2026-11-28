@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-15",
-  "count": 76,
+  "count": 84,
   "items": [
     {
       "id": "openSUSE-SU-2026:11273-1",
@@ -1576,6 +1576,41 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "RLSA-2026:39311",
+      "src": "osv_rocky",
+      "vendor": "Rocky",
+      "title": "Low: qemu-kvm security update",
+      "url": "https://errata.rockylinux.org/RLSA-2026:39311",
+      "released": "2026-07-15T12:03:43Z",
+      "updated": "2026-11-27T19:47:23Z",
+      "cves": [
+        "CVE-2026-48914"
+      ],
+      "products": [
+        "Rocky Linux: qemu-guest-agent",
+        "Rocky Linux: qemu-guest-agent-debuginfo",
+        "Rocky Linux: qemu-img",
+        "Rocky Linux: qemu-img-debuginfo",
+        "Rocky Linux: qemu-kvm",
+        "Rocky Linux: qemu-kvm-audio-pa"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in qemu-guest-agent 17:10.1.0-17.el9_8.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in qemu-guest-agent-debuginfo 17:10.1.0-17.el9_8.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in qemu-img 17:10.1.0-17.el9_8.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "SUSE-SU-2026:22814-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -1627,6 +1662,22 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-92391",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-15809 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15809",
+      "released": "2026-07-15T13:17:03Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-15809"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "RHSA-2026:39976",
@@ -1739,6 +1790,37 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-discourse-2026-45788",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse: Secure uploads exposed by hotlinked image copying",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-3876-w96v-8v38",
+      "released": "2026-07-15T15:56:16Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-45788"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2026.1.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.4.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.5.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-discourse-2026-46413",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -1768,6 +1850,37 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-discourse-2026-49256",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Discourse: Hidden tag names leaked via category serializers",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-mwp7-572g-6qpx",
+      "released": "2026-07-15T15:56:20Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-49256"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 2026.1.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.4.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in discourse 2026.5.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-discourse-2026-53961",
@@ -1925,6 +2038,37 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-prometheus-2026-42151",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Prometheus Azure AD remote write OAuth client secret exposed via config API",
+      "url": "https://github.com/prometheus/prometheus/security/advisories/GHSA-wg65-39gg-5wfj",
+      "released": "2026-07-15T15:58:00Z",
+      "updated": "2026-09-10T09:15:14Z",
+      "cves": [
+        "CVE-2026-42151"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: prometheus"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in prometheus 0.305.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in prometheus 0.311.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in prometheus 3.5.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "cisco-sa-ise-traversal-xNt7wb2Y",
       "src": "direct_csaf",
       "vendor": "Cisco",
@@ -1952,6 +2096,66 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-tomcat-2026-59083",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Tomcat: Incorrect URL decoding in RewriteValve may allow security control bypass",
+      "released": "2026-07-15T16:00:36Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-59083"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: tomcat"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tomcat 9.0.120",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat 10.1.57",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat 11.0.24",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-tomcat-2026-59084",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Tomcat: EncryptInterceptor requirements not clearly documented",
+      "released": "2026-07-15T16:00:37Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-59084"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: tomcat"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tomcat 9.0.120",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat 10.1.57",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat 11.0.24",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "openSUSE-SU-2026:21360-1",
@@ -2203,6 +2407,22 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-92481",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-38974 affecting package python-dulwich 0.21.7-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-38974",
+      "released": "2026-07-15T22:16:47Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-38974"
+      ],
+      "products": [
+        "Azure Linux: python-dulwich"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "SUSE-SU-2026:3066-1",

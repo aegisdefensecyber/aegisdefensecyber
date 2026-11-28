@@ -1,8 +1,63 @@
 {
   "schemaVersion": 1,
   "date": "2024-11-08",
-  "count": 10,
+  "count": 13,
   "items": [
+    {
+      "id": "USN-7094-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "qemu vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-7094-1",
+      "released": "2024-11-08T01:42:12Z",
+      "updated": "2026-11-24T09:37:51Z",
+      "cves": [
+        "CVE-2019-20382",
+        "CVE-2020-1983",
+        "CVE-2020-7039",
+        "CVE-2020-8608",
+        "CVE-2020-13765",
+        "CVE-2021-3592",
+        "CVE-2021-3594",
+        "CVE-2023-3019",
+        "CVE-2024-4693",
+        "CVE-2024-7730"
+      ],
+      "products": [
+        "Ubuntu: qemu"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in qemu 2.0.0+dfsg-2ubuntu1.47+esm4",
+          "u": null
+        },
+        {
+          "t": "Fixed in qemu 1:2.5+dfsg-5ubuntu10.51+esm3",
+          "u": null
+        },
+        {
+          "t": "Fixed in qemu 1:2.11+dfsg-1ubuntu7.42+esm2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-52587",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2024-21538 affecting package js-jquery 3.5.0-4",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-21538",
+      "released": "2024-11-08T05:15:06Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2024-21538"
+      ],
+      "products": [
+        "Azure Linux: js-jquery"
+      ],
+      "seen": "2026-11-28"
+    },
     {
       "id": "BIT-mongodb-2024-8305",
       "src": "bitnami_vulndb",
@@ -112,6 +167,29 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-alertmanager-2023-40577",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Alertmanager UI is vulnerable to stored XSS via the /api/v1/alerts endpoint",
+      "url": "https://github.com/prometheus/alertmanager/security/advisories/GHSA-v86x-5fm3-5p7j",
+      "released": "2024-11-08T19:09:34Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2023-40577"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: alertmanager"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in alertmanager 0.25.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-memcached-2023-46853",

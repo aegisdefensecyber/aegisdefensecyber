@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-12-06",
-  "count": 13,
+  "count": 16,
   "items": [
     {
       "id": "msrc_CVE-2022-50303",
@@ -304,6 +304,64 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-mongodb-2025-11979",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Use-after-free in the MongoDB server query planner may lead to crash or undefined behavior",
+      "url": "https://jira.mongodb.org/browse/SERVER-105873",
+      "released": "2025-12-06T11:42:46Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-11979"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 7.0.25",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.0.15",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-mongodb-2025-12893",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper Certificate Validation May Allow Successful TLS Handshaking Despite Invalid Extended Key Usage Fields in MongoDB Server",
+      "url": "https://jira.mongodb.org/browse/SERVER-105783",
+      "released": "2025-12-06T11:42:47Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-12893"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 7.0.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.0.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.2.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-mongodb-2025-13507",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -333,6 +391,29 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-pgbouncer-2025-12819",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Untrusted search path in auth_query connection in PgBouncer",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-12819",
+      "released": "2025-12-06T11:44:20Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-12819"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: pgbouncer"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pgbouncer 1.25.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "AZL-71662",

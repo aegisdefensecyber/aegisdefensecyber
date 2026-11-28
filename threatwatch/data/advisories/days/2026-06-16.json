@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-06-16",
-  "count": 54,
+  "count": 61,
   "items": [
     {
       "id": "openSUSE-SU-2026:11041-1",
@@ -494,6 +494,36 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:22238-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python-PyJWT",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202622238-1/",
+      "released": "2026-06-16T08:55:32Z",
+      "updated": "2026-09-20T18:39:24Z",
+      "cves": [
+        "CVE-2026-48522",
+        "CVE-2026-48523",
+        "CVE-2026-48524",
+        "CVE-2026-48525",
+        "CVE-2026-48526"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RHSA-2026:26222",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -703,6 +733,37 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-mariadb-2026-44170",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MariaDB: Argument injection in CONNECT REST Xcurl on Windows via unsanitized URL",
+      "url": "https://github.com/MariaDB/server/security/advisories/GHSA-f835-cfjq-wf73",
+      "released": "2026-06-16T11:46:57Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-44170"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb 10.6.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 10.11.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 11.4.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-mariadb-2026-44171",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -732,6 +793,99 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mariadb-2026-44173",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MariaDB: FILE privilege was not checked for subqueries in the FROM clause",
+      "url": "https://github.com/MariaDB/server/security/advisories/GHSA-667j-m53j-wpmc",
+      "released": "2026-06-16T11:47:00Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-44173"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb 10.6.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 10.11.17",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 11.4.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-mariadb-2026-48163",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MariaDB: wsrep SST unsafe parameter handling on the donor side (rsync)",
+      "url": "https://github.com/MariaDB/server/security/advisories/GHSA-rpgv-q6gv-684r",
+      "released": "2026-06-16T11:47:01Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-48163"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb 10.6.27",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 10.11.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 11.4.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-mariadb-2026-48165",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MariaDB: unsafe usage of `wsrep_sst_receive_address` values on the joiner side",
+      "url": "https://github.com/MariaDB/server/security/advisories/GHSA-7v3p-h23x-8hwv",
+      "released": "2026-06-16T11:47:03Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-48165"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: mariadb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mariadb 10.6.27",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 10.11.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in mariadb 11.4.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-mongodb-2026-9735",
@@ -902,6 +1056,22 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-90095",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-8484 affecting package jansi 2.4.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8484",
+      "released": "2026-06-16T12:16:26Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-8484"
+      ],
+      "products": [
+        "Azure Linux: jansi"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-discourse-2026-44779",
@@ -1307,6 +1477,22 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-90180",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-10649 affecting package pacemaker 3.0.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-10649",
+      "released": "2026-06-16T17:16:30Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-10649"
+      ],
+      "products": [
+        "Azure Linux: pacemaker"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "AZL-90182",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-24",
-  "count": 149,
+  "count": 156,
   "items": [
     {
       "id": "openSUSE-SU-2026:11582-1",
@@ -2536,6 +2536,74 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:3713-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for Multi-Linux Manager Client Tools - Monitoring stack",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263713-1/",
+      "released": "2026-08-24T02:53:30Z",
+      "updated": "2026-09-17T16:42:12Z",
+      "cves": [
+        "CVE-2025-12141",
+        "CVE-2026-13149",
+        "CVE-2026-33244",
+        "CVE-2026-33382",
+        "CVE-2026-33814",
+        "CVE-2026-39821",
+        "CVE-2026-39882",
+        "CVE-2026-41607"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Multi Linux Manager Tools SLE-15"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3714-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for Multi-Linux Manager Monitoring stack",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263714-1/",
+      "released": "2026-08-24T02:55:28Z",
+      "updated": "2026-09-17T16:42:14Z",
+      "cves": [
+        "CVE-2022-21698",
+        "CVE-2025-12141",
+        "CVE-2026-13149",
+        "CVE-2026-33244",
+        "CVE-2026-33382",
+        "CVE-2026-33814",
+        "CVE-2026-39821",
+        "CVE-2026-39882",
+        "CVE-2026-41607"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Manager Client Tools 15",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RHSA-2026:58564",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -2611,6 +2679,53 @@
         "DJI Avata 2"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:3718-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for grafana",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263718-1/",
+      "released": "2026-08-24T09:23:40Z",
+      "updated": "2026-09-17T16:42:17Z",
+      "cves": [
+        "CVE-2025-12141",
+        "CVE-2025-30153",
+        "CVE-2026-21725",
+        "CVE-2026-25680",
+        "CVE-2026-25681",
+        "CVE-2026-27136",
+        "CVE-2026-28374",
+        "CVE-2026-28376",
+        "CVE-2026-28379",
+        "CVE-2026-28380",
+        "CVE-2026-28383",
+        "CVE-2026-33376",
+        "CVE-2026-33377",
+        "CVE-2026-33378",
+        "CVE-2026-33380",
+        "CVE-2026-33381",
+        "CVE-2026-33382",
+        "CVE-2026-39821",
+        "CVE-2026-39882",
+        "CVE-2026-41607",
+        "CVE-2026-42502",
+        "CVE-2026-42506"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-cosign-2026-22703",
@@ -2867,16 +2982,29 @@
       "title": "Moderate: qemu-kvm security, bug fix, and enhancement update",
       "url": "https://errata.rockylinux.org/RLSA-2026:58571",
       "released": "2026-08-24T12:08:18Z",
-      "updated": "2026-09-07T12:12:56Z",
+      "updated": "2026-11-27T19:47:23Z",
       "cves": [
         "CVE-2026-48914"
       ],
       "products": [
-        "Rocky Linux: qemu-kvm"
+        "Rocky Linux: qemu-guest-agent",
+        "Rocky Linux: qemu-guest-agent-debuginfo",
+        "Rocky Linux: qemu-img",
+        "Rocky Linux: qemu-img-debuginfo",
+        "Rocky Linux: qemu-kvm",
+        "Rocky Linux: qemu-kvm-audio-pa"
       ],
       "fix": [
         {
-          "t": "Fixed in qemu-kvm 8:10.1.0-16.el10_2.5",
+          "t": "Fixed in qemu-kvm-device-usb-redirect-debuginfo 18:10.1.0-16.el10_2.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in qemu-kvm-common 18:10.1.0-16.el10_2.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in qemu-img-debuginfo 18:10.1.0-16.el10_2.5",
           "u": null
         }
       ],
@@ -2943,6 +3071,50 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:23252-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for fuse-overlayfs",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623252-1/",
+      "released": "2026-08-24T14:40:44Z",
+      "updated": "2026-09-20T18:41:24Z",
+      "cves": [
+        "CVE-2026-52791"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 4.7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "GHSA-vwc7-r8mq-g2x9",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "adm-zip extraction follows destination symlinks, allowing arbitrary file overwrite",
+      "url": "https://github.com/advisories/GHSA-vwc7-r8mq-g2x9",
+      "released": "2026-08-24T15:31:51Z",
+      "updated": "2026-09-08T21:20:41Z",
+      "cves": [
+        "CVE-2026-76845"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "npm: adm-zip"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-28"
     },
     {
       "id": "RHSA-2026:59137",
@@ -3032,6 +3204,35 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:3762-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python-sqlparse",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263762-1/",
+      "released": "2026-08-24T18:24:43Z",
+      "updated": "2026-09-17T16:42:45Z",
+      "cves": [
+        "CVE-2026-54284",
+        "CVE-2026-59893",
+        "CVE-2026-59894",
+        "CVE-2026-71491"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for Package Hub 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "GHSA-2x37-89hj-2j95",
@@ -3763,6 +3964,22 @@
       ],
       "lang": "de",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-97649",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-17113 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-17113",
+      "released": "2026-08-24T22:16:50Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-17113"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

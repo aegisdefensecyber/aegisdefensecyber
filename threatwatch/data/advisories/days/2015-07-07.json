@@ -1,8 +1,47 @@
 {
   "schemaVersion": 1,
   "date": "2015-07-07",
-  "count": 4,
+  "count": 5,
   "items": [
+    {
+      "id": "RHSA-2015:1210",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: abrt security update",
+      "url": "https://access.redhat.com/errata/RHSA-2015:1210",
+      "released": "2015-07-07T08:39:40Z",
+      "updated": "2026-11-07T05:09:49Z",
+      "cves": [
+        "CVE-2015-1869",
+        "CVE-2015-1870",
+        "CVE-2015-3142",
+        "CVE-2015-3147",
+        "CVE-2015-3159",
+        "CVE-2015-3315"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.2,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Desktop (v. 6)",
+        "Red Hat Enterprise Linux Desktop Optional (v. 6)",
+        "Red Hat Enterprise Linux HPC Node (v. 6)",
+        "Red Hat Enterprise Linux HPC Node Optional (v. 6)",
+        "Red Hat Enterprise Linux Server (v. 6)"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2015:1210"
+        },
+        {
+          "t": "It is recommended to disable abrt via the following command line, till the flaws have been resolved: sysctl -w kern.core_pattern=core Note: This will reset, if…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
     {
       "id": "USN-2663-1",
       "src": "osv_ubuntu",

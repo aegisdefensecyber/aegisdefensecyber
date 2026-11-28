@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-17",
-  "count": 176,
+  "count": 194,
   "items": [
     {
       "id": "openSUSE-SU-2026:11529-1",
@@ -994,6 +994,172 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-jenkins-2026-70427",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.575 and earlier, LTS 2.568.1 and earlier does not safely handle symbolic links with effectively empty names during the extraction of `.tar` and `.tar.gz` archives, allowing attackers able to control agent proc…",
+      "url": "https://www.jenkins.io/security/advisory/2026-08-05/#SECURITY-3930",
+      "released": "2026-08-17T05:44:38Z",
+      "updated": "2026-09-09T09:13:23Z",
+      "cves": [
+        "CVE-2026-70427"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.568.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.576.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-jenkins-2026-70428",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.575 and earlier, LTS 2.568.1 and earlier improperly identifies file paths attempting path traversal in file parameter names, allowing attackers with Item/Configure and Item/Build permission to write files to a…",
+      "url": "https://www.jenkins.io/security/advisory/2026-08-05/#SECURITY-3927",
+      "released": "2026-08-17T05:44:40Z",
+      "updated": "2026-09-09T09:13:23Z",
+      "cves": [
+        "CVE-2026-70428"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.568.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.576.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-jenkins-2026-70429",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.575 and earlier, LTS 2.568.1 and earlier handles case-insensitivity in user names and group names inconsistently, allowing attackers able to create new users or groups with names that case-insensitively match …",
+      "url": "https://www.jenkins.io/security/advisory/2026-08-05/#SECURITY-3924",
+      "released": "2026-08-17T05:44:41Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-70429"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.568.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.576.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-jenkins-2026-70430",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Jenkins 2.575 and earlier, LTS 2.568.1 and earlier does not restrict the types of objects that can be instantiated as part of the project naming strategy configuration, allowing attackers with Overall/Manage permission …",
+      "url": "https://www.jenkins.io/security/advisory/2026-08-05/#SECURITY-3916",
+      "released": "2026-08-17T05:44:42Z",
+      "updated": "2026-09-09T09:13:23Z",
+      "cves": [
+        "CVE-2026-70430"
+      ],
+      "sev": "LOW",
+      "products": [
+        "Bitnami: jenkins"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in jenkins 2.568.2",
+          "u": null
+        },
+        {
+          "t": "Fixed in jenkins 2.576.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-libphp-2026-17543",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "SQL injection in ext-pgsql via E'...' backslash breakout",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-7qpv-r5mr-78m4",
+      "released": "2026-08-17T05:47:58Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-17543"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.2.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.4.24",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-libphp-2026-17544",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Out-of-bounds write in bccomp() via crafted operand and scale",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-x692-q9x7-8c3f",
+      "released": "2026-08-17T05:47:59Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-17544"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.4.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.5.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-java-2026-41254",
@@ -2478,6 +2644,37 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-mongodb-2026-13068",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "MongoDB mongos Improper Authorization Check in Cursor Termination Allowing Cross-Database Privilege Misuse",
+      "url": "https://jira.mongodb.org/browse/SERVER-128198",
+      "released": "2026-08-17T05:49:38Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-13068"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: mongodb"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mongodb 7.0.39",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.0.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in mongodb 8.2.12",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-mongodb-2026-13069",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -2560,6 +2757,50 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-nifi-2026-68979",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache NiFi: Missing Authorization for Components Referenced by Parameter Context Updates",
+      "released": "2026-08-17T05:49:53Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-68979"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: nifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nifi 2.11.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-nifi-2026-68980",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache NiFi: Authorization Bypass for Parameter Context Asset Deletion",
+      "released": "2026-08-17T05:49:54Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-68980"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: nifi"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in nifi 2.11.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-nifi-2026-68981",
@@ -2769,6 +3010,64 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-php-2026-17543",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "SQL injection in ext-pgsql via E'...' backslash breakout",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-7qpv-r5mr-78m4",
+      "released": "2026-08-17T05:53:35Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-17543"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.2.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.3.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.4.24",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-php-2026-17544",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Out-of-bounds write in bccomp() via crafted operand and scale",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-x692-q9x7-8c3f",
+      "released": "2026-08-17T05:53:36Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-17544"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: php"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in php 8.4.24",
+          "u": null
+        },
+        {
+          "t": "Fixed in php 8.5.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-php-2026-7260",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -2844,6 +3143,36 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-tomcat-2026-66299",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Tomcat: DoS via WebSocket chat example",
+      "released": "2026-08-17T05:56:43Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-66299"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: tomcat"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tomcat 9.0.121",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat 10.1.58",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat 11.0.25",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-gitlab-2025-14562",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -2904,6 +3233,37 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-gitlab-2026-13113",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Time-of-check Time-of-use (TOCTOU) Race Condition in GitLab",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-2-1-released/",
+      "released": "2026-08-17T06:06:29Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-13113"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: gitlab"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitlab 19.0.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 19.1.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 19.2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-gitlab-2026-14341",
@@ -3144,6 +3504,37 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-gitlab-2026-6267",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Insertion of Sensitive Information Into Sent Data in GitLab",
+      "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-2-1-released/",
+      "released": "2026-08-17T06:08:12Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-6267"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: gitlab"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitlab 19.0.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 19.1.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in gitlab 19.2.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-gitlab-2026-6336",
@@ -4038,6 +4429,55 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "GHSA-7pqw-9j4j-h8q3",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "extract-zip allows arbitrary file writes through symlink archive entries",
+      "url": "https://github.com/advisories/GHSA-7pqw-9j4j-h8q3",
+      "released": "2026-08-17T15:30:40Z",
+      "updated": "2026-09-08T20:42:52Z",
+      "cves": [
+        "CVE-2026-19693"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "npm: extract-zip"
+      ],
+      "reviewed": true,
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3629-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for rsync",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263629-1/",
+      "released": "2026-08-17T16:45:26Z",
+      "updated": "2026-09-17T16:40:48Z",
+      "cves": [
+        "CVE-2026-29518",
+        "CVE-2026-43619"
+      ],
+      "sev": "HIGH",
+      "cvss": 7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "SUSE-SU-2026:23188-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -4289,7 +4729,7 @@
       "title": "Important: bind9.18 security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:55442",
       "released": "2026-08-17T18:03:57Z",
-      "updated": "2026-08-31T18:13:36Z",
+      "updated": "2026-11-27T19:47:23Z",
       "cves": [
         "CVE-2026-10723",
         "CVE-2026-11331",
@@ -4299,11 +4739,24 @@
         "CVE-2026-13321"
       ],
       "products": [
-        "Rocky Linux: bind9.18"
+        "Rocky Linux: bind9.18",
+        "Rocky Linux: bind9.18-chroot",
+        "Rocky Linux: bind9.18-debuginfo",
+        "Rocky Linux: bind9.18-debugsource",
+        "Rocky Linux: bind9.18-devel",
+        "Rocky Linux: bind9.18-dnssec-utils"
       ],
       "fix": [
         {
-          "t": "Fixed in bind9.18 2:9.18.29-14.el9_8.8",
+          "t": "Fixed in bind9.18 32:9.18.29-14.el9_8.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in bind9.18-chroot 32:9.18.29-14.el9_8.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in bind9.18-debuginfo 32:9.18.29-14.el9_8.8",
           "u": null
         }
       ],
@@ -4452,7 +4905,7 @@
       "title": "Important: bind security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:55437",
       "released": "2026-08-17T18:06:54Z",
-      "updated": "2026-08-31T12:13:28Z",
+      "updated": "2026-11-27T19:47:23Z",
       "cves": [
         "CVE-2026-10723",
         "CVE-2026-11331",
@@ -4462,11 +4915,24 @@
         "CVE-2026-13321"
       ],
       "products": [
-        "Rocky Linux: bind"
+        "Rocky Linux: bind",
+        "Rocky Linux: bind-chroot",
+        "Rocky Linux: bind-debuginfo",
+        "Rocky Linux: bind-debugsource",
+        "Rocky Linux: bind-devel",
+        "Rocky Linux: bind-dnssec-utils"
       ],
       "fix": [
         {
-          "t": "Fixed in bind 2:9.18.33-15.el10_2.10",
+          "t": "Fixed in bind-debugsource 32:9.18.33-15.el10_2.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in bind-devel 32:9.18.33-15.el10_2.10",
+          "u": null
+        },
+        {
+          "t": "Fixed in bind-debuginfo 32:9.18.33-15.el10_2.10",
           "u": null
         }
       ],
@@ -4524,6 +4990,59 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:23204-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for rpm",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623204-1/",
+      "released": "2026-08-17T19:48:21Z",
+      "updated": "2026-09-20T18:41:05Z",
+      "cves": [
+        "CVE-2026-44605"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:23205-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for podman",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623205-1/",
+      "released": "2026-08-17T19:56:54Z",
+      "updated": "2026-09-20T18:41:06Z",
+      "cves": [
+        "CVE-2026-55686",
+        "CVE-2026-57231"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "msrc_CVE-2023-51767",

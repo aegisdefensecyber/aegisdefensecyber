@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-02-26",
-  "count": 52,
+  "count": 67,
   "items": [
     {
       "id": "openSUSE-SU-2026:10257-1",
@@ -879,6 +879,91 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-valkey-2025-67733",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Valkey Affected by RESP Protocol Injection via Lua error_reply",
+      "url": "https://github.com/valkey-io/valkey/security/advisories/GHSA-p876-p7q5-hv2m",
+      "released": "2026-02-26T08:53:18Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-67733"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: valkey"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in valkey 7.2.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in valkey 8.0.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in valkey 8.1.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-valkey-2026-21863",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Malformed Valkey Cluster bus message can lead to Remote DoS",
+      "url": "https://github.com/valkey-io/valkey/security/advisories/GHSA-c677-q3wr-gggq",
+      "released": "2026-02-26T08:53:20Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-21863"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: valkey"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in valkey 7.2.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in valkey 8.0.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in valkey 8.1.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-valkey-2026-27623",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Valkey has Pre-Authentication DOS from malformed RESP request",
+      "url": "https://github.com/valkey-io/valkey/security/advisories/GHSA-93p9-5vc7-8wgr",
+      "released": "2026-02-26T08:53:22Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-27623"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: valkey"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in valkey 9.0.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-superset-2026-23980",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -921,6 +1006,28 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-superset-2026-23983",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Superset: Sensitive Data Exposure via REST API (disabled by default)",
+      "released": "2026-02-26T08:54:03Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-23983"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: superset"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in superset 6.0.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "openSUSE-SU-2026:20270-1",
@@ -1031,6 +1138,91 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "SUSE-SU-2026:20525-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for avahi",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620525-1/",
+      "released": "2026-02-26T10:54:54Z",
+      "updated": "2026-09-20T18:36:14Z",
+      "cves": [
+        "CVE-2024-52615",
+        "CVE-2025-68276",
+        "CVE-2025-68468",
+        "CVE-2025-68471"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:20524-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libssh",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620524-1/",
+      "released": "2026-02-26T11:08:16Z",
+      "updated": "2026-09-20T18:36:12Z",
+      "cves": [
+        "CVE-2026-0964",
+        "CVE-2026-0965",
+        "CVE-2026-0966",
+        "CVE-2026-0967",
+        "CVE-2026-0968"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:20526-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for rust-keylime",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620526-1/",
+      "released": "2026-02-26T11:08:16Z",
+      "updated": "2026-09-20T18:36:15Z",
+      "cves": [
+        "CVE-2026-25727"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "SUSE-SU-2026:20531-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -1059,6 +1251,35 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:20527-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for glibc",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620527-1/",
+      "released": "2026-02-26T11:33:53Z",
+      "updated": "2026-09-20T18:36:16Z",
+      "cves": [
+        "CVE-2025-15281",
+        "CVE-2025-8058",
+        "CVE-2026-0861",
+        "CVE-2026-0915"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "openSUSE-SU-2026:20273-1",
@@ -1237,6 +1458,29 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-neo4j-2026-1337",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Insufficient escaping of unicode characters in query log",
+      "url": "https://github.com/JoakimBulow/CVE-2026-1337",
+      "released": "2026-02-26T15:16:17Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-1337"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: neo4j"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in neo4j 2026.1.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "SUSE-SU-2026:0667-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -1311,6 +1555,29 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-pytorch-2025-2148",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "PyTorch Tuple torch.ops.profiler._call_end_callbacks_on_jit_fut memory corruption",
+      "url": "https://vuldb.com/?id.299059",
+      "released": "2026-02-26T15:23:02Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-2148"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: pytorch"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pytorch 2.7.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-pytorch-2025-2149",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -1376,6 +1643,86 @@
         "Azure Linux: kubevirt-openvmm"
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-78653",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-27141 affecting package azl-otel-collector 0.127.0-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27141",
+      "released": "2026-02-26T20:31:38Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-27141"
+      ],
+      "products": [
+        "Azure Linux: azl-otel-collector"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-78656",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-27141 affecting package buildah 1.43.1-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27141",
+      "released": "2026-02-26T20:31:38Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-27141"
+      ],
+      "products": [
+        "Azure Linux: buildah"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-78659",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-27141 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27141",
+      "released": "2026-02-26T20:31:38Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-27141"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-78662",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-27141 affecting package podman 5.6.1-10",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27141",
+      "released": "2026-02-26T20:31:38Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-27141"
+      ],
+      "products": [
+        "Azure Linux: podman"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-81203",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-27141 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-27141",
+      "released": "2026-02-26T20:31:38Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-27141"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "WID-SEC-W-2026-0548",

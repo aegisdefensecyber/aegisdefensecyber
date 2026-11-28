@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-01-27",
-  "count": 9,
+  "count": 16,
   "items": [
     {
       "id": "BIT-cilium-2025-23047",
@@ -127,6 +127,29 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-elk-2024-43707",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Kibana exposure of sensitive information to an unauthorized actor",
+      "url": "https://discuss.elastic.co/t/kibana-8-15-0-security-update-esa-2024-29-esa-2024-30/373521",
+      "released": "2025-01-27T07:10:02Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-43707"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: elk"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in elk 8.15.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-kibana-2024-52972",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -204,6 +227,29 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-kibana-2024-43707",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Kibana exposure of sensitive information to an unauthorized actor",
+      "url": "https://discuss.elastic.co/t/kibana-8-15-0-security-update-esa-2024-29-esa-2024-30/373521",
+      "released": "2025-01-27T07:12:51Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-43707"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: kibana"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kibana 8.15.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-mlflow-2024-3848",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -225,6 +271,147 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "USN-7228-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "libreoffice vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-7228-1",
+      "released": "2025-01-27T14:24:36Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2024-12425",
+        "CVE-2024-12426"
+      ],
+      "products": [
+        "Ubuntu: libreoffice"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libreoffice 1:6.4.7-0ubuntu0.20.04.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in libreoffice 1:7.3.7-0ubuntu0.22.04.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in libreoffice 4:24.2.7-0ubuntu0.24.04.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7229-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "clamav vulnerability",
+      "url": "https://ubuntu.com/security/notices/USN-7229-1",
+      "released": "2025-01-27T15:06:38Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2025-20128"
+      ],
+      "products": [
+        "Ubuntu: clamav"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in clamav 1.0.8+dfsg-0ubuntu0.24.04.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7230-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "quagga vulnerability",
+      "url": "https://ubuntu.com/security/notices/USN-7230-1",
+      "released": "2025-01-27T16:02:04Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2024-44070"
+      ],
+      "products": [
+        "Ubuntu: quagga"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in quagga 1.2.4-1ubuntu0.1~esm2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7230-2",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "frr vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-7230-2",
+      "released": "2025-01-27T16:02:49Z",
+      "updated": "2026-11-24T09:37:56Z",
+      "cves": [
+        "CVE-2024-44070",
+        "CVE-2024-55553"
+      ],
+      "products": [
+        "Ubuntu: frr"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in frr 7.2.1-1ubuntu0.2+esm3",
+          "u": null
+        },
+        {
+          "t": "Fixed in frr 8.1-1ubuntu1.13",
+          "u": null
+        },
+        {
+          "t": "Fixed in frr 8.4.4-1.1ubuntu6.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7179-4",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "linux-xilinx-zynqmp vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-7179-4",
+      "released": "2025-01-27T19:04:25Z",
+      "updated": "2026-11-24T09:37:55Z",
+      "cves": [
+        "CVE-2020-12351",
+        "CVE-2020-12352",
+        "CVE-2020-24490",
+        "CVE-2024-26822",
+        "CVE-2024-35963",
+        "CVE-2024-35965",
+        "CVE-2024-35966",
+        "CVE-2024-35967",
+        "CVE-2024-38553",
+        "CVE-2024-40910",
+        "CVE-2024-40973",
+        "CVE-2024-43904",
+        "CVE-2024-50264",
+        "CVE-2024-53057"
+      ],
+      "products": [
+        "Ubuntu: linux-xilinx-zynqmp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in linux-xilinx-zynqmp 5.15.0-1041.45",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

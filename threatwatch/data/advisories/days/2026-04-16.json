@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-04-16",
-  "count": 109,
+  "count": 122,
   "items": [
     {
       "id": "openSUSE-SU-2026:10558-1",
@@ -954,6 +954,35 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "CLEANSTART-2026-ZT45130",
+      "src": "cleanstart",
+      "title": "During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions",
+      "url": "https://github.com/cleanstart-dev/cleanstart-security-advisories/tree/main/advisories/2026/CLEANSTART-2026-ZT45130.json",
+      "released": "2026-04-16T00:58:54Z",
+      "updated": "2026-09-18T11:59:01Z",
+      "cves": [
+        "CVE-2026-25679",
+        "CVE-2026-27139",
+        "CVE-2026-27142",
+        "CVE-2026-32280",
+        "CVE-2026-32281",
+        "CVE-2026-32282",
+        "CVE-2026-32283",
+        "CVE-2026-32289",
+        "CVE-2026-33810"
+      ],
+      "products": [
+        "CleanStart: kyverno-policy-reporter-kyverno-plugin-fips"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in kyverno-policy-reporter-kyverno-plugin-fips 1.5.2-r4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "CLEANSTART-2026-CR55131",
       "src": "cleanstart",
       "title": "During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions",
@@ -1413,6 +1442,34 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:21241-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for cockpit",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202621241-1/",
+      "released": "2026-04-16T13:09:49Z",
+      "updated": "2026-09-20T18:37:45Z",
+      "cves": [
+        "CVE-2026-25547",
+        "CVE-2026-26996"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0",
+        "SUSE Linux Micro 6.1"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "openSUSE-SU-2026:20552-1",
@@ -1995,6 +2052,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-85605",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-35469 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-35469",
+      "released": "2026-04-16T22:16:37Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-35469"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "AZL-85679",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -2037,6 +2110,49 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-82982",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-40253 affecting package opencryptoki 3.24.0-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-40253",
+      "released": "2026-04-16T23:16:33Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-40253"
+      ],
+      "products": [
+        "Azure Linux: opencryptoki"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-authentik-2022-23555",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "authentik vulnerable to Improper Authentication via invitation URL token reuse",
+      "url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-9qwp-jf7p-vr7h",
+      "released": "2026-04-16T23:35:57Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2022-23555"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: authentik"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in authentik 2022.10.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in authentik 2022.11.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-authentik-2022-46145",
@@ -2091,6 +2207,29 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-authentik-2023-26481",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Insufficient user check in FlowTokens by Email stage",
+      "url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-3xf5-pqvf-rqq3",
+      "released": "2026-04-16T23:36:01Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2023-26481"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: authentik"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in authentik 2022.12.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-apisix-2026-31908",
@@ -2290,6 +2429,33 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-authentik-2024-21637",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "XSS in Authentik via JavaScript-URI as Redirect URI and form_post Response Mode",
+      "url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-rjpr-7w8c-gv3j",
+      "released": "2026-04-16T23:36:10Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-21637"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: authentik"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in authentik 2023.8.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in authentik 2023.10.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-authentik-2024-23647",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -2444,6 +2610,60 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-authentik-2024-52287",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "authentik performs insufficient validation of OAuth scopes",
+      "url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-v6m7-8j37-8f4v",
+      "released": "2026-04-16T23:36:20Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-52287"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: authentik"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in authentik 2024.8.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in authentik 2024.10.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-authentik-2024-52289",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "authentik has an insecure default configuration for OAuth2 Redirect URIs",
+      "url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-3q5w-6m3x-64gj",
+      "released": "2026-04-16T23:36:22Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-52289"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: authentik"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in authentik 2024.8.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in authentik 2024.10.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-authentik-2024-52307",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -2522,6 +2742,33 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-authentik-2025-52553",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "authentik has Insufficient Session verification for Remote Access Control endpoint access",
+      "url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-wr3v-9p2c-chx7",
+      "released": "2026-04-16T23:36:26Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-52553"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: authentik"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in authentik 2025.4.3",
+          "u": null
+        },
+        {
+          "t": "Fixed in authentik 2025.6.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-authentik-2025-53942",
@@ -2611,6 +2858,33 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-authentik-2026-25227",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "authentik affected by Remote Code Execution via Context Key Injection in PropertyMapping Test Endpoint",
+      "url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-qvxx-mfm6-626f",
+      "released": "2026-04-16T23:36:32Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-25227"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: authentik"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in authentik 2025.8.6",
+          "u": null
+        },
+        {
+          "t": "Fixed in authentik 2025.12.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-authentik-2026-25748",
@@ -2933,6 +3207,52 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mlflow-2025-14287",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Command Injection in mlflow/mlflow",
+      "url": "https://huntr.com/bounties/229cd526-41aa-4819-b6f0-e2d0371c89e3",
+      "released": "2026-04-16T23:45:00Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-14287"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: mlflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mlflow 3.7.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-mlflow-2026-0596",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Command Injection in mlflow/mlflow",
+      "url": "https://huntr.com/bounties/2e905add-f9f5-4309-a3db-b17de5981285",
+      "released": "2026-04-16T23:45:08Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-0596"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: mlflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mlflow 3.11.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

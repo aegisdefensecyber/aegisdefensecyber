@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-03-12",
-  "count": 43,
+  "count": 51,
   "items": [
     {
       "id": "msrc_CVE-2026-23868",
@@ -342,6 +342,61 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:20722-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for curl",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620722-1/",
+      "released": "2026-03-12T09:40:37Z",
+      "updated": "2026-09-20T18:36:43Z",
+      "cves": [
+        "CVE-2026-1965",
+        "CVE-2026-3783",
+        "CVE-2026-3784",
+        "CVE-2026-3805"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:20723-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for virtiofsd",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202620723-1/",
+      "released": "2026-03-12T09:52:06Z",
+      "updated": "2026-09-20T18:36:45Z",
+      "cves": [
+        "CVE-2026-25727"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "SUSE-SU-2026:20668-1",
@@ -810,6 +865,87 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-parse-2026-30972",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server has a rate limit bypass via batch request endpoint",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-775h-3xrc-c228",
+      "released": "2026-03-12T14:48:14Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-30972"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 8.6.23",
+          "u": null
+        },
+        {
+          "t": "Fixed in parse 9.5.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-parse-2026-31800",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server: Classes `_GraphQLConfig` and `_Audience` master key bypass via generic class routes",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-7xg7-rqf6-pw6c",
+      "released": "2026-03-12T14:48:16Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-31800"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 8.6.25",
+          "u": null
+        },
+        {
+          "t": "Fixed in parse 9.5.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-parse-2026-31828",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Parse Server has an LDAP injection via unsanitized user input in DN and group filter construction",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-7m6r-fhh7-r47c",
+      "released": "2026-03-12T14:48:18Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-31828"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: parse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in parse 8.6.26",
+          "u": null
+        },
+        {
+          "t": "Fixed in parse 9.5.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "SUSE-SU-2026:0885-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -1072,6 +1208,54 @@
         "Azure Linux: python-py"
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-80312",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-32141 affecting package js-jquery 3.5.0-4",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32141",
+      "released": "2026-03-12T18:16:25Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-32141"
+      ],
+      "products": [
+        "Azure Linux: js-jquery"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-79800",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-32240 affecting package capnproto 1.0.1-4",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32240",
+      "released": "2026-03-12T20:16:05Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-32240"
+      ],
+      "products": [
+        "Azure Linux: capnproto"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-79803",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-32239 affecting package capnproto 1.0.1-4",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-32239",
+      "released": "2026-03-12T20:16:05Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-32239"
+      ],
+      "products": [
+        "Azure Linux: capnproto"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "openSUSE-SU-2026:20361-1",

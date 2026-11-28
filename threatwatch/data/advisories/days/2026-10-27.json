@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-10-27",
-  "count": 221,
+  "count": 222,
   "items": [
     {
       "id": "CERTFR-2026-AVI-1387",
@@ -4059,16 +4059,29 @@
       "title": "Moderate: bind security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:89745",
       "released": "2026-10-27T12:04:29Z",
-      "updated": "2026-11-10T12:14:44Z",
+      "updated": "2026-11-27T19:47:23Z",
       "cves": [
         "CVE-2026-19662"
       ],
       "products": [
-        "Rocky Linux: bind"
+        "Rocky Linux: bind",
+        "Rocky Linux: bind-chroot",
+        "Rocky Linux: bind-debuginfo",
+        "Rocky Linux: bind-debugsource",
+        "Rocky Linux: bind-devel",
+        "Rocky Linux: bind-dnssec-doc"
       ],
       "fix": [
         {
-          "t": "Fixed in bind 2:9.16.23-40.el9_8.12",
+          "t": "Fixed in bind 32:9.16.23-40.el9_8.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in bind-chroot 32:9.16.23-40.el9_8.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in bind-debuginfo 32:9.16.23-40.el9_8.12",
           "u": null
         }
       ],
@@ -4081,16 +4094,29 @@
       "title": "Moderate: bind9.18 security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:89746",
       "released": "2026-10-27T12:04:29Z",
-      "updated": "2026-11-10T12:14:44Z",
+      "updated": "2026-11-27T19:47:23Z",
       "cves": [
         "CVE-2026-19662"
       ],
       "products": [
-        "Rocky Linux: bind9.18"
+        "Rocky Linux: bind9.18",
+        "Rocky Linux: bind9.18-chroot",
+        "Rocky Linux: bind9.18-debuginfo",
+        "Rocky Linux: bind9.18-debugsource",
+        "Rocky Linux: bind9.18-devel",
+        "Rocky Linux: bind9.18-dnssec-utils"
       ],
       "fix": [
         {
-          "t": "Fixed in bind9.18 2:9.18.29-14.el9_8.11",
+          "t": "Fixed in bind9.18 32:9.18.29-14.el9_8.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in bind9.18-chroot 32:9.18.29-14.el9_8.11",
+          "u": null
+        },
+        {
+          "t": "Fixed in bind9.18-debuginfo 32:9.18.29-14.el9_8.11",
           "u": null
         }
       ],
@@ -4692,6 +4718,25 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-109823",
+      "src": "cvelistv5",
+      "vendor": "tidewave-ai",
+      "title": "Host filesystem path disclosure via DNS rebinding",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-109823",
+      "released": "2026-10-27T15:47:36Z",
+      "updated": "2026-11-19T07:02:07Z",
+      "cves": [
+        "CVE-2026-109823"
+      ],
+      "sev": "LOW",
+      "cvss": 2.3,
+      "products": [
+        "tidewave-ai tidewave",
+        "tidewave-ai tidewave"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "ROOT-APP-MAVEN-CVE-2023-20860",

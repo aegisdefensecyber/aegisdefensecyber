@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-07-16",
-  "count": 17,
+  "count": 22,
   "items": [
     {
       "id": "ALSA-2025:11332",
@@ -333,6 +333,68 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-tomcat-2025-52520",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Tomcat: DoS via integer overflow in multipart file upload",
+      "url": "https://lists.apache.org/thread/trqq01bbxw6c92zx69kx2mw2qgmfy0o5",
+      "released": "2025-07-16T08:19:00Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-52520"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: tomcat"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tomcat 9.0.107",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat 10.1.43",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat 11.0.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-tomcat-2025-53506",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache Tomcat: DoS via excessive h2 streams at connection start",
+      "url": "https://lists.apache.org/thread/p09775q0rd185m6zz98krg0fp45j8kr0",
+      "released": "2025-07-16T08:19:04Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2025-53506"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: tomcat"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in tomcat 9.0.107",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat 10.1.43",
+          "u": null
+        },
+        {
+          "t": "Fixed in tomcat 11.0.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-php-2025-1220",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -426,6 +488,29 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-gitlab-2025-6948",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in GitLab",
+      "url": "https://gitlab.com/gitlab-org/gitlab/-/issues/552616",
+      "released": "2025-07-16T08:36:38Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-6948"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: gitlab"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gitlab 18.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RUSTSEC-2025-0172",
       "src": "osv_rustsec",
       "vendor": "Rustsec",
@@ -437,6 +522,38 @@
         "crates.io: zip-extract"
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-65547",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-40913 affecting package libtommath 1.3.1~rc1-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-40913",
+      "released": "2025-07-16T14:15:25Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2025-40913"
+      ],
+      "products": [
+        "Azure Linux: libtommath"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-65550",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-40913 affecting package samba 4.18.3-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-40913",
+      "released": "2025-07-16T14:15:25Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2025-40913"
+      ],
+      "products": [
+        "Azure Linux: samba"
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-19",
-  "count": 28,
+  "count": 30,
   "items": [
     {
       "id": "openSUSE-SU-2026:11309-1",
@@ -450,6 +450,37 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "BIT-cilium-2026-49445",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Cilium: Sensitive information disclosure and cluster disruption via local Envoy admin socket access",
+      "url": "https://github.com/cilium/cilium/security/advisories/GHSA-3fcv-jvfp-m4q9",
+      "released": "2026-07-19T23:37:48Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-49445"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: cilium"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cilium 1.17.14",
+          "u": null
+        },
+        {
+          "t": "Fixed in cilium 1.18.8",
+          "u": null
+        },
+        {
+          "t": "Fixed in cilium 1.19.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-cilium-2026-56742",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -657,6 +688,29 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-pillow-2026-54058",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Pillow: Out-of-bounds read via attacker-controlled row stride on Pillow's mmap path (McIdas AREA files)",
+      "url": "https://github.com/python-pillow/Pillow/security/advisories/GHSA-62p4-gmf7-7g93",
+      "released": "2026-07-19T23:50:11Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-54058"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: pillow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in pillow 12.3.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-pillow-2026-59197",

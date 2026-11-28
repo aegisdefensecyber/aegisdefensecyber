@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2024-10-09",
-  "count": 16,
+  "count": 23,
   "items": [
     {
       "id": "openSUSE-SU-2024:0328-1",
@@ -50,6 +50,81 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "USN-7042-2",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "cups-browsed vulnerability",
+      "url": "https://ubuntu.com/security/notices/USN-7042-2",
+      "released": "2024-10-09T11:55:23Z",
+      "updated": "2026-11-24T09:37:48Z",
+      "cves": [
+        "CVE-2024-47176"
+      ],
+      "products": [
+        "Ubuntu: cups-browsed"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cups-browsed 2.0.0-0ubuntu10.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7043-4",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "cups-filters vulnerabilities",
+      "url": "https://ubuntu.com/security/notices/USN-7043-4",
+      "released": "2024-10-09T12:00:34Z",
+      "updated": "2026-11-24T09:37:48Z",
+      "cves": [
+        "CVE-2024-47076",
+        "CVE-2024-47176"
+      ],
+      "products": [
+        "Ubuntu: cups-filters"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in cups-filters 1.27.4-1ubuntu0.4",
+          "u": null
+        },
+        {
+          "t": "Fixed in cups-filters 1.28.15-0ubuntu1.4",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "USN-7059-1",
+      "src": "osv_ubuntu",
+      "vendor": "Ubuntu",
+      "title": "oath-toolkit vulnerability",
+      "url": "https://ubuntu.com/security/notices/USN-7059-1",
+      "released": "2024-10-09T15:01:53Z",
+      "updated": "2026-11-24T09:37:48Z",
+      "cves": [
+        "CVE-2024-47191"
+      ],
+      "products": [
+        "Ubuntu: oath-toolkit"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in oath-toolkit 2.6.7-3ubuntu0.1",
+          "u": null
+        },
+        {
+          "t": "Fixed in oath-toolkit 2.6.11-2.1ubuntu0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "AZL-110330",
@@ -146,6 +221,29 @@
         "Azure Linux: skopeo"
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-discourse-2024-43789",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Denial of service by the absence of restrictions on replies to posts in Discourse",
+      "url": "https://github.com/discourse/discourse/security/advisories/GHSA-62cq-cpmc-hvqq",
+      "released": "2024-10-09T16:26:38Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-43789"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: discourse"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in discourse 3.3.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-keydb-2024-31449",
@@ -298,6 +396,87 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-valkey-2024-31449",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Lua library commands may lead to stack overflow and RCE in Redis",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-whxg-wx83-85p5",
+      "released": "2024-10-09T16:44:28Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-31449"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: valkey"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in valkey 7.2.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in valkey 8.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-valkey-2024-31228",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Denial-of-service due to unbounded pattern matching in Redis",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-66gq-c942-6976",
+      "released": "2024-10-09T16:44:40Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-31228"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: valkey"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in valkey 7.2.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in valkey 8.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-valkey-2024-31227",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Denial-of-service due to malformed ACL selectors in Redis",
+      "url": "https://github.com/redis/redis/security/advisories/GHSA-38p4-26x2-vqhh",
+      "released": "2024-10-09T16:44:53Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2024-31227"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: valkey"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in valkey 7.2.7",
+          "u": null
+        },
+        {
+          "t": "Fixed in valkey 8.0.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "GHSA-mq92-jr35-ffpc",

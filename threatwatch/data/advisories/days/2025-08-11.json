@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-08-11",
-  "count": 91,
+  "count": 97,
   "items": [
     {
       "id": "msrc_CVE-2025-4948",
@@ -945,6 +945,29 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-libpython-2023-6507",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Groups not dropped before running subprocess when using empty 'extra_groups' parameter",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/thread/AUL7QFHBLILGISS7U63B47AYSSGJJQZD/",
+      "released": "2025-08-11T13:52:31Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2023-6507"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.12.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-libpython-2024-50602",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -1096,6 +1119,37 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libpython-2024-9287",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Virtual environment (venv) activation scripts don't quote paths",
+      "url": "https://mail.python.org/archives/list/security-announce@python.org/thread/RSPJ2B5JL22FG3TKUJ7D7DQ4N5JRRBZL/",
+      "released": "2025-08-11T13:53:00Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2024-9287"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libpython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libpython 3.9.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.10.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libpython 3.11.11",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-libphp-2020-7062",
@@ -1274,6 +1328,37 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2020-7068",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Use of freed hash key in the phar_parse_zipfile function",
+      "url": "https://bugs.php.net/bug.php?id=79797",
+      "released": "2025-08-11T13:53:13Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2020-7068"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 7.2.33",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.3.21",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 7.4.9",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-libphp-2020-7069",
@@ -1844,6 +1929,37 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2023-0567",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "password_verify() always returns true for some invalid hashes",
+      "url": "https://bugs.php.net/bug.php?id=81744",
+      "released": "2025-08-11T13:53:50Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2023-0567"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.0.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.1.16",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-libphp-2023-0568",
@@ -2666,6 +2782,68 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-libphp-2025-1736",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Stream HTTP wrapper header check might omit basic auth header",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-hgf5-96fm-v528",
+      "released": "2025-08-11T13:54:49Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-1736"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.32",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.19",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-libphp-2025-1861",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Stream HTTP wrapper truncates redirect location to 1024 bytes",
+      "url": "https://github.com/php/php-src/security/advisories/GHSA-52jp-hrpf-2jff",
+      "released": "2025-08-11T13:54:51Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-1861"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: libphp"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in libphp 8.1.32",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.2.28",
+          "u": null
+        },
+        {
+          "t": "Fixed in libphp 8.3.19",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-libphp-2025-6491",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-06-05",
-  "count": 70,
+  "count": 85,
   "items": [
     {
       "id": "openSUSE-SU-2026:10958-1",
@@ -446,6 +446,22 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-89388",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50593 affecting package graphite2 1.3.14-3",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50593",
+      "released": "2026-06-05T04:17:15Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-50593"
+      ],
+      "products": [
+        "Azure Linux: graphite2"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-activemq-2026-42253",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -624,6 +640,33 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-authentik-2026-41577",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "authentik: SAML source does not validate Conditions, timing, or audience on assertions",
+      "url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-4v4x-x5pr-8gp2",
+      "released": "2026-06-05T05:38:21Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-41577"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: authentik"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in authentik 2025.12.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in authentik 2026.2.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-authentik-2026-42849",
@@ -1210,6 +1253,52 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-appsmith-2026-7299",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "CVE-2026-7299",
+      "url": "https://github.com/Stuub/Appsmith-1.98-Stored-XSS-Exploit",
+      "released": "2026-06-05T08:42:17Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-7299"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: appsmith"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in appsmith 1.99.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-gdal-2026-49014",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "In GDAL 3.1.0 through 3.13.0, scanForGeometryContainers in the netCDF driver allows code execution via a stack-based buffer overflow. It reads a geometry attribute into a fixed-size stack buffer without validating the a…",
+      "url": "https://github.com/OSGeo/gdal/issues/14594",
+      "released": "2026-06-05T08:44:46Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-49014"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: gdal"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in gdal 3.13.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-mlflow-2026-10803",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -1254,6 +1343,29 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-mlflow-2026-4035",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Environment Variable Resolution Vulnerability in mlflow/mlflow",
+      "url": "https://huntr.com/bounties/f8e591a0-0f19-4910-b82e-16c9956f2233",
+      "released": "2026-06-05T08:52:23Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-4035"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: mlflow"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in mlflow 3.11.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "openSUSE-SU-2026:20908-1",
@@ -1398,6 +1510,150 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "AZL-89522",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50256 affecting package xorg-x11-server 1.20.10-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50256",
+      "released": "2026-06-05T12:16:38Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-50256"
+      ],
+      "products": [
+        "Azure Linux: xorg-x11-server"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-89531",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50257 affecting package xorg-x11-server 1.20.10-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50257",
+      "released": "2026-06-05T12:16:38Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-50257"
+      ],
+      "products": [
+        "Azure Linux: xorg-x11-server"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-89525",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50258 affecting package xorg-x11-server 1.20.10-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50258",
+      "released": "2026-06-05T12:16:39Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-50258"
+      ],
+      "products": [
+        "Azure Linux: xorg-x11-server"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-89528",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50262 affecting package xorg-x11-server 1.20.10-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50262",
+      "released": "2026-06-05T12:16:39Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-50262"
+      ],
+      "products": [
+        "Azure Linux: xorg-x11-server"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-89534",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50263 affecting package xorg-x11-server 1.20.10-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50263",
+      "released": "2026-06-05T12:16:39Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-50263"
+      ],
+      "products": [
+        "Azure Linux: xorg-x11-server"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-89537",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50260 affecting package xorg-x11-server 1.20.10-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50260",
+      "released": "2026-06-05T12:16:39Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-50260"
+      ],
+      "products": [
+        "Azure Linux: xorg-x11-server"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-89540",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50261 affecting package xorg-x11-server 1.20.10-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50261",
+      "released": "2026-06-05T12:16:39Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-50261"
+      ],
+      "products": [
+        "Azure Linux: xorg-x11-server"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-89546",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50259 affecting package xorg-x11-server 1.20.10-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50259",
+      "released": "2026-06-05T12:16:39Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-50259"
+      ],
+      "products": [
+        "Azure Linux: xorg-x11-server"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-89543",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50264 affecting package xorg-x11-server 1.20.10-6",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50264",
+      "released": "2026-06-05T12:16:40Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-50264"
+      ],
+      "products": [
+        "Azure Linux: xorg-x11-server"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "SUSE-SU-2026:2286-1",
@@ -1668,6 +1924,32 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:22061-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for libsoup",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202622061-1/",
+      "released": "2026-06-05T15:23:21Z",
+      "updated": "2026-09-20T18:39:03Z",
+      "cves": [
+        "CVE-2026-1801"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 5.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "openSUSE-SU-2026:20914-1",

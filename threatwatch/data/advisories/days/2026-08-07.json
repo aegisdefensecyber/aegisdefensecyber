@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-08-07",
-  "count": 132,
+  "count": 149,
   "items": [
     {
       "id": "msrc_CVE-2026-55971",
@@ -1130,17 +1130,19 @@
       "title": "pip absolute path traversal during download from malicious package indexes",
       "url": "https://msrc.microsoft.com/csaf/vex/2026/msrc_cve-2026-13346.json",
       "released": "2026-08-07T01:00:08Z",
-      "updated": "2026-11-16T22:53:44Z",
+      "updated": "2026-11-27T01:14:23Z",
       "cves": [
         "CVE-2026-13346"
       ],
+      "sev": "MEDIUM",
+      "cvss": 6.5,
       "products": [
         "Azure Linux",
         "python-virtualenv",
         "python-pip",
+        "firefox",
         "azl3 python3 0:3.12.9-13.azl3",
-        "azl3 tensorflow 0:2.16.1-11.azl3",
-        "azl4 firefox 0:156.0.1-13.azl4"
+        "azl3 tensorflow 0:2.16.1-11.azl3"
       ],
       "fix": [
         {
@@ -2962,6 +2964,48 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "SUSE-SU-2026:23058-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openssl-3",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623058-1/",
+      "released": "2026-08-07T11:16:33Z",
+      "updated": "2026-09-20T18:40:49Z",
+      "sev": "HIGH",
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:23059-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for gstreamer-plugins-base",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202623059-1/",
+      "released": "2026-08-07T11:20:17Z",
+      "updated": "2026-09-20T18:40:50Z",
+      "cves": [
+        "CVE-2024-4453"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Micro 6.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RUSTSEC-2026-0345",
       "src": "osv_rustsec",
       "vendor": "Rustsec",
@@ -3059,6 +3103,145 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "GHSA-4gmw-gg2m-w46p",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "GitPython: Unguarded git read-tree option forwarding in IndexFile.from_tree/reset/merge_tree enables arbitrary file overwrite",
+      "url": "https://github.com/advisories/GHSA-4gmw-gg2m-w46p",
+      "released": "2026-08-07T15:33:57Z",
+      "updated": "2026-09-08T20:54:34Z",
+      "cves": [
+        "CVE-2026-76219"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: GitPython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in GitPython 3.1.58",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "GHSA-9rj7-rf2p-w77r",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "GitPython: Unguarded git option forwarding in Repo.init enables arbitrary command execution via --template clone hooks",
+      "url": "https://github.com/advisories/GHSA-9rj7-rf2p-w77r",
+      "released": "2026-08-07T15:36:43Z",
+      "updated": "2026-09-08T20:54:14Z",
+      "cves": [
+        "CVE-2026-76218"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: GitPython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in GitPython 3.1.58",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "GHSA-hh9p-6wh2-4mfc",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "GitPython: Arbitrary file read via --pathspec-from-file in IndexFile.remove() and Head.checkout()",
+      "url": "https://github.com/advisories/GHSA-hh9p-6wh2-4mfc",
+      "released": "2026-08-07T15:43:56Z",
+      "updated": "2026-09-08T20:53:49Z",
+      "cves": [
+        "CVE-2026-76217"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "PyPI: GitPython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in GitPython 3.1.58",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "GHSA-hmq2-w58f-27jc",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "GitPython: Arbitrary Git Repository Creation Outside the Working Tree via Unvalidated .gitmodules Submodule Name in GitPython",
+      "url": "https://github.com/advisories/GHSA-hmq2-w58f-27jc",
+      "released": "2026-08-07T15:45:39Z",
+      "updated": "2026-09-08T20:55:34Z",
+      "cves": [
+        "CVE-2026-76222"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: GitPython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in GitPython 3.1.58",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "GHSA-wvpp-8hx9-p66j",
+      "src": "github",
+      "vendor": "Open source (GitHub)",
+      "title": "GitPython: Unsafe git option guard bypass via split_single_char_options=False short-option token smuggling enables command execution",
+      "url": "https://github.com/advisories/GHSA-wvpp-8hx9-p66j",
+      "released": "2026-08-07T15:49:07Z",
+      "updated": "2026-09-08T20:54:56Z",
+      "cves": [
+        "CVE-2026-76220"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "PyPI: GitPython"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in GitPython 3.1.58",
+          "u": null
+        }
+      ],
+      "reviewed": true,
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "CVE-2026-67585",
+      "src": "cvelistv5",
+      "vendor": "DivvyPayHQ",
+      "title": "Atom Exhaustion via _entities Representation Keys in DivvyPayHQ absinthe_federation",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-67585",
+      "released": "2026-08-07T16:42:22Z",
+      "updated": "2026-11-19T08:45:29Z",
+      "cves": [
+        "CVE-2026-67585"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.7,
+      "products": [
+        "DivvyPayHQ absinthe_federation",
+        "DivvyPayHQ absinthe_federation"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "AZL-95453",
@@ -3215,6 +3398,38 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "AZL-94673",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-71557 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71557",
+      "released": "2026-08-07T17:17:10Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-71557"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-94676",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-71556 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71556",
+      "released": "2026-08-07T17:17:10Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-71556"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "SUSE-SU-2026:23172-1",
       "src": "csaf_suse",
       "vendor": "SUSE",
@@ -3229,6 +3444,54 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:3533-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openssl-1_1-livepatches",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263533-1/",
+      "released": "2026-08-07T20:05:23Z",
+      "updated": "2026-09-17T16:39:20Z",
+      "sev": "HIGH",
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP4"
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3534-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openssl-1_1-livepatches",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263534-1/",
+      "released": "2026-08-07T20:05:31Z",
+      "updated": "2026-09-17T16:39:21Z",
+      "sev": "HIGH",
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3535-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for openssl-3-livepatches",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263535-1/",
+      "released": "2026-08-07T20:07:20Z",
+      "updated": "2026-09-17T16:39:23Z",
+      "sev": "HIGH",
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "RHSA-2026:51861",
@@ -3276,6 +3539,70 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-94679",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50540 affecting package cri-o 1.30.1-1",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50540",
+      "released": "2026-08-07T21:17:28Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-50540"
+      ],
+      "products": [
+        "Azure Linux: cri-o"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-94682",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-50540 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50540",
+      "released": "2026-08-07T21:17:28Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-50540"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-94607",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-47243 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-47243",
+      "released": "2026-08-07T22:16:58Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-47243"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-94685",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-64676 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64676",
+      "released": "2026-08-07T22:16:59Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-64676"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }

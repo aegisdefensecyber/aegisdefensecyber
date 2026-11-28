@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-01",
-  "count": 404,
+  "count": 405,
   "items": [
     {
       "id": "openSUSE-SU-2026:12376-1",
@@ -9818,7 +9818,7 @@
       "title": "Important: bind9.18 security update",
       "url": "https://errata.rockylinux.org/RLSA-2026:93072",
       "released": "2026-11-01T12:04:04Z",
-      "updated": "2026-11-13T03:22:22Z",
+      "updated": "2026-11-27T19:47:23Z",
       "cves": [
         "CVE-2026-19630",
         "CVE-2026-94300",
@@ -9826,15 +9826,47 @@
         "CVE-2026-97313"
       ],
       "products": [
-        "Rocky Linux: bind9.18"
+        "Rocky Linux: bind9.18",
+        "Rocky Linux: bind9.18-chroot",
+        "Rocky Linux: bind9.18-debuginfo",
+        "Rocky Linux: bind9.18-debugsource",
+        "Rocky Linux: bind9.18-devel",
+        "Rocky Linux: bind9.18-dnssec-utils"
       ],
       "fix": [
         {
-          "t": "Fixed in bind9.18 2:9.18.29-14.el9_8.12",
+          "t": "Fixed in bind9.18 32:9.18.29-14.el9_8.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in bind9.18-chroot 32:9.18.29-14.el9_8.12",
+          "u": null
+        },
+        {
+          "t": "Fixed in bind9.18-debuginfo 32:9.18.29-14.el9_8.12",
           "u": null
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "CVE-2026-117680",
+      "src": "cvelistv5",
+      "vendor": "lud",
+      "title": "jsv treats regex match budget exhaustion as a non-match, bypassing patternProperties and not",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-117680",
+      "released": "2026-11-01T13:29:36Z",
+      "updated": "2026-11-19T06:57:23Z",
+      "cves": [
+        "CVE-2026-117680"
+      ],
+      "sev": "LOW",
+      "cvss": 2.1,
+      "products": [
+        "lud jsv",
+        "lud jsv"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "WID-SEC-W-2026-4260",

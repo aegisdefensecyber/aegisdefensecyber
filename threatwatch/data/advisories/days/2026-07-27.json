@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-27",
-  "count": 60,
+  "count": 87,
   "items": [
     {
       "id": "openSUSE-SU-2026:11383-1",
@@ -82,6 +82,22 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-94010",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-15928 affecting package xmlrpc-c 1.60.04-4",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15928",
+      "released": "2026-07-27T03:16:18Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-15928"
+      ],
+      "products": [
+        "Azure Linux: xmlrpc-c"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-dotnet-2026-47300",
@@ -268,6 +284,37 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-dotnet-2026-50526",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": ".NET Tampering Vulnerability",
+      "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50526",
+      "released": "2026-07-27T05:39:57Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-50526"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: dotnet"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in dotnet 8.0.29",
+          "u": null
+        },
+        {
+          "t": "Fixed in dotnet 9.0.18",
+          "u": null
+        },
+        {
+          "t": "Fixed in dotnet 10.0.6",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-dotnet-2026-50527",
@@ -652,6 +699,29 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-openbao-2025-52894",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao Vulnerable to Unauthenticated Rekey Operation Cancellation",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-prpj-rchp-9j5h",
+      "released": "2026-07-27T05:48:49Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-52894"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.3.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-openbao-2025-54996",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -864,6 +934,29 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-openbao-2025-62513",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao leaks HTTPRawBody in Audit Logs",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-ghfh-fmx4-26h8",
+      "released": "2026-07-27T05:49:00Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2025-62513"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.4.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-openbao-2025-62705",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -908,6 +1001,29 @@
         }
       ],
       "seen": "2026-11-27"
+    },
+    {
+      "id": "BIT-openbao-2026-33757",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao lacks user confirmation for OIDC direct callback mode",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-7q7g-x6vg-xpc3",
+      "released": "2026-07-27T05:49:03Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-33757"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.5.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-openbao-2026-33758",
@@ -1025,6 +1141,88 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-openbao-2026-42186",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "OpenBao's Namespace Deletion May Not Delete Data Properly",
+      "url": "https://github.com/openbao/openbao/security/advisories/GHSA-vv66-6rp4-wr4f",
+      "released": "2026-07-27T05:49:11Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-42186"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: openbao"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in openbao 2.5.3",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-wordpress-2026-63030",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "WordPress < 7.0.2 - REST API batch-route confusion and SQL injection issue leading to Remote Code Execution",
+      "url": "https://github.com/WordPress/wordpress-develop/security/advisories/GHSA-ff9f-jf42-662q",
+      "released": "2026-07-27T05:55:54Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2026-63030"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: wordpress"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wordpress 6.9.5",
+          "u": null
+        },
+        {
+          "t": "Fixed in wordpress 7.0.2",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3256-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 14 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263256-1/",
+      "released": "2026-07-27T07:33:41Z",
+      "updated": "2026-09-17T16:35:29Z",
+      "cves": [
+        "CVE-2026-23240",
+        "CVE-2026-31738",
+        "CVE-2026-43038",
+        "CVE-2026-46113",
+        "CVE-2026-53359",
+        "CVE-2026-53366"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP6",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RHSA-2026:46467",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -1054,6 +1252,37 @@
       ],
       "lang": "en",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:3264-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 12 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263264-1/",
+      "released": "2026-07-27T08:33:44Z",
+      "updated": "2026-09-17T16:35:30Z",
+      "cves": [
+        "CVE-2026-23240",
+        "CVE-2026-31738",
+        "CVE-2026-43038",
+        "CVE-2026-46113",
+        "CVE-2026-53359",
+        "CVE-2026-53366"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "AZL-111593",
@@ -1168,6 +1397,119 @@
       "seen": "2026-11-26"
     },
     {
+      "id": "SUSE-SU-2026:3265-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for ignition",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263265-1/",
+      "released": "2026-07-27T10:52:42Z",
+      "updated": "2026-09-17T16:35:31Z",
+      "cves": [
+        "CVE-2026-39821",
+        "CVE-2026-56852"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3266-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for ignition",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263266-1/",
+      "released": "2026-07-27T10:52:50Z",
+      "updated": "2026-09-17T16:35:33Z",
+      "cves": [
+        "CVE-2026-39821",
+        "CVE-2026-56852"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.4"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3267-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for ignition",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263267-1/",
+      "released": "2026-07-27T10:53:03Z",
+      "updated": "2026-09-17T16:35:34Z",
+      "cves": [
+        "CVE-2026-39821",
+        "CVE-2026-56852"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.3"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-94163",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-43871 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-43871",
+      "released": "2026-07-27T12:16:44Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-43871"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "AZL-94166",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-48586 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48586",
+      "released": "2026-07-27T12:16:44Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-48586"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "AZL-94214",
       "src": "osv_azurelinux",
       "vendor": "Azurelinux",
@@ -1210,6 +1552,22 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-94160",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2026-55969 affecting package kata-containers-preview 3.27.0~preview2-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55969",
+      "released": "2026-07-27T12:16:45Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2026-55969"
+      ],
+      "products": [
+        "Azure Linux: kata-containers-preview"
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "AZL-94217",
@@ -1317,6 +1675,162 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "SUSE-SU-2026:3286-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 9 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263286-1/",
+      "released": "2026-07-27T12:34:52Z",
+      "updated": "2026-09-17T16:35:46Z",
+      "cves": [
+        "CVE-2026-23240",
+        "CVE-2026-31738",
+        "CVE-2026-43038",
+        "CVE-2026-46113",
+        "CVE-2026-53359",
+        "CVE-2026-53366"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3281-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for wpa_supplicant",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263281-1/",
+      "released": "2026-07-27T13:40:44Z",
+      "updated": "2026-09-17T16:35:42Z",
+      "cves": [
+        "CVE-2025-24912"
+      ],
+      "sev": "LOW",
+      "cvss": 3.7,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Micro 5.3",
+        "SUSE Linux Enterprise Micro 5.4"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3284-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for java-11-openjdk",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263284-1/",
+      "released": "2026-07-27T13:50:22Z",
+      "updated": "2026-09-17T16:35:45Z",
+      "cves": [
+        "CVE-2026-41254",
+        "CVE-2026-46917",
+        "CVE-2026-46968",
+        "CVE-2026-47010",
+        "CVE-2026-47021",
+        "CVE-2026-47027",
+        "CVE-2026-47057",
+        "CVE-2026-47058",
+        "CVE-2026-47059",
+        "CVE-2026-47063",
+        "CVE-2026-60147"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3289-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 28 for SUSE Linux Enterprise 15 SP5)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263289-1/",
+      "released": "2026-07-27T15:04:38Z",
+      "updated": "2026-09-17T16:35:47Z",
+      "cves": [
+        "CVE-2026-23240",
+        "CVE-2026-31738",
+        "CVE-2026-43038",
+        "CVE-2026-46113",
+        "CVE-2026-53359"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3291-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python-tornado",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263291-1/",
+      "released": "2026-07-27T15:15:53Z",
+      "updated": "2026-09-17T16:35:48Z",
+      "cves": [
+        "CVE-2026-49853",
+        "CVE-2026-49854",
+        "CVE-2026-49855"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Manager Client Tools 12"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "openSUSE-SU-2026:21448-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1353,6 +1867,155 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:3297-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for python-msgpack-python",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263297-1/",
+      "released": "2026-07-27T16:47:54Z",
+      "updated": "2026-09-17T16:35:49Z",
+      "cves": [
+        "CVE-2026-57585"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.5,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Manager Client Tools 12"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3298-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for ImageMagick",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263298-1/",
+      "released": "2026-07-27T16:48:56Z",
+      "updated": "2026-09-17T16:35:50Z",
+      "cves": [
+        "CVE-2026-56379"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.3,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3299-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for gstreamer-plugins-bad",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263299-1/",
+      "released": "2026-07-27T16:58:29Z",
+      "updated": "2026-09-17T16:35:52Z",
+      "cves": [
+        "CVE-2026-12892",
+        "CVE-2026-52720",
+        "CVE-2026-52721",
+        "CVE-2026-52722",
+        "CVE-2026-53702",
+        "CVE-2026-59692"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 12 SP5-LTSS",
+        "SUSE Linux Enterprise Server 12 SP5",
+        "SUSE Linux Enterprise Server for SAP Applications 12 SP5",
+        "SUSE Linux Enterprise High Performance Computing 12 SP5",
+        "SUSE Linux Enterprise Server LTSS Extended Security 12 SP5"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3300-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for ignition",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263300-1/",
+      "released": "2026-07-27T17:00:29Z",
+      "updated": "2026-09-17T16:35:53Z",
+      "cves": [
+        "CVE-2026-39821",
+        "CVE-2026-56852"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.4,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Module for HPC 15 SP7",
+        "SUSE Linux Enterprise High Performance Computing 15 SP7",
+        "SUSE Linux Enterprise Server 15 SP6-LTSS",
+        "SUSE Linux Enterprise Server 15 SP6",
+        "SUSE Linux Enterprise Server for SAP Applications 15 SP6"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "SUSE-SU-2026:3301-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel RT (Live Patch 16 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263301-1/",
+      "released": "2026-07-27T17:04:52Z",
+      "updated": "2026-09-17T16:35:54Z",
+      "cves": [
+        "CVE-2026-53359",
+        "CVE-2026-53366"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "OSEC-2026-12",
@@ -1428,6 +2091,38 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "SUSE-SU-2026:3316-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 5 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263316-1/",
+      "released": "2026-07-27T19:33:47Z",
+      "updated": "2026-09-17T16:35:56Z",
+      "cves": [
+        "CVE-2026-23240",
+        "CVE-2026-31738",
+        "CVE-2026-43038",
+        "CVE-2026-46113",
+        "CVE-2026-53359",
+        "CVE-2026-53366"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP6",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     },
     {
       "id": "AZL-94061",
@@ -1585,6 +2280,37 @@
       ],
       "lang": "de",
       "seen": "2026-11-27"
+    },
+    {
+      "id": "SUSE-SU-2026:3321-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for the Linux Kernel (Live Patch 3 for SUSE Linux Enterprise 15 SP7)",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-20263321-1/",
+      "released": "2026-07-27T22:35:01Z",
+      "updated": "2026-09-17T16:35:59Z",
+      "cves": [
+        "CVE-2026-23240",
+        "CVE-2026-31738",
+        "CVE-2026-43038",
+        "CVE-2026-46113",
+        "CVE-2026-53359",
+        "CVE-2026-53366"
+      ],
+      "sev": "HIGH",
+      "cvss": 8.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Live Patching 15 SP7"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
     }
   ]
 }

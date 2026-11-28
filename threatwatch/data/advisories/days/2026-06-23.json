@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2026-06-23",
-  "count": 69,
+  "count": 81,
   "items": [
     {
       "id": "openSUSE-SU-2026:11104-1",
@@ -1036,6 +1036,40 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "SUSE-SU-2026:22347-1",
+      "src": "csaf_suse",
+      "vendor": "SUSE",
+      "title": "Security update for 7zip",
+      "url": "https://www.suse.com/support/update/announcement/2026/suse-su-202622347-1/",
+      "released": "2026-06-23T12:43:00Z",
+      "updated": "2026-09-18T09:16:09Z",
+      "cves": [
+        "CVE-2026-48092",
+        "CVE-2026-48095",
+        "CVE-2026-48101",
+        "CVE-2026-48102",
+        "CVE-2026-48103",
+        "CVE-2026-48104",
+        "CVE-2026-48111",
+        "CVE-2026-48112"
+      ],
+      "sev": "HIGH",
+      "cvss": 7.8,
+      "products": [
+        "SUSE Linux Enterprise",
+        "SUSE Linux Enterprise Server 16.0",
+        "SUSE Linux Enterprise Server for SAP applications 16.0"
+      ],
+      "fix": [
+        {
+          "t": "To install this SUSE Security Update use the SUSE recommended installation methods like YaST online_update or \"zypper patch\".",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
+    {
       "id": "openSUSE-SU-2026:21038-1",
       "src": "csaf_opensuse",
       "vendor": "SUSE",
@@ -1390,6 +1424,138 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-apisix-2026-39998",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache APISIX: Identity Injection via forward-auth Plugin Missing Header Cleanup",
+      "released": "2026-06-23T14:37:39Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-39998"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: apisix"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apisix 3.17.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-apisix-2026-39999",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache APISIX: JWT Algorithm Confusion allows authentication bypass",
+      "released": "2026-06-23T14:37:40Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-39999"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: apisix"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apisix 3.17.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-apisix-2026-44046",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache APISIX: wolf-rbac plugin Identity Spoofing",
+      "released": "2026-06-23T14:37:42Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-44046"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: apisix"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apisix 3.17.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-apisix-2026-44087",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache APISIX: Openid-connect plugin Identity Header Spoofing",
+      "released": "2026-06-23T14:37:43Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-44087"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: apisix"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apisix 3.17.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-apisix-2026-44915",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache APISIX: Cas-auth plugin open redirect via unsanitized cookie value",
+      "released": "2026-06-23T14:37:44Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-44915"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: apisix"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apisix 3.17.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-apisix-2026-47339",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache APISIX: authz-casdoor incorrect session sharing",
+      "released": "2026-06-23T14:37:45Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-47339"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: apisix"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apisix 3.17.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "BIT-apisix-2026-47341",
       "src": "bitnami_vulndb",
       "vendor": "Bitnami",
@@ -1410,6 +1576,116 @@
         }
       ],
       "seen": "2026-11-26"
+    },
+    {
+      "id": "BIT-apisix-2026-48895",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache APISIX: Cas-auth Host header influence on CAS service URL",
+      "released": "2026-06-23T14:37:48Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-48895"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: apisix"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apisix 3.17.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-apisix-2026-49230",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache APISIX: Authentication bypass in jwe-decrypt",
+      "released": "2026-06-23T14:37:49Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-49230"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: apisix"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apisix 3.17.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-apisix-2026-49231",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache APISIX: Identity spoofing issue in APISIX opa plugin",
+      "released": "2026-06-23T14:37:50Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-49231"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: apisix"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apisix 3.18.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-apisix-2026-49871",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache APISIX: cas-auth login CSRF / session injection issue",
+      "released": "2026-06-23T14:37:51Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-49871"
+      ],
+      "sev": "CRITICAL",
+      "products": [
+        "Bitnami: apisix"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apisix 3.17.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
+      "id": "BIT-apisix-2026-49872",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "Apache APISIX: Improper authentication in cas-auth plugin",
+      "released": "2026-06-23T14:37:52Z",
+      "updated": "2026-09-10T15:46:03Z",
+      "cves": [
+        "CVE-2026-49872"
+      ],
+      "sev": "HIGH",
+      "products": [
+        "Bitnami: apisix"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in apisix 3.17.0",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
     },
     {
       "id": "BIT-mongodb-2026-11933",

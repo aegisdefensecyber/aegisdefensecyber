@@ -1,8 +1,45 @@
 {
   "schemaVersion": 1,
   "date": "2015-08-06",
-  "count": 2,
+  "count": 3,
   "items": [
+    {
+      "id": "RHSA-2015:1534",
+      "src": "csaf_redhat",
+      "vendor": "Red Hat",
+      "title": "Red Hat Security Advisory: kernel security and bug fix update",
+      "url": "https://access.redhat.com/errata/RHSA-2015:1534",
+      "released": "2015-08-06T02:42:13Z",
+      "updated": "2026-11-07T05:09:59Z",
+      "cves": [
+        "CVE-2014-9715",
+        "CVE-2015-2666",
+        "CVE-2015-2922",
+        "CVE-2015-3636"
+      ],
+      "sev": "MEDIUM",
+      "cvss": 6.0,
+      "products": [
+        "Red Hat Enterprise Linux",
+        "Red Hat Enterprise Linux Client (v. 7)",
+        "Red Hat Enterprise Linux Client Optional (v. 7)",
+        "Red Hat Enterprise Linux ComputeNode (v. 7)",
+        "Red Hat Enterprise Linux ComputeNode Optional (v. 7)",
+        "Red Hat Enterprise Linux Server (v. 7)"
+      ],
+      "fix": [
+        {
+          "t": "Before applying this update, make sure all previously released errata relevant to your system have been applied. For details on how to apply this update, refer…",
+          "u": "https://access.redhat.com/errata/RHSA-2015:1534"
+        },
+        {
+          "t": "You can check whether ping socket functionality is enabled by examining the net.ipv4.ping_group_range sysctl value: ~]# sysctl net.ipv4.ping_group_range net.ip…",
+          "u": null
+        }
+      ],
+      "lang": "en",
+      "seen": "2026-11-28"
+    },
     {
       "id": "USN-2704-1",
       "src": "osv_ubuntu",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "date": "2025-11-07",
-  "count": 6,
+  "count": 8,
   "items": [
     {
       "id": "msrc_CVE-2025-37747",
@@ -93,6 +93,29 @@
       "seen": "2026-11-27"
     },
     {
+      "id": "BIT-wildfly-2022-0866",
+      "src": "bitnami_vulndb",
+      "vendor": "Bitnami",
+      "title": "This is a concurrency issue that can result in the wrong caller principal being returned from the session context of an EJB that is configured with a RunAs principal. In particular, the org.jboss.as.ejb3.component.EJBCo…",
+      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2060929#c0",
+      "released": "2025-11-07T11:01:40Z",
+      "updated": "2026-09-08T08:34:36Z",
+      "cves": [
+        "CVE-2022-0866"
+      ],
+      "sev": "MEDIUM",
+      "products": [
+        "Bitnami: wildfly"
+      ],
+      "fix": [
+        {
+          "t": "Fixed in wildfly 26.1.1",
+          "u": null
+        }
+      ],
+      "seen": "2026-11-28"
+    },
+    {
       "id": "RHSA-2025:19925",
       "src": "csaf_redhat",
       "vendor": "Red Hat",
@@ -151,6 +174,22 @@
       ],
       "lang": "en",
       "seen": "2026-11-26"
+    },
+    {
+      "id": "AZL-69830",
+      "src": "osv_azurelinux",
+      "vendor": "Azurelinux",
+      "title": "CVE-2025-10230 affecting package samba 4.18.3-2",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-10230",
+      "released": "2025-11-07T20:15:35Z",
+      "updated": "2026-11-18T05:27:31Z",
+      "cves": [
+        "CVE-2025-10230"
+      ],
+      "products": [
+        "Azure Linux: samba"
+      ],
+      "seen": "2026-11-28"
     }
   ]
 }
