@@ -4,7 +4,7 @@
   "publishedAt": "2026-11-27T11:54:32Z",
   "window": {
     "start": "2026-11-27T04:45:24Z",
-    "end": "2026-11-27T21:55:31Z",
+    "end": "2026-11-28T02:54:56Z",
     "note": "KEV additions not present in the previous edition’s catalog snapshot."
   },
   "executive": {
@@ -353,20 +353,20 @@
       "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "version": "2026.11.27",
       "released": "2026-11-27T18:03:12.5733Z",
-      "fetchedAt": "2026-11-27T21:55:31Z",
+      "fetchedAt": "2026-11-28T02:54:57Z",
       "status": "ok"
     },
     {
       "name": "FIRST EPSS",
       "url": "https://www.first.org/epss/",
-      "fetchedAt": "2026-11-27T21:55:31Z",
+      "fetchedAt": "2026-11-28T02:54:57Z",
       "status": "ok",
       "note": "Probability estimate; not evidence of exploitation."
     },
     {
       "name": "NVD CVE API 2.0",
       "url": "https://nvd.nist.gov/",
-      "fetchedAt": "2026-11-27T21:55:31Z",
+      "fetchedAt": "2026-11-28T02:54:57Z",
       "status": "ok",
       "note": "Enrichment can lag publication by days."
     }
@@ -395,8 +395,8 @@
       "reviewedAt": null
     }
   },
-  "updatedAt": "2026-11-27T21:55:31Z",
-  "updateSlot": "17:00",
+  "updatedAt": "2026-11-28T02:54:56Z",
+  "updateSlot": "22:00",
   "report": {
     "version": 1,
     "title": [
@@ -447,7 +447,7 @@
               ],
               [
                 "Complete worldwide High/Critical count",
-                "Not established; 392 High/Critical CVEs published to NVD in the window (NVD-scored only)"
+                "Not established; 394 High/Critical CVEs published to NVD in the window (NVD-scored only)"
               ]
             ]
           },
@@ -457,7 +457,7 @@
           },
           {
             "type": "p",
-            "text": "**Your technology watchlist (last 24 hours).** AEGIS monitors 35 technology areas, from firewalls, identity and cloud platforms to industrial and medical devices, against vendor advisories, national CERTs, CISA KEV and exploitation reports. **0** need action now, **8** should be reviewed today, **6** had routine vendor security updates and **21** had no significant change. “Act now” means confirmed exploitation or a CISA KEV addition; “Review today” means public exploit code, a sharp rise in exploitation likelihood or an exploited vendor advisory."
+            "text": "**Your technology watchlist (last 24 hours).** AEGIS monitors 35 technology areas, from firewalls, identity and cloud platforms to industrial and medical devices, against vendor advisories, national CERTs, CISA KEV and exploitation reports. **2** need action now, **7** should be reviewed today, **5** had routine vendor security updates and **21** had no significant change. “Act now” means confirmed exploitation or a CISA KEV addition; “Review today” means public exploit code, a sharp rise in exploitation likelihood or an exploited vendor advisory."
           },
           {
             "type": "table",
@@ -469,33 +469,45 @@
             ],
             "rows": [
               [
+                "Confirmed exploitation (CISA KEV)",
+                "Act now",
+                "CVE-2026-120705 (OSGeo GeoServer) added to CISA Known Exploited Vulnerabilities (+5 more)",
+                "Attackers are actively using this flaw. If your organization runs OSGeo, patch or mitigate it now."
+              ],
+              [
+                "Self-hosted websites, email & collaboration",
+                "Act now",
+                "CVE-2026-136716 (Drupal Core) added to CISA Known Exploited Vulnerabilities (+3 more)",
+                "Attackers are actively using this flaw. If your organization runs Drupal, patch or mitigate it now."
+              ],
+              [
                 "Campaigns & urgent alerts",
                 "Review today",
-                "Urgent alert: CISA Adds 10 Known Exploited Vulnerabilities to Catalog (+4 more)",
+                "Urgent alert: CISA Adds 10 Known Exploited Vulnerabilities to Catalog (+9 more)",
                 "A government or vendor security team issued an urgent warning. Read it and confirm whether it applies to you."
               ],
               [
                 "Cloud platforms",
                 "Review today",
-                "New advisory: GCP-2026-070 (+4 more)",
+                "New advisory: GCP-2026-070 (+11 more)",
                 "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
               ],
               [
-                "Confirmed exploitation (CISA KEV)",
+                "Databases, middleware & analytics",
                 "Review today",
-                "Exploitation likelihood jumped for CVE-2021-30663 (Apple Multiple Products) (+2 more)",
-                "Forecasting models now rate this flaw among the most likely to be exploited in the next 30 days."
+                "Public exploit code now available for CVE-2026-22018 (Oracle Communications) (+1 more)",
+                "Public attack code lowers the bar for attackers. Expect exploitation attempts to rise; patch ahead of them."
               ],
               [
                 "Linux distributions",
                 "Review today",
-                "Exploitation likelihood jumped for CVE-2026-129182 (SUSE) (+16 more)",
-                "Forecasting models now rate this flaw among the most likely to be exploited in the next 30 days."
+                "Public exploit code now available for CVE-2025-15467 (Fedora Linux) (+39 more)",
+                "Public attack code lowers the bar for attackers. Expect exploitation attempts to rise; patch ahead of them."
               ],
               [
                 "Mobile, desktop & browsers",
                 "Review today",
-                "New advisory: GCP-2026-070 (+7 more)",
+                "New advisory: GCP-2026-070 (+13 more)",
                 "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
               ],
               [
@@ -511,18 +523,6 @@
                 "Public attack code lowers the bar for attackers. Expect exploitation attempts to rise; patch ahead of them."
               ],
               [
-                "Self-hosted websites, email & collaboration",
-                "Review today",
-                "Public exploit code now available for CVE-2026-136716 (Drupal core) (+2 more)",
-                "Public attack code lowers the bar for attackers. Expect exploitation attempts to rise; patch ahead of them."
-              ],
-              [
-                "Databases, middleware & analytics",
-                "Routine vendor updates",
-                "Advisory revised: OpenJDK: OpenJDK: remote code execution via memory corruption on x86-64 systems with AVX-512 VBMI",
-                "The vendor changed an advisory (affected versions, fixes or exploitation status may have changed). Re-check exposure."
-              ],
-              [
                 "Virtualization & private cloud",
                 "Routine vendor updates",
                 "4 new critical CVEs in Virtualization & private cloud",
@@ -531,25 +531,25 @@
               [
                 "Web servers, proxies, libraries & runtimes",
                 "Routine vendor updates",
-                "New advisory: openssl: OpenSSL: Denial of Service via NULL pointer dereference during DANE TLSA record processing",
+                "New advisory: openssl: OpenSSL: Denial of Service via NULL pointer dereference during DANE TLSA record processing (+1 more)",
                 "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
               ],
               [
                 "Industrial automation & engineering",
                 "Routine vendor updates",
-                "New advisory: SSA-545865: Improper Token Verification Vulnerability in Mendix OIDC Provider Module (+9 more)",
-                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+                "1 new critical CVE in Industrial automation & engineering (+13 more)",
+                "Newly published critical flaws in technology in this category. Check whether you run the named products and plan updates."
               ],
               [
                 "International & coordinated disclosures",
                 "Routine vendor updates",
-                "New advisory: Multiples vulnérabilités dans SolarWinds Serv-U (+59 more)",
+                "New advisory: Multiples vulnérabilités dans SolarWinds Serv-U (+69 more)",
                 "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
               ],
               [
                 "Power, utilities & building systems",
                 "Routine vendor updates",
-                "New advisory: ABB Relion Protection Relays One-time password and factory account vulnerabilities (+5 more)",
+                "New advisory: ABB Relion Protection Relays One-time password and factory account vulnerabilities (+7 more)",
                 "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
               ],
               [
@@ -976,7 +976,7 @@
     ],
     "footer": "Enterprise Cyber Threat Intelligence | 27 Nov 2026",
     "reviewedBy": null,
-    "generatedAt": "2026-11-27T22:10:10Z",
+    "generatedAt": "2026-11-28T03:07:00Z",
     "prioritized": [
       "CVE-2026-136716",
       "CVE-2026-120705",
