@@ -1,0 +1,578 @@
+{
+  "schemaVersion": 1,
+  "edition": "2026-11-28",
+  "publishedAt": "2026-11-28T11:55:14Z",
+  "window": {
+    "start": "2026-11-28T02:54:56Z",
+    "end": "2026-11-28T11:55:14Z",
+    "note": "KEV additions not present in the previous edition’s catalog snapshot."
+  },
+  "executive": {
+    "summary": "CISA published no new Known Exploited Vulnerabilities since the previous edition. That does not mean no new threats emerged — KEV is one confirmed-exploitation source, and campaigns or zero-days outside it are not covered by today’s automated feeds.",
+    "summarySource": "generated",
+    "counts": {
+      "kevAdded": 0,
+      "kevRansomware": 0,
+      "emergency": 0,
+      "urgent": 0,
+      "criticalHigh": 0,
+      "materialChanges": 0,
+      "kevTotal": 1808
+    },
+    "developments": []
+  },
+  "kevLatest": {
+    "date": "2026-11-27",
+    "dueDate": "2026-11-30",
+    "catalogVersion": "2026.11.27",
+    "released": "2026-11-27T18:03:12.5733Z",
+    "items": [
+      {
+        "cve": "CVE-2026-120705",
+        "vendor": "OSGeo",
+        "product": "GeoServer"
+      },
+      {
+        "cve": "CVE-2026-129243",
+        "vendor": "OSGeo",
+        "product": "GeoServer"
+      },
+      {
+        "cve": "CVE-2026-136716",
+        "vendor": "Drupal",
+        "product": "Core"
+      }
+    ]
+  },
+  "actions": [],
+  "cves": [],
+  "overflow": 0,
+  "campaigns": {
+    "status": "not_covered",
+    "items": [],
+    "note": "No reviewed, source-linked intelligence for this section in today’s edition."
+  },
+  "industries": {
+    "status": "not_covered",
+    "items": [],
+    "note": "No reviewed, source-linked intelligence for this section in today’s edition."
+  },
+  "actors": {
+    "status": "not_covered",
+    "items": [],
+    "note": "No reviewed, source-linked intelligence for this section in today’s edition."
+  },
+  "remediation": {
+    "groups": {
+      "emergency": [],
+      "urgent": [],
+      "routine": [],
+      "monitor": []
+    },
+    "guidance": {
+      "emergency": "Mitigate exposed instances within 24–72 hours (guidance, not policy).",
+      "urgent": "Remediate within the CISA due date or your next emergency change window.",
+      "routine": "Remediate in the normal patch cycle; prerequisites limit exposure.",
+      "monitor": "Track for exploitation or scope changes."
+    }
+  },
+  "changes": [],
+  "sources": [
+    {
+      "name": "CISA Known Exploited Vulnerabilities",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "version": "2026.11.27",
+      "released": "2026-11-27T18:03:12.5733Z",
+      "fetchedAt": "2026-11-28T11:55:14Z",
+      "status": "ok"
+    },
+    {
+      "name": "FIRST EPSS",
+      "url": "https://www.first.org/epss/",
+      "fetchedAt": "2026-11-28T11:55:14Z",
+      "status": "ok",
+      "note": "Probability estimate; not evidence of exploitation."
+    },
+    {
+      "name": "NVD CVE API 2.0",
+      "url": "https://nvd.nist.gov/",
+      "fetchedAt": "2026-11-28T11:55:14Z",
+      "status": "no data",
+      "note": "Enrichment can lag publication by days."
+    }
+  ],
+  "coverage": {
+    "covered": [
+      "CISA KEV additions",
+      "FIRST EPSS",
+      "NVD CVSS and references"
+    ],
+    "notCovered": [
+      "Campaign, threat actor and industry analysis (requires reviewed editorial input)",
+      "Zero-days not yet in CISA KEV",
+      "Vendor-specific fixed-version validation"
+    ],
+    "unknownFields": [],
+    "editorial": {
+      "present": false,
+      "reviewedBy": null,
+      "reviewedAt": null
+    }
+  },
+  "updatedAt": "2026-11-28T11:55:14Z",
+  "updateSlot": "07:00",
+  "report": {
+    "version": 1,
+    "title": [
+      "DAILY ENTERPRISE CYBERSECURITY",
+      "THREAT INTELLIGENCE BRIEF"
+    ],
+    "dateLabel": "Saturday, November 28, 2026",
+    "window": "Reporting window: November 27-28, 2026",
+    "prepared": "Automated edition, issued 7:00 AM ET and updated at 12:00, 5:00 and 10:00 PM ET",
+    "sourceNote": "This brief is compiled automatically from public sources (CISA KEV, NVD, FIRST EPSS, Google Project Zero, ENISA EUVD, Metasploit, Exploit-DB, PoC-in-GitHub, MITRE ATT&CK). Exploitation statuses reflect what those sources report; anything they do not establish is stated as not established or not verified.",
+    "sections": [
+      {
+        "id": "summary",
+        "num": 1,
+        "title": "Executive Intelligence Summary",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The leading newly prioritized issue is **CVE-2026-137721 (Mitel OpenScape)**, a critical OS command injection flaw. Malicious exploitation was not confirmed by tracked sources. No fixed release is mapped in NVD data yet. **CVE-2026-106125 (Sneeit Framework WordPress plugin)** is another important newly highlighted issue; malicious exploitation was not confirmed."
+          },
+          {
+            "type": "table",
+            "columns": [
+              "Metric",
+              "Assessment"
+            ],
+            "rows": [
+              [
+                "Newly prioritized CVEs",
+                "3: Mitel OpenScape, Sneeit Framework WordPress plugin and Platform"
+              ],
+              [
+                "Latest KEV baseline",
+                "1,808 (catalog version 2026.11.27, released 2026-11-27)"
+              ],
+              [
+                "New KEV additions",
+                "None verified in reporting window"
+              ],
+              [
+                "Emergency candidates",
+                "None newly highlighted"
+              ],
+              [
+                "Complete worldwide High/Critical count",
+                "Not established; 170 High/Critical CVEs published to NVD in the window (NVD-scored only)"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**Top five actions:** (1) Apply the vendor fix for Mitel OpenScape (CVE-2026-137721); (2) apply the vendor fix for Sneeit Framework WordPress plugin (CVE-2026-106125); (3) apply the vendor fix for Platform (CVE-2026-137723); (4) close previously reported Project MONAI MONAI Label, Vates Xen Orchestra, N-able MailAssure and Idunno AntiCsrf KEV exposure; (5) examine Mitel OpenScape hosts for unexpected child processes and outbound connections."
+          },
+          {
+            "type": "p",
+            "text": "**Your technology watchlist (last 24 hours).** AEGIS monitors 35 technology areas, from firewalls, identity and cloud platforms to industrial and medical devices, against vendor advisories, national CERTs, CISA KEV and exploitation reports. **2** need action now, **7** should be reviewed today, **4** had routine vendor security updates and **22** had no significant change. “Act now” means confirmed exploitation or a CISA KEV addition; “Review today” means public exploit code, a sharp rise in exploitation likelihood or an exploited vendor advisory."
+          },
+          {
+            "type": "table",
+            "columns": [
+              "Technology area",
+              "Status",
+              "What happened",
+              "What it means for you"
+            ],
+            "rows": [
+              [
+                "Confirmed exploitation (CISA KEV)",
+                "Act now",
+                "CVE-2026-120705 (OSGeo GeoServer) added to CISA Known Exploited Vulnerabilities (+5 more)",
+                "Attackers are actively using this flaw. If your organization runs OSGeo, patch or mitigate it now."
+              ],
+              [
+                "Self-hosted websites, email & collaboration",
+                "Act now",
+                "CVE-2026-136716 (Drupal Core) added to CISA Known Exploited Vulnerabilities (+2 more)",
+                "Attackers are actively using this flaw. If your organization runs Drupal, patch or mitigate it now."
+              ],
+              [
+                "Campaigns & urgent alerts",
+                "Review today",
+                "Urgent alert: CISA Adds Three Known Exploited Vulnerabilities to Catalog (+10 more)",
+                "A government or vendor security team issued an urgent warning. Read it and confirm whether it applies to you."
+              ],
+              [
+                "Cloud platforms",
+                "Review today",
+                "New advisory: GCP-2026-070 (+10 more)",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+              ],
+              [
+                "Databases, middleware & analytics",
+                "Review today",
+                "Public exploit code now available for CVE-2026-22018 (Oracle Communications)",
+                "Public attack code lowers the bar for attackers. Expect exploitation attempts to rise; patch ahead of them."
+              ],
+              [
+                "Linux distributions",
+                "Review today",
+                "Public exploit code now available for CVE-2025-15467 (Fedora Linux) (+30 more)",
+                "Public attack code lowers the bar for attackers. Expect exploitation attempts to rise; patch ahead of them."
+              ],
+              [
+                "Mobile, desktop & browsers",
+                "Review today",
+                "New advisory: Long Term Support Channel Update for ChromeOS (+12 more)",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+              ],
+              [
+                "Windows & Microsoft enterprise software",
+                "Review today",
+                "Exploitation likelihood jumped for CVE-2024-38193 (Microsoft Windows)",
+                "Forecasting models now rate this flaw among the most likely to be exploited in the next 30 days."
+              ],
+              [
+                "Endpoint & email security",
+                "Review today",
+                "Public exploit code now available for CVE-2026-114202 (Trend Micro ZDI)",
+                "Public attack code lowers the bar for attackers. Expect exploitation attempts to rise; patch ahead of them."
+              ],
+              [
+                "Web servers, proxies, libraries & runtimes",
+                "Routine vendor updates",
+                "New advisory: openssl: OpenSSL: Denial of Service via NULL pointer dereference during DANE TLSA record processing",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+              ],
+              [
+                "Industrial automation & engineering",
+                "Routine vendor updates",
+                "1 new critical CVE in Industrial automation & engineering (+5 more)",
+                "Newly published critical flaws in technology in this category. Check whether you run the named products and plan updates."
+              ],
+              [
+                "International & coordinated disclosures",
+                "Routine vendor updates",
+                "New advisory: Multiples vulnérabilités dans SolarWinds Serv-U (+17 more)",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+              ],
+              [
+                "Power, utilities & building systems",
+                "Routine vendor updates",
+                "New advisory: ABB Relion Protection Relays One-time password and factory account vulnerabilities (+3 more)",
+                "The vendor published a security advisory rated high or critical. Confirm whether you use the affected products and apply the fix."
+              ],
+              [
+                "Other monitored areas (22)",
+                "No significant change",
+                "DevOps, containers & artifact repositories; Enterprise firewalls, VPNs & application delivery; Identity & federation; Managed file transfer; Privileged access & secrets; Remote monitoring & support; Storage, NAS & backup; Virtualization & private cloud; Business applications & SaaS; Cameras, video & access control; DNS, CDN & web security; Embedded & real-time operating systems; IT operations & observability; Industrial networks & edge devices; Medical devices & clinical systems; Other firewalls, routers & wireless; PCs & motherboards; Printers, scanners & office devices; Processors, GPUs & chipsets; Servers, workstations & management firmware; Telecom & service-provider equipment; UNIX & BSD",
+                "No action needed today. Monitoring continues four times a day."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Full details, links and RSS feeds per technology area: [Alerts & briefings](https://aegisdefensecyber.com/threatwatch/alerts.html)."
+          }
+        ]
+      },
+      {
+        "id": "critical",
+        "num": 2,
+        "title": "Critical Vulnerability Intelligence",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "**CVE-2026-137721 - Mitel OpenScape OS command injection (CVSS 10).** A vulnerability in the Platform component of Mitel OpenScape 4000 and OpenScape 4000 Manager could allow an attacker to conduct a command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the context of the system. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+          },
+          {
+            "type": "table",
+            "columns": [
+              "Field",
+              "Status"
+            ],
+            "rows": [
+              [
+                "EPSS / percentile",
+                "2.8% probability / 87th percentile (FIRST EPSS)"
+              ],
+              [
+                "CISA KEV",
+                "Not listed in latest verified baseline"
+              ],
+              [
+                "Exploitation",
+                "No malicious exploitation confirmed by tracked sources"
+              ],
+              [
+                "Public exploit",
+                "No public exploit or proof-of-concept identified in tracked sources"
+              ],
+              [
+                "Mitigation",
+                "Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**CVE-2026-106125 - Sneeit Framework WordPress plugin code injection (CVSS 9.8).** The Sneeit Framework plugin for WordPress is vulnerable to Remote Code Execution in versions up to, and including, 8.7 via the 'callback' parameter of the sneeit_compact_menu_mega_content AJAX action. The handler sneeit_compact_menu_mega_content_callback() is registered on the wp_ajax_nopriv_ hook and passes the attacker-supplied 'callback' value directly into call_user_func() after only a function_exists() check,… Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: network-accessible; no authentication required; no user interaction required."
+          },
+          {
+            "type": "p",
+            "text": "EPSS: 1.2% probability / 69th percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. No public exploit or proof-of-concept identified in tracked sources. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; place the service behind authentication or a VPN; monitor for exploitation."
+          },
+          {
+            "type": "p",
+            "text": "**CVE-2026-137723 - Platform OS command injection (CVSS 9.6).** A vulnerability in the Platform component of Mitel OpenScape 4000 and OpenScape 4000 Manager could allow an attacker to conduct a command injection attack due to insufficient parameter sanitization. A successful exploit could allow an attacker to execute arbitrary commands within the context of the system. Affected releases: not yet published in NVD configuration data. Fixed package release: none identified in tracked sources. Attack path: adjacent-network; no authentication required; no user interaction required."
+          },
+          {
+            "type": "p",
+            "text": "EPSS: 2.6% probability / 86th percentile (FIRST EPSS). CISA KEV: Not listed in latest verified baseline. Exploitation: No malicious exploitation confirmed by tracked sources. No public exploit or proof-of-concept identified in tracked sources. Mitigation: Apply the vendor fix or mitigation; remove untrusted network reachability until patched; monitor for exploitation."
+          }
+        ]
+      },
+      {
+        "id": "exploitation",
+        "num": 3,
+        "title": "Active Exploitation and Threat Campaigns",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "No new zero-day or in-the-wild exploitation reports beyond CISA KEV were identified for newly prioritized CVEs in tracked sources (Google Project Zero, ENISA EUVD, VulnCheck KEV). No reliable campaign-specific IP addresses, hashes or domains were identified."
+          },
+          {
+            "type": "p",
+            "text": "No new CISA KEV additions were verified in the reporting window. The latest additions remain the 3 entries added November 27, 2026: OSGeo GeoServer, OSGeo GeoServer and Drupal Core. The federal remediation deadline for those entries is **November 30, 2026**. This deadline applies to covered federal agencies under applicable requirements; it is not a universal private-sector mandate."
+          },
+          {
+            "type": "p",
+            "text": "**Defensive hunting:** for Mitel OpenScape (CVE-2026-137721), inspect unexpected child processes of the service, new scheduled jobs or services, and unusual outbound connections from the host; for Sneeit Framework WordPress plugin (CVE-2026-106125), inspect unexpected child processes of the service, new scheduled jobs or services, and unusual outbound connections from the host; for Platform (CVE-2026-137723), inspect unexpected child processes of the service, new scheduled jobs or services, and unusual outbound connections from the host."
+          }
+        ]
+      },
+      {
+        "id": "industry",
+        "num": 4,
+        "title": "Industry and Market Threat Landscape",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": [
+              "Industry / market",
+              "Observed activity vs. possible exposure"
+            ],
+            "rows": [
+              [
+                "Healthcare / medical imaging",
+                "Possible Mitel OpenScape, Platform and Sneeit Framework WordPress plugin exposure; targeting unknown"
+              ],
+              [
+                "Education / research",
+                "Possible Mitel OpenScape, Platform and Sneeit Framework WordPress plugin exposure; targeting unknown"
+              ],
+              [
+                "Technology / software",
+                "Potential Mitel OpenScape, Platform and Sneeit Framework WordPress plugin dependency exposure"
+              ],
+              [
+                "Government / defense",
+                "Possible Mitel OpenScape, Platform and Sneeit Framework WordPress plugin exposure; no new sector-specific targeting confirmed"
+              ],
+              [
+                "Financial services",
+                "Possible Mitel OpenScape, Platform and Sneeit Framework WordPress plugin exposure; targeting unknown"
+              ],
+              [
+                "Manufacturing / energy / utilities",
+                "Possible Mitel OpenScape, Platform and Sneeit Framework WordPress plugin exposure; targeting unknown"
+              ],
+              [
+                "Retail / transportation",
+                "Possible Mitel OpenScape, Platform and Sneeit Framework WordPress plugin exposure; targeting unknown"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Geography and organization-size targeting were not reliably established. Product use indicates possible exposure, not observed attacker selection."
+          }
+        ]
+      },
+      {
+        "id": "actors",
+        "num": 5,
+        "title": "Threat Actor Intelligence",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": [
+              "Actor / cluster",
+              "Attribution and activity"
+            ],
+            "rows": [
+              [
+                "Mitel OpenScape operators",
+                "No confirmed malicious exploitation or attribution."
+              ],
+              [
+                "Sneeit Framework WordPress plugin operators",
+                "No confirmed malicious exploitation or attribution."
+              ],
+              [
+                "Platform operators",
+                "No confirmed malicious exploitation or attribution."
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "**MITRE ATT&CK defensive mapping:** T1190 (Exploit Public-Facing Application) may be relevant to exposed Mitel OpenScape, Sneeit Framework WordPress plugin and Platform services. These mappings support defensive detection and do not establish actor attribution."
+          }
+        ]
+      },
+      {
+        "id": "remediation",
+        "num": 6,
+        "title": "Enterprise Risk and Remediation Decisions",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": [
+              "Priority",
+              "Scenario",
+              "Suggested window"
+            ],
+            "rows": [
+              [
+                "Emergency",
+                "Unremediated confirmed-exploited Danfoss AK-SM 800A Series, Drupal Core, Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router, Idunno AntiCsrf or Mitel MiCollab exposure",
+                "Immediate containment and applicable forensic triage"
+              ],
+              [
+                "Urgent",
+                "Vulnerable Mitel OpenScape (CVE-2026-137721)",
+                "Apply applicable vendor fix in 24-72 hours"
+              ],
+              [
+                "Urgent",
+                "Vulnerable Sneeit Framework WordPress plugin (CVE-2026-106125)",
+                "Apply applicable vendor fix in 24-72 hours"
+              ],
+              [
+                "Routine",
+                "Affected but effectively restricted software",
+                "Controlled maintenance window"
+              ],
+              [
+                "Monitor",
+                "Verified fixed or nonaffected software",
+                "Watch for material new evidence"
+              ]
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Response windows are recommendations, not mandatory policy. No organization-specific exposure, compromise, asset criticality or patch status was established."
+          }
+        ]
+      },
+      {
+        "id": "changes",
+        "num": 7,
+        "title": "Significant Changes to Previously Reported Issues",
+        "source": "generated",
+        "blocks": [
+          {
+            "type": "table",
+            "columns": [
+              "Issue",
+              "Material development"
+            ],
+            "rows": [
+              [
+                "Drupal Core CVE-2026-136716",
+                "No significant new development established since November 27"
+              ],
+              [
+                "OSGeo GeoServer CVE-2026-120705",
+                "No significant new development established since November 27"
+              ],
+              [
+                "OSGeo GeoServer CVE-2026-129243",
+                "No significant new development established since November 27"
+              ],
+              [
+                "Google Cloud Platform CVE-2026-123903",
+                "No significant new development established since November 27"
+              ],
+              [
+                "TOTOLINK N350RT CVE-2026-137043",
+                "No significant new development established since November 27"
+              ],
+              [
+                "CVE-2026-133336 CVE-2026-133336",
+                "No significant new development established since November 27"
+              ],
+              [
+                "Open Source Camunda CVE-2026-77230",
+                "No significant new development established since November 26"
+              ],
+              [
+                "In Eclipse Ditto CVE-2026-135150",
+                "No significant new development established since November 26"
+              ],
+              [
+                "WP Media WP Rocket CVE-2026-125812",
+                "No significant new development established since November 26"
+              ],
+              [
+                "Engeniustech Esr600 Firmware CVE-2025-34035",
+                "No significant new development established since November 25"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "label": "CVE-2026-137721 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137721"
+      },
+      {
+        "label": "CVE-2026-106125 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106125"
+      },
+      {
+        "label": "CVE-2026-137723 NVD record",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-137723"
+      },
+      {
+        "label": "CISA KEV catalog",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+      },
+      {
+        "label": "FIRST EPSS",
+        "url": "https://www.first.org/epss/"
+      }
+    ],
+    "footer": "Enterprise Cyber Threat Intelligence | 28 Nov 2026",
+    "reviewedBy": null,
+    "generatedAt": "2026-11-28T12:05:35Z",
+    "prioritized": [
+      "CVE-2026-137721",
+      "CVE-2026-106125",
+      "CVE-2026-137723"
+    ]
+  }
+}
